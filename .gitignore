@@ -1,5 +1,8 @@
 plugins/
 .repo.git/
+node_modules/
+dist/
+data/
 
 # Gas Town (added by gt)
 .runtime/

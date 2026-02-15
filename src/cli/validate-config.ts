@@ -2,7 +2,9 @@
 
 import ConfigLoader from '../config/ConfigLoader';
 import * as path from 'path';
+import { createLogger } from '../logging/logger';
 
+const log = createLogger('cli.validate-config');
 const CONFIG_PATH = path.join(process.cwd(), 'discord-config.yaml');
 
 console.log('Validating Discord Scraper configuration...');
@@ -24,6 +26,7 @@ try {
   console.log(`  - Cookies file: ${config.auth.cookies_file}`);
   console.log(`  - Headless mode: ${config.scraping.headless}`);
 } catch (error) {
+  log.error('Config validation failed', { error: error instanceof Error ? error.message : String(error) });
   console.error('✗ Configuration validation failed:');
   console.error(`  ${error instanceof Error ? error.message : String(error)}`);
   process.exit(1);

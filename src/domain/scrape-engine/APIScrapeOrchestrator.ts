@@ -1,6 +1,7 @@
 import DatabaseService from '../../services/DatabaseService';
 import { DiscordConfig } from '../models/types';
 import { DiscordAPIClient } from './DiscordAPIClient';
+import { createLogger, Logger } from '../../logging/logger';
 
 /**
  * APIScrapeOrchestrator
@@ -9,11 +10,15 @@ import { DiscordAPIClient } from './DiscordAPIClient';
  * Much more reliable and performant than web scraping.
  */
 export class APIScrapeOrchestrator {
+  private log: Logger;
+
   constructor(
     private db: DatabaseService,
     private config: DiscordConfig,
     private botToken: string
-  ) {}
+  ) {
+    this.log = createLogger('scrape.api');
+  }
 
   /**
    * Execute a scrape job using Discord API.
@@ -42,17 +47,16 @@ export class APIScrapeOrchestrator {
       const apiClient = new DiscordAPIClient(this.botToken);
 
       // Fetch all messages from the channel
-      console.log(`Fetching messages from channel ${job.channel_id}...`);
+      this.log.info('Fetching messages from channel', { jobId, channelId: job.channel_id });
 
       const apiMessages = await apiClient.fetchAllMessages(
         job.channel_id,
         (count) => {
-          // Progress callback
-          console.log(`Fetched ${count} messages so far...`);
+          this.log.debug('Fetch progress', { jobId, fetched: count });
         }
       );
 
-      console.log(`Total messages fetched: ${apiMessages.length}`);
+      this.log.info('Fetch complete', { jobId, totalFetched: apiMessages.length });
 
       // Convert and store messages
       let storedCount = 0;
@@ -72,7 +76,7 @@ export class APIScrapeOrchestrator {
         }
       }
 
-      console.log(`Stored ${storedCount} new messages`);
+      this.log.info('Messages stored', { jobId, storedCount });
 
       // Update channel metadata
       if (apiMessages.length > 0) {

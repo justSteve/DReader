@@ -2,7 +2,9 @@ import { Router } from 'express';
 import DatabaseService from '../../services/DatabaseService';
 import { ScrapeOrchestrator } from '../../domain/scrape-engine/ScrapeOrchestrator';
 import ConfigLoader from '../../config/ConfigLoader';
+import { createLogger } from '../../logging/logger';
 
+const log = createLogger('api.scrape');
 const router = Router();
 const DB_PATH = process.env.DB_PATH || './discord-scraper.db';
 const db = new DatabaseService(DB_PATH);
@@ -60,16 +62,19 @@ router.post('/start', async (req, res) => {
 
     // Create job
     const jobId = db.createScrapeJob(channel_id, scrape_type);
+    log.info('Scrape job created', { jobId, channelId: channel_id, scrapeType: scrape_type, channelName });
     const orchestrator = new ScrapeOrchestrator(db, config);
     await orchestrator.executeScrapeJob(jobId);
 
     // Return completed job
     const completedJob = db.getScrapeJob(jobId);
+    log.info('Scrape job completed', { jobId });
     res.json(completedJob);
 
   } catch (error) {
     // Job already marked as failed by orchestrator
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    log.error('Scrape job failed', { error: errorMessage });
     res.status(500).json({ error: errorMessage });
   }
 });

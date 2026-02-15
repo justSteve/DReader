@@ -4,6 +4,7 @@ import { DiscordBrowserController } from '../domain/scrape-engine/DiscordBrowser
 import ConfigLoader from '../config/ConfigLoader';
 import * as path from 'path';
 import * as readline from 'readline';
+import { createLogger } from '../logging/logger';
 
 const CONFIG_PATH = path.join(process.cwd(), 'discord-config.yaml');
 
@@ -22,6 +23,7 @@ async function waitForUserInput(prompt: string): Promise<void> {
 }
 
 async function main() {
+  const log = createLogger('cli.auth-setup');
   console.log('Discord Authentication Setup');
   console.log('============================\n');
 
@@ -30,6 +32,7 @@ async function main() {
   try {
     config = ConfigLoader.load(CONFIG_PATH);
   } catch (error) {
+    log.error('Failed to load config', { error: error instanceof Error ? error.message : String(error) });
     console.error('Failed to load config:', error);
     process.exit(1);
   }
@@ -60,6 +63,7 @@ async function main() {
 
     await controller.close();
   } catch (error) {
+    log.error('Authentication setup failed', { error: error instanceof Error ? error.message : String(error) });
     console.error('\n✗ Authentication setup failed:', error);
     await controller.close();
     process.exit(1);

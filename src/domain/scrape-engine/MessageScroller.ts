@@ -1,4 +1,5 @@
 import { Page } from 'playwright';
+import { createLogger, Logger } from '../../logging/logger';
 
 /**
  * MessageScroller handles scrolling logic for Discord channels.
@@ -15,10 +16,12 @@ export class MessageScroller {
   private page: Page;
   private scrollDelayMs: number;
   private lastScrollPosition: number = -1;
+  private log: Logger;
 
   constructor(page: Page, scrollDelayMs: number = 1500) {
     this.page = page;
     this.scrollDelayMs = scrollDelayMs;
+    this.log = createLogger('scrape.scroller');
   }
 
   /**
@@ -68,9 +71,11 @@ export class MessageScroller {
       // Take screenshot for debugging
       const screenshotPath = `./debug-screenshot-${Date.now()}.png`;
       await this.page.screenshot({ path: screenshotPath, fullPage: true });
-      console.error(`Failed to find messages. Screenshot saved to: ${screenshotPath}`);
-      console.error(`Page URL: ${this.page.url()}`);
-      console.error(`Page title: ${await this.page.title()}`);
+      this.log.error('Failed to find messages', {
+        screenshotPath,
+        pageUrl: this.page.url(),
+        pageTitle: await this.page.title(),
+      });
       throw error;
     }
   }

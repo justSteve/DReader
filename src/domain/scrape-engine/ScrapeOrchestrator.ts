@@ -4,6 +4,7 @@ import { DiscordBrowserController } from './DiscordBrowserController';
 import { MessageScroller } from './MessageScroller';
 import { DiscordDOMExtractor } from './dom-selectors';
 import { MessageParser } from '../metadata-capture/MessageParser';
+import { createLogger, Logger } from '../../logging/logger';
 
 /**
  * ScrapeOrchestrator
@@ -16,10 +17,14 @@ import { MessageParser } from '../metadata-capture/MessageParser';
  * 5. Handle errors (fail fast)
  */
 export class ScrapeOrchestrator {
+  private log: Logger;
+
   constructor(
     private db: DatabaseService,
     private config: DiscordConfig
-  ) {}
+  ) {
+    this.log = createLogger('scrape.browser');
+  }
 
   /**
    * Execute a scrape job synchronously (blocks until complete).
@@ -73,7 +78,7 @@ export class ScrapeOrchestrator {
         // Extract messages from current view
         const rawMessages = await extractor.extractMessages(page);
 
-        console.log(`Scroll ${scrollCount + 1}: Found ${rawMessages.length} messages in view`);
+        this.log.info(`Scroll ${scrollCount + 1}: found ${rawMessages.length} messages in view`, { jobId, scroll: scrollCount + 1, found: rawMessages.length });
 
         // Parse and store each message
         let newMessagesThisScroll = 0;
@@ -88,7 +93,7 @@ export class ScrapeOrchestrator {
           }
         }
 
-        console.log(`  → Stored ${newMessagesThisScroll} new messages (${seenMessageIds.size} total unique)`);
+        this.log.info(`Stored ${newMessagesThisScroll} new messages`, { jobId, newThisScroll: newMessagesThisScroll, totalUnique: seenMessageIds.size });
 
         // Scroll up to load older messages
         scrollCount++;
@@ -97,7 +102,7 @@ export class ScrapeOrchestrator {
         }
       }
 
-      console.log(`Scraping complete: ${scrollCount} scrolls, ${seenMessageIds.size} unique messages`);
+      this.log.info('Scraping complete', { jobId, scrolls: scrollCount, uniqueMessages: seenMessageIds.size });
 
       // Mark job as completed
       this.db.updateScrapeJobStatus(jobId, 'completed');
