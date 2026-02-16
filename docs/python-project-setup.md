@@ -103,6 +103,41 @@ ruff check src/                            # Lint
 mypy src/                                  # Type check
 ```
 
+## 6. VS Code Configuration
+
+Create `.vscode/settings.json`:
+
+```json
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "workspace"
+}
+```
+
+Create `.vscode/extensions.json`:
+
+```json
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff"
+  ]
+}
+```
+
 ## Checklist
 
 - [ ] `.gitignore` includes `.venv/`, `__pycache__/`, `*.pyc`, `.env`
@@ -110,3 +145,5 @@ mypy src/                                  # Type check
 - [ ] Secrets in `.env`, not in source code
 - [ ] `.venv/` created with `python3 -m venv .venv`
 - [ ] Dependencies installed via `pip install -e .`
+- [ ] `.vscode/settings.json` configured for Pylance + Ruff
+- [ ] `.vscode/extensions.json` recommends Python tooling
