@@ -12,7 +12,10 @@ module.
 
 There are a number of utility commands being showcased here."""
 
-bot = commands.Bot(command_prefix='?', description=description, self_bot=True)
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix='?', description=description, intents=intents)
 
 
 @bot.event
