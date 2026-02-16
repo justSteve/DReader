@@ -20,6 +20,7 @@ bot = commands.Bot(command_prefix='?', description=description, intents=intents)
 
 @bot.event
 async def on_ready():
+    assert bot.user is not None
     print(f'Logged in as {bot.user} (ID: {bot.user.id})')
     print('------')
 
