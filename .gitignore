@@ -9,3 +9,9 @@ data/
 .claude/
 .beads/
 .logs/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.env
