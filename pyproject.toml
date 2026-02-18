@@ -13,6 +13,10 @@ dev = [
     "ruff>=0.4.0",
     "mypy>=1.10.0",
 ]
+retrieval = [
+    "pywinauto>=0.6.8",
+    "pyperclip>=1.8.2",
+]
 
 [tool.ruff]
 target-version = "py312"
@@ -24,3 +28,7 @@ select = ["E", "F", "I", "UP"]
 [tool.mypy]
 python_version = "3.12"
 strict = true
+
+[[tool.mypy.overrides]]
+module = ["pywinauto.*", "pyperclip"]
+ignore_missing_imports = true
