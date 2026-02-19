@@ -1,10 +1,8 @@
 """CLI entry point for the DReader retrieval subsystem.
 
-Usage (Windows, via bat launcher):
+Usage (Windows):
     python.exe src\\retrieval\\run.py --channel general --count 50
-
-Usage (from WSL2):
-    cmd.exe /c scripts\\run_retrieval.bat --channel general --count 50
+    scripts\\run_retrieval.bat --channel general --count 50
 """
 from __future__ import annotations
 
