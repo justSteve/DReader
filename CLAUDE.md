@@ -23,7 +23,7 @@ Collect information from Discord channels and make it queryable by sibling zgent
 
 ### Python Retrieval (`src/retrieval/`)
 
-Keyboard-driven message retrieval that automates the Discord desktop app via pywinauto — no unofficial APIs, no self-bot risk. Clipboard-based extraction, session management, window control.
+Keyboard-driven message retrieval that automates the Discord desktop app via pywinauto — no unofficial APIs. Clipboard-based extraction, session management, window control.
 
 ## Graduation Status
 
