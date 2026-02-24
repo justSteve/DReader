@@ -6,13 +6,16 @@ Does NOT hold a reference to ClipboardReader (clean separation).
 from __future__ import annotations
 
 import sys
+import time
+from typing import TYPE_CHECKING
 
-if sys.platform != "win32":
+if not TYPE_CHECKING and sys.platform != "win32":
     raise ImportError("pywinauto requires Windows. Use scripts/run_retrieval.bat.")
 
-import time
-
-from pywinauto.keyboard import send_keys  # type: ignore[import-untyped]
+if TYPE_CHECKING:
+    def send_keys(keys: str, **kwargs: object) -> None: ...  # noqa: E704
+else:
+    from pywinauto.keyboard import send_keys  # type: ignore[import-untyped]
 
 # Discord keyboard shortcut constants (pywinauto send_keys format)
 KEY_QUICKSWITCHER = "^k"   # Ctrl+K  — open Quick Switcher
