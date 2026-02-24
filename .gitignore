@@ -3,6 +3,7 @@ plugins/
 node_modules/
 dist/
 data/
+daemon/
 
 # Gas Town (added by gt)
 .runtime/
@@ -14,4 +15,8 @@ data/
 .venv/
 __pycache__/
 *.pyc
+*.egg-info/
+*.egg
+build/
+*.dist-info/
 .env
