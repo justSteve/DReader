@@ -13,7 +13,7 @@
     "**/data": true
   },
 
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.defaultInterpreterPath": "/root/projects/DReader/.venv/bin/python3",
   "python.terminal.activateEnvironment": true,
 
   "[python]": {
@@ -27,7 +27,9 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.diagnosticMode": "workspace",
-  "python.analysis.extraPaths": ["${workspaceFolder}/.venv/lib/python3.12/site-packages"],
 
-  "cSpell.words": ["dotenv", "discord", "pylance", "ruff"]
+  "ruff.importStrategy": "fromEnvironment",
+  "isort.importStrategy": "fromEnvironment",
+
+  "cSpell.words": ["dotenv", "discord", "pylance", "ruff", "pywinauto", "pyperclip"]
 }

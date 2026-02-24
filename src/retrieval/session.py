@@ -121,7 +121,7 @@ class RetrievalSession:
 
     def _setup(self) -> None:
         """Connect to Discord, focus the window, and navigate to the channel."""
-        self._window.connect(title_re=r"Discord.*")
+        self._window.connect()  # Connects to Discord.exe by default
         self._log.info("Discord window found", {"title": self._window.title})
         self._window.focus(self._config.focus_delay)
 
@@ -142,16 +142,31 @@ class RetrievalSession:
             self._clipboard.clear()
             self._keyboard.copy_focused_message()
 
+            raw_text = ""
+            attempt_count = 0
             try:
                 raw_text, attempt_count = self._clipboard.read_with_retry(nav_index)
             except ClipboardTimeoutError as exc:
-                self._log.error("Clipboard timeout", {
-                    "nav_index": nav_index,
-                    "error": str(exc),
-                })
-                result.errors.append({"nav_index": nav_index, "error": str(exc)})
-                self._keyboard.move_up()
-                continue
+                # Clipboard failed - try UIA as fallback
+                time.sleep(self._config.metadata_delay)
+                focused_element = self._window.get_focused_element()
+                raw_meta_fallback = self._metadata_extractor.extract(focused_element)
+
+                if raw_meta_fallback.extraction_succeeded and raw_meta_fallback.uia_name:
+                    raw_text = raw_meta_fallback.uia_name
+                    attempt_count = 0
+                    self._log.info("Clipboard failed, used UIA text", {
+                        "nav_index": nav_index,
+                        "text_preview": raw_text[:100],
+                    })
+                else:
+                    self._log.error("Clipboard timeout and UIA fallback failed", {
+                        "nav_index": nav_index,
+                        "error": str(exc),
+                    })
+                    result.errors.append({"nav_index": nav_index, "error": str(exc)})
+                    self._keyboard.move_up()
+                    continue
 
             # --- Stuck detection ---
             current_hash = hashlib.md5(raw_text.encode()).hexdigest()

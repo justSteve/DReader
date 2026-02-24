@@ -16,9 +16,13 @@ if TYPE_CHECKING:
     class _PywinautoApp:
         def connect(self, **kwargs: object) -> Any: ...
         def top_window(self) -> Any: ...
+    class _PywinautoDesktop:
+        def windows(self) -> list[Any]: ...
     class pywinauto:  # noqa: N801
         @staticmethod
         def Application(backend: str) -> _PywinautoApp: ...  # noqa: N802
+        @staticmethod
+        def Desktop(backend: str) -> _PywinautoDesktop: ...  # noqa: N802
 else:
     import pywinauto  # type: ignore[import-untyped]
 
@@ -36,19 +40,44 @@ class WindowManager:
         self._app: Any = None
         self._window: Any = None
 
-    def connect(self, title_re: str) -> None:
-        """Connect to a running application whose window title matches title_re.
+    def connect(self, exe_name: str = "Discord.exe") -> None:
+        """Connect to Discord by finding a window belonging to Discord.exe process.
+
+        Args:
+            exe_name: Process executable name (default: "Discord.exe")
 
         Raises:
-            WindowNotFoundError: no matching window found.
+            WindowNotFoundError: no Discord window found.
         """
         try:
-            self._app = pywinauto.Application(backend="uia").connect(title_re=title_re)
-            self._window = self._app.top_window()
+            import subprocess
+            # Get all Discord PIDs using tasklist
+            result = subprocess.run(
+                ['tasklist', '/FI', f'IMAGENAME eq {exe_name}', '/FO', 'CSV', '/NH'],
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+            # Parse PIDs from tasklist output (CSV format: "name","PID",...)
+            pids = [int(line.split(',')[1].strip('"')) for line in result.stdout.strip().split('\n') if line]
+
+            if not pids:
+                raise ValueError(f"No {exe_name} process found")
+
+            # Find windows belonging to Discord PIDs
+            desktop = pywinauto.Desktop(backend="win32")
+            discord_windows = [w for w in desktop.windows() if w.process_id() in pids and w.is_visible()]
+
+            if not discord_windows:
+                raise ValueError(f"No visible window for {exe_name} (found {len(pids)} processes)")
+
+            # Use the first visible Discord window
+            self._window = discord_windows[0]
+            self._app = pywinauto.Application(backend="win32").connect(process=self._window.process_id())
         except Exception as exc:
             raise WindowNotFoundError(
-                f"Discord window not found: {title_re!r}",
-                {"title_re": title_re},
+                f"Discord window not found for {exe_name!r}",
+                {"exe_name": exe_name},
             ) from exc
 
     def focus(self, delay: float = 0.5) -> None:
@@ -87,3 +116,57 @@ class WindowManager:
             return str(self._window.window_text())
         except Exception:
             return ""
+
+    def enumerate_messages(self, max_depth: int = 10) -> list[Any]:
+        """Enumerate message elements from the Discord UI tree.
+
+        Walks the UI tree depth-first to find elements that look like messages.
+        Discord messages typically have:
+        - Non-empty window_text()
+        - Multiple children (author, content, timestamp, etc.)
+        - Specific control types (usually "Group" or "ListItem")
+
+        Args:
+            max_depth: Maximum tree depth to search (default: 10)
+
+        Returns:
+            List of message elements (empty if none found)
+        """
+        if self._window is None:
+            return []
+
+        messages: list[Any] = []
+        try:
+            # Start from the window root and walk the tree
+            def _walk_tree(element: Any, depth: int = 0) -> None:
+                if depth > max_depth:
+                    return
+
+                try:
+                    # Check if this element looks like a message
+                    # Discord messages have window_text and usually have children
+                    text = element.window_text()
+                    if text and len(text) > 0:
+                        # Try to get children count
+                        try:
+                            children = list(element.children())
+                            # Messages typically have multiple child elements
+                            # (author, timestamp, reactions, etc.)
+                            if len(children) >= 1:
+                                messages.append(element)
+                                # Don't recurse into message children
+                                return
+                        except Exception:
+                            pass
+
+                    # Recurse into children
+                    for child in element.children():
+                        _walk_tree(child, depth + 1)
+                except Exception:
+                    pass
+
+            _walk_tree(self._window)
+        except Exception:
+            pass
+
+        return messages
