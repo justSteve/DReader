@@ -2,8 +2,16 @@
 from __future__ import annotations
 
 import time
+from typing import TYPE_CHECKING
 
-import pyperclip
+if TYPE_CHECKING:
+    class pyperclip:  # noqa: N801
+        @staticmethod
+        def copy(text: str) -> None: ...
+        @staticmethod
+        def paste() -> str: ...
+else:
+    import pyperclip  # type: ignore[import-untyped]
 
 from .errors import ClipboardTimeoutError
 

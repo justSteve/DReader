@@ -6,14 +6,21 @@ All pywinauto usage is confined to this module.
 from __future__ import annotations
 
 import sys
+import time
+from typing import TYPE_CHECKING, Any
 
-if sys.platform != "win32":
+if not TYPE_CHECKING and sys.platform != "win32":
     raise ImportError("pywinauto requires Windows. Use scripts/run_retrieval.bat.")
 
-import time
-from typing import Any
-
-import pywinauto  # type: ignore[import-untyped]
+if TYPE_CHECKING:
+    class _PywinautoApp:
+        def connect(self, **kwargs: object) -> Any: ...
+        def top_window(self) -> Any: ...
+    class pywinauto:  # noqa: N801
+        @staticmethod
+        def Application(backend: str) -> _PywinautoApp: ...  # noqa: N802
+else:
+    import pywinauto  # type: ignore[import-untyped]
 
 from .errors import WindowFocusError, WindowNotFoundError
 
