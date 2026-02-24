@@ -5,16 +5,24 @@ dist/
 data/
 daemon/
 
-# Gas Town (added by gt)
+# Gas Town runtime
 .runtime/
-.claude/
+.logs/
+
+# Claude Code local settings (NEVER commit — session-specific permissions)
+.claude/settings.local.json
+
+# GT beads runtime (not source — issues.jsonl IS tracked)
 .beads/*.db
+.beads/*.db-shm
+.beads/*.db-wal
 .beads/bd.sock
 .beads/daemon.log
 .beads/daemon.lock
 .beads/daemon-error
+.beads/daemon.pid
 .beads/.local_version
-.logs/
+.beads/last-touched
 
 # Python
 .venv/
@@ -24,5 +32,9 @@ __pycache__/
 *.egg
 build/
 *.dist-info/
+
+# Environment
 .env
+
+# Windows
 run-server.bat

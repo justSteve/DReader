@@ -1,6 +1,36 @@
-# DReader
+# DReader — Enterprise Discord Intelligence Service
 
-DReader is a Discord intelligence collector — a zgent (in-process toward Zgent certification) that scrapes, stores, and serves Discord channel data for the Gas Town enterprise. Other zgents query DReader for Discord context: conversation history, thread reconstructions, channel metadata.
+**Zgent Status:** zgent (in-process toward Zgent certification)
+**Role:** Service provider — external intel collector serving Discord data to sibling zgents
+**Bead Prefix:** `dr`
+
+## STOP — Beads Gate (Read This First)
+
+**This repo is beads-first. You MUST authorize work before doing it.**
+
+Before making ANY substantive changes (creating/modifying files, installing deps, changing config), do this:
+
+```bash
+bd ready                    # See if there is already an open bead for this work
+bd create -t "Short title"  # Create one if not — YOU own this, do not ask the user
+bd update <id> --status in_progress  # Claim it
+```
+
+When done:
+```bash
+bd close <id>               # Mark complete
+bd sync                     # Sync with git
+```
+
+Reference the bead ID in your commit messages: `[dr-xxx] description`.
+
+**No bead = no work.** Minor housekeeping (typos, status fields) is exempt. Everything else gets a bead. If in doubt, create one — it is cheap. See `.claude/rules/beads-first.md` for the full rule.
+
+**This is not optional. This is not a Gas Town thing. This is how THIS repo works, every session, every instance.**
+
+## What This Is
+
+DReader is a Discord intelligence collector that scrapes, stores, and serves Discord channel data for the Gas Town enterprise. Other zgents query DReader for Discord context: conversation history, thread reconstructions, channel metadata.
 
 ## Mission
 
@@ -29,15 +59,23 @@ DReader has no access to the Discord API — no bot token, no OAuth app, no REST
 
 Keyboard-driven message retrieval that automates the Discord desktop app via pywinauto — no unofficial APIs. Clipboard-based extraction, session management, window control.
 
+## What Every Claude Instance Must Understand
+
+1. **Beads-first is non-negotiable.** Read the gate at the top of this file. Use `bd` commands. No exceptions.
+2. **Service provider role.** DReader exists to serve other agents with Discord intel. See `.claude/rules/zgent-permissions.md`.
+3. **No Discord API.** All retrieval is computer-use (pywinauto, DOM scraping). Never propose API-based solutions.
+4. **Structured logging.** Use `createLogger('component')` not `console.log`.
+
 ## Graduation Status
 
 DReader is on the path to Zgent certification. Current progress:
 
-- **Source restored** from pre-restructure commit (gt-dr1.1, closed)
-- **Structured logging** implemented — JSONL file + stderr transports, child loggers, level filtering (gt-dr1.4, closed)
-- **JSONL narrative logging** — next step, extends structured logging with another transport (gt-dr1.2, open)
+- **Source restored** from pre-restructure commit (gt-dr1.1, closed) ✓
+- **Structured logging** implemented — JSONL file + stderr transports, child loggers, level filtering (gt-dr1.4, closed) ✓
+- **Standard artifacts deployed** — beads-first, zgent-permissions, .gitignore, Python setup ✓
+- **ECC session declared** — zgent category, bootPriority 20, narrative channel ✓
+- **JSONL narrative logging** — extends structured logging with another transport (gt-dr1.2, open)
 - **MCP server** — expose query API as MCP tools so sibling zgents can call DReader directly (gt-dr1.3, open)
-- **Standard artifacts deployed** — beads-first, zgent-permissions, .gitignore, Python setup
 
 ## Key Commands
 
@@ -49,8 +87,14 @@ npm run init-db      # Initialize SQLite database
 npm run db:reset     # Reset database
 ```
 
-## Conventions
+## Key Files
 
-- Beads-first: self-bead for non-trivial work, reference bead ID in commits
-- Structured logging: use `createLogger('component')` not `console.log`
-- Enterprise permissions: read sibling repos, write only own path
+| Path | Purpose |
+|------|---------|
+| `src/api/` | Express REST server |
+| `src/domain/scrape-engine/` | Browser orchestrator |
+| `src/domain/thread-reconstruction/` | Thread rebuilder |
+| `src/services/` | DatabaseService, schema |
+| `src/logging/` | Structured JSONL logger |
+| `src/retrieval/` | Python keyboard-driven retrieval |
+| `.beads/` | GT beads (work authorization) |
