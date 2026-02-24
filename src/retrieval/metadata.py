@@ -7,12 +7,11 @@ property reads only. Never raises; degrades gracefully to extraction_succeeded=F
 from __future__ import annotations
 
 import sys
-
-if sys.platform != "win32":
-    raise ImportError("pywinauto requires Windows. Use scripts/run_retrieval.bat.")
-
 from dataclasses import dataclass
-from typing import Any
+from typing import TYPE_CHECKING, Any
+
+if not TYPE_CHECKING and sys.platform != "win32":
+    raise ImportError("pywinauto requires Windows. Use scripts/run_retrieval.bat.")
 
 
 @dataclass
