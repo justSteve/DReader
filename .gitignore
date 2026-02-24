@@ -8,7 +8,12 @@ daemon/
 # Gas Town (added by gt)
 .runtime/
 .claude/
-.beads/
+.beads/*.db
+.beads/bd.sock
+.beads/daemon.log
+.beads/daemon.lock
+.beads/daemon-error
+.beads/.local_version
 .logs/
 
 # Python
