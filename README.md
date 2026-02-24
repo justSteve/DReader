@@ -186,7 +186,7 @@ DReader uses Claude Code's Chrome browser for Discord authentication:
 3. Log in with your Discord account
 4. Keep Claude Code running during scraping
 
-No Discord bot token required - uses your browser session.
+No Discord API access (no bot token, no OAuth, no REST API). All retrieval is computer-use: browser session automation or native app control.
 
 ## Documentation
 

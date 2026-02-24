@@ -11,8 +11,9 @@
 **Primary Goal:** Build a full-stack Discord message archival system with thread reconstruction capabilities.
 
 **Core Capabilities:**
-- Browser-based scraping via Playwright (DOM extraction)
-- API-based scraping via Discord REST API (alternative approach)
+- Computer-use retrieval only — no Discord API access (permanent constraint, not a gap)
+- Browser-based scraping via DOM extraction
+- Python keyboard-driven retrieval via pywinauto (Discord desktop app)
 - SQLite persistent storage with thread relationships
 - REST API for programmatic data access
 - Job-based workflow with status tracking (pending → running → completed/failed)
@@ -42,9 +43,9 @@
 - Deduplication via `INSERT OR IGNORE` and in-memory `Set<string>`
 - Synchronous SQLite via better-sqlite3 simplifies orchestration
 
-**Dual Scraping Strategies:**
+**Computer-Use Retrieval (no API access — permanent constraint):**
 - `ScrapeOrchestrator` - Browser automation (works with user cookies)
-- `APIScrapeOrchestrator` - Discord API (requires bot token, more reliable)
+- Python `RetrievalSession` - Keyboard/clipboard automation via pywinauto (Discord desktop app)
 
 ### Weaknesses
 

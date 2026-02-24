@@ -96,7 +96,8 @@ Refactor Discord scraper at `/home/gtuser/gt/DReader/mayor/rig` with:
 
 ### Deleted
 - `jest.config.js`
-- `src/domain/scrape-engine/APIScrapeOrchestrator.ts`
+- `src/domain/scrape-engine/APIScrapeOrchestrator.ts` — Discord bot API path permanently closed (dreader-14)
+- `src/domain/scrape-engine/DiscordAPIClient.ts` — Discord bot API path permanently closed (dreader-14)
 
 ---
 

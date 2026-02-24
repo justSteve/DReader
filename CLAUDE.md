@@ -6,6 +6,10 @@ DReader is a Discord intelligence collector — a zgent (in-process toward Zgent
 
 Collect information from Discord channels and make it queryable by sibling zgents. DReader publishes its query API according to shared enterprise conventions so any zgent in the ecosystem can discover and use it.
 
+## Constraint: No Discord API Access
+
+DReader has no access to the Discord API — no bot token, no OAuth app, no REST endpoints. This is a permanent constraint, not a gap to be filled. All message retrieval must work through computer-use: automating the Discord desktop app (pywinauto) or browser-based UI (DOM scraping). Do not propose or build solutions that assume API access.
+
 ## Architecture
 
 **Dual-language**: TypeScript (API, scrape engine, storage) + Python (keyboard-driven retrieval, clipboard automation)
@@ -15,7 +19,7 @@ Collect information from Discord channels and make it queryable by sibling zgent
 | Layer | Path | Purpose |
 |-------|------|---------|
 | API | `src/api/` | Express REST server — channels, messages, threads, scrape jobs |
-| Scrape Engine | `src/domain/scrape-engine/` | Browser + API orchestrators, message scrolling, DOM selectors |
+| Scrape Engine | `src/domain/scrape-engine/` | Browser orchestrator, message scrolling, DOM selectors |
 | Thread Reconstruction | `src/domain/thread-reconstruction/` | ThreadAnalyzer — rebuilds conversation threads from flat messages |
 | Storage | `src/services/` | DatabaseService (better-sqlite3), schema.sql |
 | Logging | `src/logging/` | Structured JSONL logger — transport-based, daily rotation, zero deps |
