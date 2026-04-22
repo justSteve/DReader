@@ -1,6 +1,6 @@
 # DReader — Enterprise Discord Intelligence Service
 
-**Zgent Status:** zgent (in-process toward Zgent certification)
+**Zgent Status:** Zgent (certified)
 **Role:** Service provider — external intel collector serving Discord data to sibling zgents
 **Bead Prefix:** `dr`
 
@@ -12,25 +12,24 @@ Before making ANY substantive changes (creating/modifying files, installing deps
 
 ```bash
 bd ready                    # See if there is already an open bead for this work
-bd create -t "Short title"  # Create one if not — YOU own this, do not ask the user
+bd create --title "Short title"  # Create one if not — YOU own this, do not ask the user
 bd update <id> --status in_progress  # Claim it
 ```
 
 When done:
 ```bash
 bd close <id>               # Mark complete
-bd sync                     # Sync with git
 ```
 
 Reference the bead ID in your commit messages: `[dr-xxx] description`.
 
 **No bead = no work.** Minor housekeeping (typos, status fields) is exempt. Everything else gets a bead. If in doubt, create one — it is cheap. See `.claude/rules/beads-first.md` for the full rule.
 
-**This is not optional. This is not a Gas Town thing. This is how THIS repo works, every session, every instance.**
+**This is not optional. This is how THIS repo works, every session, every instance.**
 
 ## What This Is
 
-DReader is a Discord intelligence collector that scrapes, stores, and serves Discord channel data for the Gas Town enterprise. Other zgents query DReader for Discord context: conversation history, thread reconstructions, channel metadata.
+DReader is a Discord intelligence collector that scrapes, stores, and serves Discord channel data for the Gas City enterprise. Other zgents query DReader for Discord context: conversation history, thread reconstructions, channel metadata.
 
 ## Mission
 
@@ -66,17 +65,6 @@ Keyboard-driven message retrieval that automates the Discord desktop app via pyw
 3. **No Discord API.** All retrieval is computer-use (pywinauto, DOM scraping). Never propose API-based solutions.
 4. **Structured logging.** Use `createLogger('component')` not `console.log`.
 
-## Graduation Status
-
-DReader is on the path to Zgent certification. Current progress:
-
-- **Source restored** from pre-restructure commit (gt-dr1.1, closed) ✓
-- **Structured logging** implemented — JSONL file + stderr transports, child loggers, level filtering (gt-dr1.4, closed) ✓
-- **Standard artifacts deployed** — beads-first, zgent-permissions, .gitignore, Python setup ✓
-- **ECC session declared** — zgent category, bootPriority 20, narrative channel ✓
-- **JSONL narrative logging** — extends structured logging with another transport (gt-dr1.2, open)
-- **MCP server** — expose query API as MCP tools so sibling zgents can call DReader directly (gt-dr1.3, open)
-
 ## Key Commands
 
 ```bash
@@ -85,6 +73,11 @@ npm run test         # Run Jest tests
 npm run auth-setup   # Configure Discord auth
 npm run init-db      # Initialize SQLite database
 npm run db:reset     # Reset database
+bd ready             # Find available work
+bd show <id>         # View issue details
+bd update <id> --claim  # Claim work
+bd close <id>        # Complete work
+bd prime             # Re-read PRIME.md (context for new sessions)
 ```
 
 ## Key Files
@@ -97,4 +90,23 @@ npm run db:reset     # Reset database
 | `src/services/` | DatabaseService, schema |
 | `src/logging/` | Structured JSONL logger |
 | `src/retrieval/` | Python keyboard-driven retrieval |
-| `.beads/` | GT beads (work authorization) |
+| `.beads/` | Beads (work authorization) |
+
+## Session Completion
+
+When ending a work session:
+
+1. File any remaining work as beads
+2. Run quality gates if code changed
+3. Update or close beads
+4. Commit and push — **work is NOT done until `git push` succeeds**
+5. Run `/handoff` to append to `DaysActivity.md`
+
+## Beads Issue Tracker
+
+This project uses **bd (beads)** for issue tracking. Run `bd prime` to see full workflow context and commands.
+
+### Rules
+
+- Use `bd` for ALL task tracking — do NOT use TodoWrite, TaskCreate, or markdown TODO lists
+- Run `bd prime` for detailed command reference and session close protocol

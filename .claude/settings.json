@@ -1,71 +1,174 @@
 {
+  "hooks": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/write-guard.sh",
+            "timeout": 2000,
+            "type": "command"
+          },
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/repo-guard.sh",
+            "timeout": 2000,
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      },
+      {
+        "hooks": [
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/bash-guard.sh",
+            "timeout": 2000,
+            "type": "command"
+          },
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/bead-gate.sh",
+            "timeout": 2000,
+            "type": "command"
+          }
+        ],
+        "matcher": "Bash"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/ops-trail-logger.sh",
+            "timeout": 5000,
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/failure-logger.sh",
+            "timeout": 2000,
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/pre-compact.sh",
+            "timeout": 5000,
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      },
+      {
+        "hooks": [
+          {
+            "command": "bd prime",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/session-start.sh",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/shutdown-filter.sh",
+            "timeout": 2000,
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ]
+  },
   "permissions": {
     "allow": [
       "Edit(*)",
       "Write(*)",
       "MultiEdit(*)",
-      "Bash(cd:*)",
-      "Bash(echo:*)",
-      "Bash(pwd:*)",
-      "Bash(which:*)",
-      "Bash(where:*)",
-      "Bash(test:*)",
-      "Bash(sleep:*)",
-      "Bash(true:*)",
-      "Bash(git:*)",
-      "Bash(gh:*)",
-      "Bash(gt:*)",
-      "Bash(bd:*)",
-      "Bash(bun:*)",
-      "Bash(npm:*)",
-      "Bash(npx:*)",
-      "Bash(node:*)",
-      "Bash(cass:*)",
-      "Bash(curl:*)",
-      "Bash(powershell:*)",
-      "Bash(bash:*)",
-      "Bash(sh:*)",
-      "Bash(source:*)",
-      "Bash(cp:*)",
-      "Bash(mv:*)",
-      "Bash(rm:*)",
-      "Bash(touch:*)",
-      "Bash(chmod:*)",
-      "Bash(mkdir:*)",
-      "Bash(ls:*)",
-      "Bash(cat:*)",
-      "Bash(head:*)",
-      "Bash(tail:*)",
-      "Bash(wc:*)",
-      "Bash(du:*)",
-      "Bash(find:*)",
-      "Bash(grep:*)",
-      "Bash(sed:*)",
-      "Bash(awk:*)",
-      "Bash(sort:*)",
-      "Bash(diff:*)",
-      "Bash(xargs:*)",
-      "Bash(jq:*)",
-      "Bash(python:*)",
-      "Bash(python3:*)",
-      "Bash(pip:*)",
-      "Bash(sqlite3:*)",
-      "Bash(tsc:*)",
-      "Bash(code:*)",
-      "Bash(timeout:*)",
-      "Bash(netstat:*)",
-      "Bash(ss:*)",
-      "Bash(taskkill:*)",
-      "Bash(dir:*)",
-      "Bash(tee:*)",
+      "Bash(cd *)",
+      "Bash(echo *)",
+      "Bash(pwd *)",
+      "Bash(which *)",
+      "Bash(test *)",
+      "Bash(sleep *)",
+      "Bash(true *)",
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(gc *)",
+      "Bash(bd *)",
+      "Bash(bun *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(node *)",
+      "Bash(curl *)",
+      "Bash(bash *)",
+      "Bash(sh *)",
+      "Bash(source *)",
+      "Bash(tmux *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(rm *)",
+      "Bash(touch *)",
+      "Bash(chmod *)",
+      "Bash(mkdir *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(sed *)",
+      "Bash(awk *)",
+      "Bash(sort *)",
+      "Bash(diff *)",
+      "Bash(xargs *)",
+      "Bash(jq *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(pip *)",
+      "Bash(sqlite3 *)",
+      "Bash(tsc *)",
+      "Bash(timeout *)",
+      "Bash(tee *)",
+      "Bash(date *)",
       "mcp__fetch__fetch",
       "mcp__github__*",
-      "mcp__filesystem__*",
-      "WebFetch(*)",
-      "WebSearch(*)",
       "Read(*)",
       "Glob(*)",
       "Grep(*)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*credentials*)",
+      "Read(**/*secret*)",
+      "Read(//**/id_rsa)",
+      "Read(//**/id_ed25519)",
+      "Edit(.env)",
+      "Edit(.env.*)",
+      "Edit(**/.env)",
+      "Edit(**/.env.*)"
     ]
   }
 }

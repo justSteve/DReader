@@ -5,11 +5,12 @@ dist/
 data/
 daemon/
 
-# Gas Town (added by gt)
+# Runtime state (not tracked)
 .runtime/
-.claude/
-.beads/
 .logs/
+.claude/settings.local.json
+.claude/state/snapshot.json
+.claude/state/checkpoint.json
 
 # Python
 .venv/
