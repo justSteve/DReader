@@ -1,7 +1,7 @@
 # DReader Refactoring Plan
 
 ## Overview
-Refactor Discord scraper at `/home/gtuser/gt/DReader/mayor/rig` with:
+Refactor Discord scraper with:
 1. Two distinct scrape scopes (initialization vs incremental)
 2. Bun runtime migration
 3. Claude Chrome Extension for browser control (NO Playwright)
@@ -145,7 +145,7 @@ curl http://localhost:3001/api/scrape/channel/123/status
 
 ## Next Steps
 1. ~~Install Bun: `curl -fsSL https://bun.sh/install | bash`~~ ✅ Done
-2. ~~Install dependencies: `cd DReader/mayor/rig && bun install`~~ ✅ Done
+2. ~~Install dependencies~~ ✅ Done
 3. ~~Run tests: `bun test`~~ ✅ Done (50 pass, 11 skip)
 4. ~~Remove Playwright dependency~~ ✅ Done
 5. Start Claude Code with Chrome: `claude --chrome`

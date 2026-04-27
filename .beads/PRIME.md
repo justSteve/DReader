@@ -28,4 +28,4 @@ Before signaling completion:
 
 ## What This Is NOT
 
-This is an independent zgent, not a Gas Town managed agent. Do not use `gt` commands (`gt mol`, `gt mail`, `gt feed`, `gt done`, `gt prime`). Those are for Gas Town polecats/workers. Use `bd` for all beads operations.
+This is an independent zgent, not a Gas City managed agent. Do not use `gt` or `gc` commands. Use `bd` for all beads operations.
