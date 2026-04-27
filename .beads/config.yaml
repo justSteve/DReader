@@ -1,1 +1,5 @@
-prefix: dr
+issue_prefix: dr
+issue-prefix: dr
+dolt.auto-start: false
+
+sync.remote: "git+https://github.com/justSteve/DReader.git"

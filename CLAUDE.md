@@ -37,11 +37,11 @@ Collect information from Discord channels and make it queryable by sibling zgent
 
 ## Constraint: No Discord API Access
 
-DReader has no access to the Discord API — no bot token, no OAuth app, no REST endpoints. This is a permanent constraint, not a gap to be filled. All message retrieval must work through computer-use: automating the Discord desktop app (pywinauto) or browser-based UI (DOM scraping). Do not propose or build solutions that assume API access.
+DReader has no access to the Discord API — no bot token, no OAuth app, no REST endpoints. This is a permanent constraint, not a gap to be filled. All message retrieval must work through computer-use: browser-based DOM scraping (Playwright, Selenium). Do not propose or build solutions that assume API access.
 
 ## Architecture
 
-**Dual-language**: TypeScript (API, scrape engine, storage) + Python (keyboard-driven retrieval, clipboard automation)
+**Dual-language**: TypeScript (API, Playwright scrape engine, storage) + Python (Selenium scraper, shared DB)
 
 ### TypeScript Core
 
@@ -56,13 +56,13 @@ DReader has no access to the Discord API — no bot token, no OAuth app, no REST
 
 ### Python Retrieval (`src/retrieval/`)
 
-Keyboard-driven message retrieval that automates the Discord desktop app via pywinauto — no unofficial APIs. Clipboard-based extraction, session management, window control.
+Selenium-based Discord Web scraper. Automates Chrome to extract messages from discord.com DOM. Writes to the same SQLite database as the TypeScript scrape engine.
 
 ## What Every Claude Instance Must Understand
 
 1. **Beads-first is non-negotiable.** Read the gate at the top of this file. Use `bd` commands. No exceptions.
 2. **Service provider role.** DReader exists to serve other agents with Discord intel. See `.claude/rules/zgent-permissions.md`.
-3. **No Discord API.** All retrieval is computer-use (pywinauto, DOM scraping). Never propose API-based solutions.
+3. **No Discord API.** All retrieval is computer-use (Selenium, Playwright, DOM scraping). Never propose API-based solutions.
 4. **Structured logging.** Use `createLogger('component')` not `console.log`.
 
 ## Key Commands
@@ -89,7 +89,7 @@ bd prime             # Re-read PRIME.md (context for new sessions)
 | `src/domain/thread-reconstruction/` | Thread rebuilder |
 | `src/services/` | DatabaseService, schema |
 | `src/logging/` | Structured JSONL logger |
-| `src/retrieval/` | Python keyboard-driven retrieval |
+| `src/retrieval/` | Selenium Discord Web scraper |
 | `.beads/` | Beads (work authorization) |
 
 ## Session Completion
@@ -110,3 +110,51 @@ This project uses **bd (beads)** for issue tracking. Run `bd prime` to see full 
 
 - Use `bd` for ALL task tracking — do NOT use TodoWrite, TaskCreate, or markdown TODO lists
 - Run `bd prime` for detailed command reference and session close protocol
+
+
+<!-- BEGIN BEADS INTEGRATION v:1 profile:minimal hash:ca08a54f -->
+## Beads Issue Tracker
+
+This project uses **bd (beads)** for issue tracking. Run `bd prime` to see full workflow context and commands.
+
+### Quick Reference
+
+```bash
+bd ready              # Find available work
+bd show <id>          # View issue details
+bd update <id> --claim  # Claim work
+bd close <id>         # Complete work
+```
+
+### Rules
+
+- Use `bd` for ALL task tracking — do NOT use TodoWrite, TaskCreate, or markdown TODO lists
+- Run `bd prime` for detailed command reference and session close protocol
+- Use `bd remember` for persistent knowledge — do NOT use MEMORY.md files
+
+## Session Completion
+
+**When ending a work session**, you MUST complete ALL steps below. Work is NOT complete until `git push` succeeds.
+
+**MANDATORY WORKFLOW:**
+
+1. **File issues for remaining work** - Create issues for anything that needs follow-up
+2. **Run quality gates** (if code changed) - Tests, linters, builds
+3. **Update issue status** - Close finished work, update in-progress items
+4. **PUSH TO REMOTE** - This is MANDATORY:
+   ```bash
+   git pull --rebase
+   bd dolt push
+   git push
+   git status  # MUST show "up to date with origin"
+   ```
+5. **Clean up** - Clear stashes, prune remote branches
+6. **Verify** - All changes committed AND pushed
+7. **Hand off** - Provide context for next session
+
+**CRITICAL RULES:**
+- Work is NOT complete until `git push` succeeds
+- NEVER stop before pushing - that leaves work stranded locally
+- NEVER say "ready to push when you are" - YOU must push
+- If push fails, resolve and retry until it succeeds
+<!-- END BEADS INTEGRATION -->

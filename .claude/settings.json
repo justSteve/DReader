@@ -1,37 +1,5 @@
 {
   "hooks": {
-    "PreToolUse": [
-      {
-        "hooks": [
-          {
-            "command": "/root/projects/DReader/.claude/hooks/scripts/write-guard.sh",
-            "timeout": 2000,
-            "type": "command"
-          },
-          {
-            "command": "/root/projects/DReader/.claude/hooks/scripts/repo-guard.sh",
-            "timeout": 2000,
-            "type": "command"
-          }
-        ],
-        "matcher": ""
-      },
-      {
-        "hooks": [
-          {
-            "command": "/root/projects/DReader/.claude/hooks/scripts/bash-guard.sh",
-            "timeout": 2000,
-            "type": "command"
-          },
-          {
-            "command": "/root/projects/DReader/.claude/hooks/scripts/bead-gate.sh",
-            "timeout": 2000,
-            "type": "command"
-          }
-        ],
-        "matcher": "Bash"
-      }
-    ],
     "PostToolUse": [
       {
         "hooks": [
@@ -77,11 +45,52 @@
         "matcher": ""
       }
     ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/write-guard.sh",
+            "timeout": 2000,
+            "type": "command"
+          },
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/repo-guard.sh",
+            "timeout": 2000,
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      },
+      {
+        "hooks": [
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/bash-guard.sh",
+            "timeout": 2000,
+            "type": "command"
+          },
+          {
+            "command": "/root/projects/DReader/.claude/hooks/scripts/bead-gate.sh",
+            "timeout": 2000,
+            "type": "command"
+          }
+        ],
+        "matcher": "Bash"
+      }
+    ],
     "SessionStart": [
       {
         "hooks": [
           {
             "command": "/root/projects/DReader/.claude/hooks/scripts/session-start.sh",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      },
+      {
+        "hooks": [
+          {
+            "command": "bd prime",
             "type": "command"
           }
         ],
