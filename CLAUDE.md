@@ -37,42 +37,42 @@ Collect information from Discord channels and make it queryable by sibling zgent
 
 ## Constraint: No Discord API Access
 
-DReader has no access to the Discord API — no bot token, no OAuth app, no REST endpoints. This is a permanent constraint, not a gap to be filled. All message retrieval must work through computer-use: browser-based DOM scraping (Playwright, Selenium). Do not propose or build solutions that assume API access.
+DReader has no access to the Discord API — no bot token, no OAuth app, no REST endpoints. This is a permanent constraint, not a gap to be filled. All message retrieval must work through computer-use: browser-based DOM scraping via Playwright. Do not propose or build solutions that assume API access.
 
 ## Architecture
 
-**Dual-language**: TypeScript (API, Playwright scrape engine, storage) + Python (Selenium scraper, shared DB)
+Collection runs in Python (Playwright); the query/serve layer runs in TypeScript (Express + SQLite). Both halves share the same SQLite database.
 
-### TypeScript Core
+### TypeScript Query Layer
 
 | Layer | Path | Purpose |
 |-------|------|---------|
-| API | `src/api/` | Express REST server — channels, messages, threads, scrape jobs |
-| Scrape Engine | `src/domain/scrape-engine/` | Browser orchestrator, message scrolling, DOM selectors |
+| API | `src/api/` | Express REST server for channels, messages, threads (read-only query surface) |
 | Thread Reconstruction | `src/domain/thread-reconstruction/` | ThreadAnalyzer — rebuilds conversation threads from flat messages |
 | Storage | `src/services/` | DatabaseService (better-sqlite3), schema.sql |
 | Logging | `src/logging/` | Structured JSONL logger — transport-based, daily rotation, zero deps |
-| CLI | `src/cli/` | auth-setup, init-db, validate-config, db-reset |
+| CLI | `src/cli/` | init-db, validate-config, db-reset, db-backup |
 
 ### Python Retrieval (`src/retrieval/`)
 
-Selenium-based Discord Web scraper. Automates Chrome to extract messages from discord.com DOM. Writes to the same SQLite database as the TypeScript scrape engine.
+Playwright-based Discord Web scraper using AX-tree-first locators and a persistent browser context. Automates Chromium to extract messages from discord.com DOM and writes to the same SQLite database the TypeScript query layer reads from.
 
 ## What Every Claude Instance Must Understand
 
 1. **Beads-first is non-negotiable.** Read the gate at the top of this file. Use `bd` commands. No exceptions.
 2. **Service provider role.** DReader exists to serve other agents with Discord intel. See `.claude/rules/zgent-permissions.md`.
-3. **No Discord API.** All retrieval is computer-use (Selenium, Playwright, DOM scraping). Never propose API-based solutions.
+3. **No Discord API.** All retrieval is computer-use via Playwright DOM scraping. Never propose API-based solutions.
 4. **Structured logging.** Use `createLogger('component')` not `console.log`.
 
 ## Key Commands
 
 ```bash
-npm run dev          # Start API server
-npm run test         # Run Jest tests
-npm run auth-setup   # Configure Discord auth
+npm run dev          # Start API server (Express, query layer)
+npm run test         # Run Jest tests (TypeScript)
 npm run init-db      # Initialize SQLite database
 npm run db:reset     # Reset database
+PYTHONPATH=. .venv/bin/pytest tests/retrieval/   # Run Python scraper tests
+python -m src.retrieval --help                    # Playwright scraper CLI
 bd ready             # Find available work
 bd show <id>         # View issue details
 bd update <id> --claim  # Claim work
@@ -84,12 +84,11 @@ bd prime             # Re-read PRIME.md (context for new sessions)
 
 | Path | Purpose |
 |------|---------|
-| `src/api/` | Express REST server |
-| `src/domain/scrape-engine/` | Browser orchestrator |
+| `src/api/` | Express REST server (read-only query surface) |
 | `src/domain/thread-reconstruction/` | Thread rebuilder |
 | `src/services/` | DatabaseService, schema |
 | `src/logging/` | Structured JSONL logger |
-| `src/retrieval/` | Selenium Discord Web scraper |
+| `src/retrieval/` | Playwright Discord Web scraper (Python) |
 | `.beads/` | Beads (work authorization) |
 
 ## Session Completion
