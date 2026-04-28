@@ -4,7 +4,6 @@ import serversRouter from './routes/servers';
 import channelsRouter from './routes/channels';
 import messagesRouter from './routes/messages';
 import threadsRouter from './routes/threads';
-import scrapeRouter from './routes/scrape';
 import { createLogger } from '../logging/logger';
 
 const log = createLogger('api');
@@ -20,12 +19,15 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/api/health', (_req, res) => {
+  res.json({ status: 'ok' });
+});
+
 // Add domain routes
 app.use('/api/servers', serversRouter);
 app.use('/api/channels', channelsRouter);
 app.use('/api/messages', messagesRouter);
 app.use('/api/threads', threadsRouter);
-app.use('/api/scrape', scrapeRouter);
 
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3001;
 

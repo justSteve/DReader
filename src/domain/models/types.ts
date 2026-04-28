@@ -53,6 +53,7 @@ export interface DiscordConfig {
     scroll_delay_ms: number;
     messages_per_batch: number;
     max_retries: number;
+    max_scrolls?: number;
   };
   servers: ConfigServer[];
 }

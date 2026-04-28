@@ -9,7 +9,6 @@
     "dev": "ts-node src/api/index.ts",
     "test": "jest",
     "test:watch": "jest --watch",
-    "auth-setup": "ts-node src/cli/auth-setup.ts",
     "init-db": "ts-node src/cli/init-db.ts",
     "validate-config": "ts-node src/cli/validate-config.ts",
     "db:reset": "ts-node src/cli/db-reset.ts",
@@ -21,7 +20,6 @@
   "dependencies": {
     "@myorg/api-server": "file:../../packages/api-server",
     "@myorg/dashboard-ui": "file:../../packages/dashboard-ui",
-    "playwright": "^1.40.0",
     "better-sqlite3": "^9.2.0",
     "yaml": "^2.3.4",
     "express": "^4.18.2",
