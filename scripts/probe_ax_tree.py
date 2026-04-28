@@ -86,7 +86,8 @@ def main() -> None:
                     hasReplyById: !!el.querySelector('[id^="message-reply-"]'),
                     headingText: el.querySelector('h3')?.textContent?.trim() || null,
                     timeAttr: el.querySelector('time')?.getAttribute('datetime') || null,
-                    contentText: el.querySelector('[id^="message-content-"]')?.textContent?.trim()?.slice(0, 80) || null,
+                    contentText: (el.querySelector('[id^="message-content-"]')
+                        ?.textContent?.trim()?.slice(0, 80)) || null,
                 }));
             }
         """)

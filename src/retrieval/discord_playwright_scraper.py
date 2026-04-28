@@ -100,7 +100,8 @@ _SCROLL_JS = """
     if (!parent) return { at_top: true };
     const before = parent.scrollTop;
     parent.scrollTop = 0;
-    return { before, after: parent.scrollTop, at_top: before === parent.scrollTop || parent.scrollTop === 0 };
+    const after = parent.scrollTop;
+    return { before, after, at_top: before === after || after === 0 };
 }
 """
 
