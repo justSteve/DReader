@@ -1,29 +1,15 @@
-"""DReader retrieval subsystem — keyboard-driven Discord message capture.
-
-Platform-safe exports only. Window/keyboard/session modules require Windows.
-"""
+"""DReader retrieval subsystem — Playwright-based Discord scraper (in-progress migration)."""
 from __future__ import annotations
 
-from .config import RetrievalConfig
-from .errors import (
-    ChannelNotFoundError,
-    ClipboardTimeoutError,
-    DReaderError,
-    NavigationStuckError,
-    SessionError,
-    WindowFocusError,
-    WindowNotFoundError,
-)
-from .models import MessageRecord
+from .db import ScrapeDB
+from .errors import DReaderError
+from .logger import create_logger
+from .registry import ChannelTarget, Registry
 
 __all__ = [
-    "RetrievalConfig",
-    "MessageRecord",
+    "ScrapeDB",
+    "Registry",
+    "ChannelTarget",
     "DReaderError",
-    "WindowNotFoundError",
-    "WindowFocusError",
-    "ChannelNotFoundError",
-    "NavigationStuckError",
-    "ClipboardTimeoutError",
-    "SessionError",
+    "create_logger",
 ]
