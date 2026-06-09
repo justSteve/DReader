@@ -163,7 +163,12 @@
       "mcp__github__*",
       "Read(*)",
       "Glob(*)",
-      "Grep(*)"
+      "Grep(*)",
+      "Skill(tap-in)",
+      "Skill(handoff)",
+      "Skill(checkpoint)",
+      "Bash(column *)",
+      "Write(.claude/state/**)"
     ],
     "deny": [
       "Read(.env)",
