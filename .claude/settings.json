@@ -113,8 +113,6 @@
   "permissions": {
     "allow": [
       "Edit(*)",
-      "Write(*)",
-      "MultiEdit(*)",
       "Bash(cd *)",
       "Bash(echo *)",
       "Bash(pwd *)",
@@ -168,7 +166,7 @@
       "Skill(handoff)",
       "Skill(checkpoint)",
       "Bash(column *)",
-      "Write(.claude/state/**)"
+      "Edit(.claude/state/**)"
     ],
     "deny": [
       "Read(.env)",
