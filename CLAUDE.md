@@ -129,7 +129,7 @@ bd close <id>         # Complete work
 
 - Use `bd` for ALL task tracking — do NOT use TodoWrite, TaskCreate, or markdown TODO lists
 - Run `bd prime` for detailed command reference and session close protocol
-- Use `bd remember` for persistent knowledge — do NOT use MEMORY.md files
+- Use `bd remember` for short facts that must be injected into EVERY session at `bd prime` — keep it small; it is a context tax on every session
 
 ## Session Completion
 
