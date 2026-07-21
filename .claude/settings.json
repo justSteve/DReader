@@ -166,7 +166,17 @@
       "Skill(handoff)",
       "Skill(checkpoint)",
       "Bash(column *)",
-      "Edit(.claude/state/**)"
+      "Edit(.claude/state/**)",
+      "Bash(cut *)",
+      "Bash(tr *)",
+      "Bash(uniq *)",
+      "Bash(wc *)",
+      "Bash(grep *)",
+      "Bash(printf *)",
+      "Bash(basename *)",
+      "Bash(dirname *)",
+      "Bash(true)",
+      "Bash(false)"
     ],
     "deny": [
       "Read(.env)",
