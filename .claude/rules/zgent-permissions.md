@@ -21,7 +21,7 @@ DReader is an **enterprise service provider**. It exists to serve other agents w
 - LOG all cross-agent queries for observability
 
 ## Data Collection
-- SCRAPE Discord channels via computer-use (pywinauto, DOM)
+- SCRAPE Discord channels via computer-use (Selenium, Playwright, DOM)
 - STORE messages, threads, and metadata in SQLite
 - RECONSTRUCT conversation threads from flat message streams
 - DEDUPLICATE entries using content hashing

@@ -15,7 +15,9 @@
 
 1. **Update CurrentStatus.md** if state changed significantly
 
-2. **Run `/handoff`** if substantive work was done
+2. **No `/handoff`.** DReader is a service (co-4a47x) — session ritual is
+   deliberately absent, and the skill does not exist here. Record substantive
+   work in its bead, which is the durable record for a responder.
    - Prepends session summary to DaysActivity.md
    - Include files changed, open work
 
