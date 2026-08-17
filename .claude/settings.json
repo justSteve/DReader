@@ -5,7 +5,7 @@
         "hooks": [
           {
             "command": "/root/projects/DReader/.claude/hooks/scripts/ops-trail-logger.sh",
-            "timeout": 5000,
+            "timeout": 10,
             "type": "command"
           }
         ],
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "command": "/root/projects/DReader/.claude/hooks/scripts/failure-logger.sh",
-            "timeout": 2000,
+            "timeout": 5,
             "type": "command"
           }
         ],
@@ -29,7 +29,7 @@
         "hooks": [
           {
             "command": "/root/projects/DReader/.claude/hooks/scripts/pre-compact.sh",
-            "timeout": 5000,
+            "timeout": 10,
             "type": "command"
           }
         ],
@@ -50,12 +50,12 @@
         "hooks": [
           {
             "command": "/root/projects/DReader/.claude/hooks/scripts/write-guard.sh",
-            "timeout": 2000,
+            "timeout": 5,
             "type": "command"
           },
           {
             "command": "/root/projects/DReader/.claude/hooks/scripts/repo-guard.sh",
-            "timeout": 2000,
+            "timeout": 5,
             "type": "command"
           }
         ],
@@ -65,12 +65,12 @@
         "hooks": [
           {
             "command": "/root/projects/DReader/.claude/hooks/scripts/bash-guard.sh",
-            "timeout": 2000,
+            "timeout": 5,
             "type": "command"
           },
           {
             "command": "/root/projects/DReader/.claude/hooks/scripts/bead-gate.sh",
-            "timeout": 2000,
+            "timeout": 5,
             "type": "command"
           }
         ],
@@ -102,7 +102,7 @@
         "hooks": [
           {
             "command": "/root/projects/DReader/.claude/hooks/scripts/shutdown-filter.sh",
-            "timeout": 2000,
+            "timeout": 5,
             "type": "command"
           }
         ],

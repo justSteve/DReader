@@ -65,7 +65,12 @@ enforcement_detect_repo_root() {
 ENFORCEMENT_BYPASS="${GT_ENFORCEMENT_BYPASS:-0}"
 
 # --- Logging ------------------------------------------------------------------
-ENFORCEMENT_LOG="/var/moo/audit/enforcement.jsonl"
+# Overridable by env so test suites can redirect their fixtures out of the live
+# audit trail, which all zgents share [co-03ojd.4, sweep D-F9]. DReader has no
+# hook test suite of its own today, so this repo is not currently a source of
+# fixture rows; the line is kept identical to COO's so the shared library does
+# not drift a second time.
+ENFORCEMENT_LOG="${ENFORCEMENT_LOG:-/var/moo/audit/enforcement.jsonl}"
 
 enforcement_log() {
     local hook="$1"

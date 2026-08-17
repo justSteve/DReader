@@ -16,13 +16,17 @@ enforcement_trap
 
 # --- Read and filter ----------------------------------------------------------
 enforcement_read_input
-enforcement_require_tool "Write" "Edit" "MultiEdit"
+# NotebookEdit reaches the same filesystem as Write/Edit and was simply absent
+# from this list, so a .ipynb anywhere on the box was writable unguarded
+# [co-03ojd.4, sweep D-F3]. It carries the path under `notebook_path`, not
+# `file_path` — adding the tool name alone leaves the guard inert.
+enforcement_require_tool "Write" "Edit" "MultiEdit" "NotebookEdit"
 enforcement_detect_repo_root
 
 HOOK_NAME="write-guard"
 
 # --- Extract file path and content -------------------------------------------
-FILE_PATH=$(echo "$TOOL_INPUT" | jq -r '.file_path // empty')
+FILE_PATH=$(echo "$TOOL_INPUT" | jq -r '.file_path // .notebook_path // empty')
 [[ -z "$FILE_PATH" ]] && exit 0
 
 # Extract content based on tool type
@@ -33,10 +37,22 @@ elif [[ "$TOOL_NAME" == "Edit" ]]; then
     CONTENT=$(echo "$TOOL_INPUT" | jq -r '.new_string // empty')
 elif [[ "$TOOL_NAME" == "MultiEdit" ]]; then
     CONTENT=$(echo "$TOOL_INPUT" | jq -r '.edits[]?.new_string // empty' 2>/dev/null)
+elif [[ "$TOOL_NAME" == "NotebookEdit" ]]; then
+    CONTENT=$(echo "$TOOL_INPUT" | jq -r '.new_source // empty')
 fi
 
 # --- Protected Path Check -----------------------------------------------------
-if echo "$FILE_PATH" | grep -qiE '(^|/)\.ssh/|\.pem$|\.key$|credentials|secret|id_rsa|id_ed25519'; then
+# Anchored to directory segments, file extensions, and whole basenames — never a
+# bare word anywhere in the path. The previous pattern carried bare `credentials`
+# and `secret`, so prose ABOUT credentials could not be written with the Write
+# tool: myDesk/reports/secrets-handling-policy.md and
+# docs/runbooks/credentials-rotation.md were both denied, 75 protected_path
+# denials since 2026-08-02, while the same write succeeded via Bash — friction
+# without safety [co-03ojd.4, sweep D-F11]. The content scan below is the real
+# control and is unchanged; this check is only for files whose NAME says they
+# hold a credential.
+PROTECTED_PATH_RE='(^|/)\.ssh/|(^|/)\.env(\.[^/]*)?$|\.pem$|\.key$|(^|/)credentials(\.[^/]*)?$|(^|/)secrets?(\.[^/]*)?$|(^|/)id_rsa|(^|/)id_ed25519'
+if echo "$FILE_PATH" | grep -qiE "$PROTECTED_PATH_RE"; then
     enforcement_deny "$HOOK_NAME" "protected_path" \
         "Write to protected path blocked: $FILE_PATH" \
         "$FILE_PATH"
