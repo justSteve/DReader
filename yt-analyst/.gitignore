@@ -1,7 +1,9 @@
 # working data — never commit (see CLAUDE.md Housekeeping)
-runs/
-frames-*/
+videos/*/runs/
+videos/*/frames-*/
 .venv/
 .env
+# transfer vehicles
+files.zip
 # Windows ADS metadata
 *:Zone.Identifier
