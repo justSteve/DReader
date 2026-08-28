@@ -1,0 +1,7 @@
+# working data — never commit (see CLAUDE.md Housekeeping)
+runs/
+frames-*/
+.venv/
+.env
+# Windows ADS metadata
+*:Zone.Identifier
