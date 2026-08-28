@@ -89,3 +89,14 @@ doctrine and mark the entry `promoted`.
   `-o clip.%(ext)s` then glob `clip.*`; applied to v0.2 (64f8bd9) and
   re-applied to v0.3 on deploy [dr-dji]. Verified: 5s window → `clip.webm`
   → 5 frames.
+
+- 2026-08-28 confirmed — Asking for VERBATIM transcription across a whole
+  long video trips Gemini's RECITATION filter: `finish_reason=RECITATION`,
+  `resp.text=None`, 119K prompt tokens billed, nothing returned (QaNPAaEnB5E,
+  21 min). Same video, same question reworded "in your own words / paraphrase
+  (do not transcribe speech)" → full answer. Rule: wide passes ask for
+  paraphrase + structure + dense-data timestamps; "verbatim" only on clipped
+  windows (1-3 min), where it has never tripped. v0.3 now reports
+  finish_reasons instead of crashing on an empty response [dr-08s.9].
+  PROPOSE CLAUDE.md doctrine step 2: add "paraphrase, never verbatim, on the
+  wide pass".

@@ -232,6 +232,19 @@ def cmd_ask(args):
     )
 
     text = resp.text
+    if text is None:
+        # Empty response: blocked, truncated, or unprocessable video. Surface
+        # the reason instead of dying in json.loads [dr-08s.9].
+        cands = getattr(resp, "candidates", None) or []
+        reasons = [str(getattr(c, "finish_reason", None)) for c in cands]
+        fb = getattr(resp, "prompt_feedback", None)
+        text = ""
+        empty_diag = {"finish_reasons": reasons,
+                      "prompt_feedback": str(fb) if fb else None}
+        print(f"[empty response from {answered_model}: "
+              f"finish_reasons={reasons} prompt_feedback={fb}]", file=sys.stderr)
+    else:
+        empty_diag = None
     try:
         payload = json.loads(text)
     except json.JSONDecodeError:
@@ -240,7 +253,7 @@ def cmd_ask(args):
             payload = json.loads(cleaned)
         except json.JSONDecodeError:
             payload = {"summary": None, "claims": [], "uncertainties": [],
-                       "raw_unparsed": text}
+                       "raw_unparsed": text, "empty_response": empty_diag}
 
     usage = getattr(resp, "usage_metadata", None)
     ts = datetime.now().strftime("%Y%m%d-%H%M%S")
