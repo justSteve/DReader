@@ -141,3 +141,29 @@ doctrine and mark the entry `promoted`.
   paths in ~6.5 min / ~90K tokens, caught all four findings above, and kept
   ~30 JPEGs out of the parent context. Give it the claim list and the
   frame→timestamp formula; ask for "additional on-screen text not reported".
+
+- 2026-08-28 confirmed — WIDE-vs-ZOOM DISAGREEMENT, arithmetic as tiebreaker
+  before frames: on the same trade log the wide pass read $18,750 / 8.33R and
+  the zoom read $14,750 / 6.33R. Only the wide set closed four independent
+  equations (P&L, planned R, realized R, target distance); frames confirmed
+  it. Two runs on the same screen are a free consistency check — when they
+  differ, arithmetic usually picks the winner and frames confirm.
+  (eJZhX6Xz4cU 17:26)
+
+- 2026-08-28 suspected — DENSE NUMERIC GRIDS: Gemini misread 4 of 21 cells on
+  a footprint ladder (e.g. `9×45` → `17×27`, `886×972` → `890×813`) while
+  getting the other 17 exact and every slide sentence word-perfect. Per-cell
+  error ~20% on 3-4 digit numbers packed at ~12px. Cheap structural checks
+  for footprint data: delta = ask − bid, and delta ≡ total volume (mod 2).
+  Otherwise frames. (eJZhX6Xz4cU 08:08; Opus verifier)
+
+- 2026-08-28 suspected — COLOR ATTRIBUTION is weaker than text: one Time &
+  Sales row Gemini called red reads green in two frames (Opus). Where color
+  carries meaning (buy/sell, positive/negative delta), verify by pixels or by
+  the number's sign, not by Gemini's color word. (eJZhX6Xz4cU 07:53)
+
+- 2026-08-28 confirmed — Gemini reliably tags spoken-only settings as
+  `spoken` rather than inventing on-screen text for them ("Sierra Chart",
+  "20 tick / 5 point range" — no settings panel ever appeared). The `kind`
+  field is trustworthy for provenance at the claim level; the failure mode
+  is derived NUMBERS labelled `visual`, not spoken words labelled `onscreen`.
