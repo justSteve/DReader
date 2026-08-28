@@ -107,7 +107,7 @@ doctrine and mark the entry `promoted`.
   genuinely fast-moving content, not used as a quality knob. Approved by
   Steve with the three entries above (CLAUDE.md "Sampling knobs").
 
-- 2026-08-28 suspected — LABEL FUSION: Gemini merged two spatially separate
+- 2026-08-28 confirmed (see glyph-confusion entry) — LABEL FUSION: Gemini merged two spatially separate
   chart labels into one string. Chart showed `15m ($5771)` (top right) and
   `RESISTANCE ($5730)` (bottom right); Gemini reported one label
   "RESISTANCE (1515m)" — a string that exists nowhere on screen, with both
@@ -200,3 +200,21 @@ doctrine and mark the entry `promoted`.
   ten bar values from a Goldman daily-P&L chart and they summed to the
   slide's headline figures (236 / 112 / 41) — structural checks work for
   charts as well as trade logs; hallucinated bars don't sum.
+
+- 2026-08-28 confirmed (3rd observation, root cause) — The "label fusion"
+  pattern is a GLYPH CONFUSION: Gemini reads the pair `$5` as `60`.
+  `0p ($5806)` → "Tp (6080)"; `15m ($5771)` → "15m (60775)"; `RESISTANCE
+  ($5730)` → "RESISTANCE (60720)" (00QtD-RosLg 06:55, checked directly);
+  earlier "RESISTANCE (1515m)" / "(151759)" are the same confusion plus
+  neighbour bleed. Expect it on any `$5xxx` price label at small font (ES
+  prices in 2024–25 all start with 5!). Rule: a parenthetical price on this
+  channel's charts is only trusted from frames. Marking the two earlier
+  `suspected` fusion entries `confirmed` under this root cause.
+
+- 2026-08-28 confirmed (3rd observation) — DENSE GRID error rate holds:
+  5 of 21 rows wrong on a clean, high-contrast bid×ask ladder (00QtD-RosLg
+  09:13; errors include swapped rows, invented 1466×2315, dropped 1157×1409,
+  and a wrong row count "20"). Combined with eJZhX6Xz4cU (4/21) the rate is
+  ~20–25% per row regardless of legibility. Grids > ~10 rows: frames only.
+  PROPOSE CLAUDE.md: add to doctrine step 3 — "never take a ladder/table
+  > 10 rows from Gemini alone; pull frames".
