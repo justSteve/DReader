@@ -167,3 +167,36 @@ doctrine and mark the entry `promoted`.
   "20 tick / 5 point range" — no settings panel ever appeared). The `kind`
   field is trustworthy for provenance at the claim level; the failure mode
   is derived NUMBERS labelled `visual`, not spoken words labelled `onscreen`.
+
+- 2026-08-28 confirmed (2nd observation) — LABEL FUSION recurs: `RESISTANCE
+  ($5730)` reported as "RESISTANCE (151759)" (0QlGCz6U_1g 05:25), after
+  "RESISTANCE (1515m)" in QaNPAaEnB5E. Same channel, same label style
+  `NAME ($price)`. Any parenthetical that isn't a clean `$dddd` is a misread;
+  the dollar sign is dropped every time. Pull frames for zone labels.
+
+- 2026-08-28 suspected — PROGRESSIVE SLIDE BUILDS get collapsed: the wide
+  pass reported a six-bullet slide at 07:07 when only the header was on
+  screen; the full list appeared by 09:39. A wide-pass timestamp for a slide
+  marks first appearance; verbatim text may come from minutes later. When
+  order/timing matters, zoom the window and ask when each bullet appears.
+
+- 2026-08-28 suspected — WRONG-TAB INSTRUMENT: Gemini reported "NQZ4 (CME)"
+  from an inactive Bookmap tab while the displayed chart was ES (axis
+  5733–5754; NQ was ~20,000). Also appended "250 Vol" that was not visible.
+  Sanity-check any instrument read against the price axis.
+
+- 2026-08-28 suspected — TIMESTAMP FIELDS: `10:03:39.368 (EDT)` became
+  "10:03:39 PM EDT (+00)" — milliseconds reinterpreted as meridiem/offset.
+  Treat clock strings as approximate to the second; don't trust AM/PM or
+  timezone suffixes without frames.
+
+- 2026-08-28 suspected — WIDE PASS SKIPS SEGMENTS: a ~55 s chart segment
+  ("Buying every single move up or down", 06:10–07:06) was absent from the
+  wide pass's 13 claims; the verifier found it in a frame pulled for the
+  next slide. The wide pass is a sample, not a table of contents — cheap
+  insurance is one extra zoom over any gap > 60 s between claims.
+
+- 2026-08-28 confirmed — ARITHMETIC ON HISTOGRAMS: the verifier transcribed
+  ten bar values from a Goldman daily-P&L chart and they summed to the
+  slide's headline figures (236 / 112 / 41) — structural checks work for
+  charts as well as trade logs; hallucinated bars don't sum.
