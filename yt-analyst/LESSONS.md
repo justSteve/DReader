@@ -218,3 +218,21 @@ doctrine and mark the entry `promoted`.
   ~20–25% per row regardless of legibility. Grids > ~10 rows: frames only.
   PROPOSE CLAUDE.md: add to doctrine step 3 — "never take a ladder/table
   > 10 rows from Gemini alone; pull frames".
+
+- 2026-08-28 suspected — `$` GLYPH → "1": journal input boxes showing
+  `$ 5631.0` were transcribed "1 5631.0" by both the wide pass and a zoom
+  (5qBo04SMUFc 25:36). Sibling of the `$5`→`60` confusion: the dollar sign
+  at small size is unstable. Strip/ignore a stray leading "1 " before a
+  price and check frames when the `$` matters.
+
+- 2026-08-28 confirmed — PRIOR-KNOWLEDGE LEAK: the wide pass named the
+  channel "InvestiTrade" (5qBo04SMUFc) and "Invest Trade" (7facFfjQ0UE);
+  no such wordmark exists on screen in either (verifier + direct check).
+  Names, brands and affiliations in a `summary` are not transcription —
+  only `verbatim` fields with frame backing count for identity claims.
+
+- 2026-08-28 suspected — ADJACENT-ROW BLEED on footprints: Gemini reports
+  the top cell correctly (29/29, 136/136, 51/51) then invents the row below
+  as a copy of a nearby number ("131/131", "141/141") where the real rows
+  are 333/491 and 61/147. Trust the FIRST cell it names at an extreme;
+  treat "followed by …" continuations as unverified.
