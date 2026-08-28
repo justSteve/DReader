@@ -258,3 +258,22 @@ doctrine and mark the entry `promoted`.
   2–4 s early: Gemini stamps a slide at the moment its title appears, but
   bullets animate in afterwards (w7tvJCuZAq8 16:39→16:43, 23:25→23:29;
   0QlGCz6U_1g 07:07→09:39). Pad frame pulls +5 s after a slide timestamp.
+
+- 2026-08-28 confirmed (2nd observation) — WIDE-vs-ZOOM disagreement,
+  arithmetic first: on tgQC7Dpcc8A trade 1 the WIDE pass was wrong
+  (−$2,600 / 5.96R) and the zoom right (−$2,625 / 5.86R) — the reverse of
+  eJZhX6Xz4cU. Neither shape is privileged; the closing set wins, frames
+  confirm. Also: a DOM row VPS 1937 / VPB 3570 / VPD 1633 / SVP 5507 closes
+  both column identities (difference and sum) — a live ladder row is a
+  free two-equation check.
+
+- 2026-08-28 suspected — DECORATIVE GLYPHS INVENTED: Gemini rendered the
+  journal's `$` input-box prefixes as "↑ 5820.0" / "↓ 5808.5" (arrows that
+  don't exist), after reading the same prefix as "1" elsewhere. Any
+  symbol adjacent to a number in `verbatim` is suspect; the digits are
+  usually right.
+
+- 2026-08-28 confirmed — SUBAGENT HYGIENE: one Opus verifier hung ~60 min
+  on an API error with zero output; the retry with "do item 1 FIRST, keep
+  under ~25 tool calls" finished in 33 min. Give verifiers an explicit
+  priority order and a call budget, and nudge after 30 min of silence.
