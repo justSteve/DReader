@@ -236,3 +236,25 @@ doctrine and mark the entry `promoted`.
   as a copy of a nearby number ("131/131", "141/141") where the real rows
   are 333/491 and 61/147. Trust the FIRST cell it names at an extreme;
   treat "followed by …" continuations as unverified.
+
+- 2026-08-28 confirmed — PARITY CHECK IS DECISIVE for footprint cells: a
+  Gemini "−583" beside volume 1498 is impossible (delta = ask − bid and
+  volume = ask + bid share parity); pixels read −538 (w7tvJCuZAq8 27:18).
+  Run delta ≡ volume (mod 2) on every cited cell before frames; a parity
+  failure is a transcription error with certainty. `promoted` candidate
+  for doctrine step 4 (structural checks) — PROPOSE CLAUDE.md.
+
+- 2026-08-28 suspected — CROSS-CHART BLEED: the price axis Gemini gave for
+  the 03:19 chart (5645–5690) belongs to the footprint shown minutes later
+  (5648–5664); the real axis was 5850–5935. In a multi-chart segment,
+  attribute axes/levels to a chart only from a frame at that timestamp.
+
+- 2026-08-28 suspected — SPOKEN ROUND-OFFS become values: "1700 / +1300"
+  (on screen 1775 / +1319) and "1200" (1245) were reported as the
+  figures. When a claim is `spoken`, the number is the presenter's
+  rounding; the on-screen cell is the record — pull it.
+
+- 2026-08-28 confirmed (2nd observation) — Slide/bullet timestamps run
+  2–4 s early: Gemini stamps a slide at the moment its title appears, but
+  bullets animate in afterwards (w7tvJCuZAq8 16:39→16:43, 23:25→23:29;
+  0QlGCz6U_1g 07:07→09:39). Pad frame pulls +5 s after a slide timestamp.
