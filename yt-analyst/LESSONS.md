@@ -39,7 +39,7 @@ doctrine and mark the entry `promoted`.
   Cost shape: one wide pass per video, then unlimited cheap zooms.
   `promoted` (CLAUDE.md doctrine steps 1-2)
 
-- 2026-08-28 confirmed — `--fps` WORKS; `--resolution` is INERT for YouTube-URL
+- 2026-08-28 promoted — `--fps` WORKS; `--resolution` is INERT for YouTube-URL
   ingestion. Controlled comparison, same 60s window (ZVvVgcX84F0 01:00-02:00,
   same question, 5 runs): default 5,699 = `--resolution low` 5,699 =
   `--resolution high` 5,699; `--fps 5` 21,539 = `--fps 5 --resolution high`
@@ -51,7 +51,7 @@ doctrine and mark the entry `promoted`.
   entry above (now `superseded`). Runs: videos/ZVvVgcX84F0/runs/20260828-1016*
   to -1019*. PROPOSE CLAUDE.md: drop `--resolution` from doctrine; note fps.
 
-- 2026-08-28 confirmed (amends "~300 tokens/sec") — At default knobs this
+- 2026-08-28 promoted (amends "~300 tokens/sec") — At default knobs this
   video cost ~92-95 prompt tokens per second of video across every shape:
   wide pass 658s → 60,165; 195s zoom → 18,035; 300s zoom → 27,639; 60s →
   5,699. The ~300/s figure is Gemini's documented default-resolution rate;
@@ -59,7 +59,7 @@ doctrine and mark the entry `promoted`.
   Budget ~100 tok/s at default, ~360 tok/s at `--fps 5`. Full 11-minute video
   ≈ 60K tokens. PROPOSE CLAUDE.md doctrine step 2: "~100 tokens/second".
 
-- 2026-08-28 confirmed (amends arithmetic lesson) — Arithmetic consistency
+- 2026-08-28 promoted (amends arithmetic lesson) — Arithmetic consistency
   proves a number SET is coherent, not that it was READ OFF SCREEN. Gemini
   reported the tastytrade ticket as "Limit -6.50 db, Max Profit 850, Max Loss
   650, Net Debit 650" (kind: visual). Frames showed Limit 7.60 / Max Profit
@@ -100,3 +100,9 @@ doctrine and mark the entry `promoted`.
   finish_reasons instead of crashing on an empty response [dr-08s.9].
   PROPOSE CLAUDE.md doctrine step 2: add "paraphrase, never verbatim, on the
   wide pass".
+
+- 2026-08-28 promoted — Default 1 fps sampling is the doctrine default: in the
+  same 5-run comparison it read every table cell correctly while `--fps 5`
+  fragmented claims without improving accuracy. `--fps` is reserved for
+  genuinely fast-moving content, not used as a quality knob. Approved by
+  Steve with the three entries above (CLAUDE.md "Sampling knobs").
