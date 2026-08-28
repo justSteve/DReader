@@ -277,3 +277,23 @@ doctrine and mark the entry `promoted`.
   on an API error with zero output; the retry with "do item 1 FIRST, keep
   under ~25 tool calls" finished in 33 min. Give verifiers an explicit
   priority order and a call budget, and nudge after 30 min of silence.
+
+- 2026-08-28 confirmed — FABRICATED CHROME: Gemini reported a TradingView
+  chart header `ES • 1 • CBOE / O 5834.00 H 5834.00 L 5833.00 C 5833.75 …
+  Volume 24.49K` (7facFfjQ0UE 01:26) — none of it on screen (actual
+  5781.75/…/6.044K, no "CBOE"), and a "Commissions $0.00" row that the
+  journal doesn't render. Header/legend/footer text is where Gemini
+  invents plausible filler; treat platform chrome as unverified unless
+  frames back it, and never quote a legend OHLC as a trade price.
+
+- 2026-08-28 confirmed (2nd observation) — TIME & SALES rows: 6 of 14
+  rows had a wrong digit (price, size or timestamp) while row order and
+  structure were right (7facFfjQ0UE 09:46; eJZhX6Xz4cU had 1 color error
+  in 9). Same ~20–40 % per-row failure as footprint ladders. Tape
+  tables: frames only.
+
+- 2026-08-28 confirmed — CROSS-EPISODE CONSISTENCY is a free verifier:
+  the Oct 3 2024 trade recurs in three episodes (eps. 2, 7, 8) with
+  identical fields, and ep. 7's Bookmap tooltip (Δ −1171, vol 1739 at
+  5739.75/5740) matches ep. 2's footprint outlier. A series shares
+  sessions and slides; check the earlier card before re-pulling frames.
