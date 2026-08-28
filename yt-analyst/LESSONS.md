@@ -106,3 +106,38 @@ doctrine and mark the entry `promoted`.
   fragmented claims without improving accuracy. `--fps` is reserved for
   genuinely fast-moving content, not used as a quality knob. Approved by
   Steve with the three entries above (CLAUDE.md "Sampling knobs").
+
+- 2026-08-28 suspected — LABEL FUSION: Gemini merged two spatially separate
+  chart labels into one string. Chart showed `15m ($5771)` (top right) and
+  `RESISTANCE ($5730)` (bottom right); Gemini reported one label
+  "RESISTANCE (1515m)" — a string that exists nowhere on screen, with both
+  dollar figures dropped. Any `verbatim` that looks like a composite (two
+  units, a parenthetical that doesn't parse) is a candidate fusion; pull
+  frames. (QaNPAaEnB5E 16:59; Opus verifier, frames-1655-1750/f_0002.jpg)
+
+- 2026-08-28 suspected — TRUNCATION AT OCCLUSIONS presented as complete:
+  "Daily Avg: 1,475" was `Daily Avg: 1,475,6…` cut off by the webcam bubble —
+  a ~1.47M volume figure reported as 1,475 with no uncertainty flag. Pairs
+  with the partial-text COMPLETION lesson (dates): Gemini neither flags
+  partial text as partial nor its completions as guesses. Numbers adjacent
+  to an overlay (webcam, cursor, drawing) need frames. (QaNPAaEnB5E 16:59)
+
+- 2026-08-28 suspected — FABRICATED JUSTIFICATION inside `uncertainties`:
+  Gemini wrote "ticker partially occluded by red text" when no header was in
+  frame at all (crop starts below it) and no red text existed at that
+  timestamp. The uncertainty itself was honest (ticker unknown); the stated
+  REASON was invented. Trust the flag, not the explanation. (QaNPAaEnB5E)
+
+- 2026-08-28 suspected — NARRATION ORDER ≠ CHART CHRONOLOGY: Gemini's
+  paraphrase followed the presenter's speaking order (resistance rejection →
+  selloff → support bounce) but on the chart the support bounce is at the
+  far left, before the rally. Paraphrases of chart walkthroughs describe the
+  narration; do not read them as a time sequence without frames.
+  (QaNPAaEnB5E 17:05–17:58)
+
+- 2026-08-28 confirmed — Opus subagent as second reader works: one
+  general-purpose Opus agent, read-only, given run dirs + frame dirs + a
+  numbered checklist, returned a per-item AGREE/DISAGREE report with frame
+  paths in ~6.5 min / ~90K tokens, caught all four findings above, and kept
+  ~30 JPEGs out of the parent context. Give it the claim list and the
+  frame→timestamp formula; ask for "additional on-screen text not reported".
