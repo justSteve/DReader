@@ -297,3 +297,109 @@ doctrine and mark the entry `promoted`.
   identical fields, and ep. 7's Bookmap tooltip (Δ −1171, vol 1739 at
   5739.75/5740) matches ep. 2's footprint outlier. A series shares
   sessions and slides; check the earlier card before re-pulling frames.
+
+- 2026-08-29 promoted (code) — RUN-DIR COLLISION: two parallel `ask`
+  calls in the same second archived to the same `runs/<ts>/`; the second
+  overwrote the first's request/response (jb6Odrq6alA 070547). v0.3 now
+  suffixes `-2`, `-3`… on collision [dr-8qq.11]. Recovery note: stdout
+  carries the full JSON, so a clobbered archive can be rebuilt from the
+  call's log (done for runs/20260829-070547-z5).
+
+- 2026-08-29 promoted (code) — FRAMES / VP9: with yt-dlp 2026.8.19 +
+  ffmpeg 6.1.1 the default `bv*+ba` selector chose a VP9/webm stream whose
+  `--download-sections` clip had a zero-length video track (`frame=0`),
+  and the fps filter then exited 183. An explicit avc1/mp4 selector
+  returns a full 1920×1072 clip and is ~7× faster (15 s vs 101 s for 10
+  s). Selector reordered to prefer avc1/mp4 [dr-8qq.12]. Symptom to
+  recognise: `clip.webm` present, ffprobe video DURATION 00:00:00.
+
+- 2026-08-29 promoted (code) — TRANSPORT ERRORS: under 3–4 parallel asks
+  one call died with `httpx.RemoteProtocolError: Server disconnected
+  without sending a response` — not an `APIError`, so not retried.
+  `generate_with_retry` now treats `httpx.TransportError` like a 503
+  [dr-8qq.13]. Batch runners should grep their logs for `Traceback`; a
+  missing run dir is the tell.
+
+- 2026-08-29 confirmed (2nd observation) — FABRICATED JUSTIFICATION in
+  `uncertainties`: "addresses hidden behind ellipsis graphics" on a table
+  with no ellipses (Ex5Dk_wVygw 09:20; Opus verifier). With QaNPAaEnB5E's
+  "occluded by red text" this is now confirmed: the flag is honest, the
+  stated reason is not. Never quote an uncertainty's explanation.
+
+- 2026-08-29 confirmed — REGULARIZATION: Gemini repairs inconsistent
+  on-screen sequences into the pattern it expects and reports the repair
+  as transcription. Three forms in one playlist: a spread ladder whose
+  T3 prints "$100.00 Buy" came back "$100.15 Buy → +10¢ → $100.25"
+  (jb6Odrq6alA 08:21); a schematic with only ④ and ⑥ printed came back
+  numbered 1–6 (7F9wBYse-Nk 04:08); a decision tree came back with an edge
+  moved to the "expected" parent (EW_TtV_rgzY 10:53). Sibling of DERIVED
+  NUMBERS (Cherry Bomb). Rule: anything stepped, laddered, numbered or
+  branching is frames-only; a sequence that closes too neatly is suspect.
+
+- 2026-08-29 confirmed (4 videos) — AI-GENERATED CHART PASTICHES are not
+  flagged: on a channel whose "TradingView" charts are illustrations
+  (garbled chrome "BAHANCE"/"Fulilish"/"1 mininute", non-monotonic axes,
+  OHLC with L > H), Gemini reports the drawn overlay's "BTC/USDT 4H" as
+  chart metadata and invents the rest — "Coinbase", "Binance", "30k–69k",
+  "May to October", "Nov 2022 to May 2023", axis values "1178.00 /
+  1180.00 / 08:31" that appear nowhere (oktlv1rOG9Q 00:10 & 01:05,
+  7F9wBYse-Nk 06:05, Ex5Dk_wVygw 13:22). It never says "this chart is
+  incoherent". Rule: on illustrated channels, ask zooms for drawn
+  annotations only and carry no exchange/date/axis value from a `visual`
+  claim into a card without a frame. Tell for a new channel: one frame of
+  any chart — if the price axis isn't monotonic, the whole channel's
+  charts are decor.
+
+- 2026-08-29 confirmed (6 videos) — LOGO WORDMARK MISREAD: the same
+  bottom-right "SMART MONEY DECODE X" logo was returned as "SMART MONEY
+  HUSTLE", "SMART MONEY DEFENSE", "SMART MONEY SOURCE", "SMART MONEY
+  TREE", "SMART MONEY SECRET" and "Smart Money Decodex" across the
+  playlist's wide passes and zooms. Small-font brand text is completed
+  from priors — the same mechanism as the "InvestiTrade" PRIOR-KNOWLEDGE
+  LEAK. Channel identity comes from yt-dlp metadata plus one frame, never
+  from Gemini's summary or a logo claim.
+
+- 2026-08-29 confirmed (3rd observation) — WIDE-vs-ZOOM disagreement, this
+  time the wide pass right ("+500 pip") and the zoom wrong ("> 600 PIPS")
+  on a drawn chart annotation (Ex5Dk_wVygw 04:33). Score is now 1–2; no
+  shape is privileged. Two reads of the same text that differ = frames.
+
+- 2026-08-29 confirmed (2nd observation; amends TRUNCATION AT OCCLUSIONS)
+  — WATERMARK COMPLETION: this channel's logo hides the last word of any
+  right-aligned line. Gemini completed "Execute Trades with D…" as "Low
+  Risk" and an occluded table cell as "GOVERNMENTS", both unflagged
+  (EW_TtV_rgzY 08:40, Ex5Dk_wVygw 01:23). With QaNPAaEnB5E's "Daily Avg:
+  1,475" the pattern is confirmed: text cut by an overlay is either
+  truncated or invented, never marked partial. Rule: the final word under
+  a persistent watermark is unread until framed; note the channel's
+  watermark position in its first card's Lessons.
+
+- 2026-08-29 confirmed (amends DENSE GRID lessons) — GRID OMISSION is a
+  distinct failure from GRID ERROR: on large hand-lettered order-book
+  ladders Gemini transcribed 28/28 rows digit-perfect (GGe2widuvPs) — the
+  ~20–25 % per-row error is a small-font/platform-chrome phenomenon — but
+  it skipped three other ladders in the same video entirely, including
+  the one carrying the narrated number. Rule unchanged (load-bearing
+  grids are frames-only) but the reason splits: legibility → row errors;
+  coverage → whole grids missing. When narration implies a table, pull
+  frames whether or not the zoom returned one.
+
+- 2026-08-29 suspected — HEADLINE DROP: two zooms omitted the largest text
+  on the frame (a white headline) while reporting the smaller labels
+  beside it (EW_TtV_rgzY 04:23 "4H SHOWS HOW PRICE MOVES BETWEEN DAILY
+  LEVELS", 05:37 "1H ENTRY — TIGHT STOP, PRECISE LOCATION."). Caught by
+  the verifier's "additional text not reported" item. Keep that item in
+  every verifier checklist.
+
+- 2026-08-29 confirmed — VERIFIER PATTERN at scale: nine Opus verifiers on
+  one playlist, each with "do item 1 FIRST", a ~25-call budget and the
+  frame→timestamp formula: 5.5–10 min, 13–24 tool calls, 97–117K tokens
+  each, zero hangs, and every one surfaced at least one finding the
+  parent had not seen. Running 3–4 concurrently was fine.
+
+- 2026-08-29 confirmed — BATCH THROUGHPUT / COST: ten videos (140 min)
+  fully carded in one session. Wide passes in three sequential background
+  batches (20 s gaps) all succeeded; zooms at 3–4 parallel; frames
+  sequential per video. Prompt tokens per video 130–230K (wide 64–114K +
+  6–9 zooms of 7–22K). Whole playlist ≈ 1.8M prompt tokens ≈ $0.70 on
+  Flash — same order as the Carmine playlist.
