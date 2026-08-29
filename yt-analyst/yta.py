@@ -258,7 +258,16 @@ def cmd_ask(args):
     usage = getattr(resp, "usage_metadata", None)
     ts = datetime.now().strftime("%Y%m%d-%H%M%S")
     run_dir = video_dir(vid) / "runs" / ts
-    run_dir.mkdir(parents=True, exist_ok=True)
+    run_dir.parent.mkdir(parents=True, exist_ok=True)
+    n = 1
+    while True:  # parallel asks can share a second; never overwrite an archive
+        try:
+            run_dir.mkdir()
+            break
+        except FileExistsError:
+            n += 1
+            ts = f"{ts.split('-')[0]}-{ts.split('-')[1]}-{n}"
+            run_dir = run_dir.parent / ts
     (run_dir / "request.json").write_text(json.dumps({
         "url": url, "question": args.question,
         "model_requested": args.model, "model_answered": answered_model,
@@ -305,7 +314,13 @@ def cmd_frames(args):
         stale.unlink()
     subprocess.run([
         "yt-dlp", "--download-sections", f"*{fmt_ts(start)}-{fmt_ts(end)}",
-        "-f", "bv*[height<=1080]+ba/b[height<=1080]",
+        # Prefer h264/mp4: ffmpeg's section download of YouTube's VP9/webm
+        # DASH stream returned a clip with a zero-length video track
+        # (frame=0) on 2026-08-29; avc1 mp4 sections decode and are ~7x
+        # faster to fetch [dr-8qq.12].
+        "-f", ("bv*[ext=mp4][vcodec^=avc1][height<=1080]+ba[ext=m4a]"
+               "/bv*[ext=mp4][height<=1080]+ba"
+               "/b[ext=mp4][height<=1080]/bv*[height<=1080]+ba/b[height<=1080]"),
         "--force-keyframes-at-cuts",
         "-o", str(out_dir / "clip.%(ext)s"), url,
     ], check=True)
