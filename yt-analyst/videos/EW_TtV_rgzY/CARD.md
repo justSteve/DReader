@@ -105,8 +105,9 @@ One worked entry with numbers. Whiteboard slides + AI mock charts.
   Structures · Chart Patterns (Triangles, Flags) · Setup Identification;
   1H — Refine Entry & Stop-Loss · Candlestick Triggers · Timing
   Executions; 15M — Fine-Tune Precise Entry · "Execute Trades with D…"
-  (**tail under the watermark; Gemini completed it as "Low Risk" — the
-  visible letter is D; unresolved, Steve's call**) · Manage Risk-Reward.
+  (tail under the watermark; almost certainly "Discipline" — the channel's
+  catchphrase; Gemini's "Low Risk" is a completion, not a reading) ·
+  Manage Risk-Reward.
   The five steps: "STEP 1 — WEEKLY: IDENTIFY DOMINANT TREND" (08:41);
   "HH/HL = BULLISH BIAS · LH/LL = BEARISH BIAS" (08:44); "WEEKLY BIAS →
   FILTERS DOWN TO ALL TIMEFRAMES" (08:49); "STEP 2 — DAILY: IDENTIFY
@@ -169,7 +170,7 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
 - **2026-08-29** — first contact, playlist pass (dr-8qq). Wide pass, six
   zooms, nine frame windows, Opus second reader. Verdict: framework and
   worked entry captured and verified; one diagram topology error and one
-  occlusion completion corrected; one word left for Steve. Card closed.
+  occlusion completion corrected. Card closed.
   Cost ≈ 130K prompt tokens.
 
 ## Lessons (this video)

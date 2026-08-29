@@ -156,9 +156,3 @@ order-book ladders skipped outright in v6 while the ones it did read were
 PIPS" for 500). Caught by: frames on every laddered/branching slide, the
 Opus verifiers' "additional text not reported" item, wide-vs-zoom
 disagreement, and cross-video consistency.
-
-## Open item for Steve
-- v5 EW_TtV_rgzY 08:40, "TOP-DOWN ANALYSIS IN PRACTICE" table, 15M row:
-  the middle bullet reads "Execute Trades with D…" under the watermark
-  (frames-836-842/f_0005.jpg); Gemini completed it as "Low Risk". Card
-  carries it as unresolved.
