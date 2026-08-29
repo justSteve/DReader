@@ -159,6 +159,7 @@ def generate_with_retry(client, model, contents, config):
     """Call Gemini with backoff on transient errors, then model fallback.
     Returns (model_that_answered, response)."""
     from google.genai import errors
+    import httpx
 
     chain = [model] + [m for m in FALLBACK_MODELS if m != model]
     last_exc = None
@@ -170,8 +171,13 @@ def generate_with_retry(client, model, contents, config):
                     model=m, contents=contents, config=config
                 )
                 return m, resp
-            except errors.APIError as e:
-                code = getattr(e, "code", None) or getattr(e, "status_code", None)
+            except (errors.APIError, httpx.TransportError) as e:
+                # httpx.TransportError covers "Server disconnected without
+                # sending a response" (RemoteProtocolError), read timeouts
+                # and connect errors — seen 2026-08-29 under parallel asks
+                # [dr-8qq.13]; treat like a 503.
+                code = (getattr(e, "code", None) or getattr(e, "status_code", None)
+                        or (503 if isinstance(e, httpx.TransportError) else None))
                 if code in RETRYABLE:
                     last_exc = e
                     if attempt < MAX_ATTEMPTS:
