@@ -12,6 +12,7 @@ Changes from v0.2:
 Subcommands:
   ask     Interrogate a video (whole or clipped window). JSON out, archived.
   frames  Download a clip window and dump frames for pixel-level verification.
+  index   Regenerate INDEX.md — every card, grouped by channel/author.
 
 Requires: .env with GEMINI_API_KEY beside this script (or exported);
           `pip install google-genai`; yt-dlp + ffmpeg for frames.
@@ -347,6 +348,246 @@ def cmd_frames(args):
           f"(frame k ≈ t={fmt_ts(start)} + (k-1)/{args.fps}s)")
 
 
+# ---------------------------------------------------------------- index ----
+# Reads the curated header block of every videos/<id>/CARD.md and emits
+# INDEX.md grouped by channel/author. Never reads below the first "## ".
+
+INDEX_PATH = SCRIPT_DIR / "INDEX.md"
+PLAYLISTS_DIR = SCRIPT_DIR / "playlists"
+
+# Derived author names that should be folded together. Key and value are
+# both compared case-insensitively; add an entry when the heuristic in
+# author_of() splits one channel into two.
+AUTHOR_ALIASES = {}
+
+FIELD_RE = re.compile(r"\*\*([A-Za-z][A-Za-z ]*?):\*\*")
+RUNLOG_RE = re.compile(r"^- (\d{8}-\d{6}) ")
+PLAYLIST_ID_RE = re.compile(r"\b(PL[A-Za-z0-9_-]{5,})")
+PLAYLIST_POS_RE = re.compile(r"#(\d+)")
+SECONDS_RE = re.compile(r"\((\d+)\s*s\)")
+
+
+def card_fields(text):
+    """Parse '- **Key:** value' header lines above the first '## ' heading.
+
+    Handles several fields on one line ('**Uploaded:** X · **Duration:** Y')
+    by slicing between key markers, so a value that itself contains '·'
+    (e.g. Playlist) survives intact.
+    """
+    fields = {}
+    for line in text.splitlines():
+        if line.startswith("## "):
+            break
+        if not line.startswith("- **"):
+            continue
+        marks = list(FIELD_RE.finditer(line))
+        for i, m in enumerate(marks):
+            end = marks[i + 1].start() if i + 1 < len(marks) else len(line)
+            val = line[m.end():end].strip().strip("·").strip()
+            fields[m.group(1).strip()] = val
+    return fields
+
+
+def author_of(channel):
+    """Canonical author key from a free-prose Channel field.
+
+    'Carmine Rosato (Jumpstart Trading) — "Series" ep. 1' -> 'Carmine Rosato'
+    'Smart Money Decode X (logo bottom-right; ...)'       -> 'Smart Money Decode X'
+    """
+    if not channel:
+        return "(channel not recorded)"
+    s = re.split(r"[—–]| - ", channel)[0]
+    s = re.sub(r"\([^)]*\)", " ", s)
+    s = re.sub(r"\s+", " ", s).strip(" ,;:·\"")
+    s = s or "(channel not recorded)"
+    return AUTHOR_ALIASES.get(s.lower(), s)
+
+
+def duration_seconds(dur):
+    """'26:24 (1584 s)' -> 1584. Falls back to parsing the MM:SS part."""
+    if not dur:
+        return 0
+    m = SECONDS_RE.search(dur)
+    if m:
+        return int(m.group(1))
+    m = re.match(r"(\d+):(\d{2})(?::(\d{2}))?", dur.strip())
+    if not m:
+        return 0
+    a, b, c = m.group(1), m.group(2), m.group(3)
+    return (int(a) * 3600 + int(b) * 60 + int(c)) if c else (int(a) * 60 + int(b))
+
+
+def fmt_hm(sec):
+    h, m = divmod(round(sec / 60), 60)
+    return f"{h}h {m:02d}m" if h else f"{m}m"
+
+
+def md_cell(s, limit=None):
+    s = (s or "").replace("|", "\\|").replace("\n", " ").strip()
+    if limit and len(s) > limit:
+        s = s[: limit - 1].rstrip() + "…"
+    return s or "—"
+
+
+def playlist_synthesis(pl_id):
+    """Path (repo-relative) of the synthesis note for a playlist id, if any."""
+    if not pl_id or not PLAYLISTS_DIR.is_dir():
+        return None
+    for p in sorted(PLAYLISTS_DIR.glob("*.md")):
+        if pl_id in p.name or pl_id in p.read_text(errors="replace")[:2000]:
+            return f"playlists/{p.name}"
+    return None
+
+
+def collect_videos():
+    """One dict per videos/<id>/, whether or not it has a card."""
+    out = []
+    if not VIDEOS_DIR.is_dir():
+        return out
+    for d in sorted(VIDEOS_DIR.iterdir(), key=lambda p: p.name.lower()):
+        if not d.is_dir():
+            continue
+        card = d / "CARD.md"
+        n_runs = len(list((d / "runs").glob("*/"))) if (d / "runs").is_dir() else 0
+        if not card.exists():
+            out.append({"id": d.name, "card": False, "runs": n_runs})
+            continue
+        text = card.read_text(errors="replace")
+        f = card_fields(text)
+        pl = f.get("Playlist", "")
+        pl_id_m = PLAYLIST_ID_RE.search(pl)
+        pos_m = PLAYLIST_POS_RE.search(pl)
+        out.append({
+            "id": d.name,
+            "card": True,
+            "title": f.get("Title", ""),
+            "channel": f.get("Channel", ""),
+            "author": author_of(f.get("Channel", "")),
+            "uploaded": f.get("Uploaded", ""),
+            "duration": (f.get("Duration", "") or "").split(" (")[0],
+            "seconds": duration_seconds(f.get("Duration", "")),
+            "status": f.get("Status", "").split()[0] if f.get("Status") else "",
+            "analyzed": f.get("First analyzed", ""),
+            "playlist_id": pl_id_m.group(1) if pl_id_m else "",
+            "playlist_pos": int(pos_m.group(1)) if pos_m else 0,
+            "runs": len(RUNLOG_RE.findall(text)) or n_runs,
+        })
+    return out
+
+
+def render_index(vids):
+    carded = [v for v in vids if v["card"]]
+    orphans = [v for v in vids if not v["card"]]
+
+    groups = {}
+    for v in carded:
+        groups.setdefault(v["author"], []).append(v)
+    order = sorted(groups, key=lambda a: (-len(groups[a]), a.lower()))
+
+    L = []
+    L.append("# Video index")
+    L.append("")
+    L.append("_Generated by `yta.py index` from the header block of each "
+             "`videos/<id>/CARD.md`. Do not edit by hand — rerun the command._")
+    L.append("")
+    L.append(f"**{len(carded)} videos** across **{len(order)} channels** · "
+             f"{fmt_hm(sum(v['seconds'] for v in carded))} of runtime · "
+             f"generated {datetime.now():%Y-%m-%d}.")
+    L.append("")
+    L.append("_`#` is the video's position in its playlist (not its episode "
+             "number); `Runs` counts archived `ask` calls in the card's run log._")
+    L.append("")
+    L.append("| Channel | Videos | Uploads | Runtime | Open cards |")
+    L.append("|---|---:|---|---:|---:|")
+    for a in order:
+        g = groups[a]
+        dates = sorted(v["uploaded"] for v in g if v["uploaded"])
+        span = (dates[0] if len(dates) == 1
+                else f"{dates[0]} → {dates[-1]}") if dates else "—"
+        n_open = sum(1 for v in g if v["status"] != "closed")
+        L.append(f"| [{md_cell(a)}](#{slug(a)}) | {len(g)} | {span} | "
+                 f"{fmt_hm(sum(v['seconds'] for v in g))} | {n_open} |")
+    L.append("")
+
+    for a in order:
+        g = groups[a]
+        dates = sorted(v["uploaded"] for v in g if v["uploaded"])
+        n_open = sum(1 for v in g if v["status"] != "closed")
+        L.append(f"## {a}")
+        L.append("")
+        bits = [f"{len(g)} video{'s' if len(g) != 1 else ''}"]
+        if dates:
+            bits.append(dates[0] if len(dates) == 1 else f"{dates[0]} → {dates[-1]}")
+        bits.append(f"{fmt_hm(sum(v['seconds'] for v in g))} total")
+        bits.append("all cards closed" if not n_open else f"{n_open} card(s) open")
+        L.append(" · ".join(bits))
+        L.append("")
+
+        by_pl = {}
+        for v in g:
+            by_pl.setdefault(v["playlist_id"], []).append(v)
+        # Playlists first (largest first), standalone videos last.
+        pl_order = sorted((k for k in by_pl if k),
+                          key=lambda k: (-len(by_pl[k]), k))
+        if "" in by_pl:
+            pl_order.append("")
+
+        for pl in pl_order:
+            rows = sorted(by_pl[pl],
+                          key=lambda v: (v["playlist_pos"], v["uploaded"], v["id"]))
+            if pl:
+                syn = playlist_synthesis(pl)
+                head = f"### Playlist `{pl}`"
+                if syn:
+                    head += f" — synthesis: [{syn}]({syn})"
+                L.append(head)
+            elif pl_order != [""]:
+                L.append("### Standalone")
+            if pl or pl_order != [""]:
+                L.append("")
+            L.append("| # | Video | Title | Uploaded | Len | Status | Runs |")
+            L.append("|---:|---|---|---|---:|---|---:|")
+            for v in rows:
+                pos = str(v["playlist_pos"]) if v["playlist_pos"] else "—"
+                link = f"[`{v['id']}`](videos/{v['id']}/CARD.md)"
+                L.append(f"| {pos} | {link} | {md_cell(v['title'], 78)} | "
+                         f"{md_cell(v['uploaded'])} | {md_cell(v['duration'])} | "
+                         f"{md_cell(v['status'])} | {v['runs']} |")
+            L.append("")
+
+    if orphans:
+        L.append("## No card yet")
+        L.append("")
+        L.append("_Video directories with archived runs but no `CARD.md` — "
+                 "interrogated but never written up._")
+        L.append("")
+        L.append("| Video | Runs |")
+        L.append("|---|---:|")
+        for v in orphans:
+            L.append(f"| [`{v['id']}`](videos/{v['id']}/) | {v['runs']} |")
+        L.append("")
+
+    return "\n".join(L).rstrip() + "\n"
+
+
+def slug(s):
+    """GitHub-style anchor for a heading."""
+    return re.sub(r"[^a-z0-9\s-]", "", s.lower()).strip().replace(" ", "-")
+
+
+def cmd_index(args):
+    vids = collect_videos()
+    md = render_index(vids)
+    if args.stdout:
+        sys.stdout.write(md)
+        return
+    INDEX_PATH.write_text(md)
+    carded = sum(1 for v in vids if v["card"])
+    authors = len({v["author"] for v in vids if v["card"]})
+    print(f"{INDEX_PATH.name}: {carded} videos, {authors} channels"
+          + (f", {len(vids) - carded} without a card" if carded != len(vids) else ""))
+
+
 def main():
     load_env()
     quiet_sdk()
@@ -372,6 +613,11 @@ def main():
     f.add_argument("--fps", type=float, default=1)
     f.add_argument("--out", help="output directory (default: videos/<id>/frames-*)")
     f.set_defaults(func=cmd_frames)
+
+    i = sub.add_parser("index", help="regenerate INDEX.md from the cards")
+    i.add_argument("--stdout", action="store_true",
+                   help="print the index instead of writing INDEX.md")
+    i.set_defaults(func=cmd_index)
 
     args = ap.parse_args()
     args.func(args)

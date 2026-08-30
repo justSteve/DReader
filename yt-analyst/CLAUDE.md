@@ -24,6 +24,14 @@ Every video gets a directory: `videos/<video_id>/`.
 - `runs/<timestamp>/` — raw request/response JSON for each ask (a sub-card).
 - `frames-*/` — verification frames, colocated with their video.
 
+`INDEX.md` at the root indexes every card, grouped by channel/author, with
+playlist position, upload date, length, status and run count. It is generated
+— `.venv/bin/python yta.py index` — never hand-edited. Read it to see what the
+corpus already covers before starting on a new video; regenerate it whenever
+you add a card or change a card's header (title, channel, playlist, status).
+Grouping keys off the `**Channel:**` field: keep the channel name first, before
+any em dash or parenthetical, so videos by the same author fold together.
+
 ## Interrogation doctrine
 
 1. **Check the card first.** If `videos/<id>/CARD.md` exists, read it before
@@ -101,6 +109,8 @@ Before finishing a session on a video, update its CARD.md:
 - **Status**: flip `open` → `closed` when the video's questions are answered;
   a closed card can be reopened.
 - Never edit the `## Run log` section — it is machine-appended.
+- Regenerate the index (`yta.py index`) after any header change, and commit
+  `INDEX.md` with the card.
 
 ## Lessons doctrine (tool-level)
 
@@ -134,8 +144,8 @@ produce the comparison, and record the verdict.
 ## Housekeeping
 
 - `videos/*/runs/` and `videos/*/frames-*/` are working data — never commit
-  them. CARD.md and LESSONS.md ARE worth versioning if this directory is a
-  repo: they're the distilled knowledge.
+  them. CARD.md, INDEX.md and LESSONS.md ARE worth versioning if this
+  directory is a repo: they're the distilled knowledge.
 - Prune a video's frames-* directories once its card is closed; keep runs/.
 - If yt-dlp fails on a frames pull with an extraction error, it's usually
   stale: `pip install -U yt-dlp` in the venv, retry once, then report.
