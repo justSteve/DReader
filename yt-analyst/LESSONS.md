@@ -49,7 +49,8 @@ doctrine and mark the entry `promoted`.
   every cell of the overlay table correctly; 5 fps produced more fragmented
   claims, not more correct ones. Supersedes the 2026-08-28 `suspected` fps
   entry above (now `superseded`). Runs: videos/ZVvVgcX84F0/runs/20260828-1016*
-  to -1019*. PROPOSE CLAUDE.md: drop `--resolution` from doctrine; note fps.
+  to -1019*. ADOPTED — CLAUDE.md "Sampling knobs" (confirmed present
+  2026-08-30).
 
 - 2026-08-28 promoted (amends "~300 tokens/sec") — At default knobs this
   video cost ~92-95 prompt tokens per second of video across every shape:
@@ -57,7 +58,10 @@ doctrine and mark the entry `promoted`.
   5,699. The ~300/s figure is Gemini's documented default-resolution rate;
   YouTube-URL ingestion evidently bills at the low-res rate (see fps entry).
   Budget ~100 tok/s at default, ~360 tok/s at `--fps 5`. Full 11-minute video
-  ≈ 60K tokens. PROPOSE CLAUDE.md doctrine step 2: "~100 tokens/second".
+  ≈ 60K tokens. ADOPTED — CLAUDE.md doctrine step 2 says "~100 tokens/second"
+  (confirmed present 2026-08-30). Corpus-wide check that day: 19 wide passes,
+  prompt tokens ÷ video seconds = 91 on every one (min = median = max), so the
+  rate is not just an average — it is constant.
 
 - 2026-08-28 promoted (amends arithmetic lesson) — Arithmetic consistency
   proves a number SET is coherent, not that it was READ OFF SCREEN. Gemini
@@ -68,8 +72,8 @@ doctrine and mark the entry `promoted`.
   presented them as on-screen values. Derived numbers pass arithmetic checks
   by construction. Rule: arithmetic verifies internal consistency; PROVENANCE
   (on-screen vs spoken vs computed) needs frames whenever the claim is
-  `onscreen_text`/`visual` and load-bearing. PROPOSE CLAUDE.md doctrine step 4
-  amendment. Evidence: videos/ZVvVgcX84F0/frames-552-600/f_0004.jpg, f_0008.jpg.
+  `onscreen_text`/`visual` and load-bearing. ADOPTED — CLAUDE.md doctrine
+  step 4 (confirmed present 2026-08-30). Evidence: videos/ZVvVgcX84F0/frames-552-600/f_0004.jpg, f_0008.jpg.
 
 - 2026-08-28 suspected — Gemini completes PARTIAL on-screen text with plausible
   defaults, dates especially. Ticket showed "Aug 25" (no year); Gemini reported
@@ -98,8 +102,11 @@ doctrine and mark the entry `promoted`.
   paraphrase + structure + dense-data timestamps; "verbatim" only on clipped
   windows (1-3 min), where it has never tripped. v0.3 now reports
   finish_reasons instead of crashing on an empty response [dr-08s.9].
-  PROPOSE CLAUDE.md doctrine step 2: add "paraphrase, never verbatim, on the
-  wide pass".
+  OPEN PROPOSAL — CLAUDE.md doctrine step 2: add "paraphrase, never verbatim,
+  on the wide pass". Verified still absent 2026-08-30 (step 2 does not warn
+  against verbatim; step 3 mentions verbatim only for clipped follow-ups), and
+  this is the costliest of the open three — the failure billed 119K prompt
+  tokens and returned nothing. Steve's call.
 
 - 2026-08-28 promoted — Default 1 fps sampling is the doctrine default: in the
   same 5-run comparison it read every table cell correctly while `--fps 5`
@@ -216,8 +223,11 @@ doctrine and mark the entry `promoted`.
   09:13; errors include swapped rows, invented 1466×2315, dropped 1157×1409,
   and a wrong row count "20"). Combined with eJZhX6Xz4cU (4/21) the rate is
   ~20–25% per row regardless of legibility. Grids > ~10 rows: frames only.
-  PROPOSE CLAUDE.md: add to doctrine step 3 — "never take a ladder/table
-  > 10 rows from Gemini alone; pull frames".
+  OPEN PROPOSAL — CLAUDE.md doctrine step 3: "never take a ladder/table
+  > 10 rows from Gemini alone; pull frames". Verified still absent from
+  CLAUDE.md 2026-08-30; Steve's call. See also the GRID OMISSION entry below,
+  which splits the failure into row errors (legibility) and missing grids
+  (coverage) — the rule covers both.
 
 - 2026-08-28 suspected — `$` GLYPH → "1": journal input boxes showing
   `$ 5631.0` were transcribed "1 5631.0" by both the wide pass and a zoom
@@ -241,8 +251,14 @@ doctrine and mark the entry `promoted`.
   Gemini "−583" beside volume 1498 is impossible (delta = ask − bid and
   volume = ask + bid share parity); pixels read −538 (w7tvJCuZAq8 27:18).
   Run delta ≡ volume (mod 2) on every cited cell before frames; a parity
-  failure is a transcription error with certainty. `promoted` candidate
-  for doctrine step 4 (structural checks) — PROPOSE CLAUDE.md.
+  failure is a transcription error with certainty.
+  Generalization (via the Strader zgent, 2026-08-30, planning its
+  YouTube-findings register): the identity is a property of the footprint
+  itself, not of one platform's layout — it holds on any bid×ask ladder, so
+  it is a free one-line filter over any footprint claim, not a Sierra-specific
+  trick. Strader is adopting it as a standing filter on its side.
+  OPEN PROPOSAL — CLAUDE.md doctrine step 4 (structural checks). Verified
+  still absent from CLAUDE.md 2026-08-30; Steve's call.
 
 - 2026-08-28 suspected — CROSS-CHART BLEED: the price axis Gemini gave for
   the 03:19 chart (5645–5690) belongs to the footprint shown minutes later
