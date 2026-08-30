@@ -264,6 +264,17 @@ doctrine and mark the entry `promoted`.
   the 03:19 chart (5645–5690) belongs to the footprint shown minutes later
   (5648–5664); the real axis was 5850–5935. In a multi-chart segment,
   attribute axes/levels to a chart only from a frame at that timestamp.
+  Amended 2026-08-30: this is an ATTRIBUTION error, a class distinct from
+  the digit errors above, and the distinction is load-bearing. Every cheap
+  filter in this log — parity, arithmetic, cross-episode consistency, the
+  glyph-confusion tells — validates the NUMBER. A correctly-read number
+  hung on the wrong chart passes all of them, because nothing about the
+  digits is wrong. So the filters bound digit error only; attachment is
+  established solely by a frame at that timestamp. Corollary for anyone
+  inheriting figures from a card: triage on the card's frame-verified
+  marking, never on the plausibility of the price. (Raised by the Strader
+  zgent 2026-08-30, whose findings register had digit filters and no
+  attribution check.)
 
 - 2026-08-28 suspected — SPOKEN ROUND-OFFS become values: "1700 / +1300"
   (on screen 1775 / +1319) and "1200" (1245) were reported as the
@@ -419,3 +430,20 @@ doctrine and mark the entry `promoted`.
   sequential per video. Prompt tokens per video 130–230K (wide 64–114K +
   6–9 zooms of 7–22K). Whole playlist ≈ 1.8M prompt tokens ≈ $0.70 on
   Flash — same order as the Carmine playlist.
+
+- 2026-08-30 confirmed (scope of this log) — THESE ARE SCREENSHOT FAILURES,
+  NOT VIDEO FAILURES. Every mechanism recorded here — small-font glyph
+  confusion, occlusion truncation presented as complete, fabricated platform
+  chrome, invented legend OHLC, regularization, AI-pastiche charts read as
+  real — is a property of a dense financial IMAGE, not of video ingestion.
+  They apply unchanged to a single screenshot handed to a vision model.
+  The single-image case is HARDER, not easier: the wide-pass/zoom structure
+  that catches so much here works by producing two independent samplings that
+  can disagree, and one uploaded image affords no second sampling. There the
+  frame check is not the backstop — it is the only check. That inverts which
+  filters matter: the zero-cost ones carry disproportionate weight because
+  they need no second image — footprint parity (delta ≡ volume mod 2), the
+  too-neat test for regularization, and the non-monotonic-axis tell, which is
+  a one-glance judgement on any single chart image (axis not monotonic → the
+  chart is decor and none of its metadata is citable). Consumed by the
+  Strader zgent as `st-kpbm`, a knowledge/ entry citing this file.
