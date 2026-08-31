@@ -7,3 +7,6 @@ videos/*/frames-*/
 files.zip
 # Windows ADS metadata
 *:Zone.Identifier
+
+# generated on demand for sibling zgents, not committed
+findings-export*.json

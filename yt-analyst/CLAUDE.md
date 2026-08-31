@@ -32,6 +32,15 @@ you add a card or change a card's header (title, channel, playlist, status).
 Grouping keys off the `**Channel:**` field: keep the channel name first, before
 any em dash or parenthetical, so videos by the same author fold together.
 
+`yta.py export` emits the curated Findings as JSON on stdout (`--out PATH`
+to write a file, `--video ID` to restrict) for sibling zgents — provenance,
+finding text, timestamps and a normalized verification grade. It reads the
+curated card sections ONLY, never `runs/`. Fields the card format cannot
+supply (`id`, `kind`, `attachment`) are emitted as null with the reason
+stated in the output's `contract` block; never synthesize them — a made-up
+id looks stable across card revisions without being so. The export is
+generated on demand and not committed.
+
 ## Interrogation doctrine
 
 1. **Check the card first.** If `videos/<id>/CARD.md` exists, read it before

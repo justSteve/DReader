@@ -13,6 +13,7 @@ Subcommands:
   ask     Interrogate a video (whole or clipped window). JSON out, archived.
   frames  Download a clip window and dump frames for pixel-level verification.
   index   Regenerate INDEX.md — every card, grouped by channel/author.
+  export  Emit the curated findings as JSON for sibling zgents.
 
 Requires: .env with GEMINI_API_KEY beside this script (or exported);
           `pip install google-genai`; yt-dlp + ffmpeg for frames.
@@ -588,6 +589,230 @@ def cmd_index(args):
           + (f", {len(vids) - carded} without a card" if carded != len(vids) else ""))
 
 
+# --------------------------------------------------------------- export ----
+# Machine-readable view of the CURATED card sections, for sibling zgents.
+# Never reads runs/ (raw, unverified, pre-curation) and never invents a value
+# the cards do not carry: fields the format cannot supply are emitted as null
+# with the reason stated in the envelope's `contract` block [dr-shu].
+
+EXPORT_SCHEMA_VERSION = 1
+
+VERIF_METHODS = [
+    ("frames", r"\bframes?\b|\bin-frame\b|\bf_\d{3,4}\b"),
+    ("arithmetic", r"arithmetic"),
+    ("parity", r"parity"),
+    ("cross_episode", r"cross[- ]episode|cross[- ]video"),
+]
+# Cards mark verification in prose as well as in bold: "**Verified: frames**",
+# "(verified)", "verified in-frame", "(Slides unverified.)". Match the bare
+# word and read methods from the words around it.
+VERIF_WORD_RE = re.compile(r"\b(?P<un>un)?verified\b", re.I)
+FRAME_QUAL_RE = re.compile(r"(frames-[\w-]+)/(f_\d{3,4})(?:\.jpg)?")
+FRAME_BARE_RE = re.compile(r"\bf_(\d{3,4})(?:\.jpg)?\b")
+FRAME_DIR_RE = re.compile(r"\bframes-[\w-]+\b")
+TIMESTAMP_RE = re.compile(r"\b\d{1,2}:\d{2}(?::\d{2})?\b")
+
+
+GROUP_HEADER_RE = re.compile(r"^\*\*[^*]+:\*\*$")
+
+
+def findings_blocks(text):
+    """Split the curated '## Findings' body into candidate finding records.
+
+    A block starts at a top-level bullet ('- ') or a bold lead-in ('**').
+    Continuation and nested lines stay with their parent.
+
+    A block that is ONLY a bold phrase ending in a colon is a GROUP HEADER,
+    not a finding — e.g. '**Slides (all verified word-for-word by frames
+    unless noted):**'. It is not emitted, and its verification statement is
+    inherited by the blocks beneath it (until the next header) so the grade
+    travels to the findings it actually covers. A block with prose after the
+    bold run is a finding, not a header.
+
+    Yields (index, block_text, header_text_or_None).
+    """
+    m = re.search(r"^## Findings\s*$(.*?)^## ", text, re.S | re.M)
+    if not m:
+        return []
+    body = m.group(1)
+    blocks, cur = [], []
+    for line in body.splitlines():
+        if re.match(r"^_\(curated", line.strip()):   # section caption
+            continue
+        starts = line.startswith("- ") or line.startswith("**")
+        if starts and cur:
+            blocks.append("\n".join(cur))
+            cur = [line]
+        elif starts:
+            cur = [line]
+        elif cur:
+            cur.append(line)
+        elif line.strip():
+            cur = [line]
+    if cur:
+        blocks.append("\n".join(cur))
+
+    out, header = [], None
+    for b in blocks:
+        b = b.strip()
+        if not b:
+            continue
+        if GROUP_HEADER_RE.match(b.replace("\n", " ").strip()):
+            header = b.replace("\n", " ").strip()
+            continue
+        out.append((len(out), b, header))
+    return out
+
+
+def parse_verification(block):
+    """Normalize the card's many verification spellings into one shape.
+
+    grade: verified | unverified | mixed | unknown. 'unknown' means the card
+    marks nothing — it is NOT a synonym for unverified and a consumer must
+    never collapse the two.
+    """
+    marks = list(VERIF_WORD_RE.finditer(block))
+    pos = [m for m in marks if not m.group("un")]
+    neg = [m for m in marks if m.group("un")]
+    grade = ("mixed" if pos and neg else
+             "verified" if pos else
+             "unverified" if neg else "unknown")
+
+    # Methods come from the words around each positive marker, not the whole
+    # block: "unverified ... elsewhere frames" must not read as verified+frames.
+    ctx = " ".join(block[max(0, m.start() - 40):m.end() + 90] for m in pos)
+    methods = [name for name, pat in VERIF_METHODS if re.search(pat, ctx, re.I)]
+
+    dirs = sorted(set(FRAME_DIR_RE.findall(block)))
+    frames = {f"{d}/{f}.jpg" for d, f in FRAME_QUAL_RE.findall(block)}
+    # Cards cite follow-on frames bare ("frames-615-640/f_0004.jpg, f_0013.jpg"
+    # or "**verified** f_0012"). Qualify them only when the block names exactly
+    # one directory; otherwise the attachment is genuinely ambiguous.
+    bare = {f"f_{n}" for n in FRAME_BARE_RE.findall(block)}
+    bare -= {f for _, f in FRAME_QUAL_RE.findall(block)}
+    unqualified = []
+    if bare:
+        if len(dirs) == 1:
+            frames |= {f"{dirs[0]}/{b}.jpg" for b in bare}
+        else:
+            unqualified = sorted(bare)
+    return {
+        "grade": grade,
+        "methods": methods,
+        "frames": sorted(frames),
+        "frame_dirs": dirs,
+        "frames_unqualified": unqualified,
+    }
+
+
+def build_export(vids):
+    import hashlib
+    findings, videos = [], []
+    for v in vids:
+        if not v["card"]:
+            continue
+        card_rel = f"videos/{v['id']}/CARD.md"
+        videos.append({k: v[k] for k in (
+            "id", "title", "channel", "author", "uploaded", "duration",
+            "seconds", "status", "playlist_id", "playlist_pos", "runs")}
+            | {"card_path": card_rel})
+        text = (VIDEOS_DIR / v["id"] / "CARD.md").read_text(errors="replace")
+        for idx, block, header in findings_blocks(text):
+            body = re.sub(r"\s+", " ", block.lstrip("- ").strip())
+            verif = parse_verification(block)
+            if verif["grade"] == "unknown" and header:
+                inherited = parse_verification(header)
+                if inherited["grade"] != "unknown":
+                    verif = dict(inherited, frames=verif["frames"],
+                                 frame_dirs=verif["frame_dirs"],
+                                 frames_unqualified=verif["frames_unqualified"],
+                                 inherited_from=header)
+            findings.append({
+                # No stable id: the card format carries none, and a synthesized
+                # one would look stable without being so. See contract below.
+                "id": None,
+                "locator": {"card_path": card_rel,
+                            "section": "Findings",
+                            "block_index": idx},
+                "text_sha256": hashlib.sha256(body.encode()).hexdigest()[:16],
+                "video_id": v["id"],
+                "channel": v["channel"],
+                "author": v["author"],
+                "playlist_id": v["playlist_id"] or None,
+                "playlist_position": v["playlist_pos"] or None,
+                "card_path": card_rel,
+                "card_status": v["status"] or None,
+                "text": body,
+                "timestamps": sorted(set(TIMESTAMP_RE.findall(block))),
+                "kind": None,
+                "verification": verif,
+                "attachment": None,
+            })
+    return {
+        "schema_version": EXPORT_SCHEMA_VERSION,
+        "generator": "yta.py export",
+        "generated": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
+        "contract": {
+            "source": "curated '## Findings' sections of videos/<id>/CARD.md only",
+            "never_exported": "videos/*/runs/ — raw model output, unverified, "
+                              "pre-curation. Do not consume it.",
+            "id": "null. The card format carries no per-finding id. A "
+                  "synthesized id would look stable across card revisions "
+                  "without being so, so none is emitted. Use `locator` to "
+                  "find a record and `text_sha256` to detect that it changed; "
+                  "neither is a durable key. Re-keying will be needed if ids "
+                  "are ever added to the card format.",
+            "kind": "null. The onscreen_text/visual/spoken/inferred taxonomy "
+                    "exists in runs/*.json, not in the curated cards.",
+            "attachment": "null. What a figure was attached to (which chart, "
+                          "panel or ladder) is present in `text` as prose but "
+                          "is not a card field. Its absence is a real gap: "
+                          "every other check validates the number, so a "
+                          "correctly-read value on the wrong chart passes "
+                          "them all.",
+            "verification.grade": "verified | unverified | mixed | unknown. "
+                                  "'unknown' means the card marks nothing and "
+                                  "is NOT a synonym for 'unverified' — about "
+                                  "half of all blocks are unknown. Never "
+                                  "collapse the two.",
+            "block_granularity": "One record per top-level bullet or bold "
+                                 "lead-in paragraph. Blocks are prose and may "
+                                 "carry several claims; a block is not a claim.",
+            "verification.inherited_from": "Present when the grade came from a "
+                                           "group header covering this block "
+                                           "(e.g. '**Slides (all verified by "
+                                           "frames unless noted):**') rather "
+                                           "than from the block's own text. A "
+                                           "block that states its own grade "
+                                           "always wins over the header.",
+            "verification.frames_unqualified": "Frame ids the card cited bare "
+                                               "(f_0013) where the block named "
+                                               "more than one frames-* dir, so "
+                                               "the directory is ambiguous. Not "
+                                               "guessed.",
+        },
+        "videos": videos,
+        "findings": findings,
+    }
+
+
+def cmd_export(args):
+    data = build_export(collect_videos())
+    if args.video:
+        keep = set(args.video)
+        data["videos"] = [v for v in data["videos"] if v["id"] in keep]
+        data["findings"] = [f for f in data["findings"] if f["video_id"] in keep]
+    text = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
+    if args.out:
+        Path(args.out).write_text(text)
+        g = sum(1 for f in data["findings"]
+                if f["verification"]["grade"] == "unknown")
+        print(f"{args.out}: {len(data['findings'])} findings from "
+              f"{len(data['videos'])} cards ({g} with grade 'unknown')")
+    else:
+        sys.stdout.write(text)
+
+
 def main():
     load_env()
     quiet_sdk()
@@ -618,6 +843,12 @@ def main():
     i.add_argument("--stdout", action="store_true",
                    help="print the index instead of writing INDEX.md")
     i.set_defaults(func=cmd_index)
+
+    e = sub.add_parser("export", help="emit curated findings as JSON")
+    e.add_argument("--out", help="write to this path (default: stdout)")
+    e.add_argument("--video", action="append",
+                   help="restrict to this video id (repeatable)")
+    e.set_defaults(func=cmd_export)
 
     args = ap.parse_args()
     args.func(args)
