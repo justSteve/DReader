@@ -1,0 +1,17 @@
+{
+ "letter_date": "2026-04-27",
+ "sent_et": "2026-04-26",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "medium", "hedged": true,
+          "quote": "So far bulls continue to dominate the price action with sellers unable to achieve a substantial pullback towards the prior all time high level at 698.",
+          "note": "Friday breakout from a balance range; balance-rule fallback to 702.5 if the breakout fails; XLF and XLC flagged as sector risks."},
+ "calls": [
+  {"id": "spy-hold-712.4", "instrument": "SPY", "type": "hold", "level": 712.4, "rule": "hold_week",
+   "quote": "If price moves into blue sky territory on a higher low over 712.4, the upper bound of the weekly expected move is the only reference.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-fail-back-702.5", "instrument": "SPY", "type": "break", "level": 712.4, "rule": "break_then_target", "targets": [702.5],
+   "quote": "Should price fail back into the balance range, balance rules call for targeting the bottom of range at 702.5 which is near the lower bound of the weekly expected move.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-path-697.85", "instrument": "SPY", "type": "hold", "level": 697.85, "rule": "hold_week",
+   "quote": "On deeper pullbacks, I am still quite interested in gauging the reaction of buyers on the retest of the prior all time high at 697.85 with wiggle room down to the prior pivot as well around 693.75.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

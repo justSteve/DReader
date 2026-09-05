@@ -1,0 +1,19 @@
+{
+ "letter_date": "2026-03-16",
+ "sent_et": "2026-03-15",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bearish", "conviction": "high", "hedged": true,
+          "quote": "A majority of the pathing outcomes for this week will be seeking lower high short entries.",
+          "note": "Hedge: 'if the market flips back over 676, we have to keep an open mind to look below and fail. All time highs should come in short order if thats the case'."},
+ "calls": [
+  {"id": "spy-target-653", "instrument": "SPY", "type": "target", "level": 653.0, "rule": "target_reached",
+   "quote": "The next weekly level to target below is 653. The weekly expected move suggests price can reach that zone in the coming days.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-resist-675", "instrument": "SPY", "type": "resistance", "level": 675.0, "rule": "below_week",
+   "quote": "Lower highs can persist below 675 area, and lower lows should seek to test the 200 SMA or beyond into the weekly low set at 653.", "intent": "offered", "conviction": "high"},
+  {"id": "spy-resist-664", "instrument": "SPY", "type": "resistance", "level": 664.0, "rule": "below_week",
+   "quote": "2. Under the 664 prior week low inflection point.", "intent": "offered", "conviction": "medium"},
+  {"id": "spy-flip-676", "instrument": "SPY", "type": "reclaim", "level": 676.0, "rule": "reclaim_then_higher",
+   "quote": "Though I would prescribe lower odds, if the market flips back over 676, we have to keep an open mind to look below and fail.", "intent": "watch", "conviction": "low"}
+ ],
+ "scenarios": []
+}

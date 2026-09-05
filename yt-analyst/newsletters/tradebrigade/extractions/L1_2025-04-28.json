@@ -1,0 +1,105 @@
+{
+ "letter_date": "2025-04-28",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 04/28/25",
+ "file": "2025-04-28_19679b2330c712c1.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 5.66,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P 500 closed up 5.66% for the week"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Monday's fake-out broke the prior week low, and 38.2. By Friday however, a bullish engulfer that recovered the 61.8 and closed at the ATH aVWAP formed. Acceptance over 550, would negate the lower high threat.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "break",
+   "sentence": "Acceptance over 550, would negate the lower high threat."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing I am most interested in with preference to the white lines. Thats base case. Notice that there are opportunities to short the market coming back into the Tariff Turmoil Zone\u2122. The idea would be to seek a daily higher low preferably >530 GFR or >523.75 LIS.",
+   "instrument": "SPY",
+   "level": 530.0,
+   "class": "hold",
+   "sentence": "The idea would be to seek a daily higher low preferably >530 GFR or >523.75 LIS."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing I am most interested in with preference to the white lines. Thats base case. Notice that there are opportunities to short the market coming back into the Tariff Turmoil Zone\u2122. The idea would be to seek a daily higher low preferably >530 GFR or >523.75 LIS.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "hold",
+   "sentence": "The idea would be to seek a daily higher low preferably >530 GFR or >523.75 LIS."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "APH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    74.5,
+    76.5,
+    79.39
+   ],
+   "text": "Inside bars post earnings on the gap up. If price can hold the Friday low and prior high set around 74.5, looking for a break of the equal highs at 76.5 for a move into the 79.39 all time high level. Less interested if the Friday low and prior resistance breaks."
+  },
+  {
+   "ticker": "CDNA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 286.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    269.75,
+    286.5
+   ],
+   "text": "Earnings are on Monday after the close. Look out for a few outcomes here.\n* Gap down that holds the double bottom neckline at 269.75 could offer pullback long setups.\n* Gap ups that extend price over 286.5 can look for higher lows over the level to navigate back to the all time high shelf of resistance.\n\nStructure and levels on this one are clean. Should help manage risk against key zones."
+  },
+  {
+   "ticker": "CRWD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 402.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    384.0,
+    402.0
+   ],
+   "text": "Revisiting the double bottom now that it has broken out. Looking for a hold ideally over 402 for a higher low, or over 384 to be in play also. Continuation through the thin structure back to all time highs is also not off the table. Worth continuing to watch this for long opportunities if you didnt get the original entry."
+  },
+  {
+   "ticker": "TOST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 36.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    36.5,
+    38.5,
+    42.25
+   ],
+   "text": "Classic inverted head and shoulders in play with Thursday / Friday inside bars. Over 36.5 and price can see 38.5 sooner rather than later. Over that level and the flat top 42.25 level is in play. Not interested if the neckline never breaks."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Monday's fake-out broke the prior week low, and 38.2. By Friday however, a bullish engulfer that recovered the 61.8 and closed at the ATH aVWAP formed. Acceptance over 550, would negate the lower high threat.",
+  "S&P daily chart \u2013 The Monday low made an equal low to the Thursday low of three weeks ago. This gives us still, higher lows relative to the capitulation low. The 90-day pause high is the neckline of the double bottom, and on Friday, the breakout made a technical higher high.",
+  "S&P hourly chart \u2013 Pathing I am most interested in with preference to the white lines. Thats base case. Notice that there are opportunities to short the market coming back into the Tariff Turmoil Zone\u2122. The idea would be to seek a daily higher low preferably >530 GFR or >523.75 LIS.",
+  "Market internals \u2013 More bullish here all up on the week recovering from Monday. Make note that on Friday's breakout, there is weak volume, neutral AD line, flat TICK. Base case above prefers pullback first because the market seems close to \"exhaustion\" after a wall-to-wall move.",
+  "Market profile \u2013 Value progressed higher through the week, and closed high in the range on both the Thursday and Friday rally. Poor high and low on Friday supports the idea of a quick gap close over head to repair high structure, and then pullback to repair low structure.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "APH \u2013 Daily",
+  "CDNA \u2013 Daily",
+  "CRWD \u2013 Daily",
+  "TOST \u2013 Daily",
+  "We're social!"
+ ]
+}

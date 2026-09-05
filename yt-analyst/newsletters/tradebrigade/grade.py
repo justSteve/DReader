@@ -109,6 +109,11 @@ def grade_ideas(ideas, week, recap):
         rec["baseline"] = idea_outcome(sym, week[0], float(b.loc[week[0]]["open"]), I["direction"])
         if trig is None:
             rec["status"] = "no_trigger"; out.append(rec); continue
+        ref = float(b.loc[week[0]]["open"])
+        if not 0.7 <= trig / ref <= 1.3:
+            # a swing trigger sits near the current price by construction; anything else is a
+            # mis-parsed number (an indicator value, a split-adjusted history) and must not be traded
+            rec["status"] = "trigger_implausible"; rec["ref_open"] = ref; out.append(rec); continue
         fired = None
         for d in week:
             if d not in b.index: continue

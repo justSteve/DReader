@@ -1,0 +1,19 @@
+{
+ "letter_date": "2026-05-11",
+ "sent_et": "2026-05-10",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "medium", "hedged": true,
+          "quote": "Price closed strong on Friday indicating the potential for continuation early in the week.",
+          "note": "'Looking for Brigade Bolt™ continuation over the ATH levels.' Pullback paths given but judged lower odds absent sector rotation failure."},
+ "calls": [
+  {"id": "spy-hold-732.5", "instrument": "SPY", "type": "hold", "level": 732.5, "rule": "hold_week",
+   "quote": "If we pullback and can hold 732.5 there is a technical higher low on the 1h charts that keeps the trend up on the short timeframes.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-measured-743.5", "instrument": "SPY", "type": "target", "level": 743.5, "rule": "target_reached",
+   "quote": "The measured move of the bull flag FYI is at 743.5 area. Within the bounds of the weekly expected move.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-gapclose-725-then-712.4", "instrument": "SPY", "type": "break", "level": 725.0, "rule": "break_then_target", "targets": [712.4],
+   "quote": "Should the market start with an opening drive to the downside closing the gap and getting either a lower high or some kind of bear flag consolidation, with NO ROTATION, looking for a deeper pullback to retest the flag breakout level at the 712.4 area.", "intent": "watch", "conviction": "low"},
+  {"id": "xlf-hold-51.2", "instrument": "XLF", "type": "hold", "level": 51.2, "rule": "hold_week",
+   "quote": "If 51.2 fails... not a great look.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

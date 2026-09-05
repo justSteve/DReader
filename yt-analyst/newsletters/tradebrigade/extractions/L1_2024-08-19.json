@@ -1,0 +1,80 @@
+{
+ "letter_date": "2024-08-19",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 08/19/24",
+ "file": "2024-08-19_19167ef496855298.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Another wild week in the market, closing up over a full standard deviation beyond the weeks expected move.\n\nEvery single day the market had a substantial advance, it was fueled by a fundamental catalyst.\nBeats right across the board have recession fears becoming a distant memory.\n\nEarnings calls acr"
+ },
+ "spy_levels": [],
+ "swing_ideas": [
+  {
+   "ticker": "BK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 63.85,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    63.85,
+    65.75
+   ],
+   "text": "Blue sky breakout possible here. Ideally a pullback first after a wall to wall move. Higher lows set over 63.85 are ideal. Break is over 65.75."
+  },
+  {
+   "ticker": "CIEN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 55.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    3.0,
+    55.0,
+    61.3
+   ],
+   "text": "Bullish 3 bar play on the daily. Looking for a breakout into the gap range overhead. Looking at over 55 flat to work towards 61.3. Large gap.. manage expectations and perhaps use a wider stop with smaller size."
+  },
+  {
+   "ticker": "EOG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 128.1,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    128.1,
+    132.65
+   ],
+   "text": "Bullish inverted head and shoulders reversal coming into play after a failed head and shoulders. A move over 128.10 gets interesting through the thin structure into 132.65. Ideally the right shoulder persists over the 50 SMA (blue)."
+  },
+  {
+   "ticker": "MMM",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": 128.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    128.0
+   ],
+   "text": "Weekly bull flag forming after a long formed rounded bottom. Over 128 and theres thin structure breakdown overhead to rotate through. Another name to manage expectations on, keep a wider stop, and use smaller size in the hope to capture the larger range.\n\nThats all that hit the scanner this week qualified to be included in the newsletter.\n\nQuality > Forcing setups"
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Although we don't have a new monthly close, we're checking back in considering the volatility. Monthly was bullish, and remains bullish. Bears can't even keep price below the June range low.",
+  "S&P weekly chart \u2013 Sellers failed the best opportunity for a weekly lower high here at the fib, anchored vwap, high volume nodes. This now presents an opportunity of support for a higher low to be set above.",
+  "S&P daily chart \u2013 Stronger than expected rally, on fundamental catalysts. Gap and gos. No strong selling. Daily has made an equal high, and can now either continue, or search for a higher low. Trend is at worst neutral, at best up. Blue path is lower odds, but we know how last week went.",
+  "S&P hourly chart \u2013 Some initial pathing for the early stages of this week. Green is picture perfect bulls. White is reasonable digestion searching for that higher low. Red can be scalps to the downside, respecting the pursuit of a higher low on the daily.",
+  "Market internals \u2013 On the follow through days the market saw bullish internals supporting the gap and gos. Index score was firmly bullish as this started with PPI beats. This reinforces the change in tone. Would be different if the rally was on weak internals... would call it a house of cards.",
+  "Market profile for Thursday / Friday indicates we have a mechanical / weak low. Friday's low thus becomes the gate keeper for any pullback. To read more about mechanical / weak levels: https://tradebrigade.us3.list-manage.com/track/click?u~d46e35c10e1d6c456843de2&idL210982b3&e27d66bac7 (https://tradebrigade.us3.list-manage.com/track/click?u~d46e35c10e1d6c456843de2&id\ufffd88ce6263&e27d66bac7)",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "BK \u2013 Daily chart",
+  "CIEN \u2013 Daily chart",
+  "EOG \u2013 Daily chart",
+  "MMM \u2013 Weekly chart",
+  "We're social!"
+ ]
+}

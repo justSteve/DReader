@@ -1,0 +1,146 @@
+{
+ "letter_date": "2025-05-19",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 05/19/25",
+ "file": "2025-05-19_196e5d9915962b46.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets continued the rally last week, adding 2.19% from Monday\u2019s open and 5.25% if you measure from last Friday\u2019s close. That puts us:\n* +23.3% from the \u201ctariff lows\u201d\n* Just 3.17% shy of all-time highs\n\nThis leaves plenty of room to pull back and set a higher low on the daily trend count. Ideally t"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 So where does the weekly trend sit? Well we just broke for a higher high over the prior pivot at 577. There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball.",
+   "instrument": "SPY",
+   "level": 577.0,
+   "class": "mention",
+   "sentence": "Well we just broke for a higher high over the prior pivot at 577."
+  },
+  {
+   "section": "S&P weekly chart \u2013 So where does the weekly trend sit? Well we just broke for a higher high over the prior pivot at 577. There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball.",
+   "instrument": "SPY",
+   "level": 577.0,
+   "class": "hold",
+   "sentence": "There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball."
+  },
+  {
+   "section": "S&P weekly chart \u2013 So where does the weekly trend sit? Well we just broke for a higher high over the prior pivot at 577. There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball.",
+   "instrument": "SPY",
+   "level": 570.0,
+   "class": "hold",
+   "sentence": "There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball."
+  },
+  {
+   "section": "S&P weekly chart \u2013 So where does the weekly trend sit? Well we just broke for a higher high over the prior pivot at 577. There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "hold",
+   "sentence": "There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball."
+  },
+  {
+   "section": "S&P weekly chart \u2013 So where does the weekly trend sit? Well we just broke for a higher high over the prior pivot at 577. There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "break",
+   "sentence": "For the weekly trend to flip back to down, a test of 550 then lower high under 577 would be a possibility."
+  },
+  {
+   "section": "S&P weekly chart \u2013 So where does the weekly trend sit? Well we just broke for a higher high over the prior pivot at 577. There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball.",
+   "instrument": "SPY",
+   "level": 577.0,
+   "class": "break",
+   "sentence": "For the weekly trend to flip back to down, a test of 550 then lower high under 577 would be a possibility."
+  },
+  {
+   "section": "S&P daily chart \u2013 If you want this to play out like Fitch, you want to see this path below. Overshoot the gap close at 570, set a weekly lower high, double top over 570 with a break back below that level being the time and place to get short on a completed reversal. 570 is your huckleberry.",
+   "instrument": "SPY",
+   "level": 570.0,
+   "class": "break",
+   "sentence": "Overshoot the gap close at 570, set a weekly lower high, double top over 570 with a break back below that level being the time and place to get short on a completed reversal."
+  },
+  {
+   "section": "S&P daily chart \u2013 If you want this to play out like Fitch, you want to see this path below. Overshoot the gap close at 570, set a weekly lower high, double top over 570 with a break back below that level being the time and place to get short on a completed reversal. 570 is your huckleberry.",
+   "instrument": "SPY",
+   "level": 570.0,
+   "class": "mention",
+   "sentence": "570 is your huckleberry."
+  },
+  {
+   "section": "S&P daily chart \u2013 What seems more reasonable to me, is some kind of hold over the top of the gap, or a gap fill reversal off of 567.75 that seeks a higher low back over 577.",
+   "instrument": "SPY",
+   "level": 567.75,
+   "class": "hold",
+   "sentence": "S&P daily chart \u2013 What seems more reasonable to me, is some kind of hold over the top of the gap, or a gap fill reversal off of 567.75 that seeks a higher low back over 577."
+  },
+  {
+   "section": "S&P daily chart \u2013 What seems more reasonable to me, is some kind of hold over the top of the gap, or a gap fill reversal off of 567.75 that seeks a higher low back over 577.",
+   "instrument": "SPY",
+   "level": 577.0,
+   "class": "hold",
+   "sentence": "S&P daily chart \u2013 What seems more reasonable to me, is some kind of hold over the top of the gap, or a gap fill reversal off of 567.75 that seeks a higher low back over 577."
+  },
+  {
+   "section": "S&P daily chart \u2013 What seems more reasonable to me, is some kind of hold over the top of the gap, or a gap fill reversal off of 567.75 that seeks a higher low back over 577.",
+   "instrument": "SPY",
+   "level": 588.0,
+   "class": "mention",
+   "sentence": "The situation that would likely be most frustrating, but bullish, is consolidation with no pullback over 588..."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "OC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 151.15,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    151.15,
+    166.5
+   ],
+   "text": "Inverted head and shoulders. If the broad market can hold up, looking for a move to break the neckline over 151.15. Any higher lows above, are then great Brigade Bolt\u2122 setups for continuation to 166.5 area."
+  },
+  {
+   "ticker": "OUST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 11.55,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    11.55,
+    13.67,
+    15.37
+   ],
+   "text": "Bull flag consolidation post earnings. Over the highs are also a cup and handle breakout, and a double bottom breakout. Over 11.55 and theres pretty thin structure into the 13.67 area, beyond that its 15.37. Theoretically RSI could cool off here before the break."
+  },
+  {
+   "ticker": "PRCH",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    6.5,
+    10.0
+   ],
+   "text": "Daily bull flag, weekly three bar play. Huge rounded base on the higher timeframe. Overhead supply lows should be the target above. Not interested if the 10 level breaks, would require a deeper pullback to 6.5 for the gap close."
+  }
+ ],
+ "sections": [
+  "S&P daily chart \u2013 We're going to look back at the Fitch downgrade as an example of how trends change. The market fell ~10% from Aug-Nov 2023.",
+  "S&P weekly chart \u2013 The main idea in that timeframe was that the weekly pullback was going to offer a monthly higher low over the inverted head and shoulders reversal from the 2022 drawdown. That ended up marking the low.",
+  "S&P weekly chart \u2013 So where does the weekly trend sit? Well we just broke for a higher high over the prior pivot at 577. There is plenty of opportunity for a higher low over 577, 570 gap close, or 550 as the curve ball.",
+  "S&P daily chart \u2013 If you want this to play out like Fitch, you want to see this path below. Overshoot the gap close at 570, set a weekly lower high, double top over 570 with a break back below that level being the time and place to get short on a completed reversal. 570 is your huckleberry.",
+  "S&P daily chart \u2013 What seems more reasonable to me, is some kind of hold over the top of the gap, or a gap fill reversal off of 567.75 that seeks a higher low back over 577.",
+  "S&P hourly chart \u2013 pathing ideas and locations where R:R may favor some kind of trade developing. (F.O. = Forecast Open)",
+  "Market internals \u2013 On Thursday, sellers had a shot at rolling the market over via an open under Wednesday's value... No dice. Internals closed neutral to bullish. Moral of the story? Stronger sellers still aren't involved. We'll see if early in the week that changes with the Moody's news.",
+  "Market profile \u2013 Value is clearly higher, and the nuance to take away is again, weakness from sellers on Thursday, unable to break through the Wednesday low and rotate through the single prints.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "OC \u2013 Daily",
+  "OUST \u2013 Daily",
+  "PRCH \u2013 Daily / Weekly",
+  "We're social!"
+ ]
+}

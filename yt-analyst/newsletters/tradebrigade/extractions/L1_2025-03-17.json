@@ -1,0 +1,78 @@
+{
+ "letter_date": "2025-03-17",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 03/17/25",
+ "file": "2025-03-17_195a166e2b8413b6.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets extended their decline last week, dipping into correction territory (-10%) near Thursday\u2019s lows.\n\nFriday\u2019s modest bounce failed to reclaim the \u201cdo or die\u201d zone we flagged last week (564\u2013573), raising some red flags.\n\nThis pullback comes despite inflation data beating expectations.\n\nLast week"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 Most supporting evidence is still bearish. Base case is looking for continuation or lower highs.",
+   "instrument": "SPY",
+   "level": 564.65,
+   "class": "hold",
+   "sentence": "The optimistic paths look for a daily higher low to start changing structure over the DoD zone low at 564.65."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ALL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 202.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    202.25
+   ],
+   "text": "Big successful breakout on Friday moving over the higher low consolidation AFTER the inverted head and shoulders reversal. Looking for higher lows over 202.25 and continuation up to the all time high. Beyond that blue sky territory."
+  },
+  {
+   "ticker": "CE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Please mind the AGGRESSIVE weekly downtrend here. Bottom fishing on an inverted head and shoulders with an overhead gap to potentially target / close. Tight R:R makes for a watch, but one more time... this is massively counter to the prevailing winds."
+  },
+  {
+   "ticker": "HESM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Ascending triangle into blue sky territory. Very straightforward chart."
+  },
+  {
+   "ticker": "XOM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    119.0
+   ],
+   "text": "This is coming back into play at the top end of the balance range. Looking for a break to get back through the thin structure and the origin of the breakdown level around 119."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Hammer, but location is wrong. Double top neckline broken and closed below. Bar to bar lower high and lower low. Close under prior week range. Close under do or die zone low. Weekly lower high possible.",
+  "S&P daily chart \u2013 Most supporting evidence is still bearish. Base case is looking for continuation or lower highs.",
+  "S&P hourly chart \u2013 Friday's action looks really weak in the context of a counter trend in aggressive down market. There were no stronger buyers, and it was hardly a short squeeze. Base case outlines the red dots as being favorable, but we'll keep an open mind to the green reversals.",
+  "Market internals \u2013 Don't be fooled by the Friday action. It was up, but the intraday tempo and location of the move aren't compelling enough to argue new money buyers stepped up at the exchange level. Still thinking sellers have the overall edge.",
+  "Market profile \u2013 The balance range will define if there is any stronger counter trend moves, but note the value area and PoC from Friday move over the Thursday range high. This mechanical level should act as an intermediary over/under gauge for bull/bear early in the week.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ALL \u2013 Daily",
+  "CE \u2013 Daily",
+  "HESM \u2013 Daily",
+  "XOM \u2013 Daily",
+  "We're social!"
+ ]
+}

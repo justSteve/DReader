@@ -1,0 +1,59 @@
+{
+ "letter_date": "2024-11-11",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 11/11/24",
+ "file": "2024-11-11_19318bc7913b6254.txt",
+ "self_score": {
+  "found": false,
+  "opener": "All we can say is WOW.\n\nWhat a move higher across the broad market on the election gap up. All charts are firing risk on signals.\n\nThat is with one exception...\n\nAs we've been discussing the 10 year interest rate continues to remain elevated. There was the promising start of a pullback paired with t"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 HUGE expansion of range and closed at highs of the week. Indicates more price acceptance at the higher high in the trend count. A rejection of these higher prices would have looked like an inverted hammer with an upper wick that acknowledges the election gap up, but faded to close back inside of prior weeks range.",
+   "instrument": "SPY",
+   "level": 586.0,
+   "class": "hold",
+   "sentence": "No signs of pullback, but higher lows available > 586."
+  },
+  {
+   "section": "S&P weekly chart \u2013 HUGE expansion of range and closed at highs of the week. Indicates more price acceptance at the higher high in the trend count. A rejection of these higher prices would have looked like an inverted hammer with an upper wick that acknowledges the election gap up, but faded to close back inside of prior weeks range.",
+   "instrument": "SPY",
+   "level": 565.0,
+   "class": "mention",
+   "sentence": "Line in sand 565."
+  },
+  {
+   "section": "S&P daily chart \u2013 Higher low pullbacks are the name of the game. If the market just extends the rally, 610 is a measured move.",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "target",
+   "sentence": "If the market just extends the rally, 610 is a measured move."
+  },
+  {
+   "section": "S&P daily chart \u2013 Higher low pullbacks are the name of the game. If the market just extends the rally, 610 is a measured move.",
+   "instrument": "SPY",
+   "level": 586.0,
+   "class": "break",
+   "sentence": "A fake out would have failed 586 on Wednesday, initiating more of a gap close."
+  }
+ ],
+ "swing_ideas": [],
+ "sections": [
+  "S&P weekly chart \u2013 HUGE expansion of range and closed at highs of the week. Indicates more price acceptance at the higher high in the trend count. A rejection of these higher prices would have looked like an inverted hammer with an upper wick that acknowledges the election gap up, but faded to close back inside of prior weeks range.",
+  "S&P daily chart \u2013 Higher low pullbacks are the name of the game. If the market just extends the rally, 610 is a measured move.",
+  "S&P hourly chart \u2013 NOTHING bearish about the price action, I'm just using this view to talk about the only two short ideas that would be somewhat reasonable. Look above and fail on the all time high or a move into the election gap. Both have well defined R:R, but are counter trend.",
+  "Market internals \u2013 Reads got weaker as the breakout extended into Thursday and Friday. It doesn't mean to short the market, but rather keep an open mind to bullish consolidation after the large expansion of range. None of the internals were inherently bearish.",
+  "Market profile \u2013 Friday's session stays clean over the Thursday value area. Decent excess at the highs and lows. Stronger sellers would have attempted a value area overlap for more of a balanced look. Didn't happen.",
+  "Economic & Earnings Calendar",
+  "ADP \u2013 Daily Chart",
+  "ALAB \u2013 Daily chart",
+  "CADE \u2013 Daily chart",
+  "APH \u2013 Weekly chart",
+  "BKR \u2013 Monthly chart",
+  "EA \u2013 Monthly chart",
+  "LOW \u2013 Weekly chart",
+  "NWSA \u2013 Monthly chart",
+  "PANW \u2013 Weekly chart",
+  "SRE \u2013 Monthly chart",
+  "We're social!"
+ ]
+}

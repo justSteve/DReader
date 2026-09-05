@@ -1,0 +1,100 @@
+{
+ "letter_date": "2024-12-16",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 12/16/24",
+ "file": "2024-12-16_193cd025a906e21d.txt",
+ "self_score": {
+  "found": false,
+  "opener": "This was the first week in a while where the Nasdaq made a new high but the S&P 500 did not.\n\nThrough the week we have been tracking the contraction of breadth in terms of advancers vs decliners as the broad market has continued to produce record highs.\n\nHistorically, not a very impressive span of p"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Bulls seek consolidation or continuation > 600. No potential for change. Under 600 & over 585 still seeks a weekly higher low. Most likely. Under 585 gets more dangerous for a possible trend reversal.",
+   "instrument": "SPY",
+   "level": 600.0,
+   "class": "mention",
+   "sentence": "S&P weekly chart \u2013 Bulls seek consolidation or continuation > 600."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Bulls seek consolidation or continuation > 600. No potential for change. Under 600 & over 585 still seeks a weekly higher low. Most likely. Under 585 gets more dangerous for a possible trend reversal.",
+   "instrument": "SPY",
+   "level": 600.0,
+   "class": "hold",
+   "sentence": "Under 600 & over 585 still seeks a weekly higher low."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Bulls seek consolidation or continuation > 600. No potential for change. Under 600 & over 585 still seeks a weekly higher low. Most likely. Under 585 gets more dangerous for a possible trend reversal.",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "hold",
+   "sentence": "Under 600 & over 585 still seeks a weekly higher low."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Bulls seek consolidation or continuation > 600. No potential for change. Under 600 & over 585 still seeks a weekly higher low. Most likely. Under 585 gets more dangerous for a possible trend reversal.",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "mention",
+   "sentence": "Under 585 gets more dangerous for a possible trend reversal."
+  },
+  {
+   "section": "S&P daily chart \u2013 Pathing is simple as the market starts to build out more of a balance range here. Bull flag until proven otherwise over 600.5. Would even consider a pullback long there. Tone changes on breaks below 600.5.",
+   "instrument": "SPY",
+   "level": 600.5,
+   "class": "mention",
+   "sentence": "Bull flag until proven otherwise over 600.5."
+  },
+  {
+   "section": "S&P daily chart \u2013 Pathing is simple as the market starts to build out more of a balance range here. Bull flag until proven otherwise over 600.5. Would even consider a pullback long there. Tone changes on breaks below 600.5.",
+   "instrument": "SPY",
+   "level": 600.5,
+   "class": "break",
+   "sentence": "Tone changes on breaks below 600.5."
+  },
+  {
+   "section": "S&P hourly chart \u2013 My interpretation of Friday is that buyers had The Gift\u2122\u00ae\u00a9 on the open and failed to do anything constructive with it. The bears take it right back, and for that reason I'm very open minded to shorts under 604.25, hence the red dots. Still following the daily plan.",
+   "instrument": "SPY",
+   "level": 604.25,
+   "class": "mention",
+   "sentence": "The bears take it right back, and for that reason I'm very open minded to shorts under 604.25, hence the red dots."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "SWKS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 91.3,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    91.3
+   ],
+   "text": "Inverted head and shoulders with potential to recapture the 50 SMA (blue) on a break out. Thin structure gap overhead is going to act as the target here. Not interested if price never gets over the 91.3 level."
+  },
+  {
+   "ticker": "ZBH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 107.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    107.5,
+    112.6
+   ],
+   "text": "Really interested in the Friday hammer that looked under the Thursday range, and then closed back inside. Also a gap fill reversal to the downside from the prior earning cycle. Looking for a higher low back over 107.5 for a look below and fail on the balance. Target would be the top end of the range up around 112.6. Not interested if the 107.5 higher low never comes."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Bulls seek consolidation or continuation > 600. No potential for change. Under 600 & over 585 still seeks a weekly higher low. Most likely. Under 585 gets more dangerous for a possible trend reversal.",
+  "S&P daily chart \u2013 Pathing is simple as the market starts to build out more of a balance range here. Bull flag until proven otherwise over 600.5. Would even consider a pullback long there. Tone changes on breaks below 600.5.",
+  "S&P hourly chart \u2013 My interpretation of Friday is that buyers had The Gift\u2122\u00ae\u00a9 on the open and failed to do anything constructive with it. The bears take it right back, and for that reason I'm very open minded to shorts under 604.25, hence the red dots. Still following the daily plan.",
+  "Market internals \u2013 Bulls couldn't really get in gear especially with the Wednesday CPI rally yielding a flat result. It doesn't look like big new money selling yet, but certainly not new money buyers rushing to buy all time highs.",
+  "Market profile \u2013 We have overhead supply that is trapped and a successful departure from that value area on Friday's breakdown. Point of control right at the edge of range. Note the poor low that is in need of repair.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "SWKS \u2013 Daily",
+  "ZBH \u2013 Daily",
+  "We're social!"
+ ]
+}

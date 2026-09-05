@@ -1,0 +1,90 @@
+{
+ "letter_date": "2025-05-26",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 05/26/25",
+ "file": "2025-05-26_19709e47ab7bddd7.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Last week, the market finally took a breather, falling about 1.53%. That leaves us:\n* Up 20.18% from the \u201ctariff lows\u201d\n* Down 5.55% from all-time highs\n\nThis pullback strikes us as healthy and a chance for the market to \"repair\" thin structure left behind during the rally.\n\nA stronger base is more e"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Inverted hammer with a heavy close. Higher high failed to \"breakout\" over prior weeks highs. Downside gap close is likely on the table ~567.75.",
+   "instrument": "SPY",
+   "level": 567.75,
+   "class": "target",
+   "sentence": "Downside gap close is likely on the table ~567.75."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Inverted hammer with a heavy close. Higher high failed to \"breakout\" over prior weeks highs. Downside gap close is likely on the table ~567.75.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "hold",
+   "sentence": "Still room for a higher low to preserve the uptrend over 550."
+  },
+  {
+   "section": "S&P hourly chart \u2013 577 holds the key early in the week. If we can see an hourly trend change, I want to be thinking longs with respect to the daily higher low.",
+   "instrument": "SPY",
+   "level": 577.0,
+   "class": "hold",
+   "sentence": "S&P hourly chart \u2013 577 holds the key early in the week."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "BRBR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [],
+   "text": "Possible early stage double bottom. Friday looks below the lows, fails to move lower, closes back inside range. Over Friday's high can look for the neckline. Beyond that there's a massive gap overhead."
+  },
+  {
+   "ticker": "OS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 28.7,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    28.7
+   ],
+   "text": "Newer IPO here with a near perfect daily flag, over the IPO opening print. Its a possible \"AI\" story that is worth doing some reading into. Over 28.70... walk 'em up."
+  },
+  {
+   "ticker": "TEM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Just revisiting the rounded bottom and mild pullback... Still in play."
+  },
+  {
+   "ticker": "WM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Recession proof. Brand new all time highs over the balance."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Inverted hammer with a heavy close. Higher high failed to \"breakout\" over prior weeks highs. Downside gap close is likely on the table ~567.75.",
+  "S&P daily chart \u2013 Price rejected the overhead supply level. Friday's gap fill reversal keeps the pressure on to the downside however the base case remains; This is a reasonable spot for a daily higher low at the top of the China gap and daily 200SMA, pulling back from the highest high.",
+  "S&P hourly chart \u2013 577 holds the key early in the week. If we can see an hourly trend change, I want to be thinking longs with respect to the daily higher low.",
+  "Market internals \u2013 Sellers had The Gift\u2122\u00ae\u00a9 on Friday's gap down. Price lower on a catalyst. The question becomes: Did strong sellers step up at the exchange level to take advantage of this?",
+  "Market profile \u2013 After Wednesday's bond auction mishap, price (and value) never returned above the single prints. Friday does have a decent excess low, but until value can move higher, bears have the edge. Tuesday's value will be a big tell.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "BRBR \u2013 Daily",
+  "OS \u2013 Daily",
+  "TEM \u2013 Daily",
+  "WM \u2013 Daily",
+  "We're social!"
+ ]
+}

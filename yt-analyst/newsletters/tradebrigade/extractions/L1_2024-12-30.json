@@ -1,0 +1,131 @@
+{
+ "letter_date": "2024-12-30",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 12/30/24",
+ "file": "2024-12-30_19415140d2d77a17.txt",
+ "self_score": {
+  "found": false,
+  "opener": "It's quiet out there in the market.\n\nDuring the holiday lull, It's a great time to reflect on 2024, and set goals for 2025.\n\nWhat went well with your trading in 2024? More importantly, what could you improve and how are you going to make that a priority in the new year?\nOn a personal note, here are "
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 holding the uptrend! Higher lows persist on holds over 585, the confluence zone of prior high, fib 61.8, breakout aVWAP, and HVN.",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "hold",
+   "sentence": "Higher lows persist on holds over 585, the confluence zone of prior high, fib 61.8, breakout aVWAP, and HVN."
+  },
+  {
+   "section": "S&P weekly chart \u2013 holding the uptrend! Higher lows persist on holds over 585, the confluence zone of prior high, fib 61.8, breakout aVWAP, and HVN.",
+   "instrument": "SPY",
+   "level": 603.0,
+   "class": "break",
+   "sentence": "Need to acknowledge the upper wick rejecting 603, but not a lower high yet."
+  },
+  {
+   "section": "S&P daily chart \u2013 Two levels this week that will be \"easy watches.\" Between 595.25 and 590.75 and I'll look for balanced and neutral outcomes. Over 595.25 and bulls have the upper hand, Friday is a higher low. Under 590.75 bears shoot for the head and shoulders pattern. 585.85 neckline.",
+   "instrument": "SPY",
+   "level": 595.25,
+   "class": "mention",
+   "sentence": "S&P daily chart \u2013 Two levels this week that will be \"easy watches.\" Between 595.25 and 590.75 and I'll look for balanced and neutral outcomes."
+  },
+  {
+   "section": "S&P daily chart \u2013 Two levels this week that will be \"easy watches.\" Between 595.25 and 590.75 and I'll look for balanced and neutral outcomes. Over 595.25 and bulls have the upper hand, Friday is a higher low. Under 590.75 bears shoot for the head and shoulders pattern. 585.85 neckline.",
+   "instrument": "SPY",
+   "level": 590.75,
+   "class": "mention",
+   "sentence": "S&P daily chart \u2013 Two levels this week that will be \"easy watches.\" Between 595.25 and 590.75 and I'll look for balanced and neutral outcomes."
+  },
+  {
+   "section": "S&P daily chart \u2013 Two levels this week that will be \"easy watches.\" Between 595.25 and 590.75 and I'll look for balanced and neutral outcomes. Over 595.25 and bulls have the upper hand, Friday is a higher low. Under 590.75 bears shoot for the head and shoulders pattern. 585.85 neckline.",
+   "instrument": "SPY",
+   "level": 595.25,
+   "class": "hold",
+   "sentence": "Over 595.25 and bulls have the upper hand, Friday is a higher low."
+  },
+  {
+   "section": "S&P daily chart \u2013 Two levels this week that will be \"easy watches.\" Between 595.25 and 590.75 and I'll look for balanced and neutral outcomes. Over 595.25 and bulls have the upper hand, Friday is a higher low. Under 590.75 bears shoot for the head and shoulders pattern. 585.85 neckline.",
+   "instrument": "SPY",
+   "level": 590.75,
+   "class": "mention",
+   "sentence": "Under 590.75 bears shoot for the head and shoulders pattern."
+  },
+  {
+   "section": "S&P daily chart \u2013 Two levels this week that will be \"easy watches.\" Between 595.25 and 590.75 and I'll look for balanced and neutral outcomes. Over 595.25 and bulls have the upper hand, Friday is a higher low. Under 590.75 bears shoot for the head and shoulders pattern. 585.85 neckline.",
+   "instrument": "SPY",
+   "level": 585.85,
+   "class": "mention",
+   "sentence": "585.85 neckline."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing leans into the weekly trend holding up. For the weekly higher low to hold, we also need a daily higher low. The green paths do this over 590.25. Look below & fail on the Friday low repairs the poor low (market profile).",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "mention",
+   "sentence": "The green paths do this over 590.25."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing leans into the weekly trend holding up. For the weekly higher low to hold, we also need a daily higher low. The green paths do this over 590.25. Look below & fail on the Friday low repairs the poor low (market profile).",
+   "instrument": "SPY",
+   "level": 590.75,
+   "class": "mention",
+   "sentence": "Daily head & shoulders in play < 590.75."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "DELL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    116.75,
+    121.0,
+    200.0
+   ],
+   "text": "Smaller timeframe inverted head and shoulders developing with a neckline at 121. Over that and there is a gap to close overhead. Mind the daily 200 and 50 SMAs (green and blue respectively). In play so long as 116.75 holds the right shoulder."
+  },
+  {
+   "ticker": "MTTR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 5.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    4.6,
+    5.0,
+    5.7
+   ],
+   "text": "Really scraping the bottom of the barrel for this setup. It just hardly meets our criteria.\n\nHammers holding over the prior highs, but most importantly it is waking up out of a longer term weekly base. Check the multi year weekly chart for that. Holds of 4.6 keep longs in play, and over 5, the next target is at 5.7."
+  },
+  {
+   "ticker": "OKTA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 85.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    85.4
+   ],
+   "text": "Retesting the base breakout zone after the earnings gap up. Huge hammer from Friday suggesting that buyers are willing to get involved over the 50 SMA (blue). Earnings gap up high would be the first target if this can get up and over 85.4. Out of play if it fails to hold the daily 50 SMA (blue)."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 holding the uptrend! Higher lows persist on holds over 585, the confluence zone of prior high, fib 61.8, breakout aVWAP, and HVN.",
+  "S&P daily chart \u2013 Two levels this week that will be \"easy watches.\" Between 595.25 and 590.75 and I'll look for balanced and neutral outcomes. Over 595.25 and bulls have the upper hand, Friday is a higher low. Under 590.75 bears shoot for the head and shoulders pattern. 585.85 neckline.",
+  "S&P hourly chart \u2013 Pathing leans into the weekly trend holding up. For the weekly higher low to hold, we also need a daily higher low. The green paths do this over 590.25. Look below & fail on the Friday low repairs the poor low (market profile).",
+  "Market internals \u2013 Not a huge amount of volume flowing out of the market on Friday, especially relative to the previous Friday's rally. The liquidation off of the open to end last week doesn't strike me as new money sellers for that reason. Other metrics objectively bearish.",
+  "Market profile \u2013 Value shifted lower on Friday, and we can see the poor low from F/G periods. Note that the Tuesday half day poor high was repaired in RTH session of Thursday. Value needs to get over Friday high (6050 area) if buyers have a shot at keeping control.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "DELL \u2013 Daily",
+  "MTTR \u2013 Daily",
+  "OKTA \u2013 Daily",
+  "We're social!"
+ ]
+}

@@ -205,8 +205,8 @@
    "ticker": "MNST",
    "timeframe": "Daily",
    "direction": "long",
-   "trigger": 20.0,
-   "trigger_kind": "over",
+   "trigger": null,
+   "trigger_kind": null,
    "trigger_relative": null,
    "prices": [
     20.0,

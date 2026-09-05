@@ -1,0 +1,112 @@
+{
+ "letter_date": "2024-12-23",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 12/23/24",
+ "file": "2024-12-23_193f1075de28d803.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Emotions are flying high after that FOMC Powell Plunge\u2122 but markets were hardly down 2.5% on the week.\n\nNot much of a crash if you ask me. Rather more of a reasonable pullback within the context of a weekly uptrend.\n\nFrom a fundamental perspective, the liquidation on Wednesday was not brought to you"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 If price cant stay < 590.75, bears are trapped. History shows us that when the weekly trend is up, you shouldn't be overly reliant on a daily downtrend sticking. Ideally a lower high attempt at 603, pulls back to find a daily higher low > 590.75. Bearish < 590.75.",
+   "instrument": "SPY",
+   "level": 590.75,
+   "class": "mention",
+   "sentence": "S&P daily chart \u2013 If price cant stay < 590.75, bears are trapped."
+  },
+  {
+   "section": "S&P daily chart \u2013 If price cant stay < 590.75, bears are trapped. History shows us that when the weekly trend is up, you shouldn't be overly reliant on a daily downtrend sticking. Ideally a lower high attempt at 603, pulls back to find a daily higher low > 590.75. Bearish < 590.75.",
+   "instrument": "SPY",
+   "level": 603.0,
+   "class": "mention",
+   "sentence": "Ideally a lower high attempt at 603, pulls back to find a daily higher low > 590.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 If price cant stay < 590.75, bears are trapped. History shows us that when the weekly trend is up, you shouldn't be overly reliant on a daily downtrend sticking. Ideally a lower high attempt at 603, pulls back to find a daily higher low > 590.75. Bearish < 590.75.",
+   "instrument": "SPY",
+   "level": 590.75,
+   "class": "mention",
+   "sentence": "Ideally a lower high attempt at 603, pulls back to find a daily higher low > 590.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 If price cant stay < 590.75, bears are trapped. History shows us that when the weekly trend is up, you shouldn't be overly reliant on a daily downtrend sticking. Ideally a lower high attempt at 603, pulls back to find a daily higher low > 590.75. Bearish < 590.75.",
+   "instrument": "SPY",
+   "level": 590.75,
+   "class": "mention",
+   "sentence": "Bearish < 590.75."
+  },
+  {
+   "section": "S&P hourly chart \u2013 The upside path is what I am primarily looking for based on the supporting evidence in the market for the higher timeframe trend to continue. Under 590.75 and I'll call a spade a spade... Hourly bear flag with the threat to close the election gap in full.",
+   "instrument": "SPY",
+   "level": 590.75,
+   "class": "mention",
+   "sentence": "Under 590.75 and I'll call a spade a spade..."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "CROX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 114.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    114.0
+   ],
+   "text": "Nice higher low developing after a longer term trend line bounce. If we can see price acceptance over 114, looking like the earnings gap is in play."
+  },
+  {
+   "ticker": "PPTA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    11.65,
+    13.1,
+    15.3
+   ],
+   "text": "Simple daily bull flag with a breakout level at 13.10 and prior high target at 15.30. If it can breakout that is almost the exact measured move from the pattern. In play so long as 11.65 holds."
+  },
+  {
+   "ticker": "RXO",
+   "timeframe": "Weekly / Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    28.2
+   ],
+   "text": "Big retest to the top of the weekly range, with a hammers closed both on Thursday and Friday. Looking for longs, even if just a counter trend move back up towards the 28.2 area which is the origin of the breakdown."
+  },
+  {
+   "ticker": "SLM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 28.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    28.0
+   ],
+   "text": "Flag to all time highs with massive volume on the opex from Friday. Looking for acceptance over 28 to trigger a blue sky breakout. Not interested if we take out the low of the Wednesday FOMC bar."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Shot at holding here for a higher low. The prior pullback never achieved a daily downtrend, therefore I consider it \"soft.\" Very similar to the Aug 5 gap down, we close over the prior resistance.",
+  "S&P daily chart \u2013 If price cant stay < 590.75, bears are trapped. History shows us that when the weekly trend is up, you shouldn't be overly reliant on a daily downtrend sticking. Ideally a lower high attempt at 603, pulls back to find a daily higher low > 590.75. Bearish < 590.75.",
+  "S&P hourly chart \u2013 The upside path is what I am primarily looking for based on the supporting evidence in the market for the higher timeframe trend to continue. Under 590.75 and I'll call a spade a spade... Hourly bear flag with the threat to close the election gap in full.",
+  "Market internals \u2013 Definitely bearish during the Powell Plunge\u2122 but were far overshadowed by the the bullish rebound on Friday. Most notably on breadth. The ratio of volume flowing into up stocks vs down stocks was MASSIVE and SUSTAINED.",
+  "Market profile \u2013 On the Powell Plunge\u2122 day, never saw the point of control flip lower. I get it there was fast tempo. On Friday, value shifts overlapping to UP after a gap down... Stronger sellers? Yeah right.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "CROX \u2013 Daily",
+  "PPTA \u2013 Daily",
+  "RXO \u2013 Weekly / Daily",
+  "SLM \u2013 Daily",
+  "We're social!"
+ ]
+}

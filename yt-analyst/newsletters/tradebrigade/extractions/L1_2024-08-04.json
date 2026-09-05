@@ -1,0 +1,97 @@
+{
+ "letter_date": "2024-08-04",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 08/05/24",
+ "file": "2024-08-04_1911fd60ce882696.txt",
+ "self_score": {
+  "found": false,
+  "opener": "WOW... no easy way to put it, but the jobs report on Friday was down right disastrous for the broad market.\n\nAfter an FOMC where Jerome Powell clearly stated that he did NOT want to see further deterioration in the labor market, we get a swing and a miss right across the board.\n\nIts not that a 4.3 c"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 Inverted hammer for July, doesn't look great, but the location is great. All time high, highest high in the cycle. Pullbacks fine over 480. There is no semblance of a monthly downtrend which preceded the watershed moments of the dot com bubble bursting, and the great financial crisis.",
+   "instrument": "SPY",
+   "level": 480.0,
+   "class": "mention",
+   "sentence": "Pullbacks fine over 480."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Now the cracks start to emerge...If the market falls, we are not holding the ideal higher low. If the market rallies, theres the threat of a lower high up against 550ish. Would need to be through that to have higher conviction that the pullback is over and a \"recession\" is not going to threaten the market.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "break",
+   "sentence": "If the market rallies, theres the threat of a lower high up against 550ish."
+  },
+  {
+   "section": "S&P daily chart \u2013 Continuation of the downtrend looks likely here with upper EM being a lower high, and lower EM being a lower low. Reference the higher timeframe signposts. With the hammer gap down on Friday, wouldn't be shocked to see the gap close, and some rejection below the range ~539.5.",
+   "instrument": "SPY",
+   "level": 539.5,
+   "class": "break",
+   "sentence": "With the hammer gap down on Friday, wouldn't be shocked to see the gap close, and some rejection below the range ~539.5."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "CUBE",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": 46.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    46.5,
+    48.75
+   ],
+   "text": "Higher timeframe inverted head and shoulders possibly breaking out. If you look at a daily, clean bull flag here near the highs of the recent leg up. Looking for more upside if we can continue to hold over 46.5 and breakout over 48.75 area.\n\nREITs will be sensitive to interest rates continuing to move lower."
+  },
+  {
+   "ticker": "EXAS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    64.1
+   ],
+   "text": "The relative strength post earnings was too good to ignore. Back to back hammers with a failure from the sellers to close the earnings gap all the way. We are still in a technical downtrend on the weekly / monthly chart so mind that.\n\nIf buyers can take out the two day highs there is a strong opportunity for 64.10 to come into play as a target. Especially if the broad market as a whole is going to see a counter trend move."
+  },
+  {
+   "ticker": "HAS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    62.7
+   ],
+   "text": "Reasonable pullback so far to retest the breakout point of the balance range below. As long as HAS holds 62.7 looking for longs back to the swing high. Keep in mind, if we were in the trenches of a recession, this would not be holding here."
+  },
+  {
+   "ticker": "VRNS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 50.0,
+   "trigger_kind": "over",
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    50.0,
+    56.65
+   ],
+   "text": "Perfect gap fill reversal from the Friday session. Over Friday's highs take it back over the prior pivot high and the recent high becomes the target around 56.65. Interested as long as the perfect gap fill reversal remains over 50.\n\nThats all that hit the scanner this week qualified to be included in the newsletter.\n\nQuality > Forcing setups"
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Inverted hammer for July, doesn't look great, but the location is great. All time high, highest high in the cycle. Pullbacks fine over 480. There is no semblance of a monthly downtrend which preceded the watershed moments of the dot com bubble bursting, and the great financial crisis.",
+  "S&P weekly chart \u2013 Now the cracks start to emerge...If the market falls, we are not holding the ideal higher low. If the market rallies, theres the threat of a lower high up against 550ish. Would need to be through that to have higher conviction that the pullback is over and a \"recession\" is not going to threaten the market.",
+  "S&P daily chart \u2013 Continuation of the downtrend looks likely here with upper EM being a lower high, and lower EM being a lower low. Reference the higher timeframe signposts. With the hammer gap down on Friday, wouldn't be shocked to see the gap close, and some rejection below the range ~539.5.",
+  "S&P hourly chart \u2013 clear failure of the buyers on the Thursday session to find a higher low over the top of balance. Not even an hourly lower wick. Lower highs are the name of the game. Would entertain longs on the white path.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "CUBE \u2013 Weekly chart",
+  "EXAS \u2013 Daily chart",
+  "HAS \u2013 Daily chart",
+  "VRNS \u2013 Daily chart",
+  "We're social!"
+ ]
+}

@@ -26,7 +26,7 @@ SELF_RE = re.compile(
     r"(?:S&P|Price|Markets?)[^.\n]{0,80}?(closed|finished|was|is|are|gained|fell|rallied|dropped|lost|retraced|had|has|continued)[^.\n]{0,60}?"
     r"(up|down|higher|lower|gain(?:ed)?|loss|fell|rallied|dropped|lost|drawdown|decline)?[^.\n]{0,30}?(\d+(?:\.\d+)?)\s?%"
     r"([^.\n]{0,80})", re.I)
-HEAD_RE = re.compile(r"^([A-Z]{1,5})\s+[–-]\s+((?:Daily|Weekly|Monthly|Hourly)(?:\s*/\s*(?:Daily|Weekly|Monthly|Hourly))*)(?:\s+Chart)?\s*$")
+HEAD_RE = re.compile(r"^([A-Z]{1,5})\s+[–-]\s+((?:Daily|Weekly|Monthly|Hourly)(?:\s*/\s*(?:Daily|Weekly|Monthly|Hourly))*)(?:\s+[Cc]hart)?(?:,.*)?\s*$")
 IDX_HEAD_RE = re.compile(r"^(SPY|QQQ|IWM|SMH|/ES|S&P (?:weekly|daily|hourly|monthly) chart|Market (?:Internals|Profile|internals|profile)|QQQE|Nasdaq)\b", re.I)
 
 HOLD_KW = re.compile(r"must hold|as long as|holds?\b|support|higher low|reclaim|defend|hold(?:ing)?", re.I)
@@ -129,7 +129,7 @@ def swing_ideas(secs):
         direction = "short" if re.search(r"\bshort(?:ing| setup| idea| entry| side| candidate| this| the)\b|\bputs?\b|breakdown (?:under|below)|break(?:s|ing)? (?:down )?(?:under|below)", low) else "long"
         trig = None; trig_kind = None
         for tm in re.finditer(r"(?:over|above|through|reclaim(?:s|ing)?(?: of)?|breakout(?: level)?(?: potentially)?(?: over| of)?|clear(?:s|ing)?|break(?:s|ing)? (?:out )?(?:over|above|of))\s+(?:the\s+)?\$?(\d{1,4}(?:\.\d{1,2})?)(\s*(?:sma|ema|dma|day|-day|week|month|psych|%))?", low):
-            if tm.group(2):
+            if tm.group(2) or re.match(r"\s*(?:and|&|/)\s*\d+\s*(?:sma|ema|dma|day|week|month|moving)", low[tm.end():]):
                 continue
             trig, trig_kind = float(tm.group(1)), "over"; break
         else:

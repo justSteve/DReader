@@ -1,0 +1,19 @@
+{
+ "letter_date": "2026-03-23",
+ "sent_et": "2026-03-22",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bearish", "conviction": "high", "hedged": false,
+          "quote": "Every path ends at a lower high. None resolve bullish until the trend count says otherwise.",
+          "note": "Three pathing scenarios, 'same outcome'. Volatility term structure named as the turn indicator."},
+ "calls": [
+  {"id": "spy-line-675", "instrument": "SPY", "type": "resistance", "level": 675.0, "rule": "below_week",
+   "quote": "The line in the sand is 675. The weekly 20 SMA is drifting down toward it. The 61.8% Fibonacci from the ATH to last week's low is confluence. Reclaiming 675 on a close would force a reassessment.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-lower-high-662.50", "instrument": "SPY", "type": "resistance", "level": 662.5, "rule": "below_week",
+   "quote": "Counter-trend path: Rally sets daily lower high near 662.50, then back down.", "intent": "offered", "conviction": "medium"},
+  {"id": "spy-target-634", "instrument": "SPY", "type": "target", "level": 634.0, "rule": "target_reached",
+   "quote": "Bear flag path: No reclaim of 653, continuation directly toward 634.", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-defend-595", "instrument": "QQQ", "type": "resistance", "level": 595.0, "rule": "below_week",
+   "quote": "Remember the base case is lower highs on every counter trend pops. Key level for bears to defend is 595.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

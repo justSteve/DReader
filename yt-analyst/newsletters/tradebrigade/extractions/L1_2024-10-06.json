@@ -1,0 +1,86 @@
+{
+ "letter_date": "2024-10-06",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 10/07/24",
+ "file": "2024-10-06_1926446c6cb0fa33.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets have made some small progress in the upward direction with a close on Friday over the daily balance range.\n\nA bit underwhelming of a market move considering the massive beat from the labor report that very morning.\n\nWe know that the Fed has really wanted to see strength come back to the labo"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 Markets gapped up on Friday with the big labor report beat, and were able to close over the daily balance range. The four equalish highs are weak, and if tested should allow for a blue sky breakout. Bears only have strength on the daily below 565.25.",
+   "instrument": "SPY",
+   "level": 565.25,
+   "class": "break",
+   "sentence": "Bears only have strength on the daily below 565.25."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing ideas prior to the Thursday CPI report. Brigade Bolts\u2122 over 574.4 of any kind are blue sky. Holds over 572 is bullish consolidation. In the range we get chop. Under 565.25 sellers win. A failed ATH breakout, with lower high under 572 is bearish.",
+   "instrument": "SPY",
+   "level": 574.4,
+   "class": "mention",
+   "sentence": "Brigade Bolts\u2122 over 574.4 of any kind are blue sky."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing ideas prior to the Thursday CPI report. Brigade Bolts\u2122 over 574.4 of any kind are blue sky. Holds over 572 is bullish consolidation. In the range we get chop. Under 565.25 sellers win. A failed ATH breakout, with lower high under 572 is bearish.",
+   "instrument": "SPY",
+   "level": 572.0,
+   "class": "hold",
+   "sentence": "Holds over 572 is bullish consolidation."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing ideas prior to the Thursday CPI report. Brigade Bolts\u2122 over 574.4 of any kind are blue sky. Holds over 572 is bullish consolidation. In the range we get chop. Under 565.25 sellers win. A failed ATH breakout, with lower high under 572 is bearish.",
+   "instrument": "SPY",
+   "level": 565.25,
+   "class": "mention",
+   "sentence": "Under 565.25 sellers win."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing ideas prior to the Thursday CPI report. Brigade Bolts\u2122 over 574.4 of any kind are blue sky. Holds over 572 is bullish consolidation. In the range we get chop. Under 565.25 sellers win. A failed ATH breakout, with lower high under 572 is bearish.",
+   "instrument": "SPY",
+   "level": 572.0,
+   "class": "break",
+   "sentence": "A failed ATH breakout, with lower high under 572 is bearish."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "COF",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    153.6,
+    177.8
+   ],
+   "text": "Huge cup and handle with flat top breakout level at 153.60. All time high would be the target around 177.8. If the weekly consolidation holds, this will remain on radar."
+  },
+  {
+   "ticker": "TTEK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 48.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    48.4,
+    50.0
+   ],
+   "text": "Ascending triangle with a flat top breakout to blue sky territory. Simple watch over 48.4. In play as long as the daily 50 SMA (blue) and support trend line holds.\n\nThis is all that hit the scanner this week! As always quality over quantity."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Green bodied hammer looks below the prior inverted hammer low, supports over the prior resistance, and closes in the upper third of this weeks range. All of this happening above the aVWAPs, 38.2 fib, HVN... Bullish.",
+  "S&P daily chart \u2013 Markets gapped up on Friday with the big labor report beat, and were able to close over the daily balance range. The four equalish highs are weak, and if tested should allow for a blue sky breakout. Bears only have strength on the daily below 565.25.",
+  "S&P hourly chart \u2013 Pathing ideas prior to the Thursday CPI report. Brigade Bolts\u2122 over 574.4 of any kind are blue sky. Holds over 572 is bullish consolidation. In the range we get chop. Under 565.25 sellers win. A failed ATH breakout, with lower high under 572 is bearish.",
+  "Market internals \u2013 Buyers were able to provide a gap fill reversal, however, there wasn't a ton of strength on the rally into the end of the day. Volume not substantial, advance decline line never in trend higher zone, negative index score build, negative cumulative build.",
+  "Market profile \u2013 Value really only got overlapping to up, and the point of control did not migrate higher with price into the close. It technically stayed inside of the prior two day balance from Wednesday / Thursday.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "COF \u2013 Weekly chart",
+  "TTEK \u2013 Daily chart",
+  "We're social!"
+ ]
+}

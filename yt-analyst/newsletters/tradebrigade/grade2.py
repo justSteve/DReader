@@ -11,6 +11,7 @@ Rules are closed and mechanical once the reader has classed a call:
   look_below_and_reclaim week low < level AND Friday close > level
   below_week             instrument closes the forward week below level
   range_hold             Friday close inside [low, high]
+  range_break            Friday close outside [low, high]
   target_reached         level touched within the forward week
 Lean is graded on SPY Friday-to-Friday close of the forward week.
 Validation: every level must appear verbatim in the letter text.
@@ -73,6 +74,8 @@ def grade_call(c, w, prev_close):
         res["outcome"] = "pass" if fri < lvl else "fail"; res["touched"] = touched(lvl)
     elif r == "range_hold":
         res["outcome"] = "pass" if c["low"] <= fri <= c["high"] else "fail"
+    elif r == "range_break":
+        res["outcome"] = "pass" if not (c["low"] <= fri <= c["high"]) else "fail"
     elif r == "target_reached":
         res["outcome"] = "pass" if touched(lvl) else "fail"
     else:
@@ -114,7 +117,17 @@ def main():
     L = ["\n## 5. Layer 2 — interpretive calls (read by Claude, graded by rule)\n",
          "Each recent letter was read in full and its conditional statements classed into closed rule types (see `grade2.py`). "
          "Every level was checked to appear verbatim in the letter. Lean is graded on SPY's Friday-to-Friday return for the forward week.\n",
-         "| letter | lean | conv. | hedged | SPY week | lean ok | calls pass/fail/not-trig |\n|---|---|---|---|---:|---|---|"]
+         ]
+    dir_ = [g for g in letters if g["lean_ok"] is not None]
+    allc = [c for g in letters for c in g["calls"]]
+    byrule = {}
+    for c in allc: byrule.setdefault(c["rule"], []).append(c["outcome"])
+    L.append(f"- Letters read: {len(letters)}. Directional leans: {len(dir_)}, correct {sum(g['lean_ok'] for g in dir_)}; "
+             f"hedged leans: {sum(g['lean']['hedged'] for g in letters)}/{len(letters)}. "
+             f"Calls: {len(allc)} — pass {sum(c['outcome']=='pass' for c in allc)}, fail {sum(c['outcome']=='fail' for c in allc)}, "
+             f"not triggered {sum(c['outcome']=='not_triggered' for c in allc)}.")
+    L.append("- By rule: " + "; ".join(f"{r} {o.count('pass')}/{o.count('fail')}/{o.count('not_triggered')}" for r, o in sorted(byrule.items())) + " (pass/fail/not-triggered).\n")
+    L.append("| letter | lean | conv. | hedged | SPY week | lean ok | calls pass/fail/not-trig |\n|---|---|---|---|---:|---|---|")
     for g in letters:
         oc = [c["outcome"] for c in g["calls"]]
         L.append(f"| {g['letter_date']} | {g['lean']['direction']} | {g['lean']['conviction']} | {'yes' if g['lean']['hedged'] else 'no'} | "

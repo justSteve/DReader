@@ -1,0 +1,152 @@
+{
+ "letter_date": "2025-04-20",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 04/21/25",
+ "file": "2025-04-20_19655a559e394350.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 3.24,
+  "basis": "unknown",
+  "quote": "market closed down a modest 3.24%, a drop in the bucket compared to the 10% ranges we saw in the two prior weeks"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 The largest threat to the bullish base case is the weekly downtrend with a lower high that can hold under the 550 level. Optimists want to see the 38.2 hold for a coincident weekly / daily higher low.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "mention",
+   "sentence": "S&P weekly chart \u2013 The largest threat to the bullish base case is the weekly downtrend with a lower high that can hold under the 550 level."
+  },
+  {
+   "section": "S&P daily chart \u2013 The base case is a daily hold of the 523.75 area produces a structural higher low that offers stronger odds of this being \"the\" bottom post capitulation. To remain base case, 523.75 must continue holding, and a higher high over 550 confirms the trend change.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "hold",
+   "sentence": "S&P daily chart \u2013 The base case is a daily hold of the 523.75 area produces a structural higher low that offers stronger odds of this being \"the\" bottom post capitulation."
+  },
+  {
+   "section": "S&P daily chart \u2013 The base case is a daily hold of the 523.75 area produces a structural higher low that offers stronger odds of this being \"the\" bottom post capitulation. To remain base case, 523.75 must continue holding, and a higher high over 550 confirms the trend change.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "hold",
+   "sentence": "To remain base case, 523.75 must continue holding, and a higher high over 550 confirms the trend change."
+  },
+  {
+   "section": "S&P daily chart \u2013 The base case is a daily hold of the 523.75 area produces a structural higher low that offers stronger odds of this being \"the\" bottom post capitulation. To remain base case, 523.75 must continue holding, and a higher high over 550 confirms the trend change.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "hold",
+   "sentence": "To remain base case, 523.75 must continue holding, and a higher high over 550 confirms the trend change."
+  },
+  {
+   "section": "S&P hourly chart \u2013 The pullback has started a potential double bottom at 523.75. If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "mention",
+   "sentence": "S&P hourly chart \u2013 The pullback has started a potential double bottom at 523.75."
+  },
+  {
+   "section": "S&P hourly chart \u2013 The pullback has started a potential double bottom at 523.75. If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550.",
+   "instrument": "SPY",
+   "level": 531.75,
+   "class": "break",
+   "sentence": "If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550."
+  },
+  {
+   "section": "S&P hourly chart \u2013 The pullback has started a potential double bottom at 523.75. If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550.",
+   "instrument": "SPY",
+   "level": 544.0,
+   "class": "break",
+   "sentence": "If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550."
+  },
+  {
+   "section": "S&P hourly chart \u2013 The pullback has started a potential double bottom at 523.75. If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "break",
+   "sentence": "If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550."
+  },
+  {
+   "section": "S&P hourly chart \u2013 The pullback has started a potential double bottom at 523.75. If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "break",
+   "sentence": "Getting back into the short camp requires a lower high under 523.75 zone and a break of 511.5."
+  },
+  {
+   "section": "S&P hourly chart \u2013 The pullback has started a potential double bottom at 523.75. If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550.",
+   "instrument": "SPY",
+   "level": 511.5,
+   "class": "break",
+   "sentence": "Getting back into the short camp requires a lower high under 523.75 zone and a break of 511.5."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ACM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    95.0
+   ],
+   "text": "Bull flag at the lows, and most importantly, just a clean clean breakout level. If its going to go, it should be obvious, so watching 95 flat like a hawk. Not interested if the support trend line starts to fail."
+  },
+  {
+   "ticker": "ADMA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 22.1,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.65,
+    22.1,
+    23.5
+   ],
+   "text": "Revisiting this setup from a few weeks ago. Second offering could be here for a long out of the hammer high from Friday over the 22.10 area into the pivot high near 23.5. Over that its blue sky territory. Key hold remains the 20.65 level."
+  },
+  {
+   "ticker": "ROL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 56.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    54.75,
+    56.0
+   ],
+   "text": "Perfect 'V' shaped recovery with flag forming. Looking for a breakout over 56 to get into blue sky territory. Could also play the first higher low retest after a break to confirm its success. Not interested if price starts spending multiple daily closes below 54.75.\n\nWatch out for earnings here, but the chart setup is too clean to not include."
+  },
+  {
+   "ticker": "SDGR",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": 26.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    26.5
+   ],
+   "text": "Liking the flag action after the large impulsive up days. Longer lower wicks on Tuesday and Wednesday also help. Looking for breaks over the 26.5 to get towards the unfilled gap. Note that the weekly has been forming a base for a few months at this point. The classic saying is, \"the bigger the base, the higher in space.\" Let's see."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 The largest threat to the bullish base case is the weekly downtrend with a lower high that can hold under the 550 level. Optimists want to see the 38.2 hold for a coincident weekly / daily higher low.",
+  "S&P daily chart \u2013 The base case is a daily hold of the 523.75 area produces a structural higher low that offers stronger odds of this being \"the\" bottom post capitulation. To remain base case, 523.75 must continue holding, and a higher high over 550 confirms the trend change.",
+  "S&P hourly chart \u2013 The pullback has started a potential double bottom at 523.75. If the neckline breaks (Friday high) at 531.75, the targets should be 544 prior week high, then 550.",
+  "Market internals \u2013 There is no confirmation at the exchange level that aggressive sellers are getting involved in the move lower. Price on the week undoubtably made lower lows, lower highs. Internals were actually more bullish than bearish.",
+  "Market profile \u2013 Leaving zoomed out to remind that the singles from the 90 day pause rally remain unfilled, which is a bullish indication. The singles from Thursday were filled on Friday and value/PoC settled there. Very balanced.",
+  "Market profile \u2013 Not a sector, but as an industry massively influential over tech, not great to see the weekly close below the do or die zone at 195.15. Another threat to the daily bullish base case that is worth pointing out.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ACM \u2013 Daily",
+  "ADMA \u2013 Daily",
+  "ROL \u2013 Daily",
+  "SDGR \u2013 Daily / Weekly",
+  "We're social!"
+ ]
+}

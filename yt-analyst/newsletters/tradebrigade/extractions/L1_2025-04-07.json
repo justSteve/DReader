@@ -1,0 +1,144 @@
+{
+ "letter_date": "2025-04-07",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 04/07/25",
+ "file": "2025-04-07_1960da894027a806.txt",
+ "self_score": {
+  "found": false,
+  "opener": "I want to start the newsletter this week with this:\nOne trade is all it takes to wipe out your account, but one trade probably won't make your entire trading career. Be in the business of managing risk and living to trade another day.\nLast week was, once again, brutal for the stock market.\n\nTrump\u2019s "
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 April monthly bar just opened, but the range traveled merits zooming out. Monthly trend hasn't changed to down. The higher low to watch is ~480 at the prior pivot high, support trend line, 50 SMA, and 50% fib.",
+   "instrument": "SPY",
+   "level": 480.0,
+   "class": "hold",
+   "sentence": "The higher low to watch is ~480 at the prior pivot high, support trend line, 50 SMA, and 50% fib."
+  },
+  {
+   "section": "S&P monthly chart \u2013 April monthly bar just opened, but the range traveled merits zooming out. Monthly trend hasn't changed to down. The higher low to watch is ~480 at the prior pivot high, support trend line, 50 SMA, and 50% fib.",
+   "instrument": "SPY",
+   "level": 480.0,
+   "class": "target",
+   "sentence": "Based on Sunday night futures, we are gapping into 480-490 zone."
+  },
+  {
+   "section": "S&P monthly chart \u2013 April monthly bar just opened, but the range traveled merits zooming out. Monthly trend hasn't changed to down. The higher low to watch is ~480 at the prior pivot high, support trend line, 50 SMA, and 50% fib.",
+   "instrument": "SPY",
+   "level": 490.0,
+   "class": "target",
+   "sentence": "Based on Sunday night futures, we are gapping into 480-490 zone."
+  },
+  {
+   "section": "S&P weekly chart \u2013 The trend is clearly down, with the large liquidation on Thursday & Friday closing below a HVN and anchored VWAP references. We can see decent confluence at the 480 level if losses extend there. If markets rally, we cant discount a possible weekly lower high under 550.",
+   "instrument": "SPY",
+   "level": 480.0,
+   "class": "mention",
+   "sentence": "We can see decent confluence at the 480 level if losses extend there."
+  },
+  {
+   "section": "S&P weekly chart \u2013 The trend is clearly down, with the large liquidation on Thursday & Friday closing below a HVN and anchored VWAP references. We can see decent confluence at the 480 level if losses extend there. If markets rally, we cant discount a possible weekly lower high under 550.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "break",
+   "sentence": "If markets rally, we cant discount a possible weekly lower high under 550."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "CLSK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    7.35,
+    8.85,
+    50.0
+   ],
+   "text": "Friday hammer for look below and fail on the range. If price can move over Friday high and 7.35 lows looking for a counter trend move into daily 50 SMA in blue and top of range at 8.85.\n\nNo problem passing on counter trends in this environment. Understand the risk, and size appropriately."
+  },
+  {
+   "ticker": "CNM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    45.0
+   ],
+   "text": "Same idea as above with a failure for sellers to close price near Friday lows under the 45 swing low. Over Friday's high has the potential to get price back to the top of range. Trend a bit more neutral than CLSK.\n\nNo problem passing on counter trends in this environment. Understand the risk, and size appropriately."
+  },
+  {
+   "ticker": "EAT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 133.5,
+   "trigger_kind": "over",
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    50.0,
+    133.5,
+    157.25
+   ],
+   "text": "Look below and fail on the balance range again. Over Friday high or acceptance over 133.5 gets interesting for rotation back up to the daily 50 SMA in blue and pivot high at 157.25 area. This is not as counter trend as the other ideas."
+  },
+  {
+   "ticker": "LAZR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 5.1,
+   "trigger_kind": "over",
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    5.1,
+    7.5
+   ],
+   "text": "Hammer at the bottom of the range failing to accept lower prices on the Friday session. Over Friday high also indicates a break over the dual low level. 7.50 is an aggressive target, but some kind of bounce on sustained action over 5.10 seems reasonable.\n\nNo problem passing on counter trends in this environment. Understand the risk, and size appropriately."
+  },
+  {
+   "ticker": "RKT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 15.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    15.75,
+    17.85
+   ],
+   "text": "With rates plummeting, this honestly doesn't look half bad. Could be construed as a longer term cup and handle as well. Over 15.75 should unlock a move to the scene of the crime around 17.85."
+  },
+  {
+   "ticker": "TMDX",
+   "timeframe": "Daily",
+   "direction": "short",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    72.75,
+    80.0
+   ],
+   "text": "Medical devices puts this in the defensive category. Note the higher lows even as the market has been making substantial lower lows. Hammer on Friday failed to move under the trend line. Over the breakout level around 72.75 could set up a small rally to the 80 area."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 April monthly bar just opened, but the range traveled merits zooming out. Monthly trend hasn't changed to down. The higher low to watch is ~480 at the prior pivot high, support trend line, 50 SMA, and 50% fib.",
+  "S&P weekly chart \u2013 The trend is clearly down, with the large liquidation on Thursday & Friday closing below a HVN and anchored VWAP references. We can see decent confluence at the 480 level if losses extend there. If markets rally, we cant discount a possible weekly lower high under 550.",
+  "S&P daily chart \u2013 For a v-shaped capitulation recovery, markets need a failure under Friday's low (or any subsequent highly correlated low) or fail to get acceptance lower on a gap down. Structural lows can develop once volatility has passed.",
+  "S&P hourly chart \u2013 Best to approach with caution. A counter trend may develop, but it likely won't change the major trend just yet. Bears undoubtably have the upper hand still.",
+  "Market internals \u2013 The reads here are the most extreme we've seen since the covid crash. This starts to feel like capitulation when we have such high degrees of correlation. My only concern is that the intraday sell off structure on Friday was fairly orderly. Panic would be better.",
+  "Market profile \u2013 Profile isn't very useful in high vol outside of day timeframe analysis. The most important note is simply the PoC slammed into Friday LoD. Suggests an open above has the potential to pinch out shorts.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "CLSK \u2013 Daily",
+  "CNM \u2013 Daily",
+  "EAT \u2013 Daily",
+  "LAZR \u2013 Daily",
+  "RKT \u2013 Daily",
+  "TMDX \u2013 Daily",
+  "We're social!"
+ ]
+}

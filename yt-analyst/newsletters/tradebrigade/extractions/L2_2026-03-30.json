@@ -1,0 +1,21 @@
+{
+ "letter_date": "2026-03-30",
+ "sent_et": "2026-03-29",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bearish", "conviction": "high", "hedged": true,
+          "quote": "Any rally is counter trend until proven otherwise seeking a lower high.",
+          "note": "Fifth down week; capitulation into the 610 monthly-higher-low zone named as the alternative path. Good Friday week (four sessions)."},
+ "calls": [
+  {"id": "spy-supply-653", "instrument": "SPY", "type": "resistance", "level": 653.0, "rule": "below_week",
+   "quote": "The October and November 2025 double bottom lows are now overhead supply at 653.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-lower-high-675", "instrument": "SPY", "type": "resistance", "level": 675.0, "rule": "below_week",
+   "quote": "The weekly range lows at 675 are still a valid lower high zone.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-gapclose-644.75", "instrument": "SPY", "type": "target", "level": 644.75, "rule": "target_reached",
+   "quote": "Gap close from Friday would be the best location at 644.75.", "intent": "offered", "conviction": "medium"},
+  {"id": "spy-capitulation-610", "instrument": "SPY", "type": "target", "level": 610.0, "rule": "target_reached",
+   "quote": "Washing out on a big single day selloff with volume into the 610 area would potentially yield a nice starting location to watch for the MoHL (monthly higher low) thesis.", "intent": "watch", "conviction": "low"},
+  {"id": "qqq-resist-595", "instrument": "QQQ", "type": "resistance", "level": 595.0, "rule": "below_week",
+   "quote": "Rallies that reject 595 keep bears in control.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

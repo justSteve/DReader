@@ -1,0 +1,129 @@
+{
+ "letter_date": "2024-09-15",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 09/16/24",
+ "file": "2024-09-15_191f821ea1ef401e.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The time has finally come for the Fed to cut rates.\n\nThe trouble is markets are literally deadlocked at 50/50 odds for a 25bps vs 50bps cut.\n\nAnd this lack of certainty will mean that for us technical traders, the market is likely to remain volatile until at least Wednesday, if not the entire week a"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 The two must watch levels this week are going to be the all time high at 565.25 and what I'm considering the new daily higher low line in the sand at 549. My preference would be to trade the white or green paths this week.",
+   "instrument": "SPY",
+   "level": 565.25,
+   "class": "hold",
+   "sentence": "S&P daily chart \u2013 The two must watch levels this week are going to be the all time high at 565.25 and what I'm considering the new daily higher low line in the sand at 549."
+  },
+  {
+   "section": "S&P daily chart \u2013 The two must watch levels this week are going to be the all time high at 565.25 and what I'm considering the new daily higher low line in the sand at 549. My preference would be to trade the white or green paths this week.",
+   "instrument": "SPY",
+   "level": 549.0,
+   "class": "hold",
+   "sentence": "S&P daily chart \u2013 The two must watch levels this week are going to be the all time high at 565.25 and what I'm considering the new daily higher low line in the sand at 549."
+  },
+  {
+   "section": "S&P daily chart \u2013 The two must watch levels this week are going to be the all time high at 565.25 and what I'm considering the new daily higher low line in the sand at 549. My preference would be to trade the white or green paths this week.",
+   "instrument": "SPY",
+   "level": 555.5,
+   "class": "break",
+   "sentence": "The fact that there was no lower high attempt from the bottom up test of 555.5 is indicative that stronger sellers are not here, OR at least they are not willing to sell ahead of the FOMC meeting."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Thin structure from the rally illustrated in blue. This red path is not a high probability forecast, however it would be the most bearish market path. This is the back pocket \"what if\" situation...",
+   "instrument": "SPY",
+   "level": 555.5,
+   "class": "mention",
+   "sentence": "Break all time highs to get new buyers involved, reverse and no support at 555.5, and instead get a lower high below."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Thin structure from the rally illustrated in blue. This red path is not a high probability forecast, however it would be the most bearish market path. This is the back pocket \"what if\" situation...",
+   "instrument": "SPY",
+   "level": 555.5,
+   "class": "break",
+   "sentence": "The lower high below 555.5 is key here if this is going to play out."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AMT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 236.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    236.0,
+    250.0
+   ],
+   "text": "Strong pullback in a clean uptrend. Looking for higher lows to sustain price over 236 for potential moves into 250 even. In play as long as Thursday's hammer low holds."
+  },
+  {
+   "ticker": "CMA",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    75.5
+   ],
+   "text": "Bottom fishing ascending triangle. Looking for a break of the flat top to start a thin structure retracement into the 75.50 area. In play as long as the support trend line is holding."
+  },
+  {
+   "ticker": "PYPL",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    68.25,
+    75.0,
+    83.25
+   ],
+   "text": "Great Brigade Bolt\u2122 in the making over the top of the prior range. Like the hammer off of 68.25. Looking for a move into at least 75 and then monitoring for continuation into the 83.25 area. Not in force on weekly close below 68.25."
+  },
+  {
+   "ticker": "STX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    102.5,
+    109.0
+   ],
+   "text": "Flat top breakout level with historical significance here at 102.5. Looking for clearance to pave the way into 109 area. In play as long as the support trend line holds."
+  },
+  {
+   "ticker": "VZ",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": 42.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    42.5,
+    51.0,
+    2022.0
+   ],
+   "text": "Inverted head and shoulders in the breakout phase over 42.5. After getting absolutely bludgeoned over 2022, looking for a recover back to the origin of the main breakdown at 51. This could grab attention as it is technically a decent dividend name. Improvement on the underlying could inspire confidence to return to it."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Two weeks ago markets overshot and closed below the HVN, aVWAPs, 38.2 fib. This past week, sellers failed to make a lower low, and markets closed near the all time highs. This confirms a weekly higher low.",
+  "S&P daily chart \u2013 The two must watch levels this week are going to be the all time high at 565.25 and what I'm considering the new daily higher low line in the sand at 549. My preference would be to trade the white or green paths this week.",
+  "S&P hourly chart \u2013 Thin structure from the rally illustrated in blue. This red path is not a high probability forecast, however it would be the most bearish market path. This is the back pocket \"what if\" situation...",
+  "Market internals \u2013 Proof that the buying on Wednesday wasn't all that great at the exchange level. Granted it was a reversal from an initially very bearish move. The end of the week is stronger, solidifying that buyers on Thursday / Friday had exchange level support.",
+  "Market profile \u2013 Illustrates the progression of value out of the Friday range, even after Wednesday's reversal left value lower. Thursday and Friday help confirm the breakout. Friday value more central in range though, buyers slowing down. Poor high Friday also.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AMT \u2013 Daily chart",
+  "CMA \u2013 Weekly chart",
+  "PYPL \u2013 Weekly chart",
+  "STX \u2013 Daily chart",
+  "VZ \u2013 Weekly chart",
+  "We're social!"
+ ]
+}

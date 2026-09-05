@@ -1,0 +1,136 @@
+{
+ "letter_date": "2024-09-09",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 09/09/24",
+ "file": "2024-09-09_191d414dc73b5124.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets finally resolved the multi week balance range to the downside with the breakdown on Tuesday, and follow through on Friday.\n\nThe labor report really seemed to send markets over the edge, even though the numbers didn't look all that bad.\nThe first big data point, initial and continuing jobless"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 The issue with the daily, is that we have a clear opportunity for a structural higher low over the prior bottom end of the late July balance, but on any rally attempts a daily lower high can be found up agains the bottom of the overhead range. This assumes the market even tries to get a counter trend move, and not just continuation to the downside.",
+   "instrument": "SPY",
+   "level": 553.24,
+   "class": "mention",
+   "sentence": "553.24 and 527.41."
+  },
+  {
+   "section": "S&P daily chart \u2013 The issue with the daily, is that we have a clear opportunity for a structural higher low over the prior bottom end of the late July balance, but on any rally attempts a daily lower high can be found up agains the bottom of the overhead range. This assumes the market even tries to get a counter trend move, and not just continuation to the downside.",
+   "instrument": "SPY",
+   "level": 527.41,
+   "class": "mention",
+   "sentence": "553.24 and 527.41."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Dip buyers are NOT here. This is really noteworthy, as on Thursday, sellers looked into the gap but filled to close in the gap range. Initially this would set up a bullish open for Friday over 549. Clearly, there was no hold of the 549 level and then on the full gap close, not even a lower wick to be found.",
+   "instrument": "SPY",
+   "level": 549.0,
+   "class": "mention",
+   "sentence": "Initially this would set up a bullish open for Friday over 549."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Dip buyers are NOT here. This is really noteworthy, as on Thursday, sellers looked into the gap but filled to close in the gap range. Initially this would set up a bullish open for Friday over 549. Clearly, there was no hold of the 549 level and then on the full gap close, not even a lower wick to be found.",
+   "instrument": "SPY",
+   "level": 549.0,
+   "class": "hold",
+   "sentence": "Clearly, there was no hold of the 549 level and then on the full gap close, not even a lower wick to be found."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Dip buyers are NOT here. This is really noteworthy, as on Thursday, sellers looked into the gap but filled to close in the gap range. Initially this would set up a bullish open for Friday over 549. Clearly, there was no hold of the 549 level and then on the full gap close, not even a lower wick to be found.",
+   "instrument": "SPY",
+   "level": 549.0,
+   "class": "break",
+   "sentence": "Initial pathing for the week is bearish for this reason, and we will look for counter trend moves to test 549 to set lower highs, or continuation lower under 537."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Dip buyers are NOT here. This is really noteworthy, as on Thursday, sellers looked into the gap but filled to close in the gap range. Initially this would set up a bullish open for Friday over 549. Clearly, there was no hold of the 549 level and then on the full gap close, not even a lower wick to be found.",
+   "instrument": "SPY",
+   "level": 537.0,
+   "class": "break",
+   "sentence": "Initial pathing for the week is bearish for this reason, and we will look for counter trend moves to test 549 to set lower highs, or continuation lower under 537."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Dip buyers are NOT here. This is really noteworthy, as on Thursday, sellers looked into the gap but filled to close in the gap range. Initially this would set up a bullish open for Friday over 549. Clearly, there was no hold of the 549 level and then on the full gap close, not even a lower wick to be found.",
+   "instrument": "SPY",
+   "level": 549.0,
+   "class": "mention",
+   "sentence": "If bulls are going to make a stand, price needs to higher low ABOVE 549, and even then, we still have the daily lower high threat below 555.5."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Dip buyers are NOT here. This is really noteworthy, as on Thursday, sellers looked into the gap but filled to close in the gap range. Initially this would set up a bullish open for Friday over 549. Clearly, there was no hold of the 549 level and then on the full gap close, not even a lower wick to be found.",
+   "instrument": "SPY",
+   "level": 555.5,
+   "class": "mention",
+   "sentence": "If bulls are going to make a stand, price needs to higher low ABOVE 549, and even then, we still have the daily lower high threat below 555.5."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "BILL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 56.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    56.4,
+    60.5,
+    68.0
+   ],
+   "text": "Bottoming formation starting to setup a break of 56.4 to get a move to the last pivot high at 60.5. Beyond that the open of the earnings engulfer is the target closer to 68. Not in play if price starts accepting below the daily 50 SMA (blue)."
+  },
+  {
+   "ticker": "BOX",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    3.0
+   ],
+   "text": "Bullish 3 bar play. Not the best inside doji, the upper wick size is a small concern, but still a watch. Looking for clearance of that to get to the all time high, and then blue sky territory for the measured move. Not in play if it breaks last weeks lows."
+  },
+  {
+   "ticker": "CPRT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 50.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.25,
+    52.95
+   ],
+   "text": "Bottom fishing play with an inside bar on Friday. If the broad market makes a move higher, this could be a gap close watch. Over 50.25 gets interesting into the 52.95 gap close area. Not in play if there is no acceptance over 50.25."
+  },
+  {
+   "ticker": "CUBE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    52.0,
+    54.65
+   ],
+   "text": "Bull flag more so than an ascending triangle really. Looking for another chance to break the flat top at 52, to target 54.65. In a clear uptrend, and this will stay in play so long as its above the support trend line. Want to see it go sooner rather than later with respect to Wednesday's attempted (and failed) breakout."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Markets saw a strong break from the daily balance area, yielding a large red bodied bar on the weekly. It's still possible that a higher low can be found over the August 5th low. However, make note that there has been an overshoot and close below the fibonacci 38.2, the anchored VWAP cluster, as well as the high volume node.",
+  "S&P daily chart \u2013 The issue with the daily, is that we have a clear opportunity for a structural higher low over the prior bottom end of the late July balance, but on any rally attempts a daily lower high can be found up agains the bottom of the overhead range. This assumes the market even tries to get a counter trend move, and not just continuation to the downside.",
+  "S&P hourly chart \u2013 Dip buyers are NOT here. This is really noteworthy, as on Thursday, sellers looked into the gap but filled to close in the gap range. Initially this would set up a bullish open for Friday over 549. Clearly, there was no hold of the 549 level and then on the full gap close, not even a lower wick to be found.",
+  "Market internals \u2013 At the exchange level, the downside move was supported by stronger selling than buying. This is worth paying attention to as the daily trend is in jeopardy. If this were to start becoming divergent (bullish internals, bearish S&P price action), thoughts of a counter trend move become top priority.",
+  "Market profile \u2013 Value and point of control confirm the downward price acceptance. Caution Friday's low as being poor. A sweep of the low to repair it, finding support off of the key 537 SPY daily higher low zone and starting a counter trend move would not be unreasonable.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "BILL \u2013 Daily chart",
+  "BOX \u2013 Weekly chart",
+  "CPRT \u2013 Daily chart",
+  "CUBE \u2013 Daily chart",
+  "We're social!"
+ ]
+}

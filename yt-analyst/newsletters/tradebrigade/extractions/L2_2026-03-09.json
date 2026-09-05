@@ -1,0 +1,21 @@
+{
+ "letter_date": "2026-03-09",
+ "sent_et": "2026-03-08",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bearish", "conviction": "high", "hedged": true,
+          "quote": "Structure and location are now both bearish.",
+          "note": "'Until then, sellers have the easier trade.' Neutral flip defined at acceptance above 676.25 / 680.25."},
+ "calls": [
+  {"id": "spy-target-664.25", "instrument": "SPY", "type": "target", "level": 664.25, "rule": "target_reached",
+   "quote": "664.25 is the first downside target, followed by a date with the daily 200 SMA, which has not been tested since the April tariff tantrum.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-target-653", "instrument": "SPY", "type": "target", "level": 653.0, "rule": "target_reached",
+   "quote": "The next structural target is the equal lows at 653.", "intent": "watch", "conviction": "low"},
+  {"id": "spy-resist-676.25", "instrument": "SPY", "type": "resistance", "level": 676.25, "rule": "below_week",
+   "quote": "Any acceptance back above 676.25 flips the stance to neutral immediately.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-resist-680.25", "instrument": "SPY", "type": "resistance", "level": 680.25, "rule": "below_week",
+   "quote": "The setup is a lower high print near 680.25, rejection back below 676.25, then continuation toward the equal lows and eventually 664.25.", "intent": "offered", "conviction": "medium"},
+  {"id": "spy-flip-676.25", "instrument": "SPY", "type": "reclaim", "level": 676.25, "rule": "reclaim_then_higher",
+   "quote": "Any acceptance back above 676.25 flips the stance to neutral immediately. From there we'd consider look below and fail triggered on acceptance over 680.25.", "intent": "watch", "conviction": "low"}
+ ],
+ "scenarios": []
+}

@@ -1,0 +1,123 @@
+{
+ "letter_date": "2025-01-20",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 01/20/25",
+ "file": "2025-01-20_1948139abe445e71.txt",
+ "self_score": {
+  "found": false,
+  "opener": "As fast as markets went down on the labor report, they're right back up on the inflation report.\n\nIt smells like market volatility and whipsawing action more so than a new trend development. The data points would mostly align with this conclusion as we'll see lower in the newsletter.\n\nSo CPI... what"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Sellers had The Gift\u2122 of a gap down on Monday's open. Price also opened below the 61.8 election fib. Sellers were unable to produce a gap fill reversal or a lower high underneath the 585 weekly pivot.",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "break",
+   "sentence": "Sellers were unable to produce a gap fill reversal or a lower high underneath the 585 weekly pivot."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Sellers had The Gift\u2122 of a gap down on Monday's open. Price also opened below the 61.8 election fib. Sellers were unable to produce a gap fill reversal or a lower high underneath the 585 weekly pivot.",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "hold",
+   "sentence": "Any bar to bar higher lows over 585 likely seek the ATH over time to maintain the weekly uptrend."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ARRY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    7.8,
+    10.5
+   ],
+   "text": "Admittedly, this is a bottom fishing play. The weekly trend is down, the daily trend is down. Keep that in mind when sizing positions.\n\nIf the base can break out, looking for 7.80 quickly, and then a longer term move back to the origin of the breakdown around 10.5. Again... this is a counter trend idea."
+  },
+  {
+   "ticker": "BYND",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 4.05,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    4.05,
+    4.9
+   ],
+   "text": "Another bottom fishing play. Same comments apply. Counter trend on weekly and daily. Mind the position size.\n\nThe pattern here is a bit more clear with a double bottom in force, and a break over the neckline on the Thursday session. Friday appears to be a successful backtest so far with the close over 4.05. Looking for 4.90 as a target."
+  },
+  {
+   "ticker": "EXPE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 191.3,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    191.3
+   ],
+   "text": "Moving away from the dumpster diving setups, this is trading right at all time highs. Any break of the channel on the daily, triggers a weekly bull flag breakout. Over 191.3 and its blue sky. Ideally a higher low can be found over the daily 50 SMA (blue).\n\nWould also entertain longs from the bottom of the channel noting how clear the stop would be."
+  },
+  {
+   "ticker": "OKTA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 85.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    29.0,
+    85.4,
+    91.0
+   ],
+   "text": "Second chance opportunity on this one from our December 29th newsletter. Price is now over the 85.4 but left a nice hammer retest on Friday. If price can stay above, looking for setups to bring us all the way to target at the pivot high 91."
+  },
+  {
+   "ticker": "SFM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 141.3,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    141.3,
+    148.0,
+    154.4
+   ],
+   "text": "Pennant bubbling up under the daily 50 SMA (blue). Looking for a move over 141.3 to trigger a breakout and get price closer to 148 shoulders or even 154.4 head of the prior reversal pattern.\n\nNeeds to hold the trend line and keep putting in higher lows if its going to remain in play. Bullish on this due to the failure of the Monday gap down to bring in stronger sellers under the low of the Friday inverted hammer rejection of the neck line.\n\nIf you want a head and shoulders neck line retest for a short look at $SQ daily. (Trade idea from the YouTube analysis)"
+  },
+  {
+   "ticker": "WAY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 38.15,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    38.15
+   ],
+   "text": "Classic bull flag / bull pennant into blue sky territory. Over 38.15 and price exploration begins. Not interested if the trend line breaks and we see multiple daily bars close below."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Sellers had The Gift\u2122 of a gap down on Monday's open. Price also opened below the 61.8 election fib. Sellers were unable to produce a gap fill reversal or a lower high underneath the 585 weekly pivot.",
+  "S&P daily chart \u2013 I know this looks like a crazy crayon drawing but let me explain. Any higher lows inside the balance can flip the trend to an early uptrend coming from an equal high. The lack of the gaps closing on the sessions they were produced, suggests stronger sellers are not here.",
+  "S&P hourly chart \u2013 BULLISH \u2013 When anything goes, because the daily trend is neutral, and the hourly is in range, remember every level, every trade is its own opportunity. There is no higher time frame trend clarity. For some its best to just avoid.",
+  "Market internals \u2013 On the CPI gap up, internals were bullish. Solid volume inflows, as well as a trend higher zone AD line, Index Score in strong positives and cumulative TICK that closed out strong. Friday... Not so much. Pullbacks to set a higher low are totally reasonable.",
+  "Market profile \u2013 Throughout the week value progressively moved higher. If on Thursday value was overlapping to down, this would have been a stronger indication that the CPI gap was going to close. It didn't. Friday has a poor high with lack of material excess.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ARRY \u2013 Daily",
+  "BYND \u2013 Daily",
+  "EXPE \u2013 Daily",
+  "OKTA \u2013 Daily",
+  "SFM \u2013 Daily",
+  "WAY \u2013 Daily",
+  "We're social!"
+ ]
+}

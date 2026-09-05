@@ -1,0 +1,92 @@
+{
+ "letter_date": "2025-03-31",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 03/31/25",
+ "file": "2025-03-31_195e98476736761b.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets ended the week on another sour note. By Friday\u2019s close, the S&P slipped back below the do or die zone, down 2.65% for the week, keeping the broader downtrends intact.\n\nWednesday caused the first major upset as markets reacted negatively to two catalysts.\nFirst was Trumps proposed 25% auto ta"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 Monthly officially closes Monday, but generally the trend is still up, and a higher low around 525 makes lots of sense if pullback continues. 20SMA, prior highs, also ~14.5% drawdown which is on par for the average.",
+   "instrument": "SPY",
+   "level": 525.0,
+   "class": "hold",
+   "sentence": "S&P monthly chart \u2013 Monthly officially closes Monday, but generally the trend is still up, and a higher low around 525 makes lots of sense if pullback continues."
+  },
+  {
+   "section": "S&P hourly chart \u2013 The buyers failed to hold the do or die zone low which was also the gap fill reversal level to the prior Friday. Clear spots for lower highs to emerge. I might entertain counter trend longs over 559.75 as scalps since it would be a thin structure retrace.",
+   "instrument": "SPY",
+   "level": 559.75,
+   "class": "mention",
+   "sentence": "I might entertain counter trend longs over 559.75 as scalps since it would be a thin structure retrace."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ADMA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 20.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.65
+   ],
+   "text": "Small bull pennant in the face of a more bearish broad market. Over 20.65 and the pivot highs can become the target. Ideally the broad market would be on a relief bounce to fuel confidence."
+  },
+  {
+   "ticker": "CLMT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 13.45,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    13.45,
+    15.7,
+    19.0
+   ],
+   "text": "Possible higher low double bottom in place. Looking for a move over 13.45 for a push into the 15.70 and then scene of the crime at 19. Trend is down. Mind the trend."
+  },
+  {
+   "ticker": "ENPH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Look below and fail on the balance range here. A break of the trend line could bring in the rotation to the top of the range. Look out for broad market strength if this is going to play nicely."
+  },
+  {
+   "ticker": "OLLI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 114.14,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    3.0,
+    114.14,
+    119.85
+   ],
+   "text": "Interested in the bullish 3 bar play thats clearly displaying relative strength to the broad market. Over the 114.14 area and its possible the pivot high at 119.85 is in play. Friday's low needs to hold for this to remain in play."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Monthly officially closes Monday, but generally the trend is still up, and a higher low around 525 makes lots of sense if pullback continues. 20SMA, prior highs, also ~14.5% drawdown which is on par for the average.",
+  "S&P weekly chart \u2013 Clean rejection of the weekly double top neck line for a lower high confirming the trend change. Anchored VWAPs rejecting. Fib 38.2 rejecting... Bearish engulfer on the structure. Generally doesn't look great for bulls.",
+  "S&P daily chart \u2013 Markets made some mild improvements early in the week with the break and close over the daily 200, but tariff news and stagflation fears took it all back on the trend line breakdown. Daily trend remains down and seeking lower highs is the base case walking forward.",
+  "S&P hourly chart \u2013 The buyers failed to hold the do or die zone low which was also the gap fill reversal level to the prior Friday. Clear spots for lower highs to emerge. I might entertain counter trend longs over 559.75 as scalps since it would be a thin structure retrace.",
+  "Market internals \u2013 Market internals still don't suggest that new money buyers are getting involved in this market. Monday was more of a short squeeze, and Friday was confirmation that sellers still hold the strength.",
+  "Market profile \u2013 Single prints from A/B period align with the thin structure retrace mentioned above. Lower highs that are sustained below the 5725 area are most bearish for the /ES. If price gets above, mind the poor high from Thursday.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ADMA \u2013 Daily",
+  "CLMT \u2013 Daily",
+  "ENPH \u2013 Daily",
+  "OLLI \u2013 Daily",
+  "We're social!"
+ ]
+}

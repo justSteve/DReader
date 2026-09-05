@@ -1,0 +1,142 @@
+{
+ "letter_date": "2025-05-12",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 05/12/25",
+ "file": "2025-05-12_196c1cb0a5b96fd1.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.31,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P 500 closed last week up 0.31%\u2014or 31 basis points, for the finance nerds like us"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Reasonable that after an 18.5% run, the market slows down to consolidate. Location is key. In this $25 wide range, bulls have the edge. Under $550, concerns increase. Over $575, this is no longer a down trend.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "mention",
+   "sentence": "Under $550, concerns increase."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Reasonable that after an 18.5% run, the market slows down to consolidate. Location is key. In this $25 wide range, bulls have the edge. Under $550, concerns increase. Over $575, this is no longer a down trend.",
+   "instrument": "SPY",
+   "level": 575.0,
+   "class": "mention",
+   "sentence": "Over $575, this is no longer a down trend."
+  },
+  {
+   "section": "S&P daily chart \u2013 Its quite clear that markets are balanced over the last week and a half. On the daily timescale, a break from the box initiates new ideas. In the box expect chop.",
+   "instrument": "SPY",
+   "level": 569.75,
+   "class": "mention",
+   "sentence": "Over 569.75 has to contend with the daily 200 SMA, ideally we Brigade Bolt\u2122 above it."
+  },
+  {
+   "section": "S&P daily chart \u2013 Its quite clear that markets are balanced over the last week and a half. On the daily timescale, a break from the box initiates new ideas. In the box expect chop.",
+   "instrument": "SPY",
+   "level": 558.0,
+   "class": "hold",
+   "sentence": "Under 558, daily higher low is the base case between 551 and 546.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 Its quite clear that markets are balanced over the last week and a half. On the daily timescale, a break from the box initiates new ideas. In the box expect chop.",
+   "instrument": "SPY",
+   "level": 551.0,
+   "class": "hold",
+   "sentence": "Under 558, daily higher low is the base case between 551 and 546.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 Its quite clear that markets are balanced over the last week and a half. On the daily timescale, a break from the box initiates new ideas. In the box expect chop.",
+   "instrument": "SPY",
+   "level": 546.75,
+   "class": "hold",
+   "sentence": "Under 558, daily higher low is the base case between 551 and 546.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 Its quite clear that markets are balanced over the last week and a half. On the daily timescale, a break from the box initiates new ideas. In the box expect chop.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "break",
+   "sentence": "As noted on the weekly, a bearish Brigade Bolt\u2122 below 550 (really 546.75 LiS) kicks off the bears."
+  },
+  {
+   "section": "S&P daily chart \u2013 Its quite clear that markets are balanced over the last week and a half. On the daily timescale, a break from the box initiates new ideas. In the box expect chop.",
+   "instrument": "SPY",
+   "level": 546.75,
+   "class": "break",
+   "sentence": "As noted on the weekly, a bearish Brigade Bolt\u2122 below 550 (really 546.75 LiS) kicks off the bears."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "COIN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 209.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    209.5
+   ],
+   "text": "Inverted head and shoulders with potential to break out with weekend strength in crypto. Not the most compelling candle on Friday but any movement with closes over 209.5 get more compelling on the long side."
+  },
+  {
+   "ticker": "RMBS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 52.45,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    52.45,
+    59.15,
+    68.75
+   ],
+   "text": "Ascending triangle with moving averages below the breakout point. Any holds over 52.45 area should bring in the last pivot high as a target around 59.15. Looking for 68.75 if it runs beyond that and the broad market remains strong."
+  },
+  {
+   "ticker": "SSNC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 78.45,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    78.45,
+    83.65,
+    200.0
+   ],
+   "text": "Base forming with an attempt at consolidation over the daily 200 SMA (green). Looking for breaks over 78.45 for thin structure retracement towards the 83.65 level. Mind the daily 50 (blue) as potential resistance."
+  },
+  {
+   "ticker": "TEM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    59.0,
+    66.6,
+    90.0
+   ],
+   "text": "Post earnings run is pulling back into the neckline of a rounded bottom. Looking for buyers to attempt 59 holds, or breakouts over the pivot high around 66.6 for followthrough to the 90 area."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Reasonable that after an 18.5% run, the market slows down to consolidate. Location is key. In this $25 wide range, bulls have the edge. Under $550, concerns increase. Over $575, this is no longer a down trend.",
+  "S&P daily chart \u2013 Its quite clear that markets are balanced over the last week and a half. On the daily timescale, a break from the box initiates new ideas. In the box expect chop.",
+  "S&P daily chart \u2013 Use the August 2024 Yen carry trade volatility as a template for how the trend reversed. Not identical, but if the balance breaks down, a higher low keeps the reversal underway.",
+  "S&P hourly chart \u2013 Pretty classic balance rules with all 5 outcomes in force. Would prefer to trade any of the higher low green dots you see here to align with higher timeframe strength, and bullish supporting evidence. Would be fine to trade shorts on the red dots, but not overstaying my welcome.",
+  "Market internals \u2013 Key question to ask and answer here is, \"As the market balanced, was there a bearish exchange level divergence?\" Answer? No.",
+  "Market profile \u2013 Two conflicting nuances here. Value and PoC lower on Friday, however price continues to hold the base of the spike from Wednesday's FOMC session. Likely stacks as neutral, and we revert to balance rules.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "COIN \u2013 Daily",
+  "RMBS \u2013 Daily",
+  "SSNC \u2013 Daily",
+  "TEM \u2013 Daily",
+  "We're social!"
+ ]
+}

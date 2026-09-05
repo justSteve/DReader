@@ -1,0 +1,15 @@
+{
+ "letter_date": "2025-12-29",
+ "sent_et": "2025-12-28",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "medium", "hedged": false,
+          "quote": "Continuation or daily higher low over the gap fill from Monday of last week seems like highest odds for the development of this chart.",
+          "note": "Holiday week (New Year's Day closed); weekly breakout over multi-month consolidation."},
+ "calls": [
+  {"id": "spy-hold-679.75", "instrument": "SPY", "type": "hold", "level": 679.75, "rule": "hold_week",
+   "quote": "Under the 679.75 level things get more difficult.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-no-accept-679.75", "instrument": "SPY", "type": "hold", "level": 679.75, "rule": "no_acceptance_below",
+   "quote": "Under the 679.75 level things get more difficult.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

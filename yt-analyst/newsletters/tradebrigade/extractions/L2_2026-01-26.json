@@ -1,0 +1,21 @@
+{
+ "letter_date": "2026-01-26",
+ "sent_et": "2026-01-25",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "low", "hedged": true,
+          "quote": "Though the trend is threatening a lower high, so long as price is above the 686 level, not all hope is lost for the bulls.",
+          "note": "Hourly bull flag over 686; IBD follow-through-day watch from Monday; bias flips short on acceptance below 686."},
+ "calls": [
+  {"id": "spy-hold-686", "instrument": "SPY", "type": "hold", "level": 686.0, "rule": "hold_week",
+   "quote": "As long as price holds 686, this is balance with the potential for a soft higher low. A loss of that level keeps the daily trend down with a firm lower high in place.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-no-accept-686", "instrument": "SPY", "type": "hold", "level": 686.0, "rule": "no_acceptance_below",
+   "quote": "If price balances and accepts below 686, the bias flips short.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-breakout-695", "instrument": "SPY", "type": "target", "level": 695.0, "rule": "target_reached",
+   "quote": "Breaking out over 695 should repair the overnight all time high from CPI at 697.3.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-ath-697.3", "instrument": "SPY", "type": "target", "level": 697.3, "rule": "target_reached",
+   "quote": "Breaking out over 695 should repair the overnight all time high from CPI at 697.3.", "intent": "watch", "conviction": "low"},
+  {"id": "spy-weekly-hl-675", "instrument": "SPY", "type": "hold", "level": 675.0, "rule": "hold_week",
+   "quote": "Instead, they ran out of steam at the weekly 20 SMA near 675. That level aligns with the October 10 and November 20 bearish engulfer highs and will qualify as weekly higher low.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

@@ -1,0 +1,21 @@
+{
+ "letter_date": "2026-04-13",
+ "sent_et": "2026-04-12",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "low", "hedged": true,
+          "quote": "Staying nimble is likely the best outcome (and in my view with a slight bull bias).",
+          "note": "After a 3.60% gap-driven week; 'the risk reward profile favors some kind of a pullback' before leaning in."},
+ "calls": [
+  {"id": "spy-hold-653", "instrument": "SPY", "type": "hold", "level": 653.0, "rule": "hold_week",
+   "quote": "Over 653 is in good shape.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-no-accept-653", "instrument": "SPY", "type": "hold", "level": 653.0, "rule": "no_acceptance_below",
+   "quote": "Acceptance below the gap and 653 really gets me re-evaluating the situation, especially if the supporting evidence rapidly deteriorates.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-lbf-671.2", "instrument": "SPY", "type": "sequence", "level": 671.2, "rule": "look_below_and_reclaim",
+   "quote": "To get long the most bullish idea would be a look below and fail on Wednesday's low at 671.2.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-gapclose-659.5", "instrument": "SPY", "type": "hold", "level": 659.5, "rule": "hold_week",
+   "quote": "A closer look at the pathing on the hourly reveals the stack of anchored VWAP sitting right at the gap close area for the weekly higher low thesis at 659.5.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-target-676.25", "instrument": "SPY", "type": "target", "level": 676.25, "rule": "target_reached",
+   "quote": "After that would be a weekly higher low pullback that closes the gap, supports above 653 and makes a turn back towards the 676.25 area.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

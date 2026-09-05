@@ -1,0 +1,99 @@
+{
+ "letter_date": "2024-08-11",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 08/12/24",
+ "file": "2024-08-11_19143e277e8bbb74.txt",
+ "self_score": {
+  "found": false,
+  "opener": "What a wild week, especially after the prior Friday's labor report swing and a miss... It just keeps getting better!\n\nSince everyone's an expert in the Yen carry trade these days, I'll just give you my take briefly from a technical stand point.\n\nThe historical correlation between the S&P and the Yen"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 A lower low has already been produced, and there was no higher low attempt. Now the watch is for a lower high to complete the trend change. The lower high makes sense here against 540ish HVN, VWAPs, two prior lows. Neutral to bearish.",
+   "instrument": "SPY",
+   "level": 540.0,
+   "class": "break",
+   "sentence": "The lower high makes sense here against 540ish HVN, VWAPs, two prior lows."
+  },
+  {
+   "section": "S&P daily chart \u2013 Lower highs being set here help the weekly thesis as well. Trend is clearly down. Gap fill reversal for a lower high is also a backtest of the neckline from the head and shoulders pattern. Bearish here with the only change in tone on a higher low over 539.5.",
+   "instrument": "SPY",
+   "level": 539.5,
+   "class": "hold",
+   "sentence": "Bearish here with the only change in tone on a higher low over 539.5."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Preferred path would look something like this with shorts having great R:R location near the A, B, C. In blue I'm highlighting that the move to test over 532.5 was not very explosive. If shorts were nervous, would have expected more emotion there.",
+   "instrument": "SPY",
+   "level": 532.5,
+   "class": "mention",
+   "sentence": "In blue I'm highlighting that the move to test over 532.5 was not very explosive."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "BRBR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 55.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    55.5
+   ],
+   "text": "Possible thin structure retrace over the 55.5 level. Great relative strength on Monday. Equal highs stacked, and looking for the break now. Only interested on a break above the level. Out of play if we make a move under Monday's open."
+  },
+  {
+   "ticker": "EIX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 82.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    80.0,
+    82.6
+   ],
+   "text": "Bull flag forming with the opportunity for blue sky breakout. Over 82.6 and this has a shot at seeing continuation. Not interested under 80."
+  },
+  {
+   "ticker": "HSY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    200.0,
+    210.0
+   ],
+   "text": "Bullish on chocolate! Looking for this inverted head and shoulders to continue here. Ideally this finds its way up to 210 prior swing high. In play as long as 200 flat holds."
+  },
+  {
+   "ticker": "PZZA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 45.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    45.0,
+    49.0
+   ],
+   "text": "Inverted head and shoulders. Looking for the neckline break over 45 flat for a continuation play into the prior flat top at 49. Needs to break the neck first, not jumping the gun, noting the daily / weekly down trend.\n\nThats all that hit the scanner this week qualified to be included in the newsletter.\n\nQuality > Forcing setups"
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Although we don't have a new monthly close, I want to start here so we're all clear on what timeframes are bullish vs bearish. This is an uptrend with a clear opportunity for a higher low. Bullish.",
+  "S&P weekly chart \u2013 A lower low has already been produced, and there was no higher low attempt. Now the watch is for a lower high to complete the trend change. The lower high makes sense here against 540ish HVN, VWAPs, two prior lows. Neutral to bearish.",
+  "S&P daily chart \u2013 Lower highs being set here help the weekly thesis as well. Trend is clearly down. Gap fill reversal for a lower high is also a backtest of the neckline from the head and shoulders pattern. Bearish here with the only change in tone on a higher low over 539.5.",
+  "S&P hourly chart \u2013 Preferred path would look something like this with shorts having great R:R location near the A, B, C. In blue I'm highlighting that the move to test over 532.5 was not very explosive. If shorts were nervous, would have expected more emotion there.",
+  "Market internals \u2013 were as flat as I've ever seen them on that Friday session as well. Not really a display of strength from the buyers.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "BRBR \u2013 Daily chart",
+  "EIX \u2013 Daily chart",
+  "HSY \u2013 Daily chart",
+  "PZZA \u2013 Daily chart",
+  "We're social!"
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "letter_date": "2024-11-18",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 11/17/24",
+ "file": "2024-11-18_1933d2d9ed80b4c7.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 2.5,
+  "basis": "unknown",
+  "quote": "S&P 500 closed down roughly 2.5% from the highs of the election gap and go rally"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 pulling back from the highest high of the trend count. So far its parked right at the prior all time high retest and HVN. Ideally it supports here.",
+   "instrument": "SPY",
+   "level": 565.0,
+   "class": "mention",
+   "sentence": "If not weekly line in sand still at 565 area as discussed last week and reinforced again with the technical confluence here."
+  },
+  {
+   "section": "S&P daily chart \u2013 Keep the daily simple this week. Either we stay out of the election gap, or we close it. Over or under on 586 should give us a better idea of whats going on. Admittedly, gap and go on Friday does leave a bit to be desired from the buyers.",
+   "instrument": "SPY",
+   "level": 586.0,
+   "class": "mention",
+   "sentence": "Over or under on 586 should give us a better idea of whats going on."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing is where we have some fun, with the possibility of a daily lower high threat on the gap fill reversal 592.75 level. Things still lean bullish through supporting evidence categories, so trying to align more with the long ideas here.",
+   "instrument": "SPY",
+   "level": 592.75,
+   "class": "break",
+   "sentence": "S&P hourly chart \u2013 Pathing is where we have some fun, with the possibility of a daily lower high threat on the gap fill reversal 592.75 level."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing is where we have some fun, with the possibility of a daily lower high threat on the gap fill reversal 592.75 level. Things still lean bullish through supporting evidence categories, so trying to align more with the long ideas here.",
+   "instrument": "SPY",
+   "level": 592.75,
+   "class": "break",
+   "sentence": "Set the daily lower high on the gap fill reversal off of 592.75, come back for an equal low breakdown at 586 area, from there the election gap close is in play."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing is where we have some fun, with the possibility of a daily lower high threat on the gap fill reversal 592.75 level. Things still lean bullish through supporting evidence categories, so trying to align more with the long ideas here.",
+   "instrument": "SPY",
+   "level": 586.0,
+   "class": "break",
+   "sentence": "Set the daily lower high on the gap fill reversal off of 592.75, come back for an equal low breakdown at 586 area, from there the election gap close is in play."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AFL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    51.5,
+    110.85,
+    115.5
+   ],
+   "text": "Inverted head and shoulders starting to break the neckline and historic price point around 110.85. Ideally price finds a higher low next above this level to make a continuation move into 115.5.\n\nAFRM \u2013 Daily / monthly chart\nMonthly cup and handle base breaking out with a nice bull flag retest on the daily chart off of 51.50. Ideally a longer term target here is the IPO opening print."
+  },
+  {
+   "ticker": "AI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 28.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    28.0,
+    31.0,
+    200.0
+   ],
+   "text": "Hammer forming a potential higher low near the support trend line as well as the daily 200 SMA (green). Interested in a tight stop entry down here or possibly on the breakout over 28. Double top target around 31."
+  },
+  {
+   "ticker": "CART",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0
+   ],
+   "text": "Back to back hammers after a liquidation break in an overall uptrend. Supporting near a historic level as well as the daily 50 SMA (blue). First target the gap down open, and then the ATH around 50. Not interested if we break Thursday low."
+  },
+  {
+   "ticker": "CLSK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    12.85,
+    17.65
+   ],
+   "text": "Hammer closed Friday back inside of Thursday range. Supporting over the inverted head and shoulders neckline at 12.85. Being related to the crypto space, this seems like it could be a leveraged beneficiary of the BTC trade. Over Friday high looking for a move back to the breakout high around 17.65."
+  },
+  {
+   "ticker": "RBRK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 45.9,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    42.75,
+    45.9
+   ],
+   "text": "Strong lower wick that breaks the balance lows, and finds ZERO acceptance from the sellers beneath the prior breakout level. Looking for a move to new highs for continued blue sky breakout over 45.90. In play as long as price consolidates in the upper range above 42.75."
+  },
+  {
+   "ticker": "RIVN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 10.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    10.0
+   ],
+   "text": "Look closely! Theres a dragonfly doji right off of the 10 support level. Sellers failed to continue the large momentum bar from Thursday. Looking to see if price can accept over 10 to start a new base formation for upside. Just a notable look below and fail."
+  },
+  {
+   "ticker": "SNOW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    125.5,
+    135.0
+   ],
+   "text": "Retest of the breakout level with a large lower wick on Friday. Earnings are this Wednesday with NVDA, so please be aware of that risk. Generally the setup looks strong for a weekly base breakout. Holds of 125.5 ideally allow for price to move higher towards the 135 rejection retest and above.\n\nWaiting for earnings isn't the worst idea here."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 pulling back from the highest high of the trend count. So far its parked right at the prior all time high retest and HVN. Ideally it supports here.",
+  "S&P daily chart \u2013 Keep the daily simple this week. Either we stay out of the election gap, or we close it. Over or under on 586 should give us a better idea of whats going on. Admittedly, gap and go on Friday does leave a bit to be desired from the buyers.",
+  "S&P hourly chart \u2013 Pathing is where we have some fun, with the possibility of a daily lower high threat on the gap fill reversal 592.75 level. Things still lean bullish through supporting evidence categories, so trying to align more with the long ideas here.",
+  "Market internals \u2013 No reflection here of stronger sellers at the exchange level driving more volume into down stocks. Note on Friday's session in particular when the market was down most, internals were technically more bullish than Tuesday.",
+  "Market profile \u2013 Poor highs and lows galore! Would love to see a repair of the lows to then get back to the highs. Aligns with looking into the election gap, failure of the sellers, and rotation back higher. Testing the highs first just gets bullish acceptance back in range.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AFL \u2013 Daily Chart",
+  "AI \u2013 Daily chart",
+  "CART \u2013 Daily chart",
+  "CLSK \u2013 Daily chart",
+  "RBRK \u2013 Daily chart",
+  "RIVN \u2013 Daily chart",
+  "SNOW \u2013 Daily chart",
+  "We're social!"
+ ]
+}

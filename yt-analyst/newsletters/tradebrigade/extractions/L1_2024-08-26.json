@@ -1,0 +1,122 @@
+{
+ "letter_date": "2024-08-26",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 08/26/24",
+ "file": "2024-08-26_1918bfbf132d223d.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Market volatility has finally calmed down a bit!\n\nBut don't expect it to stay that way for too long. We have none other than Nvidia earnings Wednesday after the close.\n\nMarkets are currently pricing in about a \u00b113.3 dollar move. This means to really make a substantial gain on net long options premiu"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Markets find themselves at an equal high on the weekly. This neutralizes the trend at minimum. Bulls ideally get a higher low anywhere over the 543 area. No indications of a pullback.",
+   "instrument": "SPY",
+   "level": 543.0,
+   "class": "hold",
+   "sentence": "Bulls ideally get a higher low anywhere over the 543 area."
+  },
+  {
+   "section": "S&P daily chart \u2013 Inside bar on Friday illustrates a failure from the sellers to move markets meaningfully lower after breaking the one time-framing and putting in a bearish engulfer on Thursday. Two chances for daily higher lows illustrated. Weekly target up around 570.5 if continuation.",
+   "instrument": "SPY",
+   "level": 570.5,
+   "class": "target",
+   "sentence": "Weekly target up around 570.5 if continuation."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Some initial pathing for the week. Ideally a higher low over 559.75 keeps bulls in control and looking for an ascending triangle to lead to a break out. Bears start fishing for setups if the ATH fails, or if we get lower highs below 557.",
+   "instrument": "SPY",
+   "level": 559.75,
+   "class": "mention",
+   "sentence": "Ideally a higher low over 559.75 keeps bulls in control and looking for an ascending triangle to lead to a break out."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Some initial pathing for the week. Ideally a higher low over 559.75 keeps bulls in control and looking for an ascending triangle to lead to a break out. Bears start fishing for setups if the ATH fails, or if we get lower highs below 557.",
+   "instrument": "SPY",
+   "level": 557.0,
+   "class": "break",
+   "sentence": "Bears start fishing for setups if the ATH fails, or if we get lower highs below 557."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ACVA",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": 19.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    19.4,
+    23.0
+   ],
+   "text": "Cup and handle / long standing rounded bottom formed here. Looking for breakouts over the 19.4 area to see if we can get some clearance into the 23 resistance. Longer timeframe chart and pattern here. Manage short term expectations."
+  },
+  {
+   "ticker": "PANW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    345.0,
+    377.0
+   ],
+   "text": "Bullish trend on the earnings breakout, looking like a possible retest for a higher low. So long as 345 can hold, looking for a move back towards the equal high test at 377."
+  },
+  {
+   "ticker": "UPS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 130.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    130.25
+   ],
+   "text": "Inverted head and shoulders with large overhead gap from earnings. Looking for a move over 130.25 to kick things off, and then will be more aggressive through the gap range if we can get there. Keep in mind the longer term trend is down, so this reversal may be rocky. Full gap close should take some time. Another one to manage expectations on."
+  },
+  {
+   "ticker": "W",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 44.7,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    44.7,
+    56.0
+   ],
+   "text": "Higher low double bottom in place; Friday even started to break the neckline. Looking for a move to get over the 44.7 and stay there. Thin structure on the breakdown around earnings, with the next target over head around 56."
+  },
+  {
+   "ticker": "WULF",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 4.95,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    4.45,
+    4.95,
+    5.8,
+    6.5
+   ],
+   "text": "Cup and handle with multiple inside hammers printing into the end of last week. Looking for a breakout over the 4.95 level to get back into the last pivot high around 5.8. Beyond that 6.5 is next. In play as long as price is over the 4.45 level."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Markets find themselves at an equal high on the weekly. This neutralizes the trend at minimum. Bulls ideally get a higher low anywhere over the 543 area. No indications of a pullback.",
+  "S&P daily chart \u2013 Inside bar on Friday illustrates a failure from the sellers to move markets meaningfully lower after breaking the one time-framing and putting in a bearish engulfer on Thursday. Two chances for daily higher lows illustrated. Weekly target up around 570.5 if continuation.",
+  "S&P hourly chart \u2013 Some initial pathing for the week. Ideally a higher low over 559.75 keeps bulls in control and looking for an ascending triangle to lead to a break out. Bears start fishing for setups if the ATH fails, or if we get lower highs below 557.",
+  "Market internals \u2013 Neutral on the bearish engulfer day and very strong on the inside day Friday. Seems more like higher timeframe participants buying the broader market vs selling it.",
+  "Market profile shows sellers failing to move value lower on Friday. A stronger pullback there should have made sense for bears to flush below the overhead supply. Didn't happen. It does mean that the Friday / Tuesday low will be key to hold for buyers.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ACVA \u2013 Weekly chart",
+  "PANW \u2013 Daily chart",
+  "UPS \u2013 Daily chart",
+  "W \u2013 Daily chart",
+  "WULF \u2013 Daily chart",
+  "We're social!"
+ ]
+}

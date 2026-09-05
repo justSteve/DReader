@@ -1,0 +1,148 @@
+{
+ "letter_date": "2024-09-23",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 09/23/24",
+ "file": "2024-09-23_1921c2e03dada33e.txt",
+ "self_score": {
+  "found": false,
+  "opener": "We finally have it.\n\nThe Fed has kicked off the cutting cycle with a 50 basis point cut, and issued some loose guidance in their SEP.\n\nNow the question becomes: recession or no recession?\n\nAnother useful framework to use is: Do market participants appear to be acting as though corporate earnings are"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 We can see all of these weak closes here. Not like we had new money buyers excited to execute new positions near these highs. Friday's bar is the one good looking candle that shows support off of the prior all time high zone. 565-566 area. That is the optimal hold for bulls.",
+   "instrument": "SPY",
+   "level": 565.0,
+   "class": "mention",
+   "sentence": "565-566 area."
+  },
+  {
+   "section": "S&P daily chart \u2013 We can see all of these weak closes here. Not like we had new money buyers excited to execute new positions near these highs. Friday's bar is the one good looking candle that shows support off of the prior all time high zone. 565-566 area. That is the optimal hold for bulls.",
+   "instrument": "SPY",
+   "level": 566.0,
+   "class": "mention",
+   "sentence": "565-566 area."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "CORZ",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 11.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    10.85,
+    11.6
+   ],
+   "text": "Decent hammer on Friday during the pullback. Ideally this holds over the 11.6 zone to 10.85 zone. If it can get continuation of this base breakout, its blue sky territory overhead."
+  },
+  {
+   "ticker": "DAY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    63.4,
+    200.0
+   ],
+   "text": "Ascending triangle brewing with the possibility of a breakout over the 200 SMA (green). First target is the pivot high at 63.4 and then monitoring for continuation. In play as long as the support trend line holds."
+  },
+  {
+   "ticker": "DKNG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    43.25,
+    50.0
+   ],
+   "text": "Sloppy but there inverted head and shoulders. Looking for a neckline break to get some clearance into the 43.25 area. In play as long as price remains over the 50 SMA (blue)."
+  },
+  {
+   "ticker": "ECL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    253.2
+   ],
+   "text": "Flat top breakout level with blue sky ahead. Looking for clearance of 253.20 area, in play as long as the support trend line holds."
+  },
+  {
+   "ticker": "GM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    54.9
+   ],
+   "text": "Flat top resistance with breakout point at the psychological 50 level. If price can breakout looking for continuation to 54.9 as the next swing target. Manage timing expectations on getting there."
+  },
+  {
+   "ticker": "HWM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 97.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    97.6
+   ],
+   "text": "Another flat top... do you see the theme here?\n\nOver 97.6 gets into blue sky territory. Hold of the support trend line keeps it in play."
+  },
+  {
+   "ticker": "PENN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 20.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.5,
+    22.3,
+    200.0
+   ],
+   "text": "Gap close is coming back into sight with the consolidation over the 200 SMA (green) last week. Ideally this gets above and holds above 20.5 for the full close into 22.3. Not the most glorious range, but the structured base is in place for it to start working out."
+  },
+  {
+   "ticker": "TMO",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    665.0
+   ],
+   "text": "Weekly flag if you were to zoom out. Ascending triangle on the daily. Pricy but has room to run into the all time high zone around 665. Could use the support trend line to keep the setup in play or the 50 SMA (blue). Either works."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 The bulls are in control be clear on that. But the threat of the weak close above the all time high breakout level is a look above and fail. Ideally we set a higher low and continue, but mind the risks.",
+  "S&P daily chart \u2013 We can see all of these weak closes here. Not like we had new money buyers excited to execute new positions near these highs. Friday's bar is the one good looking candle that shows support off of the prior all time high zone. 565-566 area. That is the optimal hold for bulls.",
+  "S&P hourly chart \u2013 Some pathing as we deal with higher low pullbacks as the primary outcome, and the look above and fail as a lower priority, but something worth respecting.",
+  "Market internals \u2013 Not the best show of strength at the exchange level, even though we saw net upward movement. This aligns with a weak looking daily chart with closes that dont signal confidence.",
+  "Market profile \u2013 If we remain below Thursday's value in the early parts of the week, looks more like a continued pullback opportunity.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "CORZ \u2013 Daily chart",
+  "DAY \u2013 Daily chart",
+  "DKNG \u2013 Daily chart",
+  "ECL \u2013 Daily chart",
+  "GM \u2013 Daily chart",
+  "HWM \u2013 Daily chart",
+  "PENN \u2013 Daily chart",
+  "TMO \u2013 Daily chart",
+  "We're social!"
+ ]
+}

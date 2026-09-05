@@ -1,0 +1,15 @@
+{
+ "letter_date": "2026-01-12",
+ "sent_et": "2026-01-11",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "high", "hedged": false,
+          "quote": "Base case is for a higher lows to continue over the 689 level to keep bulls on parade and moving higher towards the ATH and beyond.",
+          "note": "Record-high close after the labor report; 'Bears hate this one simple trick.'"},
+ "calls": [
+  {"id": "spy-hold-689", "instrument": "SPY", "type": "hold", "level": 689.0, "rule": "hold_week",
+   "quote": "Base case is for a higher lows to continue over the 689 level to keep bulls on parade and moving higher towards the ATH and beyond.", "intent": "trade", "conviction": "high"},
+  {"id": "spy-no-accept-689", "instrument": "SPY", "type": "hold", "level": 689.0, "rule": "no_acceptance_below",
+   "quote": "If this 689 level fails, I would be concerned about weekly equilibrium resuming and seeing those fully invested managers unwind some of the long posture near highs.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

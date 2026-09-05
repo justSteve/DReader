@@ -1,0 +1,108 @@
+{
+ "letter_date": "2024-12-02",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 12/02/24",
+ "file": "2024-12-02_19384e58fcc28d62.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets rang in new all time highs last Friday on the shortened holiday session.\n\nThis marks the 53rd all time high this year. Not to mention we are coming into what looks like it could be another year of +20% gains.\n\nCurrently the S&P is up 27% headed into December.\n\nSo is December going to ruin it"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 Closes a strong green bodied bar at brand new all time highs. Measured move from the sickness low to the rally high and 2022 pullback low is at 610. Higher lows can persist anywhere over ~525.",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "target",
+   "sentence": "Measured move from the sickness low to the rally high and 2022 pullback low is at 610."
+  },
+  {
+   "section": "S&P monthly chart \u2013 Closes a strong green bodied bar at brand new all time highs. Measured move from the sickness low to the rally high and 2022 pullback low is at 610. Higher lows can persist anywhere over ~525.",
+   "instrument": "SPY",
+   "level": 525.0,
+   "class": "hold",
+   "sentence": "Higher lows can persist anywhere over ~525."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Market structure persists with a gap fill reversal to close the week at a new all time high. Higher lows have stair stepped higher exactly where they should. Higher lows that stay over 595 area keep the weekly trend as bullish as it can be.",
+   "instrument": "SPY",
+   "level": 595.0,
+   "class": "hold",
+   "sentence": "Higher lows that stay over 595 area keep the weekly trend as bullish as it can be."
+  },
+  {
+   "section": "S&P daily chart \u2013 Ideally consolidation to continuation, or a pullback to spot a higher low over the weekly 595 level we just saw. Under 595 but over 590 is neutral. Bears start building some edge back below the 590 area.",
+   "instrument": "SPY",
+   "level": 595.0,
+   "class": "hold",
+   "sentence": "S&P daily chart \u2013 Ideally consolidation to continuation, or a pullback to spot a higher low over the weekly 595 level we just saw."
+  },
+  {
+   "section": "S&P daily chart \u2013 Ideally consolidation to continuation, or a pullback to spot a higher low over the weekly 595 level we just saw. Under 595 but over 590 is neutral. Bears start building some edge back below the 590 area.",
+   "instrument": "SPY",
+   "level": 595.0,
+   "class": "mention",
+   "sentence": "Under 595 but over 590 is neutral."
+  },
+  {
+   "section": "S&P daily chart \u2013 Ideally consolidation to continuation, or a pullback to spot a higher low over the weekly 595 level we just saw. Under 595 but over 590 is neutral. Bears start building some edge back below the 590 area.",
+   "instrument": "SPY",
+   "level": 590.0,
+   "class": "mention",
+   "sentence": "Under 595 but over 590 is neutral."
+  },
+  {
+   "section": "S&P daily chart \u2013 Ideally consolidation to continuation, or a pullback to spot a higher low over the weekly 595 level we just saw. Under 595 but over 590 is neutral. Bears start building some edge back below the 590 area.",
+   "instrument": "SPY",
+   "level": 590.0,
+   "class": "break",
+   "sentence": "Bears start building some edge back below the 590 area."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Here is some of the pathing that would be of interest this week. Not overly heavy on the red crayon as there really isn't any higher timeframe structural damage until price is below 590.25.",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "break",
+   "sentence": "Not overly heavy on the red crayon as there really isn't any higher timeframe structural damage until price is below 590.25."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "FLYW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 23.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    23.25,
+    32.0
+   ],
+   "text": "Ascending triangle on the daily. Breaking out of a multi month base. Ideally this can get in gear over 23.25 to see ~32 over time."
+  },
+  {
+   "ticker": "WDC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 73.1,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    73.1,
+    80.2
+   ],
+   "text": "Daily bull flag in place with a possible breakout area over the 73.1 mark. Thin structure to retrace back towards the 80.20 area."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Closes a strong green bodied bar at brand new all time highs. Measured move from the sickness low to the rally high and 2022 pullback low is at 610. Higher lows can persist anywhere over ~525.",
+  "S&P weekly chart \u2013 Market structure persists with a gap fill reversal to close the week at a new all time high. Higher lows have stair stepped higher exactly where they should. Higher lows that stay over 595 area keep the weekly trend as bullish as it can be.",
+  "S&P daily chart \u2013 Ideally consolidation to continuation, or a pullback to spot a higher low over the weekly 595 level we just saw. Under 595 but over 590 is neutral. Bears start building some edge back below the 590 area.",
+  "S&P hourly chart \u2013 Here is some of the pathing that would be of interest this week. Not overly heavy on the red crayon as there really isn't any higher timeframe structural damage until price is below 590.25.",
+  "Market internals \u2013 Notice on the big fade from Monday, the market internals really were not bearish. Although the gap closed and it seemed like sellers were making a stand, it wasn't all that bad. Friday's rally shows a great spread of internals even on a half day to support the rally.",
+  "Market profile \u2013 Value moved higher on the Friday move validating the buyers there. Key is to hold over the VAL otherwise it will be easier for traders to liquidate who have poor location. This 6040 area is the same as SPY 600.5.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "FLYW \u2013 Daily Chart",
+  "WDC \u2013 Daily",
+  "We're social!"
+ ]
+}

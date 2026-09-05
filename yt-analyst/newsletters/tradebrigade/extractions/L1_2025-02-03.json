@@ -1,0 +1,179 @@
+{
+ "letter_date": "2025-02-03",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 02/03/25",
+ "file": "2025-02-03_194c952bad9d8df7.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Tariff this... tariff that...\n\nI'll tell you one thing I am not: a tariff expert.\n\nI don't know if these last a week, a month, a year.\nI don't know how the supply chain will be impacted.\nI don't know how the trade balance will resolve.\n\nHowever as traders, we don't need to be experts.\n\nI do know vol"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 January is an outside bar, that closed inside December. Indicates a lack of strength towards the highs and the lows. Overwhelming trend is up, and note the distance to the 20 SMA. A higher low can be produced anywhere over 525 ish.",
+   "instrument": "SPY",
+   "level": 525.0,
+   "class": "hold",
+   "sentence": "A higher low can be produced anywhere over 525 ish."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Don't be overwhelmed by the drawings.",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "hold",
+   "sentence": "Possible higher low to persist > 585 4."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Don't be overwhelmed by the drawings.",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "mention",
+   "sentence": "Concerns about double top on moves < 585 5."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Don't be overwhelmed by the drawings.",
+   "instrument": "SPY",
+   "level": 600.0,
+   "class": "mention",
+   "sentence": "Weekly close > 600 \"shoulders\"  Generally more bullish than bearish, with a hint of neutral."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case has been for a higher low after the pullback from ATH. So far that is in play. Price has made an equal high, so we look for another higher low now. Ideally >599.65. One time framing in effect here and potential to remain >50SMA. Concerns emerge <599.65.",
+   "instrument": "SPY",
+   "level": 599.65,
+   "class": "mention",
+   "sentence": "Ideally >599.65."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case has been for a higher low after the pullback from ATH. So far that is in play. Price has made an equal high, so we look for another higher low now. Ideally >599.65. One time framing in effect here and potential to remain >50SMA. Concerns emerge <599.65.",
+   "instrument": "SPY",
+   "level": 599.65,
+   "class": "mention",
+   "sentence": "Concerns emerge <599.65."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Initial pathing ideas looking like the resolution of 599.65 and 606.75 area. Pending tariff reactions through the futures session, opens below 599.65 put the bears in control to start the week.",
+   "instrument": "SPY",
+   "level": 599.65,
+   "class": "mention",
+   "sentence": "S&P hourly chart \u2013 Initial pathing ideas looking like the resolution of 599.65 and 606.75 area."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Initial pathing ideas looking like the resolution of 599.65 and 606.75 area. Pending tariff reactions through the futures session, opens below 599.65 put the bears in control to start the week.",
+   "instrument": "SPY",
+   "level": 606.75,
+   "class": "mention",
+   "sentence": "S&P hourly chart \u2013 Initial pathing ideas looking like the resolution of 599.65 and 606.75 area."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Initial pathing ideas looking like the resolution of 599.65 and 606.75 area. Pending tariff reactions through the futures session, opens below 599.65 put the bears in control to start the week.",
+   "instrument": "SPY",
+   "level": 599.65,
+   "class": "break",
+   "sentence": "Pending tariff reactions through the futures session, opens below 599.65 put the bears in control to start the week."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Initial pathing ideas looking like the resolution of 599.65 and 606.75 area. Pending tariff reactions through the futures session, opens below 599.65 put the bears in control to start the week.",
+   "instrument": "SPY",
+   "level": 591.29,
+   "class": "break",
+   "sentence": "If we gap below the lower edge of the weekly EM (591.29) I'll be looking for a repeat of the DeepSeek reaction."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ADBE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    450.0,
+    487.0
+   ],
+   "text": "Possible inverted head and shoulders in the making. Keep in mind that it will have to break the neckline at 450 for the trigger to be valid, so lets not jump the gun. Thin structure retracement would be the target at 487."
+  },
+  {
+   "ticker": "DE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 466.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    466.0
+   ],
+   "text": "Great looking bull flag over the prior pivot high. So long as price can stay over 466, looking for a bull flag to develop into blue sky territory. Deeper pullbacks than that would need to support over the daily 50 SMA (blue) to remain interesting."
+  },
+  {
+   "ticker": "EPRT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 32.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    32.4,
+    34.3,
+    50.0,
+    200.0
+   ],
+   "text": "Daily balance range with a pinch between the 50(blue) and 200(green) daily SMA. If price can break into the overhead range over 32.4 looking for a move into the 34.3 top of the prior balance. Not interested if it never breaks the key level."
+  },
+  {
+   "ticker": "KEYS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    173.75,
+    188.75
+   ],
+   "text": "Day one of the breakout on Friday. Looking to see if price can maintain a higher low over the breakout level at the 173.75 level for continuation over time. Next overhead target is around 188.75. Daily closes back below the 173.75 level invalidate the breakout."
+  },
+  {
+   "ticker": "PTLO",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 13.7,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    12.0,
+    13.7
+   ],
+   "text": "Similar to DE at a cheaper price point. Looking for a move to hold over the 13.70 level to continue the bull flag consolidation. Great first step with the hammer on Friday. If price closes below the 13.7, looking for a deeper pullback to 12 for re-evaluation."
+  },
+  {
+   "ticker": "ZM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    86.5
+   ],
+   "text": "Possible bull flag over the prior resistance shelf at 86.5. Looking for a move to get back into the gap overhead if the buyers can keep higher lows over the level. Not interested if we start seeing daily bars close below the 86.5."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 January is an outside bar, that closed inside December. Indicates a lack of strength towards the highs and the lows. Overwhelming trend is up, and note the distance to the 20 SMA. A higher low can be produced anywhere over 525 ish.",
+  "S&P weekly chart \u2013 Don't be overwhelmed by the drawings.",
+  "S&P daily chart \u2013 Base case has been for a higher low after the pullback from ATH. So far that is in play. Price has made an equal high, so we look for another higher low now. Ideally >599.65. One time framing in effect here and potential to remain >50SMA. Concerns emerge <599.65.",
+  "S&P hourly chart \u2013 Initial pathing ideas looking like the resolution of 599.65 and 606.75 area. Pending tariff reactions through the futures session, opens below 599.65 put the bears in control to start the week.",
+  "Market internals \u2013 Market internals are CRITICAL in this market environment. If you're not using them, you're trading blind. As of Friday's close it appears as though the sellers made substantial progress to the downside.",
+  "Market profile \u2013 Bears were able to flip the value area and PoC towards the lows of the range on Friday from what was higher early in the session. This is another confirmation (along side internals), that the base case may be in jeopardy.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ADBE \u2013 Daily",
+  "DE \u2013 Daily",
+  "EPRT \u2013 Daily",
+  "KEYS \u2013 Daily",
+  "PTLO \u2013 Daily",
+  "ZM \u2013 Daily",
+  "We're social!"
+ ]
+}

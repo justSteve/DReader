@@ -1,0 +1,17 @@
+{
+ "letter_date": "2026-04-21",
+ "sent_et": "2026-04-20",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "high", "hedged": false,
+          "quote": "Looking for continuation of the trend via continuation or higher low pullback.",
+          "note": "Sent Monday evening after a 4.48% week with three record highs; 'A very shallow pullback would be noteworthy and just another sign that sellers are weak.'"},
+ "calls": [
+  {"id": "spy-support-698", "instrument": "SPY", "type": "hold", "level": 698.0, "rule": "hold_week",
+   "quote": "Ideally the prior ATH level at 698 would act supportive.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-deep-676", "instrument": "SPY", "type": "hold", "level": 676.0, "rule": "hold_week",
+   "quote": "If the pullback is deeper than that something around 676 offers a ton of confluence with the weekly 20 SMA, aVWAP stack, Fib 38.2.", "intent": "watch", "conviction": "medium"},
+  {"id": "xlf-hold-51.2", "instrument": "XLF", "type": "hold", "level": 51.2, "rule": "hold_week",
+   "quote": "The inverted hammer rejecting the 200 SMA isn't the end of the world noting the reclaim of the 51.2 level, however this will be a MAJOR watch into the coming week. A more bullish market will find a higher low above.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

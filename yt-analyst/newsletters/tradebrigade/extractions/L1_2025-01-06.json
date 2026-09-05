@@ -1,0 +1,137 @@
+{
+ "letter_date": "2025-01-06",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 01/06/25",
+ "file": "2025-01-06_19439209d907b6e3.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Let's kick off 2025 on a strong note.\n\nHopefully you've taken some time through the holiday weeks to reflect on 2024, and set some goals for 2025. It's time to put the updated game plan into action.\n\nThis will take conscious effort. You can't show up to the desk the same way you did in 2024 if you w"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 December pulled back, but only about to the mid point of the November range. December also made a new ATH. Overall trend is up and will remain up on any higher low over ~530.",
+   "instrument": "SPY",
+   "level": 530.0,
+   "class": "hold",
+   "sentence": "Overall trend is up and will remain up on any higher low over ~530."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Green bodied hammer closed, the exact opposite of the week prior. Still wicking off of 585, the key level to sustain the weekly higher low. Still holding: fib 61.8, weekly breakout aVWAP, HVN.",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "hold",
+   "sentence": "Still wicking off of 585, the key level to sustain the weekly higher low."
+  },
+  {
+   "section": "S&P daily chart \u2013 The dreaded head & shoulders everyone is concerned about in cyan... More appropriately, early week focus should be on the 595.25 and 590.75 levels. Those hold the key to bull or bear. In between, I expect balance. With labor data this week... not likely to stay between.",
+   "instrument": "SPY",
+   "level": 595.25,
+   "class": "mention",
+   "sentence": "More appropriately, early week focus should be on the 595.25 and 590.75 levels."
+  },
+  {
+   "section": "S&P daily chart \u2013 The dreaded head & shoulders everyone is concerned about in cyan... More appropriately, early week focus should be on the 595.25 and 590.75 levels. Those hold the key to bull or bear. In between, I expect balance. With labor data this week... not likely to stay between.",
+   "instrument": "SPY",
+   "level": 590.75,
+   "class": "mention",
+   "sentence": "More appropriately, early week focus should be on the 595.25 and 590.75 levels."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AAP",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 41.7,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    41.7,
+    48.4
+   ],
+   "text": "Cup and handle forming a long term rounded base. If price can remain over 41.7 and breakout over 48.4, looking for action to attempt a gap close."
+  },
+  {
+   "ticker": "ALGM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 22.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    22.75
+   ],
+   "text": "Inverted head and shoulders setting up a trend line break as the neckline. Gap overhead becomes the target. In play as long as price remains over 22.75 neckline area."
+  },
+  {
+   "ticker": "ARES",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 174.85,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    171.8,
+    174.85
+   ],
+   "text": "Very strong uptrend on the daily and even weekly timeframe charts. Great set of higher lows and higher highs. Looking for a break of the resistance trend line if we can continue holding over 174.85 - 171.8 zone. Prior resistance acting as new support. Under that zone and its out of play."
+  },
+  {
+   "ticker": "CADE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    33.7,
+    35.0,
+    36.75,
+    39.15
+   ],
+   "text": "Massive retest of the breakout level. If the 35 level breaks, could classify as a double bottom reversal off of prior resistance now acting as support. First target is the double top neckline at 36.75 and then beyond that we have the highs at 39.15 area. Out of play if price breaks and closes below 33.70 area."
+  },
+  {
+   "ticker": "FTNT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 2025.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    99.65,
+    2025.0
+   ],
+   "text": "The cyber theme should be in play through 2025 as AI scales and geopolitical tensions remain... elevated let's say. Looking to see if this penant can take out 99.65 and move into blue sky territory. Any higher lows ideally hold the support trend line."
+  },
+  {
+   "ticker": "LSCC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    61.0,
+    63.3
+   ],
+   "text": "Another retest setup where prior resistance can act as support. Liking the hammer from the Friday session indicating sellers were unable to materialize on the Thursday momentum even after breaking the low. Ideally there is a full rotation up towards 63.3, but mind the lower high in there around 61."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 December pulled back, but only about to the mid point of the November range. December also made a new ATH. Overall trend is up and will remain up on any higher low over ~530.",
+  "S&P weekly chart \u2013 Green bodied hammer closed, the exact opposite of the week prior. Still wicking off of 585, the key level to sustain the weekly higher low. Still holding: fib 61.8, weekly breakout aVWAP, HVN.",
+  "S&P daily chart \u2013 The dreaded head & shoulders everyone is concerned about in cyan... More appropriately, early week focus should be on the 595.25 and 590.75 levels. Those hold the key to bull or bear. In between, I expect balance. With labor data this week... not likely to stay between.",
+  "S&P hourly chart \u2013 Most important point here is the failure of sellers to materialize on the move lower from Thursday. No lower high under range, no rejection of the top of range. This gives buyers an edge into the early week.",
+  "Market internals \u2013 Focus on the Thursday session. The day where markets arguably had the most bearish intraday price movement. Internals surprisingly were NOT bearish. Definitely not a raging bullish session, but this is not what new money selling looks like.",
+  "Market profile \u2013 Value shifted higher on Friday which supports buyers having that subtle edge. If money was flowing into the market on Thursday (internals suggest yes), then buyers have great location.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AAP \u2013 Daily",
+  "ALGM \u2013 Daily",
+  "ARES \u2013 Daily",
+  "CADE \u2013 Daily",
+  "FTNT \u2013 Daily",
+  "LSCC \u2013 Daily",
+  "We're social!"
+ ]
+}

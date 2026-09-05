@@ -1,0 +1,89 @@
+{
+ "letter_date": "2025-03-24",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 03/24/25",
+ "file": "2025-03-24_195c57395712bc7f.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.21,
+  "basis": "friday_close_to_friday_close",
+  "quote": "market actually closed in positive territory last week\u2014up a modest 0.21%"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 Very sideways action last week. Generally there was not much price acceptance over the 565.5 DoD level. The trend is clearly down, with strong odds of a lower high being on the table.",
+   "instrument": "SPY",
+   "level": 565.5,
+   "class": "break",
+   "sentence": "Generally there was not much price acceptance over the 565.5 DoD level."
+  },
+  {
+   "section": "S&P daily chart \u2013 Very sideways action last week. Generally there was not much price acceptance over the 565.5 DoD level. The trend is clearly down, with strong odds of a lower high being on the table.",
+   "instrument": "SPY",
+   "level": 573.0,
+   "class": "mention",
+   "sentence": "Would need to see at minimum a higher high over 573 to change tone."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Buyers were unable to develop higher lows over the 565.5 level TWICE. The burden of proof is on buyers in a daily downtrend. Generally looking for rejections and lower highs below 559.57 to trigger hourly double top.",
+   "instrument": "SPY",
+   "level": 565.5,
+   "class": "hold",
+   "sentence": "S&P hourly chart \u2013 Buyers were unable to develop higher lows over the 565.5 level TWICE."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Buyers were unable to develop higher lows over the 565.5 level TWICE. The burden of proof is on buyers in a daily downtrend. Generally looking for rejections and lower highs below 559.57 to trigger hourly double top.",
+   "instrument": "SPY",
+   "level": 559.57,
+   "class": "break",
+   "sentence": "Generally looking for rejections and lower highs below 559.57 to trigger hourly double top."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Buyers were unable to develop higher lows over the 565.5 level TWICE. The burden of proof is on buyers in a daily downtrend. Generally looking for rejections and lower highs below 559.57 to trigger hourly double top.",
+   "instrument": "SPY",
+   "level": 573.0,
+   "class": "mention",
+   "sentence": "Will change tone over 573 as noted."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "DFS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    165.0,
+    186.5
+   ],
+   "text": "Flat top breakout level in place here at 165. Looking for a thin structure retracement up towards the 186.5 level IF markets cooperate and find a counter trend move in the S&P."
+  },
+  {
+   "ticker": "HUM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 273.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    273.0,
+    289.65
+   ],
+   "text": "Another flat top breakout level chart. Key break is over 273 to retrace the sell side move into the origin and balance lows at 289.65. Liking the bull flag consolidation into the end of this past week after kicking things off with a rally on Monday/Tuesday."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Markets did NOT see any acceptance above prior weeks range and closed under the do or die zone on Friday, under the high volume node, below the 38.2, and aVWAP cluster. Rallies can produce lower highs.",
+  "S&P daily chart \u2013 Very sideways action last week. Generally there was not much price acceptance over the 565.5 DoD level. The trend is clearly down, with strong odds of a lower high being on the table.",
+  "S&P hourly chart \u2013 Buyers were unable to develop higher lows over the 565.5 level TWICE. The burden of proof is on buyers in a daily downtrend. Generally looking for rejections and lower highs below 559.57 to trigger hourly double top.",
+  "Market internals \u2013 Generally bears had the edge on Friday even as the market tried to build an intraday trend in the upward direction. There wasn't much exchange level participation with the breadth ratio reading reaching a -8:1 on the gap down. The other metrics speak for themselves.",
+  "Market profile \u2013 Value and PoC lower even though the session trended higher on Friday. Poor low needs repair... Generally the data points stack up on the bear side still.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "DFS \u2013 Daily",
+  "HUM \u2013 Daily",
+  "We're social!"
+ ]
+}

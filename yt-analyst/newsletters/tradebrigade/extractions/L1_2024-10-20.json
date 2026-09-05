@@ -1,0 +1,109 @@
+{
+ "letter_date": "2024-10-20",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 10/21/24",
+ "file": "2024-10-20_192ac5ff9778fc05.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets had a pretty status quo week with not much happening after the follow through move on Monday. Price balanced near the highs and Thursday's gap up did not stick.\n\nEconomic data is quiet, and earnings from financials have been pretty solid pushing the XLF sector higher.\n\nOne thing to note is t"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 Simple balance range breakout that has exceeded the measured move. Would not be a shocker to see the market balance again, and let the 20 SMA catch back up to price.",
+   "instrument": "SPY",
+   "level": 574.4,
+   "class": "hold",
+   "sentence": "As long as higher lows are over the 574.4 level, bulls are in control."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Building an ascending triangle, and due to the higher timeframe uptrends behind us, looking for the bullish outcomes here first.",
+   "instrument": "SPY",
+   "level": 579.75,
+   "class": "break",
+   "sentence": "Would only flip bearish for a daily pullback to the LIS level if a double top triggers below the neckline at the 579.75 level."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ASMC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    24.5,
+    31.4
+   ],
+   "text": "Ascending triangle breakout that we had discussed three weeks ago. Now getting another retest opportunity over the top of the breakout zone. Looking for 24.5 to hold the Friday doji and accelerate price back up towards 31.4. Losing interest if we get daily closed back below 24.5."
+  },
+  {
+   "ticker": "CPRT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 53.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    53.5,
+    56.0
+   ],
+   "text": "Breakout now offering a retest over the 53.5 area. Ideally the Friday hammer holds support here and gets a rotation back up towards the highs around 56. In play as long as the moving averages are holding price higher."
+  },
+  {
+   "ticker": "CTSH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    78.1,
+    80.05
+   ],
+   "text": "Flat top breakout level in play at 78.10. Looking for price to break and retrace that upper wick of the prior earnings bar up into 80.05. Ideally this happens prior to this round of earnings. Not interested if there is no break."
+  },
+  {
+   "ticker": "EXAS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    71.6,
+    79.6
+   ],
+   "text": "Ascending triangle / bull flag with breakout level at the 71.6 level. Ideally there is a measured move that gets us close to the open of the failed gap up candle closer to 79.6. Out of play if the support trend line breaks."
+  },
+  {
+   "ticker": "FLR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 51.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    51.6,
+    56.15,
+    58.75,
+    2018.0
+   ],
+   "text": "Double inside bar after a break out. Stronger sellers would have pressured a deeper retracement on Thursday when the market closed its gap. Zoom WAY out, and you'll see that 56.15 is technically a gap close from October 2018. So caution into that level, but generally looking for continuation out of this breakout towards 58.75. Any higher low keeps this in play over 51.6."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Status quo uptrend. Gap closed. Hammer that closes at the high of the range. Plenty of VWAP and Fib support below for a potential higher low.",
+  "S&P daily chart \u2013 Simple balance range breakout that has exceeded the measured move. Would not be a shocker to see the market balance again, and let the 20 SMA catch back up to price.",
+  "S&P hourly chart \u2013 Building an ascending triangle, and due to the higher timeframe uptrends behind us, looking for the bullish outcomes here first.",
+  "Market internals \u2013 Pointing out that on the Tuesday liquidation break from the ASML leak, the broader exchange really wasn't bearish. On Thursday when the gap faded off of the open, the underpinnings also were not aggressively bearish.",
+  "Market profile \u2013 Really just suggests we have a new balance range that's been established. Nothing overly interesting here. Inside value on Friday, could see a single print retracement over Friday high into Thursday high.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ASMC \u2013 Daily Chart",
+  "CPRT \u2013 Daily chart",
+  "CTSH \u2013 Daily chart",
+  "EXAS \u2013 Daily chart",
+  "FLR \u2013 Daily chart",
+  "We're social!"
+ ]
+}

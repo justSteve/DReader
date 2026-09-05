@@ -1,0 +1,161 @@
+{
+ "letter_date": "2025-03-10",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 03/10/25",
+ "file": "2025-03-10_1957db2ed548f885.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Apologies for the delay! Tonight's newsletter comes to you from 20,000 feet above ground. We'll be trading from the West Coast this week.\n\nMarkets remained turbulent last week, ultimately continuing their descent despite some intraday two sided trade.\n\nWe\u2019ve been playing the patience game on the hig"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Bottom of the do or die zone is noted as the 50 SMA, pivot anchored VWAP, and high volume node that aligns with the prior breakout level. As noted above, the number is 564.",
+   "instrument": "SPY",
+   "level": 564.0,
+   "class": "mention",
+   "sentence": "As noted above, the number is 564."
+  },
+  {
+   "section": "S&P daily chart \u2013 We can clearly see the daily 200 SMA in green as confluence near the Friday open as well as two day balance lows from Tuesday and Wednesday.",
+   "instrument": "SPY",
+   "level": 573.0,
+   "class": "target",
+   "sentence": "If the market can hold an open on Monday over that 573, a counter trend into a weekly and daily lower high at 590.25 (confluence with the upper edge of the expected move for the week), seems reasonable."
+  },
+  {
+   "section": "S&P daily chart \u2013 We can clearly see the daily 200 SMA in green as confluence near the Friday open as well as two day balance lows from Tuesday and Wednesday.",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "target",
+   "sentence": "If the market can hold an open on Monday over that 573, a counter trend into a weekly and daily lower high at 590.25 (confluence with the upper edge of the expected move for the week), seems reasonable."
+  },
+  {
+   "section": "S&P daily chart \u2013 We can clearly see the daily 200 SMA in green as confluence near the Friday open as well as two day balance lows from Tuesday and Wednesday.",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "break",
+   "sentence": "Any acceptance over 590.25 and we will have to change tone, which I would be more than happy to do."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Given out base case above, here are some potential ways in which the pathing could unfold to accomplish lower highs below 590.25. The look below and fail on Thursday / Friday becomes more evident on this view also.",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "break",
+   "sentence": "S&P hourly chart \u2013 Given out base case above, here are some potential ways in which the pathing could unfold to accomplish lower highs below 590.25."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ADI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    223.0
+   ],
+   "text": "Big retest of the prior breakout level. Friday has a look below and fail on the 223 level as well. If buyers can step up, looking for a rotation back to the swing high."
+  },
+  {
+   "ticker": "APD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Tight balance range on the daily with clear breakout level IF its going to go. Thin structure to retrace on an upside move. Not interested if it never breaks."
+  },
+  {
+   "ticker": "BDX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Similar version to above."
+  },
+  {
+   "ticker": "BRO",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 114.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    114.0
+   ],
+   "text": "Great looking bull flag at the all time high. Any higher low pullback that continues ideally stays over the 114 level. Great relative strength to the broad market."
+  },
+  {
+   "ticker": "CRL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    170.6,
+    180.75,
+    202.5
+   ],
+   "text": "Simple bottom fishing play with an inverted head and shoulders in force. Looking for a move to pullback and hold the neckline at 170.6 or break the overhead supply low at 180.75. Overall target on a stronger trend reversal would be 202.5 and then monitoring for continuation."
+  },
+  {
+   "ticker": "FTNT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    99.65
+   ],
+   "text": "Massive Brigade Bolt\u2122 happening on the weekly breakout level. Pulling back from all time highs. This is a huge watch with the hammer from Friday. Not interested if we start to see price acceptance below the 99.65 level. So far Friday suggests this is in play."
+  },
+  {
+   "ticker": "ROL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 52.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    52.0
+   ],
+   "text": "Not in love with the move under the breakout level. This is a two step watch. Needs to get back over 52 to be in play, and then needs to offer a bullish setup. Until that happens, it falls into the failed breakout category."
+  },
+  {
+   "ticker": "SHW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 367.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    367.6,
+    392.3
+   ],
+   "text": "Reload from last week. Higher low balance in place and still thinking about moves through the 367.6 to get through the thin structure breakdown off to the left. Target is 392.3. Will remain in play as long as the range holds over the moving average cluster."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Bottom of the do or die zone is noted as the 50 SMA, pivot anchored VWAP, and high volume node that aligns with the prior breakout level. As noted above, the number is 564.",
+  "S&P daily chart \u2013 We can clearly see the daily 200 SMA in green as confluence near the Friday open as well as two day balance lows from Tuesday and Wednesday.",
+  "S&P hourly chart \u2013 Given out base case above, here are some potential ways in which the pathing could unfold to accomplish lower highs below 590.25. The look below and fail on Thursday / Friday becomes more evident on this view also.",
+  "Market internals \u2013 Internals show us the degree of two sided trade that was taking place last week. Yes the market has moved lower, but under the conditions that there has been some violent intraday counter trend moves. A hallmark of volatility.",
+  "Market profile \u2013 Note that value on Friday has moved to close back inside of the two day balance range. Suggests that the look below and fail is valid, and sellers are starting to *temporarily* \"run out of bullets\" at the lows. Doesn't mean new money buyers are here, but it does mean the counter trend seems reasonable.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ADI \u2013 Daily",
+  "APD \u2013 Daily",
+  "BDX \u2013 Daily",
+  "BRO \u2013 Daily",
+  "CRL \u2013 Daily",
+  "FTNT \u2013 Daily",
+  "ROL \u2013 Daily",
+  "SHW \u2013 Daily",
+  "We're social!"
+ ]
+}

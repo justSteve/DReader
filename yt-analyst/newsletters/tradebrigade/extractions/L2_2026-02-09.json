@@ -1,0 +1,23 @@
+{
+ "letter_date": "2026-02-09",
+ "sent_et": "2026-02-08",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "neutral", "conviction": "low", "hedged": true,
+          "quote": "Inside this range, a neutral stance makes sense. You need confirmation before leaning into a developed trend either way.",
+          "note": "'cautiously bullish, incremental' above 686; 'cleanest bear trigger' is a Monday close and Tuesday open below 686."},
+ "calls": [
+  {"id": "spy-hold-686", "instrument": "SPY", "type": "hold", "level": 686.0, "rule": "hold_week",
+   "quote": "If we hold above 686, the base case is an hourly higher low and continued rotation.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-no-accept-686", "instrument": "SPY", "type": "hold", "level": 686.0, "rule": "no_acceptance_below",
+   "quote": "If Monday closes below 686 and Tuesday opens below it, expect a retest of the broader range lows. That would be the cleanest bear trigger.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-break-686-to-range-lows", "instrument": "SPY", "type": "break", "level": 686.0, "rule": "break_then_target", "targets": [678.58, 675.0],
+   "quote": "If Monday closes below 686 and Tuesday opens below it, expect a retest of the broader range lows.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-em-range", "instrument": "SPY", "type": "range", "low": 678.58, "high": 702.66, "rule": "range_hold",
+   "quote": "This week’s expected move upper bound is 702.66, which would imply a daily higher high. The lower bound is 678.58.", "intent": "watch", "conviction": "unstated"},
+  {"id": "spy-lower-high-690.75", "instrument": "SPY", "type": "resistance", "level": 690.75, "rule": "below_week",
+   "quote": "There is the threat of a daily lower high under the 20 SMA near 690.75 as a rejection level to watch.", "intent": "watch", "conviction": "low"},
+  {"id": "qqq-under-613", "instrument": "QQQ", "type": "resistance", "level": 613.0, "rule": "below_week",
+   "quote": "If QQQ is under 613, SPY strength is more likely mean reversion than breakout.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

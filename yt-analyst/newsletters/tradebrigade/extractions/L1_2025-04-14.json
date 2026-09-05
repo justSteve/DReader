@@ -1,0 +1,191 @@
+{
+ "letter_date": "2025-04-14",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 04/14/25",
+ "file": "2025-04-14_1963199120f3f5af.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets snapped back in a violent rally last week, with the S&P 500 closing up 9.15%\u2014a historic move when you consider that the average annual gain for the index is typically between 8\u201310%.\n\nThe catalyst? A 90-day tariff pause, officially confirmed by President Trump via Truth Social on Wednesday. T"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Trend remains down, and there is a clear risk for a lower high ~550 area. However, sellers were unable to get a gap fill reversal, reject two AVWAPs, or the HVN after gapping down Monday. It would seem more constructive to seek a higher low over ~520.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "break",
+   "sentence": "S&P weekly chart \u2013 Trend remains down, and there is a clear risk for a lower high ~550 area."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Trend remains down, and there is a clear risk for a lower high ~550 area. However, sellers were unable to get a gap fill reversal, reject two AVWAPs, or the HVN after gapping down Monday. It would seem more constructive to seek a higher low over ~520.",
+   "instrument": "SPY",
+   "level": 520.0,
+   "class": "hold",
+   "sentence": "It would seem more constructive to seek a higher low over ~520."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case is a hold of 523.75 to shift from a capitulation low, to a structural low. Without an hourly down trend, rallies over Wednesday's high set a soft higher low. If a pullback develops from 550, 523.75 can form a firm higher low.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "hold",
+   "sentence": "S&P daily chart \u2013 Base case is a hold of 523.75 to shift from a capitulation low, to a structural low."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case is a hold of 523.75 to shift from a capitulation low, to a structural low. Without an hourly down trend, rallies over Wednesday's high set a soft higher low. If a pullback develops from 550, 523.75 can form a firm higher low.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "hold",
+   "sentence": "If a pullback develops from 550, 523.75 can form a firm higher low."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case is a hold of 523.75 to shift from a capitulation low, to a structural low. Without an hourly down trend, rallies over Wednesday's high set a soft higher low. If a pullback develops from 550, 523.75 can form a firm higher low.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "hold",
+   "sentence": "If a pullback develops from 550, 523.75 can form a firm higher low."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case is a hold of 523.75 to shift from a capitulation low, to a structural low. Without an hourly down trend, rallies over Wednesday's high set a soft higher low. If a pullback develops from 550, 523.75 can form a firm higher low.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "break",
+   "sentence": "Below 523.75 and this is invalid."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Holds of 523.75 can be immediate in white, or after a pullback from 550. Acceptance over 550 is game over for sellers.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "hold",
+   "sentence": "S&P hourly chart \u2013 Holds of 523.75 can be immediate in white, or after a pullback from 550."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Holds of 523.75 can be immediate in white, or after a pullback from 550. Acceptance over 550 is game over for sellers.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "hold",
+   "sentence": "S&P hourly chart \u2013 Holds of 523.75 can be immediate in white, or after a pullback from 550."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Holds of 523.75 can be immediate in white, or after a pullback from 550. Acceptance over 550 is game over for sellers.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "break",
+   "sentence": "Acceptance over 550 is game over for sellers."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Holds of 523.75 can be immediate in white, or after a pullback from 550. Acceptance over 550 is game over for sellers.",
+   "instrument": "SPY",
+   "level": 523.75,
+   "class": "break",
+   "sentence": "Below 523.75 and I would want to see a lower high to seek short entries and not get whipsawed."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "BJ",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Strong up trend despite what the broad market has done. Looking for a breakout over these equal highs to get into blue sky territory."
+  },
+  {
+   "ticker": "CMG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    48.0,
+    48.15,
+    55.0
+   ],
+   "text": "Two inside candles on Thursday / Friday are over the prior pivot low around 48.15 area. Looking for that to hold and any breaks over the highs to trigger longs up toward the pivot high around 55. Not interested if price gets below 48."
+  },
+  {
+   "ticker": "CRWD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    350.25,
+    384.0,
+    402.0,
+    455.25
+   ],
+   "text": "Double bottom in force here with inside bars on Thursday / Friday. Liking the Thursday wick that holds Tuesday's high. Over the neckline near 384 looking for a small hurdle around 402, and then things open up into the 455.25 level. Not interested if the 350.25 breaks."
+  },
+  {
+   "ticker": "FTNT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 100.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    93.5,
+    100.65,
+    110.25,
+    114.5
+   ],
+   "text": "Similar to CMG with the inside bars being back over the prior low. Looking for a break over 100.65 for a move back towards the 110.25 area and then ATH around 114.5. Not interested if price accepts below the 93.5 area."
+  },
+  {
+   "ticker": "KTOS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 32.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    30.65,
+    32.5,
+    35.3
+   ],
+   "text": "Daily double bottom, break of the neckline and a resistance trend line from the most recent range. Two possible entry points. Either breakout continuation gets acceptance over 32.5 and 35.3 becomes the target. Or a higher low pullback over 30.65 keeps buyers in control seeking trend continuation."
+  },
+  {
+   "ticker": "NCNO",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Large earnings gap to close overhead. Simple inside bar structure Thursday / Friday thats holding up over the prior breakout highs."
+  },
+  {
+   "ticker": "SFM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 158.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    158.25
+   ],
+   "text": "Inverted head and shoulders reversal is under way with the neckline in play this week. Looking for a move over the 158.25 level for a thin structure / gap fill target over head. Not interested if price never breaks the neckline area."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 In a raging bear market where its \"sell it all,\" you will not get precision holds of nuanced technical supports. Reference 2020, 2008, 2001. Monthly has a clear higher low to maintain the uptrend.",
+  "S&P weekly chart \u2013 Trend remains down, and there is a clear risk for a lower high ~550 area. However, sellers were unable to get a gap fill reversal, reject two AVWAPs, or the HVN after gapping down Monday. It would seem more constructive to seek a higher low over ~520.",
+  "S&P daily chart \u2013 Base case is a hold of 523.75 to shift from a capitulation low, to a structural low. Without an hourly down trend, rallies over Wednesday's high set a soft higher low. If a pullback develops from 550, 523.75 can form a firm higher low.",
+  "S&P hourly chart \u2013 Holds of 523.75 can be immediate in white, or after a pullback from 550. Acceptance over 550 is game over for sellers.",
+  "Market internals \u2013 For the number of days where the bears had the edge at the exchange level, it sure doesn't look like they made much progress with price...",
+  "Market profile \u2013 Stronger sellers should have undoubtably closed the single prints on Thursday. Thursday / Friday value shifts higher. Note that the poor low could use some repair, but is not a forced issue if markets open higher Monday morning.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "BJ \u2013 Daily",
+  "CMG \u2013 Daily",
+  "CRWD \u2013 Daily",
+  "FTNT \u2013 Daily",
+  "KTOS \u2013 Daily",
+  "NCNO \u2013 Daily",
+  "SFM \u2013 Daily",
+  "We're social!"
+ ]
+}

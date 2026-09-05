@@ -1,0 +1,107 @@
+{
+ "letter_date": "2024-10-27",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 10/28/24",
+ "file": "2024-10-27_192d06d3fb313a96.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Last week was the final calm before the storm. There honestly isn't much to report on from a fundamental perspective.\n\nTesla was the biggest deal, reporting great numbers and even better guidance.\n\nRevenues are up, expense are down, only logical that margins are also up. Exactly what any investor wo"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 starting a mild pullback from the ATH, which of course is the highest high in the trend count. Hammer-esque bar low is right off of daily support and a HNV. Higher lows persist over 564 on the weekly. Really no cause for concern.",
+   "instrument": "SPY",
+   "level": 564.0,
+   "class": "hold",
+   "sentence": "Higher lows persist over 564 on the weekly."
+  },
+  {
+   "section": "S&P daily chart \u2013 All about 579.25. Given Friday's gap up, buyers had many chances to find a higher low in the upper balance range. Open drive higher, over VWAP, gap fill reversal... where did we close? Below. Buyers have some work to do.",
+   "instrument": "SPY",
+   "level": 579.25,
+   "class": "mention",
+   "sentence": "S&P daily chart \u2013 All about 579.25."
+  },
+  {
+   "section": "S&P daily chart \u2013 All about 579.25. Given Friday's gap up, buyers had many chances to find a higher low in the upper balance range. Open drive higher, over VWAP, gap fill reversal... where did we close? Below. Buyers have some work to do.",
+   "instrument": "SPY",
+   "level": 574.4,
+   "class": "mention",
+   "sentence": "Stronger sellers only get a foot hold in this market if the daily higher low line in the sand breaks at 574.4."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Initial pathing for the week around the key 579.75 level. Keep in mind that earnings kicks off to a strong start Tuesday with AMD moving semiconductors. Earnings gaps and volatility *may* invalidate technical levels. Truly a week to take day by day.",
+   "instrument": "SPY",
+   "level": 579.75,
+   "class": "mention",
+   "sentence": "S&P hourly chart \u2013 Initial pathing for the week around the key 579.75 level."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ELF",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 117.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    117.5,
+    143.5
+   ],
+   "text": "Possible daily inverted head and shoulders with a thin structure retracement. Over 117.5 can see 143.5 over time. Not interested if it never breaks."
+  },
+  {
+   "ticker": "LRN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 92.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    3.0,
+    92.65
+   ],
+   "text": "Daily 3 bar play. Looking for a break over 92.65 for blue sky territory. Not in play if it never breaks."
+  },
+  {
+   "ticker": "SMR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 19.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    17.0,
+    19.6
+   ],
+   "text": "Cup with handle into blue sky territory. Looking for a move over 19.6 to get some momentum pre earnings. Out of play if this breaks 17."
+  },
+  {
+   "ticker": "RHI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 69.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    69.0,
+    72.0
+   ],
+   "text": "Rounded bottom, looking for a stronger reversal over 69. First target 72, from there monitoring to see if there is continuation. Not interested if it never gets above the flat top resistance."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 starting a mild pullback from the ATH, which of course is the highest high in the trend count. Hammer-esque bar low is right off of daily support and a HNV. Higher lows persist over 564 on the weekly. Really no cause for concern.",
+  "S&P daily chart \u2013 All about 579.25. Given Friday's gap up, buyers had many chances to find a higher low in the upper balance range. Open drive higher, over VWAP, gap fill reversal... where did we close? Below. Buyers have some work to do.",
+  "S&P hourly chart \u2013 Initial pathing for the week around the key 579.75 level. Keep in mind that earnings kicks off to a strong start Tuesday with AMD moving semiconductors. Earnings gaps and volatility *may* invalidate technical levels. Truly a week to take day by day.",
+  "Market internals \u2013 Probably lean a bit more bearish than bullish, however... It really doesn't look like new money sellers. Looks more like profit taking, and longs late to the party stopping out. Nothing substantial on any given individual session.",
+  "Market profile \u2013 Double distribution on the Friday session with PoC shifting to the lower distribution and most of value as well. Stronger buyers would not have let that happen into the close.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ELF \u2013 Daily Chart",
+  "LRN \u2013 Daily chart",
+  "SMR \u2013 Daily chart",
+  "RHI \u2013 Daily chart",
+  "We're social!"
+ ]
+}

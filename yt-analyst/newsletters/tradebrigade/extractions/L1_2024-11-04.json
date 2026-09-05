@@ -1,0 +1,109 @@
+{
+ "letter_date": "2024-11-04",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 11/04/24",
+ "file": "2024-11-04_192f4b0292da1387.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Things got busy last week, and won't be slowing down this week!\n\nElection on Tuesday and FOMC on Thursday.\n\nBased on historical references, its likely that the election causes short term volatility and thats it. We would argue, that Thursday's FOMC is going to be a bigger deal.\n\nHistorically, it doe"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 Inverted hammer is bearish, looking over Sept's high, closing under the opening print, and inside of Sept. range. Does it damage the trend though? No. Pullback under 566 looks for a higher low over 525.",
+   "instrument": "SPY",
+   "level": 566.0,
+   "class": "hold",
+   "sentence": "Pullback under 566 looks for a higher low over 525."
+  },
+  {
+   "section": "S&P monthly chart \u2013 Inverted hammer is bearish, looking over Sept's high, closing under the opening print, and inside of Sept. range. Does it damage the trend though? No. Pullback under 566 looks for a higher low over 525.",
+   "instrument": "SPY",
+   "level": 525.0,
+   "class": "hold",
+   "sentence": "Pullback under 566 looks for a higher low over 525."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Solid red bodied bar, pulling back into the weekly line in the sand, and monthly pullback trigger. The box shows a soft weekly higher low, as the daily never flipped into a downtrend.",
+   "instrument": "SPY",
+   "level": 566.0,
+   "class": "hold",
+   "sentence": "If buyers support 566, theres nothing to be worried about on higher timeframes."
+  },
+  {
+   "section": "S&P daily chart \u2013 trend is changing to down, with the break below the 574.4 level. The prior resistance had produced a higher low response on Oct. 23, and has now been closed below twice. With a lower low, we now have room to set a lower high anywhere below 579.75 / gap fill reversal area.",
+   "instrument": "SPY",
+   "level": 574.4,
+   "class": "break",
+   "sentence": "S&P daily chart \u2013 trend is changing to down, with the break below the 574.4 level."
+  },
+  {
+   "section": "S&P daily chart \u2013 trend is changing to down, with the break below the 574.4 level. The prior resistance had produced a higher low response on Oct. 23, and has now been closed below twice. With a lower low, we now have room to set a lower high anywhere below 579.75 / gap fill reversal area.",
+   "instrument": "SPY",
+   "level": 579.75,
+   "class": "break",
+   "sentence": "With a lower low, we now have room to set a lower high anywhere below 579.75 / gap fill reversal area."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Hourly chart shows some preliminary pathing ideas with the main outcomes looking at possible lower high weakness. For buyers to be back in control price needs a higher low over 579.75.",
+   "instrument": "SPY",
+   "level": 579.75,
+   "class": "hold",
+   "sentence": "For buyers to be back in control price needs a higher low over 579.75."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "COST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    872.0,
+    912.0
+   ],
+   "text": "Simple range trading pre election and FOMC. Looking for the back to back hammers off of support to indicate buyers willing to rotate from 872 back up towards 912. Out of play if we take out Friday low."
+  },
+  {
+   "ticker": "GM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    54.9
+   ],
+   "text": "Mild pullback among the broad market selling. If price can find buyers at the round 50 mark, looking for a Brigade Bolt\u2122 higher low to offer the next base. Ideally target is all the way to 54.9 from the weekly chart. Not in play if price violates 50 with multiple daily closes below."
+  },
+  {
+   "ticker": "X",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 39.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    39.65,
+    42.0,
+    200.0
+   ],
+   "text": "Flat top breakout in line with the daily 200 SMA (green). Not the best bar on Friday, but generally some relative strength to the broad market gap down on Thursday. Over 39.65 can target the origin of the breakdown at 42 area. Not in play if there is never a break over 39.65."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Inverted hammer is bearish, looking over Sept's high, closing under the opening print, and inside of Sept. range. Does it damage the trend though? No. Pullback under 566 looks for a higher low over 525.",
+  "S&P weekly chart \u2013 Solid red bodied bar, pulling back into the weekly line in the sand, and monthly pullback trigger. The box shows a soft weekly higher low, as the daily never flipped into a downtrend.",
+  "S&P daily chart \u2013 trend is changing to down, with the break below the 574.4 level. The prior resistance had produced a higher low response on Oct. 23, and has now been closed below twice. With a lower low, we now have room to set a lower high anywhere below 579.75 / gap fill reversal area.",
+  "S&P hourly chart \u2013 Hourly chart shows some preliminary pathing ideas with the main outcomes looking at possible lower high weakness. For buyers to be back in control price needs a higher low over 579.75.",
+  "Market internals \u2013 Internals for the week really weren't all that bad. Thursday only saw strong volume outflows, but nothing substantial in the AD line or even the TICKs. Seems like profit taking and mild selling rather than outright \"close all longs and lever up short.\"",
+  "Market profile \u2013 No follow through on Friday from the bears. Value is higher, and the PoC is also higher. Poor high could use some repair, so note that if we test Friday high, a break into the gap isn't unreasonable. The tell will be how much if any of it closes.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "COST \u2013 Daily Chart",
+  "GM \u2013 Daily chart",
+  "X \u2013 Daily chart",
+  "We're social!"
+ ]
+}

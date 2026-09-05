@@ -1,0 +1,113 @@
+{
+ "letter_date": "2025-05-05",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 05/05/25",
+ "file": "2025-05-05_1969dbe77931e1d4.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 7.5,
+  "basis": "unknown",
+  "quote": "market is still down ~7.5%"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 The weekly close is over the fib 61.8 and the ATH aVWAP. Most importantly the prior support at 550 did NOT offer a lower high rejection as resistance. This was a threat early in the week as evident by the lower wick. Room for a pullback higher low over 550.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "mention",
+   "sentence": "Most importantly the prior support at 550 did NOT offer a lower high rejection as resistance."
+  },
+  {
+   "section": "S&P weekly chart \u2013 The weekly close is over the fib 61.8 and the ATH aVWAP. Most importantly the prior support at 550 did NOT offer a lower high rejection as resistance. This was a threat early in the week as evident by the lower wick. Room for a pullback higher low over 550.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "hold",
+   "sentence": "Room for a pullback higher low over 550."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case is to seek a pullback off of the daily 200 SMA (green) that then sets up a higher low anywhere over the top of the TTZ\u2122 at 546.75. If markets continue over 575.5, there is serious over head supply resistance at 590.25.",
+   "instrument": "SPY",
+   "level": 546.75,
+   "class": "hold",
+   "sentence": "S&P daily chart \u2013 Base case is to seek a pullback off of the daily 200 SMA (green) that then sets up a higher low anywhere over the top of the TTZ\u2122 at 546.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case is to seek a pullback off of the daily 200 SMA (green) that then sets up a higher low anywhere over the top of the TTZ\u2122 at 546.75. If markets continue over 575.5, there is serious over head supply resistance at 590.25.",
+   "instrument": "SPY",
+   "level": 575.5,
+   "class": "mention",
+   "sentence": "If markets continue over 575.5, there is serious over head supply resistance at 590.25."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case is to seek a pullback off of the daily 200 SMA (green) that then sets up a higher low anywhere over the top of the TTZ\u2122 at 546.75. If markets continue over 575.5, there is serious over head supply resistance at 590.25.",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "mention",
+   "sentence": "If markets continue over 575.5, there is serious over head supply resistance at 590.25."
+  },
+  {
+   "section": "S&P daily chart \u2013 Base case is to seek a pullback off of the daily 200 SMA (green) that then sets up a higher low anywhere over the top of the TTZ\u2122 at 546.75. If markets continue over 575.5, there is serious over head supply resistance at 590.25.",
+   "instrument": "SPY",
+   "level": 546.75,
+   "class": "break",
+   "sentence": "Below 546.75 and we contend with look above and fail."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "KR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 73.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    70.75,
+    73.0
+   ],
+   "text": "Three day balance failed to go lower on Friday. Looking for a move over 73 to get back into blue sky territory. This has been unfazed through the entire tariff turmoil. Stays on watch so long as higher lows are over 70.75."
+  },
+  {
+   "ticker": "LYV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 134.7,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    134.7,
+    144.5,
+    156.8
+   ],
+   "text": "Pressure cooker top building after a muted earnings move. Looking for breaks over 134.7 to get into the last lower high at 144.5. Beyond that the highs at 156.8 are in play."
+  },
+  {
+   "ticker": "ONB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    21.85,
+    23.3
+   ],
+   "text": "Starting to break out on Friday. Looking for a move to continue into the 21.85 area as a range double measured move. From there the more attractive range is over the weekly lower high 21.85 into the scene of the crime at 23.3. Slower mover, so factor that into your trade plan."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Monthly bars closed on Wednesday. This is a hammer for the ages. The lower wick represents a range of more than 15%. Note the precision of the low at prior resistance, and the close of April inside March. Bullish.",
+  "S&P monthly chart \u2013 Before you compare this to '08... Let's evaluate the bar with the *",
+  "S&P weekly chart \u2013 The weekly close is over the fib 61.8 and the ATH aVWAP. Most importantly the prior support at 550 did NOT offer a lower high rejection as resistance. This was a threat early in the week as evident by the lower wick. Room for a pullback higher low over 550.",
+  "S&P daily chart \u2013 Base case is to seek a pullback off of the daily 200 SMA (green) that then sets up a higher low anywhere over the top of the TTZ\u2122 at 546.75. If markets continue over 575.5, there is serious over head supply resistance at 590.25.",
+  "S&P hourly chart \u2013 These are some of the nuances that I'll be looking for to achieve the pathing outlined in the daily chart. White is base case. Green is better than expected and reasonable. Red is divergent from the base case and not supported by underlying evidence.",
+  "Market internals \u2013 No red flags here that are overly indicative of stronger sellers stepping up at the exchange level. If there was a day to get followthrough, it should have been Wednesdays gap down on the GDP print. Bulls ran with it into the weeks end.",
+  "Market profile \u2013 Stronger sellers should have moved into the single prints on Wednesday, instead the market stopped right at the top. The market also had a spike Wednesday into Thursday. The unfilled gap suggests sellers couldn't even test the spike... Value clean higher.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "KR \u2013 Daily",
+  "LYV \u2013 Daily",
+  "ONB \u2013 Daily",
+  "We're social!"
+ ]
+}

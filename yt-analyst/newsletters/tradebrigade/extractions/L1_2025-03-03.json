@@ -1,0 +1,122 @@
+{
+ "letter_date": "2025-03-03",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 03/03/25",
+ "file": "2025-03-03_1955984b847618c1.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 11.0,
+  "basis": "unknown",
+  "quote": "markets closed was down a whopping 11%"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 Monthly charts have closed. This is our reminder to consider what is typically required before a catastrophic event in the market takes place.",
+   "instrument": "SPY",
+   "level": 525.0,
+   "class": "hold",
+   "sentence": "If the monthly were to pull back, a higher low could be found all the way at the 20 SMA and the 525 area."
+  },
+  {
+   "section": "S&P daily chart \u2013 Translating the weekly PoC, we can clearly see overhead supply that transacted AFTER the Deep Seek & Tariff gap downs. Lower highs under 599.65 are a big warning sign that the daily trend will remain down.",
+   "instrument": "SPY",
+   "level": 599.65,
+   "class": "break",
+   "sentence": "Lower highs under 599.65 are a big warning sign that the daily trend will remain down."
+  },
+  {
+   "section": "S&P hourly chart \u2013 On the hourly given our base case thus far, here are the primary paths that will be tradable for further downside out of the market.",
+   "instrument": "SPY",
+   "level": 599.65,
+   "class": "break",
+   "sentence": "Let me be clear: Price acceptance over 599.65, in any form, invalidates the base case."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AME",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 190.3,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    190.3,
+    197.2
+   ],
+   "text": "Major daily double bottom neckline in place. Great relative strength to the market as the index has been selling off this past week. Over 190.3 triggers the higher high, and seeking targets towards 197.2. Not interested if price never breaks Friday's high."
+  },
+  {
+   "ticker": "SHW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    200.0,
+    392.3
+   ],
+   "text": "Another version of a double bottom, this time with a much higher low. Not quite at the breakout point, but on watch this week should it remain over the 50 SMA (blue) and 200 SMA (green). Thin structure breakdown retracement brings the target up to 392.3 area."
+  },
+  {
+   "ticker": "SPG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    10.0,
+    19.35,
+    199.8,
+    2018.0
+   ],
+   "text": "Long live the SPG dividend! Cup and handle or bull flag... lets not get hung up on semantics. Over the flag resistance should target the prior resistance from 2018 at 19.35 and beyond to 199.8. Rates may play an influential role here so be watching the 10 year yield as well."
+  },
+  {
+   "ticker": "WMG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 33.7,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    33.7,
+    35.75
+   ],
+   "text": "Massive retest for a daily Brigade Bolt\u2122 over the 33.7 level. Looking for price to break Friday's hammer high to get back into 35.75 as a target. Not interested if the buyers don't step up early in the week. If price breaks Friday's low, out of play."
+  },
+  {
+   "ticker": "XOM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 112.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    112.25,
+    119.0
+   ],
+   "text": "Ascending triangle. The XLE remains in a balance range on the daily and /CL is coming into a major support zone as well. Over 112.25 and we'll look for a move through the previous breakdown range towards 119. Not interested if price starts to move below the 50 SMA (blue)."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Monthly charts have closed. This is our reminder to consider what is typically required before a catastrophic event in the market takes place.",
+  "S&P weekly chart \u2013 First image: 16 week balance range and failed attempt from buyers to break out. There is a sizable lower wick on last weeks bar, but as we'll explore, the buying seems to be short squeeze only. Any move under the balance lows may trigger weekly double top.",
+  "S&P daily chart \u2013 Translating the weekly PoC, we can clearly see overhead supply that transacted AFTER the Deep Seek & Tariff gap downs. Lower highs under 599.65 are a big warning sign that the daily trend will remain down.",
+  "S&P hourly chart \u2013 On the hourly given our base case thus far, here are the primary paths that will be tradable for further downside out of the market.",
+  "Market internals \u2013 Nothing here supports the claim new money buyers are getting involved. The end of day ramp on Friday seems to be nothing more than short squeeze.",
+  "Market profile \u2013 Note the M period spike. Spike rules will be in play for tomorrow's open. Value remained definitively in the lower half of the range. Simply, shorts with poor location under Thursday's low got burnt shorting into a hole.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AME \u2013 Daily",
+  "SHW \u2013 Daily",
+  "SPG \u2013 Daily",
+  "WMG \u2013 Daily",
+  "XOM \u2013 Daily",
+  "We're social!"
+ ]
+}

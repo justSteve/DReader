@@ -1,0 +1,173 @@
+{
+ "letter_date": "2024-10-14",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 10/14/24",
+ "file": "2024-10-14_1928853731e64c07.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Finally the moment we've all been waiting for!\n\nA breakout of the S&P 500 daily balance range, with new all time highs closing on Friday. Markets are in bull mode across the timeframes, and the fundamental data seems O.K. for now.\n\nOn Thursday CPI inflation numbers didn't surprise too much, remember"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 Simple levels to watch. In an overall uptrend. First thoughts are to try to act as a pullback buyer so long as price is over the 572 level. Any failures below 572, become concerning. 566 is the weekly line in the sand, aka breakout level that MUST hold.",
+   "instrument": "SPY",
+   "level": 572.0,
+   "class": "mention",
+   "sentence": "First thoughts are to try to act as a pullback buyer so long as price is over the 572 level."
+  },
+  {
+   "section": "S&P daily chart \u2013 Simple levels to watch. In an overall uptrend. First thoughts are to try to act as a pullback buyer so long as price is over the 572 level. Any failures below 572, become concerning. 566 is the weekly line in the sand, aka breakout level that MUST hold.",
+   "instrument": "SPY",
+   "level": 572.0,
+   "class": "break",
+   "sentence": "Any failures below 572, become concerning."
+  },
+  {
+   "section": "S&P daily chart \u2013 Simple levels to watch. In an overall uptrend. First thoughts are to try to act as a pullback buyer so long as price is over the 572 level. Any failures below 572, become concerning. 566 is the weekly line in the sand, aka breakout level that MUST hold.",
+   "instrument": "SPY",
+   "level": 566.0,
+   "class": "hold",
+   "sentence": "566 is the weekly line in the sand, aka breakout level that MUST hold."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pullback pathing is pretty straight forward on the holds of the levels ahead of 572. Danger path in red. Optimistic continuation in green with a Brigade Bolt\u2122 over Friday's high ~580.",
+   "instrument": "SPY",
+   "level": 572.0,
+   "class": "hold",
+   "sentence": "S&P hourly chart \u2013 Pullback pathing is pretty straight forward on the holds of the levels ahead of 572."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pullback pathing is pretty straight forward on the holds of the levels ahead of 572. Danger path in red. Optimistic continuation in green with a Brigade Bolt\u2122 over Friday's high ~580.",
+   "instrument": "SPY",
+   "level": 580.0,
+   "class": "mention",
+   "sentence": "Optimistic continuation in green with a Brigade Bolt\u2122 over Friday's high ~580."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AFRM",
+   "timeframe": "Monthly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    49.2,
+    90.9
+   ],
+   "text": "Huge cup and handle with flat top breakout level at 49.20. IPO opening print could act as a reasonable target around 90.90. Keep in mind this is a monthly chart when it comes to managing expectations of timing."
+  },
+  {
+   "ticker": "ASMC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    24.5,
+    31.4
+   ],
+   "text": "Ascending triangle with a flat top breakout at 24.5. Looking for some thin structure retracement up towards 31.4 area, the origin of the breakdown bar. In play as long as the support trend line holds."
+  },
+  {
+   "ticker": "ARM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    151.75,
+    173.0
+   ],
+   "text": "This has been on our radar for a while at the 151.75 level, but with SMH poised for a similar move, getting it back in the newsletter. Ideally a break gets us to 173. In play as long as the support trend line holds."
+  },
+  {
+   "ticker": "GNRC",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    157.0,
+    204.0
+   ],
+   "text": "Ascending triangle base breakout has begun with a target through the thin structure breakdown towards the base of the prior consolidation around 204. Looking for straight up continuation, or pullbacks that hold 157 area."
+  },
+  {
+   "ticker": "LITE",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": 60.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    60.6,
+    75.0,
+    200.0
+   ],
+   "text": "Weekly three bar play with a potential break also signaling a recapture of the 200 SMA (green). Ideally continuation gets price towards 75, or pullbacks hold a weekly higher low over the 60.60 breakout level."
+  },
+  {
+   "ticker": "LNC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    32.4,
+    34.0
+   ],
+   "text": "Inverted head and shoulders with neckline break at 32.4. Gap to close overhead at 34 flat. In play so long as the right shoulder holds a higher low."
+  },
+  {
+   "ticker": "LULU",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    279.0,
+    304.1
+   ],
+   "text": "Ascending triangle base with breakout level at 279. Looking to get back to the 304.1 inflection point if this starts to go. In play as long as the support trend line holds."
+  },
+  {
+   "ticker": "OZK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    44.1,
+    47.1,
+    50.0
+   ],
+   "text": "Another inverted head and shoulders bottom formation with neckline at 44.1 and a breakout target around 47.1. Keep in mind earnings are this week here and could be a complicating factor. Generally in play as long as price stays over the 50 SMA (blue) for a higher low right shoulder."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Solid green bodied bar with lower wick supporting over the weekly breakout level. Odds of a looks above and fail are DRAMATICALLY reduced. New higher high affords the opportunity for a higher low pullback.",
+  "S&P daily chart \u2013 Simple levels to watch. In an overall uptrend. First thoughts are to try to act as a pullback buyer so long as price is over the 572 level. Any failures below 572, become concerning. 566 is the weekly line in the sand, aka breakout level that MUST hold.",
+  "S&P hourly chart \u2013 Pullback pathing is pretty straight forward on the holds of the levels ahead of 572. Danger path in red. Optimistic continuation in green with a Brigade Bolt\u2122 over Friday's high ~580.",
+  "Market internals \u2013 much stronger on Friday when we broke out of the daily 3 bar play compared to the Wednesday session. Confirming that new money buyers are more so getting involved across the exchange, not just in NVDA. JPM earnings helped this sentiment across financials broadly.",
+  "Market profile \u2013 Value has consistently moved higher through the move, and Friday value is completely break away from the prior two day range. Note also the poor high on Friday that could use repair.",
+  "SMH semiconductor ETF \u2013 All eyes on this breakout level this week. If it can go, really looking for a stronger argument for the Nasdaq to play catch up to the S&P towards new highs.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AFRM \u2013 Monthly chart, log price scale",
+  "ASMC \u2013 Daily chart",
+  "ARM \u2013 Daily chart",
+  "GNRC \u2013 Weekly chart",
+  "LITE \u2013 Weekly chart",
+  "LNC \u2013 Daily chart",
+  "LULU \u2013 Daily chart",
+  "OZK \u2013 Daily chart",
+  "We're social!"
+ ]
+}

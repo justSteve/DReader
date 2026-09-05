@@ -1,0 +1,23 @@
+{
+ "letter_date": "2026-06-08",
+ "sent_et": "2026-06-07",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "neutral", "conviction": "low", "hedged": true,
+          "quote": "Remember a top priority here is to keep a more open mind to two sided trade returning to markets. Pullback buyers couldn't get the job done on Friday.",
+          "note": "Written after the worst session since Nov 2025; pathing given for both a weak open (732 support) and a strong open (fade 748.75)."},
+ "calls": [
+  {"id": "spy-balance-730", "instrument": "SPY", "type": "hold", "level": 730.0, "rule": "hold_week",
+   "quote": "Balance over 730 will prevent a deeper pullback.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-break-730", "instrument": "SPY", "type": "break", "level": 730.0, "rule": "break_then_target", "targets": [712.5, 710.0],
+   "quote": "If 730 breaks, looking for about 710-712.5 area for the ideal higher low.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-support-732", "instrument": "SPY", "type": "hold", "level": 732.0, "rule": "hold_week",
+   "quote": "If price opens weak on Monday, looking for 732 equal low support and initiating counter trend attempts on red to green moves.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-break-732", "instrument": "SPY", "type": "break", "level": 732.0, "rule": "break_then_lower",
+   "quote": "If 732 breaks, looking to let price go, and then seek the lower high below for daily trend reversal and price to seek a weekly higher low.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-accept-748.75", "instrument": "SPY", "type": "reclaim", "level": 748.75, "rule": "reclaim_then_higher",
+   "quote": "Acceptance above 748.75 should be a big tell that the sell is not sustained, and the \"infinibid™\" is back on.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-fade-748.75", "instrument": "SPY", "type": "resistance", "level": 748.75, "rule": "below_week",
+   "quote": "On opens higher towards 743.5 or the 20 SMA, looking for fades off of 748.75 to pullback and test the bear bar low.", "intent": "offered", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

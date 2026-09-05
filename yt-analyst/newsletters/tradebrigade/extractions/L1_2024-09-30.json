@@ -1,0 +1,138 @@
+{
+ "letter_date": "2024-09-30",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 09/30/24",
+ "file": "2024-09-30_1924051b9aee139f.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets were frustratingly sideways last week. But thankfully, things should get more volatile this week.\nThe the most important early week catalyst is Jerome Powell speaking on Monday at 1:55pm EST.\n\nWe'll want to watch closely to see if Powell comes off as more of a hawk or dove. Noting that its t"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Still okay here, but the upper wick gives off some slight concerns. Note the close back inside of the prior weeks range. In a perfect world weekly higher lows hold over 565.25. Any moves below suggest look above and fail (still...).",
+   "instrument": "SPY",
+   "level": 565.25,
+   "class": "hold",
+   "sentence": "In a perfect world weekly higher lows hold over 565.25."
+  },
+  {
+   "section": "S&P daily chart \u2013 Already suggesting a look above and fail on the multi-day balance range with Friday closing back below the 572 level. Ideally a pullback goes to test 565.25 and holds for the weekly to look ok. Under 565.25 and 555.5 becomes a reality.",
+   "instrument": "SPY",
+   "level": 572.0,
+   "class": "break",
+   "sentence": "S&P daily chart \u2013 Already suggesting a look above and fail on the multi-day balance range with Friday closing back below the 572 level."
+  },
+  {
+   "section": "S&P daily chart \u2013 Already suggesting a look above and fail on the multi-day balance range with Friday closing back below the 572 level. Ideally a pullback goes to test 565.25 and holds for the weekly to look ok. Under 565.25 and 555.5 becomes a reality.",
+   "instrument": "SPY",
+   "level": 565.25,
+   "class": "hold",
+   "sentence": "Ideally a pullback goes to test 565.25 and holds for the weekly to look ok."
+  },
+  {
+   "section": "S&P daily chart \u2013 Already suggesting a look above and fail on the multi-day balance range with Friday closing back below the 572 level. Ideally a pullback goes to test 565.25 and holds for the weekly to look ok. Under 565.25 and 555.5 becomes a reality.",
+   "instrument": "SPY",
+   "level": 565.25,
+   "class": "mention",
+   "sentence": "Under 565.25 and 555.5 becomes a reality."
+  },
+  {
+   "section": "S&P daily chart \u2013 Already suggesting a look above and fail on the multi-day balance range with Friday closing back below the 572 level. Ideally a pullback goes to test 565.25 and holds for the weekly to look ok. Under 565.25 and 555.5 becomes a reality.",
+   "instrument": "SPY",
+   "level": 555.5,
+   "class": "mention",
+   "sentence": "Under 565.25 and 555.5 becomes a reality."
+  },
+  {
+   "section": "S&P hourly chart \u2013 572 is the easiest over/under level early in the week. IF below, looking for the pullback. IF above, looking for consolidation and then an hourly higher low to show confidence towards new ATHs.",
+   "instrument": "SPY",
+   "level": 572.0,
+   "class": "mention",
+   "sentence": "S&P hourly chart \u2013 572 is the easiest over/under level early in the week."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AFL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 110.85,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    110.85
+   ],
+   "text": "Ascending triangle with a flat top breakout to blue sky territory. Simple watch over 110.85. If the support trend line breaks but the 50 SMA (blue) holds, I would give it a second chance opportunity over time."
+  },
+  {
+   "ticker": "HIG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 117.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    117.5
+   ],
+   "text": "Ascending triangle with a flat top breakout to blue sky territory. Simple watch over 117.50. If the support trend line breaks but the 50 SMA (blue) holds, I would give it a second chance opportunity over time. (same setup as AFL)"
+  },
+  {
+   "ticker": "LNT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 60.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    60.75
+   ],
+   "text": "Ascending triangle with a flat top breakout to prior resistance. Simple watch over 60.75. If the support trend line breaks but the 50 SMA (blue) holds, I would give it a second chance opportunity over time. (notice a theme here?)"
+  },
+  {
+   "ticker": "NTRA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    124.0,
+    132.0
+   ],
+   "text": "Pullback in an uptrend with hammers forming near the support trend line as well as the prior resistance high. If this can hold at 124 looking for a move back to 132 and then blue sky after that."
+  },
+  {
+   "ticker": "NVAX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 14.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    14.0,
+    15.0,
+    16.0,
+    17.2
+   ],
+   "text": "Flat top resistance with an unclosed gap overhead. Lower rates help these biotech companies, so looking to see if the fundamental story aligns. Over 14 and there is thin structure to the gap (15-16) and then the highs of the prior move at 17.20. Not interested if the support trend line breaks."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Chart looks fine, buyers in control here with higher low and higher high, new all time high close (pending Monday). No monthly downtrend = no bear market.",
+  "S&P weekly chart \u2013 Still okay here, but the upper wick gives off some slight concerns. Note the close back inside of the prior weeks range. In a perfect world weekly higher lows hold over 565.25. Any moves below suggest look above and fail (still...).",
+  "S&P daily chart \u2013 Already suggesting a look above and fail on the multi-day balance range with Friday closing back below the 572 level. Ideally a pullback goes to test 565.25 and holds for the weekly to look ok. Under 565.25 and 555.5 becomes a reality.",
+  "S&P hourly chart \u2013 572 is the easiest over/under level early in the week. IF below, looking for the pullback. IF above, looking for consolidation and then an hourly higher low to show confidence towards new ATHs.",
+  "Market internals \u2013 Thursday is the focus. Note that the internals that do NOT read from the prior day close are bearish; index score and TICKs. Reiterates the fact that buyers are not really stepping up here.",
+  "Market profile \u2013 Value clearly overlapping the multi-day balance range, with point of control closes back in the balance range. Not a sign of bullish confidence.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AFL \u2013 Daily chart",
+  "HIG \u2013 Daily chart",
+  "LNT \u2013 Daily chart",
+  "NTRA \u2013 Daily chart",
+  "NVAX \u2013 Daily chart",
+  "We're social!"
+ ]
+}

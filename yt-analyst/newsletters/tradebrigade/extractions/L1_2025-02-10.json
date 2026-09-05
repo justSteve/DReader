@@ -1,0 +1,136 @@
+{
+ "letter_date": "2025-02-10",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 02/10/25",
+ "file": "2025-02-10_194ed5f4ba014df9.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Guess what we get more of this weekend!?\n\nTariffs!\n\nI'll reiterate that I'm not an expert in trade balance, tariffs as negation, or what the inflationary and supply chain impacts will be.\n\nI'll simply be continuing to interpret the headlines as a means to introduce volatility to the market. And as s"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 Monday's gap down tested the base case opening under the 595.85 level, but it was promptly recaptured, with no sign of stronger sellers. For the daily trend to more confidently flip up, ideally 599.65 holds for the next higher low.",
+   "instrument": "SPY",
+   "level": 595.85,
+   "class": "mention",
+   "sentence": "S&P daily chart \u2013 Monday's gap down tested the base case opening under the 595.85 level, but it was promptly recaptured, with no sign of stronger sellers."
+  },
+  {
+   "section": "S&P daily chart \u2013 Monday's gap down tested the base case opening under the 595.85 level, but it was promptly recaptured, with no sign of stronger sellers. For the daily trend to more confidently flip up, ideally 599.65 holds for the next higher low.",
+   "instrument": "SPY",
+   "level": 599.65,
+   "class": "hold",
+   "sentence": "For the daily trend to more confidently flip up, ideally 599.65 holds for the next higher low."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Hourly trend reversal via some kind of iH&S, double bottom, hammer, etc... off of the 599.65 is ideally the path I'd like to participate in early in the week. If we drop 599.65, scalp shorts can play into the 595.85 level.",
+   "instrument": "SPY",
+   "level": 599.65,
+   "class": "mention",
+   "sentence": "off of the 599.65 is ideally the path I'd like to participate in early in the week."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Hourly trend reversal via some kind of iH&S, double bottom, hammer, etc... off of the 599.65 is ideally the path I'd like to participate in early in the week. If we drop 599.65, scalp shorts can play into the 595.85 level.",
+   "instrument": "SPY",
+   "level": 599.65,
+   "class": "target",
+   "sentence": "If we drop 599.65, scalp shorts can play into the 595.85 level."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Hourly trend reversal via some kind of iH&S, double bottom, hammer, etc... off of the 599.65 is ideally the path I'd like to participate in early in the week. If we drop 599.65, scalp shorts can play into the 595.85 level.",
+   "instrument": "SPY",
+   "level": 595.85,
+   "class": "target",
+   "sentence": "If we drop 599.65, scalp shorts can play into the 595.85 level."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Hourly trend reversal via some kind of iH&S, double bottom, hammer, etc... off of the 599.65 is ideally the path I'd like to participate in early in the week. If we drop 599.65, scalp shorts can play into the 595.85 level.",
+   "instrument": "SPY",
+   "level": 595.85,
+   "class": "break",
+   "sentence": "Below 595.85 and danger emerges with all of Deep Seek and Tariff dip buyers underwater as overhead supply."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ASAN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    22.6,
+    27.55,
+    50.0
+   ],
+   "text": "Ascending triangle over the daily 50 SMA (blue). Looking for a break over the flat top at 22.6 level for a move to the swing high at 27.55. Friday's hammer closes back in Thursday's range illustrating the sellers failing to go lower. Not interested if it never breaks the trigger level."
+  },
+  {
+   "ticker": "CAKE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    52.0
+   ],
+   "text": "Big retest happening to the pressure cooker top breakout level. Looking for a reversal pattern on the full retest of the level across the hourly chart, or the reflection of that simply as a daily hammer. Not interested if we get multiple daily closes under 52."
+  },
+  {
+   "ticker": "INSM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    79.0,
+    112.0
+   ],
+   "text": "Another retest trade under way here but this time out of a multi-month base. As they say, the longer the base the higher in space... If we can see the 79 level hold and continuation off of it, we have 112 as the \"scene of the crime\" target area from the IPO balance range."
+  },
+  {
+   "ticker": "MET",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 84.8,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    84.8,
+    88.6
+   ],
+   "text": "Interested in the back to back hammer / dojis post earnings. Decent relative strength to the broad market on the Friday session in particular. If we see a breakout over the 84.8 level looking for a rotation back to range highs. Classic look below and fail. Anything over 88.60 is blue sky territory."
+  },
+  {
+   "ticker": "TFC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    48.35,
+    50.0,
+    50.5
+   ],
+   "text": "Pressure cooker top forming, or even a pie in the sky inverted head and shoulders. Neckline breakout level is at 48.35. Looking for a move above that to get closer to the 50.50 area. Not interested if it never breaks, or starts closing bars below the daily 50 SMA (blue)."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Closed again above the right shoulder of the \"could have been\" H&S. Opened below the aVWAPs, closed above. Opened below the 38.2 fib, closed above. Not ignoring the upper wick, but sellers dont have much here.",
+  "S&P daily chart \u2013 Monday's gap down tested the base case opening under the 595.85 level, but it was promptly recaptured, with no sign of stronger sellers. For the daily trend to more confidently flip up, ideally 599.65 holds for the next higher low.",
+  "S&P hourly chart \u2013 Hourly trend reversal via some kind of iH&S, double bottom, hammer, etc... off of the 599.65 is ideally the path I'd like to participate in early in the week. If we drop 599.65, scalp shorts can play into the 595.85 level.",
+  "Market internals \u2013 Highlighting the Friday session in particular here. Note that the volume flows and AD line really weren't anything spectacular here. What matters is the Index Score slammed down at -20 on the session and the TICK on the UoM report getting \"stuck\" below -500.",
+  "Market profile \u2013 Value shifted lower with price on Friday as well as the PoC. Note Wednesday's double distribution. Friday puts the PoC and close in the lower, instead of filling singles and rallying back higher. Bears get another data point here.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ASAN \u2013 Daily",
+  "CAKE \u2013 Daily",
+  "INSM \u2013 Daily",
+  "MET \u2013 Daily",
+  "TFC \u2013 Daily",
+  "We're social!"
+ ]
+}

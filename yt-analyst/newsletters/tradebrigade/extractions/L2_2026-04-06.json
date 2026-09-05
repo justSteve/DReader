@@ -1,0 +1,19 @@
+{
+ "letter_date": "2026-04-06",
+ "sent_et": "2026-04-05",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bearish", "conviction": "medium", "hedged": true,
+          "quote": "Price could not close above the daily 200 or 20 SMA though, so still a counter trend rally in the context of a developed downtrend.",
+          "note": "'If we rally first, I am more open to a look above and fail on the 200 SMA and 662.5 as a short than a breakout buy.' Follow-through-day criteria given as the bull hedge."},
+ "calls": [
+  {"id": "spy-line-653", "instrument": "SPY", "type": "hold", "level": 653.0, "rule": "hold_week",
+   "quote": "653 is the line in the sand. Above it, mildly neutral. Below it, thin structure opens to 642.85 and back to the bears.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-lose-653", "instrument": "SPY", "type": "break", "level": 653.0, "rule": "break_then_target", "targets": [642.85],
+   "quote": "Lose 653 and the setup reverts to bearish breakdown, targeting 642.85 and then equal lows.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-laf-662.5", "instrument": "SPY", "type": "resistance", "level": 662.5, "rule": "below_week",
+   "quote": "First thought on rallies to 662.5 is look above and fail there as a short.", "intent": "offered", "conviction": "medium"},
+  {"id": "spy-resist-675", "instrument": "SPY", "type": "resistance", "level": 675.0, "rule": "below_week",
+   "quote": "A weekly close back above 675 changes my tone or a higher low after a rally attempt. Until then, this is a lower high attempt.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

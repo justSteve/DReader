@@ -1,0 +1,15 @@
+{
+ "letter_date": "2026-01-05",
+ "sent_et": "2026-01-04",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "neutral", "conviction": "low", "hedged": true,
+          "quote": "Generally responsive trade should continue in between 689 and 679. Bulls of course have the edge above, bears below.",
+          "note": "'momentum has come to a grinding halt, and our trading should reflect that.'"},
+ "calls": [
+  {"id": "spy-range-679-689", "instrument": "SPY", "type": "range", "low": 679.0, "high": 689.0, "rule": "range_hold",
+   "quote": "Generally responsive trade should continue in between 689 and 679.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-hold-675", "instrument": "SPY", "type": "hold", "level": 675.0, "rule": "hold_week",
+   "quote": "Price also remains above the two bear engulfer highs at 675.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

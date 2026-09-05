@@ -1,0 +1,21 @@
+{
+ "letter_date": "2026-02-16",
+ "sent_et": "2026-02-15",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bearish", "conviction": "medium", "hedged": true,
+          "quote": "The writing seems like it's is on the wall, we're just waiting on the S&P to confirm with a balance break.",
+          "note": "Bear path and bull path both spelled out; 'Don't be the first long.' Presidents Day week (four sessions)."},
+ "calls": [
+  {"id": "spy-resist-686", "instrument": "SPY", "type": "resistance", "level": 686.0, "rule": "below_week",
+   "quote": "Any rally that tags 686 and fails is likely a fade.", "intent": "offered", "conviction": "medium"},
+  {"id": "spy-no-accept-675", "instrument": "SPY", "type": "hold", "level": 675.0, "rule": "no_acceptance_below",
+   "quote": "But a clear close and acceptance beneath 675 is the signal that flips the weekly trend to down.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-em-range", "instrument": "SPY", "type": "range", "low": 667.75, "high": 695.85, "rule": "range_hold",
+   "quote": "Expected move for the week: Upper 695.85 / Lower 667.75.", "intent": "watch", "conviction": "unstated"},
+  {"id": "qqq-resist-613", "instrument": "QQQ", "type": "resistance", "level": 613.0, "rule": "below_week",
+   "quote": "Clean sequence of lower highs. The 50 SMA continues to act as resistance. 613 is your overunder.", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-bolt-595.25", "instrument": "QQQ", "type": "break", "level": 595.25, "rule": "break_then_lower",
+   "quote": "A Brigade Bolt beneath 595.25 unlocks the prior equal lows.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

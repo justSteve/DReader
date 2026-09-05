@@ -1,0 +1,19 @@
+{
+ "letter_date": "2026-05-25",
+ "sent_et": "2026-05-24",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "high", "hedged": false,
+          "quote": "Bulls dominate the trend. Higher highs higher lows. As mentioned in the intro, any outcome here this week keeps the trend up.",
+          "note": "'Thinking mostly about bull flag breakout continuation rather than double top breakdown.' Memorial Day week (four sessions)."},
+ "calls": [
+  {"id": "spy-hold-732.25", "instrument": "SPY", "type": "hold", "level": 732.25, "rule": "hold_week",
+   "quote": "Under 732.25 triggers daily double top neckline break, but isn't the base case.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-no-accept-732.25", "instrument": "SPY", "type": "hold", "level": 732.25, "rule": "no_acceptance_below",
+   "quote": "If price does spend more time under 732.25 the trend will flip down and the first target is the gap close at 725.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-breakout-749.5", "instrument": "SPY", "type": "target", "level": 749.5, "rule": "target_reached",
+   "quote": "Over 749.5 seeks blue sky flag breakout.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-break-732.25", "instrument": "SPY", "type": "break", "level": 732.25, "rule": "break_then_target", "targets": [725.0],
+   "quote": "If price does spend more time under 732.25 the trend will flip down and the first target is the gap close at 725.", "intent": "watch", "conviction": "low"}
+ ],
+ "scenarios": []
+}

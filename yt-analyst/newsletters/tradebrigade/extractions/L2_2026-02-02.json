@@ -1,0 +1,23 @@
+{
+ "letter_date": "2026-02-02",
+ "sent_et": "2026-02-01",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "neutral", "conviction": "low", "hedged": true,
+          "quote": "Inside the range, bias stays muted but a decisive break below 686 turns things nasty fast. This market is getting exhausted.",
+          "note": "'internals support a neutral stance first, not really bullish.'"},
+ "calls": [
+  {"id": "spy-hold-686", "instrument": "SPY", "type": "hold", "level": 686.0, "rule": "hold_week",
+   "quote": "The key line in the sand is still 686. It is both a structural level and a reclaim point from the prior gap-down.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-no-accept-686", "instrument": "SPY", "type": "hold", "level": 686.0, "rule": "no_acceptance_below",
+   "quote": "Below 686, the breakdown aligns with losing a fib 61.8 zone and threatening the daily 50 SMA. That’s where downside risk becomes more substantial.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-upside-693.85", "instrument": "SPY", "type": "target", "level": 693.85, "rule": "target_reached",
+   "quote": "Upside clarity improves over Friday’s high at 693.85. That opens a path toward the ATH and the unrepaired overnight high near 699.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-ath-699", "instrument": "SPY", "type": "target", "level": 699.0, "rule": "target_reached",
+   "quote": "Above 693.85, the market pressures shorts. It also increases odds of a push toward 699 and a new ATH.", "intent": "watch", "conviction": "low"},
+  {"id": "spy-em-range", "instrument": "SPY", "type": "range", "low": 680.0, "high": 703.9, "rule": "range_hold",
+   "quote": "This week’s expected move is wide. The upper bound is 703.9, which implies a new ATH. The lower bound is about 680.", "intent": "watch", "conviction": "unstated"},
+  {"id": "spy-neckline-675", "instrument": "SPY", "type": "hold", "level": 675.0, "rule": "no_acceptance_below",
+   "quote": "A weekly double top is possible but requires a breakdown under the neckline zone near 675–676.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

@@ -1,0 +1,21 @@
+{
+ "letter_date": "2026-06-01",
+ "sent_et": "2026-05-31",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "high", "hedged": false,
+          "quote": "The base case is to remain bullish on continuation or higher low pullbacks to continue the trend so long as price is over 758.75.",
+          "note": "'There's no indication of it, but if the market decides to pull back...' — the pullback path is given as a contingency, not a lean."},
+ "calls": [
+  {"id": "spy-hold-758.75", "instrument": "SPY", "type": "hold", "level": 758.75, "rule": "hold_week",
+   "quote": "The base case is to remain bullish on continuation or higher low pullbacks to continue the trend so long as price is over 758.75.", "intent": "trade", "conviction": "high"},
+  {"id": "spy-hold-749", "instrument": "SPY", "type": "hold", "level": 749.0, "rule": "hold_week",
+   "quote": "Holding over 749 keeps breakout buyers in tact.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-lose-749", "instrument": "SPY", "type": "break", "level": 749.0, "rule": "break_then_target", "targets": [732.25],
+   "quote": "Under 749 with a lower high on the daily and a failed breakout starts to shape up. Target range low at 732.25.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-lower-high-748.75", "instrument": "SPY", "type": "break", "level": 748.75, "rule": "break_then_lower",
+   "quote": "If however price struggles to reclaim that level and a lower high develops below 748.75, it would seem the weekly look above and fail is in play to target the bottom of the range", "intent": "watch", "conviction": "low"},
+  {"id": "xlc-hold-115", "instrument": "XLC", "type": "hold", "level": 115.0, "rule": "hold_week",
+   "quote": "The largest sector threat I can see is this 115 level on the communications sector... if this fails, theres a real shot it acts as a major headwind to the S&P", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

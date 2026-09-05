@@ -1,0 +1,132 @@
+{
+ "letter_date": "2024-12-09",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 12/09/24",
+ "file": "2024-12-09_193a8eea7ffecb77.txt",
+ "self_score": {
+  "found": false,
+  "opener": "More all time highs for markets this past week!\n\nLeadership has clearly shifted. From the middle to end of November financials powered the S&P through a slow period in technology. Now in the first week of December we see technology powering the S&P through a pullback in financials.\n\nThis rotation sh"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Solid green bodied bar, higher high, higher low. New all time high close. Consolidation is picture perfect over 600, pullbacks welcome over 585 for a weekly higher low. Above all Fibs, aVWAPs, volume nodes",
+   "instrument": "SPY",
+   "level": 600.0,
+   "class": "hold",
+   "sentence": "Consolidation is picture perfect over 600, pullbacks welcome over 585 for a weekly higher low."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Solid green bodied bar, higher high, higher low. New all time high close. Consolidation is picture perfect over 600, pullbacks welcome over 585 for a weekly higher low. Above all Fibs, aVWAPs, volume nodes",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "hold",
+   "sentence": "Consolidation is picture perfect over 600, pullbacks welcome over 585 for a weekly higher low."
+  },
+  {
+   "section": "S&P daily chart \u2013 From a line in the sand perspective, a higher low can be found anywhere over 590.25. We have NOT seen an hourly downtrend since the attempt to close the election gap. Ideally though, the higher low respects structure at 600.5 (extend left its also the election move high)",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "hold",
+   "sentence": "S&P daily chart \u2013 From a line in the sand perspective, a higher low can be found anywhere over 590.25."
+  },
+  {
+   "section": "S&P daily chart \u2013 From a line in the sand perspective, a higher low can be found anywhere over 590.25. We have NOT seen an hourly downtrend since the attempt to close the election gap. Ideally though, the higher low respects structure at 600.5 (extend left its also the election move high)",
+   "instrument": "SPY",
+   "level": 600.5,
+   "class": "hold",
+   "sentence": "Ideally though, the higher low respects structure at 600.5 (extend left its also the election move high)"
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AMT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    200.0,
+    218.0
+   ],
+   "text": "Flag that has recaptured the daily 200 SMA (green). So long as price is above, looking for a breakout to move closer to the 218 target. Not interested if the 200 SMA breaks."
+  },
+  {
+   "ticker": "APH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 74.7,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    69.5,
+    74.7
+   ],
+   "text": "Text book ascending triangle headed into blue sky territory. Looking for breaks over 74.7 to unlock this move, and willing to entertain consolidation thats over the 69.5 level or the support trend line."
+  },
+  {
+   "ticker": "FOXA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 47.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    47.5
+   ],
+   "text": "Another text book ascending triangle headed into blue sky territory. Looking for breaks over 47.5 to unlock this move, and willing to entertain consolidation thats over the support trend line."
+  },
+  {
+   "ticker": "KTOS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 28.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    28.0,
+    30.25
+   ],
+   "text": "Equal high breakout point in an overall uptrend. Over 28 looks for prior resistance around 30.25 and then continue to trail targets up. This chart has a fairly ugly past, so please zoom out and consider that before getting too optimistic about upside."
+  },
+  {
+   "ticker": "MRK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    111.2
+   ],
+   "text": "Bottom fishing in healthcare! Inverted head and shoulders is as clear as day with a counter trend opportunity into the flush point up at 111.20. Daily has a three bar play setup as of Friday's close."
+  },
+  {
+   "ticker": "OLLI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 102.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    102.75
+   ],
+   "text": "MIND EARNINGS ON TUESDAY*\nLong standing base for weekly consolidation, just hardly below the all time highs. If this can breakout on earnings, looking for continuation moves or retests to get long over 102.75. Not interested if it starts closing daily bars back below 102.75 after attempting a breakout."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Solid green bodied bar, higher high, higher low. New all time high close. Consolidation is picture perfect over 600, pullbacks welcome over 585 for a weekly higher low. Above all Fibs, aVWAPs, volume nodes",
+  "S&P daily chart \u2013 From a line in the sand perspective, a higher low can be found anywhere over 590.25. We have NOT seen an hourly downtrend since the attempt to close the election gap. Ideally though, the higher low respects structure at 600.5 (extend left its also the election move high)",
+  "S&P hourly chart \u2013 The pathing contains a lot more green than white or red. Name of the game from our top down analysis is to try to find higher low pullback long opportunities. These are the ways I see it potentially unfolding.",
+  "Market internals \u2013 this weeks upside grind was brought to you by... drum roll please... Lack luster market internals strength. NO strong volume, NO strong advance decline line, NO strong TICKs.",
+  "Market profile \u2013 Very poor high and low from Friday's session. Mechanical level at the 6090 mark from value area high on Wednesday. If that breaks, wouldn't be unreasonable for a pullback to close the gap noting overhead supply from Thursday Friday value areas.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AMT \u2013 Daily Chart",
+  "APH \u2013 Daily",
+  "FOXA \u2013 Daily",
+  "KTOS \u2013 Daily",
+  "MRK \u2013 Daily",
+  "OLLI \u2013 Daily",
+  "We're social!"
+ ]
+}

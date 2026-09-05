@@ -1,0 +1,86 @@
+{
+ "letter_date": "2024-09-02",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 09/02/24",
+ "file": "2024-09-02_191b008d9e6e1572.txt",
+ "self_score": {
+  "found": false,
+  "opener": "US markets are closed on Monday in observance of Labor Day.\n\nBut once we come back to the desk, its going to be a loaded week of labor report data:\n* JOLTS\n* ADP Non Farm Payroll\n* Jobless Claims\n* Hourly Earnings\n* Govt. Non Farm Payroll\n* Unemployment Rate\n\nAt Jackson Hole, Jerome Powell was quite"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Another week of balance, not making a meaningful new high or low bar to bar. Still sitting near all time high equal highs, so trend is neutral and any higher low's over the massive confluence zone at 544.85 flip trend back to up.",
+   "instrument": "SPY",
+   "level": 544.85,
+   "class": "hold",
+   "sentence": "Still sitting near all time high equal highs, so trend is neutral and any higher low's over the massive confluence zone at 544.85 flip trend back to up."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ASO",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 58.3,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    58.3
+   ],
+   "text": "Inverted head and shoulders forming with a possible neckline break over 58.3. Longer run pattern, could take some time to play out. A weekly chart starts to show more of a base being built."
+  },
+  {
+   "ticker": "BX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 143.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    138.0,
+    143.5,
+    149.75
+   ],
+   "text": "Bull flagging into equal highs, looking for a breakout over the 143.5 handle to get into the 149.75 area prior resistance. In play as long as its over 138."
+  },
+  {
+   "ticker": "RKT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    19.15,
+    21.25
+   ],
+   "text": "Simple pullback in an overall uptrend. Looking for prior resistance to turn into support around 19.15 with an equal high target around 21.25. Friday hammer looks good, technically making a new low, and sellers failing to get downside continuation."
+  },
+  {
+   "ticker": "ROL",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": 50.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    3.0,
+    50.5
+   ],
+   "text": "Ascending triangle, uptrend breakout, bullish 3 bar play... what ever you want to call it, we have a shot at making new highs here over 50.50. Looking to keep this on watch as long as the support trend line holds, even on pullbacks. Notice the May - June equal high pullback then break."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Hammer candle structure is NOT a bearish hanging man. We looked below July's low and sellers could not achieve a close below range, below July's open, or below July's settlement... Clear uptrend",
+  "S&P weekly chart \u2013 Another week of balance, not making a meaningful new high or low bar to bar. Still sitting near all time high equal highs, so trend is neutral and any higher low's over the massive confluence zone at 544.85 flip trend back to up.",
+  "S&P daily chart \u2013 Balance range; balance rules. So far most evidence points to the green breakout, or continued balance in the range. Really no signs of stronger sellers. If we made a new all time high and failed with a lower high back in range, might be a short to pull back (red dotted).",
+  "Market internals \u2013 Not supportive of strong sellers getting involved in the balance range. On both the Wednesday and Thursday sells no meaningful bearish reads printed. Mind you, Friday's end of day rally was not totally bullish either... goes both ways.",
+  "Market profile \u2013 Longstanding balance clearly... but note the spike into Friday's close, and value lower. Probably speaks to short squeeze explaining the end of day move, and if longs were going to liquidate, price needs to be below the two day lows, putting value off sides.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ASO \u2013 Daily chart",
+  "BX \u2013 Daily chart",
+  "RKT \u2013 Daily chart",
+  "ROL \u2013 Weekly chart",
+  "We're social!"
+ ]
+}

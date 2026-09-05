@@ -1,0 +1,19 @@
+{
+ "letter_date": "2026-05-18",
+ "sent_et": "2026-05-17",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "low", "hedged": true,
+          "quote": "Base case would be for a look below and fail on 732.25 that leads to balance and digestion near the ATH.",
+          "note": "First weekly inverted hammer of the rally; sellers 'have a foothold' at the exchange level, but the base case still resolves higher."},
+ "calls": [
+  {"id": "spy-lbf-732.25", "instrument": "SPY", "type": "sequence", "level": 732.25, "rule": "look_below_and_reclaim",
+   "quote": "Base case would be for a look below and fail on 732.25 that leads to balance and digestion near the ATH.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-hold-732.25", "instrument": "SPY", "type": "hold", "level": 732.25, "rule": "hold_week",
+   "quote": "The level to watch will be last weeks low at 732.25.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-gapfill-725", "instrument": "SPY", "type": "hold", "level": 725.0, "rule": "hold_week",
+   "quote": "Ideally the daily chart sets a higher low off of the gap fill reversal at 725 which is the lower bound of the weekly expected move as well as the daily 20 SMA.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-lower-high-to-712.4", "instrument": "SPY", "type": "break", "level": 732.25, "rule": "break_then_target", "targets": [712.4],
+   "quote": "If the gap fill reversal then yields a lower high under the 732.25 area, we'll have a daily lower high and then from there look to test 712.4 for the weekly higher low to be set.", "intent": "watch", "conviction": "low"}
+ ],
+ "scenarios": []
+}

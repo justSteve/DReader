@@ -25,7 +25,7 @@ def wanted_symbols():
             print(f"skip {p}: {e}", file=sys.stderr); continue
         for idea in d.get("swing_ideas", []):
             if idea.get("ticker"): syms.add(idea["ticker"].upper())
-        for c in d.get("index_calls", []):
+        for c in d.get("index_calls", []) + d.get("calls", []):
             if c.get("instrument") and c["instrument"] not in ("ES", "NQ", "SPX"):
                 syms.add(c["instrument"].upper())
     return sorted(syms)
@@ -48,6 +48,11 @@ def main():
                          round(float(r["High"]), 4), round(float(r["Low"]), 4),
                          round(float(r["Close"]), 4)))
     out = pd.DataFrame(rows, columns=["date", "symbol", "open", "high", "low", "close"])
+    if OUT.exists():  # Yahoo drops a few symbols per run; keep prior rows for anything that failed today
+        old = pd.read_csv(OUT)
+        keep = old[~old.symbol.isin(set(out.symbol))]
+        if len(keep): print(f"kept {keep.symbol.nunique()} symbols from the previous cache", file=sys.stderr)
+        out = pd.concat([out, keep], ignore_index=True)
     out.sort_values(["symbol", "date"], inplace=True)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     out.to_csv(OUT, index=False)

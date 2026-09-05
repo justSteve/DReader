@@ -1,0 +1,105 @@
+{
+ "letter_date": "2024-11-25",
+ "subject": "Trade Brigade Newsletter Scans\u00a0\ud83d\udcb0 11/25/24",
+ "file": "2024-11-25_19360d57f1d15b30.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Nvidia put the bow on earnings season last week with a double beat and raise.\n\nEarnings came in at 78 cents vs 75 cents expected. Revenue came in at $35.1B versus expectations of $33.1B.\n\nThe one stock to rule them all, did it again.\nIn general earnings this season have been strong, and mostly led b"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 The two balance ranges, over and under, delineate the most important levels for this upcoming week. 595.25 and 590.25",
+   "instrument": "SPY",
+   "level": 595.25,
+   "class": "mention",
+   "sentence": "595.25 and 590.25 Over 595.25 is bulls on parade, seeking the all time high."
+  },
+  {
+   "section": "S&P daily chart \u2013 The two balance ranges, over and under, delineate the most important levels for this upcoming week. 595.25 and 590.25",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "mention",
+   "sentence": "595.25 and 590.25 Over 595.25 is bulls on parade, seeking the all time high."
+  },
+  {
+   "section": "S&P daily chart \u2013 The two balance ranges, over and under, delineate the most important levels for this upcoming week. 595.25 and 590.25",
+   "instrument": "SPY",
+   "level": 595.25,
+   "class": "hold",
+   "sentence": "Between 595.25 and 590.25 is still bullish consolidation for a higher low, noting the daily and weekly uptrend."
+  },
+  {
+   "section": "S&P daily chart \u2013 The two balance ranges, over and under, delineate the most important levels for this upcoming week. 595.25 and 590.25",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "hold",
+   "sentence": "Between 595.25 and 590.25 is still bullish consolidation for a higher low, noting the daily and weekly uptrend."
+  },
+  {
+   "section": "S&P daily chart \u2013 The two balance ranges, over and under, delineate the most important levels for this upcoming week. 595.25 and 590.25",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "break",
+   "sentence": "Under 590.25 and bears have set a daily lower high, mind the election gap."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing should favor the bullish outcomes noting the weekly and daily uptrends. Pullback higher lows are interesting. Shorts get a bit of the edge back if an hourly lower high under 590.25 forms to invalidate the hold above.",
+   "instrument": "SPY",
+   "level": 590.25,
+   "class": "mention",
+   "sentence": "Shorts get a bit of the edge back if an hourly lower high under 590.25 forms to invalidate the hold above."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "DASH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    63.38,
+    189.0
+   ],
+   "text": "Clean daily bull flag with the potential to breakout to a prior resistance around 189. Aligns nicely with a measured move target also. Strong uptrend behind the name.\n\nIP \u2013 Daily / monthly chart\nGreat looking hook on the daily into a known resistance... yeah, a multi decade resistance. Can it get up and out of this monthly inverted head and shoulders? The all time high is technically at 63.38."
+  },
+  {
+   "ticker": "VLTO",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 106.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    106.0
+   ],
+   "text": "Double bottom after the earnings panic. Not the best looking bar on Friday, but over the neckline. If price can maintain over 106, looking for some further retracement to the upside."
+  },
+  {
+   "ticker": "XYL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 126.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    126.5
+   ],
+   "text": "Another double bottom, after some earnings panic. If price can get more confident daily closes over 126.5 looking for a rotation back towards the trend line."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 The beauty of simplicity. Prior resistance, turns support.",
+  "S&P daily chart \u2013 The two balance ranges, over and under, delineate the most important levels for this upcoming week. 595.25 and 590.25",
+  "S&P hourly chart \u2013 Pathing should favor the bullish outcomes noting the weekly and daily uptrends. Pullback higher lows are interesting. Shorts get a bit of the edge back if an hourly lower high under 590.25 forms to invalidate the hold above.",
+  "Market internals \u2013 Bulls win at the exchange level when the market broke out of balance on Thursday / Friday sessions. No stronger sellers to be found.",
+  "Market profile \u2013 Value moved higher on Thursday and Friday breakout sessions as well, indicating price acceptance rather than rejection on the move. Note the extremely poor high from Friday!",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "DASH \u2013 Daily Chart",
+  "VLTO \u2013 Daily chart",
+  "XYL \u2013 Daily chart",
+  "We're social!"
+ ]
+}
