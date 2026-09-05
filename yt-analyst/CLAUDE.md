@@ -32,6 +32,13 @@ you add a card or change a card's header (title, channel, playlist, status).
 Grouping keys off the `**Channel:**` field: keep the channel name first, before
 any em dash or parenthetical, so videos by the same author fold together.
 
+`browser.html` is a single self-contained page for READING the corpus:
+`yta.py browse` regenerates it from the cards. A sortable, source-filterable
+table of every video; click a title to read its card, the generated index or
+a playlist synthesis. It embeds a snapshot of the card text, so it is
+gitignored and goes stale the moment a card changes — rerun it after
+`yta.py index`. No network, no assets: open the file in a browser.
+
 `yta.py export` emits the curated Findings as JSON on stdout (`--out PATH`
 to write a file, `--video ID` to restrict) for sibling zgents — provenance,
 finding text, timestamps and a normalized verification grade. It reads the

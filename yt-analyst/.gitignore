@@ -14,3 +14,6 @@ findings-export*.json
 cookies*.txt
 newsletters/tradebrigade/letters/
 newsletters/tradebrigade/data/
+
+# generated snapshot of the cards for reading — rerun `yta.py browse`
+browser.html

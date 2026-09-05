@@ -813,6 +813,582 @@ def cmd_export(args):
         sys.stdout.write(text)
 
 
+# --------------------------------------------------------------- browse ----
+# A single self-contained HTML file for reading the corpus: a sortable,
+# filterable table of every video, and a reading view for any card, the
+# generated index or a playlist synthesis. No network, no assets, no server —
+# open it in a browser, where Ctrl+wheel and Ctrl+± are the browser's own
+# zoom. Regenerate whenever cards change; it is a snapshot, so it is
+# gitignored [dr-s0p].
+
+BROWSER_PATH = SCRIPT_DIR / "browser.html"
+
+
+def _card_body(text):
+    """Everything from the first '## ' section on — the curated prose."""
+    lines = text.split("\n")
+    for i, l in enumerate(lines):
+        if l.startswith("## "):
+            return "\n".join(lines[i:]).strip()
+    return text.strip()
+
+
+def browse_documents():
+    """Every document the browser shows, plus the source list and totals."""
+    vids = collect_videos()
+    docs = []
+
+    for v in vids:
+        d = VIDEOS_DIR / v["id"]
+        if not v["card"]:
+            docs.append({
+                "key": f"v:{v['id']}", "kind": "video", "id": v["id"],
+                "title": "(no card written)", "source": "(no card)",
+                "channel": "", "uploaded": "", "duration": "", "seconds": 0,
+                "status": "no card", "pos": 0, "playlist": "", "runs": v["runs"],
+                "url": f"https://www.youtube.com/watch?v={v['id']}",
+                "file": f"videos/{v['id']}/",
+                "body": (f"_No `CARD.md` yet — {v['runs']} archived run"
+                         f"{'' if v['runs'] == 1 else 's'} under "
+                         f"`videos/{v['id']}/runs/`, never written up._"),
+            })
+            continue
+        text = (d / "CARD.md").read_text(errors="replace")
+        docs.append({
+            "key": f"v:{v['id']}", "kind": "video", "id": v["id"],
+            "title": v["title"], "source": v["author"], "channel": v["channel"],
+            "uploaded": v["uploaded"].split(" ")[0], "duration": v["duration"],
+            "seconds": v["seconds"], "status": v["status"] or "closed",
+            "pos": v["playlist_pos"], "playlist": v["playlist_id"],
+            "runs": v["runs"],
+            "url": card_fields(text).get("URL", ""),
+            "file": f"videos/{v['id']}/CARD.md",
+            "body": _card_body(text),
+        })
+
+    refs = [{
+        "key": "index", "kind": "index", "id": "INDEX.md", "title": "Video index",
+        "source": "", "file": "INDEX.md", "url": "",
+        "subtitle": "generated from every card header — do not hand-edit",
+        "body": INDEX_PATH.read_text(errors="replace") if INDEX_PATH.exists() else "",
+    }]
+    if PLAYLISTS_DIR.is_dir():
+        for p in sorted(PLAYLISTS_DIR.glob("*.md")):
+            body = p.read_text(errors="replace")
+            m = re.search(r"^# (.*)$", body, re.M)
+            title = (m.group(1) if m else p.stem)
+            docs_in = ", ".join(sorted({
+                v["author"] for v in vids
+                if v["card"] and v["playlist_id"] and v["playlist_id"] in p.name
+            }))
+            refs.append({
+                "key": f"p:{p.name}", "kind": "playlist", "id": p.name,
+                "title": re.sub(r"^Playlist synthesis — ", "", title),
+                "source": docs_in, "file": f"playlists/{p.name}", "url": "",
+                "subtitle": "what the whole series adds up to, across its cards",
+                "body": body,
+            })
+
+    carded = [d for d in docs if d["status"] != "no card"]
+    counts = {}
+    for d in docs:
+        counts[d["source"]] = counts.get(d["source"], 0) + 1
+    sources = sorted(counts, key=lambda s: (s == "(no card)", -counts[s], s.lower()))
+
+    return {
+        "generated": f"{datetime.now():%Y-%m-%d}",
+        "docs": docs,
+        "refs": refs,
+        "sources": [{"name": s, "count": counts[s]} for s in sources],
+        "stats": {
+            "cards": len(carded),
+            "sources": sum(1 for s in sources if s != "(no card)"),
+            "runtime": fmt_hm(sum(d["seconds"] for d in carded)),
+            "runs": sum(d["runs"] for d in docs),
+            "open": sum(1 for d in carded if d["status"] != "closed"),
+        },
+    }
+
+
+BROWSER_TEMPLATE = r"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yt-analyst — video cards</title>
+<style>
+:root{
+  --paper:#faf8f4; --ink:#231f1a; --ink2:#6b6259; --ink3:#968c7e;
+  --rule:#e2dbcf; --rule2:#efe9df; --hi:#f2ece1;
+  --accent:#a4661e; --teal:#1a7d80;
+  --ui:system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:Georgia,"Iowan Old Style","Source Serif 4",serif;
+  --mono:ui-monospace,Menlo,Consolas,"DejaVu Sans Mono",monospace;
+}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.5 var(--ui);
+     -webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* ---- masthead ---- */
+header.top{border-bottom:1px solid var(--rule);margin-bottom:22px}
+.mast{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:26px 0 4px}
+.mast h1{margin:0;font:600 17px/1 var(--ui);letter-spacing:.14em;text-transform:uppercase}
+.mast .stats{font:400 12px/1 var(--mono);color:var(--ink3)}
+.refs{display:flex;gap:8px;flex-wrap:wrap;align-items:baseline;padding:12px 0 18px;
+      font-size:13px;color:var(--ink3)}
+.refs a{text-decoration:none;border-bottom:1px solid rgba(164,102,30,.32);padding-bottom:1px}
+.refs a:hover{border-bottom-color:var(--accent)}
+.refs .sep{color:var(--rule)}
+
+/* ---- controls ---- */
+.controls{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;
+          padding-bottom:14px}
+.sources{display:flex;gap:6px;flex-wrap:wrap;flex:1;min-width:0}
+button.src{font:400 12.5px/1 var(--ui);padding:6px 11px;border:1px solid var(--rule);
+           border-radius:3px;background:transparent;color:var(--ink2);cursor:pointer}
+button.src:hover{border-color:#bfb5a4;color:var(--ink)}
+button.src.on{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+button.src b{font-weight:400;opacity:.6;margin-left:5px;font-family:var(--mono);font-size:11px}
+input#q{font:400 13px/1 var(--ui);padding:7px 10px;width:230px;color:var(--ink);
+        border:1px solid var(--rule);border-radius:3px;background:#fff;outline:none}
+input#q:focus{border-color:var(--accent)}
+
+/* ---- table ---- */
+table.index{width:100%;border-collapse:collapse;margin-bottom:60px}
+.index th{position:sticky;top:0;z-index:1;background:var(--paper);text-align:left;
+          font:600 10px/1 var(--ui);letter-spacing:.13em;text-transform:uppercase;
+          color:var(--ink3);padding:10px 14px 9px 0;border-bottom:1px solid var(--rule);
+          cursor:pointer;white-space:nowrap;user-select:none}
+.index th:hover{color:var(--ink)}
+.index th .car{opacity:.35;margin-left:4px;font-size:9px}
+.index th.on{color:var(--accent)}
+.index th.on .car{opacity:1}
+.index td{padding:11px 14px 11px 0;border-bottom:1px solid var(--rule2);
+          vertical-align:baseline}
+.index th:last-child,.index td:last-child{padding-right:0}
+.index tr:hover td{background:var(--hi)}
+.num{text-align:right;font-family:var(--mono);font-size:12px;color:var(--ink3);
+     white-space:nowrap}
+td.src{font-size:12px;color:var(--ink2);white-space:nowrap}
+td.ttl a{color:var(--ink);text-decoration:none;font-size:14.5px;line-height:1.35;
+         border-bottom:1px solid transparent}
+td.ttl a:hover{color:var(--accent);border-bottom-color:rgba(164,102,30,.4)}
+td.ttl .vid{display:block;font:400 10.5px/1.5 var(--mono);color:var(--ink3);margin-top:3px}
+.pill{display:inline-block;font:400 10px/1 var(--mono);letter-spacing:.06em;
+      text-transform:uppercase;padding:3px 6px;border-radius:2px;
+      background:#ece6da;color:var(--ink2)}
+.pill.open{background:rgba(164,102,30,.13);color:#8a5416}
+.pill.none{background:transparent;color:var(--ink3);border:1px solid var(--rule)}
+tr.uncarded td.ttl a{color:var(--ink3);font-style:italic}
+.empty{padding:44px 0 60px;color:var(--ink3);font-size:14px}
+
+/* ---- document view ---- */
+.docnav{display:flex;align-items:baseline;gap:16px;padding-bottom:20px;font-size:13px}
+.docnav a{text-decoration:none}
+.docnav .steps{margin-left:auto;display:flex;gap:14px}
+.docnav .off{color:var(--ink3);opacity:.45}
+.dochead{border-bottom:1px solid var(--rule);padding-bottom:18px;margin-bottom:26px}
+.kicker{font:400 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+        color:var(--accent)}
+.dochead h1{margin:11px 0 0;font:600 27px/1.25 var(--serif);max-width:30em}
+.dmeta{margin-top:12px;font:400 12px/1.6 var(--mono);color:var(--ink3);
+       display:flex;gap:14px;flex-wrap:wrap;align-items:baseline}
+.dmeta .path{margin-left:auto}
+
+.prose{max-width:44em;font:400 16.5px/1.62 var(--serif);color:#2b2620;
+       padding-bottom:110px}
+.prose h1{font:600 24px/1.25 var(--serif);margin:0 0 18px}
+.prose h2{font:600 11px/1 var(--ui);letter-spacing:.16em;text-transform:uppercase;
+          color:var(--ink3);margin:40px 0 15px;padding-top:19px;
+          border-top:1px solid var(--rule2)}
+.prose h2:first-child{margin-top:0;padding-top:0;border-top:0}
+.prose h3{font:600 15px/1.35 var(--ui);color:#3d372e;margin:28px 0 10px}
+.prose h2+p{font:400 13px/1.5 var(--ui);color:var(--ink3);margin:-7px 0 22px}
+.prose p{margin:0 0 15px;text-wrap:pretty}
+.prose ul,.prose ol{margin:0 0 15px;padding-left:21px}
+.prose li{margin:0 0 8px}
+.prose li>ul,.prose li>ol{margin:8px 0 0}
+.prose strong{font-weight:700;color:#191510}
+.prose strong.v{color:var(--teal)}
+.prose strong.u{color:#96651f}
+.prose em{color:var(--ink2)}
+.prose code{font:400 .82em/1.4 var(--mono);background:#f1ece2;border:1px solid #e6dfd3;
+            border-radius:2px;padding:0 4px;color:#7a4a12}
+.prose a{text-decoration:none;border-bottom:1px solid rgba(164,102,30,.3)}
+.prose a:hover{border-bottom-color:var(--accent)}
+.prose .ref{font:400 .85em/1 var(--mono);color:var(--ink3)}
+.prose hr{border:0;border-top:1px solid var(--rule);margin:26px 0}
+.prose table{border-collapse:collapse;width:100%;margin:2px 0 24px;
+             font:400 13px/1.45 var(--ui)}
+.prose th{font:600 9.5px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;
+          color:var(--ink3);text-align:left;padding:0 14px 8px 0;
+          border-bottom:1px solid var(--rule);white-space:nowrap}
+.prose td{padding:8px 14px 8px 0;border-bottom:1px solid var(--rule2);
+          vertical-align:top;color:#3d372e}
+.prose th:last-child,.prose td:last-child{padding-right:0}
+.prose blockquote{margin:0 0 15px;padding-left:16px;border-left:2px solid var(--rule);
+                  color:var(--ink2)}
+.tablewrap{overflow-x:auto}
+
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .index td.up,.index th.up,.index td.rn,.index th.rn{display:none}
+  input#q{width:100%}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="mast">
+    <h1>yt-analyst</h1>
+    <div class="stats" id="stats"></div>
+  </div>
+  <div class="refs" id="refs"></div>
+</div></header>
+<div class="wrap"><main id="app"></main></div>
+
+<script>
+"use strict";
+const DATA = __DATA__;
+
+const byKey = {};
+for (const d of DATA.docs.concat(DATA.refs)) byKey[d.key] = d;
+
+let state = { q: "", source: "", sort: "source", dir: 1 };
+
+/* ------------------------------------------------------------ markdown --- */
+
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                  .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function slug(s) {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+/* repo-relative links become routes in this page */
+function hrefRoute(h) {
+  let m = h.match(/^videos\/([A-Za-z0-9_-]+)\//);
+  if (m) return byKey["v:" + m[1]] ? "#/v/" + m[1] : null;
+  m = h.match(/^playlists\/(.+\.md)$/);
+  if (m) return byKey["p:" + m[1]] ? "#/p/" + m[1] : null;
+  if (/^INDEX\.md$/.test(h)) return "#/index";
+  return null;
+}
+
+function inline(s) {
+  const codes = [];
+  s = esc(s);
+  s = s.replace(/`([^`]+)`/g, (m, c) => { codes.push(c); return "@@C" + (codes.length - 1) + "@@"; });
+  s = s.replace(/\[([^\]]*)\]\(([^)\s]+)\)/g, (m, t, h) => {
+    h = h.replace(/&amp;/g, "&");
+    if (/^https?:/.test(h)) return '<a href="' + h + '" target="_blank" rel="noopener">' + t + "</a>";
+    if (h.charAt(0) === "#") return '<a href="#" class="jump" data-anchor="' + esc(h.slice(1)) + '">' + t + "</a>";
+    const r = hrefRoute(h);
+    return r ? '<a href="' + r + '">' + t + "</a>" : '<span class="ref">' + t + "</span>";
+  });
+  s = s.replace(/\*\*(Unverified[^*]*)\*\*/g, '<strong class="u">$1</strong>');
+  s = s.replace(/\*\*(Verified[^*]*)\*\*/g, '<strong class="v">$1</strong>');
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  /* asterisks hugging their text; loose ones are transcribed screen glyphs */
+  s = s.replace(/(^|[^*\w])\*([^\s*](?:[^*\n]*[^\s*])?)\*(?![\w*])/g, "$1<em>$2</em>");
+  s = s.replace(/(^|[\s("“—])_([^_\n]+)_(?=$|[\s.,;:)"”!?—])/g, "$1<em>$2</em>");
+  s = s.replace(/@@C(\d+)@@/g, (m, i) => "<code>" + codes[Number(i)] + "</code>");
+  return s;
+}
+
+function cells(r) {
+  return r.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map(c => c.trim());
+}
+
+function tableBlock(rows) {
+  const head = cells(rows[0]);
+  const align = cells(rows[1]).map(a => /:$/.test(a) ? (/^:/.test(a) ? "center" : "right") : "left");
+  let out = '<div class="tablewrap"><table><thead><tr>';
+  head.forEach((h, i) => { out += '<th style="text-align:' + (align[i] || "left") + '">' + inline(h) + "</th>"; });
+  out += "</tr></thead><tbody>";
+  for (let r = 2; r < rows.length; r++) {
+    const c = cells(rows[r]);
+    out += "<tr>";
+    head.forEach((_, j) => { out += '<td style="text-align:' + (align[j] || "left") + '">' + inline(c[j] || "") + "</td>"; });
+    out += "</tr>";
+  }
+  return out + "</tbody></table></div>";
+}
+
+function listBlock(items) {
+  const tag = items.length && items[0].ord ? "ol" : "ul";
+  let out = "<" + tag + ">", open = false, started = false;
+  for (const it of items) {
+    if (it.depth > 0) {
+      if (!open) { out += "<ul>"; open = true; }
+      out += "<li>" + inline(it.text) + "</li>";
+    } else {
+      if (open) { out += "</ul>"; open = false; }
+      if (started) out += "</li>";
+      out += "<li>" + inline(it.text);
+      started = true;
+    }
+  }
+  if (open) out += "</ul>";
+  if (started) out += "</li>";
+  return out + "</" + tag + ">";
+}
+
+/* a line starting with "|" is only a table when a separator row follows */
+function isTable(lines, i) {
+  return /^\s*\|/.test(lines[i]) && i + 1 < lines.length &&
+         /^\s*\|[\s:|-]+\|?\s*$/.test(lines[i + 1]);
+}
+
+function md(src) {
+  const lines = String(src).split("\n"), out = [];
+  let i = 0;
+  while (i < lines.length) {
+    const l = lines[i];
+    if (/^\s*$/.test(l)) { i++; continue; }
+
+    const h = l.match(/^(#{1,4})\s+(.*)$/);
+    if (h) {
+      const lv = h[1].length;
+      out.push("<h" + lv + ' id="h-' + slug(h[2]) + '">' + inline(h[2]) + "</h" + lv + ">");
+      i++; continue;
+    }
+    if (/^\s*(-{3,}|_{3,}|\*{3,})\s*$/.test(l)) { out.push("<hr>"); i++; continue; }
+
+    if (isTable(lines, i)) {
+      const rows = [];
+      while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(lines[i]); i++; }
+      out.push(tableBlock(rows));
+      continue;
+    }
+
+    if (/^\s*(?:[-*]|\d+\.)\s+/.test(l)) {
+      const items = [];
+      while (i < lines.length) {
+        const m = lines[i].match(/^(\s*)(?:[-*]|(\d+)\.)\s+(.*)$/);
+        if (m) items.push({ depth: m[1].length >= 2 ? 1 : 0, ord: !!m[2], text: m[3] });
+        else if (items.length && /^\s+\S/.test(lines[i])) items[items.length - 1].text += " " + lines[i].trim();
+        else break;
+        i++;
+      }
+      out.push(listBlock(items));
+      continue;
+    }
+
+    if (/^\s*>/.test(l)) {
+      const q = [];
+      while (i < lines.length && /^\s*>/.test(lines[i])) { q.push(lines[i].replace(/^\s*>\s?/, "")); i++; }
+      out.push("<blockquote>" + md(q.join("\n")) + "</blockquote>");
+      continue;
+    }
+
+    /* always consume the opening line, so this loop can never stall */
+    const para = [lines[i].trim()];
+    i++;
+    while (i < lines.length && !/^\s*$/.test(lines[i]) && !/^#{1,4}\s/.test(lines[i]) &&
+           !/^\s*(?:[-*]|\d+\.)\s/.test(lines[i]) && !isTable(lines, i) && !/^\s*>/.test(lines[i])) {
+      para.push(lines[i].trim()); i++;
+    }
+    out.push("<p>" + inline(para.join(" ")) + "</p>");
+  }
+  return out.join("");
+}
+
+/* ---------------------------------------------------------------- views --- */
+
+const app = document.getElementById("app");
+
+function visible() {
+  const q = state.q.trim().toLowerCase();
+  let rows = DATA.docs.filter(d =>
+    (!state.source || d.source === state.source) &&
+    (!q || (d.title + " " + d.channel + " " + d.id).toLowerCase().includes(q)));
+
+  const dir = state.dir;
+  const cmp = {
+    source:  (a, b) => (a.source || "~").localeCompare(b.source || "~") ||
+                       (a.pos || 99) - (b.pos || 99) ||
+                       a.uploaded.localeCompare(b.uploaded),
+    pos:     (a, b) => (a.pos || 99) - (b.pos || 99),
+    title:   (a, b) => a.title.localeCompare(b.title),
+    uploaded:(a, b) => a.uploaded.localeCompare(b.uploaded),
+    seconds: (a, b) => a.seconds - b.seconds,
+    runs:    (a, b) => a.runs - b.runs,
+    status:  (a, b) => a.status.localeCompare(b.status),
+  }[state.sort];
+  rows.sort((a, b) => cmp(a, b) * dir);
+  return rows;
+}
+
+const COLS = [
+  { key: "source",   label: "Source",  cls: "src" },
+  { key: "pos",      label: "#",       cls: "num" },
+  { key: "title",    label: "Title",   cls: "ttl" },
+  { key: "uploaded", label: "Uploaded",cls: "up" },
+  { key: "seconds",  label: "Length",  cls: "num" },
+  { key: "runs",     label: "Runs",    cls: "num rn" },
+  { key: "status",   label: "Status",  cls: "st" },
+];
+
+function renderTable() {
+  const rows = visible();
+
+  let h = '<div class="controls"><div class="sources">';
+  h += '<button class="src' + (state.source === "" ? " on" : "") + '" data-src="">All' +
+       "<b>" + DATA.docs.length + "</b></button>";
+  for (const s of DATA.sources) {
+    h += '<button class="src' + (state.source === s.name ? " on" : "") + '" data-src="' +
+         esc(s.name) + '">' + esc(s.name) + "<b>" + s.count + "</b></button>";
+  }
+  h += '</div><input id="q" type="search" placeholder="Filter titles…" value="' +
+       esc(state.q) + '"></div>';
+
+  h += '<table class="index"><thead><tr>';
+  for (const c of COLS) {
+    const on = state.sort === c.key;
+    h += '<th class="' + c.cls + (on ? " on" : "") + '" data-sort="' + c.key + '">' + c.label +
+         '<span class="car">' + (on ? (state.dir > 0 ? "▲" : "▼") : "△") + "</span></th>";
+  }
+  h += "</tr></thead><tbody>";
+
+  for (const d of rows) {
+    const uncarded = d.status === "no card";
+    h += '<tr class="' + (uncarded ? "uncarded" : "") + '">' +
+      '<td class="src">' + esc(d.source || "—") + "</td>" +
+      '<td class="num">' + (d.pos || "·") + "</td>" +
+      '<td class="ttl"><a href="#/v/' + d.id + '">' + esc(d.title) +
+        '<span class="vid">' + d.id + (d.playlist ? " · " + d.playlist : "") + "</span></a></td>" +
+      '<td class="num up">' + (d.uploaded || "—") + "</td>" +
+      '<td class="num">' + (d.duration || "—") + "</td>" +
+      '<td class="num rn">' + d.runs + "</td>" +
+      '<td class="st"><span class="pill ' +
+        (uncarded ? "none" : d.status === "closed" ? "" : "open") + '">' + esc(d.status) + "</span></td>" +
+      "</tr>";
+  }
+  h += "</tbody></table>";
+  if (!rows.length) h += '<div class="empty">Nothing matches that filter.</div>';
+
+  app.innerHTML = h;
+  const q = document.getElementById("q");
+  q.addEventListener("input", e => {
+    state.q = e.target.value;
+    const at = e.target.selectionStart;
+    renderTable();
+    const nq = document.getElementById("q");
+    nq.focus(); nq.setSelectionRange(at, at);
+  });
+  app.querySelectorAll("button.src").forEach(b =>
+    b.addEventListener("click", () => { state.source = b.dataset.src; renderTable(); }));
+  app.querySelectorAll("th[data-sort]").forEach(th =>
+    th.addEventListener("click", () => {
+      const k = th.dataset.sort;
+      if (state.sort === k) state.dir = -state.dir;
+      else { state.sort = k; state.dir = 1; }
+      renderTable();
+    }));
+  document.title = "yt-analyst — video cards";
+}
+
+function renderDoc(key) {
+  const d = byKey[key];
+  if (!d) { location.hash = "#/"; return; }
+
+  let h = '<div class="docnav"><a href="#/">← All cards</a>';
+  if (d.kind === "video") {
+    const sibs = visible();
+    const at = sibs.findIndex(x => x.key === key);
+    const prev = at > 0 ? sibs[at - 1] : null;
+    const next = at >= 0 && at < sibs.length - 1 ? sibs[at + 1] : null;
+    h += '<div class="steps">' +
+      (prev ? '<a href="#/v/' + prev.id + '">‹ previous</a>' : '<span class="off">‹ previous</span>') +
+      (next ? '<a href="#/v/' + next.id + '">next ›</a>' : '<span class="off">next ›</span>') +
+      "</div>";
+  }
+  h += "</div>";
+
+  const bits = [];
+  if (d.kind === "video") {
+    if (d.pos) bits.push("#" + d.pos + " in playlist");
+    if (d.uploaded) bits.push(d.uploaded);
+    if (d.duration) bits.push(d.duration);
+    bits.push(d.status);
+    if (d.status !== "no card") bits.push(d.runs + " runs");
+  }
+
+  h += '<div class="dochead"><div class="kicker">' +
+    esc(d.kind === "video" ? (d.channel || d.id)
+        : d.kind === "index" ? "generated index" : "playlist synthesis") +
+    "</div><h1>" + esc(d.title) + "</h1><div class=\"dmeta\">";
+  if (bits.length) h += "<span>" + esc(bits.join("  ·  ")) + "</span>";
+  if (d.subtitle) h += "<span>" + esc(d.subtitle) + "</span>";
+  if (d.url) h += '<a href="' + d.url + '" target="_blank" rel="noopener">watch on YouTube</a>';
+  h += '<span class="path">' + esc(d.file) + "</span></div></div>";
+
+  h += '<div class="prose">' + md(d.body) + "</div>";
+  app.innerHTML = h;
+
+  app.querySelectorAll("a.jump").forEach(a =>
+    a.addEventListener("click", e => {
+      e.preventDefault();
+      const t = document.getElementById("h-" + a.dataset.anchor);
+      if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
+
+  document.title = d.title + " — yt-analyst";
+  window.scrollTo(0, 0);
+}
+
+function route() {
+  const h = location.hash.replace(/^#/, "");
+  let m = h.match(/^\/v\/(.+)$/);
+  if (m) return renderDoc("v:" + m[1]);
+  m = h.match(/^\/p\/(.+)$/);
+  if (m) return renderDoc("p:" + m[1]);
+  if (h === "/index") return renderDoc("index");
+  renderTable();
+}
+
+/* ---------------------------------------------------------------- boot --- */
+
+const st = DATA.stats;
+document.getElementById("stats").textContent =
+  st.cards + " cards · " + st.sources + " sources · " + st.runtime +
+  " · " + st.runs + " runs" + (st.open ? " · " + st.open + " open" : "") +
+  " · generated " + DATA.generated;
+
+document.getElementById("refs").innerHTML =
+  DATA.refs.map(r => '<a href="#/' + (r.kind === "index" ? "index" : "p/" + r.id) + '">' +
+                     esc(r.title) + "</a>").join('<span class="sep">/</span>');
+
+window.addEventListener("hashchange", route);
+route();
+</script>
+</body>
+</html>
+"""
+
+
+def render_browser(payload):
+    blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    blob = blob.replace("</", "<\\/")          # cannot close the <script>
+    return BROWSER_TEMPLATE.replace("__DATA__", blob)
+
+
+def cmd_browse(args):
+    payload = browse_documents()
+    html = render_browser(payload)
+    out = Path(args.out) if args.out else BROWSER_PATH
+    out.write_text(html)
+    st = payload["stats"]
+    print(f"{out.name}: {st['cards']} cards, {len(payload['refs'])} reference docs, "
+          f"{st['sources']} sources — {len(html):,} bytes")
+
+
 def main():
     load_env()
     quiet_sdk()
@@ -843,6 +1419,10 @@ def main():
     i.add_argument("--stdout", action="store_true",
                    help="print the index instead of writing INDEX.md")
     i.set_defaults(func=cmd_index)
+
+    b = sub.add_parser("browse", help="regenerate browser.html — the card reader")
+    b.add_argument("--out", help=f"write here (default: {BROWSER_PATH.name})")
+    b.set_defaults(func=cmd_browse)
 
     e = sub.add_parser("export", help="emit curated findings as JSON")
     e.add_argument("--out", help="write to this path (default: stdout)")
