@@ -1,0 +1,168 @@
+{
+ "letter_date": "2026-01-05",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 01/05/26",
+ "file": "2026-01-05_19b8bacdb8b48173.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 1.25,
+  "basis": "from_all_time_high",
+  "quote": "S&P closed another shortened holiday week down just 1.25% after gapping down on Monday below the prior ATH level at 689"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "mention",
+   "sentence": "If markets see a larger downdraft, 610-12 could be the perfect spot to land."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 784.0,
+   "class": "mention",
+   "sentence": "31 closing price are $784-580."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 580.0,
+   "class": "mention",
+   "sentence": "31 closing price are $784-580."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 704.0,
+   "class": "mention",
+   "sentence": "January monthly expected move is $704-660."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 660.0,
+   "class": "mention",
+   "sentence": "January monthly expected move is $704-660."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 689.0,
+   "class": "mention",
+   "sentence": "Generally responsive trade should continue in between 689 and 679."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 679.0,
+   "class": "mention",
+   "sentence": "Generally responsive trade should continue in between 689 and 679."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 689.0,
+   "class": "break",
+   "sentence": "A look above and fail on 689 again could be the nail in the coffin to remaining bullish."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AMTM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 30.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    30.65,
+    34.45
+   ],
+   "text": "Base building out after an earnings gap and go. Holding the 20 SMA with relative strength on Friday. Over 30.65 should get this up towards highs at 34.45 if momentum can kick in. Look for premarket volume to be higher than average and for it to sustain into the morning session."
+  },
+  {
+   "ticker": "CMC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 71.8,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    71.8
+   ],
+   "text": "High tight flag forming with breakout to blue sky territory over 71.80 level. Not interested if this loses the daily 20 SMA."
+  },
+  {
+   "ticker": "COHR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 198.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    198.5
+   ],
+   "text": "Ascending triangle building into the ATH level. Over 198.5 could stage a new breakout. Not interested if price starts accepting below daily 20 SMA."
+  },
+  {
+   "ticker": "ODFL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 161.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    161.5,
+    173.25,
+    200.0
+   ],
+   "text": "Odd chart, and odd theme, but couldn't ignore the strength from Friday and hold of the 20 SMA. Over 161.5 can see lift towards 173.25 from a technical perspective, but keep in mind this is trying to develop a fresh trend over the 200 SMA. Subject to failures."
+  },
+  {
+   "ticker": "WDC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 188.35,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    188.35
+   ],
+   "text": "Memory theme has been on FIRE recently and this is offering a new setup right at the ATH with huge strength on Friday. Over 188.35 is game on. Not interested if the trendline or 20 SMA fails."
+  },
+  {
+   "ticker": "XOM",
+   "timeframe": "Daily / Monthly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "To scratch the itch of the Venezuela news, this has to be one of the best oil and gas charts out there. Massive monthly bull flag, and starting to engulf on the daily. Still room to go IF this theme can remain relevant and not fall apart on any crude weakness."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AMTM \u2013 Daily",
+  "CMC \u2013 Daily",
+  "COHR \u2013 Daily",
+  "ODFL \u2013 Daily",
+  "WDC \u2013 Daily",
+  "XOM \u2013 Daily / Monthly",
+  "We're social!"
+ ]
+}

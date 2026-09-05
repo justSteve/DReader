@@ -1,0 +1,246 @@
+{
+ "letter_date": "2026-02-02",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 02/02/26",
+ "file": "2026-02-02_19c1bde862960a55.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.21,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P closed slightly higher last week, up 0.21%"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "mention",
+   "sentence": "If a pullback comes, the higher-low zone is 610\u2013615."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 615.0,
+   "class": "mention",
+   "sentence": "If a pullback comes, the higher-low zone is 610\u2013615."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 688.0,
+   "class": "mention",
+   "sentence": "The breakout level is still in play with closes above 688\u2013689."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 689.0,
+   "class": "mention",
+   "sentence": "The breakout level is still in play with closes above 688\u2013689."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "The two-week equal low at 686 remains the \u201cfailed breakdown\u201d trigger."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "A weekly double top is possible but requires a breakdown under the neckline zone near 675\u2013676."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 676.0,
+   "class": "break",
+   "sentence": "A weekly double top is possible but requires a breakdown under the neckline zone near 675\u2013676."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 703.9,
+   "class": "mention",
+   "sentence": "The upper bound is 703.9, which implies a new ATH."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 680.0,
+   "class": "mention",
+   "sentence": "The lower bound is about 680."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "mention",
+   "sentence": "The key line in the sand is still 686."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "Sellers failed to press below 686 in a meaningful way."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 693.85,
+   "class": "target",
+   "sentence": "Upside clarity improves over Friday\u2019s high at 693.85."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 699.0,
+   "class": "target",
+   "sentence": "That opens a path toward the ATH and the unrepaired overnight high near 699."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "Inside the range, bias stays muted but a decisive break below 686 turns things nasty fast."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 690.75,
+   "class": "hold",
+   "sentence": "Support did not show up over the two day range high at 690.75 and there was decent overshoot at 686."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "hold",
+   "sentence": "Support did not show up over the two day range high at 690.75 and there was decent overshoot at 686."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "686 below and 693.85 above."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 693.85,
+   "class": "break",
+   "sentence": "686 below and 693.85 above."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 693.85,
+   "class": "mention",
+   "sentence": "Above 693.85, the market pressures shorts."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 699.0,
+   "class": "target",
+   "sentence": "It also increases odds of a push toward 699 and a new ATH."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "Below 686, the breakdown aligns with losing a fib 61.8 zone and threatening the daily 50 SMA."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "CAH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Great ascending triangle forming over the key moving average stack. Ideally it breaks and has a playable entry ahead of earnings to provide enough cushion to hold it through... If not, letting it be until the numbers are out."
+  },
+  {
+   "ticker": "BTU",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    47.9
+   ],
+   "text": "Cup and handle forming on top of the monthly cup and handle that already broke out. Liking how its trying to hold up near the daily 20 SMA. Also in the hot sector this year, energy. Local high first target and then really nothing until ATH around 47.90 area."
+  },
+  {
+   "ticker": "IMVT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Watching the structural buildout higher... Earnings pose a short term catalyst threat. Looking to keep this on the radar considering how clean the structure is and respond only when and if theres a break or standout volume day indicating accumulation."
+  },
+  {
+   "ticker": "TSN",
+   "timeframe": "Monthly / Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Long standing monthly base starting to breakout. Earnings on Monday so not looking for anything until this confirms a breakout that sticks after the numbers are released. Just have on radar."
+  },
+  {
+   "ticker": "CSX",
+   "timeframe": "Monthly / Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Monthly range high in play with daily Brigade Bolt\u2122 over the short term pivot. Could also look at UNP in the same sector."
+  },
+  {
+   "ticker": "ZM",
+   "timeframe": "Monthly / Daily",
+   "direction": "long",
+   "trigger": 90.85,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    90.85,
+    120.0
+   ],
+   "text": "Monthly rounded bottom with daily Brigade Bolt\u2122 over the breakout level. Looking for a move to confirm over 90.85 for continuation higher over time towards the prior balance highs at 120. Not interested if this flops and fails back under 90.85. Friday bar not the best but on watch."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "CAH \u2013 Daily",
+  "BTU \u2013 Daily",
+  "IMVT \u2013 Daily",
+  "TSN \u2013 Monthly / Daily",
+  "CSX \u2013 Monthly / Daily",
+  "ZM \u2013 Monthly / Daily",
+  "We're social!"
+ ]
+}

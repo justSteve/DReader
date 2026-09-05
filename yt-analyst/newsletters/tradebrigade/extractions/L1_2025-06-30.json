@@ -1,0 +1,133 @@
+{
+ "letter_date": "2025-06-30",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 06/30/25",
+ "file": "2025-06-30_197be22c7f4f2e2e.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The S&P 500 finally made a new all-time high last week, closing up 3.34% from Monday\u2019s open and up 0.27% from the previous record set in February.\n\nReminder: This week is a shortened trading week with markets closing early Thursday and completely closed Friday for the Fourth of July holiday.\nSpotlig"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 Set to end bullish on Monday with the possibility for a new all time high close. Anyone calling for a double top needs to acknowledge it only triggers under ~480.",
+   "instrument": "SPY",
+   "level": 480.0,
+   "class": "mention",
+   "sentence": "Anyone calling for a double top needs to acknowledge it only triggers under ~480."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Strong close on the highest high. The look above and fail, failed. Sellers had their shot, and couldn't make it happen.",
+   "instrument": "SPY",
+   "level": 565.0,
+   "class": "hold",
+   "sentence": "If markets pull back, its still possible that the higher low on the weekly can be the China Gap Fill Reversal ~565 area."
+  },
+  {
+   "section": "S&P daily chart \u2013 Strong close to end the week with sustained support over the prior ATH. Higher highs, with possibly to set higher lows. Looking for 604.75 as the ideal higher low pullback, but the line in the sand for the daily trend will now be the Ceasefire Gap Fill Reversal ~600.5.",
+   "instrument": "SPY",
+   "level": 604.75,
+   "class": "hold",
+   "sentence": "Looking for 604.75 as the ideal higher low pullback, but the line in the sand for the daily trend will now be the Ceasefire Gap Fill Reversal ~600.5."
+  },
+  {
+   "section": "S&P daily chart \u2013 Strong close to end the week with sustained support over the prior ATH. Higher highs, with possibly to set higher lows. Looking for 604.75 as the ideal higher low pullback, but the line in the sand for the daily trend will now be the Ceasefire Gap Fill Reversal ~600.5.",
+   "instrument": "SPY",
+   "level": 600.5,
+   "class": "hold",
+   "sentence": "Looking for 604.75 as the ideal higher low pullback, but the line in the sand for the daily trend will now be the Ceasefire Gap Fill Reversal ~600.5."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Note on Friday the liquidation break. Stronger sellers should have held a lower high sub 613. Didn't happen.",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "break",
+   "sentence": "Stronger sellers should have held a lower high sub 613."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AMTM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 24.15,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    24.15,
+    33.8
+   ],
+   "text": "Longstanding weekly base thats being tested. If price can clear 24.15, looking for a thin structure retracement back up towards the highs of 33.8. Not interested until the base breaks."
+  },
+  {
+   "ticker": "DAR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    37.0,
+    42.0
+   ],
+   "text": "Bull flag over prior resistance. Looking for breaks of the trendline or the Friday/Thursday highs. Target pivot high up towards 42. Losing interest if the 37 level breaks."
+  },
+  {
+   "ticker": "EQH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    55.0,
+    55.75
+   ],
+   "text": "Looking for a break to all time highs over the neckline of what could be considered an inverted head and shoulders. Clearance of 55 and 55.75 get this moving. Not interested if price starts to move below the 50 SMA (blue) which has held the right shoulder nicely."
+  },
+  {
+   "ticker": "IR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 85.45,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    85.45,
+    91.0,
+    200.0
+   ],
+   "text": "More traditional inverted head and shoulders happening at the lows of the weekly move. Over 85.45 and targets step up around the daily 200 SMA (green) and the unfilled gap around 91. Like EQH chart, 50 SMA (blue) needs to hold the right shoulder."
+  },
+  {
+   "ticker": "PRCH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 12.15,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    3.0,
+    12.15,
+    15.0
+   ],
+   "text": "Revisiting this setup in the triangle after the gap and go. Bullish 3 bar play in force after Friday's close. Over 12.15, looking for continuation towards the 15 area. Manage expectations, outside of a catalyst, this is a slow mover."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Set to end bullish on Monday with the possibility for a new all time high close. Anyone calling for a double top needs to acknowledge it only triggers under ~480.",
+  "S&P weekly chart \u2013 Strong close on the highest high. The look above and fail, failed. Sellers had their shot, and couldn't make it happen.",
+  "S&P daily chart \u2013 Strong close to end the week with sustained support over the prior ATH. Higher highs, with possibly to set higher lows. Looking for 604.75 as the ideal higher low pullback, but the line in the sand for the daily trend will now be the Ceasefire Gap Fill Reversal ~600.5.",
+  "S&P hourly chart \u2013 Note on Friday the liquidation break. Stronger sellers should have held a lower high sub 613. Didn't happen.",
+  "Market internals \u2013 Any massive divergence? I'm not seeing it. Bulls on parade.",
+  "Market profile \u2013 Value higher, point of control higher, acceptance higher for now.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AMTM \u2013 Daily",
+  "DAR \u2013 Daily",
+  "EQH \u2013 Daily",
+  "IR \u2013 Daily",
+  "PRCH \u2013 Daily",
+  "We're social!"
+ ]
+}

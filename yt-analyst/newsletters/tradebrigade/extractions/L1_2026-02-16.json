@@ -1,0 +1,302 @@
+{
+ "letter_date": "2026-02-16",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 02/16/26",
+ "file": "2026-02-16_19c63f820e8ce7ab.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 1.3,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P closed down 1.3% on the week, its worst since November"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "mention",
+   "sentence": "The big deal this week: first weekly close beneath 686, the two-equal-low reference point that's been our line in the sand since the breakout attempt."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "But a clear close and acceptance beneath 675 is the signal that flips the weekly trend to down."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "break",
+   "sentence": "Below there, the next major structural target is 653."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 615.0,
+   "class": "mention",
+   "sentence": "Zooming out: a full 10% drawdown from the ATH lands right at the 615\u2013612 zone which is the previous breakout high."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 612.0,
+   "class": "mention",
+   "sentence": "Zooming out: a full 10% drawdown from the ATH lands right at the 615\u2013612 zone which is the previous breakout high."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "mention",
+   "sentence": "686 is your weekly over-under."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "Bear path: Market sets a lower high beneath the 50 SMA \u2192 returns to equal lows at 675 area \u2192 significantly increased odds of breaking through to start targeting lower levels and the weekly low at 652.95."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 652.95,
+   "class": "break",
+   "sentence": "Bear path: Market sets a lower high beneath the 50 SMA \u2192 returns to equal lows at 675 area \u2192 significantly increased odds of breaking through to start targeting lower levels and the weekly low at 652.95."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "hold",
+   "sentence": "Bull path: Market overshoots lower \u2192 finds a higher low back over the 674\u2013676.50 zone (bearish engulfer highs from Oct 10 & Nov 20) \u2192 mean reversion target: 686."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 676.5,
+   "class": "hold",
+   "sentence": "Bull path: Market overshoots lower \u2192 finds a higher low back over the 674\u2013676.50 zone (bearish engulfer highs from Oct 10 & Nov 20) \u2192 mean reversion target: 686."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "hold",
+   "sentence": "Bull path: Market overshoots lower \u2192 finds a higher low back over the 674\u2013676.50 zone (bearish engulfer highs from Oct 10 & Nov 20) \u2192 mean reversion target: 686."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 695.85,
+   "class": "mention",
+   "sentence": "Expected move for the week: Upper 695.85 / Lower 667.75."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 667.75,
+   "class": "mention",
+   "sentence": "Expected move for the week: Upper 695.85 / Lower 667.75."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 652.95,
+   "class": "mention",
+   "sentence": "Getting to the lower 652.95 level would require a slightly more than 2-sigma move."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "target",
+   "sentence": "Thursday was unrelenting to the downside with no bounce attempt at the 20 or 50 SMA, at 686, nowhere."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "target",
+   "sentence": "Friday morning was a slow, lethargic grind higher that topped out right at 686 and rolled over into the close."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "Any rally that tags 686 and fails is likely a fade."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "If we go look below and fail, mean reversion targets at 686 still keep the threat of a lower high under the 50 SMA."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "In that situation, going back down for an equal low retest of 675 area likely increases the odds of a breakdown, triggering a weekly trend change."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AMGN",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Fresh breakout of a multi month base with daily bull flag forming into all time highs."
+  },
+  {
+   "ticker": "CGNX",
+   "timeframe": "Daily / Monthly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Earnings gap up with inside day on Friday. Breaking a monthly inverted head and shoulders neckline. Doesn't have to continue immediately, but on watch with this change in tone."
+  },
+  {
+   "ticker": "DG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    52.0,
+    165.0,
+    200.0
+   ],
+   "text": "Consumer staples are red hot, this fits the theme. Breakout of the trendline was on Friday, but now we have the pivot high to watch. These are 52 week highs, but do take a look further left, there are some prior pivots at 165 to be mindful of along with being parked right at the weekly 200 SMA... short term chart looks good, but has some longer term yellow flags."
+  },
+  {
+   "ticker": "FAST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "First flag after a cup with handle breakout. Great pullback right into the 20 SMA."
+  },
+  {
+   "ticker": "LITE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "One of the market leaders as of late with a flag at all time highs. Hard to buy breakouts in this market, but if you're going to do it, may as well do it where there's relative strength."
+  },
+  {
+   "ticker": "MNST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 20.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    50.0
+   ],
+   "text": "Solid uptrend, the last few times this has done the dance over the 20 and 50 SMAs its made a nice continuation move. The bars on Thursday / Friday don't look great, so likely need a look below and fail setup before participating."
+  },
+  {
+   "ticker": "NXT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    5.0,
+    20.0
+   ],
+   "text": "Balance range after an earnings gap up. Great relative strength on the look below and fail on the 5th. Now supporting right at the daily 20 SMA."
+  },
+  {
+   "ticker": "PLAB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    39.75
+   ],
+   "text": "Earnings gap and hold from the prior cycle. Holding over the high volume close the last week. Over the recent highs or 39.75 unlocks blue sky."
+  },
+  {
+   "ticker": "PLAB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    39.75
+   ],
+   "text": "Earnings gap and hold from the prior cycle. Holding over the high volume close the last week. Over the recent highs or 39.75 unlocks blue sky."
+  },
+  {
+   "ticker": "PSTG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 76.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    76.5,
+    80.0,
+    91.0
+   ],
+   "text": "Old earnings gap above to potentially close. Moving averages are starting to straighten out in terms of stacking properly. Ideally this could get going over 76.5 area for a move into the gap over 80 up towards 91."
+  },
+  {
+   "ticker": "ZM",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Just a reminder this is still in play."
+  }
+ ],
+ "sections": [
+  "The AI Scare Trade Accelerates",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "QQQ \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AMGN \u2013 Daily / Weekly",
+  "CGNX \u2013 Daily / Monthly",
+  "DG \u2013 Daily",
+  "FAST \u2013 Daily",
+  "LITE \u2013 Daily",
+  "MNST \u2013 Daily",
+  "NXT \u2013 Daily",
+  "PLAB \u2013 Daily",
+  "PLAB \u2013 Daily",
+  "PSTG \u2013 Daily",
+  "ZM \u2013 Daily / Weekly",
+  "We're social!"
+ ]
+}

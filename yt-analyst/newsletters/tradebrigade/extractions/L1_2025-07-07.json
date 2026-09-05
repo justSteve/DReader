@@ -1,0 +1,112 @@
+{
+ "letter_date": "2025-07-07",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 07/07/25",
+ "file": "2025-07-07_197e22f422b358ee.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 1.29,
+  "basis": "from_all_time_high",
+  "quote": "S&P continued to new all time highs closing the week up 1.29% even with the shortened holiday session"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 A bunch of folks seem worried about this resistance trend line at SPY 630... I'm not.",
+   "instrument": "SPY",
+   "level": 630.0,
+   "class": "mention",
+   "sentence": "S&P monthly chart \u2013 A bunch of folks seem worried about this resistance trend line at SPY 630..."
+  },
+  {
+   "section": "S&P monthly chart \u2013 If you look at other examples of this concept on the monthly, you quickly realize these are not great predictors of price action.",
+   "instrument": "SPX",
+   "level": 6300.0,
+   "class": "mention",
+   "sentence": "Options Analysis \u2013 Instead, short term price action, that is possibly going to have confluence in the SPX 6300 / SPY 630 is far more compelling."
+  },
+  {
+   "section": "S&P monthly chart \u2013 If you look at other examples of this concept on the monthly, you quickly realize these are not great predictors of price action.",
+   "instrument": "SPY",
+   "level": 630.0,
+   "class": "mention",
+   "sentence": "Options Analysis \u2013 Instead, short term price action, that is possibly going to have confluence in the SPX 6300 / SPY 630 is far more compelling."
+  },
+  {
+   "section": "S&P daily chart \u2013 Bulls in control with the multiple unfilled gaps. If stronger sellers were in the market, these gaps would fill. Trend is clearly up, and nothing is shouting pullback yet (we'll get to market profile soon).",
+   "instrument": "SPY",
+   "level": 618.5,
+   "class": "hold",
+   "sentence": "If we move lower, top three references for a higher low are: 618.5, 613, 604.75"
+  },
+  {
+   "section": "S&P daily chart \u2013 Bulls in control with the multiple unfilled gaps. If stronger sellers were in the market, these gaps would fill. Trend is clearly up, and nothing is shouting pullback yet (we'll get to market profile soon).",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "hold",
+   "sentence": "If we move lower, top three references for a higher low are: 618.5, 613, 604.75"
+  },
+  {
+   "section": "S&P daily chart \u2013 Bulls in control with the multiple unfilled gaps. If stronger sellers were in the market, these gaps would fill. Trend is clearly up, and nothing is shouting pullback yet (we'll get to market profile soon).",
+   "instrument": "SPY",
+   "level": 604.75,
+   "class": "hold",
+   "sentence": "If we move lower, top three references for a higher low are: 618.5, 613, 604.75"
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "HCC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 51.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    48.85,
+    51.25,
+    57.2,
+    200.0
+   ],
+   "text": "Bullish three bar play available over 51.25 into the daily 200 SMA (green) and then next target at 57.2. Not interested if price fails to hold 48.85."
+  },
+  {
+   "ticker": "MMM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    155.3,
+    168.0
+   ],
+   "text": "Pie in the sky inverted head and shoulders with clear breakout level around 155.3. Over that is not quite blue sky territory, but looking for 168 area as target based on the weekly. Love the Friday hammer candle structure, but need to see confirmation over the neckline."
+  },
+  {
+   "ticker": "UNM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Ascending triangle in play with nothing but all time highs above. Like MMM, I would ideally want to see the chart get acceptance over the breakout point before developing a position. Plenty of room in the triangle for more consolidation."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 A bunch of folks seem worried about this resistance trend line at SPY 630... I'm not.",
+  "S&P monthly chart \u2013 If you look at other examples of this concept on the monthly, you quickly realize these are not great predictors of price action.",
+  "S&P weekly chart \u2013 So sticking with our normal analysis, have a look at the weekly. Clearly buyers are in control with a solid green bodied bar, and highest high being formed in the overall uptrend.",
+  "S&P daily chart \u2013 Bulls in control with the multiple unfilled gaps. If stronger sellers were in the market, these gaps would fill. Trend is clearly up, and nothing is shouting pullback yet (we'll get to market profile soon).",
+  "S&P hourly chart \u2013 Upside should take care of itself. Trading near ATH means only downside reference points to path. It might look \"bearish\" with all of the pullback lines, but its only because there are no upside references. Remember theres no bear evidence on higher timeframes outside of the monthly resistance trend line.",
+  "Market internals \u2013 No divergences here. Bulls in control at the exchange level all week.",
+  "Market profile \u2013 The only bearish thing I am starting to see develop is the potential for value to be too high on Thursday and become a bit \"top heavy.\" Friday's futures session already is putting the pressure on those buyers.",
+  "SMH tech spotlight \u2013 Semis notched a new intraday all time high on the Thursday grind to the upside. Note the bearish inverted hammer daily structure with close near prior all time high. Points to the possibility of a mild pullback along with market profile.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "HCC \u2013 Daily",
+  "MMM \u2013 Daily",
+  "UNM \u2013 Daily",
+  "We're social!"
+ ]
+}

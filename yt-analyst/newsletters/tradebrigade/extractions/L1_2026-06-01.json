@@ -1,0 +1,156 @@
+{
+ "letter_date": "2026-06-01",
+ "subject": "The Peace Trade Isn't Over... Yet",
+ "file": "2026-06-01_19e807ca7419772f.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.86,
+  "basis": "from_all_time_high",
+  "quote": "S&P closed up 0.86% last week, making a new all time high and breaking out of a two week balance ra"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 700.0,
+   "class": "target",
+   "sentence": "This is the highest high in the monthly trend, and thus the trend will remain up even if there is a pullback towards the prior all time high 700 level."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 850.0,
+   "class": "mention",
+   "sentence": "its possible), rather showing that the next place to think about a slowdown would be ~850."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 784.0,
+   "class": "mention",
+   "sentence": "On the weekly, we can clearly see the monthly expected move for June with the upper bound roughly confluence at the yearly expected move 784."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 749.0,
+   "class": "hold",
+   "sentence": "Holding over 749 keeps breakout buyers in tact."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 749.0,
+   "class": "break",
+   "sentence": "Under 749 with a lower high on the daily and a failed breakout starts to shape up."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "target",
+   "sentence": "Target range low at 732.25."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 758.75,
+   "class": "hold",
+   "sentence": "The base case is to remain bullish on continuation or higher low pullbacks to continue the trend so long as price is over 758.75."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 748.75,
+   "class": "target",
+   "sentence": "If however price struggles to reclaim that level and a lower high develops below 748.75, it would seem the weekly look above and fail is in play to target the bottom of the range after sweeping the red line equal low."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AKAM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    149.75,
+    165.4
+   ],
+   "text": "Great looking PEG setup with clean breakout pivot at 149.75. Over that level and the local high at 165.40 is in play. Don't want to see much testing or acceptance under the daily 20 SMA (orange)."
+  },
+  {
+   "ticker": "ALAB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Bullish inside bar on Friday, however mind the extension here. Would love to see a week or two sideways to digest the gain and then setup a higher low pivot over the 20 SMA (orange). With the notable recent leg higher, have to have this back on the radar."
+  },
+  {
+   "ticker": "CGNX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 66.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    60.0,
+    66.6,
+    73.45
+   ],
+   "text": "Great daily higher low opportunity with a daily 20 SMA offering support as well. Over 66.6 can get going towards the local highs and then the left side historic pivot of 73.45 area. Would also allow this to continue building right side of the chart over 60."
+  },
+  {
+   "ticker": "COHU",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 50.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    55.15
+   ],
+   "text": "Monster move recently that may offer a new setup after the recent gap and hold. So long as this can digest over 50, looking for a flag to continue the momentum over 55.15. Under 50 and I would become much more hesitant about continuing to watch this."
+  },
+  {
+   "ticker": "FLY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Gap down and \"panic\" on the Blue Origin explosion Thursday. Looks like a higher low pullback opportunity over the prior left side peak. This setup looks similar in RKLB ASTS LUNR as well. PL has earnings, so caution if you use that vehicle."
+  }
+ ],
+ "sections": [
+  "The Peace Trade Isn't Over Yet...",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AKAM \u2013 Daily Chart",
+  "ALAB \u2013 Daily Chart",
+  "CGNX \u2013 Daily Chart",
+  "COHU \u2013 Daily Chart",
+  "FLY \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

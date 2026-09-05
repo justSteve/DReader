@@ -1,0 +1,23 @@
+{
+ "letter_date": "2026-06-15",
+ "sent_et": "2026-06-14",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "medium", "hedged": true,
+          "quote": "This pullback is a weekly higher low. Trend remains up.",
+          "note": "Inverted head-and-shoulders ('uno reverse card') judged more likely than the bears' head-and-shoulders; thesis revisited if price spends time below 732.25."},
+ "calls": [
+  {"id": "spy-hold-732.25", "instrument": "SPY", "type": "hold", "level": 732.25, "rule": "hold_week",
+   "quote": "Thus 732.25 is a meaningful line in the sand for the week ahead.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-no-accept-732.25", "instrument": "SPY", "type": "hold", "level": 732.25, "rule": "no_acceptance_below",
+   "quote": "If the market spends more time below 732.25 early in the week, this thesis will need to be revisited, and perhaps the weekly chart does need the full pullback towards 710.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-hold-738.15", "instrument": "SPY", "type": "hold", "level": 738.15, "rule": "hold_week",
+   "quote": "So long as price is over that you've got a perfect hourly flag over the neck, which should produce upside continuation.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-target-748.75", "instrument": "SPY", "type": "target", "level": 748.75, "rule": "target_reached",
+   "quote": "From there a break over the right shoulder / 20 SMA should satisfy the weekly higher low and then rotation into the equal high, aka all time high.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-break-732.25-to-710", "instrument": "SPY", "type": "break", "level": 732.25, "rule": "break_then_target", "targets": [710.0],
+   "quote": "perhaps the weekly chart does need the full pullback towards 710. For now lower odds.", "intent": "watch", "conviction": "low"},
+  {"id": "spy-break-725", "instrument": "SPY", "type": "break", "level": 725.0, "rule": "break_then_lower",
+   "quote": "Breaks below 725 seem like lower probability scenarios, but price would be losing the April 8th anchored VWAP in tandem if it did happen.", "intent": "watch", "conviction": "low"}
+ ],
+ "scenarios": []
+}

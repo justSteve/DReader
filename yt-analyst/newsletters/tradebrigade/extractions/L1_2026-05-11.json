@@ -1,0 +1,137 @@
+{
+ "letter_date": "2026-05-11",
+ "subject": "The Cycle That REFUSES To End",
+ "file": "2026-05-11_19e1456c42193240.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 2.44,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P was up an additional 2.44% last week, closing at a new record high on Friday and leaving behind an unfille"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 698.0,
+   "class": "hold",
+   "sentence": "Solid green bodied bar, highest high in the trend count, plenty of room to pullback and offer a higher low anywhere over the pATH level at 698."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 725.0,
+   "class": "hold",
+   "sentence": "If price pulls back on the daily a higher low over the gap close level at 725 or the retest of the breakout level at 712.4 would be welcomed..."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 712.4,
+   "class": "hold",
+   "sentence": "If price pulls back on the daily a higher low over the gap close level at 725 or the retest of the breakout level at 712.4 would be welcomed..."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 743.5,
+   "class": "target",
+   "sentence": "The measured move of the bull flag FYI is at 743.5 area."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 732.5,
+   "class": "hold",
+   "sentence": "If we pullback and can hold 732.5 there is a technical higher low on the 1h charts that keeps the trend up on the short timeframes."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 725.0,
+   "class": "break",
+   "sentence": "If the market goes for a look above and fail at the ATH and comes back into range, then looking for at least the gap close to the downside at 725."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 712.4,
+   "class": "break",
+   "sentence": "Should the market start with an opening drive to the downside closing the gap and getting either a lower high or some kind of bear flag consolidation, with NO ROTATION, looking for a deeper pullback to retest the flag breakout level at the 712.4 area."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ADEA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 29.55,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    29.55,
+    34.33,
+    50.0
+   ],
+   "text": "Earnings gap down that fails to go lower. If price can break over 29.55 looking for the gap to close and then continuation towards the high at 34.33. Not interested if it starts to lose the daily 50 SMA (blue)."
+  },
+  {
+   "ticker": "AMKR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 79.3,
+   "trigger_kind": "over",
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    20.0,
+    79.3
+   ],
+   "text": "Flagging up at the highs after a powerful move higher. Looking for breaks over Friday high for an early break entry over 79.30 area. Not interested in this one if it loses the daily 20 SMA (orange)."
+  },
+  {
+   "ticker": "ATEN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 28.15,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    28.15,
+    131.5
+   ],
+   "text": "Flagging at the highs and surfing the 20 SMA. Looking for breakouts over 28.15.\n\nNXT \u2013 Daily Chart \u2013 !! Mind Earnings !!\nLooking for a breakout over 131.5. Would be interested post earnings to see if we get a PEG setup above. Stalking before, and acting after earnings. Tuesday after the close!"
+  },
+  {
+   "ticker": "TSN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 69.1,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    69.1,
+    80.0
+   ],
+   "text": "Bull flagging after breaking out of the weekly base. Over 69.10 can get in gear up towards the 80 area on the weekly chart. Not as thematically relevant, unless they're working on AI chicken?, so manage expectations here."
+  }
+ ],
+ "sections": [
+  "If You Couldn't Tell... It's Not Just Nvidia",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "QQQ \u2013 Nasdaq Impact",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ADEA \u2013 Daily Chart",
+  "AMKR \u2013 Daily Chart",
+  "ATEN \u2013 Daily Chart",
+  "TSN \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

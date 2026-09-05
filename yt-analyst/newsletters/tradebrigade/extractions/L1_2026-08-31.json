@@ -1,0 +1,211 @@
+{
+ "letter_date": "2026-08-31",
+ "subject": "AI Is Moving Up The Stack",
+ "file": "2026-08-31_1a0551f5b6744bfd.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.6,
+  "basis": "monday_open_to_friday_close",
+  "quote": "S&P closed up 0.6% from Monday's open to Friday's close"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY printed a green inside inverted hammer. That structure is neutral, but the broader trend remains constructive because the pullback is coming in from the highest high in the weekly count. This entire consolidation remains above the 38.2% retracement.",
+   "instrument": "SPY",
+   "level": 760.0,
+   "class": "hold",
+   "sentence": "The previous all-time high near 760.00 remains the first major support."
+  },
+  {
+   "section": "SPY printed a green inside inverted hammer. That structure is neutral, but the broader trend remains constructive because the pullback is coming in from the highest high in the weekly count. This entire consolidation remains above the 38.2% retracement.",
+   "instrument": "SPY",
+   "level": 754.75,
+   "class": "hold",
+   "sentence": "An overshoot into 754.75, where the weekly 10 SMA and daily 50 SMA converge, would still qualify as a weekly higher low."
+  },
+  {
+   "section": "SPY printed a green inside inverted hammer. That structure is neutral, but the broader trend remains constructive because the pullback is coming in from the highest high in the weekly count. This entire consolidation remains above the 38.2% retracement.",
+   "instrument": "SPY",
+   "level": 754.75,
+   "class": "break",
+   "sentence": "If structure is going to break, price would need to breakdown past 754.75 and then set a lower high anywhere on the weekly beneath 760."
+  },
+  {
+   "section": "SPY printed a green inside inverted hammer. That structure is neutral, but the broader trend remains constructive because the pullback is coming in from the highest high in the weekly count. This entire consolidation remains above the 38.2% retracement.",
+   "instrument": "SPY",
+   "level": 760.0,
+   "class": "break",
+   "sentence": "If structure is going to break, price would need to breakdown past 754.75 and then set a lower high anywhere on the weekly beneath 760."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 778.57,
+   "class": "mention",
+   "sentence": "The expected move is neutral, with an upper bound of 778.57 and a lower bound of 761.70."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 761.7,
+   "class": "mention",
+   "sentence": "The expected move is neutral, with an upper bound of 778.57 and a lower bound of 761.70."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 767.5,
+   "class": "hold",
+   "sentence": "Thursday's post-Nvidia gap reclaimed 767.50, the daily 8 EMA, the daily 20 SMA and the prior bull flag range low."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 767.5,
+   "class": "hold",
+   "sentence": "The daily trend remains up as long as 767.50 holds."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 767.5,
+   "class": "break",
+   "sentence": "The bearish sequence begins with acceptance below 767.50, followed by an hourly lower high and a break of 762.00."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 762.0,
+   "class": "break",
+   "sentence": "The bearish sequence begins with acceptance below 767.50, followed by an hourly lower high and a break of 762.00."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 760.0,
+   "class": "mention",
+   "sentence": "That would flip the short-term trend down and open a deeper weekly higher-low test near 760.00 or 754.75."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 754.75,
+   "class": "mention",
+   "sentence": "That would flip the short-term trend down and open a deeper weekly higher-low test near 760.00 or 754.75."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 767.5,
+   "class": "hold",
+   "sentence": "Price is now testing whether it can establish a higher low near 767.50, where several daily moving averages and anchored VWAPs converge."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 767.5,
+   "class": "mention",
+   "sentence": "An early push below 767.50 followed by a quick reclaim would be constructive."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ALM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 14.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    14.65
+   ],
+   "text": "Bull flagging after breaking the weekly downtrend. Ideally this would look below and fail on the range lows to offer a pullback entry. If the pullback is deeper than just a quick look below and fail, a structural higher low can emerge over 14.65 and keep this in play."
+  },
+  {
+   "ticker": "APD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 311.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    311.0
+   ],
+   "text": "Ascending triangle getting tight near the apex of the move. Rising 20 SMA support below us and breakout level potentially over 311."
+  },
+  {
+   "ticker": "CXW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 34.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    34.5,
+    50.0
+   ],
+   "text": "Flagging at highs after a really strong linear move from. June. Ideally this would shake out the flag lows and then go after kissing the daily 50 SMA, or just breakout over 34.50 with momentum... a catalyst would make this an even stronger candidate."
+  },
+  {
+   "ticker": "DE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [],
+   "text": "Wild earnings reaction, but holding hammers on Friday over the HVC and prior range high. Over Friday's high on Monday could be a simple pullback long entry tactic to work back towards local highs after setting a higher low."
+  },
+  {
+   "ticker": "LW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 55.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    55.65,
+    58.75
+   ],
+   "text": "Weekly cup and handle showing up with unfilled earnings gap above still. Over 55.65 and theres room to get into the 58.75 gap close level. Measured move from the bull flag or cup and handle takes price far beyond that target if it does start to move."
+  },
+  {
+   "ticker": "LYV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0
+   ],
+   "text": "Chart isn't perfect, but we have hammers at the 50 SMA in a nicely uptrending stock. Bias here, but I do believe that the 'in person experience' trade for consumers to connect outside of technology is a compelling one. Think SPHR (although last weeks close is getting ugly there)."
+  }
+ ],
+ "sections": [
+  "Jensen Reminds Us Memory Is Expensive",
+  "Software Strikes Back",
+  "Jobs Could Decide What Happens Next",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY printed a green inside inverted hammer. That structure is neutral, but the broader trend remains constructive because the pullback is coming in from the highest high in the weekly count. This entire consolidation remains above the 38.2% retracement.",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile \u2013 /ES",
+  "SMH \u2013 Semiconductor ETF",
+  "QQQ \u2013 Impact on S&P",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ALM \u2013 Daily Chart",
+  "APD \u2013 Daily Chart",
+  "CXW \u2013 Daily",
+  "DE \u2013 Daily Chart",
+  "LW \u2013 Daily Chart",
+  "LYV \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

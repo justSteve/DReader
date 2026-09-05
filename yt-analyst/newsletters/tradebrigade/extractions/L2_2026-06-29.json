@@ -1,0 +1,21 @@
+{
+ "letter_date": "2026-06-29",
+ "sent_et": "2026-06-28",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bearish", "conviction": "low", "hedged": true,
+          "quote": "I will change my tone from being cautiously bearish to neutral, heck even bullish after sellers fail to materialize on the downside pressure.",
+          "note": "'Think less linear uptrend and more two sided trade to come.' Internals read as neutral-to-bullish, so the bearish lean is explicitly low conviction."},
+ "calls": [
+  {"id": "spy-reclaim-743.5", "instrument": "SPY", "type": "reclaim", "level": 743.5, "rule": "reclaim_then_higher",
+   "quote": "If price closes the overhead gap, accepts higher and offers a Brigade Bolt™ over 743.5, I will change my tone from being cautiously bearish to neutral, heck even bullish", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-resist-743.5", "instrument": "SPY", "type": "resistance", "level": 743.5, "rule": "below_week",
+   "quote": "Lots of references that make the 743.5 area a reasonable spot for shorts to attack the daily lower high.", "intent": "offered", "conviction": "medium"},
+  {"id": "spy-break-732", "instrument": "SPY", "type": "break", "level": 732.0, "rule": "break_then_target", "targets": [725.0],
+   "quote": "A lower high set under 743.5 on the gap fill reversal should then repressure the prior weekly low at 732. If that breaks, look for the full rotation into the swing low at 725.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-break-725", "instrument": "SPY", "type": "break", "level": 725.0, "rule": "break_then_target", "targets": [712.4],
+   "quote": "Below 725 and the bears should really run away with it into 712.4.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-line-700", "instrument": "SPY", "type": "hold", "level": 700.0, "rule": "hold_week",
+   "quote": "Price is still above the fib 38.2, the 712.4 higher low and the line in the sand at 700 (pATH retest).", "intent": "watch", "conviction": "high"}
+ ],
+ "scenarios": []
+}

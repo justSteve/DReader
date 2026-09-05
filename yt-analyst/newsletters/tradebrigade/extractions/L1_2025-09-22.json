@@ -1,0 +1,139 @@
+{
+ "letter_date": "2025-09-22",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 09/22/25",
+ "file": "2025-09-22_1996eb8d11f7ad88.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.6,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P 500 closed the week up another 0.6% after just a few hours of FOMC volatility"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 664.5,
+   "class": "mention",
+   "sentence": "Between 664.5 and 658.5 is choppy."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 658.5,
+   "class": "mention",
+   "sentence": "Between 664.5 and 658.5 is choppy."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 664.5,
+   "class": "mention",
+   "sentence": "Over 664.5 can seek blue sky with caution for new money longs."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 658.5,
+   "class": "mention",
+   "sentence": "Under 658.5 can seek some kind of pullback in the context of daily bullish uptrend."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AFL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 109.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    109.25,
+    112.5
+   ],
+   "text": "Bull flag after multi month base started to break out. Over 109.25 looking for the pre tariff high at 112.5."
+  },
+  {
+   "ticker": "CRWV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Likely needs a better daily bar setup, however starting to breakout of the downtrend from the ATH. Worth watching this through the week."
+  },
+  {
+   "ticker": "FSLY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 8.3,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    8.3,
+    9.0,
+    9.7,
+    10.85
+   ],
+   "text": "Starting to breakout of the weekly inverted head and shoulders base. Holds over 8.30 should keep this in play, and acceleration into the gap above over the 9 round number targeting the 9.70. Beyond that pivot high at 10.85."
+  },
+  {
+   "ticker": "MTCH",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    39.0
+   ],
+   "text": "Weekly base forming with breakout level at 39. Longer term idea, need to give it time to develop. Not a huge amount of short interest here at only 4%."
+  },
+  {
+   "ticker": "SYF",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Ascending triangle headed straight into all time highs. So long as we hold the trendline and daily 20, bulls are in control."
+  },
+  {
+   "ticker": "ZETA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 21.8,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.8,
+    21.8,
+    24.65
+   ],
+   "text": "Range breakout starting into the end of the week. Over 21.80 should seek continuation towards the pivot high pre tariffs at 24.65 area. Back in the balance range under 20.80 and we have to defend against look above and fail."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "XLF \u2013 Daily",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AFL \u2013 Daily",
+  "CRWV \u2013 Daily",
+  "FSLY \u2013 Daily",
+  "MTCH \u2013 Weekly",
+  "SYF \u2013 Daily",
+  "ZETA \u2013 Daily",
+  "We're social!"
+ ]
+}

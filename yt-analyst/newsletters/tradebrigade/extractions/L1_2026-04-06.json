@@ -1,0 +1,187 @@
+{
+ "letter_date": "2026-04-06",
+ "subject": "Did you fall for the bounce?!",
+ "file": "2026-04-06_19d60190a32ac6e0.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 2.45,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P rallied back 2.45% on the week breaking a five week losing streak"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "hold",
+   "sentence": "610 is still the key support level, but we never got there in an extended capitulation move."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "break",
+   "sentence": "If 610 breaks, the next reference is the unfilled weekly gap at 570 to 575."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 570.0,
+   "class": "break",
+   "sentence": "If 610 breaks, the next reference is the unfilled weekly gap at 570 to 575."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 575.0,
+   "class": "break",
+   "sentence": "If 610 breaks, the next reference is the unfilled weekly gap at 570 to 575."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "mention",
+   "sentence": "Resistance zone above is 675, with confluence of the weekly 20 SMA, the Fib 61.8 from all-time high to the recent low, and the anchored VWAP cluster."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "hold",
+   "sentence": "A weekly close back above 675 changes my tone or a higher low after a rally attempt."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "break",
+   "sentence": "Lose 653 and the setup reverts to bearish breakdown, targeting 642.85 and then equal lows."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 642.85,
+   "class": "break",
+   "sentence": "Lose 653 and the setup reverts to bearish breakdown, targeting 642.85 and then equal lows."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 662.5,
+   "class": "break",
+   "sentence": "If we rally first, I am more open to a look above and fail on the 200 SMA and 662.5 as a short than a breakout buy."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 662.5,
+   "class": "mention",
+   "sentence": "A close above 662.50 is roughly the neighborhood."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "mention",
+   "sentence": "653 is the line in the sand."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 642.85,
+   "class": "break",
+   "sentence": "Below it, thin structure opens to 642.85 and back to the bears."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 662.5,
+   "class": "break",
+   "sentence": "First thought on rallies to 662.5 is look above and fail there as a short."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "If price accepts above, will have to start thinking about weekly lower high at 675, but in the mean time daily early stage trend reversal."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 67.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    3.0,
+    67.0
+   ],
+   "text": "Bullish 3 bar play over the highs of the range. Looking for followthrough over the two day high, or on pullbacks that set higher lows over 67."
+  },
+  {
+   "ticker": "APD",
+   "timeframe": "Daily / Monthly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    297.0,
+    300.0
+   ],
+   "text": "Ascending triangle holding over the MA stack with monthly inside bar testing highs. Don't love the Friday bar, but its in the right chemicals theme to move as crude also moves higher. Not the most linear history, but worth eyes over this 297 / 300 round figure."
+  },
+  {
+   "ticker": "BWXT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 220.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    50.0,
+    220.0
+   ],
+   "text": "Huge weekly flag setting up at the all time high. Over 220 has nothing but blue sky above. Great higher lows and recovery over the 20/50 MA combo on Wednesday Thursday. Decent relative strength overall to the market as well."
+  },
+  {
+   "ticker": "RKLB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    65.5,
+    100.0
+   ],
+   "text": "With the SpaceX IPO hype, many rocket names are starting to recatch a bid. Would be worth watching the entire basket via UFO ETF. This in particular has a look below and fail starting to emerge at the low end of rage near 65.5. Confident recaptures or even breaks through range high might set this up for a move back to 100.\n\nRKLB, ASTS, PL, LUNR, FLY, SATS, VSAT, GSAT"
+  }
+ ],
+ "sections": [
+  "The Clock Is Ticking",
+  "Right News, Wrong Day",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "/ES Friday Morning",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AA \u2013 Daily",
+  "APD \u2013 Daily / Monthly",
+  "BWXT \u2013 Daily",
+  "RKLB \u2013 Daily",
+  "We're social!"
+ ]
+}

@@ -1,0 +1,224 @@
+{
+ "letter_date": "2026-03-02",
+ "subject": "US Strikes Iran\u00a0\u2013 /CL Fading & /ES Bouncing",
+ "file": "2026-03-02_19cac15c75d163b9.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 0.27,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P closed right back down 0.27% last week, closing once again"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 615.0,
+   "class": "mention",
+   "sentence": "That zone is loosely 615 to 610, which equates to roughly a 10 to 11% pullback from the highs."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "mention",
+   "sentence": "That zone is loosely 615 to 610, which equates to roughly a 10 to 11% pullback from the highs."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 676.0,
+   "class": "break",
+   "sentence": "The key breakdown level on the weekly is 676 to 675."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "The key breakdown level on the weekly is 676 to 675."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 676.0,
+   "class": "mention",
+   "sentence": "Above 676 zone and the balance remains."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 697.0,
+   "class": "break",
+   "sentence": "A break over 697 unlocks blue sky, but weight of the evidence leans towards lower odds of that."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 697.85,
+   "class": "target",
+   "sentence": "The levels have shifted a bit but generally still represent the same things: * 697.85 is the major range highs * 689.75 is the top of the micro range * 686 is the midpoint of the total range * 680.25 is the bottom of the micro range * 676.50 to 675 is the majo"
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 689.75,
+   "class": "target",
+   "sentence": "The levels have shifted a bit but generally still represent the same things: * 697.85 is the major range highs * 689.75 is the top of the micro range * 686 is the midpoint of the total range * 680.25 is the bottom of the micro range * 676.50 to 675 is the majo"
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "target",
+   "sentence": "The levels have shifted a bit but generally still represent the same things: * 697.85 is the major range highs * 689.75 is the top of the micro range * 686 is the midpoint of the total range * 680.25 is the bottom of the micro range * 676.50 to 675 is the majo"
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 680.25,
+   "class": "target",
+   "sentence": "The levels have shifted a bit but generally still represent the same things: * 697.85 is the major range highs * 689.75 is the top of the micro range * 686 is the midpoint of the total range * 680.25 is the bottom of the micro range * 676.50 to 675 is the majo"
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 676.5,
+   "class": "target",
+   "sentence": "The levels have shifted a bit but generally still represent the same things: * 697.85 is the major range highs * 689.75 is the top of the micro range * 686 is the midpoint of the total range * 680.25 is the bottom of the micro range * 676.50 to 675 is the majo"
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "target",
+   "sentence": "The levels have shifted a bit but generally still represent the same things: * 697.85 is the major range highs * 689.75 is the top of the micro range * 686 is the midpoint of the total range * 680.25 is the bottom of the micro range * 676.50 to 675 is the majo"
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 699.97,
+   "class": "target",
+   "sentence": "The levels have shifted a bit but generally still represent the same things: * 697.85 is the major range highs * 689.75 is the top of the micro range * 686 is the midpoint of the total range * 680.25 is the bottom of the micro range * 676.50 to 675 is the majo"
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 672.01,
+   "class": "target",
+   "sentence": "The levels have shifted a bit but generally still represent the same things: * 697.85 is the major range highs * 689.75 is the top of the micro range * 686 is the midpoint of the total range * 680.25 is the bottom of the micro range * 676.50 to 675 is the majo"
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "I would still want a decisive break below 675 to 674, not just a trend line break."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "break",
+   "sentence": "I would still want a decisive break below 675 to 674, not just a trend line break."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 689.75,
+   "class": "mention",
+   "sentence": "No edge until over 689.75 or under 680.25."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 680.25,
+   "class": "mention",
+   "sentence": "No edge until over 689.75 or under 680.25."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AXTI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Inside bar forming a bull flag after breaking out of the base on an earnings beat. All time highs above."
+  },
+  {
+   "ticker": "NSC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0
+   ],
+   "text": "Recent breakout of a long base higher, now forming a bull flag over the 50 SMA. Looking for a continuation to new all time highs. Other similar charts: CSX, UNP."
+  },
+  {
+   "ticker": "PEP",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Bull flag after a nice controlled pullback over the 20 SMA. Looking for prior pivot high to act as target."
+  },
+  {
+   "ticker": "SOLS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Hot new IPO with look below and fail on Friday of the lower bound of the flag. In play as long as pullbacks keep holding over the 20 SMA."
+  },
+  {
+   "ticker": "TXT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Bull flag at all time highs with inside bars to end last week. In play as long as price remains over the 20 SMA."
+  }
+ ],
+ "sections": [
+  "AI Was So Last Week...",
+  "As of Sunday 8pm EST, /CL is already backing off and /ES is already bouncing higher from the gap down... it seems like situation A could be more of a reality than situation B.",
+  "The NVDA Paradox",
+  "Fundamental Forces",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "NASDAQ internals - A touch more bearish than the S&P on Friday. Volume outflows confirmed. Advance-decline in trend lower zone. Cumulative read near 6,700 to the downside, beyond the 6,000 threshold.",
+  "Market Profile",
+  "SMH \u2013 Semiconductor ETF Basket",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AXTI \u2013 Daily",
+  "NSC \u2013 Daily",
+  "PEP \u2013 Daily",
+  "SOLS \u2013 Daily",
+  "TXT \u2013 Daily",
+  "We're social!"
+ ]
+}

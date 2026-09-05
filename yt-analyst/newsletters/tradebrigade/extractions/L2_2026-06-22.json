@@ -1,0 +1,19 @@
+{
+ "letter_date": "2026-06-22",
+ "sent_et": "2026-06-21",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "low", "hedged": true,
+          "quote": "Supporting evidence still leans mostly bullish and if buyers can defend 744 (the gap close level) they will prevent threats to the higher low opportunity.",
+          "note": "'this week will be all about which direction the trend takes from this position.'"},
+ "calls": [
+  {"id": "spy-hold-744", "instrument": "SPY", "type": "hold", "level": 744.0, "rule": "hold_week",
+   "quote": "Ideally buyers keep price over 744 which would represent the gap fill reversal level and leave the Wednesday low as an overshoot (excess) secure.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-no-accept-744", "instrument": "SPY", "type": "hold", "level": 744.0, "rule": "no_acceptance_below",
+   "quote": "Holding 744 is ideal for these outcomes.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-lose-744", "instrument": "SPY", "type": "break", "level": 744.0, "rule": "break_then_target", "targets": [738.15],
+   "quote": "Should price lose the 744, pressure is put on the Wednesday low, 738.15, and we may find price in a daily downtrend sooner rather than lower if that breaks.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-break-738.15", "instrument": "SPY", "type": "break", "level": 738.15, "rule": "break_then_lower",
+   "quote": "Losses of 738.15 change the hourly trend to down and even threaten the daily trend flipping to down as well coming from a lower high rather than the highest high.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

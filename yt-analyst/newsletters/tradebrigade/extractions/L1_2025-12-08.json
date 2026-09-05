@@ -1,0 +1,124 @@
+{
+ "letter_date": "2025-12-08",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 12/08/25",
+ "file": "2025-12-08_19afb7a5a68aae8d.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 1.0,
+  "basis": "from_all_time_high",
+  "quote": "S&P was incredibly two sided last week, yet was able to grind out a gain of roughly 1% and close just off the all time high by 0"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 654.0,
+   "class": "hold",
+   "sentence": "Note 654 area is now a firm weekly higher low and if this is to develop double top that must be broken for a trend change."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "hold",
+   "sentence": "Still possible that a daily higher low can be set over the 675 area."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "The red flags start if there becomes acceptance under 675 area."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "CRH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 122.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    122.0
+   ],
+   "text": "Bull flag forming under flat top base. Over 122 unlocks all time highs. Not interested if price accepts under the 50 SMA in blue."
+  },
+  {
+   "ticker": "EYE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 29.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    29.5,
+    31.45,
+    37.25,
+    50.0
+   ],
+   "text": "Cup and handle ish pattern forming with possible breakout point up and over 29.5. Large unfilled gap above 31.45 up to 37.25 from a prior earnings cycle. Not interested if price accepts under the 50 SMA in blue."
+  },
+  {
+   "ticker": "FROG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 65.2,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    65.2,
+    72.0
+   ],
+   "text": "Ascending triangle after a gap and hold from prior earnings cycle. Looking for a move over 65.20 for a move towards 72 based on prior weekly resistance. Less interested if the trendline fails to hold."
+  },
+  {
+   "ticker": "LMND",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 80.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    80.0,
+    83.65,
+    93.0,
+    113.0
+   ],
+   "text": "Over this base for a low cheat setup above 80 and then the pivot high at 83.65 continues the IPO open recapture rally. Overhead targets up at 93 and then 113.\n\n*Disclaimer: I do have a position long in this name already"
+  },
+  {
+   "ticker": "LMND",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 80.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    80.0,
+    83.65,
+    93.0,
+    113.0
+   ],
+   "text": "Over this base for a low cheat setup above 80 and then the pivot high at 83.65 continues the IPO open recapture rally. Overhead targets up at 93 and then 113.\n\n*Disclaimer: I do have a position long in this name already"
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "QQQ",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "CRH \u2013 Daily",
+  "EYE \u2013 Daily",
+  "FROG \u2013 Daily",
+  "LMND \u2013 Daily",
+  "LMND \u2013 Daily",
+  "We're social!"
+ ]
+}

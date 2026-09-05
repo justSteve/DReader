@@ -1,0 +1,21 @@
+{
+ "letter_date": "2026-07-06",
+ "sent_et": "2026-07-05",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "low", "hedged": true,
+          "quote": "That supports my slightly bullish bias in the S&P as long as price remains above 739.65.",
+          "note": "'if I want shorts, I would rather pick on QQQ. If I want longs, I would rather lean toward the S&P'"},
+ "calls": [
+  {"id": "spy-hold-739.65", "instrument": "SPY", "type": "hold", "level": 739.65, "rule": "hold_week",
+   "quote": "as long as that holds, the market has the ingredients for an hourly higher low that can turn into a daily higher low. The intraday anchored VWAP stack was also reclaimed. This is the 739.65 level.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-no-accept-739.65", "instrument": "SPY", "type": "hold", "level": 739.65, "rule": "no_acceptance_below",
+   "quote": "If that level fails, the hourly trend is no longer up and we have to get back into the mindset of daily balance, and short term downside pressure.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-fail-739.65", "instrument": "SPY", "type": "break", "level": 739.65, "rule": "break_then_lower",
+   "quote": "If that level fails, the hourly trend is no longer up and we have to get back into the mindset of daily balance, and short term downside pressure.", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-break-707", "instrument": "QQQ", "type": "break", "level": 707.0, "rule": "break_then_target", "targets": [700.0, 699.0],
+   "quote": "If QQQ rejects under 722 and breaks 707, the door opens toward 699-700, then possibly 675, with 664.50 as the deeper structured breakdown level.", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-reclaim-722", "instrument": "QQQ", "type": "reclaim", "level": 722.0, "rule": "reclaim_then_higher",
+   "quote": "If QQQ reclaims 722, the range can keep compressing and the market can stay balanced.", "intent": "watch", "conviction": "low"}
+ ],
+ "scenarios": []
+}

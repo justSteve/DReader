@@ -1,0 +1,104 @@
+{
+ "letter_date": "2025-07-21",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 07/21/25",
+ "file": "2025-07-21_1982a485be15d3e4.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The S&P finally broke out of the balance range on Thursday after a failed attempt to do so on Tuesday's gap up.\n\nThat leaves price up 0.71% on the week, and the 20 SMA on the daily now aligned with the bottom of the range at 618.\n\nFriday's low and the top of the balance range at 626.35 area will rem"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Feels like I've posted the same chart now three weeks in a row... Bulls in control with higher high in force, higher lows ideal over pATH 613 or red bar highs at 604.75.",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "hold",
+   "sentence": "Bulls in control with higher high in force, higher lows ideal over pATH 613 or red bar highs at 604.75."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Feels like I've posted the same chart now three weeks in a row... Bulls in control with higher high in force, higher lows ideal over pATH 613 or red bar highs at 604.75.",
+   "instrument": "SPY",
+   "level": 604.75,
+   "class": "hold",
+   "sentence": "Bulls in control with higher high in force, higher lows ideal over pATH 613 or red bar highs at 604.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 Breakout attempt 1 failed with the bar closing back in range, and no offering of a gap fill reversal. Breakout attempt 2 is successful so far with a close above, and Friday's hold over 626.65.",
+   "instrument": "SPY",
+   "level": 626.65,
+   "class": "hold",
+   "sentence": "Breakout attempt 2 is successful so far with a close above, and Friday's hold over 626.65."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing is simple with the well defined balance. Base cases in white. Willing to give the market a shot at sweeping Friday's low and then coming back over the range high for longs.",
+   "instrument": "SPY",
+   "level": 624.65,
+   "class": "break",
+   "sentence": "Red below 624.65 starts to offer the full look above and fail target at range low 618.5."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing is simple with the well defined balance. Base cases in white. Willing to give the market a shot at sweeping Friday's low and then coming back over the range high for longs.",
+   "instrument": "SPY",
+   "level": 618.5,
+   "class": "break",
+   "sentence": "Red below 624.65 starts to offer the full look above and fail target at range low 618.5."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ALAB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    100.0,
+    112.0,
+    134.0
+   ],
+   "text": "Cup and handle-esque breakout starting over the big bad 100 level. First inflection point target at 112, and then 134. In the right sector, just a matter of if price wants to cooperate with the breakout pattern. Nice cluster of moving average support below."
+  },
+  {
+   "ticker": "CART",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 49.7,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    47.0,
+    49.7,
+    51.75,
+    53.4
+   ],
+   "text": "Bull flag holding over the prior resistance highs around 47. Looking for better breaks over 49.70 for moves into the \"scene of the crime\" breakdown at 51.75 and then the high at 53.4. Not interested if Wednesday's low breaks."
+  },
+  {
+   "ticker": "NET",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 195.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    195.5,
+    220.6
+   ],
+   "text": "Bull flag breaking out on Friday. As long as price can stay over 195.5, looking for continuation up towards the ATH target at 220.60. Close watch if 195.5 fails, and not interested if price starts accepting below the daily 20 SMA (orange)."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Feels like I've posted the same chart now three weeks in a row... Bulls in control with higher high in force, higher lows ideal over pATH 613 or red bar highs at 604.75.",
+  "S&P daily chart \u2013 Breakout attempt 1 failed with the bar closing back in range, and no offering of a gap fill reversal. Breakout attempt 2 is successful so far with a close above, and Friday's hold over 626.65.",
+  "S&P hourly chart \u2013 Pathing is simple with the well defined balance. Base cases in white. Willing to give the market a shot at sweeping Friday's low and then coming back over the range high for longs.",
+  "Market internals \u2013 If we look to Friday's session and ask the question, \"did stronger sellers really get involved?\" we can see the answer at the exchange level might be \"not really.\"",
+  "Market profile \u2013 A whole host of data points emerge here that indicate Friday's low is susceptible to offering a breakdown. Very nuanced level that left a poor low. Incredibly interested in longs if we break Friday low, and then move back into Friday range. Repair & go!",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ALAB \u2013 Daily",
+  "CART \u2013 Daily",
+  "NET \u2013 Daily",
+  "We're social!"
+ ]
+}

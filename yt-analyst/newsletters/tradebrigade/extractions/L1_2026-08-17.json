@@ -1,0 +1,255 @@
+{
+ "letter_date": "2026-08-17",
+ "subject": "Inflation Cools, But The Math Is Wrong",
+ "file": "2026-08-17_1a00d0634dc9abda.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.48,
+  "basis": "monday_open_to_friday_close",
+  "quote": "S&P closed up 0.48% from Monday's open to Friday's close"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 760.0,
+   "class": "hold",
+   "sentence": "The ideal weekly higher low sits near the prior all time high (pATH) at 760, while an overshoot toward 754 would add confluence from the high-volume node, rising 10-week EMA, and 50-day moving average."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 754.0,
+   "class": "hold",
+   "sentence": "The ideal weekly higher low sits near the prior all time high (pATH) at 760, while an overshoot toward 754 would add confluence from the high-volume node, rising 10-week EMA, and 50-day moving average."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 800.0,
+   "class": "mention",
+   "sentence": "If price accelerates high instead, the 61.8% extension sits near 800, followed by the larger 100% extension near 850."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 850.0,
+   "class": "mention",
+   "sentence": "If price accelerates high instead, the 61.8% extension sits near 800, followed by the larger 100% extension near 850."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 767.94,
+   "class": "hold",
+   "sentence": "This week's expected move runs from 767.94 to 784.74, with either boundary preserving the broader series of higher lows and higher highs."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 784.74,
+   "class": "hold",
+   "sentence": "This week's expected move runs from 767.94 to 784.74, with either boundary preserving the broader series of higher lows and higher highs."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 774.85,
+   "class": "target",
+   "sentence": "Thursday moved above the prior high, Friday pulled back into an inside bar, and consolidation above 774.85 would continue to look constructive."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 769.5,
+   "class": "mention",
+   "sentence": "A break of 769.50 could shake out the bottom of the flag and still produce a valid daily higher low, particularly if price tests the lower expected move and quickly reclaims the range."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 769.5,
+   "class": "break",
+   "sentence": "The more concerning path would be a lower high followed by a decisive failure of 769.50, which would shift the focus toward a larger weekly pullback and the 760 area."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 760.0,
+   "class": "break",
+   "sentence": "The more concerning path would be a lower high followed by a decisive failure of 769.50, which would shift the focus toward a larger weekly pullback and the 760 area."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 774.85,
+   "class": "mention",
+   "sentence": "My base case is a brief look below the recent lows 774.85, followed by a reclaim, consolidation, and another attempt higher."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 769.5,
+   "class": "mention",
+   "sentence": "The anchored VWAPs and 38.2% retracement are gathering near the flag lows, giving buyers a logical area to respond if 769.50 is tested."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 769.5,
+   "class": "break",
+   "sentence": "An equal low followed by a failure through 769.50 would be the first short-term alarm and could complete a lower-high structure resembling a right shoulder."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ALAB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 373.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    373.0
+   ],
+   "text": "Trying to breakout of an inverted head and shoulders under the neckline of the head and shoulders that topped the stock. Tight price action over the 20 SMA is interesting for an attempt, however this really gets much better over 373."
+  },
+  {
+   "ticker": "CNK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Classic bull flag at the highs. Entertainment stocks have been doing well recently, and we'll see if this wants to break out to continue. Tight action into the end of last week with the hammer indicating failure of sellers to go lower."
+  },
+  {
+   "ticker": "FAST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 50.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.65
+   ],
+   "text": "If you look left this is the prior left side peak at 50.65. Hammering out over the 50.65 level really get this compelling for higher out of a multi month consolidation."
+  },
+  {
+   "ticker": "GD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 396.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    396.75
+   ],
+   "text": "Slow mover, but one of the better looking defense names in terms of setup. Over the 396.75 level is fairly straight forward. Tight inside bar on Friday."
+  },
+  {
+   "ticker": "GPN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Inside day with momentum out of a range. Can this keep the burst going for a classic follow through?"
+  },
+  {
+   "ticker": "HNGE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 88.85,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    88.85
+   ],
+   "text": "Microscopic cup and handle forming with tight action into the end of last week on the right hand side. Over the 88.85 level has a shot at making it towards local highs if not higher."
+  },
+  {
+   "ticker": "LLY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 1200.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    1200.0,
+    1240.0
+   ],
+   "text": "Great base forming up here with the hold of Friday at the 50 SMA (blue) for a higher low. Looking for a move over 1200 to get into highs, and then the real fun to begin if price can clear the 1240 hurdle."
+  },
+  {
+   "ticker": "MA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 571.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    571.0
+   ],
+   "text": "Slower mover, but great bull flag with a break on Friday and hammer action offering a tight risk spot to try. Over 571 can attempt getting back to flag highs and then beyond."
+  },
+  {
+   "ticker": "OMDA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 22.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    22.0,
+    25.0
+   ],
+   "text": "Classic bull flag at highs, but caution the low sweep. A quick shakeout is fine, but needs to hold over 22. If that can happen, looking for a move back toward 25 and then the bull flag to attempt going to ATHs in this new IPO."
+  },
+  {
+   "ticker": "PAY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 39.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    39.4,
+    50.0
+   ],
+   "text": "Very linear move higher recently getting extended from the 50 SMA (blue). Nice post earnings rest looking to tack on more to the move. Over the inside day high can try to get to earnings highs, but again, mind the extension. Needs to hold over the 39.4 level to remain in play."
+  }
+ ],
+ "sections": [
+  "The Fed's Problem Just Changed",
+  "Jensen Gets A $500B Credit Line",
+  "Earnings Are Huge... But The Bar Is \"Huger\"",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile \u2013 /ES",
+  "QQQ \u2013 Impact on S&P",
+  "QQQ has broken out of its congestion above 727, but unlike the S&P, it has not yet reached a new all time high. Sustained higher lows above 727 followed by a break of 735.25 would give the S&P a stronger tailwind. A failure back into the range would put 716 to 714.35 in focus, while a deeper test of the 701.70 gap and 707 area would need a sharp reversal to remain constructive.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ALAB \u2013 Daily Chart",
+  "CNK \u2013 Daily Chart",
+  "FAST \u2013 Daily",
+  "GD \u2013 Daily Chart",
+  "GPN \u2013 Daily Chart",
+  "HNGE \u2013 Daily Chart",
+  "LLY \u2013 Daily Chart",
+  "MA \u2013 Daily Chart",
+  "OMDA \u2013 Daily Chart",
+  "PAY \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

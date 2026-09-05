@@ -1,0 +1,68 @@
+{
+ "letter_date": "2025-10-13",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 10/13/25",
+ "file": "2025-10-13_199dadeeed2d761a.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 3.11,
+  "basis": "peak_to_trough",
+  "quote": "Markets fell a whopping 3.11% peak to trough on Friday"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 638.0,
+   "class": "target",
+   "sentence": "Hardly any substantial shift in major trend with plenty of room for a HL to still form over the two key references we've been tracking at 638 and pATH at 613."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "target",
+   "sentence": "Hardly any substantial shift in major trend with plenty of room for a HL to still form over the two key references we've been tracking at 638 and pATH at 613."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 660.4,
+   "class": "break",
+   "sentence": "Acceptance over 660.4 likely leans into higher timeframe trend remaining up and would be quick to put the short thesis to bed."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 667.25,
+   "class": "break",
+   "sentence": "Sellers completely fail if price trades over 667.25."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AEP",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 115.3,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    115.3,
+    118.85
+   ],
+   "text": "Relative strength on Friday not breaking down like just about everything else. Holding over the prior pivot high. So far looking at holds over 115.3 to remain interested in breakouts over 118.85. That unlocks new highs."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AEP \u2013 Daily",
+  "We're social!"
+ ]
+}

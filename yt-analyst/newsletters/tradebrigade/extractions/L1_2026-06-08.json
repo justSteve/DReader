@@ -1,0 +1,210 @@
+{
+ "letter_date": "2026-06-08",
+ "subject": "AI's First Margin Call",
+ "file": "2026-06-08_19ea49200a7ee017.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The S&P had a peak to trough drawdown of about 3.25% last week, making a new all time high and yet closing near prior two week balance range lows after Friday's rout.\nThis is notably a character change from the market which had been finding relentless dip buyers on prior gap downs.\n\nSome are crediti"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 730.0,
+   "class": "mention",
+   "sentence": "If 730 breaks, looking for about 710-712.5 area for the ideal higher low."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 710.0,
+   "class": "mention",
+   "sentence": "If 730 breaks, looking for about 710-712.5 area for the ideal higher low."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 712.5,
+   "class": "mention",
+   "sentence": "If 730 breaks, looking for about 710-712.5 area for the ideal higher low."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 700.0,
+   "class": "mention",
+   "sentence": "Under that level the line in the sand is 700 area."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 730.0,
+   "class": "mention",
+   "sentence": "Balance over 730 will prevent a deeper pullback."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 732.0,
+   "class": "hold",
+   "sentence": "If price opens weak on Monday, looking for 732 equal low support and initiating counter trend attempts on red to green moves."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 748.75,
+   "class": "mention",
+   "sentence": "Re-evaluate at 748.75 retests for head and shoulders lower high vs reclaim."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 732.0,
+   "class": "mention",
+   "sentence": "If 732 breaks, looking to let price go, and then seek the lower high below for daily trend reversal and price to seek a weekly higher low."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 743.5,
+   "class": "target",
+   "sentence": "On opens higher towards 743.5 or the 20 SMA, looking for fades off of 748.75 to pullback and test the bear bar low."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 748.75,
+   "class": "target",
+   "sentence": "On opens higher towards 743.5 or the 20 SMA, looking for fades off of 748.75 to pullback and test the bear bar low."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 748.75,
+   "class": "break",
+   "sentence": "Acceptance above 748.75 should be a big tell that the sell is not sustained, and the \"infinibid\u2122\" is back on."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "mention",
+   "sentence": "Generally want to be looking at the main inflection points of 732.25 on the bottom of the two week range and 748.75 on the top end of the two week range to get a stronger indication of what the market is likely to do."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 748.75,
+   "class": "mention",
+   "sentence": "Generally want to be looking at the main inflection points of 732.25 on the bottom of the two week range and 748.75 on the top end of the two week range to get a stronger indication of what the market is likely to do."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AEVA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Higher low pullback after breaking the cup and handle. Looking for a break of the inside day high to get things going. Great relative strength on Friday."
+  },
+  {
+   "ticker": "CDNS",
+   "timeframe": "Daily/Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "UGLY weekly bar, however lots of things were ugly after Friday. I like the left side peak retest and 20 SMA on the daily. Needs to set something up, but in the right neighborhood to be on watch."
+  },
+  {
+   "ticker": "DOCN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Great daily higher low opportunity with a daily 20 SMA offering support as well. Relative strength to the broad market on Friday's sell off and a recent PEG winner. A must watch if markets firm back up."
+  },
+  {
+   "ticker": "FLEX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 147.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    147.4
+   ],
+   "text": "Still on watch just like DOCN. PEG winner and good Friday relative strength. Holds over 147.4 keep this in play."
+  },
+  {
+   "ticker": "FROG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    88.5
+   ],
+   "text": "Great daily bull flag, relative strength, PEG winner... the list goes on. Watching for the inside bar breakout or move over flag highs at 88.5 if the market is strong."
+  },
+  {
+   "ticker": "PENG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    55.55
+   ],
+   "text": "For a high beta name, this was a very orderly pullback in terms of structure (don't get me wrong, down 15% is rough...). Looking to see if this can find support around the 55.55 area and let the 20 SMA catch up. If so this would be a great spot to catch a higher low and keep the trend in tact."
+  },
+  {
+   "ticker": "STT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 156.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    156.0,
+    163.8
+   ],
+   "text": "Financials have been strong as of Thursday. Nice inside bar completely disjointed from the semiconductor sell off. Slower name of course, but nice break from a weekly bull flag. Holds over 156 or breaks over 163.8 could get interesting."
+  }
+ ],
+ "sections": [
+  "The AI Trade's First Margin Call",
+  "The Fed Spooks The Market",
+  "SpaceX IPO \u2013 A Generational Money Grab",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AEVA \u2013 Daily Chart",
+  "CDNS \u2013 Daily/Weekly Chart",
+  "DOCN \u2013 Daily Chart",
+  "FLEX \u2013 Daily Chart",
+  "FROG \u2013 Daily Chart",
+  "PENG \u2013 Daily Chart",
+  "STT \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

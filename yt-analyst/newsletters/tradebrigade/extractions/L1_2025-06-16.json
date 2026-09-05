@@ -1,0 +1,56 @@
+{
+ "letter_date": "2025-06-16",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 06/16/25",
+ "file": "2025-06-16_197760df4e30e4b0.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 2.45,
+  "basis": "from_all_time_high",
+  "quote": "market is still within striking distance of the all-time high only down 2.45%, and up around 23"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Bearish inverted hammer closed inside prior week range. No close inside the 3 week balance range. *IF* 595 breaks, look above and fail targets China gap close. *ELSE* bullish consolidation to target ATH.",
+   "instrument": "SPY",
+   "level": 595.0,
+   "class": "break",
+   "sentence": "*IF* 595 breaks, look above and fail targets China gap close."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Obviously should the Qs not offer a 522.5 hold bears could look to shift momentum more meaningfully for that weekly pullback towards the bottom of the three week balance. This is how I envision that beginning. An opening drive lower Monday, or gap down open can achieve similar.",
+   "instrument": "SPY",
+   "level": 522.5,
+   "class": "hold",
+   "sentence": "S&P hourly chart \u2013 Obviously should the Qs not offer a 522.5 hold bears could look to shift momentum more meaningfully for that weekly pullback towards the bottom of the three week balance."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "EAT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 176.35,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    176.35,
+    192.0
+   ],
+   "text": "Daily bull flag with thin structure to retrace off to our left. Over the 176.35 level can get interesting up towards 192."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Bearish inverted hammer closed inside prior week range. No close inside the 3 week balance range. *IF* 595 breaks, look above and fail targets China gap close. *ELSE* bullish consolidation to target ATH.",
+  "S&P daily chart \u2013 The daily inverted hammer structure is undoubtably an issue. On the gap down, buyers fail to accept back in 4 day balance range and close just a hair above 3 week balance range. Its theoretically a great spot for a higher low to develop and I would prefer green dots.",
+  "S&P hourly chart \u2013 Some more nuanced levels. I would particularly like to see this as an attempted initiative from sellers to try bringing price lower, and failing.",
+  "QQQ daily chart \u2013 It seems plausible considering the QQQ has some room until it reaches its key support whereas the S&P is already sitting on key support as of Friday.",
+  "S&P hourly chart \u2013 Obviously should the Qs not offer a 522.5 hold bears could look to shift momentum more meaningfully for that weekly pullback towards the bottom of the three week balance. This is how I envision that beginning. An opening drive lower Monday, or gap down open can achieve similar.",
+  "Market internals \u2013 Not a great look on Friday, however it still seems to me more like profit taking or lack of buyers rather than aggressive new money sellers taking control of the market. Think about the Thursday weak open... Internals weren't all that red.",
+  "Market profile \u2013 Friday marked a substantial shift in value from unchanged (even slightly grinding higher) earlier in the week to down. Trapped overhead supply should continue to reject around 6000-6005 area. If price gets back above, markets are clearly sending a signal that sellers failed.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "EAT \u2013 Daily",
+  "We're social!"
+ ]
+}

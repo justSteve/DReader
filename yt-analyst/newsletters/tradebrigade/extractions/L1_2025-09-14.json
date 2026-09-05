@@ -1,0 +1,152 @@
+{
+ "letter_date": "2025-09-14",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 09/15/25",
+ "file": "2025-09-14_1994aacc086826c1.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 1.37,
+  "basis": "from_all_time_high",
+  "quote": "Markets rallied to new all time highs last week, closing up 1.37%"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 637.0,
+   "class": "hold",
+   "sentence": "No signs of pullback imminent, but higher lows over 637 are most bullish and 613 prior high would start to become HL LiS."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "hold",
+   "sentence": "No signs of pullback imminent, but higher lows over 637 are most bullish and 613 prior high would start to become HL LiS."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 658.5,
+   "class": "break",
+   "sentence": "Staying below 658.5 should look for daily HL pullbacks over 652.25 or 647.5 which has confluence with lower edge of EM and daily 20 SMA."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 652.25,
+   "class": "break",
+   "sentence": "Staying below 658.5 should look for daily HL pullbacks over 652.25 or 647.5 which has confluence with lower edge of EM and daily 20 SMA."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 647.5,
+   "class": "break",
+   "sentence": "Staying below 658.5 should look for daily HL pullbacks over 652.25 or 647.5 which has confluence with lower edge of EM and daily 20 SMA."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AFRM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Daily hammer off of the 20 SMA (orange) and prior breakout level. Long the high, stop on the low, look for IPO open as a target. Simple."
+  },
+  {
+   "ticker": "HD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 425.8,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    1.0,
+    2.0,
+    3.0,
+    6.0,
+    7.0,
+    10.0,
+    20.0,
+    27.0,
+    28.0,
+    35.0,
+    46.0,
+    66.0,
+    425.8,
+    438.85,
+    2834.0
+   ],
+   "text": "Breaking out of a wedge over the daily 20 SMA (orange). Bullish 3 bar play (https://tradebrigade.us3.list-manage.com/track/click?u~d46e35c10e1d6c456843de2&idB028d2834&e27d66bac7) from Friday gives us a possible entry over 425.8 area looking for the ATH target at 438.85 area. Think in terms of rate cuts and pricing in what that should do to housing and remodeling."
+  },
+  {
+   "ticker": "OTIS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 91.9,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    90.15,
+    91.9,
+    98.3
+   ],
+   "text": "Basing double bottom with neckline to break at 90.15. To get into the overhead gap need to clear 91.90. From there, lots of room until the gap close at 98.3. Not interested if it never breaks, or offers a look above and fail."
+  },
+  {
+   "ticker": "RCAT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    1.0,
+    2.0,
+    3.0,
+    6.0,
+    7.0,
+    10.0,
+    14.75,
+    27.0,
+    35.0,
+    46.0,
+    66.0
+   ],
+   "text": "Another bullish 3 bar play (https://tradebrigade.us3.list-manage.com/track/click?u~d46e35c10e1d6c456843de2&id\ufffd82926632&e27d66bac7) setting up over prior resistance highs and in an uptrend. Looking for the pivot high to target and then 14.75 prior highs from way off to our left."
+  },
+  {
+   "ticker": "RKLB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 51.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    51.25
+   ],
+   "text": "Breaking out of a weekly bull flag and daily consolidation. New highs await price above... watch for the hold and acceptance over 51.25 else this will be a failed attempt."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AFRM \u2013 Daily",
+  "HD \u2013 Daily",
+  "OTIS \u2013 Daily",
+  "RCAT \u2013 Daily",
+  "RKLB \u2013 Daily",
+  "We're social!"
+ ]
+}

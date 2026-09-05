@@ -1,0 +1,168 @@
+{
+ "letter_date": "2025-08-18",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 08/18/25",
+ "file": "2025-08-18_198ba7b1b61ea1a8.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Despite the extremely hot PPI inflation print on Thursday (which we'll get into), the S&P managed to close the week up just shy of 1% and notched a new all time high along the way.\nThe rally most certainly took out the weekly bearish engulfing bar high from two weeks ago, and appears more like a wee"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 The bearish engulfer failed with the weekly close above the high on Friday. Generally this looks more like a breakout attempt rather than a reversal. Even if pullbacks occour, 613-604 is a higher low zone.",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "hold",
+   "sentence": "Even if pullbacks occour, 613-604 is a higher low zone."
+  },
+  {
+   "section": "S&P weekly chart \u2013 The bearish engulfer failed with the weekly close above the high on Friday. Generally this looks more like a breakout attempt rather than a reversal. Even if pullbacks occour, 613-604 is a higher low zone.",
+   "instrument": "SPY",
+   "level": 604.0,
+   "class": "hold",
+   "sentence": "Even if pullbacks occour, 613-604 is a higher low zone."
+  },
+  {
+   "section": "S&P daily chart \u2013 The market closed a three day balance range at the all time highs post PPI. The trend is up, and it wouldn't be unreasonable for continuation higher. If the market does pullback under Wednesday's low, I would expect a move towards 638.15 to attempt a daily higher low.",
+   "instrument": "SPY",
+   "level": 638.15,
+   "class": "hold",
+   "sentence": "If the market does pullback under Wednesday's low, I would expect a move towards 638.15 to attempt a daily higher low."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "BURL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    323.8,
+    343.2
+   ],
+   "text": "Bull flagging on the daily over prior resistance. Hammers at the 20 SMA (orange), but still hasn't cleared flag highs yet. Watching for continued developments to the upside. Ultimately if you zoom out theres an unfilled gap up around 323.8 to 343.2."
+  },
+  {
+   "ticker": "CPB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    31.6,
+    34.5
+   ],
+   "text": "Weekly downtrend starting to neutralize via a daily higher low build out. If the trend line can break, looking for a move to the origin of the most recent descent at 34.5. Not interested if the higher lows fail around 31.6."
+  },
+  {
+   "ticker": "HUT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    1.0,
+    2.0,
+    3.0,
+    6.0,
+    7.0,
+    8.0,
+    10.0,
+    27.0,
+    27.7,
+    35.0,
+    46.0,
+    66.0,
+    569.0
+   ],
+   "text": "Long standing cup and handle starting to breakout towards a prior gap close. Looking for a move towards 27.70 as an ultimate destination. Bullish three bar (https://tradebrigade.us3.list-manage.com/track/click?u~d46e35c10e1d6c456843de2&id\ufffd569b8ecb&e27d66bac7) play headed into Monday."
+  },
+  {
+   "ticker": "LSCC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    64.15,
+    69.1
+   ],
+   "text": "Recent earnings momentum starting to consolidate. Looking for a move over the hammer highs at 64.15 for a break back towards the prior pivot high at 69.10 area. Would give this pullback / consolidation room down towards the daily 20 SMA (orange)."
+  },
+  {
+   "ticker": "NTAP",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 110.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    110.0,
+    200.0
+   ],
+   "text": "Overhead gap coming into play after building out an ascending triangle and recapturing the daily 200 SMA (green). Looking for the back to back hammers to trigger over 110. Not interested if the moving average cluster breaks."
+  },
+  {
+   "ticker": "ODFL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 105.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    105.5
+   ],
+   "text": "Simple double bottom on the daily with gap to close over head. Ideally this setup remains in play so long as price remains over the 105.50 neckline. Friday's bar is not all that encouraging, but worth a watch."
+  },
+  {
+   "ticker": "PPTA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 18.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    18.0
+   ],
+   "text": "Ascending triangle with clearly defined flat highs. Looking for a break over 18 for essentially blue sky territory. Friday's bar isn't great like ODFL, but still worth a watch here as this triangle tightens."
+  },
+  {
+   "ticker": "VRT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    148.85
+   ],
+   "text": "Classic Brigade Bolt\u2122 starting to develop off of the prior breakout level. Looking for a move over the Friday hammer high to break back up towards the pivot high around 148.85. Not interested if the hammer low is taken out this week or the 50 SMA (blue) breaks."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 The bearish engulfer failed with the weekly close above the high on Friday. Generally this looks more like a breakout attempt rather than a reversal. Even if pullbacks occour, 613-604 is a higher low zone.",
+  "S&P daily chart \u2013 The market closed a three day balance range at the all time highs post PPI. The trend is up, and it wouldn't be unreasonable for continuation higher. If the market does pullback under Wednesday's low, I would expect a move towards 638.15 to attempt a daily higher low.",
+  "S&P hourly chart \u2013 Base case in white, but since we are in a balance range, balance rules will be in play. This means there the potential for failure patterns to emerge and 'trap' traders.",
+  "Market internals \u2013 As the market balanced on Thursday and Friday, there was a small give back on market internals, but they still side with profit taking and not new money sellers unwinding the action of Tuesday and Wednesday.",
+  "Market profile \u2013 Value is massively overlapping in the balance range, and mostly skewed towards the bottom of range. This would indicate that buyers will feel fine opening in range and any consolidation allows them to maintain longs, under it... Stops galore.",
+  "QQQE Spotlight \u2013 Still cant shake its bearish divergence!",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "BURL \u2013 Daily",
+  "CPB \u2013 Daily",
+  "HUT \u2013 Daily",
+  "LSCC \u2013 Daily",
+  "NTAP \u2013 Daily",
+  "ODFL \u2013 Daily",
+  "PPTA \u2013 Daily",
+  "VRT \u2013 Daily",
+  "We're social!"
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "letter_date": "2026-01-12",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 01/12/26",
+ "file": "2026-01-12_19bafba328b65528.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 1.09,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P closed up 1.09% on the week and at record highs on after a positive response to the labor repor"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 730.0,
+   "class": "target",
+   "sentence": "A fib extension suggests a measured move from the breakout of about 730."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 689.0,
+   "class": "break",
+   "sentence": "If this 689 level fails, I would be concerned about weekly equilibrium resuming and seeing those fully invested managers unwind some of the long posture near highs."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 689.0,
+   "class": "hold",
+   "sentence": "Base case is for a higher lows to continue over the 689 level to keep bulls on parade and moving higher towards the ATH and beyond."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ALB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0
+   ],
+   "text": "Extended from the daily 50 SMA, however nice looking flag in a very clean uptrend."
+  },
+  {
+   "ticker": "AMKR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 47.15,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    47.15,
+    50.0
+   ],
+   "text": "Similar to above, extended from daily 50 SMA, however, clean trend and tight consolidation. Ideally any pullbacks stay over 47.15 to keep this in play."
+  },
+  {
+   "ticker": "RVLV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Great bull flag in a strong uptrend with perfect Friday hammer off of 20 SMA. In play as long as the 20 SMA holds."
+  },
+  {
+   "ticker": "SBUX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 89.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    89.4,
+    97.9
+   ],
+   "text": "Strong rounded base in play with a move to retake the moving average stack. Over 89.40 with acceptance should get going towards 97.90."
+  },
+  {
+   "ticker": "WMG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    34.3
+   ],
+   "text": "Clean inverted head and shoulders with a retake of the moving average stack to form the right shoulder. Looking for a neckline break to work its way towards the 34.30 prior resistance."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "SPY vs QQQ Divergence",
+  "QQQ isn't at ATH levels yet, but we saw this same divergence back in late summer 2025. So long as the QQQ isn't actually in a downtrend, we'll see if a Mag 7 resurrection can snap this back.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ALB \u2013 Daily",
+  "AMKR \u2013 Daily",
+  "RVLV \u2013 Daily",
+  "SBUX \u2013 Daily",
+  "WMG \u2013 Daily",
+  "We're social!"
+ ]
+}

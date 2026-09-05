@@ -1,0 +1,79 @@
+{
+ "letter_date": "2026-04-13",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 04/06/26",
+ "file": "2026-04-13_19d842982c6be59c.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 3.6,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P rallied 3.60% last week, reclaiming all of the moving average stack as well as leaving a MASS"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "mention",
+   "sentence": "Anchored VWAP set, 20 SMA, fib 61.8, 675 overhead supply level."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "mention",
+   "sentence": "Over 653 is in good shape."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 671.2,
+   "class": "break",
+   "sentence": "To get long the most bullish idea would be a look below and fail on Wednesday's low at 671.2."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "hold",
+   "sentence": "After that would be a weekly higher low pullback that closes the gap, supports above 653 and makes a turn back towards the 676.25 area."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 676.25,
+   "class": "hold",
+   "sentence": "After that would be a weekly higher low pullback that closes the gap, supports above 653 and makes a turn back towards the 676.25 area."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 659.5,
+   "class": "hold",
+   "sentence": "A closer look at the pathing on the hourly reveals the stack of anchored VWAP sitting right at the gap close area for the weekly higher low thesis at 659.5."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "mention",
+   "sentence": "Acceptance below the gap and 653 really gets me re-evaluating the situation, especially if the supporting evidence rapidly deteriorates."
+  }
+ ],
+ "swing_ideas": [],
+ "sections": [
+  "21 Hours... and No Deal",
+  "CPI Too Hot? Or Just Right?!",
+  "Earnings Season... A Worthy Distraction?",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "We're social!"
+ ]
+}

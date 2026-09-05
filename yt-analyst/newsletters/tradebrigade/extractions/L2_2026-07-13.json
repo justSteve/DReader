@@ -1,0 +1,25 @@
+{
+ "letter_date": "2026-07-13",
+ "sent_et": "2026-07-12",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "high", "hedged": false,
+          "quote": "The trend is finally back to up, and we're trading above all key moving averages.",
+          "note": "Base case 'continuation toward the ATH or a controlled higher-low pullback'; bear case needs 739.65 to break."},
+ "calls": [
+  {"id": "spy-hold-749", "instrument": "SPY", "type": "hold", "level": 749.0, "rule": "hold_week",
+   "quote": "As long as SPY remains above the 749 area, I favor continuation.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-support-745.83", "instrument": "SPY", "type": "hold", "level": 745.83, "rule": "hold_week",
+   "quote": "The more important support zone sits near 745.83.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-neckline-739.65", "instrument": "SPY", "type": "break", "level": 739.65, "rule": "break_then_lower",
+   "quote": "Sellers would need to push through the major neckline at 739.65 before the daily structure materially deteriorates.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-em-range", "instrument": "SPY", "type": "range", "low": 745.83, "high": 764.07, "rule": "range_hold",
+   "quote": "The weekly expected move runs from 745.83 to 764.07.", "intent": "watch", "conviction": "unstated"},
+  {"id": "qqq-pivot-722", "instrument": "QQQ", "type": "hold", "level": 722.0, "rule": "hold_week",
+   "quote": "The key pivot is 722. Holding above that level, or reclaiming it after a controlled higher-low pullback, would improve the odds of a move toward 726.50 and then the equal high near 735.25.", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-target-726.50", "instrument": "QQQ", "type": "target", "level": 726.5, "rule": "target_reached",
+   "quote": "would improve the odds of a move toward 726.50 and then the equal high near 735.25.", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-break-707", "instrument": "QQQ", "type": "break", "level": 707.0, "rule": "break_then_target", "targets": [700.0],
+   "quote": "Sellers would gain additional control below 712.35, with a loss of 707 opening a faster path toward 700.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

@@ -1,0 +1,181 @@
+{
+ "letter_date": "2026-05-25",
+ "subject": "The WOW Factor Is Fading...",
+ "file": "2026-05-25_19e5c8ab96deb017.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.79,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P closed up 0.79% last week, but most importantly, having found a firm daily higher low pullback"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "mention",
+   "sentence": "Breaks below 732.25 seek 712.4 first stop higher low, and then 700 second stop higher low."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 712.4,
+   "class": "mention",
+   "sentence": "Breaks below 732.25 seek 712.4 first stop higher low, and then 700 second stop higher low."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 700.0,
+   "class": "mention",
+   "sentence": "Breaks below 732.25 seek 712.4 first stop higher low, and then 700 second stop higher low."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "target",
+   "sentence": "If price does spend more time under 732.25 the trend will flip down and the first target is the gap close at 725."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 725.0,
+   "class": "target",
+   "sentence": "If price does spend more time under 732.25 the trend will flip down and the first target is the gap close at 725."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "break",
+   "sentence": "Problems would get worse if there is then a daily lower high under 732.25 in which case we look for the 712.4 weekly pullback..."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 712.4,
+   "class": "break",
+   "sentence": "Problems would get worse if there is then a daily lower high under 732.25 in which case we look for the 712.4 weekly pullback..."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 749.6,
+   "class": "mention",
+   "sentence": "Note that if the market makes a higher high first, and then pulls back under the 749.6 ATH level, sequencing matters."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AAOI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 182.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    182.65
+   ],
+   "text": "Tight four day consolidation right at the 20 SMA. Over the 182.65 level can get back into trend towards the ATH. Tight stop under local lows potentially dependent on Tuesday open."
+  },
+  {
+   "ticker": "FLEX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "PEG setup over all key moving averages into blue sky territory. Tight days on Thursday / Friday. Looking for a move over those highs to get into the ATH area and then beyond."
+  },
+  {
+   "ticker": "KEYS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 346.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    4.0,
+    9.0,
+    20.0,
+    346.75
+   ],
+   "text": "Hammers making higher low and equal highs just below the 20 SMA. Back over the 346.75 level has room to resume the uptrend and navigate towards ATH. It could even build out more of a weekly flag here and then go after another 4-9 days sideways up here."
+  },
+  {
+   "ticker": "MXL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 102.2,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    102.2
+   ],
+   "text": "Great look below and fail on Thursday's range Friday. Looking for a flat top base breakout or Brigade Bolt\u2122 above the 102.2 level for continuation."
+  },
+  {
+   "ticker": "OSCR",
+   "timeframe": "Daily / Monthly",
+   "direction": "long",
+   "trigger": 23.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    23.25
+   ],
+   "text": "Multi year range breakout attempt at the 23.25 level. Daily hammers hanging in there over the 20 SMA. Looking to see if there is an early way to get involved on small risk for the larger break. If its really going to go for it, there will be plenty of setups over 23.25 as well"
+  },
+  {
+   "ticker": "PWR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 729.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    729.5
+   ],
+   "text": "Same idea as FLEX from above. PEG into daily higher low near the 20 SMA. Over 729.5 would be great to get back to the ATH."
+  },
+  {
+   "ticker": "VIAV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 49.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    49.4,
+    60.0
+   ],
+   "text": "Need a small reclaim of the 49.4 area for a gap fill reversal to trigger look below and fail. From there looking back to 60 as the target and continuation of the weekly trend after that."
+  }
+ ],
+ "sections": [
+  "Nvidia Double Beat And Raise... So what?",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AAOI \u2013 Daily Chart",
+  "FLEX \u2013 Daily Chart",
+  "KEYS \u2013 Daily Chart",
+  "MXL \u2013 Daily Chart",
+  "OSCR \u2013 Daily / Monthly Chart",
+  "PWR \u2013 Daily Chart",
+  "VIAV \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

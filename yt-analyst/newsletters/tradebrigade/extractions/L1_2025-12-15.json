@@ -1,0 +1,111 @@
+{
+ "letter_date": "2025-12-15",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 12/15/25",
+ "file": "2025-12-15_19b1f86f9ce0fca7.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The S&P continues to trade in a very two sided range.\n\nFriday, price rejected an opportunity to make new record highs. This sets up decent odds of testing the moving average stack and critical support over the prior engulfer highs from 10/10 and 11/20 near 675.\nNotice however, daily range has meanin"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 679.5,
+   "class": "break",
+   "sentence": "Under 679.5 bears start a range break, however to what end?"
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "hold",
+   "sentence": "If the 675 level holds, this can easily stage a daily higher low."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 668.5,
+   "class": "mention",
+   "sentence": "On any overshoot, I'll be watching closely for 668.5 to be the ultimate line in the sand."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 689.0,
+   "class": "mention",
+   "sentence": "Over 689 is fairly straightforward to new record highs."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 679.4,
+   "class": "mention",
+   "sentence": "Not unreasonable that we break the 679.4 level to test the golden pocket daily higher low at 675 area."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "mention",
+   "sentence": "Not unreasonable that we break the 679.4 level to test the golden pocket daily higher low at 675 area."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 679.0,
+   "class": "hold",
+   "sentence": "If that holds, getting back over 679 puts the ATH in play."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "hold",
+   "sentence": "If 675 does not hold, there will be a key battle on the retest of it from the bottom side up."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 691.25,
+   "class": "mention",
+   "sentence": "Please note also that we have an un-repaired all time high that was set in the overnight session at 691.25."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AXP",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 375.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    375.5
+   ],
+   "text": "New all time high breakout on Thursday. Financials generally as a sector are getting some love. Holds over 375.5 that build out a bull flag or higher low setup look okay for continuation."
+  },
+  {
+   "ticker": "U",
+   "timeframe": "Daily / Monthly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Multi year base high is starting to break out. This setup may not be actionable immediately, but should remain on radar to gauge the opportunity for higher lows to build out. A break over the IPO open price is also one way to action on this chart in the future.\n\nZM and ROKU look similar on high timeframes, but lack strength on the daily."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Watch CPI to indicate if goods inflation is moderating or still picking up. Easing goods CPI is doveish for the Fed into 2026.",
+  "Swing Stock Scans",
+  "AXP \u2013 Daily",
+  "U \u2013 Daily / Monthly",
+  "We're social!"
+ ]
+}

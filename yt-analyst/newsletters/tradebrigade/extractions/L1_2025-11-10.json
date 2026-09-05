@@ -1,0 +1,296 @@
+{
+ "letter_date": "2025-11-10",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 11/10/25",
+ "file": "2025-11-10_19a6b47536d213f2.txt",
+ "self_score": {
+  "found": false,
+  "opener": "--\n\nBefore we get into the details, I just want to say we have seventeen swing charts listed at the bottom... huge uptick in available setups this week. Okay, here it goes...\n\n--\n\nMarkets have continued to pullback and are off the highs by roughly 2.75% as of Friday's close.\n\nMore notably, the overs"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 654.0,
+   "class": "mention",
+   "sentence": "So long as the quad lo bottom at 654 isn't taken out, no major concerns."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "mention",
+   "sentence": "A perfect pullback would have remained above 674 and daily 20SMA."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "break",
+   "sentence": "So long as price opens on Sunday night futures below 674, neutral is the best stance."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "mention",
+   "sentence": "On 1h HL over 674 the 1h trend changes back to up, and thus the daily HL is attempting to form."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "break",
+   "sentence": "If price stays below 674, the 1h trend remains down, and continuation is the play."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AMGN",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": 321.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    306.0,
+    321.5,
+    339.0
+   ],
+   "text": "Weekly double bottom breakout underway post earnings gap and go. Great double inside bar setup on the daily. Over the 321.5 high should keep the lift moving into 339. Pullbacks that support over 306 also keep bulls in control."
+  },
+  {
+   "ticker": "CRWD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    517.5,
+    554.6
+   ],
+   "text": "Great cup and handle breakout with higher low retest over the breakout level and daily 20SMA (orange). Looking for continued holds above and breakouts to continue over the ATH 554.6 level. Not interested if the 517.5 fails."
+  },
+  {
+   "ticker": "DINO",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    55.4,
+    62.25,
+    2024.0
+   ],
+   "text": "V shaped off of the weekly low. Nice balance range creating a weekly bull flag having reclaimed prior major weekly lows (the double top neckline from Jan 2024). Over the daily 55.4 breakout level, room into 62.25. Not interested if the 50 level breaks."
+  },
+  {
+   "ticker": "EOSE",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": 19.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    16.0,
+    19.0,
+    21.9,
+    26.65
+   ],
+   "text": "Elevated out of a multi year base and breaking out of a daily bull flag. This may be a bit late to chase, but continuation gives it some room into 21.90 and then 26.65. The main thing to watch is volume on momentum movers like this. Ideally price would not re-vist the breakout point near 16. Next major move would be a break to make a new high over 19."
+  },
+  {
+   "ticker": "ESTC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 94.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    94.75,
+    118.0
+   ],
+   "text": "Multi-month base with great relative strength into the end of the week. There was no major pullback here. If this can breakout over the 94.75 area there should be room to lift into the 118 prior highs. When and if the chart makes a break for it, ideally higher lows sustain action over 94.75 and don't look back."
+  },
+  {
+   "ticker": "FERG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 251.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    240.6,
+    251.0
+   ],
+   "text": "Bull flag consolidation near all time highs. Great support over prior resistance now acting as support at 240.6. Interested in daily closes over the 251 level for continuation higher."
+  },
+  {
+   "ticker": "FLNC",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    18.0
+   ],
+   "text": "Daily and weekly bull flag with holds over the resistance downtrend break. Walking up pivot highs as targets. Not interested if 18 fails to hold."
+  },
+  {
+   "ticker": "GH",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": 99.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    99.0
+   ],
+   "text": "Tight daily range post earnings gap up. The hold higher despite market pullback is interesting for potential continuation. The large watch would just be if prices makes a new high over 99. Even if price starts to close the gap, this should remain on watch due to its relative strength."
+  },
+  {
+   "ticker": "GPCR",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    3.0,
+    34.1,
+    44.75
+   ],
+   "text": "Weekly double bottom triggering with bullish 3 bar play in force. Over the daily flag high at 34.1 has some overhead supply to battle through, but generally targets 44.75. Not interested if the Friday low breaks."
+  },
+  {
+   "ticker": "IMNM",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    17.0,
+    21.75
+   ],
+   "text": "Warning: Not a fan of the weekly inverted hammers / upper wicks. That said, the consolidation area looks correct after a nice daily advance. This may not be in play this week, or even ever (the setup can fail), but its worth continuing to keep an eye on that 17 breakout level. Daily closes above are critical if its going to have the next leg up through thin structure to 21.75."
+  },
+  {
+   "ticker": "INSM",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Vertical on the weekly chart... so cautious on pullback risk, but the daily bar and flag at the ATH level look great for more consolidation to build out and then potential breaks to new highs to be fueled by volume. TBD on if it actually goes, but the daily flag is high and tight, thus worth keeping on a watchlist."
+  },
+  {
+   "ticker": "PARR",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Awesome daily bull flag at all time highs with a weekly balance happening over the prior range highs. Great looking weekly hammer with look below and fail for sellers. New record highs should aim to double the range from the daily consolidation first and then a measured move from weekly bull flag."
+  },
+  {
+   "ticker": "QS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 18.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    14.5,
+    18.5,
+    22.0
+   ],
+   "text": "Classic daily bull flag over prior resistance highs. Breakouts over 18.5 area should start looking for 22 area as a target. Interested so long as 14.5 holds."
+  },
+  {
+   "ticker": "RMBS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    94.0
+   ],
+   "text": "Another classic flag. Over the trendline should attempt to get into ATH levels. Interested so long as the 94 area holds."
+  },
+  {
+   "ticker": "SMTC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 73.35,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    64.0,
+    73.35,
+    79.45
+   ],
+   "text": "Great flag range at the top of a constructive trend. Over the 73.35 high should get it up to 79.45 which is less than a range double. Interested as long as 64 holds."
+  },
+  {
+   "ticker": "TJX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    145.75
+   ],
+   "text": "A bit more boring than the healthcare and utility names that have dominated the scan thus far. Over the top of 145.75 unlocks new highs. Simple ascending triangle with strength behind the trend. Would give it room to balance anywhere for a higher low over the support trend line."
+  },
+  {
+   "ticker": "ZS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    317.0,
+    336.85,
+    375.0
+   ],
+   "text": "Pullback off of prior pivot high after rounded bottom base. Looking for 317 holds to allow moves back into 336.85 and then monitoring for continuation towards 375 ATH areas. Not interested on daily closes below 317."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AMGN \u2013 Daily / Weekly",
+  "CRWD \u2013 Daily",
+  "DINO \u2013 Daily / Weekly",
+  "EOSE \u2013 Daily / Weekly",
+  "ESTC \u2013 Daily",
+  "FERG \u2013 Daily",
+  "FLNC \u2013 Daily / Weekly",
+  "GH \u2013 Daily / Weekly",
+  "GPCR \u2013 Daily / Weekly",
+  "IMNM \u2013 Daily / Weekly",
+  "INSM \u2013 Daily / Weekly",
+  "PARR \u2013 Daily / Weekly",
+  "QS \u2013 Daily",
+  "RMBS \u2013 Daily",
+  "SMTC \u2013 Daily",
+  "TJX \u2013 Daily",
+  "ZS \u2013 Daily",
+  "We're social!"
+ ]
+}

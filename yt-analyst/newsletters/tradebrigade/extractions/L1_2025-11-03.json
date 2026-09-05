@@ -1,0 +1,53 @@
+{
+ "letter_date": "2025-11-03",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 11/03/25",
+ "file": "2025-11-03_19a473adbcbfb740.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 1.2,
+  "basis": "unknown",
+  "quote": "markets only closed up 1.2% from the bear engulfer high, vs a peak of 2"
+ },
+ "spy_levels": [],
+ "swing_ideas": [
+  {
+   "ticker": "IBM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 296.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    296.0
+   ],
+   "text": "Great flag action happening at ATHs. So long as pullbacks remain over the 296 level thinking about upside continuation."
+  },
+  {
+   "ticker": "LVS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 58.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    58.0,
+    64.0
+   ],
+   "text": "Despite hearing about folks mentioning \"Vegas is dead\" the stock is far from it. Looking at this flag over prior highs is interesting for continuation into 64 should it hold over 58. Nice initiating gap on earnings, now time to see if it can follow through after consolidating near the highs."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "IBM \u2013 Daily",
+  "LVS \u2013 Daily",
+  "We're social!"
+ ]
+}

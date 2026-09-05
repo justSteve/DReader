@@ -1,0 +1,164 @@
+{
+ "letter_date": "2026-04-27",
+ "subject": "Stocks at highs. Oil at $105. One is wrong.",
+ "file": "2026-04-27_19dcc3da9dade9e7.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.73,
+  "basis": "from_all_time_high",
+  "quote": "S&P was up 0.73% last week, closing at a new all time high on Friday"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 698.0,
+   "class": "hold",
+   "sentence": "New all time high close with plenty of room for higher low pullbacks to keep the trend up over 698 prior all time high or the bottom of the old balance range at 675."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "hold",
+   "sentence": "New all time high close with plenty of room for higher low pullbacks to keep the trend up over 698 prior all time high or the bottom of the old balance range at 675."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "mention",
+   "sentence": "The 675 level is still structurally correct, but will become less \"relevant.\""
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 712.4,
+   "class": "hold",
+   "sentence": "If price moves into blue sky territory on a higher low over 712.4, the upper bound of the weekly expected move is the only reference."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 702.5,
+   "class": "break",
+   "sentence": "Should price fail back into the balance range, balance rules call for targeting the bottom of range at 702.5 which is near the lower bound of the weekly expected move."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 697.85,
+   "class": "target",
+   "sentence": "On deeper pullbacks, I am still quite interested in gauging the reaction of buyers on the retest of the prior all time high at 697.85 with wiggle room down to the prior pivot as well around 693.75."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 693.75,
+   "class": "target",
+   "sentence": "On deeper pullbacks, I am still quite interested in gauging the reaction of buyers on the retest of the prior all time high at 697.85 with wiggle room down to the prior pivot as well around 693.75."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 702.5,
+   "class": "hold",
+   "sentence": "Note how the pATH test for a daily higher low has the 1h trend flip to down with a lower low under the 702.5 level."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ABNB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    140.0
+   ],
+   "text": "Breakout from the balance range with great action on Friday producing a look below and fail. So long as 140 continue to act as support, looking at this as a daily higher low setup."
+  },
+  {
+   "ticker": "ALM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 20.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.75,
+    23.85
+   ],
+   "text": "Short term cup with handle setting up a daily higher low and inside bar on Friday. Holds over 20.75 and followthrough over the 23.85 level should seek new highs."
+  },
+  {
+   "ticker": "ATI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0
+   ],
+   "text": "Revist from last weeks newsletter noting that we have a nice daily higher low opportunity now up against the daily 50 SMA with multiple inside days. Hammer action continues to indicate buyers stepping up near key moving averages.\n\nFLS \u2013 Daily Chart \u2013 !! Mind Earnings !!\nInverted head and shoulders setting up a potential move back into pivot highs."
+  },
+  {
+   "ticker": "ITT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 223.35,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    223.35
+   ],
+   "text": "Flagging action at the highs after a breakout. Loking for over 223.35 for new highs to be unlocked."
+  },
+  {
+   "ticker": "LITE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    1000.0
+   ],
+   "text": "A name we're all familiar with at this point... Consolidation over the 20 SMA looking at a flat ish top base break. Seems like similar to SNDK its seeking the 1000 Livermore number."
+  },
+  {
+   "ticker": "SKYT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Cup with handle after multi month consolidation. Looking for a higher low setup here to get back into the cup highs. From there looking to see if we can get a breakout in this smaller semiconductor company."
+  }
+ ],
+ "sections": [
+  "AI Is Bid... But So Is Oil",
+  "SMH (VanEck Semiconductor ETF) set its largest monthly return since 2003.",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ABNB \u2013 Daily Chart",
+  "ALM \u2013 Daily Chart",
+  "ATI \u2013 Daily Chart",
+  "ITT \u2013 Daily Chart",
+  "LITE \u2013 Daily Chart",
+  "SKYT \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

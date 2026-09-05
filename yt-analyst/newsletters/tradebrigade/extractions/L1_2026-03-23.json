@@ -1,0 +1,166 @@
+{
+ "letter_date": "2026-03-23",
+ "subject": "The Fed Is TRAPPED...",
+ "file": "2026-03-23_19d180dbcddd2c1a.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 2.99,
+  "basis": "monday_open_to_friday_close",
+  "quote": "S&P has continued to extend its loss under the balance range down another 2.99% last week from Monday's open to Friday's close"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "mention",
+   "sentence": "The line in the sand is 675."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "hold",
+   "sentence": "Reclaiming 675 on a close would force a reassessment."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 615.0,
+   "class": "hold",
+   "sentence": "High timeframe buy opportunity on the monthly higher low thesis (MoHL) in the neighborhood of 615-612 still stands."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 612.0,
+   "class": "hold",
+   "sentence": "High timeframe buy opportunity on the monthly higher low thesis (MoHL) in the neighborhood of 615-612 still stands."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "hold",
+   "sentence": "Note also the overshoot of prior left side support at 653 area."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 662.5,
+   "class": "break",
+   "sentence": "* Counter-trend path: Rally sets daily lower high near 662.50, then back down."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "hold",
+   "sentence": "* Bear flag path: No reclaim of 653, continuation directly toward 634."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 634.0,
+   "class": "hold",
+   "sentence": "* Bear flag path: No reclaim of 653, continuation directly toward 634."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 634.0,
+   "class": "break",
+   "sentence": "* Gap-down path: Flush into 634 rubber-band trade, counter-trend, still resolves as a lower high."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "hold",
+   "sentence": "That means hourly higher lows building above 653."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 662.5,
+   "class": "break",
+   "sentence": "Once that condition is met, 662.50 becomes the area to watch for the lower high and the next short setup."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 634.0,
+   "class": "target",
+   "sentence": "From there, continuation targets the 634 area."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "FORM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Possible low cheat setup in a semiconductor name. Market conditions are ROUGH for this to be an A+ opportunity, but it did have some relative strength on Friday."
+  },
+  {
+   "ticker": "OII",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Similar low cheat setup, but this is at least in an oil and gas name. A bit more aligned with the overall environment."
+  },
+  {
+   "ticker": "SEI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    56.4,
+    59.65
+   ],
+   "text": "Multi month base breaking out. Looking for a daily higher low setup over the top of the range at 59.65 or on the gap fill at 56.40 area."
+  },
+  {
+   "ticker": "YOU",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "This has been on the market leader list for the last few weeks since the earnings gap and go. Tightening up with a higher low over the 20 SMA and looking like a potential flag break."
+  }
+ ],
+ "sections": [
+  "The Fed's Dilemma",
+  "Expect More Oil Volatility",
+  "AI Is Fine... Markets Just Don't Care",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "QQQ",
+  "QQQ undercut its prior lows of 580.75 intraday Friday but did not close below. SPY closed clearly beneath its equal lows.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "FORM \u2013 Daily",
+  "OII \u2013 Daily",
+  "SEI \u2013 Daily",
+  "YOU \u2013 Daily",
+  "We're social!"
+ ]
+}

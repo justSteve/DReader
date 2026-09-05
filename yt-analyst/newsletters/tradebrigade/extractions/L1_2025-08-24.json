@@ -1,0 +1,162 @@
+{
+ "letter_date": "2025-08-24",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 08/25/25",
+ "file": "2025-08-24_198de868aaeaebb1.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.38,
+  "basis": "unknown",
+  "quote": "market closed up a measly 0.38% over the Monday opening print"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 Trends are simple. They are higher highs, higher lows, equal highs, equal lows, lower highs, lower lows.",
+   "instrument": "SPY",
+   "level": 638.15,
+   "class": "hold",
+   "sentence": "This daily chart fits the characteristics of an uptrend, and will remain that way even if a pull back tests a possible higher low at 638.15."
+  },
+  {
+   "section": "S&P daily chart \u2013 Trends are simple. They are higher highs, higher lows, equal highs, equal lows, lower highs, lower lows.",
+   "instrument": "SPY",
+   "level": 634.0,
+   "class": "mention",
+   "sentence": "If 634 is broken, a lower low is introduced and the trend changes."
+  },
+  {
+   "section": "S&P hourly chart \u2013 If the base case is looking for daily trend continuation, how might we participate on the hourly?",
+   "instrument": "SPY",
+   "level": 642.75,
+   "class": "mention",
+   "sentence": "Consolidation over 642.75 is likely not enough to change the hourly trend to down, and thus, this would constitute a soft higher low, and if we breakout a simple bull flag break."
+  },
+  {
+   "section": "S&P hourly chart \u2013 If the base case is looking for daily trend continuation, how might we participate on the hourly?",
+   "instrument": "SPY",
+   "level": 642.75,
+   "class": "target",
+   "sentence": "A break under 642.75 an hourly lower high may result, and thin structure retracement is attractive to short through down towards 638.15 where we seek a potential daily higher low, and hourly trend reversal back to up."
+  },
+  {
+   "section": "S&P hourly chart \u2013 If the base case is looking for daily trend continuation, how might we participate on the hourly?",
+   "instrument": "SPY",
+   "level": 638.15,
+   "class": "target",
+   "sentence": "A break under 642.75 an hourly lower high may result, and thin structure retracement is attractive to short through down towards 638.15 where we seek a potential daily higher low, and hourly trend reversal back to up."
+  },
+  {
+   "section": "S&P hourly chart \u2013 If the base case is looking for daily trend continuation, how might we participate on the hourly?",
+   "instrument": "SPY",
+   "level": 638.15,
+   "class": "mention",
+   "sentence": "A break and hold under 638.15 is undoubtably bearish consolidation, and I would think a break of 634 is imminent."
+  },
+  {
+   "section": "S&P hourly chart \u2013 If the base case is looking for daily trend continuation, how might we participate on the hourly?",
+   "instrument": "SPY",
+   "level": 634.0,
+   "class": "mention",
+   "sentence": "A break and hold under 638.15 is undoubtably bearish consolidation, and I would think a break of 634 is imminent."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "CMA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    70.0,
+    73.5
+   ],
+   "text": "Daily bull flag with flat top breakout level at 70. Looking for a move to double the flag range into the prior pivot around 73.5. In play so long as Thursday low holds."
+  },
+  {
+   "ticker": "CNM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 66.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    66.0
+   ],
+   "text": "Revisiting an old setup from the channel consolidation over prior all time high (pATH). Looking for a flat top break now over 66 to target the upper bound of the trend channel over time. In play as long as pATH holds."
+  },
+  {
+   "ticker": "COP",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    97.5,
+    101.4,
+    104.15
+   ],
+   "text": "Ascending triangle forming with breakout base high at 97.5. Looking for a move to test the gap above at 101.4 to 104.15 if it is a successful breakout. Not interested if the trend line breaks."
+  },
+  {
+   "ticker": "FIVN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 26.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    26.6,
+    29.7
+   ],
+   "text": "Mind the horrible weekly downtrend, but looking for a inverted head and shoulders neckline retest and go. Supporting over 26.6 keeps this in play to 29.7 area. Any signs of weakness should be taken seriously given higher timeframe trends."
+  },
+  {
+   "ticker": "PM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    170.75,
+    177.5,
+    185.0
+   ],
+   "text": "This is exactly what we want to see FIVN do... holds of the breakout level post breakout at 170.75 on PM setup continuation to close the gap to 177.5 and then retarget the swing highs at 185. Not in play if the trend line breaks."
+  },
+  {
+   "ticker": "VSAT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 28.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    25.0,
+    28.5,
+    33.6,
+    42.75
+   ],
+   "text": "Huge change in tone out of this post earnings. High and tight consolidation could get interesting on a break of 28.5 for another squeeze higher. Overhead target is a long lost gap at 33.6 area. Gap fill is all the way to 42.75... manage expectations about getting all the way there. Interested as long as 25 holds."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Even with the sell side pressure early in the week, does this look - at all - like an attempted trend reversal?",
+  "S&P daily chart \u2013 Trends are simple. They are higher highs, higher lows, equal highs, equal lows, lower highs, lower lows.",
+  "S&P hourly chart \u2013 If the base case is looking for daily trend continuation, how might we participate on the hourly?",
+  "Market internals \u2013 Very impressive exchange level activity on the Friday rally. The thing I would read into here is the over correlated state we finished things off on. With EVERYTHING catching a bid Friday, some retracement would seem reasonable as rotation picks back up.",
+  "Market profile \u2013 What a ridiculous profile shape on Friday... but its what we have. P shaped, value and PoC higher. Tons of \"0 prints\" below us where little to no volume transacted. Wouldn't be unreasonable to retest.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "CMA \u2013 Daily",
+  "CNM \u2013 Daily",
+  "COP \u2013 Daily",
+  "FIVN \u2013 Daily",
+  "PM \u2013 Daily",
+  "VSAT \u2013 Daily",
+  "We're social!"
+ ]
+}

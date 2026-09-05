@@ -1,0 +1,128 @@
+{
+ "letter_date": "2026-03-30",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 03/30/26",
+ "file": "2026-03-30_19d3c0c6dda2cd91.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 2.23,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P fell an additional 2.23% from the prior Friday's low this past week, marking the fifth down week in a ro"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 615.0,
+   "class": "hold",
+   "sentence": "Still in a monthly uptrend with higher low potential over the 615-610 area."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "hold",
+   "sentence": "Still in a monthly uptrend with higher low potential over the 615-610 area."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "mention",
+   "sentence": "The October and November 2025 double bottom lows are now overhead supply at 653."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "The weekly range lows at 675 are still a valid lower high zone."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "hold",
+   "sentence": "Washing out on a big single day selloff with volume into the 610 area would potentially yield a nice starting location to watch for the MoHL (monthly higher low) thesis."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 644.75,
+   "class": "target",
+   "sentence": "Gap close from Friday would be the best location at 644.75."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "mention",
+   "sentence": "Beyond that the weekly lows to retest are 653."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "mention",
+   "sentence": "We'll need to see down 3%+ on higher volume than OpEx and slowdown from sellers near the 610 MoHL level."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AKAM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Hammer with daily relative strength to the broad market. Leading theme adjacent to Agentic AI / cyber / cloud. Looking at this as a daily higher low setup over the 20 SMA."
+  },
+  {
+   "ticker": "MOD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Data center cooling theme. Relative strength to the broad market, but looking a bit double toppy on the daily. Worth keeping an eye on to see if we can build out a higher low over the MA stack."
+  },
+  {
+   "ticker": "VIAV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    2.0,
+    2026.0
+   ],
+   "text": "Another relative strength leader and correct group / theme. Friday high is the high volume close from 02 March 2026. Back through that level can setup a tight R:R spot for potential longs back to and through the local high."
+  }
+ ],
+ "sections": [
+  "Yes... Oil Still Runs The Show",
+  "Meta's 'Big Tobacco Moment'",
+  "AI Is Getting Even More Specific",
+  "Fundamental Forces",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "QQQ",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AKAM \u2013 Daily",
+  "MOD \u2013 Daily",
+  "VIAV \u2013 Daily",
+  "We're social!"
+ ]
+}

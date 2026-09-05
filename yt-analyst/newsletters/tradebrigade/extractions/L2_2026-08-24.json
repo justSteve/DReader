@@ -1,0 +1,23 @@
+{
+ "letter_date": "2026-08-24",
+ "sent_et": "2026-08-23",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "medium", "hedged": true,
+          "quote": "However overall location keeps me from becoming overly bearish.",
+          "note": "Pullback-buyer stance: expects a daily/weekly higher low near 760-754 and would follow a 767.50 reclaim higher."},
+ "calls": [
+  {"id": "spy-reclaim-767.50", "instrument": "SPY", "type": "reclaim", "level": 767.5, "rule": "reclaim_then_higher",
+   "quote": "A reclaim of 767.50 would put SPY back above the flag low and likely target the original flag high", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-fail-764.15", "instrument": "SPY", "type": "break", "level": 764.15, "rule": "break_then_lower",
+   "quote": "Failure at 767.50, followed by a loss of 764.15, would keep the hourly downtrend intact and reopen the gap below as a potential target.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-buyers-760.25", "instrument": "SPY", "type": "hold", "level": 760.25, "rule": "hold_week",
+   "quote": "puts the focus on 760.25, 758.57, and potentially the daily 50 SMA near 754. There, I'll be looking for buyers to respond and set the daily / weekly higher low.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-em-range", "instrument": "SPY", "type": "range", "low": 755.39, "high": 776.49, "rule": "range_hold",
+   "quote": "The expected move spans 755.39 to 776.49", "intent": "watch", "conviction": "unstated"},
+  {"id": "qqq-hold-707", "instrument": "QQQ", "type": "hold", "level": 707.0, "rule": "hold_week",
+   "quote": "they are holding the final meaningful support from the follow through day at 707.", "intent": "watch", "conviction": "high"},
+  {"id": "qqq-reclaim-715.50", "instrument": "QQQ", "type": "reclaim", "level": 715.5, "rule": "reclaim_then_target", "targets": [722.2],
+   "quote": "A move through 715.50 would reclaim the 50 SMA and daily 8 EMA, opening up a move toward 722.20 getting into the gap.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

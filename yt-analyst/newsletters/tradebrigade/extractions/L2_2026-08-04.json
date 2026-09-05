@@ -1,0 +1,25 @@
+{
+ "letter_date": "2026-08-04",
+ "sent_et": "2026-08-03",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "neutral", "conviction": "low", "hedged": true,
+          "quote": "Above 742, I am neutral to bullish and open to an inverted head and shoulders structure developing.",
+          "note": "Sent Monday evening after a violent snapback; 'Less is still more at this stage until we have a confirmed low or a new long standing base.'"},
+ "calls": [
+  {"id": "spy-hold-742", "instrument": "SPY", "type": "hold", "level": 742.0, "rule": "hold_week",
+   "quote": "The critical structural area is 742, where the FOMC anchored VWAP, the prior gap-down anchored VWAP, and the 38.2% Fibonacci retracement are beginning to converge.", "intent": "watch", "conviction": "high"},
+  {"id": "spy-break-742", "instrument": "SPY", "type": "break", "level": 742.0, "rule": "break_then_lower",
+   "quote": "A break back beneath 742, especially if SPY begins pressing the recent lows again, would make the rally look like an overshoot", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-target-749", "instrument": "SPY", "type": "target", "level": 749.0, "rule": "target_reached",
+   "quote": "A sustained move above the left-side peak near 749 would represent another meaningful improvement.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-em-range", "instrument": "SPY", "type": "range", "low": 736.63, "high": 757.43, "rule": "range_hold",
+   "quote": "The expected move for the week runs from 736.63 to 757.43.", "intent": "watch", "conviction": "unstated"},
+  {"id": "smh-below-568", "instrument": "SMH", "type": "resistance", "level": 568.0, "rule": "below_week",
+   "quote": "Still in a downtrend beneath 568, with the recent bounce looking more like a lower-high setup than the start of a sustained recovery.", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-line-676", "instrument": "QQQ", "type": "hold", "level": 676.0, "rule": "hold_week",
+   "quote": "On the downside, 676 is the final short-term line in the sand.", "intent": "watch", "conviction": "high"},
+  {"id": "qqq-resist-703.25", "instrument": "QQQ", "type": "resistance", "level": 703.25, "rule": "below_week",
+   "quote": "the larger resistance zone remains between 699 and 703.25, where the gap fill and declining 20 SMA converge. I would view a rally into that area as a potential lower-high short unless QQQ can reclaim it decisively.", "intent": "offered", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

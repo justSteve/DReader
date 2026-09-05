@@ -1,0 +1,99 @@
+{
+ "letter_date": "2025-12-29",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 12/29/25",
+ "file": "2025-12-29_19b679f01d083518.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.94,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P closed the shortened holiday week up 0.94% at a brand new record high and supporting evidence unchanged from the week prio"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 721.0,
+   "class": "target",
+   "sentence": "A measured move of the range is roughly 721."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 679.75,
+   "class": "mention",
+   "sentence": "Under the 679.75 level things get more difficult."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 689.0,
+   "class": "break",
+   "sentence": "To short the market, would really need a no brainer lower high under 689 to initiate look above and fail."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "CART",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Small ascending triangle with an unfilled earnings gap above to use as a target. Ideally trendline holds to keep this in play."
+  },
+  {
+   "ticker": "DHR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Same as above, ascending triangle after multi month base, now looking to close the old earnings gap above."
+  },
+  {
+   "ticker": "ISRG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 579.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    200.0,
+    579.65,
+    609.3
+   ],
+   "text": "Still in play from last week: Weekly consolidation after an earnings gap to recapture the daily 200 SMA. Over 579.65 things get interesting towards 609.3."
+  },
+  {
+   "ticker": "RUN",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": 20.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    1.0,
+    20.25,
+    22.4
+   ],
+   "text": "Great cup and handle on the weekly chart with a break of the handle flag trend line last week. Looking for moves over the 20.25 to sustain to the top of the handle at 22.4. If 22.4 can breakout, that would lead me to watch for weekly momentum and a new strong uptrend to emerge out of a stage 1 weekly base. Needs a lot of work, but worth watching this solar sector. Use $TAN as an ETF to track the basket."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "CART \u2013 Daily",
+  "DHR \u2013 Daily",
+  "ISRG \u2013 Daily",
+  "RUN \u2013 Daily / Weekly",
+  "We're social!"
+ ]
+}

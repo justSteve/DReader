@@ -1,0 +1,33 @@
+{
+ "letter_date": "2026-08-31",
+ "sent_et": "2026-08-30",
+ "extracted_by": "Claude (interpretive read of the full letter, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "medium", "hedged": true,
+          "quote": "As we'll see, the supporting evidence still leans risk on, however its impossible to ignore the drag of the the Nasdaq.",
+          "note": "Bull case conditional on 767.50 holding; full bearish sequence also spelled out."},
+ "calls": [
+  {"id": "spy-hold-767.50", "instrument": "SPY", "type": "hold", "level": 767.5, "rule": "hold_week",
+   "quote": "The daily trend remains up as long as 767.50 holds.", "intent": "trade", "conviction": "high"},
+  {"id": "spy-must-hold-767.5", "instrument": "SPY", "type": "hold", "level": 767.5, "rule": "no_acceptance_below",
+   "quote": "The bottom of the flag has been reclaimed at 767.5 and is now a must hold level moving forward. If lost, the daily trend threatens flipping to down", "intent": "watch", "conviction": "high"},
+  {"id": "spy-bear-seq-762", "instrument": "SPY", "type": "sequence", "level": 762.0, "rule": "break_then_lower", "targets": [760.0, 754.75],
+   "quote": "The bearish sequence begins with acceptance below 767.50, followed by an hourly lower high and a break of 762.00. That would flip the short-term trend down and open a deeper weekly higher-low test near 760.00 or 754.75.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-em-range", "instrument": "SPY", "type": "range", "low": 761.7, "high": 778.57, "rule": "range_hold",
+   "quote": "The expected move is neutral, with an upper bound of 778.57 and a lower bound of 761.70.", "intent": "watch", "conviction": "unstated"},
+  {"id": "spy-weekly-support-760", "instrument": "SPY", "type": "hold", "level": 760.0, "rule": "hold_week",
+   "quote": "The previous all-time high near 760.00 remains the first major support.", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-line-707", "instrument": "QQQ", "type": "hold", "level": 707.0, "rule": "hold_week",
+   "quote": "707.00 is the important dividing line. Above it, neutral chop remains possible. Below it, the potential lower high and head-and-shoulders structure become much more threatening.", "intent": "watch", "conviction": "high"},
+  {"id": "smh-downside-551", "instrument": "SMH", "type": "target", "level": 551.0, "rule": "target_reached",
+   "quote": "Semiconductors produced the market's most concerning chart, with a lower high, a lower low and a declining 50-day SMA creating downside risk toward 551.00.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": [
+  {"event": "August NFP, released 2026-09-04", "quote": "HOT – 100k+ NFP & high wage growth – Yields up, market down / PERFECT – 25-75k NFP & soft wage growth – Yields flat to down, market flat to up / COLD – Negative NFP & low wage growth – Yields down, market up initially, then fades",
+   "branches": [{"name": "HOT", "condition": "100k+ NFP & high wage growth", "prediction": "yields up, market down"},
+                {"name": "PERFECT", "condition": "25-75k NFP & soft wage growth", "prediction": "yields flat to down, market flat to up"},
+                {"name": "COLD", "condition": "negative NFP & low wage growth", "prediction": "yields down, market up initially then fades"}],
+   "actual": {"branch": "HOT (payrolls); wages in line", "nfp": 162000, "consensus": 53000, "ahe_mom_pct": 0.3, "ahe_yoy_pct": 3.1,
+              "source": "BLS Employment Situation Aug 2026 via CNBC 2026-09-04"},
+   "grade_day": "2026-09-04", "yield_symbol": "^TNX", "market_symbol": "SPY", "predicted_yield": "up", "predicted_market": "down"}
+ ]
+}

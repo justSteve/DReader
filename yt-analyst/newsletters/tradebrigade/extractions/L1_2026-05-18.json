@@ -1,0 +1,188 @@
+{
+ "letter_date": "2026-05-18",
+ "subject": "Inflation Scare vs China Trade Deals",
+ "file": "2026-05-18_19e3af8417ffa1f7.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.37,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P gained an incremental 0.37% last week and printed the first weekly inverted hammer through this entire rall"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 698.0,
+   "class": "hold",
+   "sentence": "If this leads to a pullback, markets can set a weekly higher low anywhere over the 698-700 prior ATH level retest."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 700.0,
+   "class": "hold",
+   "sentence": "If this leads to a pullback, markets can set a weekly higher low anywhere over the 698-700 prior ATH level retest."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "break",
+   "sentence": "Base case would be for a look below and fail on 732.25 that leads to balance and digestion near the ATH."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 712.4,
+   "class": "hold",
+   "sentence": "Beyond that, a higher low around 712.4 would respect a daily area of prior resistance that can now act as support, and also keep price over the pATH pullback at 700."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 700.0,
+   "class": "hold",
+   "sentence": "Beyond that, a higher low around 712.4 would respect a daily area of prior resistance that can now act as support, and also keep price over the pATH pullback at 700."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 700.0,
+   "class": "mention",
+   "sentence": "If markets do pullback all the way to the 700 area, just keep in mind that its roughly 5.5% pullback after 20% rally..."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 725.0,
+   "class": "hold",
+   "sentence": "Ideally the daily chart sets a higher low off of the gap fill reversal at 725 which is the lower bound of the weekly expected move as well as the daily 20 SMA."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 727.75,
+   "class": "hold",
+   "sentence": "From there a reclaim of 727.75 and then last Tuesday's low 732.25 should work the market back higher."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "hold",
+   "sentence": "From there a reclaim of 727.75 and then last Tuesday's low 732.25 should work the market back higher."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "target",
+   "sentence": "If the gap fill reversal then yields a lower high under the 732.25 area, we'll have a daily lower high and then from there look to test 712.4 for the weekly higher low to be set."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 712.4,
+   "class": "target",
+   "sentence": "If the gap fill reversal then yields a lower high under the 732.25 area, we'll have a daily lower high and then from there look to test 712.4 for the weekly higher low to be set."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AAON",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    124.75
+   ],
+   "text": "Post earnings gap holding, great hammer relative strength on Friday. Looking for a move out of the wedge, or over Friday's high to get started. Not interested if price starts to accept under the earnings range low 124.75. Look below and fail is fine. Acceptance inside is not."
+  },
+  {
+   "ticker": "DAR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 65.0,
+   "trigger_kind": "over",
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    20.0,
+    65.0
+   ],
+   "text": "Holding the 20 SMA. If this wants to get in gear, over Friday's high is an early entry to possible breakouts over the 65 flat top base level."
+  },
+  {
+   "ticker": "DOCN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 163.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    163.5
+   ],
+   "text": "Post earnings gap up holding with flat top breakout over the 163.50 area available."
+  },
+  {
+   "ticker": "PWR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 785.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    785.0
+   ],
+   "text": "Post earnings gap up holding with flat to breakout over the 785 area available."
+  },
+  {
+   "ticker": "SEI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 79.7,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    79.7
+   ],
+   "text": "Flat top base breakout available over the 79.70 area after showing relative strength on Friday. If it pulls back ideally holds over the daily 20 SMA (orange)."
+  },
+  {
+   "ticker": "VSH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 29.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    29.75,
+    34.7
+   ],
+   "text": "Looking for higher low consolidation over the gap fill reversal level at 34.7. So long as price can stay above that, seeking continuation out of this sleeper semiconductor name. If you zoom out to a weekly, this is starting a multi year consolidation range breakout over 29.75."
+  }
+ ],
+ "sections": [
+  "The AI Squeeze Halted by Inflation... Kinda",
+  "China Gives The Bulls Weekend Hope",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AAON \u2013 Daily Chart",
+  "DAR \u2013 Daily Chart",
+  "DOCN \u2013 Daily Chart",
+  "PWR \u2013 Daily Chart",
+  "SEI \u2013 Daily Chart",
+  "VSH \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

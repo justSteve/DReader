@@ -1,0 +1,119 @@
+{
+ "letter_date": "2025-09-01",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 09/01/25",
+ "file": "2025-09-01_1990293361f8d324.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The market set a new all time high last week, but promptly rejected it on Friday, closing back below the J-Hole high.\n\nThe week still closed up 0.16% from Monday's open.\n\nTariffs Ruled ILLEGAL\n\nRight after markets closed on the Friday session, it was announced that the Trump Tariffs were ruled uncon"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "mention",
+   "sentence": "Ideally it would be over the 610 area, but technically price could even overshoot that."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "hold",
+   "sentence": "The monthly and weekly higher low could potentially be the same at 610."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 638.15,
+   "class": "hold",
+   "sentence": "The line in the sand for the daily higher low would be 638.15."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 634.0,
+   "class": "hold",
+   "sentence": "Under 634 the trend flips to down and we start hunting weekly higher lows."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 645.25,
+   "class": "hold",
+   "sentence": "Recovery and holds over 645.25 seek simple trend continuation to new highs."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ABBV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    217.0
+   ],
+   "text": "Bull flag with high and tight consolidation as markets fall into rotation. Looking for a break of the highs to get into the pivot high at 217. Not interested if the daily 20 SMA (orange) breaks."
+  },
+  {
+   "ticker": "DNA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    16.75
+   ],
+   "text": "Pennant forming that could also be seen as the handle of a rounded bottom on the higher timeframe weekly. Looking for a trendline break to get this started and ultimately clearance of some of the last lower highs to navigate towards 16.75."
+  },
+  {
+   "ticker": "ELF",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 123.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    123.5,
+    143.15,
+    172.0,
+    181.8
+   ],
+   "text": "Fractal versions of the inverted head and shoulders starting to trigger. Weekly has neckline resistance around 143.15. Daily broke out over 123.5 into the end of the week. Ideally a hold there keeps the short term pattern working in favor of the higher timeframe pattern. Unfilled gap above as target closer to 172-181.8."
+  },
+  {
+   "ticker": "SRE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 83.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    80.5,
+    83.25,
+    86.75
+   ],
+   "text": "Tight bull flag consolidation over the last few weeks with gap to close overhead as a target. Over 83.25 seeks the closure at 86.75. Not interested if the range cant sustain consolidation over 80.5."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "QQQ \u2013 Daily",
+  "XLF \u2013 Daily",
+  "Market Internals",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ABBV \u2013 Daily",
+  "DNA \u2013 Daily",
+  "ELF \u2013 Daily",
+  "SRE \u2013 Daily",
+  "We're social!"
+ ]
+}

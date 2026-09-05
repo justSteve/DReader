@@ -1,0 +1,199 @@
+{
+ "letter_date": "2026-06-15",
+ "subject": "PEACE DEAL & FOMC \u2013\u00a0/ES Higher & /CL Lower",
+ "file": "2026-06-15_19ec8a080b832cd4.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The S&P has finally achieved a peak to trough decline of 5% which typically happens about 3 times on any given year.\nIn doing so, the market has set a lower low which changes the daily trend count to down. The biggest argument the bears have from here is to call for a lower high to keep the trend do"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 732.0,
+   "class": "mention",
+   "sentence": "Long legged hammer printed off of 732 area."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 732.0,
+   "class": "break",
+   "sentence": "Although on the bar to bar we see a lower high and a lower low, note the close back inside of the prior bar range and above the 732 level."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 710.0,
+   "class": "mention",
+   "sentence": "If you're a stronger seller, you're ideally looking for a break and close below that support to achieve a test of at least 710 and then set lower highs on the counter trend."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 748.75,
+   "class": "break",
+   "sentence": "Bears should be shouting from the rooftop that this is going to set a head and shoulders via lower high at the 20 SMA or 748.75 level, and thus the market is going to crash and burn."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "break",
+   "sentence": "If the market spends more time below 732.25 early in the week, this thesis will need to be revisited, and perhaps the weekly chart does need the full pullback towards 710."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 710.0,
+   "class": "break",
+   "sentence": "If the market spends more time below 732.25 early in the week, this thesis will need to be revisited, and perhaps the weekly chart does need the full pullback towards 710."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 738.15,
+   "class": "break",
+   "sentence": "The hourly trend has already reversed via the break to a higher high over the double bottom neckline on Friday at 738.15."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 732.25,
+   "class": "mention",
+   "sentence": "A pullback below that level can still yield a higher low over the 732.25 weekly inflection point we've been discussing."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 725.0,
+   "class": "break",
+   "sentence": "Breaks below 725 seem like lower probability scenarios, but price would be losing the April 8th anchored VWAP in tandem if it did happen."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ADEA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 33.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    33.6
+   ],
+   "text": "Inverted head and shoulders over the short term MA stack for a higher low right shoulder. Looking for breaks over 33.6 to move into new highs and break from this weekly bull flag."
+  },
+  {
+   "ticker": "AMKR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Weekly bull flag breakout. Looking for higher lows over the top of the range to keep this in play and offer secondary entries."
+  },
+  {
+   "ticker": "KEYS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    358.0
+   ],
+   "text": "Weekly bull flag and great reclaim of the MA stack headed into Friday. Break of the trendline, or a reclaim of horizontal resistance at 358.00 to get back in gear for higher looks great."
+  },
+  {
+   "ticker": "MCHP",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 99.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    99.75,
+    100.0
+   ],
+   "text": "Similar setup to KEYS above, weekly bull flag, holding the daily 50 SMA and looking for higher on a reclaim of 99.75 / 100 psych number."
+  },
+  {
+   "ticker": "OSCR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 25.6,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    25.6,
+    29.35
+   ],
+   "text": "First micro flag out of the larger base break (look at a weekly). Ideally pullbacks over 25.6 or breaks of the 29.35 area get this going for more legs higher."
+  },
+  {
+   "ticker": "OUST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Coming out of a base and holding over a left side peak. Looking for this to set a better \"setup bar\" and then find some entry tactic to get involved over the 20 SMA (orange.)"
+  },
+  {
+   "ticker": "SMTC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 172.35,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    172.35
+   ],
+   "text": "Another weekly bull flag setup happening after a massive run. Looking for a higher low to hold over the 20 SMA on any gentle pullbacks, or breaks through 172.35 to trigger higher."
+  },
+  {
+   "ticker": "VSH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    3.0,
+    5.0
+   ],
+   "text": "What a beautiful high tight flag on the daily... usually these need 3-5 weeks tight, but this along with PENG (from last weeks email) look unstoppable... very much in focus for entries."
+  }
+ ],
+ "sections": [
+  "Let The Oil Flow!",
+  "Warsh Takes The Helm",
+  "Come on Oracle...",
+  "SpaceX IPO \u2013 Not Bad!",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile \u2013 /ES",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ADEA \u2013 Daily Chart",
+  "AMKR \u2013 Daily Chart",
+  "KEYS \u2013 Daily Chart",
+  "MCHP \u2013 Daily Chart",
+  "OSCR \u2013 Daily Chart",
+  "OUST \u2013 Daily Chart",
+  "SMTC \u2013 Daily Chart",
+  "VSH \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

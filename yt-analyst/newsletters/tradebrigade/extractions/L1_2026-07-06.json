@@ -1,0 +1,157 @@
+{
+ "letter_date": "2026-07-06",
+ "subject": "Jobs Cool, Chips Crack",
+ "file": "2026-07-06_19f34bac5bd130ad.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 1.12,
+  "basis": "monday_open_to_friday_close",
+  "quote": "S&P closed up 1.12% from Monday's open, marking substantial structural progress, finishing the week"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 700.0,
+   "class": "hold",
+   "sentence": "A pullback can still be a higher low, with the ideal retest area near the prior all-time high around 700."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 850.0,
+   "class": "break",
+   "sentence": "If the market breaks out instead, the next reasonable extension target from the monthly bull flag work is around 850, not necessarily immediately, but as a logical slowdown zone if continuation develops."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 739.65,
+   "class": "break",
+   "sentence": "Sellers had several chances early on to take control by losing the 50 SMA, or building a lower high under 739.65 failing the gap, or even close the gap all the way to 743.5 and then offer gap fill reversal."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 743.5,
+   "class": "break",
+   "sentence": "Sellers had several chances early on to take control by losing the 50 SMA, or building a lower high under 739.65 failing the gap, or even close the gap all the way to 743.5 and then offer gap fill reversal."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 739.65,
+   "class": "mention",
+   "sentence": "This is the 739.65 level."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "FAF",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 71.4,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    71.4
+   ],
+   "text": "Flat base breakout available over the 71.4 level. Great inside bar from the Thursday session curling over the moving average stack."
+  },
+  {
+   "ticker": "FTNT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    6.0,
+    25.0
+   ],
+   "text": "Miss the first breakout day on 6/25? Well, you've got another inside bar setup after breaking the flag and setting a higher low."
+  },
+  {
+   "ticker": "GEV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Not sure if this is totally ready yet, but watching for higher lows to keep this in play and build out more right hand side of the base."
+  },
+  {
+   "ticker": "HXL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    101.5
+   ],
+   "text": "Tight bars starting to form under the breakout level at 101.5. Nice series of higher lows and over the entirety of the moving average stack."
+  },
+  {
+   "ticker": "LTH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    41.8
+   ],
+   "text": "Strong move higher over the last two months. Nice flag forming with inside bar. Can cheat the setup and get involved over Thursday's high rather than waiting for this to get wide and loose through the breakout point at 41.8."
+  },
+  {
+   "ticker": "MRK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 124.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    124.0,
+    130.0
+   ],
+   "text": "First flag setting up over the top of the flat base. Ideally has one tight day under 130 and then goes, but watching for this over the highs, and to stay in play higher lows over the 124 area."
+  },
+  {
+   "ticker": "VIRT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Clean uptrend with higher lows in place and a tight inside day Thursday. Looking for a breakout over the inside day high to push over the range high and into blue sky territory."
+  }
+ ],
+ "sections": [
+  "Rotation Rotation Rotation",
+  "Jobs Cool, But The Fed Hasn't Blinked...",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile \u2013 /ES",
+  "QQQ \u2013 Impact on S&P",
+  "QQQ is the weaker index product, with the AI and tech side of the market is under more pressure than the S&P.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "FAF \u2013 Daily Chart",
+  "FTNT \u2013 Daily Chart",
+  "GEV \u2013 Daily Chart",
+  "HXL \u2013 Daily Chart",
+  "LTH \u2013 Daily Chart",
+  "MRK \u2013 Daily Chart",
+  "VIRT \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

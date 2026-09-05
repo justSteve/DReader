@@ -1,0 +1,91 @@
+{
+ "letter_date": "2025-08-11",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 08/11/25",
+ "file": "2025-08-11_198966ddafb072b4.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets have taken back nearly all of the decline from the labor report sell off two weeks ago. The week closed up 1.85% and just 0.35% from the all time high.\nThe rally starts to invalidate the bearish engulfing bar that the prior week printed and was seemingly driven by two major tariff factors: s"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 No daily lower high rejection under 634.5 to threaten a major trend change. Bulls have a shot at keeping a daily higher low in play so long as price remains over 627 as a line in the sand. Upside target at the overnight all time high at 641.6 then blue sky.",
+   "instrument": "SPY",
+   "level": 634.5,
+   "class": "break",
+   "sentence": "S&P daily chart \u2013 No daily lower high rejection under 634.5 to threaten a major trend change."
+  },
+  {
+   "section": "S&P daily chart \u2013 No daily lower high rejection under 634.5 to threaten a major trend change. Bulls have a shot at keeping a daily higher low in play so long as price remains over 627 as a line in the sand. Upside target at the overnight all time high at 641.6 then blue sky.",
+   "instrument": "SPY",
+   "level": 627.0,
+   "class": "hold",
+   "sentence": "Bulls have a shot at keeping a daily higher low in play so long as price remains over 627 as a line in the sand."
+  },
+  {
+   "section": "S&P daily chart \u2013 No daily lower high rejection under 634.5 to threaten a major trend change. Bulls have a shot at keeping a daily higher low in play so long as price remains over 627 as a line in the sand. Upside target at the overnight all time high at 641.6 then blue sky.",
+   "instrument": "SPY",
+   "level": 641.6,
+   "class": "target",
+   "sentence": "Upside target at the overnight all time high at 641.6 then blue sky."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Trend has recovered to up off of the Friday low from the labor report gap down. Higher lows available just like the daily with some more nuanced levels in force. Daily trend change happens on a lower high and sustained downtrend under 627.",
+   "instrument": "SPY",
+   "level": 627.0,
+   "class": "break",
+   "sentence": "Daily trend change happens on a lower high and sustained downtrend under 627."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ARWR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    16.6,
+    19.05
+   ],
+   "text": "Clean pressure cooker top with a shot at thin structure retracement up towards the swing high at 19.05. Not interested if 16.60 never breaks."
+  },
+  {
+   "ticker": "RUN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    11.35
+   ],
+   "text": "Great inside bar with hammer wick supporting over the break out level on Friday. Looking for a move to the swing high and then the unfilled gap above. Not interested on breakdowns back under 11.35."
+  },
+  {
+   "ticker": "SGI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    75.4
+   ],
+   "text": "Pressure cooker top breakout level at 75.40 with blue sky territory above. Remains in play as long as Thursday's low holds."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 The bearish engulfer from last week saw no follow through, and all of this consolidation is happening over the prior all time high which is confluence with the fib 38.2 and the anchored VWAP from the gap up.",
+  "S&P daily chart \u2013 No daily lower high rejection under 634.5 to threaten a major trend change. Bulls have a shot at keeping a daily higher low in play so long as price remains over 627 as a line in the sand. Upside target at the overnight all time high at 641.6 then blue sky.",
+  "S&P hourly chart \u2013 Trend has recovered to up off of the Friday low from the labor report gap down. Higher lows available just like the daily with some more nuanced levels in force. Daily trend change happens on a lower high and sustained downtrend under 627.",
+  "Market internals \u2013 One of the largest issues I have with this advance back to the high is that the exchange level data is NOT supporting a broad based move. Internals were FLAT as markets marched on.",
+  "Market profile \u2013 The beginning of the week marked a fairly wide balance range with value unchanged. On Friday, there was a mild development to the upside, and now the question remains, will value sustain over 6370s for bulls to build more strength? Note the poor high Friday.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ARWR \u2013 Daily",
+  "RUN \u2013 Daily",
+  "SGI \u2013 Daily",
+  "We're social!"
+ ]
+}

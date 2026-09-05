@@ -1,0 +1,198 @@
+{
+ "letter_date": "2026-08-04",
+ "subject": "The Fed Didn't Hike... Markets Did",
+ "file": "2026-08-04_19fca1323d18aa74.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.3,
+  "basis": "monday_open_to_friday_close",
+  "quote": "S&P closed up 0.3% from Monday's open to Friday's close"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 700.0,
+   "class": "mention",
+   "sentence": "A retest of the previous all-time high near 700 would be the first major area where I would expect buyers to respond."
+  },
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 850.0,
+   "class": "target",
+   "sentence": "The longer-term upside measured move remains near 850 based on some fib extensions if price eventually resolves into blue sky territory."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 736.63,
+   "class": "mention",
+   "sentence": "The expected move for the week runs from 736.63 to 757.43."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 757.43,
+   "class": "mention",
+   "sentence": "The expected move for the week runs from 736.63 to 757.43."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 742.0,
+   "class": "break",
+   "sentence": "Friday\u2019s hammer indicates sellers failed to establish the lower high I expected beneath 742 and the moving average stack."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 742.0,
+   "class": "mention",
+   "sentence": "The critical structural area is 742, where the FOMC anchored VWAP, the prior gap-down anchored VWAP, and the 38.2% Fibonacci retracement are beginning to converge."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 742.0,
+   "class": "mention",
+   "sentence": "Above 742, I am neutral to bullish and open to an inverted head and shoulders structure developing."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 749.0,
+   "class": "mention",
+   "sentence": "A sustained move above the left-side peak near 749 would represent another meaningful improvement."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 742.0,
+   "class": "break",
+   "sentence": "A break back beneath 742, especially if SPY begins pressing the recent lows again, would make the rally look like an overshoot and increase the resemblance to the violent countertrend rallies seen during bear market transitions."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "HPE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "One of the best setups in the market right now... this will remain in the newsletter until it either works, or is completely invalidated."
+  },
+  {
+   "ticker": "NAVN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    50.0
+   ],
+   "text": "Building a flat base with some tight bars to end last week. Relative strength to the market holding up over the 20 SMA and 50 SMA."
+  },
+  {
+   "ticker": "NTNX",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Holding up incredibly well compared to the broad market. Inverted head and shoulders / cup and handle on the weekly. Starting to form the first flag over the breakout level. Watching that tight inside ish hammer from Friday to see if we cant get higher here."
+  },
+  {
+   "ticker": "NUE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    50.0
+   ],
+   "text": "Steel is strong... literally. Over the two hammer highs and do we see continuation? These are generally harder to get followthrough from in classic patterns and often require deeper than expected pullbacks. Just look left to the prior rally... that flag had to overshoot the 20 and 50 SMA before finding a floor... respect stops if you dare dabble here."
+  },
+  {
+   "ticker": "OSCR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "We meet again my friend. Tight action in the flag with healthcare remaining strong through the semiconductor meltdown. Let's see if it cant get traction over these highs."
+  },
+  {
+   "ticker": "PFG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Similar to NAVN building a flat top base but in an entirely different sector. We'll see if these breakouts are successful and add them to a list of market feedback. Tight action over the 20 SMA looks good."
+  },
+  {
+   "ticker": "RCL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Very symmetrical move over the last month. Lets see if this base can break higher from these inside bars seeing that we have Iran de-escalation over the weekend which should allow crude to ease."
+  },
+  {
+   "ticker": "TENB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 50.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0
+   ],
+   "text": "Oops! Didn't mean to gap down like that on earnings... sorry. Lets see if buyers can step back in after holding over the 50 on Friday."
+  }
+ ],
+ "sections": [
+  "The Fed Held... But Markets Tightened",
+  "Picking Winners and Losers",
+  "Friday's Big Test",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY also reclaimed the 10-week moving average, the all-time high anchored VWAP, and the lower edge of the high volume node. It remains above a rising 20-week moving average and above the 38.2% Fibonacci retracement. Until sellers prove otherwise, the weekly structure still looks more like a bull flag than a completed trend reversal.",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile \u2013 /ES",
+  "SMH \u2013 Semiconductor EFT",
+  "QQQ \u2013 Impact on S&P",
+  "QQQ remains materially weaker than SPY. The July monthly candle was a large red-bodied bar with a lower high and lower low, while the weekly chart remains in a downtrend beneath a declining 10-week moving average. The weekly expected move spans 669.51 to 706.47, but a move toward the upper boundary would still run directly into overhead resistance.",
+  "QQQ closed slightly above 686.50, but the larger resistance zone remains between 699 and 703.25, where the gap fill and declining 20 SMA converge. I would view a rally into that area as a potential lower-high short unless QQQ can reclaim it decisively. On the downside, 676 is the final short-term line in the sand. Losing that level would trap buyers from Thursday\u2019s rebound and increase pressure across semiconductors, memory, and other high beta AI trades.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "HPE \u2013 Daily Chart",
+  "NAVN \u2013 Daily Chart",
+  "NTNX \u2013 Daily / Weekly Chart",
+  "NUE \u2013 Daily Chart",
+  "OSCR \u2013 Daily Chart",
+  "PFG \u2013 Daily Chart",
+  "RCL \u2013 Daily Chart",
+  "TENB \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

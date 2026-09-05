@@ -1,0 +1,167 @@
+{
+ "letter_date": "2026-03-09",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 03/09/26",
+ "file": "2026-03-09_19ccfe6dea88c756.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 0.95,
+  "basis": "monday_open_to_friday_close",
+  "quote": "Price is down 0.95% from Monday's open, and we finally have the long awaited break"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "hold",
+   "sentence": "The broken support near 675 to 676 becomes resistance."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 676.0,
+   "class": "hold",
+   "sentence": "The broken support near 675 to 676 becomes resistance."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "target",
+   "sentence": "The next structural target is the equal lows at 653."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 676.0,
+   "class": "mention",
+   "sentence": "A look-below-and-fail that reclaims 676 with conviction returns the read to neutral, but at face value this is a weekly trend reversal."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 664.25,
+   "class": "target",
+   "sentence": "664.25 is the first downside target, followed by a date with the daily 200 SMA, which has not been tested since the April tariff tantrum."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 676.25,
+   "class": "break",
+   "sentence": "Any acceptance back above 676.25 flips the stance to neutral immediately."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 680.25,
+   "class": "break",
+   "sentence": "From there we'd consider look below and fail triggered on acceptance over 680.25."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 676.25,
+   "class": "mention",
+   "sentence": "Two separate Fibonacci sequences on this chart converge on 676.25 and 680.25 as the gatekeepers to keep the bear case in play."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 680.25,
+   "class": "mention",
+   "sentence": "Two separate Fibonacci sequences on this chart converge on 676.25 and 680.25 as the gatekeepers to keep the bear case in play."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 676.25,
+   "class": "target",
+   "sentence": "Friday's close sits beneath the entire anchored VWAP stack, and those VWAPs are set to converge near 676.25 as the week opens, meaning early rallies run directly into overhead supply."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 680.25,
+   "class": "break",
+   "sentence": "The setup is a lower high print near 680.25, rejection back below 676.25, then continuation toward the equal lows and eventually 664.25."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 676.25,
+   "class": "break",
+   "sentence": "The setup is a lower high print near 680.25, rejection back below 676.25, then continuation toward the equal lows and eventually 664.25."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 664.25,
+   "class": "break",
+   "sentence": "The setup is a lower high print near 680.25, rejection back below 676.25, then continuation toward the equal lows and eventually 664.25."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 680.25,
+   "class": "break",
+   "sentence": "Any acceptance above 680.25 pivots the near-term path toward mean reversion into the moving average stack."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ATO",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 180.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    180.0
+   ],
+   "text": "Utilities are at least on the defensive side of the ledger. First flag forming up and out of the prior range high. Pullbacks remain valid over 180. ATH above."
+  },
+  {
+   "ticker": "HCA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    525.0
+   ],
+   "text": "REIT in the healthcare space. So still technically defensive. Cup with handle forming over 20 SMA. ATH above this structure. Not interested if price starts spending more time under 20 SMA / range low at 525.00."
+  },
+  {
+   "ticker": "XEL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Back to utilities. Same idea as ATO."
+  }
+ ],
+ "sections": [
+  "A Record Breaking Oil Move \u2013 $90/BBL",
+  "AI Still Works, But Has A $500B Problem",
+  "The Fed's Nightmare",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ATO \u2013 Daily",
+  "HCA \u2013 Daily",
+  "XEL \u2013 Daily",
+  "We're social!"
+ ]
+}

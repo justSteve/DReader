@@ -1,0 +1,189 @@
+{
+ "letter_date": "2026-06-29",
+ "subject": "The AI Bill Comes Due\u00a0\u2013\u00a0The Market Catch 22",
+ "file": "2026-06-29_19f10ae32b7c2333.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 2.38,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P closed down 2.38% from the prior weekly close after suffering a gap down on Tuesday and being una"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 712.4,
+   "class": "hold",
+   "sentence": "Price is still above the fib 38.2, the 712.4 higher low and the line in the sand at 700 (pATH retest)."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 700.0,
+   "class": "hold",
+   "sentence": "Price is still above the fib 38.2, the 712.4 higher low and the line in the sand at 700 (pATH retest)."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 743.5,
+   "class": "mention",
+   "sentence": "The three most important levels as it relates to trend this week are going to be 743.5, 732, 725."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 732.0,
+   "class": "mention",
+   "sentence": "The three most important levels as it relates to trend this week are going to be 743.5, 732, 725."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 725.0,
+   "class": "mention",
+   "sentence": "The three most important levels as it relates to trend this week are going to be 743.5, 732, 725."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 743.5,
+   "class": "break",
+   "sentence": "If price closes the overhead gap, accepts higher and offers a Brigade Bolt\u2122 over 743.5, I will change my tone from being cautiously bearish to neutral, heck even bullish after sellers fail to materialize on the downside pressure."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 743.5,
+   "class": "break",
+   "sentence": "A lower high set under 743.5 on the gap fill reversal should then repressure the prior weekly low at 732."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 732.0,
+   "class": "break",
+   "sentence": "A lower high set under 743.5 on the gap fill reversal should then repressure the prior weekly low at 732."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 725.0,
+   "class": "break",
+   "sentence": "If that breaks, look for the full rotation into the swing low at 725."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 725.0,
+   "class": "break",
+   "sentence": "Below 725 and the bears should really run away with it into 712.4."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 712.4,
+   "class": "break",
+   "sentence": "Below 725 and the bears should really run away with it into 712.4."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 725.0,
+   "class": "break",
+   "sentence": "The only situation that saves the market at 725 is a look below and fail that would set us up for a more neutral summer chop."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 743.5,
+   "class": "break",
+   "sentence": "Lots of references that make the 743.5 area a reasonable spot for shorts to attack the daily lower high."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ALAB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    20.0
+   ],
+   "text": "Retesting the breakout point and the daily 20 SMA. Look below and fail under Friday's low or break over Friday's high could be the entry to get back towards highs and or higher."
+  },
+  {
+   "ticker": "AMKR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    20.0
+   ],
+   "text": "Retesting the breakout point and the daily 20 SMA. Same as ALAB, a look below and fail under Friday's low or break over Friday's high could be the entry to get back towards highs and or higher."
+  },
+  {
+   "ticker": "ATI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    180.0
+   ],
+   "text": "Second flag forming after a break of the larger base and first flag near 180. Needs to hold the daily 20 SMA if its going to remain in play for a perfect flag. Remember that the first flag is strongest, and the legs get harder to catch the further into the trend we get."
+  },
+  {
+   "ticker": "CGNX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    50.0,
+    68.8
+   ],
+   "text": "Trying to build out a new base as the market gets sloppy. Liking the higher low over the 20 SMA. Looking for it to tighten up against the 68.80 level or offer a look below and fail on the 50 SMA to try and get involved."
+  },
+  {
+   "ticker": "OUST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 36.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    36.5,
+    50.0
+   ],
+   "text": "Like CGNX, trying to form a new base after breaking out over the 36.50 level on the weekly chart. Another shakeout at the breakout level or even look below and fail on the 50 SMA could be actionable. If neither of those happen, looking for it to tighten up higher in range before trying over the 50 round number."
+  }
+ ],
+ "sections": [
+  "No Easy Out For The Fed",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile \u2013 /ES",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ALAB \u2013 Daily Chart",
+  "AMKR \u2013 Daily Chart",
+  "ATI \u2013 Daily Chart",
+  "CGNX \u2013 Daily Chart",
+  "OUST \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

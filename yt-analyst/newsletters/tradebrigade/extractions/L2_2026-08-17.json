@@ -1,0 +1,21 @@
+{
+ "letter_date": "2026-08-17",
+ "sent_et": "2026-08-16",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "medium", "hedged": true,
+          "quote": "My base case is a brief look below the recent lows 774.85, followed by a reclaim, consolidation, and another attempt higher.",
+          "note": "Skeptical tone in the opener ('lackluster breakout attempt') but the stated path favors the uptrend; rates named as the threat."},
+ "calls": [
+  {"id": "spy-base-case-774.85", "instrument": "SPY", "type": "sequence", "level": 774.85, "rule": "look_below_and_reclaim",
+   "quote": "My base case is a brief look below the recent lows 774.85, followed by a reclaim, consolidation, and another attempt higher.", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-alarm-769.50", "instrument": "SPY", "type": "break", "level": 769.5, "rule": "break_then_lower", "targets": [760.0],
+   "quote": "The more concerning path would be a lower high followed by a decisive failure of 769.50, which would shift the focus toward a larger weekly pullback and the 760 area.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-em-range", "instrument": "SPY", "type": "range", "low": 767.94, "high": 784.74, "rule": "range_hold",
+   "quote": "This week's expected move runs from 767.94 to 784.74", "intent": "watch", "conviction": "unstated"},
+  {"id": "qqq-hold-727", "instrument": "QQQ", "type": "hold", "level": 727.0, "rule": "hold_week",
+   "quote": "Sustained higher lows above 727 followed by a break of 735.25 would give the S&P a stronger tailwind.", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-break-735.25", "instrument": "QQQ", "type": "target", "level": 735.25, "rule": "target_reached",
+   "quote": "Sustained higher lows above 727 followed by a break of 735.25 would give the S&P a stronger tailwind.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

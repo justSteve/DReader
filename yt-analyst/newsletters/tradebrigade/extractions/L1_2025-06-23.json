@@ -1,0 +1,193 @@
+{
+ "letter_date": "2025-06-23",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 06/23/25",
+ "file": "2025-06-23_1979a165c620790b.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Last week\u2019s shortened holiday action in the S&P failed to bring much movement to the market with the week closing down about 1%.\n\nWe\u2019re still only about 3.07% from the all time high and about 23.33% off of the April low.\n\nWith more developments over the weekend on the Middle East conflict, I would t"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15. Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577. Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high.",
+   "instrument": "SPY",
+   "level": 595.15,
+   "class": "break",
+   "sentence": "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15."
+  },
+  {
+   "section": "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15. Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577. Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high.",
+   "instrument": "SPY",
+   "level": 588.0,
+   "class": "target",
+   "sentence": "Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577."
+  },
+  {
+   "section": "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15. Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577. Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high.",
+   "instrument": "SPY",
+   "level": 585.0,
+   "class": "target",
+   "sentence": "Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577."
+  },
+  {
+   "section": "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15. Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577. Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high.",
+   "instrument": "SPY",
+   "level": 581.5,
+   "class": "target",
+   "sentence": "Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577."
+  },
+  {
+   "section": "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15. Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577. Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high.",
+   "instrument": "SPY",
+   "level": 577.0,
+   "class": "target",
+   "sentence": "Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577."
+  },
+  {
+   "section": "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15. Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577. Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high.",
+   "instrument": "SPY",
+   "level": 599.25,
+   "class": "hold",
+   "sentence": "Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high."
+  },
+  {
+   "section": "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15. Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577. Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high.",
+   "instrument": "SPY",
+   "level": 604.75,
+   "class": "hold",
+   "sentence": "Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high."
+  },
+  {
+   "section": "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15. Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577. Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high.",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "hold",
+   "sentence": "Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high."
+  },
+  {
+   "section": "S&P hourly chart \u2013 To achieve the breakdown and full weekly pullback sellers need to keep the bear flag look below 595.15. Brigade Bolt\u2122 under Friday low should get the continuation move. Thats path 1. If sellers fail to accept below Friday low, expect path 2. Path 3 reasonable on 588 holds but then establishing a lower high below Friday low.",
+   "instrument": "SPY",
+   "level": 595.15,
+   "class": "break",
+   "sentence": "S&P hourly chart \u2013 To achieve the breakdown and full weekly pullback sellers need to keep the bear flag look below 595.15."
+  },
+  {
+   "section": "S&P hourly chart \u2013 To achieve the breakdown and full weekly pullback sellers need to keep the bear flag look below 595.15. Brigade Bolt\u2122 under Friday low should get the continuation move. Thats path 1. If sellers fail to accept below Friday low, expect path 2. Path 3 reasonable on 588 holds but then establishing a lower high below Friday low.",
+   "instrument": "SPY",
+   "level": 588.0,
+   "class": "mention",
+   "sentence": "Path 3 reasonable on 588 holds but then establishing a lower high below Friday low."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ADSK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    291.25,
+    301.0,
+    311.4,
+    324.5
+   ],
+   "text": "Cup and handle esque chart with tight balance range in place. Over the top at 301 and looking for the prior resistance levels to come into play as targets. 311.4 and then 324.5 zones. If the 291.25 breaks, look for the moving average cluster to act as last ditch support effort."
+  },
+  {
+   "ticker": "ARMK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    40.5,
+    42.25
+   ],
+   "text": "Daily bull flag in force with breakout level at 40.50. If it gets follow through, looking for the 42.25 level and then monitoring for continuation higher. Not interested on a trend line break as the thin structure below on the earnings bar poses a breakdown threat."
+  },
+  {
+   "ticker": "COHR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 83.54,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    83.54,
+    88.15,
+    108.0
+   ],
+   "text": "Clean consolidation now using prior resistance as new support. Looking for a breakout to continue this trend reversal over the 83.54 area. Small hangup around 88.15 but then gets some clearance up towards the 108 mark. Not interested on a break of consolidation lows."
+  },
+  {
+   "ticker": "MO",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    61.0,
+    65.8
+   ],
+   "text": "Triangle pattern in an uptrend. If you look left on the weekly, theres a huge area of thin structure to retrace up towards the 65.80 area. A break of the trend line, or a move over the horizontal 61 level starts to get this moving in the right direction."
+  },
+  {
+   "ticker": "OLLI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 122.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    122.0
+   ],
+   "text": "All time high breakout over the 122 level. Already starting to get out of this congestion zone. Looking for acceptance above and higher lows to persist above. Great relative strength to the broader market."
+  },
+  {
+   "ticker": "SMTC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 42.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    42.65,
+    50.7
+   ],
+   "text": "Massive daily inverted head and shoulders with an unfilled gap above. Looking for breaks of 42.65 to get into the 50.70 gap fill level. Mind that the trend is attempting a reversal here, and we're not participating in a well defined uptrend persay."
+  },
+  {
+   "ticker": "U",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    23.0,
+    28.0
+   ],
+   "text": "Gentle pullback to the breakout level on consistently decreasing volume. If 23 can start to entice buyers, we might look for a higher low on the daily to navigate back up to the local highs around 28."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Another bearish inverted hammer, but the location is key. Close below prior weeks low, and back in the three week range. Look above and fail triggered. Bulls can still get a higher low on the China gap close!",
+  "S&P daily chart \u2013 Bears have the short term edge if they can keep price below 595.15. Targets will start to be the low end of the weekly range around 588, 585, 581.5 and 577. Over 599.25 and bulls have a daily higher low in play, seeking the 604.75 equal highs, then 613 all time high.",
+  "S&P hourly chart \u2013 To achieve the breakdown and full weekly pullback sellers need to keep the bear flag look below 595.15. Brigade Bolt\u2122 under Friday low should get the continuation move. Thats path 1. If sellers fail to accept below Friday low, expect path 2. Path 3 reasonable on 588 holds but then establishing a lower high below Friday low.",
+  "Market internals \u2013 Really not a strong display of strength on Friday with the move lower. At the exchange level, things were much more neutral than outright bearish. Could be OpEx related, and subject to change Monday morning with developing headlines.",
+  "Market profile \u2013 Markets saw value shift lower on Friday, but we have a completed downside auction from 'I' period and many incomplete upside references. Doesn't guarantee an upside move, but things to carry forward. Friday appears much more liquidation break vs trend day.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ADSK \u2013 Daily",
+  "ARMK \u2013 Daily",
+  "COHR \u2013 Daily",
+  "MO \u2013 Daily",
+  "OLLI \u2013 Daily",
+  "SMTC \u2013 Daily",
+  "U \u2013 Daily",
+  "We're social!"
+ ]
+}

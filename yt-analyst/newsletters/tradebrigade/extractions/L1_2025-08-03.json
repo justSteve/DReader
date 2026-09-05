@@ -1,0 +1,153 @@
+{
+ "letter_date": "2025-08-03",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 08/04/25",
+ "file": "2025-08-03_1987261b740397f8.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Markets pulled back aggressively to end the week, falling about 3.2% from the all time high gap up on Thursday's open.\nIt was definitely a change in character from the prior selling pressure, where sellers could not build meaningful momentum and markets remained more balanced.\n\nHowever, its not all "
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Bearish engulfer has printed, which is a change in tone from what we've been dealing with over the last few weeks. Generally I would still opt to seek higher lows in the weekly trend count, noting we are pulling back from the highest high. 613 and 604.75 are key.",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "mention",
+   "sentence": "613 and 604.75 are key."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Bearish engulfer has printed, which is a change in tone from what we've been dealing with over the last few weeks. Generally I would still opt to seek higher lows in the weekly trend count, noting we are pulling back from the highest high. 613 and 604.75 are key.",
+   "instrument": "SPY",
+   "level": 604.75,
+   "class": "mention",
+   "sentence": "613 and 604.75 are key."
+  },
+  {
+   "section": "S&P daily chart \u2013 Most of the gaps to all time highs have faded lower. Buyers seem to be running out of steam. Most notably on the gap down on Friday, buyers did not hold the balance range high at 626.65. This now yields an equal low and threatens a daily trend change.",
+   "instrument": "SPY",
+   "level": 626.65,
+   "class": "hold",
+   "sentence": "Most notably on the gap down on Friday, buyers did not hold the balance range high at 626.65."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Simplified pathing looks something like this. Pullbacks to 613 should be buying opportunities. The gap close overhead can offer a pullback that then gives a higher low over 626.65. Over 624.65 and bulls are on parade. If things deteriorate further, gap target below.",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "mention",
+   "sentence": "Pullbacks to 613 should be buying opportunities."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Simplified pathing looks something like this. Pullbacks to 613 should be buying opportunities. The gap close overhead can offer a pullback that then gives a higher low over 626.65. Over 624.65 and bulls are on parade. If things deteriorate further, gap target below.",
+   "instrument": "SPY",
+   "level": 626.65,
+   "class": "hold",
+   "sentence": "The gap close overhead can offer a pullback that then gives a higher low over 626.65."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Simplified pathing looks something like this. Pullbacks to 613 should be buying opportunities. The gap close overhead can offer a pullback that then gives a higher low over 626.65. Over 624.65 and bulls are on parade. If things deteriorate further, gap target below.",
+   "instrument": "SPY",
+   "level": 624.65,
+   "class": "mention",
+   "sentence": "Over 624.65 and bulls are on parade."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "APD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Simple trend channel with hammer on Friday right off of the support trend line. Target top of channel if the bounce starts to work. Tight stop under channel low."
+  },
+  {
+   "ticker": "CHRW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 115.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    3.0,
+    115.0,
+    1211.23
+   ],
+   "text": "Massive post earnings gap hold with bullish 3 bar play setting up. Looking for a move over 115 to get to the all time high around 1211.23 area. Stop could hypothetically be below Friday low."
+  },
+  {
+   "ticker": "CNM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [],
+   "text": "Another simple trend channel in play with hammer off of the prior all time high as well. Looking for a move back to channel high on a break over Friday's high. Tight stop just below channel low."
+  },
+  {
+   "ticker": "EBAY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Interesting relative strength post earnings. This is a blue sky breakout and inside bar on Friday. Over the two equal-ish highs, monitoring for continuation. Not interested if there never is a break higher."
+  },
+  {
+   "ticker": "GPC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": "over_prior_friday_high",
+   "prices": [
+    142.35
+   ],
+   "text": "Base breakout with pullback to retest the top of the range. Friday is technically in the range, so would need to see a break back over Friday high and the range high for an attempted move up toward the gap fill level at 142.35. Not in play if it doesn't take out Friday high."
+  },
+  {
+   "ticker": "MCD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Golden arches are setting up an inverted head and shoulders looking for a move back to the top of the prior range. Liking the hammer relative strength on the Friday session."
+  },
+  {
+   "ticker": "TECH",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    54.35,
+    70.33,
+    278.0
+   ],
+   "text": "Similar to the GPC setup, but note that earnings is still ahead of us this week. Base breakout, and coming in for the retest. Looking to see if price can hold the 54.35 area ahead of earnings and then possibly set up something new to target up towards the 70.33 level.\n\nVMC \u2013 WEEKLY\nMassive inverted head and shoulders. Left in January, head in March/April, right in June. Over the neckline around the 278 area should get it to the all time high and then beyond. Not interested if it never breaks the neckline."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Solid green bodied bar with definitive higher low and higher high, close completely outside and above prior range. Highest high in the trend count with room to pull back and offer a higher low.",
+  "S&P weekly chart \u2013 Bearish engulfer has printed, which is a change in tone from what we've been dealing with over the last few weeks. Generally I would still opt to seek higher lows in the weekly trend count, noting we are pulling back from the highest high. 613 and 604.75 are key.",
+  "S&P daily chart \u2013 Most of the gaps to all time highs have faded lower. Buyers seem to be running out of steam. Most notably on the gap down on Friday, buyers did not hold the balance range high at 626.65. This now yields an equal low and threatens a daily trend change.",
+  "S&P hourly chart \u2013 Simplified pathing looks something like this. Pullbacks to 613 should be buying opportunities. The gap close overhead can offer a pullback that then gives a higher low over 626.65. Over 624.65 and bulls are on parade. If things deteriorate further, gap target below.",
+  "Market internals \u2013 really weren't all that bearish. I'm not arguing that they were bullish, but given the magnitude of the Thursday and Friday sell, sellers seem a bit tame at the exchange level.",
+  "Market profile \u2013 shift in value and PoC lower on the Friday session. The overnight all time high is still in need of repair as well. Bears have the first edge, but when and if a new uptrend develops across hourly then resumption of daily, overnight ATH is a target.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "APD \u2013 Daily",
+  "CHRW \u2013 Daily",
+  "CNM \u2013 Daily",
+  "EBAY \u2013 Daily",
+  "GPC \u2013 Daily",
+  "MCD \u2013 Daily",
+  "TECH \u2013 Daily",
+  "We're social!"
+ ]
+}

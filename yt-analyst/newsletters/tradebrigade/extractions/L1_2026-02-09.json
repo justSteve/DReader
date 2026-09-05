@@ -1,0 +1,211 @@
+{
+ "letter_date": "2026-02-09",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 02/09/26",
+ "file": "2026-02-09_19c3fe9e583026ca.txt",
+ "self_score": {
+  "found": false,
+  "opener": "It's almost not even worth tracking % movement in this broadening range with a lack of trend...\n\nIf you must know, the SPY was up a whopping 0.15% from Monday open to Friday close.\nThe good news is just that the market held the Thursday low over the bearish engulfer highs from 10/10/2025 and 11/20/2"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "mention",
+   "sentence": "Sellers had plenty of reference points to start a bigger move: prior week low, the 686 equal low, and the breakout pivot."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "mention",
+   "sentence": "The weekly line in the sand for a true trend reversal is 675."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 702.66,
+   "class": "mention",
+   "sentence": "This week\u2019s expected move upper bound is 702.66, which would imply a daily higher high."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 678.58,
+   "class": "mention",
+   "sentence": "The lower bound is 678.58."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "hold",
+   "sentence": "That\u2019s still a slightly higher low versus last week, but it is beneath the short term \u201ccomfort zone\u201d of 686."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "mention",
+   "sentence": "Friday's close then complicates this with a recapture of the 686 and daily 50 SMA."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 690.75,
+   "class": "break",
+   "sentence": "There is the threat of a daily lower high under the 20 SMA near 690.75 as a rejection level to watch."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 681.5,
+   "class": "mention",
+   "sentence": "The hourly trend flipped back to up quickly after a double bottom neckline break and hold early Friday morning over 681.5 and reclaim of 686."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "mention",
+   "sentence": "The hourly trend flipped back to up quickly after a double bottom neckline break and hold early Friday morning over 681.5 and reclaim of 686."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "hold",
+   "sentence": "If we hold above 686, the base case is an hourly higher low and continued rotation."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "mention",
+   "sentence": "686 is also confluence with the daily 50 SMA."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "If Monday closes below 686 and Tuesday opens below it, expect a retest of the broader range lows."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Still in play with daily bull flag. Trend line break and daily 20 recapture looks great for a move to flag highs and monitoring for the breakout."
+  },
+  {
+   "ticker": "AAON",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    106.5
+   ],
+   "text": "Cup and handle forming over the key moving averages. Looking for a move to the 106.5 area on a potential breakout."
+  },
+  {
+   "ticker": "EAT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    200.0
+   ],
+   "text": "Long term inverted head and shoulders. Over the neckline has room to the prior pivot high. Ideally price stays over the daily 200 on any consolidation / pullbacks."
+  },
+  {
+   "ticker": "ENTG",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Weekly bull flag, first out of a long standing almost year long base. Mind earnings this week, but doesn't look half bad over the daily balance. Gap and go daily to get the weekly flag in the first place."
+  },
+  {
+   "ticker": "LOW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Low cheat setup under the ATH after a nice hold of the daily 20 SMA. With the head lines swirling for homebuilding ramp up, this along with HD, BLDR could be interesting watches. LOW strikes me as the strongest of the bunch."
+  },
+  {
+   "ticker": "RCL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Gap and hold on earnings. Breaking the downtrend line from compression. Looking to see the ATH if we clear the earnings high."
+  },
+  {
+   "ticker": "SCHW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 105.3,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    105.3
+   ],
+   "text": "Ascending triangle at all time highs. Over 105.3 should get going into blue sky. Under the trend line and I would lose interest in the setup."
+  },
+  {
+   "ticker": "SLB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    55.4
+   ],
+   "text": "Hot sector right now, with a clean hold over the daily 20 SMA. Looking for a push to prior inflection around 55.4. Needs to hold the 20 and the key trend line."
+  }
+ ],
+ "sections": [
+  "Delayed labor data to be released at 8:30am EST Wednesday",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "QQQ \u2013 Daily",
+  "SPY\u2019s bear thesis is hard to express without acknowledging Nasdaq weakness. If QQQ is under 613, SPY strength is more likely mean reversion than breakout.",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AA \u2013 Daily",
+  "AAON \u2013 Daily",
+  "EAT \u2013 Daily",
+  "ENTG \u2013 Daily / Weekly",
+  "LOW \u2013 Daily",
+  "RCL \u2013 Daily",
+  "SCHW \u2013 Daily",
+  "SLB \u2013 Daily",
+  "We're social!"
+ ]
+}

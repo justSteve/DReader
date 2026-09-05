@@ -1,0 +1,169 @@
+{
+ "letter_date": "2026-07-13",
+ "subject": "Iran Strikes Are Back & CPI Is Up Next...",
+ "file": "2026-07-13_19f58c7359de89a5.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 0.83,
+  "basis": "monday_open_to_friday_close",
+  "quote": "S&P closed up 0.83% from Monday's open, but most importantly, closed on a new higher high in the da"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 850.0,
+   "class": "target",
+   "sentence": "The bull flag\u2019s measured move points toward 850, although that is a longer-term reference rather than a target for the next five sessions."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 745.83,
+   "class": "mention",
+   "sentence": "The weekly expected move runs from 745.83 to 764.07."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 764.07,
+   "class": "mention",
+   "sentence": "The weekly expected move runs from 745.83 to 764.07."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 739.65,
+   "class": "mention",
+   "sentence": "Sellers would need to push through the major neckline at 739.65 before the daily structure materially deteriorates."
+  },
+  {
+   "section": "SPY has printed a new highest high in the hourly trend. Friday\u2019s liquidation break created an hourly higher low, with the lower wick testing former resistance that had begun acting as support.",
+   "instrument": "SPY",
+   "level": 749.0,
+   "class": "hold",
+   "sentence": "As long as SPY remains above the 749 area, I favor continuation."
+  },
+  {
+   "section": "SPY has printed a new highest high in the hourly trend. Friday\u2019s liquidation break created an hourly higher low, with the lower wick testing former resistance that had begun acting as support.",
+   "instrument": "SPY",
+   "level": 745.83,
+   "class": "hold",
+   "sentence": "The more important support zone sits near 745.83."
+  },
+  {
+   "section": "SPY has printed a new highest high in the hourly trend. Friday\u2019s liquidation break created an hourly higher low, with the lower wick testing former resistance that had begun acting as support.",
+   "instrument": "SPY",
+   "level": 739.65,
+   "class": "break",
+   "sentence": "I would become much more defensive only after a major lower high and a breakdown through 739.65."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AMBA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 79.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    79.25
+   ],
+   "text": "Tight two days over the MA stack. Over the 79.25 can see continuation towards the local highs. Tight risk spot here."
+  },
+  {
+   "ticker": "ANET",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Becoming a leader breaking to a new high out of this base before the market does. Tight inside day over the range high. Worth a tight risk try if markets are going to improve here."
+  },
+  {
+   "ticker": "BAND",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    3.0
+   ],
+   "text": "Might be premature after making a move to the range high without any new consolidation, but liking the relative strength and the bullish 3 bar play forming on the daily."
+  },
+  {
+   "ticker": "BE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    230.0
+   ],
+   "text": "Classic power name. 230 look below and fail intraday on Friday and now looking for continuation towards the top of the range by breaking Friday hammer high."
+  },
+  {
+   "ticker": "GEV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Continuing to stay on the watch list from last weeks newsletter. over the balance high here can get going."
+  },
+  {
+   "ticker": "LASR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0
+   ],
+   "text": "Bull three bar play back over the 50 SMA. Most notably picking up on the large volume up day from Thursday and getting this on the radar before it makes a new high."
+  },
+  {
+   "ticker": "NAVN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 26.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    26.0
+   ],
+   "text": "Tight three days in a solid uptrend. Looking for a break over 26 for continuation out of this."
+  }
+ ],
+ "sections": [
+  "War Is For Weekends (Again)",
+  "Tuesday Has Two Catalysts",
+  "Good Is No Longer Good Enough",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "SPY has printed a new highest high in the hourly trend. Friday\u2019s liquidation break created an hourly higher low, with the lower wick testing former resistance that had begun acting as support.",
+  "Market Internals \u2013 NYSE",
+  "Market Profile \u2013 /ES",
+  "QQQ \u2013 Impact on S&P",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AMBA \u2013 Daily Chart",
+  "ANET \u2013 Daily Chart",
+  "BAND \u2013 Daily Chart",
+  "BE \u2013 Daily Chart",
+  "GEV \u2013 Daily Chart",
+  "LASR \u2013 Daily Chart",
+  "NAVN \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

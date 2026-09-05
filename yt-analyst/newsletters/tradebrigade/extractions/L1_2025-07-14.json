@@ -1,0 +1,93 @@
+{
+ "letter_date": "2025-07-14",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 07/14/25",
+ "file": "2025-07-14_198063bb1268e83f.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The S&P didn't do much last week, just balancing to consolidate the most recent leg higher from the ceasefire gap. Technically the week closed up a whooping 0.04%.\n\nMarkets typically move from balance to excess to balance to excess etc... so this shouldn't strike us as a surprise.\n\nIf a pullback is "
+ },
+ "spy_levels": [
+  {
+   "section": "S&P weekly chart \u2013 Nothing new. Consolidation doji, higher high, higher low. Deeper pullbacks for higher lows at any of the references below. Preference would be for a hold over 604.75. China gap, still technically in play.",
+   "instrument": "SPY",
+   "level": 604.75,
+   "class": "hold",
+   "sentence": "Preference would be for a hold over 604.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 Subtle look above and fail at the double top. No tone change if we remain over 618.5; just balance. Pullbacks to 613 make for an ideal daily higher low over the prior all time high. Wouldn't want to be short there.",
+   "instrument": "SPY",
+   "level": 618.5,
+   "class": "mention",
+   "sentence": "No tone change if we remain over 618.5; just balance."
+  },
+  {
+   "section": "S&P daily chart \u2013 Subtle look above and fail at the double top. No tone change if we remain over 618.5; just balance. Pullbacks to 613 make for an ideal daily higher low over the prior all time high. Wouldn't want to be short there.",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "hold",
+   "sentence": "Pullbacks to 613 make for an ideal daily higher low over the prior all time high."
+  },
+  {
+   "section": "S&P daily chart \u2013 Subtle look above and fail at the double top. No tone change if we remain over 618.5; just balance. Pullbacks to 613 make for an ideal daily higher low over the prior all time high. Wouldn't want to be short there.",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "hold",
+   "sentence": "Under 613, thin structure gets a bit more shortable to the weekly higher low area around 604.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 Subtle look above and fail at the double top. No tone change if we remain over 618.5; just balance. Pullbacks to 613 make for an ideal daily higher low over the prior all time high. Wouldn't want to be short there.",
+   "instrument": "SPY",
+   "level": 604.75,
+   "class": "hold",
+   "sentence": "Under 613, thin structure gets a bit more shortable to the weekly higher low area around 604.75."
+  },
+  {
+   "section": "S&P daily chart \u2013 Notice the daily 20 SMA is going to provide GREAT confluence right at the 613 area.",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "mention",
+   "sentence": "S&P daily chart \u2013 Notice the daily 20 SMA is going to provide GREAT confluence right at the 613 area."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "SJM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 105.85,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    105.85,
+    110.3
+   ],
+   "text": "Cup and handle-esque retracing nearly 100% of the earnings sell off. With an unfilled gap to close overhead, looking for breaks of the handle (or just call it a daily bull flag) to get over 105.85 and trend up towards the gap close at 110.3.\n\nNot interested if price doesn't accelerate into the gap."
+  },
+  {
+   "ticker": "WELL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 157.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    157.25
+   ],
+   "text": "Ascending triangle with really well defined breakout point. Over 157.25 should get this moving into blue sky territory. Ideally the trend line remains in tact for longs to continue as a watch. Great relative strength on Friday."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Nothing new. Consolidation doji, higher high, higher low. Deeper pullbacks for higher lows at any of the references below. Preference would be for a hold over 604.75. China gap, still technically in play.",
+  "S&P daily chart \u2013 Subtle look above and fail at the double top. No tone change if we remain over 618.5; just balance. Pullbacks to 613 make for an ideal daily higher low over the prior all time high. Wouldn't want to be short there.",
+  "S&P daily chart \u2013 Notice the daily 20 SMA is going to provide GREAT confluence right at the 613 area.",
+  "S&P hourly chart \u2013 Upside should take care of itself. Possible to call for head and shoulders with the Thursday high making a failed breakout. Under the neckline, offers the beginning of a pullback. I'm not fond of shorting the pullback paths for anything more than a scalp.",
+  "Market internals \u2013 To be expected mild reads as the market remains in a balance range. Nothing to see here.",
+  "Market profile \u2013 Value area has a clear shift lower on Friday starting to confirm the look above and fail that we noted on the daily / hourly. Not outright bearish, but bulls are getting a little tired apparently near the highs.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "SJM \u2013 Daily",
+  "WELL \u2013 Daily",
+  "We're social!"
+ ]
+}

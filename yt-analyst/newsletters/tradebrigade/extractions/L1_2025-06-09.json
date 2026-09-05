@@ -1,0 +1,136 @@
+{
+ "letter_date": "2025-06-09",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 06/09/25",
+ "file": "2025-06-09_19751fcf6ea76d54.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Last week markets broke out of the weekly balance that followed the China deal-to-make-a-deal gap and go.\n\nWe remain:\n* Up 24.33% from the \u201ctariff lows\u201d\n* Down just 2.26% from all-time highs\n\nBut before we jump to conclusions, there\u2019s a subtle bearish divergence developing in breadth and market lead"
+ },
+ "spy_levels": [
+  {
+   "section": "S&P daily chart \u2013 The main focus will be if the market can stay above the balance range highs at 959.15. Considering the trend is up, this would align with the base case.",
+   "instrument": "SPY",
+   "level": 959.15,
+   "class": "mention",
+   "sentence": "S&P daily chart \u2013 The main focus will be if the market can stay above the balance range highs at 959.15."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Ideally the market makes a thrust higher to confidently get a break over the daily level around 599.25, from there higher low pullbacks become attractive.",
+   "instrument": "SPY",
+   "level": 599.25,
+   "class": "mention",
+   "sentence": "S&P hourly chart \u2013 Ideally the market makes a thrust higher to confidently get a break over the daily level around 599.25, from there higher low pullbacks become attractive."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Ideally the market makes a thrust higher to confidently get a break over the daily level around 599.25, from there higher low pullbacks become attractive.",
+   "instrument": "SPY",
+   "level": 595.15,
+   "class": "hold",
+   "sentence": "If the market pulls back first due to the divergences, looking for holds of 595.15 as a first case."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Ideally the market makes a thrust higher to confidently get a break over the daily level around 599.25, from there higher low pullbacks become attractive.",
+   "instrument": "SPY",
+   "level": 595.15,
+   "class": "mention",
+   "sentence": "A deeper pullback below 595.15 can still set a daily higher low in the range by flipping the hourly trend down, the risk just then becomes a daily lower high that then fails at 595.15 on the move back higher."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AHR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 35.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    35.65,
+    39.5,
+    43.1
+   ],
+   "text": "Bull flag forming right into blue sky territory. Over 35.65 and we'll look for a measured move towards 39.5 and then 43.1. Not interested if we drop the flag low... note the thin structure."
+  },
+  {
+   "ticker": "ARQT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    15.6,
+    17.6
+   ],
+   "text": "Simple trendline break on elevated volume to end the week. Looking for a move to the 15.6 pivot and then the apex of the triangle around 17.6 if it really gets in gear. This is a biotech name, so manage expectations (and thus size)... any trial failure etc... news headline will crush the name."
+  },
+  {
+   "ticker": "BTSG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 24.35,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    24.35
+   ],
+   "text": "Could be viewed as a weekly cup and handle, or a daily bull flag or a daily ascending triangle. Looking for a break over 24.35 for a move into blue sky territory. Not all that interested if the break never happens, or turns into a fake break with a close back below 24.35 after an attempt to go higher."
+  },
+  {
+   "ticker": "CLS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    136.0,
+    143.75
+   ],
+   "text": "Solid compression with small bodied bars to end the week. Over the gap up high and the prior swing highs are in play between 136 and 143.75. Less interested on a trendline breakdown, but will likely keep on a watchlist."
+  },
+  {
+   "ticker": "SMR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 35.85,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    29.55,
+    35.85
+   ],
+   "text": "Simple bull flag after pulling back to Brigade Bolt\u2122 off of the prior high at 29.55. Over 35.85 unlocks blue sky territory."
+  },
+  {
+   "ticker": "UPST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    200.0
+   ],
+   "text": "Massive months long inverted head and shoulders in the making. Looking for a move over the neckline and daily 200 SMA (green) to start working through the thin structure retracement. Ideally new pullbacks go no deeper than the daily 50 SMA (blue)."
+  }
+ ],
+ "sections": [
+  "S&P weekly chart \u2013 Markets technically broke out of a three week balance range. Simple measured moves of a range double bring us to the all time high. Nothing bearish to speak of on higher timeframes.",
+  "S&P daily chart \u2013 The main focus will be if the market can stay above the balance range highs at 959.15. Considering the trend is up, this would align with the base case.",
+  "S&P daily chart \u2013 Note if we overlay something like the RSP, the equal weight S&P index, there is becoming a bearish divergence. This signal isn't a big sign to short the market, but perhaps be a little bit more cautious at the highest highs of the trend count.",
+  "S&P hourly chart \u2013 Ideally the market makes a thrust higher to confidently get a break over the daily level around 599.25, from there higher low pullbacks become attractive.",
+  "Market internals \u2013 On the days where the market made new highs, internals support buyers being in control at the exchange level. You could even take it one step further and read into Thursday's TSLA tantrum.",
+  "Market profile \u2013 Value shifts higher with price. Thursday sweeps the Tuesday low and leaves a solid L period excess low completing the auction properly. If price were to break down more substantially below 5950, we would have overhead supply that can sell into rallies looking for break evens.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AHR \u2013 Daily",
+  "ARQT \u2013 Daily",
+  "BTSG \u2013 Daily",
+  "CLS \u2013 Daily",
+  "SMR \u2013 Daily",
+  "UPST \u2013 Daily",
+  "We're social!"
+ ]
+}

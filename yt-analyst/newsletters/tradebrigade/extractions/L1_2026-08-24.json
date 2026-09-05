@@ -1,0 +1,202 @@
+{
+ "letter_date": "2026-08-24",
+ "subject": "The Price Of Money Problem",
+ "file": "2026-08-24_1a03128fde86674f.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 1.35,
+  "basis": "monday_open_to_friday_close",
+  "quote": "S&P closed down 1.35% from Monday's open to Friday's close"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 760.0,
+   "class": "hold",
+   "sentence": "SPY pulled directly into the previous all-time high near 760, which also aligns with the 38.2% retracement, while the weekly 10 SMA, prior all-time high anchored VWAP, and additional volume support sit closer to 754."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 754.0,
+   "class": "hold",
+   "sentence": "SPY pulled directly into the previous all-time high near 760, which also aligns with the 38.2% retracement, while the weekly 10 SMA, prior all-time high anchored VWAP, and additional volume support sit closer to 754."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 800.0,
+   "class": "hold",
+   "sentence": "A higher low in this area would preserve the weekly uptrend and keep roughly 800 in play over the coming weeks."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 755.39,
+   "class": "hold",
+   "sentence": "The expected move spans 755.39 to 776.49, which leaves room for SPY to test deeper support without invalidating the weekly setup."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 776.49,
+   "class": "hold",
+   "sentence": "The expected move spans 755.39 to 776.49, which leaves room for SPY to test deeper support without invalidating the weekly setup."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 767.5,
+   "class": "target",
+   "sentence": "A reclaim of 767.50 would put SPY back above the flag low and likely target the original flag high, but a look above and fail of Friday's high that then breaks the Friday low puts the focus on 760.25, 758.57, and potentially the daily 50 SMA near 754."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 760.25,
+   "class": "target",
+   "sentence": "A reclaim of 767.50 would put SPY back above the flag low and likely target the original flag high, but a look above and fail of Friday's high that then breaks the Friday low puts the focus on 760.25, 758.57, and potentially the daily 50 SMA near 754."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 758.57,
+   "class": "target",
+   "sentence": "A reclaim of 767.50 would put SPY back above the flag low and likely target the original flag high, but a look above and fail of Friday's high that then breaks the Friday low puts the focus on 760.25, 758.57, and potentially the daily 50 SMA near 754."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 754.0,
+   "class": "target",
+   "sentence": "A reclaim of 767.50 would put SPY back above the flag low and likely target the original flag high, but a look above and fail of Friday's high that then breaks the Friday low puts the focus on 760.25, 758.57, and potentially the daily 50 SMA near 754."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 767.5,
+   "class": "hold",
+   "sentence": "A move through 767.50 would complete the hourly higher high, resemble a small inverted head and shoulders breakout, and formally confirm the daily higher low."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 767.5,
+   "class": "break",
+   "sentence": "Failure at 767.50, followed by a loss of 764.15, would keep the hourly downtrend intact and reopen the gap below as a potential target."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 764.15,
+   "class": "break",
+   "sentence": "Failure at 767.50, followed by a loss of 764.15, would keep the hourly downtrend intact and reopen the gap below as a potential target."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 767.5,
+   "class": "break",
+   "sentence": "On the rebound back towards 767.5 there will be a threat for a daily lower high, but we'll deal with that when and if it happens."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AXON",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Ascending triangle over the 20 SMA with great look below and fail on Friday."
+  },
+  {
+   "ticker": "CNK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Classic bull flag at the highs. Same setup as last week."
+  },
+  {
+   "ticker": "ECL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Nice compression of volatility building out the right hand side of the range. Over all key moving average."
+  },
+  {
+   "ticker": "FAST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Great flag, but slow mover... right over the prior left side peak."
+  },
+  {
+   "ticker": "FIVN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Perfect looking flag after an ignition bar post earnings."
+  },
+  {
+   "ticker": "MDB",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Higher low pullback and hammer over the prior left side peak. Great linear move recently, but has been a headache in the past."
+  },
+  {
+   "ticker": "QMCO",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Huge move up, gentle pullback over the left side peak, hammering out. Worth watching due to the huge volume, but mind the liquidity constraints."
+  }
+ ],
+ "sections": [
+  "The Price Of Money Problem...",
+  "The AI Trades New Balance Sheet",
+  "Curing Cancer: A True Episodic Pivot",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile \u2013 /ES",
+  "QQQ \u2013 Impact on S&P",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AXON \u2013 Daily Chart",
+  "CNK \u2013 Daily Chart",
+  "ECL \u2013 Daily",
+  "FAST \u2013 Daily Chart",
+  "FIVN \u2013 Daily Chart",
+  "MDB \u2013 Daily Chart",
+  "QMCO \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

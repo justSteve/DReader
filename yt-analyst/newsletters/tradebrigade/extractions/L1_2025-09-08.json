@@ -1,0 +1,95 @@
+{
+ "letter_date": "2025-09-08",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 09/08/25",
+ "file": "2025-09-08_19926a0f2abb2b2f.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 1.5,
+  "basis": "from_all_time_high",
+  "quote": "S&P closed up 1.5% from Tuesday's open, but back under the prior all time high level at 649"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 613.0,
+   "class": "mention",
+   "sentence": "HL available over 613."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 642.2,
+   "class": "mention",
+   "sentence": "Ideally that is over 642.2."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 649.25,
+   "class": "mention",
+   "sentence": "Recaptures of 649.25 lead to more new highs."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 634.0,
+   "class": "break",
+   "sentence": "Daily trend reverses to down if 634 breaks."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ABBV",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    217.0
+   ],
+   "text": "Bull flag with high and tight consolidation as markets fall into rotation. Looking for a break of the highs to get into the pivot high at 217. Not interested if the daily 20 SMA (orange) breaks."
+  },
+  {
+   "ticker": "BLDR",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 144.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    1.0,
+    144.75
+   ],
+   "text": "Large rounded bottom with a day 1 breakout on Friday. Looking for followthrough with the prospect of rate cuts remaining on the radar post weak labor report. Pullbacks that sustain over 144.75 area look decent for longs should we see buyers step up."
+  },
+  {
+   "ticker": "BYD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 87.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    87.65
+   ],
+   "text": "Ascending triangle at the all time high. Watching for moves over 87.65 for continuation into blue skies. Interested as long as the trend line continues to hold."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ABBV \u2013 Daily",
+  "BLDR \u2013 Daily",
+  "BYD \u2013 Daily",
+  "We're social!"
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "letter_date": "2025-06-02",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 06/02/25",
+ "file": "2025-06-02_1972df0ff40df13d.txt",
+ "self_score": {
+  "found": false,
+  "opener": "Last week, the market... went nowhere. Literally.\n\nWe remain:\n* Up 22.31% from the \u201ctariff lows\u201d\n* Down just 3.88% from all-time highs\n\nThe key takeaway? This is healthy consolidation after a monstrous rally off the lows.\n\nThe burden of proof remains on the sellers, and nothing currently suggests a "
+ },
+ "spy_levels": [
+  {
+   "section": "S&P monthly chart \u2013 Monthly \u2013 IF* this is a double top, understand that the neckline is technically down at 480...",
+   "instrument": "SPY",
+   "level": 480.0,
+   "class": "mention",
+   "sentence": "S&P monthly chart \u2013 Monthly \u2013 IF* this is a double top, understand that the neckline is technically down at 480..."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Inside bar, hammer-esque, uptrend in tact. Consolidation after a 23% rally from the April lows is more than reasonable. Range double higher is a simple ATH test. Breaks to the downside seek a higher low over 570 gap fill or 550 line in the sand from the 3/10 bar low.",
+   "instrument": "SPY",
+   "level": 570.0,
+   "class": "target",
+   "sentence": "Breaks to the downside seek a higher low over 570 gap fill or 550 line in the sand from the 3/10 bar low."
+  },
+  {
+   "section": "S&P weekly chart \u2013 Inside bar, hammer-esque, uptrend in tact. Consolidation after a 23% rally from the April lows is more than reasonable. Range double higher is a simple ATH test. Breaks to the downside seek a higher low over 570 gap fill or 550 line in the sand from the 3/10 bar low.",
+   "instrument": "SPY",
+   "level": 550.0,
+   "class": "target",
+   "sentence": "Breaks to the downside seek a higher low over 570 gap fill or 550 line in the sand from the 3/10 bar low."
+  },
+  {
+   "section": "S&P daily chart \u2013 Similar to the monthly, IF* this is going to be a double top, the neckline needs to break. Should that happen, fine. We'll trade the China gap close to the downside and seek a weekly higher low.",
+   "instrument": "SPY",
+   "level": 577.0,
+   "class": "mention",
+   "sentence": "Anything remaining above 577 keeps balance in place."
+  },
+  {
+   "section": "S&P daily chart \u2013 Similar to the monthly, IF* this is going to be a double top, the neckline needs to break. Should that happen, fine. We'll trade the China gap close to the downside and seek a weekly higher low.",
+   "instrument": "SPY",
+   "level": 599.25,
+   "class": "mention",
+   "sentence": "Clearance of 599.25 opens the door to the all time highs."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing ideas favor buying pullbacks in an uptrend. Open to trading shorts, but will have to be very selective and only on bearish market context. IF stronger sellers were here they should have fought for a lower high sub 588.25 on Thursday AND Friday...",
+   "instrument": "SPY",
+   "level": 588.25,
+   "class": "break",
+   "sentence": "IF stronger sellers were here they should have fought for a lower high sub 588.25 on Thursday AND Friday..."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing ideas favor buying pullbacks in an uptrend. Open to trading shorts, but will have to be very selective and only on bearish market context. IF stronger sellers were here they should have fought for a lower high sub 588.25 on Thursday AND Friday...",
+   "instrument": "SPY",
+   "level": 595.15,
+   "class": "break",
+   "sentence": "Not unreasonable if you really want to \"avoid the chop\" and wait for setups over 595.15 or under 577 with acceptance to break the range."
+  },
+  {
+   "section": "S&P hourly chart \u2013 Pathing ideas favor buying pullbacks in an uptrend. Open to trading shorts, but will have to be very selective and only on bearish market context. IF stronger sellers were here they should have fought for a lower high sub 588.25 on Thursday AND Friday...",
+   "instrument": "SPY",
+   "level": 577.0,
+   "class": "break",
+   "sentence": "Not unreasonable if you really want to \"avoid the chop\" and wait for setups over 595.15 or under 577 with acceptance to break the range."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ACM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 110.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    104.75,
+    110.0,
+    116.0,
+    118.0
+   ],
+   "text": "Bull flag forming over the 100% retracement. Any followthrough over the 110/116 level should bring it to highs at 118. In play as long as the 104.75 level holds."
+  },
+  {
+   "ticker": "BK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    88.0
+   ],
+   "text": "Another bull flag, but a great looking hammer on Friday at the flag low. Over the flag high is new all time highs. Under 88, not interested."
+  },
+  {
+   "ticker": "DAY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    60.25,
+    68.25
+   ],
+   "text": "Ascending triangle with higher lows coming into the pressure cooker top level at 60.25. Over that level thin structure off to the left to retrace up to the 68.25. Not interested if the trend line and daily 50 SMA (blue) fails."
+  },
+  {
+   "ticker": "JBL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    162.0
+   ],
+   "text": "Another ascending triangle, but over the pivot high unlocks new highs, not a fight to change the trend. Interested as long as the 162 level holds. Ideally trend line."
+  },
+  {
+   "ticker": "RDW",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 13.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    13.0
+   ],
+   "text": "Any retest higher lows over the 13 level get interesting for followthrough out of this base."
+  },
+  {
+   "ticker": "ROL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Ascending triangle with breakout level to new all time highs. Great looking bar on Friday."
+  },
+  {
+   "ticker": "TOST",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 42.25,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    42.25,
+    45.55,
+    49.75
+   ],
+   "text": "Revisiting this setup for a possible secondary enty. Earnings went well, now getting a possible Brigade Bolt\u2122 higher low over the 42.25 level. If it can hold retesting local highs at 45.55 is the first target, then looking to 49.75 for the second. Mind the gap below."
+  },
+  {
+   "ticker": "ZM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Another Brigade Bolt\u2122 setup over a prior breakout level. Holds into the end of last week look great for a move back to the local high and then major high. Moving average support may start to play catch up soon as well."
+  }
+ ],
+ "sections": [
+  "S&P monthly chart \u2013 Monthly \u2013 IF* this is a double top, understand that the neckline is technically down at 480...",
+  "S&P weekly chart \u2013 Inside bar, hammer-esque, uptrend in tact. Consolidation after a 23% rally from the April lows is more than reasonable. Range double higher is a simple ATH test. Breaks to the downside seek a higher low over 570 gap fill or 550 line in the sand from the 3/10 bar low.",
+  "S&P daily chart \u2013 Similar to the monthly, IF* this is going to be a double top, the neckline needs to break. Should that happen, fine. We'll trade the China gap close to the downside and seek a weekly higher low.",
+  "S&P hourly chart \u2013 Pathing ideas favor buying pullbacks in an uptrend. Open to trading shorts, but will have to be very selective and only on bearish market context. IF stronger sellers were here they should have fought for a lower high sub 588.25 on Thursday AND Friday...",
+  "QQQ hourly chart \u2013 Before you call me overly bullish... let's acknowledge the fact that both sides of the trade have been failing to break the balance on the Nasdaq. Stronger buyers should have fought for a higher low over 522.5 on Thursday's gap up! Didn't happen. Keeps us a bit more neutral.",
+  "Market internals \u2013 The market hardly went anywhere last week... Thus, lets ask and answer: Was there a major bearish divergence as markets balanced?",
+  "Market profile \u2013 Value completely unchanged on the week. Only thing to read into is that Friday's breakdown did not entice stronger sellers who had a motive to move value lower. PoC near HoD on Friday...",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ACM \u2013 Daily",
+  "BK \u2013 Daily",
+  "DAY \u2013 Daily",
+  "JBL \u2013 Daily",
+  "RDW \u2013 Daily",
+  "ROL \u2013 Daily",
+  "TOST \u2013 Daily",
+  "ZM \u2013 Daily",
+  "We're social!"
+ ]
+}

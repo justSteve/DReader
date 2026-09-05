@@ -10,3 +10,7 @@ files.zip
 
 # generated on demand for sibling zgents, not committed
 findings-export*.json
+# YouTube login cookies for members-only downloads — never commit
+cookies*.txt
+newsletters/tradebrigade/letters/
+newsletters/tradebrigade/data/

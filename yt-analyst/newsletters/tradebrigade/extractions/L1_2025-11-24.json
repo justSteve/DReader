@@ -1,0 +1,116 @@
+{
+ "letter_date": "2025-11-24",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 11/24/25",
+ "file": "2025-11-24_19ab3602d584d674.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The S&P continues to struggle gaining bullish traction living below its 20 SMA and now 50 SMA on the daily timescale. The trend is confidently down in the short term.\n\nFrom peak to trough, the S&P has fallen about 5.63% which is in line with the magnitude of a garden variety pullback.\nOn average, we"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 663.25,
+   "class": "mention",
+   "sentence": "One of the main things to watch this week will be the 663.25 level."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 663.25,
+   "class": "break",
+   "sentence": "If price is able to move over the 663.25 level, the look should be for a lower high on the weekly perhaps under the 647 bear engulfer high to set a right shoulder in the H&S formation."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 647.0,
+   "class": "break",
+   "sentence": "If price is able to move over the 663.25 level, the look should be for a lower high on the weekly perhaps under the 647 bear engulfer high to set a right shoulder in the H&S formation."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "break",
+   "sentence": "The two situations that would have me feeling bullish are the recapture of 674 or the look below and fail on 652.5 as seen in light gray."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 652.5,
+   "class": "break",
+   "sentence": "The two situations that would have me feeling bullish are the recapture of 674 or the look below and fail on 652.5 as seen in light gray."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ATI",
+   "timeframe": "Weekly / Daily",
+   "direction": "long",
+   "trigger": 103.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    103.5,
+    116.0
+   ],
+   "text": "High and tight consolidation post earnings gap up. Undercut and rally on Friday back over Thursday low. If price can stay in the balance range and attempt to breakout over the 103.50 level, the ATH target around 116 is the target."
+  },
+  {
+   "ticker": "CAT",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    542.5
+   ],
+   "text": "Great looking flag at all time highs. Looking for a move over the trendline or over the ATH pivot to continue into blue sky. Not interested if price spends more time below 542.5 area."
+  },
+  {
+   "ticker": "ILMN",
+   "timeframe": "Daily",
+   "direction": "short",
+   "trigger": 125.2,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    125.2,
+    130.75
+   ],
+   "text": "Cup and handle breakout now offering a continuation flag over the 20 SMA. If price can clear the 125.2 area and prior overhead supply at 130.75, prior pivot highs can act as target. Not interested if this consolidation starts to break down below the daily 20."
+  },
+  {
+   "ticker": "PLD",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 126.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    7.0,
+    121.75,
+    126.65,
+    132.25
+   ],
+   "text": "Not my favorite to be playing REITs as the XLRE is completely flat for the last 7 months, however this appears to have relative strength to the sector as well as the market. Over 126.65 (historical level) can see 132.25 potentially. Needs to balance over 121.75."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ATI \u2013 Weekly / Daily",
+  "CAT \u2013 Daily",
+  "ILMN \u2013 Daily",
+  "PLD \u2013 Daily",
+  "We're social!"
+ ]
+}

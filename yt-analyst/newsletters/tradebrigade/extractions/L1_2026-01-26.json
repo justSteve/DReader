@@ -1,0 +1,155 @@
+{
+ "letter_date": "2026-01-26",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 01/26/26",
+ "file": "2026-01-26_19bf7d10bf895041.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 1.14,
+  "basis": "monday_open_to_friday_close",
+  "quote": "S&P closed higher up 1.14% from Tuesday's open, but mostly unchanged from the over head balance range"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "mention",
+   "sentence": "Instead, they ran out of steam at the weekly 20 SMA near 675."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "The sellers also failed to accept below the 686 two week equal low."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "mention",
+   "sentence": "I wouldn't want to see price to retest 686."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "hold",
+   "sentence": "The daily trend did flip to down on the gap, but as mentioned on the weekly already reclaiming 686."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "hold",
+   "sentence": "As long as price holds 686, this is balance with the potential for a soft higher low."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 695.0,
+   "class": "mention",
+   "sentence": "Breaking out over 695 should repair the overnight all time high from CPI at 697.3."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 697.3,
+   "class": "mention",
+   "sentence": "Breaking out over 695 should repair the overnight all time high from CPI at 697.3."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "hold",
+   "sentence": "Hourly bull flag remains in play if higher lows can continue to build over 686."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 686.0,
+   "class": "break",
+   "sentence": "If price balances and accepts below 686, the bias flips short."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AA",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0
+   ],
+   "text": "Commodities have been HOT. Aluminum is no exception. Earnings out of the way and leaving a nice start to a flag. Love the hammer from Friday over the daily 20 SMA after sellers fail to close the old gap. Monitor that gap as a potential neckline to head and shoulders formation... however for now primarily looking for digestion into a new flag, and some kind of continuation."
+  },
+  {
+   "ticker": "BROS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Still in play. Same setup as last week. SBUX already made the move... this one next? Come on bro!"
+  },
+  {
+   "ticker": "EXLS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    200.0
+   ],
+   "text": "Cup with handle building pressure right under the 200 SMA. This is interesting considering software as a sector has been beat up recently. I see this as relative strength, and if there is more than just a dead cat bounce in IGV, a strong contender to lead off the lows. Keeping on radar."
+  },
+  {
+   "ticker": "MRK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 111.15,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    105.7,
+    111.15,
+    119.25
+   ],
+   "text": "Great consolidation after having let the 20 SMA catch up. Looking to see if healthcare theme wants to remain hot with this breaking up and over 111.15 to get into 119.25. Not totally dead if 105.7 breaks, but thats where interest remains highest."
+  },
+  {
+   "ticker": "PFG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    2022.0
+   ],
+   "text": "Flat top base over the moving averages. A bit of a slow mover, but could see a meaningful break if it gets moving on momentum through all time highs... The stock has been consolidating since November 2022"
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AA \u2013 Daily",
+  "BROS \u2013 Daily",
+  "EXLS \u2013 Daily",
+  "MRK \u2013 Daily",
+  "PFG \u2013 Daily",
+  "We're social!"
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "letter_date": "2025-12-22",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 12/22/25",
+ "file": "2025-12-22_19b4393fe790dd98.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 0.75,
+  "basis": "friday_close_to_friday_close",
+  "quote": "S&P closed down just 0.75% on the week after recovering from a fairly volatile range break that overshot t"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 689.0,
+   "class": "mention",
+   "sentence": "Remaining above the 279 level ideally gets traction to the top of the balance range up near 689 ATH level."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "Back below 675 complicates the story."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 679.5,
+   "class": "hold",
+   "sentence": "We can see that take shape via higher highs over Friday high, then subsequent higher lows over 679.5."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "mention",
+   "sentence": "If markets weaken, its looking like under 675 and the daily 50 SMA is where the trouble starts."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AKAM",
+   "timeframe": "Daily / Weekly",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    100.0,
+    2026.0
+   ],
+   "text": "Weekly flag with a daily trendline in play for a potential break back up through an earnings gap towards 100. Thematically correct in cyber as we know the administration has been pushing for a 2026 reconsideration. (Not necessarily this stock, but this sector.)"
+  },
+  {
+   "ticker": "ALK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 52.85,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    52.85,
+    65.65,
+    200.0
+   ],
+   "text": "High tight flag on a daily 200 SMA recapture. Looking for a move over the 52.85s to get in gear towards the 65.65 pivot high. Generally bullish on leisure / travel with CCL reporting killer earnings and guidance Friday."
+  },
+  {
+   "ticker": "FIVE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "High tight flag in a thematically correct spot. Retail has been on the move recently with $M, $KSS, $ROST, $AEO, $ANF. Old earnings gap to trade through above if it gets going."
+  },
+  {
+   "ticker": "ISRG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 579.65,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    200.0,
+    579.65,
+    609.3
+   ],
+   "text": "Weekly consolidation after an earnings gap to recapture the daily 200 SMA. Over 579.65 things get interesting towards 609.3."
+  },
+  {
+   "ticker": "TTAN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 110.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    110.0,
+    119.6,
+    200.0
+   ],
+   "text": "Great higher low after a look below and fail of the daily 200 SMA. Over 110 can get interesting towards a 119.60 retest."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Internals \u2013 NASDAQ",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AKAM \u2013 Daily / Weekly",
+  "ALK \u2013 Daily",
+  "FIVE \u2013 Daily",
+  "ISRG \u2013 Daily",
+  "TTAN \u2013 Daily",
+  "We're social!"
+ ]
+}

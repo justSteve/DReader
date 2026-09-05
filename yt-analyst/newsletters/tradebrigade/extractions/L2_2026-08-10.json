@@ -1,0 +1,23 @@
+{
+ "letter_date": "2026-08-10",
+ "sent_et": "2026-08-09",
+ "extracted_by": "Claude (interpretive read of the market-analysis sections, dr-4ne)",
+ "lean": {"direction": "bullish", "conviction": "high", "hedged": false,
+          "quote": "Trend is undeniably up having set a brand new all time high as the higher high in the count.",
+          "note": "'buyers remain in control until the internals start showing something materially different.'"},
+ "calls": [
+  {"id": "spy-hold-769.75", "instrument": "SPY", "type": "hold", "level": 769.75, "rule": "hold_week",
+   "quote": "Consolidation above 769.75 keeps pressure on anyone who attempted to short the Wednesday gap", "intent": "trade", "conviction": "medium"},
+  {"id": "spy-lose-769.75", "instrument": "SPY", "type": "break", "level": 769.75, "rule": "break_then_target", "targets": [760.0, 758.57],
+   "quote": "If SPY loses roughly 769.75, I would look first toward the Tuesday gap close near 758.57 and the prior all-time high around 760.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-ath-776.85", "instrument": "SPY", "type": "target", "level": 776.85, "rule": "target_reached",
+   "quote": "If that support holds and SPY clears the all-time high, removing those shorts and hedges could help fuel continuation.", "intent": "watch", "conviction": "medium"},
+  {"id": "spy-em-range", "instrument": "SPY", "type": "range", "low": 763.18, "high": 783.34, "rule": "range_hold",
+   "quote": "The weekly expected move runs from roughly 763.18 to 783.34", "intent": "watch", "conviction": "unstated"},
+  {"id": "qqq-hold-726.50", "instrument": "QQQ", "type": "hold", "level": 726.5, "rule": "hold_week",
+   "quote": "Holding above 726.50 keeps the case alive for the Nasdaq to play catch-up", "intent": "watch", "conviction": "medium"},
+  {"id": "qqq-support-716", "instrument": "QQQ", "type": "hold", "level": 716.0, "rule": "hold_week",
+   "quote": "716 to 714.25 is the key lower support zone.", "intent": "watch", "conviction": "medium"}
+ ],
+ "scenarios": []
+}

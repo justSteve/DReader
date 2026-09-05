@@ -1,0 +1,221 @@
+{
+ "letter_date": "2026-08-10",
+ "subject": "Bad News, Yet New Highs",
+ "file": "2026-08-10_19fe8f9bb529939a.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 3.18,
+  "basis": "monday_open_to_friday_close",
+  "quote": "S&P closed up 3.18% from Monday's open to Friday's close"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY closed the week with a strong green-bodied candle near the highs of the weekly range, producing both a higher low and a higher high while closing above the entire bull flag consolidation. That breakout also establishes a new all-time high and keeps the weekly trend firmly pointed higher.",
+   "instrument": "SPY",
+   "level": 760.0,
+   "class": "hold",
+   "sentence": "The ideal higher low remains around 760 to 758, where the previous all-time high and the 38.2% Fibonacci retracement converge."
+  },
+  {
+   "section": "SPY closed the week with a strong green-bodied candle near the highs of the weekly range, producing both a higher low and a higher high while closing above the entire bull flag consolidation. That breakout also establishes a new all-time high and keeps the weekly trend firmly pointed higher.",
+   "instrument": "SPY",
+   "level": 758.0,
+   "class": "hold",
+   "sentence": "The ideal higher low remains around 760 to 758, where the previous all-time high and the 38.2% Fibonacci retracement converge."
+  },
+  {
+   "section": "SPY closed the week with a strong green-bodied candle near the highs of the weekly range, producing both a higher low and a higher high while closing above the entire bull flag consolidation. That breakout also establishes a new all-time high and keeps the weekly trend firmly pointed higher.",
+   "instrument": "SPY",
+   "level": 760.0,
+   "class": "break",
+   "sentence": "There is some room for an overshoot into the weekly high-volume node, but the first real warning would be a weekly lower high below 760."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 763.18,
+   "class": "mention",
+   "sentence": "The weekly expected move runs from roughly 763.18 to 783.34, which keeps both ends of the range consistent with a bullish trend structure."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 783.34,
+   "class": "mention",
+   "sentence": "The weekly expected move runs from roughly 763.18 to 783.34, which keeps both ends of the range consistent with a bullish trend structure."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 776.85,
+   "class": "mention",
+   "sentence": "Continued consolidation beneath the 776.85 all-time high is perfectly healthy."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 769.75,
+   "class": "target",
+   "sentence": "If SPY loses roughly 769.75, I would look first toward the Tuesday gap close near 758.57 and the prior all-time high around 760."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 758.57,
+   "class": "target",
+   "sentence": "If SPY loses roughly 769.75, I would look first toward the Tuesday gap close near 758.57 and the prior all-time high around 760."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 760.0,
+   "class": "target",
+   "sentence": "If SPY loses roughly 769.75, I would look first toward the Tuesday gap close near 758.57 and the prior all-time high around 760."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 754.75,
+   "class": "hold",
+   "sentence": "A deeper overshoot toward 754.75, followed by a reclaim of roughly 760.25, could still produce a perfectly valid daily higher low."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 760.25,
+   "class": "hold",
+   "sentence": "A deeper overshoot toward 754.75, followed by a reclaim of roughly 760.25, could still produce a perfectly valid daily higher low."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 769.75,
+   "class": "break",
+   "sentence": "If SPY develops a double top or lower high beneath 769.75, there is not much nearby structure to stop a retracement toward the prior all-time high and gap close."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 769.75,
+   "class": "mention",
+   "sentence": "Consolidation above 769.75 keeps pressure on anyone who attempted to short the Wednesday gap, especially with price above the full intraday anchored VWAP stack."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AME",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    243.5
+   ],
+   "text": "Slower mover, but a huge base breakout last week digesting on highs. Either retests of 243.5 area look great for higher lows, or out of the range for a drift higher works as well."
+  },
+  {
+   "ticker": "BAX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    28.3
+   ],
+   "text": "Almost a year long base stoping the weekly downtrend. Big earnings gap up that held the earnings day low. Over the low cheat at 28.30 gets interesting."
+  },
+  {
+   "ticker": "FLEX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 120.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    120.0,
+    129.5
+   ],
+   "text": "Look below and fail at the prior earnings cycle low. Needs to hold over 120 and perhaps trigger inverted head and shoulders through the neckline at 129.5 area."
+  },
+  {
+   "ticker": "FORM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 121.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    50.0,
+    111.5,
+    121.0
+   ],
+   "text": "Big reclaim of prior range lows. This one might be better than FLEX because it has a shot at confluence of 50 SMA (blue) and the highs of last week early on Monday. Over 121 gets interesting for longs. Stays in play as long as 111.5 holds."
+  },
+  {
+   "ticker": "KN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    38.45
+   ],
+   "text": "This setup reminds me of what TER is doing, and is worth watching as well. Ideal entry is an intraday look below and fail of the 38.45 level that then follows through for a daily higher low over the gap."
+  },
+  {
+   "ticker": "PENG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 59.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    59.0
+   ],
+   "text": "Dying for this chart to shape back up. Had such a linear frontside move. Its not quite a perfect look below and fail since theres so much overhead supply off to the left... above 59 and this is right back on the radar for improvements."
+  },
+  {
+   "ticker": "UNM",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 90.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    50.0,
+    90.75
+   ],
+   "text": "Slower mover, but as picture perfect of a bull flag as it gets. Either over 90.75 for an attempt at momentum continuation, or buying the flag low shake out area near the 50(blue) and 20(orange) SMAs."
+  }
+ ],
+ "sections": [
+  "Bad News, New Highs",
+  "Corporate is CRUSHING It",
+  "The AI Trade Is Moving Up The Stack",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY closed the week with a strong green-bodied candle near the highs of the weekly range, producing both a higher low and a higher high while closing above the entire bull flag consolidation. That breakout also establishes a new all-time high and keeps the weekly trend firmly pointed higher.",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile \u2013 /ES",
+  "QQQ \u2013 Impact on S&P",
+  "QQQ is consolidating constructively after reclaiming key structure and producing a valid follow-through day, but it is still lagging the S&P structurally. 707 is the ideal higher-low area, while even a deeper move toward 701.70 could preserve the bullish structure. Holding above 726.50 keeps the case alive for the Nasdaq to play catch-up and add confirmation behind the S&P's breakout.",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AME \u2013 Daily Chart",
+  "BAX \u2013 Daily Chart",
+  "FLEX \u2013 Daily",
+  "FORM \u2013 Daily Chart",
+  "KN \u2013 Daily Chart",
+  "PENG \u2013 Daily Chart",
+  "UNM \u2013 Daily Chart",
+  "We're social!"
+ ]
+}

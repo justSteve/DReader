@@ -1,0 +1,146 @@
+{
+ "letter_date": "2025-12-01",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 12/01/25",
+ "file": "2025-12-01_19ad76d5016300c2.txt",
+ "self_score": {
+  "found": true,
+  "direction": "up",
+  "pct": 3.12,
+  "basis": "unknown",
+  "quote": "S&P closed out an impressive holiday week up 3.12% but most importantly, reclaiming the top of the bearish engulfer highs"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Monthly",
+   "instrument": "SPY",
+   "level": 610.0,
+   "class": "hold",
+   "sentence": "Hanging man, hammer, whatever side you're on, all I know is that the 610s will still easily yield a potential higher low if the higher timeframe pulls back again."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "hold",
+   "sentence": "The best higher low to keep trend up is a hold over 674, but there will still be an opportunity for a higher low anywhere over 664.15."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 664.15,
+   "class": "hold",
+   "sentence": "The best higher low to keep trend up is a hold over 674, but there will still be an opportunity for a higher low anywhere over 664.15."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "hold",
+   "sentence": "The major pathing ideas ideally hold that higher low over 674."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 664.15,
+   "class": "mention",
+   "sentence": "If we need the line in sand 664.15, and can NOT set a higher low back over 674, it will complicate the end of the year and will likely require the reassessment of supporting evidence charts to evaluate the nature of the failure."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 674.0,
+   "class": "mention",
+   "sentence": "If we need the line in sand 664.15, and can NOT set a higher low back over 674, it will complicate the end of the year and will likely require the reassessment of supporting evidence charts to evaluate the nature of the failure."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "AAL",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Flat top base breakout potentially underway with recent strength back over the moving averages. Slower mover, so don\u2019t expect much here, but clean thin structure to retrace if it goes.\n\nUnderstand that you could use the group: AAL, DAL, UAL, LUV."
+  },
+  {
+   "ticker": "BMY",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    56.8,
+    200.0
+   ],
+   "text": "Another flat top base breakout but the key here is the higher low coming into the top. If this can break the inside days from the end of last week and clear the daily 200 SMA, looking for a move towards the 56.8 area. In a thematically relevant sector with all the recent strength in healthcare."
+  },
+  {
+   "ticker": "C",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Once again, another flat top base breakout setup but this time into all time highs."
+  },
+  {
+   "ticker": "JMIA",
+   "timeframe": "Weekly",
+   "direction": "long",
+   "trigger": 13.5,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    13.5
+   ],
+   "text": "Almost picture perfect cup and handle on the weekly with recent strength off of the pullback. Looking for a move over 13.50 to set up something on the daily worth participating in. Plenty of overhead supply so mind that, but starting to show signs of perking up."
+  },
+  {
+   "ticker": "LUMN",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 8.15,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    8.15,
+    11.0
+   ],
+   "text": "A chart pattern that has been working well recently is the look below and fail. Study the CLSK chart and you\u2019ll see that this looks similar with the potential for a move over 8.15 setting up a rally to the highs around 11. Great linear move prior, monitoring for a second wind."
+  },
+  {
+   "ticker": "ONDS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 8.75,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    8.75
+   ],
+   "text": "A retail darling that\u2019s starting to show signs of a developing uptrend after the recent pullback. Over 8.75 with volume to support it could travel back to recent highs and potentially higher if markets remain risk on into the end of the year."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Monthly",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "AAL \u2013 Daily",
+  "BMY \u2013 Daily",
+  "C \u2013 Daily",
+  "JMIA \u2013 Weekly",
+  "LUMN \u2013 Daily",
+  "ONDS \u2013 Daily",
+  "We're social!"
+ ]
+}

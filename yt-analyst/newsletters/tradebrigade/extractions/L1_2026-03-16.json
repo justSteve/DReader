@@ -1,0 +1,189 @@
+{
+ "letter_date": "2026-03-16",
+ "subject": "Oil, Powell, Jensen. One of them will blink.",
+ "file": "2026-03-16_19cf3f2515490182.txt",
+ "self_score": {
+  "found": true,
+  "direction": "down",
+  "pct": 5.0,
+  "basis": "from_all_time_high",
+  "quote": "Price is now down over 5% from the all time high made on January 28th"
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "break",
+   "sentence": "The next weekly level to target below is 653."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 676.0,
+   "class": "break",
+   "sentence": "Though I would prescribe lower odds, if the market flips back over 676, we have to keep an open mind to look below and fail."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 615.0,
+   "class": "mention",
+   "sentence": "The 615 to 612 area aligns with the Fibonacci 38.2 from April lows to the all-time high and represents roughly an 11 to 12 percent correction."
+  },
+  {
+   "section": "SPY \u2013 Weekly",
+   "instrument": "SPY",
+   "level": 612.0,
+   "class": "mention",
+   "sentence": "The 615 to 612 area aligns with the Fibonacci 38.2 from April lows to the all-time high and represents roughly an 11 to 12 percent correction."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 676.0,
+   "class": "hold",
+   "sentence": "Each time the market had tested the 676-75 area prior buyers stepped up trying to defend price."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "break",
+   "sentence": "Lower highs can persist below 675 area, and lower lows should seek to test the 200 SMA or beyond into the weekly low set at 653."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "break",
+   "sentence": "Lower highs can persist below 675 area, and lower lows should seek to test the 200 SMA or beyond into the weekly low set at 653."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 675.0,
+   "class": "mention",
+   "sentence": "Under the 675 overhead supply."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 664.0,
+   "class": "mention",
+   "sentence": "Under the 664 prior week low inflection point."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 653.0,
+   "class": "mention",
+   "sentence": "The only situation that longs can hope for is an exhaustion gap down series through Monday and Tuesday, then seeking a counter trend rally off of 653 area or even 646 on a double gap and go."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 646.0,
+   "class": "mention",
+   "sentence": "The only situation that longs can hope for is an exhaustion gap down series through Monday and Tuesday, then seeking a counter trend rally off of 653 area or even 646 on a double gap and go."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "CC",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Low cheat setup to get back to highs. Chemicals have been performing well recently with materials offering relative strength to the S&P. Love the tight action over the last three days."
+  },
+  {
+   "ticker": "DOCN",
+   "timeframe": "Daily",
+   "direction": "short",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Potentially a new market leader, so must double down and put this in the newsletter alongside the YT video scans.\n\nGreat relative strength recently, and offering a great inside setup headed into this week. If markets are strong I would look here."
+  },
+  {
+   "ticker": "FLEX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 67.0,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    67.0
+   ],
+   "text": "We've had this in the back pocket for a while, but with GTC potentially acting as a catalyst for new chips, and thus new assembly, could be in play early on. Ideally early entries give a cushion before a larger break from range over 67."
+  },
+  {
+   "ticker": "SNDK",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    683.0
+   ],
+   "text": "Just like DOCN, this remains a leader and has relative strength to the broader market. Note MU earnings on Wednesday will play a key role here, but chart looks great breaking the resistance trend line and reaching back into the 683 area. Over this flag is new all time highs.\n\nAs the energy trade continues to boom based on crude, here are a few oil and gas names that look setup in nice consolidations after making decent moves higher:"
+  },
+  {
+   "ticker": "HP",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": ""
+  },
+  {
+   "ticker": "MPLX",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": ""
+  },
+  {
+   "ticker": "NE",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": ""
+  }
+ ],
+ "sections": [
+  "The Problem Is Still Oil. For Now...",
+  "FOMC Wednesday. Watch The Dots!",
+  "Will GTC Reignite The AI Trade?!",
+  "Trade Brigade Live Squawk",
+  "Broad Market Analysis",
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals \u2013 NYSE",
+  "Market Profile",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "CC \u2013 Daily",
+  "DOCN \u2013 Daily",
+  "FLEX \u2013 Daily",
+  "SNDK \u2013 Daily",
+  "HP \u2013 Daily",
+  "MPLX \u2013 Daily",
+  "NE \u2013 Daily",
+  "We're social!"
+ ]
+}

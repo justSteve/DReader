@@ -1,0 +1,121 @@
+{
+ "letter_date": "2025-09-28",
+ "subject": "Trade Brigade Newsletter\u00a0\ud83d\udcb0 09/29/25",
+ "file": "2025-09-28_19992c5ebbaa1128.txt",
+ "self_score": {
+  "found": false,
+  "opener": "The S&P 500 closed the week unchanged after pulling back and bouncing almost perfectly off of the daily 20 SMA and FOMC low.\nThe precision of the bounce strikes me as an indication that stronger sellers are still not getting active in this market.\n\nPowell Induced Pullback\n\nThe pullback started last "
+ },
+ "spy_levels": [
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 654.0,
+   "class": "mention",
+   "sentence": "That 654 will now be the LiS for uptrend to remain in tact."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 660.4,
+   "class": "hold",
+   "sentence": "Ideally buyers hold over the range low at 660.4 to keep pressure to the upside early week."
+  },
+  {
+   "section": "SPY \u2013 Daily",
+   "instrument": "SPY",
+   "level": 667.25,
+   "class": "mention",
+   "sentence": "ATH has unfinished business at 667.25."
+  },
+  {
+   "section": "SPY \u2013 Hourly",
+   "instrument": "SPY",
+   "level": 654.0,
+   "class": "mention",
+   "sentence": "Under 654 is where things get nasty."
+  }
+ ],
+ "swing_ideas": [
+  {
+   "ticker": "ADI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": 251.15,
+   "trigger_kind": "over",
+   "trigger_relative": null,
+   "prices": [
+    251.15,
+    258.0
+   ],
+   "text": "Multi-week base in force with a potential breakout over 251.15 to get back to ATHs at 258. Over that its blue sky territory. If price can exit this recent range look for volume to support any momentum move higher."
+  },
+  {
+   "ticker": "BTSG",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    20.0,
+    26.0,
+    28.25
+   ],
+   "text": "Bull flag at the ATH after a nice hold of the daily 20 SMA (orange). Looking for 28.25 ATH breakouts on high volume to attempt blue sky territory. Not interested if this fails the consolidation lows at 26."
+  },
+  {
+   "ticker": "MLYS",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [],
+   "text": "Another bull flag at the ATH after a major gap and go. If this can catch a second winds after consolidation look for volume to come in and support this into new highs. Very mild pullback last week considering what the broader market did."
+  },
+  {
+   "ticker": "PSTG",
+   "timeframe": "Daily",
+   "direction": "short",
+   "trigger": 80.5,
+   "trigger_kind": "under",
+   "trigger_relative": null,
+   "prices": [
+    80.5
+   ],
+   "text": "Revisiting this one after the earnings ATH flag break. Great retest underway and back to back daily hammers. Looking for a move over Thursday/Friday high to get back to the ATH and cement a higher low on the daily timeframe. Not interested if price breaks below 80.5."
+  },
+  {
+   "ticker": "TSSI",
+   "timeframe": "Daily",
+   "direction": "long",
+   "trigger": null,
+   "trigger_kind": null,
+   "trigger_relative": null,
+   "prices": [
+    16.25,
+    19.55,
+    23.15,
+    27.6
+   ],
+   "text": "Almost text book inverted head and shoulders pattern offering a Brigade Bolt retest over the neckline. If 19.55 can break, looking to target the gap fill area up from 23.15 towards 27.6. Failing the 16.25 neckline would be a red flag."
+  }
+ ],
+ "sections": [
+  "SPY \u2013 Weekly",
+  "SPY \u2013 Daily",
+  "SPY \u2013 Hourly",
+  "Market Internals",
+  "Market Profile",
+  "XLF \u2013 Daily",
+  "Economic & Earnings Calendar",
+  "Swing Stock Scans",
+  "ADI \u2013 Daily",
+  "BTSG \u2013 Daily",
+  "MLYS \u2013 Daily",
+  "PSTG \u2013 Daily",
+  "TSSI \u2013 Daily",
+  "We're social!"
+ ]
+}
