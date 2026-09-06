@@ -47,7 +47,9 @@ SECRET_NAMES = ("GEMINI_API_KEY",)
 
 MODELS_URL = "https://generativelanguage.googleapis.com/v1beta/models?pageSize=1"
 DEFAULT_MODEL = "gemini-flash-latest"
-FALLBACK_MODELS = ["gemini-2.5-flash"]
+# gemini-2.5-flash was retired 2026-09-06 and now 404s for new users,
+# which turned a transient 503 into a hard traceback [dr-9qo].
+FALLBACK_MODELS = ["gemini-3.6-flash"]
 RETRYABLE = {429, 500, 503}
 MAX_ATTEMPTS = 4
 BASE_DELAY_S = 5
@@ -268,7 +270,16 @@ def generate_with_retry(client, model, contents, config):
                         time.sleep(delay)
                         delay *= 2
                 else:
-                    raise
+                    # A non-retryable error on the PRIMARY model is the real
+                    # answer — surface it (that is how API_KEY_INVALID reads).
+                    # On a fallback it is noise, most often the model having
+                    # been retired; keep the original 503 and move on.
+                    if m == chain[0]:
+                        raise
+                    print(f"[{m}: {code}, not usable as a fallback]",
+                          file=sys.stderr)
+                    last_exc = last_exc or e
+                    break
         if m != chain[-1]:
             print(f"[{m}: exhausted retries; falling back]", file=sys.stderr)
     raise last_exc

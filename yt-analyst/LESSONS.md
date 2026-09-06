@@ -507,9 +507,12 @@ attempt) into a hard 404 plus a full traceback. CLAUDE.md still tells us "503s
 are handled by the script (backoff + fallback to gemini-2.5-flash)"; that
 sentence is now wrong.
 
-**Proposed doctrine change for Steve:** point the fallback at
-`gemini-3.6-flash`, or drop the fallback and widen the backoff. Until then,
-treat a 404-on-fallback as a transient 503 and simply rerun the ask.
+**RESOLVED 2026-09-06 [dr-9qo].** Steve approved the repoint.
+`FALLBACK_MODELS = ["gemini-3.6-flash"]`, live-tested against a real ask.
+Also hardened `generate_with_retry`: a non-retryable error on the PRIMARY
+model still raises immediately (that is how `API_KEY_INVALID` surfaces),
+but on a *fallback* it is logged and skipped so a dead fallback can no
+longer mask the transient 503 that sent us there. CLAUDE.md updated.
 
 ## 2026-09-06 — Grade backtest-claim videos with arithmetic, not pixels
 

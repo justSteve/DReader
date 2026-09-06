@@ -150,7 +150,7 @@ produce the comparison, and record the verdict.
 - Gemini's `uncertainties` field has proven honest — it declines fine print
   rather than inventing it. Do not pressure it to guess; pull frames instead.
 - Claim timestamps are approximate to a few seconds; pad frame windows.
-- 503s are handled by the script (backoff + fallback to gemini-2.5-flash).
+- 503s are handled by the script (backoff + fallback to gemini-3.6-flash).
   The run log and request.json record `model_answered`; mention it in your
   report only if it differs from the requested model.
 
