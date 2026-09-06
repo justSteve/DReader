@@ -17,12 +17,12 @@ source in the corpus, and the most argumentative.
 
 **It rejects the framework that three other corpus videos are built on.**
 
-- **Stop-hunting is called a retail myth** (02:30). Supporting evidence at
-  02:53: footprint charts routinely show *single-digit* contract trades
+- **Stop-hunting is called a myth — *"this myth that the big players are always… hunting or fishing for stop-losses isn't really how it is out there"* (02:27); the word **"retail" is not spoken**** (02:30). Supporting evidence at
+  02:53: footprint charts **often** show single-digit contract trades
   printing below chart lows — i.e. there is no institutional size down there
   to be hunting anything.
 - **ICT narratives are named and rejected** (04:23): claims that banks sweep
-  stops for liquidity are *"hyped up and inaccurate."*
+  stops for liquidity are *"is being hyped up a lot"* — **"inaccurate" is never spoken** (corrected 2026-09-06); his rejection is *"It's not true that there's any kind of stop hunting going on"* (04:12) and *"it's nonsense to claim that"* (05:46)
 
 This is a direct, explicit contradiction of the liquidity-sweep method taught
 in [IUWvHVout94](../IUWvHVout94/CARD.md) (Trading Notes) and of the
@@ -37,7 +37,7 @@ strategy on it; this podcast says the effect is largely not there at all.
   order flow.
 
 **Liquidity under stress — the most valuable numbers in the video.** During
-COVID-scale volatility, up to **80% of typical order book liquidity vanished**
+COVID-scale volatility, **sometimes 80% of typical order-book liquidity vanished** — an observed instance, not a ceiling
 (26:04), **DAX spreads reached 20 points** (26:17), and Euro Stoxx book depth
 fell from **300–500 contracts to single digits** (26:23). These are concrete,
 checkable claims about market fragility and they matter for any cost or
@@ -49,9 +49,13 @@ broker that once allowed naked short positions for four days. Colour, not
 method.
 
 **Scale reference** (17:10): seeing **10,000 ES contracts** bought in the book
-indicates genuinely large activity — consistent with, and an order of
-magnitude above, the 250–300 "truly large" threshold in
-[Vd83oo_geMk](../Vd83oo_geMk/CARD.md).
+indicates genuinely large activity — **but he immediately hedges it**: *"you
+don't know exactly… It could be just one big player, but it could also be
+10,000 individual traders."* *(Corrected 2026-09-06: this card also called it
+"an order of magnitude above" the 250–300 threshold in
+[Vd83oo_geMk](../Vd83oo_geMk/CARD.md). Two different quantities — that one is
+**resting** order size, this is **executed** buying — and the ratio is 33–40×,
+not 10×.)*
 
 **No charts, no trades, no rules, no statistics.**
 

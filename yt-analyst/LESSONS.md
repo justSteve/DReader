@@ -758,3 +758,32 @@ as a "planning hit rate".
    composes from captions and a worker cross-checked the run JSON. Whenever a
    transcript is fetched for a video, re-check that video's tabulated numbers
    against it — it is nearly free and it found a real error on the first try.
+
+## 2026-09-06 — I sharpen disagreements past what the sources support
+
+**Status: confirmed**, three times in one afternoon, all on claims I had made
+prominently and had reported to Steve as findings.
+
+The READ layer's card audits kept overturning the same kind of claim — never a
+wrong fact, always an **overstated conflict**:
+
+| I recorded | The transcript says |
+|---|---|
+| Vorwald's channel says professionals *"do not rely on heatmaps"* — "the corpus's sharpest conflict" | He calls the heatmap *"such a wonderful tool"*, demonstrates it on screen, recommends it to beginners. His claim is that it is not **sufficient** for an edge. |
+| The podcast rejects ICT as *"hyped up and inaccurate"* | *"Inaccurate"* is never spoken. He says ICT *"is being hyped up a lot"* and *"it's nonsense to claim"* banks sweep stops. |
+| S/R *"do not truly exist as fixed price points"* — **against** Carmine ep. 5 | The sentence before: a level *"truly becomes real support and resistance **because the market confirms it for me**"*. That **is** Carmine ep. 5's thesis. An agreement, filed as a conflict. |
+| "This channel says the effect is largely not there at all" | It concedes the mechanical stop-out — *"that's a normal principle that positions have to be closed accordingly"* — and denies only institutional **agency**. |
+
+**Why it happens.** A corpus gets more interesting when sources disagree, and a
+crisp opposition is more quotable than a hedged overlap. Gemini's paraphrases
+help the drift along: they arrive pre-sharpened, with the qualifier already
+gone, and a `verbatim: null` claim reads exactly like a quote.
+
+**The rule:** before recording a conflict between two sources, find the
+sentence *immediately before and after* the one that carries it. Three of the
+four above dissolve on the adjacent sentence — the speaker qualifies himself
+within ten seconds, and the qualification was never transcribed into the card.
+
+**Corollary:** a claim of the form "X rejects Y" needs X's own words for the
+rejection. If the only support is a Gemini paraphrase, the strongest defensible
+form is "X argues Y is not sufficient", which is usually what was actually said.

@@ -383,3 +383,48 @@ Chart, and the identical panel (`Schließen`, `Kauf MKT`) is identified as the
 card's calibration table — crude oil *"a 100 block"* (04:34) and a hypothetical
 *"like a 300, 250"* (05:31), the latter independently restating the ES
 threshold from `Vd83oo_geMk`.
+
+---
+
+## 2026-09-06 · `RwQBdF9TSvc` — Vorwald, the ICT-rejection podcast · **class 1, 2, 4**
+
+All 13 run claims are `verbatim: null` — there is no on-screen text in this
+video — so every quoted string in the card was Gemini's wording.
+
+**1. Class 2 — a quote that was never spoken.** The card and sweep both carried
+ICT narratives as *"hyped up and inaccurate"*. **"Inaccurate" is never said.**
+He says the ICT strategy *"is being hyped up a lot"*, that *"people always talk
+about how the banks supposedly always sweep the stops"*, and rejects it as
+*"It's not true that there's any kind of stop hunting going on"* (04:12) /
+*"it's nonsense to claim that"* (05:46). **Fixed in both.**
+
+**2. Class 2 — "a retail trading myth".** "Retail" is not spoken: *"this myth
+that the big players are always… hunting or fishing for stop-losses isn't
+really how it is out there"* (02:27). **Fixed.**
+
+**3. Class 4 — an agreement filed as a conflict.** The card and sweep had S/R
+*"do not truly exist as fixed price points"* set **against Carmine ep. 5**. The
+sentence immediately before (19:18–19:44) defines what does exist: price
+reaches a level, trades actively, holds, the market moves away — *"then for me
+that's when it **truly becomes real support and resistance because the market
+confirms it for me**"*. That is ep. 5's validation thesis. The real
+disagreement is **point versus area**, not existence. **Refiled as a
+convergence with a caveat.**
+
+**4. Class 4 — the distance from Trading Notes was overstated.** "This channel
+says the effect is largely not there at all" is wrong: the podcast **concedes
+the mechanical stop-out** (*"that's a normal principle that positions have to
+be closed accordingly in those situations"*, 20:22–20:32) and that a large
+candle means *"there was liquidity further down and it got filled there"*
+(28:04). It denies **agency**, not the effect. **Fixed.**
+
+**5. Class 1, three mild hardenings.** *"Routinely"* for *"often… sometimes"*;
+*"up to 80%"* for *"sometimes 80%"* (an instance recorded as a ceiling); and
+the 10,000-contract observation stripped of its hedge — *"you don't know
+exactly… it could also be 10,000 individual traders."* Also corrected: that
+figure was called "an order of magnitude above" the 250–300 threshold, but the
+two are different quantities (executed versus resting) and the ratio is 33–40×.
+
+**Clean:** the DAX 20-point spreads, Euro Stoxx 300–500 to single digits, the
+2006–2008 anecdotes, and the absence of on-screen text. The card names no
+speaker, correctly — the captions do not separate them across 25:06–27:22.

@@ -180,27 +180,55 @@ conflict in the corpus.
 itself.** With the heatmap claim corrected above, this is now the sharpest
 cross-corpus finding of the sweep. It is stated three times independently:
 
-- Stop-hunting is *"a retail trading myth"*, with evidence: footprints show
-  **single-digit** contract trades printing below chart lows, so there is no
-  institutional size down there doing the hunting (`RwQBdF9TSvc` 02:30, 02:53).
-- ICT narratives that banks sweep stops for liquidity are *"hyped up and
-  inaccurate"* (`RwQBdF9TSvc` 04:23).
+*(Quotes below corrected 2026-09-06 by the transcript audit — the previous
+versions were Gemini's phrasings set in quotation marks.)*
+
+- **Stop-hunting is called a myth**, with evidence: footprints *often* show
+  single-digit contract trades printing below chart lows, so there is no
+  institutional size down there doing the hunting. His words: *"this myth that
+  the big players are always, for example, hunting or fishing for stop-losses
+  isn't really how it is out there"* (02:27) and *"sometimes… two, three,
+  sometimes just one contract and sometimes nothing at all"* (05:39). The word
+  **"retail"** is never spoken, and *"routinely"* overstated *"often… sometimes"*.
+- **ICT narratives are rejected**, though not in the words we had. He says the
+  ICT strategy *"is being hyped up a lot"* and that *"people always talk about
+  how the banks supposedly always sweep the stops"*; his rejection is *"It's
+  not true that there's any kind of stop hunting going on"* (04:12) and *"it's
+  nonsense to claim that"* (05:46). **"Inaccurate" is never spoken** — that was
+  Gemini's word, and it had propagated here as a quotation.
 - The retail "stop-loss waves" concept is dismissed, with rapid moves
   attributed instead to **institutional futures hedging** (`aursfDVYzUk` 09:51).
 
-This contradicts the entire method of [`IUWvHVout94`](../videos/IUWvHVout94/CARD.md)
+This cuts against the method of [`IUWvHVout94`](../videos/IUWvHVout94/CARD.md)
 (Trading Notes: identify pool → wait for sweep → enter on confirmation) and the
 sweep-then-ChoCH architecture of the Smart Money Decode X series.
 
-It is, however, a **partial agreement** with Trading Notes on the thesis
-itself: that video's own on-screen claim is `"NOBODY IS HUNTING YOUR STOPS"`
-(00:30). Both sources reject malice; they diverge on whether the mechanical
-effect is large enough to trade. Trading Notes builds a strategy on it; this
-channel says it is largely not there.
+**But the distance is smaller than this synthesis first claimed.** The podcast
+**concedes the mechanical stop-out** — when the host says *"Then there is
+stop-loss hunting"*, the reply is *"that's a normal principle that positions
+have to be closed accordingly in those situations"* (20:22–20:32) — and
+elsewhere that a large candle means *"there was liquidity further down and it
+got filled there"* (28:04). What it denies is **institutional agency**: that
+anyone is engineering the sweep. Trading Notes' own on-screen thesis is
+`"NOBODY IS HUNTING YOUR STOPS"` (00:30), i.e. the same denial of malice. They
+differ on whether the mechanical effect is tradeable, not on whether it
+happens. The earlier line here — "this channel says it is largely not there" —
+overstated it.
 
-**3. Support and resistance as fixed price points "do not truly exist"**
-(`RwQBdF9TSvc` 19:50) — against Carmine ep. 5, which is entirely about
-validating S/R with order flow.
+**3. Support and resistance — and this one turns out to be an agreement, not a
+conflict.** The synthesis previously read: *S/R as fixed price points "do not
+truly exist" — against Carmine ep. 5.* **Corrected 2026-09-06.** His actual
+words are *"you actually have to assume that there is support and resistance in
+the markets. In reality, they don't actually exist"* (19:46) — but the sentence
+immediately before defines what does: price reaches a level, trades actively,
+the level holds, the market moves away, *"then for me that's when it **truly
+becomes real support and resistance because the market confirms it for me**"*
+(19:18–19:44).
+
+That is Carmine ep. 5's thesis almost exactly — a level is real only once order
+flow validates it. The genuine disagreement is narrower: **point versus area,
+and confirmed-or-nothing**, not existence. Filed as a convergence with a caveat
+rather than a conflict.
 
 **4. Internal contradiction on entry.** `NkQeOVDTAec` teaches **pullback after
 breakout**; `zAwEX_tRUfE` teaches entry **on the break**. Same presenter, no
