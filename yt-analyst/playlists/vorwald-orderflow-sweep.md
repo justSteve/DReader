@@ -254,9 +254,17 @@ These matter because the sources do not cite each other:
 ## PbD, resolved
 
 `PbD` is used as the channel's flagship model in at least seven videos and
-"expanded" in none of them — because **it is not an acronym**.
-[m3IMdc7QwN4](../videos/m3IMdc7QwN4/CARD.md) (07:46) gives the letters their
-meaning: they are the **shapes a TPO/Market Profile distribution draws**.
+"expanded" in only one. [m3IMdc7QwN4](../videos/m3IMdc7QwN4/CARD.md), at
+07:44–07:55, gives the letters their meaning — and his word is **phases**:
+
+> *"the D's are nothing more than large **balance phases**. The P's are the
+> aggressive **trend phases upwards**, and the B's are the aggressive **trend
+> phases downwards**."*
+
+**Corrected 2026-09-06.** This synthesis previously said the letters are the
+**shapes** a TPO distribution draws. That reading is *ours* — well supported by
+what he points at and by the sibling videos that draw the letters by hand, but
+never a sentence he says. The table below is therefore our gloss, not his.
 
 | Letter | Shape | Market state |
 |---|---|---|

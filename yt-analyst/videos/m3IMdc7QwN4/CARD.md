@@ -15,8 +15,24 @@ _(curated by Claude Code: verified findings with timestamps)_
 **This video answers the corpus's longest-standing open question: what `PbD`
 means.** At **07:46** he expands the letters:
 
-> **`D`** = **balance** phases · **`P`** = aggressive **upward** trend phases ·
-> **`b`** = aggressive **downward** trend phases
+> *"By the way, the D's are nothing more than large **balance phases**. The
+> P's are the aggressive **trend phases upwards**, and the B's are the
+> aggressive **trend phases downwards**."* (07:44–07:55)
+
+**He says phases, not shapes — and that distinction was blurred.** Earlier
+versions of this card, of the sweep synthesis and of the composer brief all
+said "PbD is not an acronym; the letters are the **shapes** a TPO distribution
+draws". That is **our reading**, not his sentence. It is a defensible one — at
+04:57–05:01 he attaches *"That means a B"* at the moment the lower balance
+forms *after* the sell-off, so the letter names a trend phase whose formation
+includes the balance that accepted it, and the sibling videos draw the letters
+by hand ([Ly62G168MkQ](../Ly62G168MkQ/CARD.md),
+[Kg6sYKgtkrY](../Kg6sYKgtkrY/CARD.md) with its "P-waves" and "b-structure").
+But it must be attributed to us. Corrected 2026-09-06.
+
+*(Outside the corpus, and worth knowing: Market Profile literature has long
+used lowercase p and b for these pictures, usually as short covering and long
+liquidation. His "aggressive trend phase that then balances" is broader.)*
 
 **`PbD` is not an acronym at all — it is the literal shapes of the letters** as
 a Market Profile / TPO distribution draws them. A **P** has a fat top on a thin
@@ -26,9 +42,9 @@ at the lows. A **D** is the symmetric bell: balance. Every previous video in the
 sweep used the term as though it were an initialism; it never was, which is why
 none of them "expanded" it.
 
-**Platform is Sierra Chart** (01:20) with TPO market profile and volume profile
+**Platform probably Sierra Chart** (01:20 — `kind: visual`, `verbatim: null`, and the run's own uncertainties call the header *"partially compressed and low resolution"*; the transcript names neither platform nor instrument) with TPO market profile and volume profile
 layered on **ES (CME)**; also daily **Gold** (02:30) and daily **Bitcoin**
-(08:14). Annotation in MS Paint as usual.
+(08:14). *(An earlier version added "annotation in MS Paint as usual" — carried over from channel habit; neither the transcript nor the run mentions Paint here.)*
 
 **Definitions given:** single prints = price zones where price spent **no more
 than 30 minutes** (01:53) — a sharper, time-quantified version of the definition
@@ -69,7 +85,7 @@ _(anything peculiar to this video/channel: layout, chart software, segment struc
 
 - **`PbD` = the letter shapes P, b, D in a TPO profile.** Not an initialism.
   Cite 07:46 of this video; it is the only expansion in 19 videos.
-- Sierra Chart here — a fourth platform for this channel (with VolFix,
+- Sierra Chart here — a fifth platform for this channel (with VolFix,
   VolaTrader, TradingView, ATAS).
 - The leaderboards show **2nd and 3rd** places. Do not repeat "World Champion"
   as fact from this corpus.
