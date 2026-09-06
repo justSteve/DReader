@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=sASTlqfPg-8
 - **Title:** Asymmetric Value — Anatomy of a High Probability Trade
 - **Channel:** fvid (@fvid6195) — **AI-generated, "Gemini Notebook"**
-- **Uploaded:** 2026-09-05 · **Duration:** 7:25 (445 s) · 15 views at analysis
+- **Uploaded:** 2026-09-05 · **Duration:** 7:25 (445 s) · 15 views at analysis · **Views:** 17
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-qdo (assessed for actionable orderflow insight)

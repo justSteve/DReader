@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=eJZhX6Xz4cU
 - **Title:** STOP Using Candlestick Charts, Use This Instead
 - **Channel:** Carmine Rosato (Jumpstart Trading) — "Trading Orderflow Series" ep. 2
-- **Uploaded:** 2024-10-18 · **Duration:** 24:53 (1493 s)
+- **Uploaded:** 2024-10-18 · **Duration:** 24:53 (1493 s) · **Views:** 124,236
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #3 · bead dr-08s.2
 - **First analyzed:** 2026-08-28
 - **Status:** closed

@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=d2RzSJC98o8
 - **Title:** Swing Highs and Swing Lows — How to Identify Them Correctly (Video 8)
 - **Channel:** Smart Money Decode X (logo verified in-frame; tagline "DECODE HOW MARKETS REALLY MOVE")
-- **Uploaded:** 2026-08-21 · **Duration:** 12:25 (745 s)
+- **Uploaded:** 2026-08-21 · **Duration:** 12:25 (745 s) · **Views:** 5,826
 - **Playlist:** PLU9kIorYkc18 #8 · bead dr-8qq.8
 - **First analyzed:** 2026-08-29
 - **Status:** closed

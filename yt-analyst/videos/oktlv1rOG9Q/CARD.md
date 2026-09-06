@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=oktlv1rOG9Q
 - **Title:** This One Candle Tells You Everything — Complete Candlestick Breakdown (video-4)
 - **Channel:** Smart Money Decode X (logo bottom-right; no presenter on camera)
-- **Uploaded:** 2026-08-09 · **Duration:** 12:08 (728 s)
+- **Uploaded:** 2026-08-09 · **Duration:** 12:08 (728 s) · **Views:** 23,485
 - **Playlist:** PLU9kIorYkc18 #4 · bead dr-8qq.4
 - **First analyzed:** 2026-08-29
 - **Status:** closed

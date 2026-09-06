@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=K8qtT2_axPo
 - **Title:** Market Profile: How Trading World Champions REALLY read the Market!
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Duration:** 16:25
+- **Uploaded:** 2026-01-07 · **Duration:** 16:25 · **Views:** 25,597
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

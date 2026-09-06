@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=w7tvJCuZAq8
 - **Title:** You've Been Using Volume WRONG This Whole Time...
 - **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 6
-- **Uploaded:** 2024-11-13 · **Duration:** 31:28 (1888 s)
+- **Uploaded:** 2024-11-13 · **Duration:** 31:28 (1888 s) · **Views:** 80,953
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #7 · bead dr-08s.6
 - **First analyzed:** 2026-08-28
 - **Status:** closed

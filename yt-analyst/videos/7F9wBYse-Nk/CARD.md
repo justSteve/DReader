@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=7F9wBYse-Nk
 - **Title:** The Three Participants Nobody Tells You About — Complete Trading Series (video-3)
 - **Channel:** Smart Money Decode X (logo bottom-right; no presenter on camera)
-- **Uploaded:** 2026-08-07 · **Duration:** 11:47 (707 s)
+- **Uploaded:** 2026-08-07 · **Duration:** 11:47 (707 s) · **Views:** 44,769
 - **Playlist:** PLU9kIorYkc18 #3 · bead dr-8qq.3
 - **First analyzed:** 2026-08-29
 - **Status:** closed

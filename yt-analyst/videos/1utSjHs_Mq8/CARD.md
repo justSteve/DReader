@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=1utSjHs_Mq8
 - **Title:** The ONLY Market-Profile-Video you will EVER need
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Duration:** 15:06
+- **Uploaded:** 2025-11-30 · **Duration:** 15:06 · **Views:** 19,100
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

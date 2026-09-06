@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=Kg6sYKgtkrY
 - **Title:** The ONLY Trading Strategy you need for 2026 (World Champion explains the PbD Method)
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Duration:** 15:41
+- **Uploaded:** 2026-01-09 · **Duration:** 15:41 · **Views:** 22,386
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

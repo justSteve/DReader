@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=RwQBdF9TSvc
 - **Title:** Wall Street scalper reveals: The Truth about order flow Trading!
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Uploaded:** 2026 · **Duration:** 33:47
+- **Uploaded:** 2025-10-14 · **Duration:** 33:47 · **Views:** 9,260
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

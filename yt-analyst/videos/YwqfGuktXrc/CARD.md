@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=YwqfGuktXrc
 - **Title:** This One Candle Close Confirms The Trend Is Still Alive — BOS Explained (video 10)
 - **Channel:** Smart Money Decode X (logo verified in-frame; Gemini's "SMART MONEY TREE" / "SECRET" are misreads)
-- **Uploaded:** 2026-08-26 · **Duration:** 11:55 (715 s)
+- **Uploaded:** 2026-08-26 · **Duration:** 11:55 (715 s) · **Views:** 9,622
 - **Playlist:** PLU9kIorYkc18 #10 · bead dr-8qq.10
 - **First analyzed:** 2026-08-29
 - **Status:** closed

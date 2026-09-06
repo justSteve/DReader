@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=VumVuGnCcFM
 - **Title:** The ONLY VWAP-Video you will EVER need
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Duration:** 11:59
+- **Uploaded:** 2025-12-24 · **Duration:** 11:59 · **Views:** 51,164
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

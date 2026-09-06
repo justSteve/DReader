@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=0QlGCz6U_1g
 - **Title:** STOP Thinking Like A Retail Trader, Start Trading Like An Institution
 - **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 4
-- **Uploaded:** 2024-10-29 · **Duration:** 16:25 (985 s)
+- **Uploaded:** 2024-10-29 · **Duration:** 16:25 (985 s) · **Views:** 63,596
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #5 · bead dr-08s.4
 - **First analyzed:** 2026-08-28
 - **Status:** closed

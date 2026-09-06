@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=YkclL6xgu-s
 - **Title:** How powerful is Volume Trading REALLY? World Trading Champion reveals the TRUTH
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Duration:** 13:00
+- **Uploaded:** 2025-12-04 · **Duration:** 13:00 · **Views:** 11,514
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

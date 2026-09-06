@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=NkQeOVDTAec
 - **Title:** The ONLY Volume-Profile-Video you will EVER need (World Champions)
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Duration:** 9:33
+- **Uploaded:** 2026-04-29 · **Duration:** 9:33 · **Views:** 9,346
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

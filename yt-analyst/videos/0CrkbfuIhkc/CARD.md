@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=0CrkbfuIhkc
 - **Title:** Crash or All-In? THIS is What Volume Profile Tells Us NOW!
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Duration:** 14:12
+- **Uploaded:** 2026-05-15 · **Duration:** 14:12 · **Views:** 5,559
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

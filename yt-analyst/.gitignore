@@ -17,3 +17,6 @@ newsletters/tradebrigade/data/
 
 # generated snapshot of the cards for reading — rerun `yta.py browse`
 browser.html
+
+# generated data layer for the card-reader UI — rerun `python3 build_corpus.py`
+corpus.json

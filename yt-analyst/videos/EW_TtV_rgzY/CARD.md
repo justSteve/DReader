@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=EW_TtV_rgzY
 - **Title:** Stop Switching Timeframes — This Is Why You Keep Losing (video-5)
 - **Channel:** Smart Money Decode X (logo bottom-right; no presenter on camera)
-- **Uploaded:** 2026-08-12 · **Duration:** 11:43 (703 s)
+- **Uploaded:** 2026-08-12 · **Duration:** 11:43 (703 s) · **Views:** 23,464
 - **Playlist:** PLU9kIorYkc18 #5 · bead dr-8qq.5
 - **First analyzed:** 2026-08-29
 - **Status:** closed

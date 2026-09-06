@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=iPDi9_nzn-o
 - **Title:** Change of Character (ChoCH): The Exact Signal That Reveals a Trend Reversal (Video 9)
 - **Channel:** Smart Money Decode X (logo verified in-frame; Gemini's "SMART MONEY SOURCE" is a misread)
-- **Uploaded:** 2026-08-23 · **Duration:** 14:04 (844 s)
+- **Uploaded:** 2026-08-23 · **Duration:** 14:04 (844 s) · **Views:** 5,463
 - **Playlist:** PLU9kIorYkc18 #9 · bead dr-8qq.9
 - **First analyzed:** 2026-08-29
 - **Status:** closed

@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=vl01TiVTuoQ
 - **Title:** Master Orderflow Trading: The Ultimate Step-by-Step Guide 2026
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Uploaded:** 2026 · **Duration:** 12:03
+- **Uploaded:** 2026-07-01 · **Duration:** 12:03 · **Views:** 11,008
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

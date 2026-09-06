@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=tgQC7Dpcc8A
 - **Title:** After 8 Years Of Trading, These Are The BEST Trading Tools I Use
 - **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 3
-- **Uploaded:** 2024-10-24 · **Duration:** 28:28 (1708 s)
+- **Uploaded:** 2024-10-24 · **Duration:** 28:28 (1708 s) · **Views:** 105,742
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #4 · bead dr-08s.3
 - **First analyzed:** 2026-08-28
 - **Status:** closed

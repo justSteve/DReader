@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=zAwEX_tRUfE
 - **Title:** My Simple 1-Minute Scalping Strategy for $10,000/Month
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Uploaded:** 2026-09-04 · **Duration:** 10:38 (638 s)
+- **Uploaded:** 2026-09-04 · **Duration:** 10:38 (638 s) · **Views:** 12,017
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-br7 (graded through the orderflow / volume-at-price lens)

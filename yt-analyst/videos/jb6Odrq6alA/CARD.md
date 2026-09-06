@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=jb6Odrq6alA
 - **Title:** How Markets Actually Work — Retail vs Institutions vs Market Makers Explained (Video 1)
 - **Channel:** Smart Money Decode X (logo wordmark bottom-right of every frame; no presenter on camera)
-- **Uploaded:** 2026-08-01 · **Duration:** 16:31 (991 s)
+- **Uploaded:** 2026-08-01 · **Duration:** 16:31 (991 s) · **Views:** 157,558
 - **Playlist:** PLU9kIorYkc18 "Zero to Advanced Trader — The Complete Trading Series" #1 · bead dr-8qq.1
 - **First analyzed:** 2026-08-29
 - **Status:** closed

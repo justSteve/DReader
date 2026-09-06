@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=ZVvVgcX84F0
 - **Title:** Trading Like A Pro: The Wide Butterfly Spread Technique (on-screen episode title: "Cherry Bomb: The Butterflies Inside Your Butterfly")
 - **Channel:** tastylive — host Tom Preston
-- **Uploaded:** 2026-08-26 · **Duration:** 10:58 (658 s)
+- **Uploaded:** 2026-08-26 · **Duration:** 10:58 (658 s) · **Views:** 4,477
 - **First analyzed:** 2026-08-28
 - **Status:** closed
 

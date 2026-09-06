@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=usho6UVLqkE
 - **Title:** World Champion reveals the Orderflow System that 95% of Traders do NOT know!
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Uploaded:** 2026 · **Duration:** 17:43
+- **Uploaded:** 2025-11-27 · **Duration:** 17:43 · **Views:** 24,203
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=QaNPAaEnB5E
 - **Title:** The only trading strategy you need to use if you're starting out...
 - **Channel:** Carmine Rosato (Jumpstart Trading) — "Trading Orderflow Series" ep. 1 of 8
-- **Uploaded:** 2024-10-14 · **Duration:** 21:47 (1307 s)
+- **Uploaded:** 2024-10-14 · **Duration:** 21:47 (1307 s) · **Views:** 100,803
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #2 · bead dr-08s.1
 - **First analyzed:** 2026-08-28
 - **Status:** closed

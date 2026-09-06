@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=dAlP8UZXT48
 - **Title:** This Pattern Appears Before Every Real Rally — Market Structure Complete Guide (Video 7)
 - **Channel:** Smart Money Decode X (logo verified in-frame; Gemini's "SMART MONEY HUSTLE" / "DEFENSE" are misreads)
-- **Uploaded:** 2026-08-19 · **Duration:** 12:59 (779 s)
+- **Uploaded:** 2026-08-19 · **Duration:** 12:59 (779 s) · **Views:** 6,597
 - **Playlist:** PLU9kIorYkc18 #7 · bead dr-8qq.7
 - **First analyzed:** 2026-08-29
 - **Status:** closed

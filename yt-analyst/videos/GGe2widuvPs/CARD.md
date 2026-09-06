@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=GGe2widuvPs
 - **Title:** How Price Actually Moves — The Deep Mechanics Nobody Teaches (Video 6)
 - **Channel:** Smart Money Decode X (logo bottom-right; no presenter on camera)
-- **Uploaded:** 2026-08-14 · **Duration:** 15:21 (921 s)
+- **Uploaded:** 2026-08-14 · **Duration:** 15:21 (921 s) · **Views:** 18,877
 - **Playlist:** PLU9kIorYkc18 #6 · bead dr-8qq.6
 - **First analyzed:** 2026-08-29
 - **Status:** closed

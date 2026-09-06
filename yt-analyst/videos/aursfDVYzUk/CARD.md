@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=aursfDVYzUk
 - **Title:** The perfect trade entry with THIS volume analysis!
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Duration:** 18:29
+- **Uploaded:** 2025-10-24 · **Duration:** 18:29 · **Views:** 236,599
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

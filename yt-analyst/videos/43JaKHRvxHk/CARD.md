@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=43JaKHRvxHk
 - **Title:** 90% of Traders Use VWAP WRONG! (Here's How to Do It Right)
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Duration:** 10:41
+- **Uploaded:** 2026-07-03 · **Duration:** 10:41 · **Views:** 7,754
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

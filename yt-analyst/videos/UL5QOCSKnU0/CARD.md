@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=UL5QOCSKnU0
 - **Title:** BEST Zero-Lag Indicator On TradingView? I Tested It 8,000 Times & It's FREE
 - **Channel:** AlgoTrade Pro (@algotradepro) — affiliate/subscription funnel
-- **Uploaded:** 2026-09-04 · **Duration:** 7:40 (460 s)
+- **Uploaded:** 2026-09-04 · **Duration:** 7:40 (460 s) · **Views:** 21,673
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-ljl (grade + assess replicability on our /ES corpus)

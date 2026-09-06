@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=Ex5Dk_wVygw
 - **Title:** You Picked Your Market Wrong — Here Is How to Choose the Right One (video-2)
 - **Channel:** Smart Money Decode X (logo bottom-right; no presenter on camera)
-- **Uploaded:** 2026-08-05 · **Duration:** 20:48 (1248 s)
+- **Uploaded:** 2026-08-05 · **Duration:** 20:48 (1248 s) · **Views:** 17,714
 - **Playlist:** PLU9kIorYkc18 #2 · bead dr-8qq.2
 - **First analyzed:** 2026-08-29
 - **Status:** closed

@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=00QtD-RosLg
 - **Title:** Everything you've learned about trading is wrong...
 - **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 8 (final; title card "COMMON MISTAKES TRADERS MAKE AND HOW TO FIX THEM")
-- **Uploaded:** 2024-11-25 · **Duration:** 26:24 (1584 s)
+- **Uploaded:** 2024-11-25 · **Duration:** 26:24 (1584 s) · **Views:** 49,025
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #9 · bead dr-08s.8
 - **First analyzed:** 2026-08-28
 - **Status:** closed

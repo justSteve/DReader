@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=Vd83oo_geMk
 - **Title:** THE TRUTH about Heatmap & Liquidity — This is how the World Champion REALLY trades!
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Uploaded:** 2026 · **Duration:** 15:13
+- **Uploaded:** 2025-11-07 · **Duration:** 15:13 · **Views:** 31,793
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-zk8 (Vorwald orderflow sweep)

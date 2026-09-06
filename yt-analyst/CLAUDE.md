@@ -45,6 +45,15 @@ a playlist synthesis. It embeds a snapshot of the card text, so it is
 gitignored and goes stale the moment a card changes — rerun it after
 `yta.py index`. No network, no assets: open the file in a browser.
 
+`build_corpus.py` flattens every card into one `corpus.json` — the data layer
+the card-reader UI is built on. Per card: header metadata (title, channel,
+uploaded, duration, views, status, bead, playlist, run count), every curated
+section verbatim as markdown, any parsed Clarity/Alignment grades, and the
+**cross-reference edges between cards** — the link graph the corpus has grown
+as later sessions amended earlier findings. It reads curated card text only,
+never `runs/`, and it excludes the machine-appended Run log. Regenerate after
+any card change; it is gitignored like `browser.html`.
+
 `yta.py export` emits the curated Findings as JSON on stdout (`--out PATH`
 to write a file, `--video ID` to restrict) for sibling zgents — provenance,
 finding text, timestamps and a normalized verification grade. It reads the

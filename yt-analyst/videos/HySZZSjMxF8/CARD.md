@@ -3,7 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=HySZZSjMxF8
 - **Title:** The Ultimate Multi-Timeframe Strategy for Perfect Entries (Every Time)
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
-- **Uploaded:** 2026-08-12 · **Duration:** 12:20 (740 s)
+- **Uploaded:** 2026-08-12 · **Duration:** 12:20 (740 s) · **Views:** 25,319
 - **First analyzed:** 2026-09-06
 - **Status:** closed
 - **Bead:** dr-cle (graded on the orderflow axis)
