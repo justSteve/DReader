@@ -3,11 +3,13 @@
 - **Channel:** https://www.youtube.com/@tom_vorwald_en (`@tom_vorwald_en`, 93 uploads)
 - **Analyzed:** 2026-09-06 · epic bead `dr-zk8` · cards in `videos/<id>/CARD.md`
 - **Scope:** the 19 uploads whose titles sit on the order-flow / volume /
-  profile / VWAP / PbD axis, selected from all 93. **10 completed; 9 blocked**
-  by a Gemini free-tier daily quota — see *Coverage and what is missing*.
+  profile / VWAP / PbD axis, selected from all 93. **All 19 completed.**
+  (The first pass stopped at 10 on a Gemini free-tier daily quota; the key was
+  moved off the free tier and the remaining 9 were run the same day.)
 - **Method:** one standardised order-flow wide pass per video, the *identical*
-  question across every video so the answers are directly comparable. No
-  zooms: the sweep is for breadth, and the quota stopped further calls.
+  question across every video so the answers are directly comparable. No zooms:
+  the sweep is for breadth. Individual claims worth pressing are listed under
+  *Open items*.
 
 ## Coverage
 
@@ -23,15 +25,15 @@
 | 8 | `YmygDgtoxO8` | The ONLY Volume-Profile-Video (World Champion) | 13:49 | closed | ✔ |
 | 9 | `aursfDVYzUk` | The perfect trade entry with THIS volume analysis | 18:29 | closed | ✔ |
 | 10 | `0CrkbfuIhkc` | Crash or All-In? What Volume Profile Tells Us NOW | 14:12 | closed | ✔ |
-| — | `YkclL6xgu-s` | How powerful is Volume Trading REALLY? | 13:00 | — | quota |
-| — | `43JaKHRvxHk` | 90% of Traders Use VWAP WRONG! | 10:41 | — | quota |
-| — | `VumVuGnCcFM` | The ONLY VWAP-Video you will EVER need | 11:59 | — | quota |
-| — | `Ly62G168MkQ` | The Simplest Day Trading Strategy (PbD Method) | 16:10 | — | quota |
-| — | `jXR1afMy-3o` | PbD: The World's BEST trading strategy | 12:08 | — | quota |
-| — | `m3IMdc7QwN4` | PbD: BEST strategy for times of crisis | 9:18 | — | quota |
-| — | `Kg6sYKgtkrY` | The ONLY Strategy you need for 2026 (PbD Method) | 15:41 | — | quota |
-| — | `yWO8hVpRXeY` | LIVE DAY TRADING — PbD on the DAX Future | 17:56 | — | quota |
-| — | `uFxYcpiaOpw` | My Simplest Trading Strategy (80–90% Win Rate) | 9:33 | — | quota |
+| 11 | `YkclL6xgu-s` | How powerful is Volume Trading REALLY? | 13:00 | closed | ✔ |
+| 12 | `43JaKHRvxHk` | 90% of Traders Use VWAP WRONG! | 10:41 | closed | ✔ |
+| 13 | `VumVuGnCcFM` | The ONLY VWAP-Video you will EVER need | 11:59 | closed | ✔ |
+| 14 | `Ly62G168MkQ` | The Simplest Day Trading Strategy (PbD Method) | 16:10 | closed | ✔ |
+| 15 | `jXR1afMy-3o` | PbD: The World's BEST trading strategy | 12:08 | closed | ✔ |
+| 16 | `m3IMdc7QwN4` | PbD: BEST strategy for times of crisis | 9:18 | closed | ✔ |
+| 17 | `Kg6sYKgtkrY` | The ONLY Strategy you need for 2026 (PbD Method) | 15:41 | closed | ✔ |
+| 18 | `yWO8hVpRXeY` | LIVE DAY TRADING — PbD on the DAX Future | 17:56 | closed | ✔ |
+| 19 | `uFxYcpiaOpw` | My Simplest Trading Strategy (80–90% Win Rate) | 9:33 | closed | ✔ |
 
 Two further videos from this channel were carded earlier in the same session
 and belong to the same body of work: [`zAwEX_tRUfE`](../videos/zAwEX_tRUfE/CARD.md)
@@ -189,53 +191,171 @@ These matter because the sources do not cite each other:
   and SMDX.
 - **Break-and-retest** — `NkQeOVDTAec` 05:38 vs Carmine ep. 3/6.
 
-## What is NOT specified anywhere in the sweep
+## PbD, resolved
 
-- **What `PbD` stands for.** It is used as a named model in `NkQeOVDTAec`
-  (00:08) and `0CrkbfuIhkc` (03:10) and expanded in neither; `usho6UVLqkE`
-  never mentions it at all. **The four PbD videos are all in the blocked set.**
-- **A delta threshold.** Delta is visible on his footprint (`Vd83oo_geMk`
-  08:16) but no numeric trigger is given — the same gap Carmine has.
-- **Position sizing.** No contract counts, no account risk percentage.
-- **Exit rules** beyond "target the opposing level" and R:R > 2.
-- **Any executed trade.** Across all ten videos there is **no live execution,
-  no fill, no P&L and no broker connection** — only annotated illustrations.
-  The `yWO8hVpRXeY` LIVE DAY TRADING video is in the blocked set and is the
-  natural test of whether this channel ever shows a real trade.
-- **Costs.** No commission, spread or slippage anywhere.
+`PbD` is used as the channel's flagship model in at least seven videos and
+"expanded" in none of them — because **it is not an acronym**.
+[m3IMdc7QwN4](../videos/m3IMdc7QwN4/CARD.md) (07:46) gives the letters their
+meaning: they are the **shapes a TPO/Market Profile distribution draws**.
+
+| Letter | Shape | Market state |
+|---|---|---|
+| **P** | fat top on a thin stem | aggressive **upward** impulse that then balanced near the highs |
+| **b** | thin stem above a fat base | aggressive **downward** impulse that balanced at the lows |
+| **D** | symmetric bell | **balance** |
+
+Everything else in the framework follows from that: **P and b are the ~30%
+imbalance regime, D is the ~70% balance regime**, and the tradeable moment is
+a breakout from a P or b formation — on screen in German
+([jXR1afMy-3o](../videos/jXR1afMy-3o/CARD.md) 00:19):
+
+> *"Ein Ausbruch aus einer P-Formation gibt dir den entscheidenden Moment an,
+> wann du traden solltest."* — a breakout from a P-formation tells you the
+> decisive moment when you should trade.
+
+A move that extends beyond the range and comes back inside is a **"break-in"**
+(10:04) — the failed-breakout case, which the corpus previously had no name for.
+
+## The close rule, and the regime rule
+
+Two things the earlier partial sweep recorded as missing turned out to be
+published — just not in the videos first examined.
+
+**Closes, not wicks.** Attested four times: candle closes and opens confirm
+acceptance rather than extremes ([Ly62G168MkQ](../videos/Ly62G168MkQ/CARD.md)
+05:10); closes outside the Value Area confirm a move out of balance, closing
+prices identify break-off edges, and candle-close counting decides continuation
+([jXR1afMy-3o](../videos/jXR1afMy-3o/CARD.md) 05:15, 05:40, 08:57); the entry
+requires a **close** above consolidation, not a wick
+([uFxYcpiaOpw](../videos/uFxYcpiaOpw/CARD.md) 07:15); a **weekly close** below
+fair value on low volume is a mean-reversion signal
+([YkclL6xgu-s](../videos/YkclL6xgu-s/CARD.md) 06:19). **This aligns the channel
+with SMDX's `"CLOSE BELOW MOST RECENT HL"`** and closes a gap logged against
+[HySZZSjMxF8](../videos/HySZZSjMxF8/CARD.md).
+
+**How he chooses between continuation and reversion.** The VWAP video supplies
+it ([43JaKHRvxHk](../videos/43JaKHRvxHk/CARD.md)): **classify the market's
+structure first.** In an established trend, VWAP is a **pull-back entry**; when
+VWAP is horizontal and structure is balanced, it is a **mean-reversion target**
+(03:22, 04:50, 06:30) — restated independently in
+[VumVuGnCcFM](../videos/VumVuGnCcFM/CARD.md) (10:35). This answers the
+expansion-versus-reversion contradiction logged against
+[zAwEX_tRUfE](../videos/zAwEX_tRUfE/CARD.md): the rule exists, but **neither
+entry video states it**, so a viewer of the scalping video alone gets an
+expansion method without being told it is the 30% regime.
+
+## The one executed trade
+
+Across nineteen videos there is exactly one
+([yWO8hVpRXeY](../videos/yWO8hVpRXeY/CARD.md)), and it is a real execution —
+the **ATAS DOM Trader panel** is on screen at 15:52 with German controls
+(`Schließen`, `Kauf MKT`, `Verk MKT`).
+
+| Element | Value |
+|---|---|
+| Plan | short below **112**, into Asian-session lows |
+| Stop | above market structure, explicitly **not** moved to breakeven |
+| Risk | **23 ticks**; R:R revised from 1:2 to ~**1:3** |
+| Result | **74 ticks**, trailing the stop above the local balance area |
+
+**74 / 23 = 3.22 R realised**, closing against the stated ~1:3 target. It is the
+only place in the sweep where a stated risk, a stated target and a realised
+outcome appear together and reconcile. Note also that his stop rule — above
+structure, never arbitrarily to breakeven — is the **opposite** of the
+1R-then-breakeven exit hard-coded into the AlgoTrade Pro backtest
+([UL5QOCSKnU0](../videos/UL5QOCSKnU0/CARD.md)).
+
+That video also carries the only non-price, non-volume input on the channel:
+**Euwax Sentiment**, the Stuttgart exchange's retail gauge, used contrarily
+(11:53, 12:05). Nothing else in the corpus uses retail positioning.
+
+## The 80–90% win-rate claim
+
+[uFxYcpiaOpw](../videos/uFxYcpiaOpw/CARD.md) claims a hit rate of **80–90%** for
+a setup that fires **"once a day"** and works in only the **30%** imbalance
+regime. **Stop distance, target and risk-reward are all ABSENT.**
+
+Break-even R:R = (1 − p)/p, so **80% needs only 0.25** and **90% needs 0.111**.
+The claim is therefore *not implausible* — high-hit-rate systems are normally
+small-R systems. But it is **unfalsifiable as given**, and the omitted number is
+precisely the one that could refute it. It also sits unreconciled against the
+channel's own planning framework
+([NkQeOVDTAec](../videos/NkQeOVDTAec/CARD.md)): **50% hit rate, R:R > 2**. Both
+can describe different setups; the channel never says which regime a viewer is in.
+
+The channel's own best rebuttal is in
+[VumVuGnCcFM](../videos/VumVuGnCcFM/CARD.md) (11:07): a trader may win **20
+times** adding counter-trend to VWAP and be **liquidated on the 21st**. That is
+negative skew stated plainly — a high hit rate concealing a fat left tail — and
+it is the argument against reading any win rate on this channel without its R:R.
+
+## What is still NOT specified anywhere in the sweep
+
+- **A delta threshold.** Delta is on his footprint
+  ([Vd83oo_geMk](../videos/Vd83oo_geMk/CARD.md) 08:16) and he reads direction
+  from it ([YkclL6xgu-s](../videos/YkclL6xgu-s/CARD.md) 02:18), but no numeric
+  trigger is ever given — the same gap Carmine has.
+- **Position sizing.** No contract counts, no account-risk percentage anywhere.
+- **Costs.** No commission, spread or slippage in any of the nineteen videos.
+- **Reconciliation of his own frequency figures.** Balance is given as ~70% in
+  six videos, but strong trend days are written as **>20%**
+  ([VumVuGnCcFM](../videos/VumVuGnCcFM/CARD.md) 09:48) against a 30% imbalance
+  share elsewhere. Unaddressed.
+- **A verified competitive record.** See below.
+
+## The "World Champion" branding
+
+The channel brands relentlessly on "World Champion" / "Trading World
+Champions". What the slides actually show:
+
+- [m3IMdc7QwN4](../videos/m3IMdc7QwN4/CARD.md) 00:18 — a leaderboard with
+  `Patrick Nill 202.1% Germany` **below** `Pau Perdices Bellet 600.9% Spain`,
+  with `Darren O'Neill 168%` and `Pavlos Georgiades 166.7%`; and separately
+  `3 Christoph Radecker 47.7% Switzerland`.
+- [0CrkbfuIhkc](../videos/0CrkbfuIhkc/CARD.md) 00:28 — `2 Patrick Nill 202.1%`,
+  `3 Christoph Radecker 47.7%`.
+- [Ly62G168MkQ](../videos/Ly62G168MkQ/CARD.md) 00:21 — a full row of entries:
+  `202.10% 97.80% 97.80% 112.90% 72.20% 81.50% 219.10% 245.70% 94.50% 94.50%
+  229.20% 125.70%`, which explains why different videos quote different figures.
+
+**Every leaderboard shown in this sweep places these traders second or third.**
+No slide evidences a first place. That does not disprove the claim — a win in
+another contest or year may exist — but **the branding is not supported by the
+channel's own evidence**, and none of it has been checked against the World Cup
+Trading Championships public record. Treat as unverified.
+
+## The presenter's name — do not assert it
+
+Three passes rendered the same speaker's self-introduction three ways:
+**"Thomas Vorwald"** ([0CrkbfuIhkc](../videos/0CrkbfuIhkc/CARD.md)),
+**"Thomas Voigt"** ([aursfDVYzUk](../videos/aursfDVYzUk/CARD.md) 00:19) and
+**"Tom Freiwald"** ([VumVuGnCcFM](../videos/VumVuGnCcFM/CARD.md) 00:29), the
+last also rendering "Patrick Nill" as "Patrick Nohr". The handle is
+`@tom_vorwald_en` and the on-screen banner reads `World Class Edge Tom
+Vorwald`. **The variation is Gemini transcription noise on German surnames in
+AI-dubbed audio, not multiple presenters.** Cite the channel identity, which is
+evidenced on screen; never a legal name taken from audio.
 
 ## Open items
 
-1. **Expand `PbD`** — run `Ly62G168MkQ`, `jXR1afMy-3o` or `m3IMdc7QwN4`.
-2. **Grade the "80–90% Win Rate" claim** (`uFxYcpiaOpw`) with the win-rate/R:R
-   identity. At an 80% hit rate the break-even R:R is only 0.25, so the claim
-   is survivable in principle — the question is what R:R he pairs it with.
-3. **Verify the championship claims.** `2022-2023 Patrick Nill 219.1% Global
-   Cup Championship of Forex Trading™` and `2024 Quarterly Futures Day Trading
-   Championship Q2 2nd Christoph Radecker 97.70%` (`NkQeOVDTAec` 00:36–00:40),
-   against `2 Patrick Nill 202.1%` / `3 Christoph Radecker 47.7%`
-   (`0CrkbfuIhkc` 00:28–00:32). **The figures differ between videos** and none
-   is verified against the World Cup Trading Championships public record.
-4. **Resolve the presenter's name.** The speaker self-identifies as *"Thomas
-   Voigt, coach and trainer of Patrick Nill"* (`aursfDVYzUk` 00:19) while
-   another pass renders the same voice as *"Thomas Vorwald"* (`0CrkbfuIhkc`),
-   and the handle is `@tom_vorwald_en`. Unresolved; do not assert a legal name
-   from this corpus.
-5. **Why he treats POC unconventionally** (`YmygDgtoxO8` 06:55) — stated,
-   never explained. Zoom 06:40–07:30.
-6. **Score the dated outlook** in `0CrkbfuIhkc` (ES below 6,850 → 6,300 →
-   4,600; BTC acceptance below 72,000; AAPL below 240; GOOGL above 325 on a
-   close; TSLA below 400) against what the market subsequently did — the same
-   treatment the Trade Brigade newsletter gets.
+1. **Verify the championship record** against the World Cup Trading
+   Championships public results for Patrick Nill and Christoph Radecker.
+2. **Why he treats POC unconventionally**
+   ([YmygDgtoxO8](../videos/YmygDgtoxO8/CARD.md) 06:55) — stated, never
+   explained. Zoom 06:40–07:30.
+3. **Score the dated outlooks.** [0CrkbfuIhkc](../videos/0CrkbfuIhkc/CARD.md)
+   (ES below 6,850 → 6,300 → 4,600; BTC below 72,000; AAPL below 240; GOOGL
+   above 325 on a close; TSLA below 400) and
+   [Kg6sYKgtkrY](../videos/Kg6sYKgtkrY/CARD.md) (6E 1.1770; ES 6840/6900;
+   Silver 30/28, 70/71/67, above 80) against what the market then did — the
+   treatment the Trade Brigade newsletter already gets.
+4. **The 80–90% claim needs its R:R.** A zoom on
+   [uFxYcpiaOpw](../videos/uFxYcpiaOpw/CARD.md) around the entry demonstration
+   may recover stop and target distances from the chart even though he never
+   speaks them.
 
-## Coverage and what is missing
+## Cost
 
-The sweep stopped at 10 of 19 because the Gemini key hit
-`GenerateRequestsPerDayPerProjectPerModel-FreeTier`, **limit 20 requests per
-day per model**. The completed 10 are the entire order-flow and profile core.
-The 9 blocked are the **PbD cluster (5, including the only LIVE trading
-video), VWAP (2), a volume-trading video and the 80–90% win-rate claim** —
-i.e. exactly the videos that would settle what PbD means and whether this
-channel ever demonstrates a real trade.
-
-Consumed: **915,466 Gemini prompt tokens** across the 10 completed passes.
+**All 19 wide passes: 1,559,718 Gemini prompt tokens** (~4h43m of video at
+~92 tokens/second, the expected low-rate YouTube-URL path). No zooms were run
+in the sweep.

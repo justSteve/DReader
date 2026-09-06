@@ -703,10 +703,19 @@ why the wall arrived earlier than the successful-call count suggests.
 - Treat `RESOURCE_EXHAUSTED` as terminal for the day, not as retryable. The
   current code retries it, which is strictly harmful.
 
-**Proposed fixes for Steve** (not applied — his call):
+**RESOLVED 2026-09-06.** Steve moved the key off the free tier (new key,
+53 chars, `sha256:c5c14320`, replacing the 39-char `sha256:1bc7d1f6`). The
+remaining 9 videos then ran the same day at 3-way concurrency with 15s spacing
+and **zero 429s** — 19 wide passes and 1.56M prompt tokens in one session.
+
+Two code fixes remain worth doing and are NOT applied:
 - Distinguish 429 *rate limit* (retry) from 429 *RESOURCE_EXHAUSTED / daily
-  quota* (abort immediately, tell the operator). Cheap and clearly right.
+  quota* (abort immediately, tell the operator). The current code retries a
+  daily-quota error, which is strictly harmful and burns the remaining budget.
 - Honour the `retryDelay` the API returns (it sent `23s` / `29s`) instead of
   the fixed 5→10→20 ladder.
-- Enable billing on the Google Cloud project to leave the free tier. This is
-  the only change that makes a 19-video sweep possible in one day.
+
+**The durable lesson is diagnostic, not economic:** when a sweep dies on 429,
+read the `quotaId`. `...RequestsPerMinute...` means slow down;
+`GenerateRequestsPerDayPerProjectPerModel-FreeTier` means stop and tell the
+operator, because no amount of backoff will clear it.

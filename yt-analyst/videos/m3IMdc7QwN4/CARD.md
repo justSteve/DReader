@@ -1,0 +1,80 @@
+# Video: m3IMdc7QwN4
+
+- **URL:** https://www.youtube.com/watch?v=m3IMdc7QwN4
+- **Title:** PbD: The BEST trading strategy for times of crisis, explained in detail!
+- **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
+- **Duration:** 9:18
+- **First analyzed:** 2026-09-06
+- **Status:** closed
+- **Bead:** dr-zk8 (Vorwald orderflow sweep)
+- **Sweep:** see [playlist synthesis](../../playlists/vorwald-orderflow-sweep.md)
+
+## Findings
+_(curated by Claude Code: verified findings with timestamps)_
+
+**This video answers the corpus's longest-standing open question: what `PbD`
+means.** At **07:46** he expands the letters:
+
+> **`D`** = **balance** phases · **`P`** = aggressive **upward** trend phases ·
+> **`b`** = aggressive **downward** trend phases
+
+**`PbD` is not an acronym at all — it is the literal shapes of the letters** as
+a Market Profile / TPO distribution draws them. A **P** has a fat top on a thin
+stem: an upward impulse that then consolidated near the highs. A lowercase **b**
+is the mirror — thin stem above a fat base, an aggressive sell-off that balanced
+at the lows. A **D** is the symmetric bell: balance. Every previous video in the
+sweep used the term as though it were an initialism; it never was, which is why
+none of them "expanded" it.
+
+**Platform is Sierra Chart** (01:20) with TPO market profile and volume profile
+layered on **ES (CME)**; also daily **Gold** (02:30) and daily **Bitcoin**
+(08:14). Annotation in MS Paint as usual.
+
+**Definitions given:** single prints = price zones where price spent **no more
+than 30 minutes** (01:53) — a sharper, time-quantified version of the definition
+in [K8qtT2_axPo](../K8qtT2_axPo/CARD.md). A lower balance formed after aggressive
+selling is the lowercase **b** shape (05:01).
+
+**The one rule** (06:06): price moving **back below equilibrium and finding
+acceptance** has a high probability of clearing the previous trend. Note
+"acceptance", the same loose term used in
+[HySZZSjMxF8](../HySZZSjMxF8/CARD.md) — but the PbD videos do define it, as a
+candle-close condition (see [jXR1afMy-3o](../jXR1afMy-3o/CARD.md)).
+
+**Championship slides, and what they actually show** (00:18–00:21). The
+leaderboard reads `Patrick Nill 202.1% Germany`, `Pau Perdices Bellet 600.9%
+Spain`, `Darren O'Neill 168% Ireland`, `Pavlos Georgiades 166.7% Cyprus`, and
+separately `3 Christoph Radecker 47.7% Switzerland`. **On this slide Nill is
+second, behind a 600.9% return, and Radecker is third.** The channel brands
+itself throughout on "World Champion" / "Trading World Champions"; the
+leaderboards it shows evidence second and third places. He may have won a
+different contest or year — a fuller table appears in
+[Ly62G168MkQ](../Ly62G168MkQ/CARD.md) — but **the "World Champion" claim is not
+supported by any slide in this sweep.**
+
+Workshop slide `Von der Theorie zur Praxis – Meistere den Markt mit Struktur und
+Tiefe` (00:12) — "From theory to practice: master the market with structure and
+depth".
+
+**No live trade, no entry/stop/target distances, no R:R, no win rate.**
+
+## Sessions
+_(curated by Claude Code: one entry per interrogation session — date, aim, verdict)_
+
+- **2026-09-06 — comparative wide pass (epic dr-zk8).** Standardised
+  orderflow wide pass, identical question across all 19 sweep videos. Verdict: RESOLVES the PbD question -- P/b/D are profile SHAPES (upward imbalance / downward imbalance / balance), not an acronym. Also shows Nill placing 2nd, not first.
+
+## Lessons (this video)
+_(anything peculiar to this video/channel: layout, chart software, segment structure)_
+
+- **`PbD` = the letter shapes P, b, D in a TPO profile.** Not an initialism.
+  Cite 07:46 of this video; it is the only expansion in 19 videos.
+- Sierra Chart here — a fourth platform for this channel (with VolFix,
+  VolaTrader, TradingView, ATAS).
+- The leaderboards show **2nd and 3rd** places. Do not repeat "World Champion"
+  as fact from this corpus.
+
+
+## Run log
+_(machine-appended by yta.py — do not edit above this line's entries)_
+- 20260906-101604 [full] gemini-flash-latest (tok 51535/877) — Q: Map this video for an analyst building a comparative corpus on ORDER FLOW and vo… — runs/20260906-101604/

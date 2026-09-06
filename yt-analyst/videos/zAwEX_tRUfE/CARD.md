@@ -144,11 +144,24 @@ on **re-acceptance** — which is Carmine's "buy the pullback" in other words.
 
 So Vorwald runs **both** postures: expansion out of value on the 1-minute
 chart, reversion at a level on the 15-minute. The conflict is not between
-sources; it is **internal to Vorwald**, and it is worse than the original
-finding. He teaches two opposite trades at comparable locations and, in
-neither video, gives a rule for which one applies. The selection between the
-two modes is the whole game, and it is unstated. Treat any single Vorwald
-video as one mode of a system whose switching rule has not been published.
+sources; it is **internal to Vorwald**.
+
+**FURTHER AMENDED 2026-09-06 (epic dr-zk8) — the switching rule does exist.**
+The channel sweep found it in the VWAP video
+([43JaKHRvxHk](../43JaKHRvxHk/CARD.md)): **classify the market's structure
+first, then choose the mode.** In an established trend, the tool is a
+**pull-back entry** (continuation); when structure is horizontal and balanced,
+it is a **mean-reversion target** (03:22, 04:50, 06:30). The same rule is
+restated independently in [VumVuGnCcFM](../VumVuGnCcFM/CARD.md) (10:35):
+mean-reversion only when structure is sideways and balanced. The underlying
+regime split is his 70/30 — balance about 70% of the time, imbalance about
+30%, attested in six separate videos.
+
+The criticism that survives is that **neither of the two entry videos states
+the switching rule**, so a viewer who watches only the scalping video receives
+an expansion method with no indication that it is the minority regime — the
+30% case, by his own numbers. Treat any single Vorwald video as one mode of a
+system whose selection rule is published somewhere else on the channel.
 
 Secondary divergence: Carmine confirms in **"The Now"** — live tape or
 footprint, *never a candle close*, because waiting for a close widens the stop

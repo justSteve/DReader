@@ -69,10 +69,28 @@ What he actually says (03:40, verbatim) is:
 
 That is an observation, not a rule. A dedicated zoom (runs/20260906-070459)
 found **no formal rule for close-versus-touch on a structural break, and no
-formal definitions of the three market phases**. Likewise there is **no stated
+formal definitions of the three market phases** *in this video*.
+
+**AMENDED 2026-09-06 (epic dr-zk8).** The rule does exist on the channel — it
+is simply not in this video. The PbD videos state it repeatedly and
+explicitly: candle **closes and opens** confirm acceptance rather than high/low
+extremes ([Ly62G168MkQ](../Ly62G168MkQ/CARD.md) 05:10); look for **candle
+closes outside the Value Area** to confirm a move out of balance, use closing
+prices to find break-off edges, and apply candle-close counting rules to judge
+continuation ([jXR1afMy-3o](../jXR1afMy-3o/CARD.md) 05:15, 05:40, 08:57); the
+breakout entry requires a **candle close** above consolidation, not a wick
+([uFxYcpiaOpw](../uFxYcpiaOpw/CARD.md) 07:15); and a **weekly candle close**
+below fair value on low volume is a mean-reversion signal
+([YkclL6xgu-s](../YkclL6xgu-s/CARD.md) 06:19).
+
+So the channel aligns with SMDX's `"CLOSE BELOW MOST RECENT HL"` after all.
+The criticism that survives is narrower: this video advertises the rule in its
+description and does not state it, leaving a viewer who watches only this one
+without it. Likewise there is **no stated
 condition for when to step down a timeframe** — he simply moves to the next
 one. Compare SMDX, which pins this exactly: a ChoCH is a `"CLOSE BELOW MOST
-RECENT HL"`. Vorwald gestures at the same idea and leaves it unspecified.
+RECENT HL"`. Vorwald gestures at the same idea here and specifies it elsewhere
+(see the amendment above).
 
 **No numbers anywhere.** Stop and target are drawn as zones, never as prices
 or point distances; there is no risk-reward ratio, no win rate, no
