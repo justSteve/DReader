@@ -2,7 +2,7 @@
 
 - **URL:** https://www.youtube.com/watch?v=eJZhX6Xz4cU
 - **Title:** STOP Using Candlestick Charts, Use This Instead
-- **Channel:** Carmine Rosato (Jumpstart Trading) — "Trading Orderflow Series" ep. 2
+- **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 2
 - **Uploaded:** 2024-10-18 · **Duration:** 24:53 (1493 s) · **Views:** 124,236
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #3 · bead dr-08s.2
 - **First analyzed:** 2026-08-28
@@ -56,8 +56,12 @@ of delta = ask − bid), so the verifier's transcription is near-certain.
 
 **Rule — trapped participants (16:14).** Lots of aggressive participants at
 a price with NO follow-through ⇒ possible reversal. Strong selling but
-market not moving lower ⇒ a passive buyer is active; with context those
-sellers get trapped when price lifts. **Verified: frames** (slide exact).
+market not moving lower ⇒ *"it's a **sign** a PASSIVE BUYER is active"*;
+with context those sellers get trapped when price lifts. **Verified: frames**
+(slide exact). Note the slide hedges — "a sign" — and the audio hedges harder
+still (16:46: *"**maybe** somebody's buying this move and it's a **good
+chance** a buyer is active"*). An earlier version of this card rendered the
+relation as a bare ⇒ and dropped both.
 
 **Trade example 1 (17:26–18:54), ES Thu Oct 03 2024, long.** Journal (TradeZella-
 style UI on a TradingView 1m chart): Net/Gross P&L **$21,750.00**, **30**
@@ -81,8 +85,12 @@ breakout, large green volume bar." As price breaks out, volume dissipates;
 at the extreme high the footprint tapers to tiny prints (Gemini: 22×26 then
 0×0 at 5735.00–5735.25, 10:45:11 bar) = the tail = no buyers above
 resistance ⇒ sellers must lower price; when delta turns red (aggressive
-sellers) enter short against the high. No explicit stop/target given.
-**Unverified** (no frames pulled for 21:00–23:40).
+sellers) enter short. **"Against the high" was Gemini's phrasing, not
+Carmine's** — his words are *"things are starting to turn red and indicate
+that no buyers want to buy this move and sellers are now active… this is how
+you're able to capitalize on a downside selloff move, shorting this failed
+breakout"* (23:23–23:37). No explicit stop or target given. **Unverified**
+(no frames pulled for 21:00–23:40).
 
 **Concrete parameters:** Sierra Chart; ES; 20-tick/5-pt range footprint;
 3 columns (volume, delta, delta-colored profile); risk 1.5 pts on trade 1.
@@ -96,7 +104,7 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
   accurate per cell; trade log verified to the cent with one zoom misread
   caught by arithmetic before frames. Open: row-6 color, volume-tail window
   unframed. Runs: `runs/20260828-110445` (wide), `-110622` (T&S),
-  `-110709` (columns), `-110750` (trade log), `-110838` (tail).
+  `-110717` (columns), `-110750` (trade log), `-110823` (tail).
 
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_

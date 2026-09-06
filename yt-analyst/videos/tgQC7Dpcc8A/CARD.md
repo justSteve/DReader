@@ -43,8 +43,27 @@ target the session highs.
 
 **Volume tails / price discovery (12:24–12:30):** "This is called price
 discovery or 'auction discovery'"; "Well Carmine, 'isn't there a volume
-tail there?'" — a tail INTO a breakout on strong volume is discovery, not
-exhaustion. **Unverified** (no frames).
+tail there?'" — a tail INTO a breakout on strong volume is **undecided, not
+yet exhaustion**. His actual framing (12:57–13:16) is a question the auction
+has not answered: *"the auction is discovering: is this breakout to the
+upside going to be successful, or unsuccessful and show a lack of interest
+and then sell off."* In this instance it resolved as rejection — at
+14:12–14:32 the market had broken 5810 and was *"now validating the volume
+tail… the auction rejected it."* An earlier version of this card compressed
+that into a binary ("discovery, not exhaustion"), dropping both the hedge and
+the outcome. **Unverified** (no frames).
+
+**Delta calibration (09:02) — he disclaims a threshold and then demonstrates
+one.** Spoken: *"I don't look for specific numbers, I look more so for
+outliers in the data. In this example we could see an average there — like
+500 is the high side and the low side is like a 300 delta or 200 delta. If I
+saw a delta for like over a thousand here then there would be an outlier in
+the data and something to carefully watch."* So the doctrine is genuinely
+threshold-free, but the *method* is a session-and-instrument baseline: read
+the day's typical range, then treat a multiple of it as the outlier. That is
+more useful than a fixed number and the corpus previously recorded only the
+disclaimer. Added by the transcript audit, 2026-09-06. **Unverified**
+(spoken; no frames).
 
 **Breakout framework (overlays on Bookmap, verified word-for-word):**
 - **Step 1 : Confirm strong volume in the direction intending to trade**
@@ -72,11 +91,19 @@ minutes later delta shrank to **+3300** — "market tried to move lower
 (delta got smaller)" — sellers failed to break the large buyer ⇒ long.
 (+4000/+3300 spoken/banner; unverified.)
 
-**Trapped Traders / Absorption (23:30, unverified):** "If there is A LOT of
-aggressive participants entering at a price BUT no follow through – a
-possible reversal. Strong buying but market not moving higher ⇒ a PASSIVE
-SELLER is active; with context those buyers become trapped if the market
-moves lower." (Mirror of ep. 2's slide.)
+**Trapped Traders / Absorption (23:30).** The slide, restored to its
+on-screen wording (the previous version of this card abridged three lines
+into one and left the quotation marks on):
+
+> "If there is A LOT of aggressive participants entering the market at a
+> certain price BUT no follow through - its a sign of a possible reversal."
+> "If the market has a lot of strong buying but market is not moving higher,
+> it's a sign a PASSIVE SELLER is active."
+> "With proper context, those buyers can become trapped if the market moves
+> lower."
+
+Spoken narration at 23:32–23:50 matches. **Verified: on-screen `verbatim`
+capture** (mirror of ep. 2's slide).
 
 **Trade 3 — ES Thu Sep 26 2024, short (23:52).** Net/Gross **$20,250.00**,
 30, **13.5** pts, Target **5800.0**, Stop **5815.0**, Initial Target

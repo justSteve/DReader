@@ -85,15 +85,34 @@ derived from stop + risk (never displayed). Pattern: stops of 1.5–3.5 ES
 points placed just beyond the absorption level, targets of 7.5–13 points
 at the opposing level, planned 3–8R, realized 4–10R. Seven winners are
 shown; no losers are shown — the sample is curated, not a track record.
-The "$208,000 in September" and "236 profitable days" (Goldman) overlays
-are unverified marketing claims — and the first is **contradicted by ep. 1's
-own audio**, where he says his most profitable month was a gross profit of
-**$28,000** (00:02–00:07). Neither figure is frame-verified. Do not repeat
-either until frames settle it.
+The **"$208,000 in September"** overlay (ep. 1) is an unverified marketing
+claim, and it is **contradicted by his own audio**: at 00:02–00:07 he says his
+most profitable month was a gross profit of **$28,000**. A 7.4× gap, with no
+frames at 00:00–00:10 to settle it. Do not repeat either figure until frames do.
 
-**What is NOT specified anywhere in the series:** a numeric delta or
+The Goldman **"236 profitable days"** panel is a different matter and **is
+frame-verified** — `videos/0QlGCz6U_1g/frames-233-243/f_0003.jpg` carries every
+figure (236 / 15 / 41 / 112 / $100M / $50–100M / $18.1B / 53% / 2012) and the
+histogram bars (0, 0, 2, 2, 12, 27, 56, 75, 37, 41) close arithmetically
+against them. It is cited evidence about Goldman's 2012 trading record, not a
+claim about the presenter. *(An earlier revision of this line wrongly swept it
+in with the $208,000 overlay; caught by the ep. 4 transcript audit.)*
+
+**What is NOT specified anywhere in the series:** a *fixed* numeric delta or
 volume threshold; position-sizing rules beyond "30 contracts"; exit rules
 beyond "target at the opposing level, trail after"; any win rate.
+
+**Refined 2026-09-06 by the transcript audit.** The delta line above was too
+strong. He disclaims a fixed threshold — *"I don't look for specific numbers,
+I look more so for outliers in the data"* — but immediately demonstrates how
+to derive one for the session (ep. 3, 09:02): *"we could see an average there
+— like 500 is the high side and the low side is like a 300 delta or 200
+delta. If I saw a delta for like over a thousand here then there would be an
+outlier."* So the series does supply a **calibration method** (read the day's
+typical range, treat a multiple of it as the outlier), just not a constant.
+That is arguably the better answer, and it narrows — without closing — the gap
+the Vorwald channel fills, since that channel's threshold is a different
+quantity: resting order *size* in the book (ES > 250–300 contracts), not delta.
 
 ## Cross-episode consistency (free verification)
 - The Oct 3 2024 trade appears in eps. 2, 7 and 8 with identical fields;

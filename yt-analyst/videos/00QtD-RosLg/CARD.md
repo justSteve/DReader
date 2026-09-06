@@ -14,7 +14,7 @@ _(curated by Claude Code: verified findings with timestamps)_
 **What it is.** A recap of episodes 1–7, not new material. Despite the
 title card, no enumerated list of "mistakes" is presented (verified by
 zoom 00:00–01:50); the mistakes are the retail behaviours already covered
-(buying breakouts, longing trendlines, shorting breakdowns, using indicators
+(buying breakouts, trading trendline rejections, shorting breakdowns, using indicators
 instead of order flow). Structure, with the episode each segment reprises:
 01:41 auction slide + real-estate/AAPL ladders (ep. 1, 5) · 06:02 funnel
 (ep. 1) · 06:55 "Who is in control of price?" · 09:13 candlestick-vs-

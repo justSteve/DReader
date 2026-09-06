@@ -26,9 +26,16 @@ knowing".
 5 fps agreed on every cell.
 
 **Live SPX trade (05:40–10:20), tastytrade platform.**
-- Position already held (BTO/STO tags on the chain): SPX 0DTE **Aug 25 2026**,
+- Position **staged, not necessarily held**: SPX 0DTE **Aug 25 2026**,
   +1 7660P / −2 7675P / +1 7690P. SPX 7668–7669 during the demo.
-  **Verified: frames** (`frames-552-600/f_0001,4,8.jpg`).
+  **Verified: frames** for the strikes, date and spot
+  (`frames-552-600/f_0001,4,8.jpg`). *Corrected 2026-09-06:* this card
+  previously read "already held (BTO/STO tags on the chain)". On tastytrade
+  those badges mark legs staged in the New Trade panel, the frame shows
+  **Review & Send un-pressed** and a stale limit, and he says only *"what I
+  have loaded up here"* (05:40) and *"You can have these loaded up. You don't
+  even have to route them as orders"* (10:03). Whether the position was live
+  is **not established**.
 - Host's "$6.50" (05:46) is the live **MID** of the fly at 05:59 (bid 6.25 /
   mid 6.50 / ask 6.80), not the ticket limit. The ticket itself reads Limit
   7.60, Max Profit 740, Max Loss −760 (stale limit; 15 − 7.60 = 7.40 ✓).
@@ -38,12 +45,30 @@ knowing".
   embedded flies: 1× 60/65/70, 2× 65/70/75, 3× 70/75/80, 2× 75/80/85,
   1× 80/85/90 (1+2+3+2+1 = 9). **Verified: arithmetic.**
 - Embedded values (07:06–08:00): ATM 7665/7670/7675 ≈ $0.95–1.00; OTM
-  7675/7680/7685 ≈ $0.55; 7645/7650/7655 ≈ $0.65. Recomputed from chain mids
-  in frames: ATM fly 0.88–1.00, 7675/80/85 fly 0.55 exactly. **Verified:
-  frames + arithmetic** (7645 strike is off-screen; $0.65 unverified).
-- Method (08:16): SPX → 7665, sell the two 7660/7665/7670 flies at peak;
-  SPX → 7675, sell the 7670/7675/7680 fly. Edge ≈ $1.00 peak vs $0.55–0.65
-  off-center. **Unverified** (spoken; no on-screen figure to check).
+  7675/7680/7685 ≈ $0.55. Recomputed from chain mids in frames: ATM fly
+  0.88–1.00, 7675/80/85 fly 0.55 exactly. **Verified: frames + arithmetic.**
+  A further *"only worth 65 cents"* fly (07:59) was carded as
+  **7645/7650/7655**; those strikes are **never spoken** — he says *"the 60
+  strike or the 50 strike… I dragged the wrong thing"* — and the triple came
+  from a `verbatim: null` claim. On the 05:59 chain a fly centred at 7655 is
+  ~0.30, so 65 cents fits a fly one or two strikes below the money, not that
+  triple. **Strikes withdrawn; the $0.65 stands as spoken and unverified.**
+
+- **The decomposition balances in price, not just in contracts** (added
+  2026-09-06 from the transcript audit). Read off the 05:59 chain frame
+  (`frames-552-600/f_0008.jpg`), the five embedded flies' mids are 0.825 /
+  0.95 / 0.80 / 0.55 / 0.30. Weighted by the 1·2·3·2·1 counts they sum to
+  **6.525** — the wide fly's own mid, the spoken "$6.50". The 07:06 frame
+  balances again at 6.775 both ways. Because the decomposition is an identity
+  in contracts it must hold in prices all day, and this is the cleanest
+  confirmation of the whole thesis. **Verified: arithmetic from frames.**
+- Method (08:12–08:20). What he actually says: *"if it drops down to 7665,
+  then **maybe** I'll sell these two put butterflies that I have embedded
+  here."* **No strikes are spoken.** This card previously named them as
+  "the two 7660/7665/7670 flies" — a `verbatim: null` paraphrase, and one
+  that contradicts the card's own count, which lists **one** 7660/65/70 fly,
+  not two. Strikes withdrawn; the hedge restored. Edge ≈ $1.00 at peak versus
+  $0.55–0.65 off-centre. **Unverified** (spoken; no on-screen figure).
 
 **Corrections to Gemini's read (pixels are the tiebreaker):**
 1. Year: Gemini said "Aug 25 '25"; platform header reads 8/25/2026.

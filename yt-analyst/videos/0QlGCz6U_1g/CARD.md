@@ -30,15 +30,20 @@ the stop-hunt read at 08:53 and the rules slide.
   16 vs headline 15 — inconsistency in the source graphic). External claim
   not independently checked.
 - 03:38 *How Does Retail Trade?* — buying when they should sell and vice
-  versa; "how many times have you stopped out … and then the market moves
-  in your favor?" (second bullet appears 04:56; slide shown twice).
+  versa. The on-screen line reads *"…for a loss AND after the market
+  eventually moves in your favor?"* (`frames-350-540/f_0008.jpg`); spoken at
+  04:54 it is *"…for a loss and then the market eventually moves in your
+  favor?"*. An earlier version of this card quoted a string matching neither.
+  (Second bullet appears 04:56; slide shown twice.)
 - 07:07 → 09:39 *Trade Like Smart Money* — builds progressively; full list
   by 09:39: don't think conventionally; ALWAYS know who is on the other side
   of your trade; market vs wholesale prices; place orders when smart money
   is active; profit from those areas. **Header verified at 07:07; full list
   unverified** (no frames at 09:39; Gemini's wide pass reported the full
   list at 07:07 when only the header was up).
-- 10:04 *Stop Thinking Conventionally* — "Would you buy at this green box?"
+- 10:04 *Stop Thinking Conventionally* — "Would you buy **the stock** at this
+  green box?" (on-screen, `frames-1002-1012/f_0003.jpg`; spoken at 10:05 it is
+  "would you buy the market down here")
   vs four retail objections (price falling, lower lows, buying after a
   crash is bad, bad earnings) → the green box is *Demand*. Chart axis
   2908–2940 with Wed/Thu dividers (instrument unknown).
@@ -100,7 +105,8 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
   verifier (38 tool uses, 30 min). Verdict: slides exact; chart text and
   metadata unreliable (instrument, timestamp, labels); one chart segment
   missed by the wide pass. Card closed. Runs: `runs/20260828-113545` (wide),
-  `-113811`, `-113856`, `-113926` (zooms).
+  `-113702`, `-113715`, `-113728` (zooms). *(Corrected 2026-09-06: the three
+  zoom IDs previously cited here did not exist on disk.)*
 
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_
