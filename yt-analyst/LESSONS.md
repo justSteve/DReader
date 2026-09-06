@@ -565,3 +565,56 @@ the hours decide. Only the July 2026 run supports bar-based work, and it is
 What the corpus IS excellent for: microstructure and transaction-cost
 questions, where tick depth is the point and calendar span is not. Pricing a
 strategy's stop rule against real ES friction is a test this data does well.
+
+## 2026-09-06 — One wide pass is the domain check; spend zooms only after it passes
+
+**Status: confirmed.** `sASTlqfPg-8` was submitted as a possible order-flow
+source on the strength of its title, *"Asymmetric Value — Anatomy of a High
+Probability Trade"*. The wide pass established in one call that it is an
+**AI-generated** video (`Gemini Notebook` end card, 07:23; synthetic narrator;
+stock slides; 15 views) synthesising Jack Schwager's *Stock Market Wizards*
+into a deep-value plus cash-secured-put framework — no order flow, no volume
+profile, no delta, no DOM. Gemini's own uncertainties field said so
+unprompted.
+
+**Rule:** the wide pass is not just a map, it is the **domain and provenance
+check**. Read the end card, the view count and the presence of any platform
+capture before committing to zooms. Where a video has no primary content,
+extra zooms only transcribe slide captions more precisely — they cannot make
+an unsourced claim sourced.
+
+**Corpus hygiene:** AI-generated videos are now appearing in search results
+for trading topics. Mark them on the card and in the channel field so a later
+session does not mistake a machine's restatement of a book for a source.
+
+## 2026-09-06 — Ask for German (or any non-English) on-screen text verbatim, then translated
+
+**Status: suspected** (one observation). `zAwEX_tRUfE` is a German video
+AI-dubbed to English, but the on-screen writing stays German. The first pass
+returned the label as an English gloss; asking explicitly for "transcribe
+verbatim then translate" recovered `Value Area High Vortag` (prior day) and
+`CRV` (*Chance-Risiko-Verhältnis* = risk-reward ratio). The gloss loses the
+literal string, which is what a card needs to be checkable. Applies to any
+dubbed video: the audio language and the screen language differ.
+
+## 2026-09-06 — Convert every strategy claim to the win-rate / R:R identity first
+
+**Status: confirmed** (works on both a claims video and a backtest video).
+
+Break-even win rate = 1 / (1 + R:R). It costs nothing and it repeatedly finds
+the soft spot in a presentation:
+
+- `zAwEX_tRUfE` (Vorwald): he states R:R 0.8 requires "at least a good 60%" to
+  break even. True figure is **55.56%** — conservative, not wrong. But the
+  same identity shows his headline claim ("profitable at 50–60% win rate")
+  requires R:R ≥ 1.00 at 50%, and **he never gives the recommended setup's
+  R:R**. The identity located the gap: rigorous where he condemns, silent
+  where he recommends.
+- `UL5QOCSKnU0` (AlgoTrade Pro): the same conversion to R-expectancy turned a
+  profit factor of 1.05 into 0.0257 R per trade, directly comparable against
+  measured transaction cost.
+
+**Do this before any other analysis of a strategy claim.** Where a video gives
+a win rate, ask what R:R it implies; where it gives an R:R, ask what win rate
+it demands. A video that supplies neither for its recommended trade has not
+made a checkable claim.
