@@ -47,8 +47,14 @@ exhaustion).
 defined once, cleanly, and it is the best single line in the corpus
 (`vl01TiVTuoQ` 00:42):
 
-> *"Orderflow doesn't just show you where prices were, but who is currently
-> buying, who is currently selling, and how aggressively."*
+> *"Order flow doesn't just show you where prices were, but who's buying,
+> who's selling, and how aggressively."*
+
+*(Wording note, 2026-09-06: an earlier version of this quote carried
+"currently" twice and was labelled verbatim. YouTube's captions have no
+"currently"; Gemini's transcription does. Both are machine ears on AI-dubbed
+audio and no frames exist, so neither is authoritative — the caption wording is
+used here as the more conservative of the two. The sense is identical.)*
 
 **Instruments he reads.** DOM/order book (20 levels default, settable to 100),
 footprint/cluster charts with a delta histogram, volume profile (composite and

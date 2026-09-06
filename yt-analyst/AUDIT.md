@@ -338,3 +338,48 @@ liquidity-seeking; it denies that it is always the operative regime.** Added.
 "three independent arrivals — `Vd83oo_geMk`, Carmine ep. 2, Trading Notes". The
 word appears **nowhere** in ep. 2's transcript or card. It is **two**; Carmine
 has absorption, the same mechanism unnamed. **Fixed.**
+
+---
+
+## 2026-09-06 · `vl01TiVTuoQ` — Vorwald, order-flow guide · **class 1, 2, 4, 5**
+
+**1. Class 2 — the flagship definition is not verifiably verbatim.** The card
+labelled this "spoken at 00:42, verbatim", and the sweep quoted it as the
+corpus's cleanest one-line definition of order flow:
+
+> Gemini: *"…but who is **currently** buying, who is **currently** selling…"*
+> Captions: *"…but who's buying, who's selling, and how aggressively."*
+
+Two machine transcriptions of AI-dubbed audio, no frames, and they disagree.
+**Neither is authoritative.** Both card and sweep now carry the caption wording
+with the discrepancy noted. The sense is unchanged; the "verbatim" label was
+not earned.
+
+**2. Class 4 — an unresolved digit.** The DAX ladder is carded `1, 1, 2, 4, 3,
+5, 33`. Captions hear eight digits: *"1 1 2 4 3 5 3 3"*. No frames exist. Now
+recorded as unresolved; a five-second frame pull at 04:00 would settle it.
+
+**3. Class 1 + terminology.** "Level 3 showing up to 100 orders deep" drops the
+hedge that immediately follows — *"**I don't even know exactly how many** you
+can have displayed"* — and endorses his loose usage. What he describes is a
+deeper **Level 2** display (the same 20-settable-to-100 rows as `Vd83oo_geMk`);
+vendor "Level 3" means order-by-order data. **Both fixed.**
+
+**4. Class 2 — a spliced quote.** The spoofing line was compressed across a cut
+and lightly rewritten ("They're usually real" → "are usually real"). Full
+wording restored.
+
+**5. Class 4 — a slogan put in his mouth.** "Candlesticks are guessing,
+footprint is knowing" is Gemini's inference from a `verbatim: null` claim. He
+says *"Everyone knows these charts, but hardly anyone knows these. And that's
+exactly the difference between guessing and knowing"* — naming neither. **Fixed.**
+
+**6. Class 5 — a platform guess.** The German execution panel was called
+"StereoTrader-class". The run's own note says the layout resembles ATAS/Sierra
+Chart, and the identical panel (`Schließen`, `Kauf MKT`) is identified as the
+**ATAS DOM Trader** on `yWO8hVpRXeY`. **Corrected to ATAS.**
+
+**Omissions now in the read:** two spoken size references absent from the
+card's calibration table — crude oil *"a 100 block"* (04:34) and a hypothetical
+*"like a 300, 250"* (05:31), the latter independently restating the ES
+threshold from `Vd83oo_geMk`.

@@ -14,8 +14,14 @@ _(curated by Claude Code: verified findings with timestamps)_
 
 **The corpus's cleanest definition of order flow.** Spoken at 00:42, verbatim:
 
-> *"Orderflow doesn't just show you where prices were, but who is currently
-> buying, who is currently selling, and how aggressively."*
+> *"Order flow doesn't just show you where prices were, but who's buying,
+> who's selling, and how aggressively."*
+
+*(Wording note, 2026-09-06: an earlier version of this quote carried
+"currently" twice and was labelled verbatim. YouTube's captions have no
+"currently"; Gemini's transcription does. Both are machine ears on AI-dubbed
+audio and no frames exist, so neither is authoritative — the caption wording is
+used here as the more conservative of the two. The sense is identical.)*
 
 That is Carmine's Time & Sales premise (ep. 2 — "who is the aggressor")
 stated in one sentence, and it is the best single-line definition in the
@@ -33,24 +39,35 @@ because it calibrates what "large" means per market:
 | Instrument | Observed book sizes | t |
 |---|---|---|
 | S&P 500 (ES) | a single ask-side order of **325 contracts** | 03:56 |
-| DAX (FDAX) | `1, 1, 2, 4, 3, 5, 33` | 04:02 |
+| DAX (FDAX) | `1, 1, 2, 4, 3, 5, 3, 3` **or** `…5, 33` — unresolved | 04:02 |
 | Bond futures | **5,000–6,000** per side | 09:23 |
 | Gold | `2 or 4 or 6` | 09:39 |
 
 A price reference of **7596.25** is called out at 08:07 where a large order
 executed.
 
-**Spoofing, handled honestly** (06:49): *"Spoofing used to exist and probably
+**Spoofing, handled honestly** (06:48–07:01). The card previously spliced this
+into a single sentence; his full wording is *"I know that spoofing used to
+exist and probably still does sometimes, and that it's possible for such an
+order to be a fake order and get pulled. But, let's stick with exponentially
+large orders. They're usually real because someone has the ambition to do
+something there."* Earlier rendering: *"Spoofing used to exist and probably
 still does sometimes… but exponentially large orders are usually real."* He
 neither dismisses the objection nor lets it void the method.
 
-**Level 2 vs Level 3** (07:30) — Level 3 showing up to 100 orders deep. The
+**Level 2 vs Level 3** (07:29–07:43) — he describes a book showing *"many more
+orders there… up to 100"*, immediately hedged: *"**I don't even know exactly how
+many** you can have displayed."* **Terminology caution added 2026-09-06:** what
+he describes is a *deeper Level 2 display* — the same thing
+[Vd83oo_geMk](../Vd83oo_geMk/CARD.md) calls 20 rows settable to 100 — whereas
+vendor "Level 3" means order-by-order data. This card previously presented his
+usage as the standard distinction. The
 corpus has not previously distinguished these.
 
 **Platform is German-language**: the order panel at 06:08 reads `Konto,
 Schließen, Break-Even (b), Kauf, Verkauf, Kauf MKT, Verkauf MKT, Kauf ASK,
 Verkauf ASK, Kauf BID, Verkauf BID, Cancel All, Reverse, Nur Verträge, SL/TP,
-Bearbeiten` — a DOM-execution front end (StereoTrader-class), not a stock
+Bearbeiten` — a DOM-execution front end. *(Corrected 2026-09-06: previously guessed as "StereoTrader-class". The run's own note says the layout resembles ATAS/Sierra Chart, and the identical German panel — `Schließen`, `Kauf MKT` — is identified as the **ATAS DOM Trader** on [yWO8hVpRXeY](../yWO8hVpRXeY/CARD.md). ATAS is the better inference.)* Not a stock
 TradingView layout.
 
 **No trade, no numbers on risk.** No entry/stop/target rules, no R:R, no win
