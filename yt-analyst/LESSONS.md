@@ -661,3 +661,52 @@ presenter has other videos covering the opposing case. On a channel with a
 deep back catalogue, one video is a chapter. State conflicts as "in this
 video" until the catalogue has been sampled, and prefer a channel sweep to a
 strong claim from n=1.
+
+## 2026-09-06 — The Gemini key is on the FREE tier: 20 requests/day/model, and retries burn it
+
+**Status: confirmed.** The Vorwald channel sweep stopped at 10 of 19 videos on:
+
+```
+429 RESOURCE_EXHAUSTED
+Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests
+limit: 20, model: gemini-3.6-flash
+quotaId: GenerateRequestsPerDayPerProjectPerModel-FreeTier
+```
+
+Three things follow, and the third is the expensive one.
+
+**1. The key is free-tier.** `GenerateRequestsPerDayPerProjectPerModel-FreeTier`,
+**20 requests per day per model**. Not tokens — *requests*. A 34-minute wide
+pass and a 5-second clipped zoom cost exactly the same against this quota,
+which inverts the usual economics: **clipped follow-ups are no longer nearly
+free.** Doctrine's "run as many clipped follow-ups as the question needs"
+holds for tokens and is false for requests.
+
+**2. The fallback buys nothing.** Requesting `gemini-flash-latest` produced a
+quota error naming **`model: gemini-3.6-flash`**, so on this project the alias
+resolves to the same underlying model and the same bucket. The `dr-9qo`
+repoint was still correct — it stopped a dead model turning a 503 into a
+traceback — but it does not add headroom.
+
+**3. Every retry is a billed request.** `MAX_ATTEMPTS = 4` on the primary plus
+4 on the fallback means **one ask can consume up to 8 of the day's 20
+requests**. A 429 storm therefore accelerates its own exhaustion: the retries
+that are meant to ride out rate limiting are what spend the daily cap. Today's
+27 successful asks sat on top of an unknown number of retry requests, which is
+why the wall arrived earlier than the successful-call count suggests.
+
+**What to do until this changes:**
+- **Budget the day in requests, not tokens.** ~20 per model. Plan a sweep
+  around that number *before* starting, and expect retries to eat into it.
+- Run sweeps **sequentially with generous spacing**; concurrency of 3 produced
+  429s immediately, and each 429 costs quota.
+- Treat `RESOURCE_EXHAUSTED` as terminal for the day, not as retryable. The
+  current code retries it, which is strictly harmful.
+
+**Proposed fixes for Steve** (not applied — his call):
+- Distinguish 429 *rate limit* (retry) from 429 *RESOURCE_EXHAUSTED / daily
+  quota* (abort immediately, tell the operator). Cheap and clearly right.
+- Honour the `retryDelay` the API returns (it sent `23s` / `29s`) instead of
+  the fixed 5→10→20 ladder.
+- Enable billing on the Google Cloud project to leave the free tier. This is
+  the only change that makes a 19-video sweep possible in one day.
