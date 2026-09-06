@@ -25,7 +25,15 @@ channel's fifth independent statement of the same figure — see
 five videos**, which is worth something even though it is unsourced.
 
 **Closing prices are the rule here, stated three times:**
-- *"looking for candle closes outside the Value Area to confirm moves out of
+- *(Quote marks removed 2026-09-06 — the string below was Gemini's paraphrase,
+  `kind: spoken`, `verbatim: null`. What he says at 05:03–05:16 is an
+  observation, not yet a rule: "always there, where the market moves out of
+  balance, that is above the value area and below the value area, I very often
+  see candlesticks with closing prices and opening prices." The **rule** form
+  arrives at 05:36 — "I use closing prices to locate where the so-called
+  break-off edges are" — and at 08:56, "the rules for counting closing prices".
+  The card's substance stands; the attribution did not.)*
+- looking for candle closes outside the Value Area to confirm moves out of
   balance"* (05:15)
 - he uses **closing prices** to identify break-off edges in the volume profile
   (05:40)
@@ -46,7 +54,16 @@ with SMDX's `"CLOSE BELOW MOST RECENT HL"` rather than leaving it unspecified.
 Four breakout/rejection scenarios from a P-formation are diagrammed at 09:05.
 
 **Named concepts:**
-- **"Break-in"** (10:04): a move extending beyond the range and then returning
+- **"Break-in"** (10:04) — **treat this term with caution.** The crisp
+  definition below is Gemini's (`verbatim: null`); what he actually says at
+  09:47–10:02 attaches the word to a different sentence: *"the market drops
+  down and gives me a P. And now I have the opportunity to recognize that
+  buying is happening again… We call this a break-in."* The two readings are
+  compatible, but note the audio is an **AI dub of German**, and German
+  *Einbruch* — a plunge or collapse — would also surface as "break-in". The
+  corpus should not build vocabulary on this until frames at 09:45–10:20
+  settle whether it is a term or a translation artefact. As glossed: a move
+  extending beyond the range and then returning
   inside. The corpus had no name for this; it is the failed-breakout case.
 - **D-setup** (11:10): the balanced profile shaped like a D.
 - **Single prints = aggressive forced buying** (05:58).
@@ -60,7 +77,7 @@ Four breakout/rejection scenarios from a P-formation are diagrammed at 09:05.
 > simple orientation aid. The boxes help us organize market movements within an
 > overarching structure."*
 
-Platform **ATAS** showing **FDAX** with TPO and volume profile overlaid (02:03).
+Platform **probably ATAS** showing **probably FDAX** with TPO and volume profile overlaid (02:03) — the run's own uncertainties field says the ticker header and exchange are *"partially obscured and low-resolution"*, and the transcript names neither. Stated flatly on this card until 2026-09-06.
 German label diagram at 04:28 matching the one in
 [YmygDgtoxO8](../YmygDgtoxO8/CARD.md), plus `daily high / closing price /
 opening price`.
@@ -78,7 +95,7 @@ _(anything peculiar to this video/channel: layout, chart software, segment struc
 
 - **This is the card to cite for the channel's close-vs-wick rule.** Closes
   confirm; wicks do not. Stated three times (05:15, 05:40, 08:57).
-- "Break-in" = extend beyond the range then return inside. Useful name the
+- "Break-in" — **provisional**; may be an AI-dub rendering of German *Einbruch* (a plunge). Not yet safe as corpus vocabulary. As glossed, extend beyond the range then return inside — a name the
   corpus lacked.
 - The 70/30 balance/imbalance split is now attested in five separate videos.
 

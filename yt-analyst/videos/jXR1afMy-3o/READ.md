@@ -7,11 +7,10 @@
 
 ## In brief
 
-PbD is not an acronym, and this video never expands it, which is why seven
-videos on this channel use the term and a viewer of any one of them cannot say
-what it stands for. The letters are pictures. Set a Market Profile beside the
-chart and an aggressive rally that then settles near its highs draws a capital
-P: thin stem, fat top. A sell-off that settles at its lows draws a lowercase b.
+PbD is not an acronym, and this video never expands it; seven videos on this
+channel use the term and none explains it. The letters are pictures. In a
+Market Profile, an aggressive rally that then settles near its highs draws a
+capital P: thin stem, fat top. A sell-off that settles at its lows draws a lowercase b.
 A market that simply agrees on price draws a D, the bell. P and b are
 imbalance, the roughly 30% of the time a market accelerates; D is balance, the
 other 70%.
@@ -25,84 +24,80 @@ trade.
 
 ## The argument
 
-He opens with where the logic came from. He went deep into Market Profile and
-Volume Profile because between them they answer two questions: who is
-currently dominating the market, and where the breaking points are. Then, he
-says, he analysed thousands of patterns and asked whether all of it could be
-captured technically. The result is a framework he claims to have published in
-Traders' Magazine years ago. Neither the analysis nor the publication is
-evidenced in the video, so both stay as claims.
+He opens with where the logic came from: Market Profile and Volume Profile,
+because between them they answer two questions, who is dominating the market
+and where the breaking points are. Then, he says, he analysed thousands of
+patterns and asked whether all of it could be captured technically. The result
+is a framework he claims to have published in Traders' Magazine years ago.
+Neither is evidenced in the video.
 
-The two-profile reading is the order-flow core, and it is clean. The grey
-blocks are the Market Profile: time at price. A selling tail, single letters
-at the top, says aggressive sellers were there and nobody stayed. Single prints
-say traders were forced to buy, and he gives reasons that are not opinion:
-hedging transactions, some fundamental reason to be in the market. The
-histogram beside it is the Volume Profile: where the market found acceptance
-and, in the low-volume nodes, where it slips into imbalance. Fair price is the
-value area, where large participants can find counterparties for positions that
-take many hours to build. Everything outside is unfair. This is the auction
-premise Carmine Rosato opens his series with
-([QaNPAaEnB5E](../QaNPAaEnB5E/CARD.md)) and the one Smart Money Decode X builds
-its structure on; none of the three cites the others.
+The two-profile reading is the order-flow core. The grey blocks are the Market
+Profile: time at price. A selling tail, single letters at the top, says
+aggressive sellers were there and nobody stayed. Single prints say traders were
+forced to buy, and the reasons he gives are obligations: hedging, some
+fundamental reason to be in the market. The histogram beside it is the Volume
+Profile: where the market found acceptance and, in the low-volume nodes, where
+it slips into imbalance. Fair price is the value area, where large participants
+can find counterparties for positions that take many hours to build. Everything
+outside is unfair. This is the auction premise Carmine Rosato opens his series
+with ([QaNPAaEnB5E](../QaNPAaEnB5E/CARD.md)) and the one Smart Money Decode X
+builds its structure on; none of the three cites the others.
 
 The regime split follows. P and b formations are the roughly 30% of the time
 when a market accelerates. The remaining 70% is balance, where you trade value:
-short at the top, long at the bottom. He anticipates the objection that a
-strategy for trending markets is useless most of the time and answers it
-flatly: no, because the D is a setup too. The 70/30 figure appears on this
-channel at least five times, in [K8qtT2_axPo](../K8qtT2_axPo/CARD.md),
+short at the top, long at the bottom. He anticipates the objection that a trend
+strategy is useless most of the time and answers it flatly: no, because the D
+is a setup too. The 70/30 figure appears on this channel at least five times,
+in [K8qtT2_axPo](../K8qtT2_axPo/CARD.md),
 [YmygDgtoxO8](../YmygDgtoxO8/CARD.md), [Ly62G168MkQ](../Ly62G168MkQ/CARD.md),
-[43JaKHRvxHk](../43JaKHRvxHk/CARD.md) and here, always as a round number and
-never with a source. It is consistent, which is worth something, and
-unsupported, which is worth remembering.
+[43JaKHRvxHk](../43JaKHRvxHk/CARD.md) and here, always the same round number,
+never with a source. Consistent, which is worth something; unsupported, which
+is worth remembering.
 
-Then the rule the rest of the channel gestures at and this video actually
-states. His thesis is that where a market leaves balance, above or below the
-value area, he very often sees candles opening and closing out there; so he
-uses closing prices to locate the break-off edges in the profile. Closes define
-the fair range; whatever trades beyond them is unfair price and he is not
-interested in it. He is careful to add that you should not strip the wicks off
-the chart: the extremes have their justification, they just decide nothing.
+Then the rule the rest of the channel only gestures at. His thesis is that
+where a market leaves balance, above or below the value area, he very often
+sees candles opening and closing out there; so he uses closing prices to locate
+the break-off edges in the profile. Closes define the fair range; whatever
+trades beyond them is unfair price. He adds that you should not strip the wicks
+off the chart: the extremes have their justification, they just decide nothing.
 When the market breaks out of a balance, it is new closes forming beyond it,
 with volume underneath, that make continuation likely. Whether continuation
 holds is settled by what he calls the rules for counting closing prices. The
 on-screen version is one German sentence: a breakout from a P-formation tells
 you the decisive moment when you should trade.
 
-That places him on one side of a real divide in the corpus. Carmine's CLC rule
-reads confirmation on the live tape and refuses to wait for a candle close; his
-ep. 7 ([7facFfjQ0UE](../7facFfjQ0UE/CARD.md)) shows why, a stop that grows from
-about two points to about seven while you wait for the bar. The Smart Money
-Decode X series takes the other side, defining a change of character as a close
-below the most recent higher low and a wick as no break at all
+That puts him on one side of a real divide. Carmine's CLC rule reads
+confirmation on the live tape and refuses to wait for a candle close; his ep. 7
+([7facFfjQ0UE](../7facFfjQ0UE/CARD.md)) shows why, a stop that grows from about
+two points to about seven while you wait for the bar. The Smart Money Decode X
+series takes the other side, defining a change of character as a close below
+the most recent higher low and a wick as no break at all
 ([dAlP8UZXT48](../dAlP8UZXT48/CARD.md)). This channel is with SMDX. It says so
-here three times, again in [Ly62G168MkQ](../Ly62G168MkQ/CARD.md) and
-[uFxYcpiaOpw](../uFxYcpiaOpw/CARD.md), and it closes the gap logged against
-[HySZZSjMxF8](../HySZZSjMxF8/CARD.md), where a description promised a
+here three times and again in [Ly62G168MkQ](../Ly62G168MkQ/CARD.md) and
+[uFxYcpiaOpw](../uFxYcpiaOpw/CARD.md), which closes the gap logged against
+[HySZZSjMxF8](../HySZZSjMxF8/CARD.md), where the description promised a
 closing-price rule and the video delivered an aside.
 
-The scenarios come next, drawn in Paint. A setup below the range that pokes out
-and comes back in will probably go back up. One that breaks out upward will
+The scenarios are drawn in Paint. A setup below the range that pokes out and
+comes back in will probably go back up. One that breaks out upward will
 probably keep going. When the market drops, forms a P and buying resumes, he
-calls that a break-in, and the corpus had no name for that case before: it is
-the failed breakout seen from inside the range, the event Carmine fades on the
-first test and [HySZZSjMxF8](../HySZZSjMxF8/CARD.md) enters on re-acceptance. If
-instead the market falls back into the range and keeps going, the P has become
-a reversal, and a close confirming the downside gives him the one target in the
-video: below the start of the impulse. The D closes the loop. When the closes
-stop extending and you are stopped out once or twice, the market is building
-balance; switch to trading its edges. The VWAP video,
-[43JaKHRvxHk](../43JaKHRvxHk/CARD.md), gives the same regime rule from the
-other direction.
+calls that a break-in. The corpus had no name for the case: it is the failed
+breakout seen from inside the range, the event Carmine fades on the first test
+and [HySZZSjMxF8](../HySZZSjMxF8/CARD.md) enters on re-acceptance. If instead
+the market falls back into the range and keeps going, the P has become a
+reversal, and a close confirming the downside gives him the one target in the
+video: below the start of the impulse. When the closes stop extending and you
+are stopped out once or twice, the market is building balance; switch to
+trading its edges. The VWAP video, [43JaKHRvxHk](../43JaKHRvxHk/CARD.md), gives
+the same regime rule from the other direction.
 
 What he does not give matters as much. The counting rules are invoked three
 times and never stated: how many closes, on what timeframe, how far beyond the
-edge. There is no entry distance, no stop, no risk-reward, no hit rate, and no
-trade. The title calls it the world's best strategy and the channel calls its
-traders world champions; every leaderboard the channel shows places them second
-or third, and the claim stays unverified. What this video is, honestly, is the
-clearest map of the framework. The strategy is still somewhere else.
+edge. There is no entry, stop, risk-reward, hit rate or trade. The title calls
+it the world's best strategy and the channel calls its traders world champions;
+every leaderboard the channel shows places them second or third, and the claim
+stays unverified. What this video is, honestly, is the clearest map of the
+framework. The strategy is still somewhere else.
 
 ## In his words
 

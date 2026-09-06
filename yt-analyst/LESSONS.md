@@ -787,3 +787,33 @@ within ten seconds, and the qualification was never transcribed into the card.
 **Corollary:** a claim of the form "X rejects Y" needs X's own words for the
 rejection. If the only support is a Gemini paraphrase, the strongest defensible
 form is "X argues Y is not sufficient", which is usually what was actually said.
+
+## 2026-09-06 — On the German channel, Gemini's `verbatim` may be a TRANSLATION
+
+**Status: confirmed** by a composer's cross-check within a single run.
+
+The `verbatim` field is normally the strongest evidence a card can carry — it
+is supposed to be the literal string on screen. On this AI-dubbed German
+channel it is not always literal.
+
+Proof: in `jXR1afMy-3o`, one run reports the 00:19 German slide correctly as
+German (`Ein Ausbruch aus einer P-Formation gibt dir den entscheidenden Moment
+an, wann du traden solltest.`) and then reports **the same slide again at
+09:05 as an English "verbatim" string**. Gemini is translating German slides
+into English and returning the translation in the verbatim field.
+
+**Consequences for the 21-video Vorwald sweep:**
+
+- An English `verbatim` on a German-language slide is **not** proof of the
+  on-screen wording. It may be a faithful translation, but the literal string
+  is unrecovered. Only frames settle it.
+- Prefer the German string wherever a run supplies one, and translate ourselves.
+- The same hazard applies to **spoken terms** in the dubbed audio. `jXR1afMy-3o`
+  gives us "break-in" as a named concept — but German *Einbruch* means a plunge
+  or collapse, and would surface as "break-in" through a dub. A term that
+  arrives only through a translation layer should not become corpus vocabulary
+  until frames or the German audio confirm it.
+
+**Rule:** on any dubbed channel, treat `verbatim` as *evidence of meaning, not
+of wording*, and say so on the card. Reserve "verbatim" as a claim for
+frame-verified strings.

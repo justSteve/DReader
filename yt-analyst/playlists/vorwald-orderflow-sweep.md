@@ -273,7 +273,10 @@ a breakout from a P or b formation — on screen in German
 > wann du traden solltest."* — a breakout from a P-formation tells you the
 > decisive moment when you should trade.
 
-A move that extends beyond the range and comes back inside is a **"break-in"**
+A move that extends beyond the range and comes back inside is glossed as a
+**"break-in"** — *provisionally*: the crisp definition is Gemini's, the audio is
+an AI dub of German, and *Einbruch* (a plunge) would render the same way, so
+the corpus should not build on the term until frames settle it —
 (10:04) — the failed-breakout case, which the corpus previously had no name for.
 
 ## The close rule, and the regime rule
