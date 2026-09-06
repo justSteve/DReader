@@ -128,15 +128,27 @@ element is volume-at-price:
   branch" reading concrete — same platform as the professionals, a fraction
   of the cognitive load.
 
-**Where it directly contradicts the corpus — the finding worth keeping.**
-Carmine's ep. 3/6 rule is explicit: *never buy the initial break — let it
-break, buy the pullback; a defended retest proves the participants*. And his
-default posture is reversion: *~99% of the time look for the reversal on the
-first test*. **Vorwald's recommended entry is the initial break itself**, with
-no retest and no pullback requirement. Same instrument, same theory, opposite
-trade at the same location. Neither supplies statistics, so the corpus cannot
-adjudicate this — but it is now an explicit, testable disagreement rather than
-two unrelated opinions, and it is the sharpest cross-source conflict we hold.
+**Where it departs from the corpus.** Carmine's ep. 3/6 rule is explicit:
+*never buy the initial break — let it break, buy the pullback; a defended
+retest proves the participants*. And his default posture is reversion:
+*~99% of the time look for the reversal on the first test*. **Vorwald's
+recommended entry here is the initial break itself**, with no retest and no
+pullback requirement.
+
+**AMENDED 2026-09-06 (bead dr-cle).** This was first recorded as the corpus's
+sharpest *cross-source* conflict — Vorwald versus Carmine. That reading was
+wrong, and [HySZZSjMxF8](../HySZZSjMxF8/CARD.md) overturned it. In that video
+Vorwald teaches the **reversion** trade: a counter-trade at a pre-located
+level gated on volume-exhaustion confirmation, plus a failed breakout entered
+on **re-acceptance** — which is Carmine's "buy the pullback" in other words.
+
+So Vorwald runs **both** postures: expansion out of value on the 1-minute
+chart, reversion at a level on the 15-minute. The conflict is not between
+sources; it is **internal to Vorwald**, and it is worse than the original
+finding. He teaches two opposite trades at comparable locations and, in
+neither video, gives a rule for which one applies. The selection between the
+two modes is the whole game, and it is unstated. Treat any single Vorwald
+video as one mode of a system whose switching rule has not been published.
 
 Secondary divergence: Carmine confirms in **"The Now"** — live tape or
 footprint, *never a candle close*, because waiting for a close widens the stop
@@ -193,9 +205,10 @@ which is exactly what makes it useful. It converges with Carmine on premise
 and diverges on execution in a way we can state precisely.
 
 **Net.** Worth keeping and worth mining. Take the win-rate/R:R identity as a
-standing test for the whole corpus; log the break-vs-pullback conflict with
-Carmine as an open question; discount the specific trade, which is
-undocumented and unpriced.
+standing test for the whole corpus; treat the break-vs-pullback question as
+an open item **within Vorwald's own system** rather than against Carmine (see
+the amendment above); discount the specific trade, which is undocumented and
+unpriced.
 
 ## Sessions
 _(curated by Claude Code: one entry per interrogation session — date, aim, verdict)_

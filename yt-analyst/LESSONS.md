@@ -618,3 +618,46 @@ the soft spot in a presentation:
 a win rate, ask what R:R it implies; where it gives an R:R, ask what win rate
 it demands. A video that supplies neither for its recommended trade has not
 made a checkable claim.
+
+## 2026-09-06 — Read the description for claims to CHECK, never as a summary
+
+**Status: confirmed** (three channels, three videos, same failure).
+
+The YouTube description reliably over-promises relative to the video, and the
+gap is itself a finding:
+
+- `IUWvHVout94` (Trading Notes): description promises "2 live trades". The
+  video shows stylized motion graphics with no ticker, no axis, no prices, and
+  the narration never claims personal execution.
+- `UL5QOCSKnU0` (AlgoTrade Pro): banner claims "All Available Data Since
+  2020". Arithmetic forces the headline 5-minute table to exactly 2.000 years.
+- `HySZZSjMxF8` (Vorwald): description promises deriving trend "cleanly using
+  closing prices and structural analysis". The video says only "always keep an
+  eye on the closing prices… that gives you even more information" — an aside,
+  with no close-versus-touch rule anywhere.
+
+**Rule:** pull the description first (yt-dlp `--print "%(description)s"`, no
+API key needed), extract every checkable promise from it, and then treat those
+as the interrogation targets. Do not let the description supply any fact that
+goes on the card. Where video and description disagree, that gap belongs in
+the Findings — it is usually the most reportable thing in the video.
+
+## 2026-09-06 — A single video is one mode of a system, not the system
+
+**Status: suspected** (one clear instance; watch for a second).
+
+`zAwEX_tRUfE` was graded as expansion-first and its entry-on-the-break was
+logged as the corpus's sharpest conflict with Carmine's "never buy the initial
+break". `HySZZSjMxF8`, from the same presenter, then showed him teaching the
+**reversion** trade — a counter-trade at a pre-located level with
+volume-exhaustion confirmation, plus a failed breakout entered on
+re-acceptance. Both cards now say so; the first was amended.
+
+The conflict was never cross-source. It was internal to one presenter who
+teaches two opposite postures and publishes no rule for choosing between them.
+
+**Rule:** before recording a cross-source disagreement, check whether the
+presenter has other videos covering the opposing case. On a channel with a
+deep back catalogue, one video is a chapter. State conflicts as "in this
+video" until the catalogue has been sampled, and prefer a channel sweep to a
+strong claim from n=1.
