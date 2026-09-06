@@ -20,3 +20,7 @@ browser.html
 
 # generated data layer for the card-reader UI — rerun `python3 build_corpus.py`
 corpus.json
+
+# fetched YouTube auto-captions — substrate for READ.md, rerun `fetch_transcripts.py`
+videos/*/transcript.txt
+videos/*/transcript.vtt
