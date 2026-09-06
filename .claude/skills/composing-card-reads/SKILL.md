@@ -139,6 +139,38 @@ apart from the presenter's voice:
 > episodes. This is the slide that closes that gap.
 ```
 
+## The card audit (a required deliverable, not a side note)
+
+Composing from the transcript **audits the card**, and on the first video it
+tried this it found a wrong number that had already propagated into two other
+files. Treat the audit as half the job.
+
+As you compose, check every figure, name and quoted string in `CARD.md` against
+what the transcript actually says. Report — do not fix — anything in these
+classes:
+
+1. **A hedge hardened into an assertion.** "maybe a two" recorded as
+   "greater than 2"; "if you should reach 50%" recorded as a "planning hit
+   rate". This is the most common and most damaging class.
+2. **A paraphrase tabulated as a quote.** Check the run JSON under
+   `videos/<id>/runs/*/response.json`: a claim with **`verbatim: null`** is
+   Gemini's paraphrase, not anyone's words. It must never appear in a card's
+   numbers table as a stated value.
+3. **A spoken claim attributed to the screen.** Check `kind`. `kind: spoken` is
+   not on-screen text however slide-like it reads.
+4. **A number the transcript contradicts**, or that appears nowhere in it.
+5. **A name or term the card gets wrong** — noting that captions mangle proper
+   nouns, so the card is usually right and the caption wrong. Flag only when
+   the transcript is clearly the better source.
+
+Report each finding as: the card's text, the transcript's actual words with
+their timestamp, and which class above it falls into. If you find nothing,
+say so explicitly — a clean audit is a result.
+
+**Never edit `CARD.md` yourself.** Corrections are reconciled centrally, because
+a hardened figure usually appears in more than one file and fixing one copy
+creates a silent inconsistency.
+
 ## Before you finish
 
 - Every number in the read appears in `CARD.md`, or is marked unverified.
