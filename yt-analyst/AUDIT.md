@@ -499,3 +499,58 @@ three separate stop tightenings (14:03, 14:20, 15:50) folded into one row.
 (23 ticks), a real ATAS execution panel, and a locked-in floor — the only video
 of 21 to show any of it. It is simply not a closed, reconciled trade record.
 **Fixed in the card and the synthesis.**
+
+---
+
+## 2026-09-06 · `uFxYcpiaOpw` — Vorwald, the 80–90% claim · **class 1, 4**
+
+**Third cascade miss, inside a card I had already corrected.** Findings used
+the corrected *"maybe a two"* wording while the Lessons bullet still read
+*"present (as >2) only in NkQeOVDTAec"*. A repo-wide grep now returns zero.
+
+**The close-rule attestation is weaker than carded.** He says *"I have a
+breakout here with this higher closing price"* (07:13). The closing price is
+spoken; *"consolidation level"*, the wick contrast and *"explicit"* are
+Gemini's. The synthesis now records that the four attestations are **not
+equal** and names where the strong ones are (`jXR1afMy-3o`).
+
+**"Break-in" gets worse.** At 07:09 the dub says *"this **break-in** happened
+right here"* one sentence before *"I have a **breakout** here"* — **for the
+same move**. German *Ausbruch* and *Einbruch* are being rendered
+inconsistently, so the word carries no stable sense in this corpus.
+
+Also: instruments *"ES and Nikkei 225 mini"* come from a chart title Gemini's
+own uncertainties call *"tiny and partially compressed"* — he says only *"the
+Nikkei future"*; the on-screen `Once a day` drops the spoken hedge *"about"*;
+and *"ATAS inside MS Paint"* is a `verbatim: null` visual claim stated as fact.
+
+**Break-even arithmetic confirmed** independently: 0.25 at 80%, 0.111 at 90%;
+adding our measured 0.17 R of ES friction lifts those to 0.46 and 0.30.
+
+---
+
+## 2026-09-06 · `m3IMdc7QwN4` — Vorwald, the PbD key · **class 1, 3, 4**
+
+**The most consequential correction of the run: PbD is "phases", not
+"shapes", and the shapes gloss is ours.**
+
+His only expansion, 07:44–07:55: *"the D's are nothing more than large
+**balance phases**. The P's are the aggressive **trend phases upwards**, and
+the B's are the aggressive **trend phases downwards**."*
+
+Card, synthesis **and the composer brief** all said the letters are the
+**shapes** a TPO distribution draws, presented as his expansion. It is a
+defensible reading — at 04:57 he attaches *"That means a B"* at the moment the
+lower balance forms *after* the sell-off, and sibling videos draw the letters
+by hand — but it is **our** reading. Fixed in all three, attributed to us. Two
+further copies inside this same card (Sessions verdict, Lessons bullet)
+survived the first pass and were fixed on a follow-up grep — the **fourth**
+cascade miss of the run.
+
+Also: *"annotation in MS Paint as usual"* is channel habit, unevidenced here;
+Sierra Chart and ES were stated flatly against a `verbatim: null` claim whose
+own uncertainties call the header *"partially compressed and low resolution"*;
+*"on this slide Nill is second"* is inferred rather than read (the capture has
+no rank digit and is not sorted by return); and what he **says** at 00:15 is
+*"the two-time World Cup Championships of trading **leader**"* — leader, not
+champion.

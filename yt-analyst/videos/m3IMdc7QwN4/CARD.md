@@ -78,12 +78,12 @@ depth".
 _(curated by Claude Code: one entry per interrogation session — date, aim, verdict)_
 
 - **2026-09-06 — comparative wide pass (epic dr-zk8).** Standardised
-  orderflow wide pass, identical question across all 19 sweep videos. Verdict: RESOLVES the PbD question -- P/b/D are profile SHAPES (upward imbalance / downward imbalance / balance), not an acronym. Also shows Nill placing 2nd, not first.
+  orderflow wide pass, identical question across all 19 sweep videos. Verdict: RESOLVES the PbD question — his words are *phases*: D = large balance phases, P = aggressive trend phases upwards, b = aggressive trend phases downwards. Not an acronym. (The "profile shapes" gloss this entry originally carried is our reading, not his — corrected 2026-09-06.) The leaderboard also places Nill 2nd on the figures, though the rank digit is inferred from a sibling card.
 
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_
 
-- **`PbD` = the letter shapes P, b, D in a TPO profile.** Not an initialism.
+- **`PbD` = balance and trend *phases*, in his words** — D large balance, P aggressive up, b aggressive down (07:44–07:55). Not an initialism. The letter-*shape* reading is ours and should be labelled as such wherever it appears.
   Cite 07:46 of this video; it is the only expansion in 19 videos.
 - Sierra Chart here — a fifth platform for this channel (with VolFix,
   VolaTrader, TradingView, ATAS).
