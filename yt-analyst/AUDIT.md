@@ -283,3 +283,58 @@ An ep. 5 composer reported its scratch helper file being **overwritten by a
 sibling agent** mid-task; it recovered by switching to video-specific
 filenames. Later dispatches now instruct composers to namespace scratch files
 by video id. Worth carrying into any future fan-out.
+
+---
+
+## 2026-09-06 · `Vd83oo_geMk` — Vorwald, heatmap & liquidity · **class 1, 2, 3, 4**
+
+**This audit overturned the corpus's headline cross-source finding, which was
+mine and which was overstated.**
+
+**1. Class 1 — "rejects heatmaps" was never his position.** The card and the
+sweep both said institutions and his own group *"do not rely on heatmaps"*, and
+the sweep called this the sharpest conflict in the corpus. The transcript:
+
+- *"the heat map is such a wonderful tool that's being heavily promoted these days"*
+- he **demonstrates it on screen**: *"here we can take a look at what the heat map
+  is currently showing us for the SNP500"*; at 08:44, *"Now, I can also consult
+  the heat map and see whether these bars were really thick or not. Yes."*
+- to beginners (09:18): *"heat map, yes, you can use it if you don't have such a
+  deep understanding of the markets"*
+- he uses it himself (11:46) to *"predefine certain levels… where the market
+  might move to"*
+
+His claim is about **sufficiency**: *"heat maps are cool if you're starting to
+look at a lot of markets… not a good way to build an edge"* (14:52). Against
+Carmine's ep. 3 the disagreement is real but is about emphasis, not use.
+**Fixed on the card, in the sweep, and with a cross-note on ep. 3's card.**
+
+**2. Class 4 — an "internal inconsistency" that does not exist.** The card said
+he is firmer about spoofing here (*"illegal"*) than in `vl01TiVTuoQ` (*"probably
+still"* around). He says the same thing in both: *"which by the way is
+absolutely forbidden. Nevertheless, it does happen sometimes."* "Illegal" was
+Gemini's word. **Fixed** — the flagged inconsistency withdrawn.
+
+**3. Class 2 + a dropped qualifier.** *"or 400, 500, 600"* was quoted; he says
+*"If you know it has 500 contracts, 400, 600, then you know it's really big"*.
+More importantly the card dropped *"isolated and on its own"* — the 250–300
+threshold is for a **single standalone order**, not aggregate depth. **Fixed.**
+
+**4. Class 3 — spoken instruments rendered as on-screen strings.** The DOM
+array `ZM, CL, Russell, Nasdaq, S&P 500, FDAX` was set in code font from a
+`verbatim: null` visual claim. They are **spoken** at 04:18–04:23, and
+introduced as volume profiles per market, not only DOMs. Also "20 levels by
+default" is his current setting: *"we currently have 20 orders visible… You
+just have to set it up yourself"*. **Fixed.**
+
+**5. Omission that cuts against another of our claims.** The card never
+recorded 05:13 *"it is true that a market seeks liquidity"* or 10:23 *"the
+market… actually grabs the big liquidity. But there are also phases where the
+market just ranges."* The same channel's podcast calls stop-hunt and
+liquidity-sweep narratives a retail myth. **The channel does not flatly deny
+liquidity-seeking; it denies that it is always the operative regime.** Added.
+
+**6. Correction to a convergence count.** The sweep credited iceberg orders as
+"three independent arrivals — `Vd83oo_geMk`, Carmine ep. 2, Trading Notes". The
+word appears **nowhere** in ep. 2's transcript or card. It is **two**; Carmine
+has absorption, the same mechanism unnamed. **Fixed.**

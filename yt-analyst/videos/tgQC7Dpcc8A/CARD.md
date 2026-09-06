@@ -75,7 +75,12 @@ disclaimer. Added by the transcript audit, 2026-09-06. **Unverified**
   larger participant is active with an agenda to move the market up or
   down. No specific # – just an OUTLIER in the data."
 
-**Tool 2 — Bookmap heatmap (14:53–16:24, 22:04).** Horizontal bands above
+**Tool 2 — Bookmap heatmap (14:53–16:24, 22:04).** *(Cross-source note added
+2026-09-06: the rival channel is often cited against this — see
+[Vd83oo_geMk](../Vd83oo_geMk/CARD.md) — but the disagreement is narrower than
+it first appeared. That presenter uses a heatmap on screen and recommends it
+to beginners; his claim is that it is not **sufficient** to build an edge on,
+not that professionals avoid it.)* Horizontal bands above
 price = resting passive sellers, below = passive buyers; dark blue/grey/
 white = thin, orange/red = thick walls; bubbles = executed aggressive
 orders, green buys hitting the ask, red sells hitting the bid (spoken;

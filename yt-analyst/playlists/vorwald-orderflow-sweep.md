@@ -146,18 +146,33 @@ carry 5,000–6,000 a side; gold shows 2, 4, 6.
 
 ## Where this channel contradicts the rest of the corpus
 
-**1. Heatmaps — a genuine methodological dispute.** Carmine's ep. 3 makes the
-**Bookmap heatmap** a core instrument. `Vd83oo_geMk` (00:58) states that
-institutions and his own group **do not rely on heatmaps**, and that the order
-book is the true market (01:07): a heatmap shows where limit orders sit or
-*sat*, but not execution speed and not intent. Two order-flow practitioners,
-same object, opposite conclusions about whether the visualisation adds
-information or launders it. Neither offers statistics; the corpus cannot
-adjudicate.
+**1. Heatmaps — a disagreement about sufficiency, not about use.**
+**CORRECTED 2026-09-06 by the transcript audit; the first version of this
+entry overstated it badly.** It read: "`Vd83oo_geMk` states that institutions
+and his own group **do not rely on heatmaps**", and called this the corpus's
+sharpest conflict. His actual position is narrower and more reasonable.
 
-**2. It rejects the ICT / liquidity-sweep school outright.** This is the
-sharpest cross-corpus finding of the sweep, and it is stated three times
-independently:
+He calls the heatmap *"such a wonderful tool that's being heavily promoted
+these days"*, **demonstrates it on screen** mid-analysis (*"here we can take a
+look at what the heat map is currently showing us for the SNP500"*, and at
+08:44 *"Now, I can also consult the heat map and see whether these bars were
+really thick or not. Yes."*), tells beginners *"heat map, yes, you can use it
+if you don't have such a deep understanding of the markets"* (09:18), and uses
+it himself to *"predefine certain levels… where the market might move to"*
+(11:46). What he actually argues is that it is **not sufficient to build an
+edge on** — *"heat maps are cool if you're starting to look at a lot of
+markets… not a good way to build an edge"* (14:52) — and that for seeing where
+liquidity was and is, *"I don't need a heat map for that"*.
+
+So against Carmine's ep. 3, where Bookmap is a core instrument, the
+disagreement is about **sufficiency and emphasis**, not about whether the tool
+is used. That is a smaller and more defensible claim than the one this
+synthesis originally made, and it should not have been called the sharpest
+conflict in the corpus.
+
+**2. It rejects the ICT / liquidity-sweep school — but not liquidity-seeking
+itself.** With the heatmap claim corrected above, this is now the sharpest
+cross-corpus finding of the sweep. It is stated three times independently:
 
 - Stop-hunting is *"a retail trading myth"*, with evidence: footprints show
   **single-digit** contract trades printing below chart lows, so there is no
@@ -193,8 +208,11 @@ These matter because the sources do not cite each other:
 - **Absorption / trapped participants** — `usho6UVLqkE` 14:24 vs Carmine ep. 2/5.
 - **Volume tails** — his buying/selling tails (`K8qtT2_axPo` 13:21) are
   Carmine's "volume tail": prints thinning at an extreme.
-- **Iceberg orders** — `Vd83oo_geMk` 14:10, Carmine ep. 2, and Trading Notes
-  `IUWvHVout94` 04:57. Three independent arrivals.
+- **Iceberg orders** — `Vd83oo_geMk` 14:10 and Trading Notes `IUWvHVout94`
+  04:57. **Two** independent arrivals, corrected 2026-09-06: this line
+  previously credited Carmine ep. 2 as a third, but the word appears nowhere in
+  that episode's transcript or card. Carmine has *absorption*, which is the same
+  mechanism described without the name.
 - **Auction premise / balance and imbalance** — the whole sweep, Carmine ep. 1,
   and SMDX.
 - **Break-and-retest** — `NkQeOVDTAec` 05:38 vs Carmine ep. 3/6.

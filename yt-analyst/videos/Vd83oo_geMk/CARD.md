@@ -12,32 +12,57 @@
 ## Findings
 _(curated by Claude Code: verified findings with timestamps)_
 
-**This video directly contradicts Carmine, and it is the sharpest genuine
-cross-source conflict in the corpus.**
+**He argues the heatmap is insufficient, not useless — and this card
+previously overstated that.**
 
-Carmine's ep. 3 builds a core tool out of the **Bookmap heatmap** — bands as
-resting liquidity, bubbles as executed aggression. Vorwald states at 00:58
-that institutional traders and his own group *"Trade the Traders"* **do not
-rely on heatmaps**, and at 01:07 that the **order book is the true market**.
-His argument: a heatmap shows where limit orders sit or *sat*, but not
-execution speed and not intent; the DOM and the footprint show what is
-actually being done.
+**CORRECTED 2026-09-06 by the transcript audit.** This section used to open
+"This video directly contradicts Carmine, and it is the sharpest genuine
+cross-source conflict in the corpus", on the strength of 00:58 being read as
+"institutions and his own group **do not rely on heatmaps**". The transcript
+does not support that framing:
 
-Both men are reading resting liquidity. They disagree on whether the
-*visualisation* adds information or launders it. Neither offers statistics,
-so the corpus cannot adjudicate — but this is a real methodological dispute
-between two order-flow practitioners, not a vocabulary difference.
+- He calls it *"such a wonderful tool that's being heavily promoted these
+  days"*.
+- He **demonstrates it on screen**: *"here we can take a look at what the heat
+  map is currently showing us for the SNP500"*, and at 08:44 *"Now, I can also
+  consult the heat map and see whether these bars were really thick or not.
+  Yes."*
+- He recommends it to beginners: *"heat map, yes, you can use it if you don't
+  have such a deep understanding of the markets"* (09:18).
+- He uses it to *"predefine certain levels using the heat map where the market
+  might move to"* (11:46).
+
+His actual claim is about **sufficiency**: *"heat maps are cool if you're
+starting to look at a lot of markets… not a good way to build an edge"*
+(14:52), and for seeing where liquidity was and is, *"I don't need a heat map
+for that"*. The order book is the true market (01:07) because a heatmap shows
+where limit orders sit or *sat*, not execution speed or intent.
+
+Against Carmine's ep. 3, where Bookmap is a core instrument, the disagreement
+is therefore about **emphasis and sufficiency, not about whether the tool is
+used at all**. Still a real difference; a much smaller one than first recorded.
+
+**He also concedes the mechanism his own channel's podcast dismisses.** At
+05:13: *"it is true that a market seeks liquidity"* — with the qualifier that
+what matters is *"what kind of environment are we"* in; and at 10:23 the market
+*"actually grabs the big liquidity. But there are also phases where the market
+just ranges."* Compare [RwQBdF9TSvc](../RwQBdF9TSvc/CARD.md), where stop-hunt
+and liquidity-sweep narratives are called a retail myth. The channel's position
+is not a flat denial of liquidity-seeking; it is a denial that it is always the
+operative regime.
 
 **He supplies the numeric threshold the orderflow corpus explicitly lacks.**
-At 02:44: for ES, an order must be **over 250–300 contracts** — *"or 400, 500,
+At 02:44–02:52, and note the qualifier *"isolated and on its own"*: a single standalone ES order must be **over 250–300 contracts** — his words are *"If you know it has 500 contracts, 400, 600, then you know it's really big"* (the earlier *"or 400, 500,
 600"* — to count as truly large. The Carmine synthesis records under *"What is
 NOT specified anywhere in the series"*: **no numeric delta or volume
 threshold**. This is the first concrete size threshold in the corpus.
 
-**Spoofing** (01:37): placing orders and pulling them right before price
-arrives, stated to be **illegal**. Note he is firmer here than in
-[vl01TiVTuoQ](../vl01TiVTuoQ/CARD.md), where spoofing is "probably still"
-around — a mild internal inconsistency in tone, not substance.
+**Spoofing** (01:37–01:48): placing orders and pulling them right before price
+arrives — *"which by the way is absolutely forbidden. Nevertheless, it does
+happen sometimes."* *(Corrected 2026-09-06: this card previously called it
+"illegal", which was Gemini's word, and flagged a "mild internal
+inconsistency" against [vl01TiVTuoQ](../vl01TiVTuoQ/CARD.md). There is none —
+he makes the same concession in both videos.)*
 
 **Iceberg orders** (14:10): a large order continuously absorbed and refilled
 at a level without price moving much. Matches the definition in
@@ -46,7 +71,7 @@ independent arrival on this concept across the corpus.
 
 **Workspace** (05:38): candles + volume profile, TPO/market profile,
 footprint/cluster charts and DOM windows in one layout; a DOM array across
-`ZM, CL, Russell, Nasdaq, S&P 500, FDAX` (03:53). DOM shows 20 levels by
+ZM, CL, Russell, Nasdaq, S&P 500 and FDAX — **spoken** at 04:18–04:23 (*"This one is ZM. That's CL, that's the Russell, NASDAQ, SNP, FDAX"*), and introduced as *"the corresponding volume profile for each respective market"*, not only DOMs. *(Corrected 2026-09-06: previously rendered as on-screen strings on the strength of a `verbatim: null` visual claim.)* His DOM was showing 20 levels at the time — *"we currently have 20 orders visible… You just have to set it up yourself"* (04:30), his setting rather than a default — settable to
 default, settable to 100 (04:30, 06:08). Footprint with a delta histogram
 along the bottom at 08:16 — so **delta is on his screen**, even though he
 does not teach a delta threshold.
