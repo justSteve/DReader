@@ -75,13 +75,20 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
 
 - **2026-09-06 — comparative wide pass (epic dr-zk8).** One standardised
   orderflow-focused wide pass, identical question across the sweep for
-  comparability. Verdict: the single highest-value video in the sweep. Supplies 200-300 trades for significance, a 50% planning hit rate and R:R > 2 -- the numbers the Carmine series never gives. Arithmetic confirms +0.50R expectancy.
+  comparability. Verdict: the single highest-value video in the sweep. Supplies 200-300 trades for significance, plus a worked example at a 50% hit rate giving an average risk-reward of "maybe a two" -- the numbers the Carmine series never gives. Corrected 2026-09-06 against the transcript: the card first hardened those hedges into "planning hit rate" and "R:R > 2".
 
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_
 
-- **Cite this card for the channel's statistics.** 50% hit rate, R:R > 2,
-  200–300 trades for significance. Nothing else in the corpus states a win rate.
+- **Cite this card for the channel's statistics — but quote the hedges.**
+  200–300 trades for significance is flatly stated. The rest is a worked
+  example: *"if you should now… reach a hit rate of 50%"* giving an average
+  risk-reward of *"maybe a two"*. Nothing else in the corpus states a win rate
+  at all, so this remains the reference — just not as a target pair.
+- **Do not tabulate a Gemini claim whose `verbatim` is null.** Every figure in
+  this video's statistics block came back `kind: spoken, verbatim: null` — a
+  paraphrase. The first version of this card promoted those paraphrases into a
+  "Stated value" column and lost the hedges. See LESSONS.md, 2026-09-06.
 - Entry is **pullback after breakout**, agreeing with Carmine and disagreeing
   with the same presenter's 1-minute scalping video.
 - Championship claims (Patrick Nill, Christoph Radecker) are on-screen and

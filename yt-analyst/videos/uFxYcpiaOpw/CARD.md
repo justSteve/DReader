@@ -50,7 +50,8 @@ direction of the omission matters, because the only number that could falsify
 it is the one missing.
 
 **It also sits awkwardly against his own framework.**
-[NkQeOVDTAec](../NkQeOVDTAec/CARD.md) plans at a **50% hit rate with R:R > 2**;
+[NkQeOVDTAec](../NkQeOVDTAec/CARD.md) works an example at a **50% hit rate
+giving an average risk-reward of "maybe a two"**;
 this video claims **80–90%**. Both can be true of different setups, but the
 channel never reconciles them, and a viewer taking both at face value would
 have no idea which regime they are trading.
@@ -70,7 +71,7 @@ referenced at 00:24, **not expanded**. Leaderboard `Patrick Nill 202.1%` (00:27)
 _(curated by Claude Code: one entry per interrogation session — date, aim, verdict)_
 
 - **2026-09-06 — comparative wide pass (epic dr-zk8).** Standardised
-  orderflow wide pass, identical question across all 19 sweep videos. Verdict: the 80-90% claim is survivable in principle (break-even R:R only 0.25) but unfalsifiable as given -- stop, target and R:R are all absent, and it is unreconciled with the channel's own 50%/R:R>2 framework.
+  orderflow wide pass, identical question across all 19 sweep videos. Verdict: the 80-90% claim is survivable in principle (break-even R:R only 0.25) but unfalsifiable as given -- stop, target and R:R are all absent, and it is unreconciled with the channel's own worked example at a 50% hit rate and an average risk-reward around two.
 
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_

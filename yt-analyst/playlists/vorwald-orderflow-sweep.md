@@ -288,7 +288,8 @@ The claim is therefore *not implausible* — high-hit-rate systems are normally
 small-R systems. But it is **unfalsifiable as given**, and the omitted number is
 precisely the one that could refute it. It also sits unreconciled against the
 channel's own planning framework
-([NkQeOVDTAec](../videos/NkQeOVDTAec/CARD.md)): **50% hit rate, R:R > 2**. Both
+([NkQeOVDTAec](../videos/NkQeOVDTAec/CARD.md)): a worked example at a **50%
+hit rate** giving an average risk-reward of **"maybe a two"**. Both
 can describe different setups; the channel never says which regime a viewer is in.
 
 The channel's own best rebuttal is in
