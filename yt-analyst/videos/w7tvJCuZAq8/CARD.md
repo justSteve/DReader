@@ -89,7 +89,7 @@ custom study's parameters; 5-min footprint bars in example 1.
 **Next episode (30:57):** ep. 7 — confirmation, execution, stops/targets,
 management.
 
-**Gemini errors caught:** −583 (actual −538); rounded figures reported as
+**Gemini errors caught:** −583 (actual −538) — **not Gemini's error**: at 27:21 the presenter himself says *"a negative Delta of −750, −5, uh, 83"* and Gemini reported the audio faithfully; the pixel value −538 stands (`frames-2710-2730/f_0007.jpg`). Corrected 2026-09-06; rounded figures reported as
 values (1700/1300 vs 1775/1319; 1200 vs 1245); 03:19 price axis given as
 5645–5690 (actual 5850–5935 — bled from the later footprint); slide
 timestamps 2–4 s early (text not yet on screen); seven axis labels

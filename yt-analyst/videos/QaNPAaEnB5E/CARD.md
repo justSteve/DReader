@@ -2,7 +2,7 @@
 
 - **URL:** https://www.youtube.com/watch?v=QaNPAaEnB5E
 - **Title:** The only trading strategy you need to use if you're starting out...
-- **Channel:** Carmine Rosato (Jumpstart Trading) — "Trading Orderflow Series" ep. 1 of 8
+- **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 1 of 8
 - **Uploaded:** 2024-10-14 · **Duration:** 21:47 (1307 s) · **Views:** 100,803
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #2 · bead dr-08s.1
 - **First analyzed:** 2026-08-28
@@ -115,7 +115,7 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_
 
-- Channel: Carmine Rosato / Jumpstart Trading. Slides are dark-background
+- Channel: Carmine Rosato. ("Jumpstart Trading" was carried here and on ep. 2 but appears in no transcript and no run JSON across the series; the community he *does* name aloud is "invest(ed) trade" — eps. 5 and 7. Removed 2026-09-06.) Slides are dark-background
   with green (buy) / red (sell) color coding; Gemini transcribes them
   verbatim reliably. Slides are REUSED across episodes (the auction summary
   slide reappears in ep. 2 at 05:49).

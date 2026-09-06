@@ -185,3 +185,101 @@ the 05:59 chain frame, the five embedded flies' mids (0.825 / 0.95 / 0.80 /
 spoken "$6.50". The 07:06 frame balances again at 6.775 both ways. Because the
 decomposition is an identity in contracts it must hold in prices all day, and
 this is the cleanest confirmation of the video's whole thesis. **Added to the card.**
+
+---
+
+## 2026-09-06 · `w7tvJCuZAq8` — Carmine ep. 6, volume frameworks · **class 2, 5**
+
+**The interesting one is a mis-attributed error.** The card filed "−583 (actual
+−538)" under *Gemini errors caught*, and Lessons called it a transposition
+caught by parity. But at 27:21 **the presenter himself says** *"a negative
+Delta of −750, −5, uh, 83"* — Gemini reported the audio faithfully. The pixel
+value −538 stands. **The transposition was his, not the model's.** Fixed; this
+matters because the card was using it as evidence of a Gemini failure mode.
+
+Also: Example 3's quoted string is a `verbatim: null` paraphrase lightly
+re-edited; two slide quotes were smoothed while marked verified ("is" → "are",
+a dropped *"this just shows"*); and a 30:09 sentence about stop placement is
+Gemini's paraphrase, though the card does label it "Spoken". The ~99% hedge is
+correctly preserved. A fourth continuation example (22:47–23:25, −462 / −514)
+is absent from the card and now appears in the read, flagged unverified.
+
+---
+
+## 2026-09-06 · `5qBo04SMUFc` — Carmine ep. 5, S/R validation · **class 2, 4, 5**
+
+**1. Class 4 — the card contradicts him.** It said the double-top linkage was
+*"inferred… not stated"*. At 25:38–25:51 he states it: *"this is how I could
+look to capitalize on this setup… capitalizing on this failed breakout above
+the resistance level"*, with $22,000 on $3,700 risk. **Fixed** — and the
+underlying caution survives on better ground: the derived entry 5643 sits ~25
+points below the 5668.50 double top, so the journaled trade was not a short at
+the top.
+
+**2. Class 5 — a name the card wrongly dismissed.** The header called Gemini's
+*"InvestiTrade"* unsupported and the Lessons list called it invented. At 17:25
+he says *"I talk about this a lot in the invested trade Community"*. Ep. 7
+confirms it independently at 26:37: *"anybody in the invest trade Community"*.
+**Heard, not invented. Fixed on both cards.**
+
+**3. Class 2** — *"over +1200"* in quotes; he says *"a plus 1200 delta"*. The
+"over" was Gemini's. **Fixed.** Two slide quotes are also abbreviated inside
+quotation marks (meaning intact, wording not verbatim).
+
+**Gap:** at 13:47 he says *"this is a 30 minute footprint here"*; the card
+describes the chart only as range bars. Unresolved, flagged in the read.
+
+---
+
+## 2026-09-06 · `7facFfjQ0UE` — Carmine ep. 7, CLC & execution · **class 1, 2, 4, 5**
+
+**1. Class 4 — a wrong ratio, contradicted by his words and by the card's own
+arithmetic.** The card put the order-flow entry against the late entry at
+*"~1:1 vs ~4:1"*. He says *"I'm risking two points to make 12 points… now I can
+get a **6 to 1 or better**"* (21:12–21:31), and the card's own figures give
+**6.25:1** for the order-flow entry and **1.8:1** for the 7-point late entry.
+Both stated ratios were wrong. **Fixed.**
+
+**2. Class 4/5** — the card had him saying *"1-point"* risk. He says *"about a
+1.5 point risk"*, *"1.5, even at most a two-point"*, *"a one, two-point stop
+loss"*. The bare "1-point" was Gemini's summary wording. **Fixed.**
+
+**3. Class 5** — *"Invest Trade"* dismissed as unsupported; he says it at 26:37.
+**Fixed** (see ep. 5 above).
+
+**4. Class 1/2, minor** — *"delta runs −254 → −1100"* at a precise 9:52:54; he
+says *"as it broke the low at 952 **50-ish**… **over** 900 more aggressive
+contracts"*. Hedge hardened, "over" trimmed. And *"without looking back"* in
+quotes is Gemini's paraphrase of *"the market never looked back"*.
+
+**5. Provenance unlabelled, low severity** — four figures (demand-zone top
+5743.75, prior-bar vol 951, resting-bid band 5740.25–5741.25, Sierra clock
+9:52:08) appear in neither transcript nor run JSON. Probably pixel reads, but
+the card does not say so. Flagged for labelling, not correction.
+
+**Clean:** the Bookmap tooltip (09:54 · 5739.75/5740.00 · vol 1739 · delta
+−1171) has a non-null on-screen verbatim and matches ep. 2 independently; both
+TradeZella panels; the timeframe table; the 1–2 pt stop.
+
+---
+
+## Branding, reconciled across the Carmine series
+
+Three cards carried three different brand claims. Settled:
+
+- **"Jumpstart Trading"** (eps. 1, 2 headers) appears in **no transcript and no
+  run JSON** anywhere in the series. **Removed from both** — it may be correct
+  from outside knowledge, but its provenance is not in this dossier.
+- **"InvestiTrade" / "Invest Trade"** was dismissed on eps. 5 and 7 as a Gemini
+  invention. He **says it aloud in both**: *"the invested trade Community"*
+  (ep. 5, 17:25) and *"anybody in the invest trade Community"* (ep. 7, 26:37).
+  **Restored on both** as spoken, not on screen.
+
+---
+
+## Operational note for parallel composition
+
+An ep. 5 composer reported its scratch helper file being **overwritten by a
+sibling agent** mid-task; it recovered by switching to video-specific
+filenames. Later dispatches now instruct composers to namespace scratch files
+by video id. Worth carrying into any future fan-out.

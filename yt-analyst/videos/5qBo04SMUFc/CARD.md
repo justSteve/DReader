@@ -2,7 +2,7 @@
 
 - **URL:** https://www.youtube.com/watch?v=5qBo04SMUFc
 - **Title:** How To Use Support and Resistance the RIGHT Way (title card: "WHY I BELIEVE SUPPORT AND RESISTANCE IS B*LLSHIT")
-- **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 5 (handle `carminerosato`; no brand wordmark on screen — Gemini's "InvestiTrade" is unsupported)
+- **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 5 (handle `carminerosato`; no brand wordmark on screen, but he **names his community aloud** at 17:25: *"I talk about this a lot in the invested trade Community"* — so Gemini's "InvestiTrade" was heard, not invented)
 - **Uploaded:** 2024-11-08 · **Duration:** 29:21 (1761 s) · **Views:** 80,202
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #6 · bead dr-08s.5
 - **First analyzed:** 2026-08-28
@@ -78,7 +78,12 @@ Net/Gross P&L **$21,875.00**, **25** contracts, **17.5** pts, Profit Target
 shown. **Verified: frames + arithmetic** — 17.5×25×50 = 21,875; 15,000/4 =
 3,750 risk = 3 pts ⇒ entry **5643.0** (derived); 5643−5631 = 12 pts =
 $15,000 ✓; 21,875/3,750 = 5.83 ✓; exit ≈ 5625.5. Linkage to the double
-top is inferred (chart collapses 5665→~5624 after it), not stated.
+top **is stated, not inferred** — at 25:38–25:51 he says *"this is how I could
+look to capitalize on this setup… capitalizing on this failed breakout above
+the resistance level"*, quoting $22,000 profit on $3,700 risk. *(Corrected
+2026-09-06; this card previously said "not stated".)* The caution survives on
+different ground: the derived entry 5643 sits ~25 pts below the 5668.50 double
+top, so the journaled trade was **not** a short at the top.
 
 **Concrete parameters:** 3-pt stop on the example; delta/volume columns;
 range-bar footprint (timestamps 7:51:31 … 10:01:37, date fragment `8-26`).
@@ -86,7 +91,7 @@ range-bar footprint (timestamps 7:51:31 … 10:01:37, date fragment `8-26`).
 **Gemini errors caught:** 5665.65 price; two adjacent-row misreads; +279/
 +338 placed at 5664–5666 (actual 5668.50); `$` prefix read as "1" in the
 journal's input boxes; "Total P&L" for `Net P&L`; Trade Risk omitted by
-both passes; "InvestiTrade" branding invented; resistance label position
+both passes; "InvestiTrade" branding **wrongly listed here as invented** — he says it at 17:25 (corrected 2026-09-06); resistance label position
 ("near 5670 on the right axis" — it's at the left end of the 5665 line).
 
 ## Sessions

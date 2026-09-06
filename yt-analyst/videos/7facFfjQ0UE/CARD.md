@@ -2,7 +2,7 @@
 
 - **URL:** https://www.youtube.com/watch?v=7facFfjQ0UE
 - **Title:** How To Enter and Exit Trades Like a Professional
-- **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 7 (Gemini's "Invest Trade" is unsupported)
+- **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 7 (he names his community aloud at 26:37: *"anybody in the invest trade Community can see this happen"* — so Gemini's "Invest Trade" was heard, not invented; corrected 2026-09-06, and consistent with ep. 5's 17:25)
 - **Uploaded:** 2024-11-18 · **Duration:** 32:19 (1939 s) · **Views:** 84,992
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #8 · bead dr-08s.7
 - **First analyzed:** 2026-08-28
@@ -43,7 +43,10 @@ Net/Gross **$21,750.00**, **30**, **14.5** pts, Target **5753.0**, Stop
 **5739.0**, Initial Target **$18,750.00**, 5★ (Trade Risk / R fields
 behind the webcam; = $2,250 / 8.33R / 9.67R per ep. 2's verified log of
 the same trade). **Verified: frames + arithmetic** ⇒ entry **5740.50**,
-1.5-pt stop (presenter says "5740, 1-point, ~$2,000–2,200 risk, 9.6:1" —
+1.5-pt stop (presenter's spoken round-offs are *"about a 1.5 point risk"*
+(12:11), *"1.5, even at most a two-point"* (15:06) and *"a one, two-point stop
+loss"* (17:14) — the bare **"1-point"** in an earlier version of this card was
+Gemini's summary wording, not his; ~$2,000–2,200 risk, 9.6:1 —
 round-offs).
 - Context: uptrend, pullback. Location: demand zone 5743.75→5738 (green
   box). Confirmation (12:29–13:40, Sierra Chart replay from 9:52:08,
@@ -70,7 +73,13 @@ with invalidating a trade thesis? Time does not move the market. Volume
 – price does." Chart (thinkorswim, /ES 1m, 10/3/24 09:57): the late
 entry after the 5-min close risks to the low of day — rectangle
 5745.97→5739.16 ≈ **7 pts** — while the order-flow entry risks **2 pts**;
-same target (high of day) ⇒ ~1:1 vs ~4:1. Stop principle: where the
+same target (high of day). **The card previously put this at "~1:1 vs ~4:1";
+both figures are wrong** — corrected 2026-09-06. His own words at 21:12–21:31:
+*"now my reward is about a 12 pointer from 5740, 5741 all the way up to 5753,
+so now I'm risking two points to make 12 points… now I can get a 6 to 1 or
+better."* The card's own numbers agree: a 2-point stop to a 5740.5→5753 target
+is **6.25:1**, and the 7-point late entry to the same target is **1.8:1**.
+Stop principle: where the
 thesis is invalidated (low of day). "7pt"/"2pt" labels at 20:18–21:03
 unframed. Levels `Price Level13 ($5759.25)`, `Price Level12 ($5753)`.
 
