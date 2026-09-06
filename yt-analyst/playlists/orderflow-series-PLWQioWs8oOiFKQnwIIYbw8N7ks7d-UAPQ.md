@@ -86,7 +86,10 @@ points placed just beyond the absorption level, targets of 7.5–13 points
 at the opposing level, planned 3–8R, realized 4–10R. Seven winners are
 shown; no losers are shown — the sample is curated, not a track record.
 The "$208,000 in September" and "236 profitable days" (Goldman) overlays
-are unverified marketing claims.
+are unverified marketing claims — and the first is **contradicted by ep. 1's
+own audio**, where he says his most profitable month was a gross profit of
+**$28,000** (00:02–00:07). Neither figure is frame-verified. Do not repeat
+either until frames settle it.
 
 **What is NOT specified anywhere in the series:** a numeric delta or
 volume threshold; position-sizing rules beyond "30 contracts"; exit rules

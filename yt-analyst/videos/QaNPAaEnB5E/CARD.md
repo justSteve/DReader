@@ -13,12 +13,26 @@ _(curated by Claude Code: verified findings with timestamps)_
 
 **What it teaches.** Auction market theory as the foundation for order-flow
 trading: price moves only because of executed orders; indicators and
-"concepts" (MAs, RSI, MACD, ICT/SMC) are downstream reflections of order
-flow, not causes (18:44 red-X chart; 19:15 funnel diagram — everything feeds
-into "actual buy/sell orders executed"). Series framing at 00:47 ("TRADING
-ORDERFLOW Series"); credentials overlay 00:01–00:06 ("day trading since 8
-YEARS", "SEPTEMBER $208,000") — **unverified marketing claims**, recorded
-only as what's on screen.
+"concepts" are downstream reflections of order flow, not causes (18:44 red-X
+chart; 19:15 funnel diagram, everything feeding into the executed buy/sell
+orders at its spout). Spoken at 18:41–19:41 he names moving averages, RSI,
+Fibonacci, ICT and Smart Money Concepts; **MACD appears only in a
+`verbatim: null` visual claim and is never spoken** — do not attribute it
+without frames. The funnel wording above is likewise a paraphrase, not a
+quote: the transcript's own line is *"regardless of the strategy, regardless
+of the tool, an order has to be placed."*
+
+Series framing at 00:47 ("TRADING ORDERFLOW Series"); credentials overlay
+00:01–00:06 ("day trading since 8 YEARS", "SEPTEMBER $208,000") —
+**unverified marketing claims**, recorded only as what's on screen.
+
+**The $208,000 overlay is contradicted by his own audio.** At 00:02–00:07 he
+says: *"last month was my most profitable month, I came out with a gross
+profit of **$28,000**."* The card's figure comes from a `verbatim` on-screen
+capture and the speech says something 7.4× smaller. Neither is frame-verified
+— there are no frames at 00:00–00:10 — and captions do mis-hear digits
+elsewhere in this same transcript. **Pull frames at 00:01–00:08 before either
+figure is repeated anywhere.** Found by the transcript audit, 2026-09-06.
 
 **Core model — balance / imbalance (01:04–05:40).** Slide "How The Stock
 Market Is An Auction"; open-outcry history at 03:36. The "New Car Auction
@@ -34,7 +48,9 @@ bands; the only arrows are the blue "Market Event" ones). Diagram is fully
 drawn from first appearance — no build-up sequence.
 
 **Price-ladder analogies (08:30, 10:09).** Real-estate candlestick model at
-$100k/$200k/$300k/$400k asks; the same $100→$400 progression mapped onto
+$100k/$200k/$300k/$400k — **bids, not asks** (transcript 08:42–09:01: the ask
+is $400,000, and *"you're willing to pay a hundred, you're willing to pay 200,
+but now you put out a bid for $300,000"*); the same $100→$400 progression mapped onto
 "Apple stock" with consolidation at $300 before continuation to $400.
 **Unverified** (not zoomed; illustrative only).
 
