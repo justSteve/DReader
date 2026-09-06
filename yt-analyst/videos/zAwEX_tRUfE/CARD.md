@@ -15,9 +15,12 @@ _(curated by Claude Code: verified findings with timestamps)_
 Agenda cards at 00:28–00:38: `Why scalpers lose` · `What you need` ·
 `The Entry technique` · `My complete Setup`. End card `Trade The Traders`
 (10:18). Instrument and platform are on screen at 00:50:
-`#ES[M] Continuous[c] | Powered by dxFeed` — **ATAS**, ES continuous front
-month, 1-minute chart, with a Market-Profile/TPO + volume-profile pane
-split against the 1-min candles (01:40).
+`#ES[M] Continuous[c] | Powered by dxFeed`. **ATAS** is the platform;
+**dxFeed** is the market-data vendor behind it, not something you look at.
+`#ES` is ATAS's symbol notation for the E-mini S&P and `Continuous[c]` a
+back-adjusted rolled series, so the chart runs unbroken across quarterly
+rolls rather than showing a single expiry. 1-minute chart, with a
+Market-Profile/TPO + volume-profile pane split against the candles (01:40).
 
 **The thesis.** Scalpers lose not from bad signals but from bad *location*:
 trading "in the middle of a price zone that mathematically offers zero edge"
@@ -113,6 +116,17 @@ element is volume-at-price:
   push.
 - **Both reject indicators on principle.** Vorwald: no indicator on the chart.
   Carmine: indicators are downstream of order flow.
+- **He is running an order-flow-native platform and using almost none of it.**
+  ATAS exists for footprint/cluster charts, cumulative delta, DOM and tape —
+  the exact instruments Carmine's whole method is built on, and the same
+  category of tool as Sierra Chart and Bookmap elsewhere in the corpus.
+  Vorwald pays for all of it, uses the market profile and volume profile to
+  fix context **once**, and then trades a bare 1-minute candlestick chart.
+  This is the strongest evidence that the missing vocabulary is deliberate
+  style rather than a gap in the method: he is not unaware of order flow
+  tooling, he is choosing its cheapest layer. It also makes the "accessible
+  branch" reading concrete — same platform as the professionals, a fraction
+  of the cognitive load.
 
 **Where it directly contradicts the corpus — the finding worth keeping.**
 Carmine's ep. 3/6 rule is explicit: *never buy the initial break — let it
@@ -145,11 +159,14 @@ unquantified here.
    Vorwald *derives* it: bad location → R:R 0.8 → you need ~56–60% just to
    tread water. That derivation is portable to any setup we grade, and it is
    now the cheapest first test to run on any new strategy video.
-3. **A no-live-tape operating model.** Carmine's method needs Sierra Chart,
-   footprint, DOM and Bookmap. Vorwald computes context **once** from the
-   prior session's profile and then trades a bare 1-minute chart. Same theory,
-   an order of magnitude less infrastructure — the accessible branch, and the
-   only one in the corpus reachable without a professional data stack.
+3. **A no-live-tape operating model, on order-flow-native software.**
+   Carmine's method needs Sierra Chart, footprint, DOM and Bookmap. Vorwald
+   computes context **once** from the prior session's profile and then trades
+   a bare 1-minute chart — on ATAS, which offers him every one of Carmine's
+   instruments and which he declines to use. Same theory, same class of
+   platform, an order of magnitude less cognitive load. The accessible
+   branch, and the only one in the corpus reachable without reading a live
+   tape.
 4. **The mid-range trade named as a mathematical error.** "Somewhere in the
    middle of a price zone that mathematically offers zero edge" is a claim no
    other video in the corpus makes explicitly, and it is the natural inverse
@@ -205,8 +222,12 @@ _(anything peculiar to this video/channel: layout, chart software, segment struc
 - **He teaches in MS Paint** over a static chart screenshot. There is no live
   platform state to read, so frames buy nothing beyond what a zoom gives —
   grade this channel with arithmetic and verbatim quotes instead.
-- Platform is **ATAS** with a **dxFeed** feed, ES continuous; the profile pane
-  and the 1-minute chart are split side by side (01:40).
+- Platform is **ATAS** ("Advanced Time And Sales") on a **dxFeed** data feed,
+  ES continuous (back-adjusted, rolled); the profile pane and the 1-minute
+  chart are split side by side (01:40). ATAS is an order-flow platform —
+  footprint, delta, DOM — so when grading this channel, note *which* of its
+  features are on screen. Vorwald uses only the profile side, and that
+  restraint is itself a finding.
 - The channel brands as "Trade The Traders" on the end card while the handle
   is `@tom_vorwald_en` and the description points to WorldClassEdge — three
   names for one source. Index under **Tom Vorwald EN** so the grouping holds.
