@@ -9,7 +9,13 @@ and deliver findings Steve can rely on.
 
 Run from this directory. Activate the venv first (`source .venv/bin/activate`)
 or call the interpreter by path: `.venv/bin/python yta.py ...`.
-The API key loads from `.env` automatically — never ask for it, never echo it.
+The API key loads automatically from the vault file `/home/vault/DReader/env`
+— never ask for it, never echo it. It is deliberately not in this tree and not
+in the shell: a value in a file always beats one exported into the environment,
+so a stale exported key cannot shadow the live one. If a call comes back
+unauthenticated, run `.venv/bin/python yta.py env` — it names the file the key
+came from, prints its length and a sha256 prefix (never the value), and makes
+one live call to Google to say whether the key still works.
 
 Always quote YouTube URLs (they contain `&`). The script canonicalizes URLs
 to bare `watch?v=ID` form itself.
