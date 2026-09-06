@@ -276,7 +276,7 @@ a breakout from a P or b formation — on screen in German
 A move that extends beyond the range and comes back inside is glossed as a
 **"break-in"** — *provisionally*: the crisp definition is Gemini's, the audio is
 an AI dub of German, and *Einbruch* (a plunge) would render the same way, so
-the corpus should not build on the term until frames settle it —
+the corpus should not build on the term until frames settle it. `uFxYcpiaOpw` makes this worse: at 07:09 the dub says *"this **break-in** happened right here"* one sentence before *"I have a **breakout** here"* — **for the same move**. The dub is rendering German *Ausbruch* (breakout) and *Einbruch* (plunge) inconsistently, so the word carries no stable sense —
 (10:04) — the failed-breakout case, which the corpus previously had no name for.
 
 ## The close rule, and the regime rule
@@ -284,7 +284,7 @@ the corpus should not build on the term until frames settle it —
 Two things the earlier partial sweep recorded as missing turned out to be
 published — just not in the videos first examined.
 
-**Closes, not wicks.** Attested four times: candle closes and opens confirm
+**Closes, not wicks.** Attested four times, though **not equally** — the `uFxYcpiaOpw` instance is an observation (*"I have a breakout here with this higher closing price"*), not a stated rule; the wick contrast there was Gemini's. The strong statements are in `jXR1afMy-3o`. The four: candle closes and opens confirm
 acceptance rather than extremes ([Ly62G168MkQ](../videos/Ly62G168MkQ/CARD.md)
 05:10); closes outside the Value Area confirm a move out of balance, closing
 prices identify break-off edges, and candle-close counting decides continuation

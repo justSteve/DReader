@@ -13,7 +13,7 @@
 _(curated by Claude Code: verified findings with timestamps)_
 
 **The claim.** A hit rate of **80% to 90%** (00:02), for a setup that occurs
-**"Once a day"** (00:06, on screen) and works in only **30%** of market phases
+**"Once a day"** on screen (00:06); spoken it is *"about once a day"* and works in only **30%** of market phases
 (00:18, pie chart) — the imbalance share of his 70/30 split.
 
 **The setup, in order:** weekly/daily volume **balance versus imbalance** →
@@ -61,8 +61,8 @@ have no idea which regime they are trading.
 stop. Against a break-even R:R of 0.25, friction of that order is not a
 rounding error — it is most of the margin.
 
-Platform **ATAS** inside MS Paint (01:05); weekly profile left, daily profiles
-right (01:15). Instruments **ES** and **Nikkei 225 mini** (03:33). `PbD`
+Platform reported as **ATAS** inside MS Paint (01:05) — a `verbatim: null` visual claim, absent from the transcript and frame-unverified; weekly profile left, daily profiles
+right (01:15). Instrument: he says only *"the Nikkei future"* (03:31). **ES** and **225 mini** come from a chart title Gemini's own uncertainties call *"tiny and partially compressed"* — treat as unread. `PbD`
 referenced at 00:24, **not expanded**. Leaderboard `Patrick Nill 202.1%` (00:27).
 
 **No live execution, no fills, no brackets, no P&L** (08:35).
@@ -78,7 +78,7 @@ _(anything peculiar to this video/channel: layout, chart software, segment struc
 
 - **The headline number is the one that cannot fail; the missing number is the
   one that could.** Whenever this channel leads with a win rate, look for the
-  R:R — it is absent here and present (as >2) only in NkQeOVDTAec.
+  R:R — it is absent here, and in [NkQeOVDTAec](../NkQeOVDTAec/CARD.md) it is only *"maybe a two"* inside a worked example. *(This bullet still carried the old ">2" phrasing after the rest of the card was corrected — fixed 2026-09-06.)*
 - Entry requires a candle **close** above consolidation (07:15) — third
   attestation of the channel's close rule.
 - The Idea is a hypothesis about *speed*, not a level: "IDEE: das der Markt
