@@ -27,19 +27,26 @@ channel's own catalogue the pullback entry is the dominant teaching.
 
 **The statistical framework — new to the corpus:**
 
-| Parameter | Stated value | t |
+| Parameter | What he actually says | t |
 |---|---|---|
-| Trades needed for reliable statistics | **200–300** | 06:58 |
-| Assumed hit rate for planning | **50%** | 07:03 |
-| Hit rate definition | entry until the market reaches the target level | 07:07 |
-| Target average risk-reward | **greater than 2** | 07:18 |
+| Trades needed for reliable statistics | *"at least two to three hundred trades to have key figures"* | 06:58 |
+| Hit rate, as a worked example | *"if you should now… reach a hit rate of 50%"* | 07:03 |
+| Hit rate definition | *"entry until the market has arrived down here"* | 07:07 |
+| Average risk-reward that follows | *"my average risk-reward ratio is **maybe a two**"* | 07:18 |
 
-**Checked arithmetically:** at a 50% hit rate the break-even risk-reward is
-exactly **1.00**, so a target of R:R > 2 gives an expectancy of
-**+0.50 R per trade** — a real margin, not a knife edge. The Carmine synthesis
-records *"no win rate"* anywhere in eight episodes; this single slide closes
-that gap and does so consistently with the win-rate/R:R identity already used
-elsewhere in this corpus.
+**CORRECTED 2026-09-06 (epic dr-aib).** This table previously read
+"Target average risk-reward — **greater than 2**" and called it a stated value.
+It is not. The transcript has *"maybe a two"*, a hedge inside a worked example;
+Gemini's structured claim at 07:18 is `kind: spoken` with **`verbatim: null`**,
+i.e. a paraphrase, and the card hardened that paraphrase into a target. The
+50% is likewise conditional — *"if you should reach"* — not a planning
+assumption. Only the 200–300 trades figure survives as flatly stated.
+
+**The arithmetic still stands, on the softer numbers:** at a 50% hit rate the
+break-even risk-reward is exactly **1.00**, so an average *around* two leaves
+roughly **+0.5 R per trade** in expectancy. Real margin, not a knife edge. The
+Carmine synthesis records *"no win rate"* anywhere across eight episodes; this
+passage still closes that gap — it is simply softer than the card first claimed.
 
 **"Over 95% of market volume is placed by major institutional participants"**
 (01:06) — unsourced, and the figure is doing rhetorical work; treat as a claim,

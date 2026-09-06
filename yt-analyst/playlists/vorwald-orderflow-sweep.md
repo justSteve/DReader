@@ -114,8 +114,8 @@ This sweep closes several of those gaps:
 | "Truly large" resting order, ES | **> 250–300 contracts** (or 400/500/600) | `Vd83oo_geMk` 02:44 |
 | Genuinely large ES book activity | **10,000 contracts** bought | `RwQBdF9TSvc` 17:10 |
 | Trades needed for reliable statistics | **200–300** | `NkQeOVDTAec` 06:58 |
-| Planning hit rate | **50%** | `NkQeOVDTAec` 07:03 |
-| Target average risk-reward | **> 2** | `NkQeOVDTAec` 07:18 |
+| Hit rate, in a worked example | **50%** (*"if you should… reach"*) | `NkQeOVDTAec` 07:03 |
+| Average risk-reward that follows | **"maybe a two"** — not a stated floor | `NkQeOVDTAec` 07:18 |
 | Break-even win rate at R:R 0.8 | he says ~60%; true value **55.56%** | `zAwEX_tRUfE` 04:48 |
 | Market in balanced/sideways phases | **~70% of the time** | `K8qtT2_axPo` 10:41 |
 | Market returns to fair value | **~70% of phases** | `YmygDgtoxO8` 05:51 |
@@ -125,11 +125,19 @@ This sweep closes several of those gaps:
 | DAX spread under that stress | **20 points** | `RwQBdF9TSvc` 26:17 |
 | Euro Stoxx depth under stress | **300–500 → single digits** | `RwQBdF9TSvc` 26:23 |
 
-**Arithmetic check on the framework.** At the stated 50% hit rate the
-break-even risk-reward is exactly **1.00**, so a target of R:R > 2 implies an
-expectancy of **+0.50 R per trade**. The framework is internally coherent and
-leaves real margin — it is not a knife edge. It is also the only place in this
-entire corpus where a win rate and a risk-reward target are stated together.
+**Arithmetic check on the framework.** At a 50% hit rate the break-even
+risk-reward is exactly **1.00**, so an average *around* two leaves roughly
+**+0.5 R per trade** in expectancy. Real margin, not a knife edge. It remains
+the only place in this corpus where a hit rate and a risk-reward appear
+together.
+
+**But read the hedge.** Composing the transcript layer (epic dr-aib) showed
+these were softer than first recorded: he says *"maybe a two"*, inside a
+worked example introduced with *"if you should now reach a hit rate of 50%"*.
+Gemini's claim at 07:18 is `kind: spoken` with `verbatim: null` — a paraphrase
+— and the first pass of this synthesis hardened it into "target R:R > 2". Only
+the **200–300 trades** figure is flatly stated. The gap in the corpus is still
+closed, just less firmly than claimed.
 
 **Per-instrument book calibration** (`vl01TiVTuoQ`, `usho6UVLqkE`) — useful
 because "a big order" means different things per market: ES showed a 325 and a

@@ -719,3 +719,42 @@ Two code fixes remain worth doing and are NOT applied:
 read the `quotaId`. `...RequestsPerMinute...` means slow down;
 `GenerateRequestsPerDayPerProjectPerModel-FreeTier` means stop and tell the
 operator, because no amount of backoff will clear it.
+
+## 2026-09-06 — Never tabulate a Gemini claim whose `verbatim` is null
+
+**Status: confirmed**, and it cost us a wrong number in a card *and* in a
+playlist synthesis before the transcript layer caught it.
+
+Gemini's structured claims carry a `verbatim` field. When it is populated, the
+words are the presenter's or the screen's. When it is **null**, the `claim`
+string is **Gemini's paraphrase** — and a paraphrase silently normalises
+hedges, conditionals and approximations into flat assertions.
+
+The chain that went wrong on `NkQeOVDTAec`:
+
+| Stage | Text |
+|---|---|
+| He said | *"my average risk-reward ratio is **maybe a two**"* |
+| Gemini claimed (`kind: spoken`, `verbatim: null`) | "Target average risk-reward ratio is greater than 2" |
+| The card tabulated | `Target average risk-reward \| **greater than 2**` under a **"Stated value"** column |
+| The synthesis repeated | `Target average risk-reward \| **> 2**`, with expectancy arithmetic built on it |
+
+A hedge inside a worked example became a stated target two hops later, and the
+arithmetic downstream inherited the false precision. The same video's "50% hit
+rate" was likewise conditional — *"if you should now reach"* — and was recorded
+as a "planning hit rate".
+
+**Rules:**
+1. **A claim with `verbatim: null` is a paraphrase.** Never promote it into a
+   numbers table, and never label such a column "Stated value". Quote what was
+   actually said, or say "paraphrased".
+2. **Check `kind` before attributing to the screen.** A `kind: spoken` claim is
+   not an on-screen slide, however slide-like the wording. (I told Steve this
+   figure came from a slide; it did not.)
+3. **Comparators are the tell.** "greater than", "at least", "under" and
+   "target" rarely survive contact with the transcript. Treat any comparator in
+   a `verbatim: null` claim as suspect until the words are checked.
+4. **Transcripts audit cards.** This was caught only because the READ.md layer
+   composes from captions and a worker cross-checked the run JSON. Whenever a
+   transcript is fetched for a video, re-check that video's tabulated numbers
+   against it — it is nearly free and it found a real error on the first try.
