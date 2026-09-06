@@ -19,7 +19,7 @@ of participant is active right now.
 This matters to us because Carmine Rosato's series makes the Bookmap heatmap a
 core instrument. Two practitioners, one object, opposite verdicts, and no
 statistics on either side. The video also gives the corpus its first concrete
-size threshold for the ES book, and a third independent definition of an
+size threshold for the ES book, and a second independent definition of an
 iceberg order.
 
 ## The argument
@@ -96,7 +96,8 @@ spoofing "probably still does" exist; the two videos differ in emphasis, not
 substance. And the iceberg: a participant constantly routing large orders into
 a position while not much changes. Trading Notes defines the same object as an
 order that reloads at one level, and Carmine's second episode reads it as
-absorption without naming it. Three sources, no shared citation, one concept.
+absorption without naming it. Two sources name it, a third describes the
+mechanism unnamed — no shared citation, one concept.
 
 ## In his words
 
@@ -342,7 +343,9 @@ absorption without naming it. Three sources, no shared citation, one concept.
 > information than if you only have a heat map that just provides you with
 > these small fragments."
 
-> **Editor —** The third independent arrival on the iceberg in this corpus.
+> **Editor —** The second independent arrival on the iceberg in this corpus
+> (with Trading Notes). Carmine describes the same mechanism as absorption and
+> never uses the word — an earlier draft counted him as a third.
 > Trading Notes defines it as an order that shows a small fraction and reloads
 > at the same level; Carmine's second episode reads the same thing as
 > absorption, heavy aggression with no follow-through, without using the word.

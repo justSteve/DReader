@@ -24,10 +24,10 @@ Profile / Bids`. Four DOM windows are compared side by side (02:32) across
 |---|---|---|
 | Russell | 3 limit buys at **2247.1** | 02:47 |
 | ES | sell blocks of **74** and **48** | 04:01 |
-| DAX | `2, 4, 8, 11, 7` | 04:12 |
+| DAX | *"two contracts, four contracts, four contracts, eight contracts, 11 contracts, seven contracts"* — **six** values, spoken | 04:12 |
 | ES | a **676**-contract bid | 06:18 |
 | Russell profile | volume peak at **2246.4** | 05:03 |
-| Footprint | **712** market orders sold at one price in a 5-min block | 12:06 |
+| Footprint | **712** market orders sold *"into the previous price range"* in a 5-min block | 12:06 |
 
 **Front-running, defined** (09:19): a large resting buy order acts as a
 **magnet** — price is drawn toward it. This is *new to the corpus*. Carmine's
@@ -42,7 +42,7 @@ arrival on the same mechanism.
 **A liquidity block consumed in real time** is shown at 11:32.
 
 **`PbD` is never mentioned or expanded here** (Gemini's uncertainties field,
-unprompted). Branding `WORLD CLASS EDGE` at 17:23.
+unprompted). Branding reported as WORLD CLASS EDGE at 17:23 — a `verbatim: null` visual claim, so Gemini's description rather than a captured string (the banner is evidenced on sibling cards).
 
 **No entry/stop/target rules, no R:R, no win rate, no trade.**
 

@@ -428,3 +428,74 @@ two are different quantities (executed versus resting) and the ratio is 33–40�
 **Clean:** the DAX 20-point spreads, Euro Stoxx 300–500 to single digits, the
 2006–2008 anecdotes, and the absence of on-screen text. The card names no
 speaker, correctly — the captions do not separate them across 25:06–27:22.
+
+---
+
+## 2026-09-06 · `jXR1afMy-3o` — Vorwald, PbD explained · **class 1, 2**
+
+**The finding that matters beyond this card: Gemini translates German slides
+into English and returns the translation in the `verbatim` field.** Proven
+inside one run — the 00:19 German slide is reported correctly in German, then
+the same slide at 09:05 comes back as an English "verbatim" string. On this
+channel `verbatim` is evidence of *meaning*, not of *wording*. Written into
+LESSONS.md; it downgrades an evidence class across all 21 Vorwald videos.
+
+**"Break-in" is now provisional vocabulary.** The corpus had adopted it as the
+name for a failed breakout. The crisp definition is Gemini's (`verbatim: null`),
+he attaches the word to a different sentence, and — decisively — the audio is an
+AI dub of German, where *Einbruch* (a plunge) would render as "break-in" too.
+**A translation layer can manufacture terminology.** Caveated on the card and in
+the sweep; not corpus vocabulary until frames settle it.
+
+Also: the 05:15 candle-close line was set in quotation marks but is a
+paraphrase, and what he says there is an *observation* — *"I very often see
+candlesticks with closing prices"* — with the rule form arriving at 05:36 and
+08:56. And platform/instrument (ATAS, FDAX) were stated flatly against the
+run's own "partially obscured and low-resolution".
+
+---
+
+## 2026-09-06 · `usho6UVLqkE` — Vorwald, DOM & footprint · **class 2**
+
+13 of 14 run claims are `verbatim: null`. The DAX ladder was carded in code
+font as `2, 4, 8, 11, 7`; he speaks **six** values — *"two contracts, four
+contracts, four contracts, eight contracts, 11 contracts, seven contracts"*.
+Gemini compressed, the card set it as if read off the screen, and the sweep
+repeated it. **Fixed in both.** `WORLD CLASS EDGE` in backticks likewise comes
+from a `verbatim: null` visual claim, and "712 market orders sold **at one
+price**" should be *"into the previous price range"*.
+
+**A cascade I missed:** the iceberg count was corrected to two in the sweep but
+left at "third independent arrival" on `Vd83oo_geMk`'s card and READ. **Now
+fixed.** Same failure as before — fixing one copy of a claim that lives in
+several.
+
+---
+
+## 2026-09-06 · `yWO8hVpRXeY` — Vorwald, the live DAX trade · **class 1, 4**
+
+**The sweep's "one executed trade" was over-read, and the over-read was mine.**
+Card and synthesis both said: *"74 / 23 = 3.22 R realised, closing against the
+stated ~1:3 target… the only place in the sweep where a stated risk, a stated
+target and a realised outcome appear together and reconcile."*
+
+The transcript does not support any of the three:
+
+- **No target is stated anywhere in the video.** The *"good 1:2"* (04:51) and
+  *"almost three"* (10:00) are **running open-profit multiples** called out as
+  the trade moves — 62 points open against 23 ticks risked gives 2.7, which is
+  what "almost three" means.
+- **74 ticks is a floor, not a realisation**: *"we will definitely secure 74
+  ticks for ourselves"* describes where the trailing stop sat. The close at
+  17:18 — *"The market pushed down, hit the limit"* — carries **no figure**.
+- The entry fill, contract count and any take-profit are **never spoken**.
+
+Also merged under one timestamp: the stop rule at 03:47 (*"above the
+structure"*) and the breakeven refusal at 06:22 (*"This isn't a 'let's move the
+stop loss to zero' situation"*), with "arbitrarily" being Gemini's word; and
+three separate stop tightenings (14:03, 14:20, 15:50) folded into one row.
+
+**What survives** is still unique in the sweep and worth having: a stated risk
+(23 ticks), a real ATAS execution panel, and a locked-in floor — the only video
+of 21 to show any of it. It is simply not a closed, reconciled trade record.
+**Fixed in the card and the synthesis.**

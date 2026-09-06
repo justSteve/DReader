@@ -18,94 +18,84 @@ and the setup he calls front-running trades that pull. He watches the order
 get eaten live, reads 712 market sells in the footprint, and infers a
 pullback because both sides got what they came for.
 
-Why it matters to us: front-running is new to the corpus. Carmine Rosato
-fades absorption; nobody before this treated resting size as a destination.
-And the absorption he defines a few minutes later is Carmine's
-trapped-participants signal, arrived at independently.
+Why it matters: front-running is new to the corpus. Carmine Rosato fades
+absorption; nobody before this treated resting size as a destination. And
+the absorption he defines minutes later is Carmine's trapped-participants
+signal, arrived at independently.
 
 ## The argument
 
-He begins with vocabulary, because for a scalper the book is the whole
-instrument. Working orders, a volume profile, bids and offers: "the price
-levels where market participants are currently positioned in the book," not
-prices that have traded. Carmine's DOM in episode three is the same ladder
-with volume-at-price and delta columns; this one carries the day's profile
-down its edge, and he reads it for what everyone in this corpus reads a
-profile for. High volume means acceptance. Low volume means the market
-rushed through.
+He begins with vocabulary. Working orders, a volume profile, bids and offers:
+"the price levels where market participants are currently positioned in the
+book," not prices that have traded. Carmine's DOM in episode three is the
+same ladder with volume-at-price and delta columns; this one carries the
+day's profile down its edge. High volume on it means acceptance; low volume
+means the market rushed through.
 
 The first practical contribution is calibration. He puts four books side by
 side and asks what one large market sell would do to the Russell: sweep the
 bids downward until it is filled. So "you also need to know what order sizes
 are reasonable in such a book for the respective instrument." Three limit
-buys at 2247.1 on the Russell. Sell blocks of 74 and 48 on the ES, larger in
-the main session. A DAX ladder of single digits and an eleven, "much, much,
-much, much less going on." The step-by-step guide on this channel runs the
-same exercise with a 325-contract ES ask, and the heatmap video supplies the
-threshold that turns observation into a rule: a single standalone ES order
-has to be over 250 to 300 contracts before it counts as truly large. Against
-that number, 74 and 48 are furniture. The order he shows next is not.
+buys at 2247.1 on the Russell. Sell blocks of 74 and 48 on the ES. A DAX
+ladder of single digits and an eleven, "much, much, much, much less going
+on." The step-by-step guide on this channel runs the same exercise with a
+325-contract ES ask, and the heatmap video supplies the threshold that turns
+observation into a rule: a single standalone ES order has to be over 250 to
+300 contracts before it counts as truly large. Against that number, 74 and 48
+are furniture.
 
-It is a bid of 676 contracts on the ES, surrounded by levels showing a
-fraction of that. His inference runs in three steps, each introduced with
-"what does that mean further?": someone wants to buy a large position; that
-trader has a reason; therefore "the probability is relatively high that the
-market will move there. Because markets are always looking for liquidity."
-He calls the order a magnet, and that is where this video leaves Carmine
-behind. In Carmine's series a thick band on the Bookmap is a place to watch
-for absorption and, once it has printed, a place to trade from; it is never
-a place price is expected to go. Here the resting order is the destination,
-and the setup that trades the approach is called front-running: the market
-keeps trying to reach the buyer, and at first it most likely bounces,
-because other traders assume the big buyer will defend and take the opposite
-side ahead of him. Then the second case, which he takes as seriously as the
-first: the market arrives fast, stays fast, and eats the order. Now the
-question is speed below. If speed drops and the market comes back up
-quickly, "this buyer here was really a big player who wants to drive the
-market upward."
+It is a bid of 676 contracts on the ES. His inference runs in three steps:
+someone wants to buy a large position; that trader has a reason; therefore
+"the probability is relatively high that the market will move there. Because
+markets are always looking for liquidity." He calls the order a magnet, and
+that is where this video leaves Carmine behind. In Carmine's series a thick
+band on the Bookmap is a place to watch for absorption and, once it has
+printed, a place to trade from; it is never a place price is expected to go.
+Here the resting order is the destination, and the setup that trades the
+approach is called front-running: the market keeps trying to reach the buyer,
+and at first it most likely bounces, because other traders assume the big
+buyer will defend and take the opposite side ahead of him. Then the second
+case: the market arrives fast, stays fast, and eats the order. Now the
+question is speed below. If speed drops and the market comes back up quickly,
+"this buyer here was really a big player who wants to drive the market
+upward."
 
-Two corpus notes belong here. The heatmap video on this same channel shows
-the front-run failing: traders long into a wall of resting liquidity,
-stopped out twice, then the market takes it without them. The magnet is
-real; the arrival is not scheduled. And "markets are always looking for
-liquidity" sits oddly beside the podcast on this channel, where stop-hunting
-is a retail myth; the heatmap card's reconciliation applies, since the
-channel denies that the sweep is always the operative regime, not that the
-mechanism exists. Trading Notes builds its whole strategy on that mechanism,
-find the pool, wait for the sweep, enter on confirmation, but its pools are
-inferred clusters of stops. His magnet is a number visible in the book.
+The heatmap video on this same channel shows the front-run failing: traders
+long into a wall of resting liquidity, stopped out twice, then the market
+takes it without them. And "markets are always looking for liquidity" sits
+oddly beside the podcast on this channel, where stop-hunting is a retail
+myth; the heatmap card already reconciles the two, since the channel denies
+the sweep is always the regime, not that it happens. Trading Notes builds its
+whole strategy on it, find the pool, wait for the sweep, enter on
+confirmation, but its pools are inferred clusters of stops. His magnet is a
+number visible in the book.
 
-Then it happens on screen. The 676 is consumed ("Bang"), the profile spikes,
-and the footprint for that five-minute block shows 712 contracts sold at
-market. The market holds above the block. His reading is Carmine's
-episode-two rule spoken before he has named it: heavy selling that fails to
-push price lower means a passive buyer took it, so both sides are done and
-price is "inclined to possibly move up to the fair price area." When he does
-name absorption a couple of minutes later, it is a buyer who keeps playing
-into a level while the market fails to advance, "a big seller at this price
-level who simply absorbs everything." That is the trapped-participants
-signal of Carmine's episodes two, three and five, with no citation in either
-direction. The trigger he attaches is speed: when it drops and the orders
-hitting the buy side get larger, the market goes back down to the levels you
-predefined.
+The 676 is consumed ("Bang"), the profile spikes, and the footprint for that
+five-minute block shows 712 contracts sold at market. The market holds above
+the block. His reading is Carmine's episode-two rule: heavy selling that
+fails to push price lower means a passive buyer took it, so both sides are
+done and price is "inclined to possibly move up to the fair price area." When
+he does name absorption, it is a buyer who keeps playing into a level while
+the market fails to advance, "a big seller at this price level who simply
+absorbs everything." That is the trapped-participants signal of Carmine's
+episodes two, three and five, reached independently. The trigger he attaches
+is speed: when it drops and the orders hitting the buy side get larger, the
+market goes back down to the levels you predefined.
 
-The day-trader application at the end is this channel's Idea and Proof in
-miniature. Yesterday's profile supplies zones; in one he expects a
-counter-trend short; the proof is a formation he calls a b, a brief spike
-above with a shelf built beneath it, which is the b of the channel's PbD
-shapes, plus absorption in the book at the top. He waits for speed to pick
-up on the buy side: "this is the point where my trade begins." No stop
-distance, target or ratio is given anywhere; "risk-reward ratios that you
-could only dream of" is the nearest thing to a number, and the only worked
-figures on this channel remain the 200 to 300 trades and the "maybe a two"
-of the volume-profile video.
+The day-trader application is this channel's Idea and Proof in miniature.
+Yesterday's profile supplies zones; in one he expects a counter-trend short;
+the proof is a formation he calls a b, a brief spike above with a shelf built
+beneath it, which is the b of the channel's PbD shapes, plus absorption in
+the book at the top. He waits for speed to pick up on the buy side: "this is
+the point where my trade begins." No stop distance, target or ratio is given
+anywhere, only "risk-reward ratios that you could only dream of," and the
+only worked figures on this channel remain the 200 to 300 trades and the
+"maybe a two" of the volume-profile video.
 
 What is missing is what is missing across the sweep: no entry rule, no size,
-no costs, a live segment that narrates a trade rather than executing one.
-What is here is the reasoning, the clearest statement in this corpus of why
-a scalper reads the book at all. The confirmation Carmine calls The Now,
-taken from the tape and never from a close, is what this presenter calls
-speed.
+no costs, no executed trade. What is here is the reasoning, and the
+confirmation Carmine calls The Now, taken from the tape and never from a
+close, is what this presenter calls speed.
 
 ## In his words
 

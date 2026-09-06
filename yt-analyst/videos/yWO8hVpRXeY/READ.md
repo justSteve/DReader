@@ -25,34 +25,27 @@ retail sentiment gauge, Euwax, enters a trading decision at all.
 ## The argument
 
 The session opens with the setup already on screen. Pre-open, the DAX has made
-what he calls "a nice P." In the channel's own vocabulary, settled in its
-crisis-strategy video, that letter is a shape, not an acronym: a Market Profile
-with a fat top on a thin stem, an aggressive push up that then balanced near
-its highs. The tradeable moment in the PbD videos is when price leaves that
-balance, and here it leaves downward. "No more liquidity came in here, and now
-we are simply back below the balance." The rule from the crisis video then
-applies: price back below equilibrium and finding acceptance has a high
-probability of clearing the previous trend. His own recap at the end says
-exactly this, in order. Pushed up, made a balance, showed there was no
-liquidity up there, re-entered the range, and from there the decision was down.
+"a nice P." In the channel's vocabulary, settled in its crisis-strategy video,
+that letter is a shape, not an acronym: a profile with a fat top on a thin
+stem, a push up that balanced near its highs. The tradeable moment is when
+price leaves that balance, and here it leaves downward. "No more liquidity came
+in here, and now we are simply back below the balance." The crisis video's rule
+then applies: price back below equilibrium and finding acceptance has a high
+probability of clearing the previous trend.
 
-Three other things go into the entry. The order book has "found more and more
-sellers" with nothing coming back up, which he reads as liquidity draining. The
-weekly profile shows single prints on the way down, the VPOC below has been
-tested and new lows made, so nothing there argues for stability. And crude oil,
-bid on the Iran conflict, has a steep trend with two balance phases inside it:
-participants are accepting the higher oil price, so the index should do "exactly
-what we planned." That last read is the auction premise pointed sideways.
-Balance means acceptance, and acceptance in oil is a reason to expect its
-mirror in the DAX. It is the same test Carmine Rosato applies to one instrument
-in episode one, used here across two.
+Three other things go into the entry. The book has "found more and more
+sellers" with nothing coming back up. The weekly profile shows single prints on
+the way down and a VPOC below that has already been tested, so nothing argues
+for stability. And crude oil, bid on the Iran conflict, has a steep trend with
+two balance phases inside it: participants are accepting the higher oil price,
+so the index should do "exactly what we planned." Acceptance in oil is a reason
+to expect its mirror in the DAX.
 
-What the video does not show is the fill. He says "we will definitely be able
-to open a position below 112" in the first minute and is pointing at where his
-stop sits two and a half minutes later; the entry happens off-mic. No fill
-price, no contract count. The sweep logged an unresolved contradiction on this
-channel between entering on the break and entering on the pullback, and this
-trade does not settle it.
+What the video does not show is the fill. He says he will "open a position
+below 112" in the first minute and is pointing at his stop two and a half
+minutes later; the entry happens off-mic, with no fill price and no contract
+count. It does not settle the sweep's open question of whether this channel
+enters on the break or on the pullback.
 
 The stop is the lesson. It starts above the structure the pre-market spike
 failed to take out, and every later move goes to a price the market has drawn.
@@ -60,48 +53,34 @@ When the footprint shows the sell-off at the lows was thin, he does not go to
 breakeven: "This isn't a 'let's move the stop loss to zero' situation, but
 rather it's just the upper edge of the sideways phase." When the DAX trades
 into the zone where large volume last changed hands, he expects a reaction and
-tightens hard enough to secure 74 ticks. When the last local balance forms, the
-stop goes above it and "the trade is done." The principle, stated near the end,
-is to secure the trade right above the price range where liquidity was last
-active, so that no risk remains above it. Set that against the exit AlgoTrade
-Pro hard-codes into its zero-lag indicator backtest: close half at one-to-one,
-move the stop to breakeven, trail the rest. Same decision, opposite doctrine.
-Breakeven is an account number; his stop levels are auction facts. Carmine is
-on his side of this: every journaled trade in the series puts the stop a few
-points beyond the absorption level and trails after, never to entry. On
-partials, though, the contrast is softer than the card suggests. He says twice
-that a partial exit would not have been a bad thing; he simply "doesn't have
-one" to take, which reads as a single contract.
+tightens to secure 74 ticks. Set that against the exit AlgoTrade Pro hard-codes
+into its indicator backtest: close half at one-to-one, move the stop to
+breakeven, trail the rest. Breakeven is an account number; his stop levels are
+auction facts. Carmine is on his side: his journaled stops sit a few points
+beyond the absorption level and trail after, never to entry.
 
-Now the numbers. He never states a target. What he reports are running
-multiples: "already a good 1:2" after the first wave; 62 points on 23 ticks of
-risk, "almost three," some minutes later; "almost 90 points on the clock" as
-price reaches the reaction zone; then the stop that secures 74. On the Eurex
-DAX future a tick is one index point, so his points and his ticks are one unit,
-and the set is coherent: 62 over 23 is 2.7, 74 over 23 is 3.2. The 62 and the
-90 are caption figures the card does not carry, so treat them as unverified;
-the 23 and the 74 are in the card. What closes, then, is risk against the
-locked floor. The realised result is never spoken. The trade ends with "the
-market pushed down, hit the limit," which says a resting order filled but not
-where, and the "almost three" is not a target he set but where the open profit
-stood at 62 points. Read the reconciliation as consistency among the figures he
-says, not as plan against outcome.
+The numbers. He never states a target. What he reports are running multiples:
+"already a good 1:2"; 62 points on 23 ticks of risk, "almost three"; "almost 90
+points on the clock"; then the stop that secures 74. On the Eurex DAX future a
+tick is one index point, so his points and ticks are one unit, and the set is
+coherent: 62 over 23 is 2.7, 74 over 23 is 3.2. The 62 and 90 are caption
+figures, unverified. What closes is risk against the locked floor. The realised
+result is never spoken: the trade ends with "the market pushed down, hit the
+limit."
 
 Just before the open he checks Euwax Sentiment, Börse Stuttgart's gauge built
-from private investors' trades in leveraged DAX products on its Euwax segment.
-It is strongly positive, most participants think the market is too low, and
-"what does the market do? Always likes to do the opposite." He takes it as one
-more reason it can go down a level. Nothing else in the corpus uses retail
-positioning as an input, and it is the only non-price, non-volume input in this
-channel's method. It is also a different kind of evidence. The book and the
-footprint are transactional: they show what is being done in this instrument,
-now, by everyone. Euwax is a belief poll of one class of participant in a
-different product, and it carries information only under a premise, that
-retail is wrong at extremes. Carmine's fourth episode holds the same premise,
-retail as the bait fish, but reads it off the footprint as trapped
-participants. Note the asymmetry on this channel: the Wall Street scalper
-podcast calls stop-hunting a retail myth, yet retail belief is fadeable.
-Retail's stops are not worth trading; retail's opinion is.
+from private investors' trades in leveraged DAX products. It is strongly
+positive, most participants think the market is too low, and "what does the
+market do? Always likes to do the opposite." It is the only non-price, non-
+volume input in the corpus, and a different kind of evidence. The book and the
+footprint are transactional: what is being done in this instrument, now, by
+everyone. Euwax is a belief poll of one class of participant in a different
+product, and it carries information only under a premise, that retail is wrong
+when confident. Carmine's fourth episode holds the same premise, retail as the
+bait fish, but reads it off the footprint as trapped participants. Note the
+asymmetry on this channel: the Wall Street scalper podcast calls stop-hunting a
+retail myth, yet retail belief is fadeable. Retail's stops are not worth
+trading; retail's opinion is.
 
 The last minute is the scarce thing in a live session, a trade not taken. Price
 turns hard at the pre-defined zone because that is where major liquidity was
@@ -110,11 +89,11 @@ Ideally, but the structure is just too weak for me, since we're well below the
 previous day." A reaction level is not an entry unless the larger structure
 agrees.
 
-One caveat the channel supplies itself. Its volume-profile video says figures
-mean nothing before 200 to 300 trades, and offers a worked example at a 50% hit
+One caveat the channel supplies itself: its volume-profile video says figures
+mean nothing before 200 to 300 trades, and its worked example runs at a 50% hit
 rate with an average risk-reward of "maybe a two." This is one trade, a winner,
-on a day he calls geopolitically tense, and he says plainly that "it does not
-work every time." It shows the method. It is not evidence for it.
+and "it does not work every time." It shows the method. It is not evidence for
+it.
 
 ## In his words
 

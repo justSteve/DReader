@@ -147,7 +147,7 @@ closed, just less firmly than claimed.
 
 **Per-instrument book calibration** (`vl01TiVTuoQ`, `usho6UVLqkE`) — useful
 because "a big order" means different things per market: ES showed a 325 and a
-676-contract order; DAX prints `1,1,2,4,3,5,33` and `2,4,8,11,7`; bond futures
+676-contract order; DAX prints `1 1 2 4 3 5 3 3` (last digit unresolved) and, spoken, *"two, four, four, eight, 11, seven contracts"*; bond futures
 carry 5,000–6,000 a side; gold shows 2, 4, 6.
 
 ## Where this channel contradicts the rest of the corpus
@@ -316,17 +316,28 @@ the **ATAS DOM Trader panel** is on screen at 15:52 with German controls
 
 | Element | Value |
 |---|---|
-| Plan | short below **112**, into Asian-session lows |
-| Stop | above market structure, explicitly **not** moved to breakeven |
-| Risk | **23 ticks**; R:R revised from 1:2 to ~**1:3** |
-| Result | **74 ticks**, trailing the stop above the local balance area |
+| Position | opened *"below 112"*, into Asian-session lows ("short" is inferred, never spoken) |
+| Stop | *"above the structure"*; separately, an explicit refusal to move it to zero |
+| Risk | **23 ticks** — the one hard number |
+| Running multiples | *"a good 1:2"*, then with 62 points open *"almost three"* |
+| Floor secured | *"we will definitely secure **74 ticks**"* — a trailing-stop floor |
+| Close | *"the market… hit the limit"*, **no figure** |
 
-**74 / 23 = 3.22 R realised**, closing against the stated ~1:3 target. It is the
-only place in the sweep where a stated risk, a stated target and a realised
-outcome appear together and reconcile. Note also that his stop rule — above
-structure, never arbitrarily to breakeven — is the **opposite** of the
-1R-then-breakeven exit hard-coded into the AlgoTrade Pro backtest
-([UL5QOCSKnU0](../videos/UL5QOCSKnU0/CARD.md)).
+**CORRECTED 2026-09-06.** This section previously read "74 / 23 = 3.22 R
+realised, closing against the stated ~1:3 target… the only place in the sweep
+where a stated risk, a stated target and a realised outcome appear together and
+reconcile." **No target is stated anywhere in the video**, the 1:2 and "almost
+three" are running open-profit multiples rather than a plan, and 74 ticks is
+where the trailing stop sat, not a realised result. The entry fill, contract
+count and take-profit are never spoken.
+
+What stands: a **stated risk, a real execution panel and a locked-in floor** —
+still the only video of 21 to show any of them, and still the only trade this
+channel executes on camera. Just not a closed record.
+
+His stop discipline — above structure, and an explicit refusal to move it to
+zero — remains the **opposite** of the 1R-then-breakeven exit hard-coded into
+the AlgoTrade Pro backtest ([UL5QOCSKnU0](../videos/UL5QOCSKnU0/CARD.md)).
 
 That video also carries the only non-price, non-volume input on the channel:
 **Euwax Sentiment**, the Stuttgart exchange's retail gauge, used contrarily

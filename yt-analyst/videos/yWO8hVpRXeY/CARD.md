@@ -26,15 +26,34 @@ workspace runs candlestick charts, **DOM ladders**, volume profiles and
 | Element | Value | t |
 |---|---|---|
 | Plan | short below **112**, into the Asian-session lows | 01:09 |
-| Stop rule | **above market structure**, explicitly *not* arbitrarily moved to breakeven | 03:49 |
-| Initial R:R | **1:2** | 04:55 |
-| Risk | **23 ticks**, R:R revised to ~**1:3** | 09:56 |
-| Result | **74 ticks** locked in by trailing the stop above the local balance area | 14:03 |
+| Stop rule | *"above the structure"* (03:47); the breakeven rejection is a **separate moment** at 06:22–06:36 — *"This isn't a 'let's move the stop loss to zero' situation, but rather it's just the upper edge of the sideways phase"* — with the general rule at 15:31. "Arbitrarily" was Gemini's word, and the card previously merged the two moments under one timestamp. | 03:47 · 06:22 |
+| Open profit, running | *"a good 1:2 on this idea"* — a live multiple, not a plan | 04:51 |
+| Risk | **23 ticks**; with **62 points** open, *"a very nice risk-reward ratio of almost three"* | 09:44–10:00 |
+| Floor secured | *"we will definitely secure **74 ticks** for ourselves"* — a trailing-stop floor, not a result | 13:58 |
+| Close | *"The market pushed down, hit the limit"* — **no figure given** | 17:18 |
 
-**Arithmetic check:** 74 ticks realised against 23 ticks risked = **3.22 R**,
-which closes against the stated ~1:3 target. The figures are a coherent set.
-This is the only place in the sweep where a stated risk, a stated target and a
-realised outcome all appear together and reconcile.
+**CORRECTED 2026-09-06 by the transcript audit — the previous version of this
+table misread running commentary as a trade plan.** It recorded an "Initial
+R:R 1:2", an "R:R revised to ~1:3", and a "74 ticks realised" result, then
+concluded that "a stated risk, a stated target and a realised outcome all
+appear together and reconcile". None of that survives the transcript:
+
+- **No target is stated anywhere in the video.** The 1:2 and "almost three" are
+  *running open-profit multiples* he calls out as the trade moves — 62 points
+  open against 23 ticks risked is 2.7, which is what "almost three" refers to.
+- **74 ticks is a floor, not a realisation.** *"We will definitely secure 74
+  ticks"* describes where the trailing stop now sits. The exit at 17:18 carries
+  no number.
+- The entry fill, the contract count and any take-profit level are **never
+  spoken**.
+
+What survives is still worth having, and is unique in the sweep: a **stated
+risk (23 ticks), a real execution panel, and a locked-in floor** — the only
+video of 21 that shows any of it. But it is not a closed, reconciled trade
+record, and this card claimed it was.
+
+**Arithmetic, for what it is:** 62/23 = 2.7 ("almost three") and 74/23 = 3.2,
+both coherent under one DAX tick = one index point.
 
 **Note what the stop rule rules out.** "Above market structure rather than
 arbitrarily moved to breakeven" is a direct rejection of the
