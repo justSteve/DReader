@@ -490,3 +490,75 @@ or directory: 'yt-dlp'` even though `.venv/bin/yt-dlp` exists and works.
 Workaround: `export PATH="$PWD/.venv/bin:$PATH"` before the call. Real fix:
 have yta.py resolve the interpreter's sibling `yt-dlp` (`Path(sys.executable).parent / "yt-dlp"`)
 and fall back to PATH. Status: **confirmed**, not yet fixed.
+
+## 2026-09-06 — The 503 fallback model is retired; `gemini-2.5-flash` now 404s
+
+**Status: confirmed.** A zoom hit three 503s on `gemini-flash-latest`, fell
+back per the retry logic, and died on:
+
+```
+404 NOT_FOUND ... This model models/gemini-2.5-flash is no longer available
+to new users. Please update your code to use models/gemini-3.6-flash
+```
+
+So the fallback path in `generate_with_retry` is dead weight — it converts a
+transient 503 (which a plain retry clears; the same call succeeded on the next
+attempt) into a hard 404 plus a full traceback. CLAUDE.md still tells us "503s
+are handled by the script (backoff + fallback to gemini-2.5-flash)"; that
+sentence is now wrong.
+
+**Proposed doctrine change for Steve:** point the fallback at
+`gemini-3.6-flash`, or drop the fallback and widen the backoff. Until then,
+treat a 404-on-fallback as a transient 503 and simply rerun the ask.
+
+## 2026-09-06 — Grade backtest-claim videos with arithmetic, not pixels
+
+**Status: confirmed** (second independent observation of the arithmetic
+doctrine paying out; first was the Cherry Bomb ticket).
+
+On UL5QOCSKnU0 the video showed four full results spreadsheets. Every derived
+cell reproduced from the gross profit/loss columns to 4 decimal places, which
+per doctrine establishes the transcription as a coherent set. Two further
+results came free, and neither needed a single frame:
+
+1. **The arithmetic uniquely corrected an OCR error.** Gemini read
+   `111 profit / 112 loss / 223 total / winrate 49,55`. But
+   `gross_profit / avg_profit` = 110.000 and `gross_loss / avg_loss` = 112.000,
+   and 110/222 = 49.5495% matches the stated winrate exactly where 111/223
+   (49.78%) does not. The true row is 110/112/222 — determined, not guessed.
+2. **Two ratios expose a false date range.** `Net% ÷ AvgPerYear` and
+   `Trades ÷ SignalsPerYear` each independently gave **2.000 years** for a
+   table captioned "All Available Data Since 2020", while the sibling tables
+   gave 6.000 and 5.00. Any results table carrying both a total and a per-year
+   figure discloses its own sample length; run that division first.
+
+**Generalizable rule:** for any video reporting backtest statistics, convert
+to **expectancy per trade in R** before assessing the claim. Profit factor
+hides sample size and cost sensitivity; R-expectancy compares directly against
+measured transaction cost. Here 0.0257 R against a measured 0.0486 R of ES
+friction settled the video's headline claim without replicating anything.
+
+## 2026-09-06 — The /ES corpus is tick-deep but calendar-shallow
+
+**Status: confirmed.** `Strader/data/corpus/*/databento_glbx_es.jsonl`
+(Databento GLBX.MDP3, schema `trades`, continuous `ES.c.0`): 269 usable days,
+2025-05-27 → 2026-09-06, 12.2 GB, ~94K–660K trades/day, 2 empty files
+(2026-08-30, 2026-09-06).
+
+The trap is intraday coverage, which is **not uniform**:
+
+- **233 days = a 1–2 hour afternoon fragment only** (≈14:00–16:00 ET).
+- **22 days = full RTH** (2026-07-01 → 2026-07-30, ≈09:30–16:00 ET).
+- 2 outliers with extended hours (2026-08-11, 2026-08-19).
+
+Consequence for any indicator backtest: an indicator with lookback L needs
+L bars of warm-up before its first valid value. A 2-hour fragment is 24
+five-minute bars, so anything with L > 24 never initialises, and no
+timeframe above 5 minutes can form continuous bars from fragments at all.
+**Check the window before promising a backtest** — the day count flatters,
+the hours decide. Only the July 2026 run supports bar-based work, and it is
+22 days.
+
+What the corpus IS excellent for: microstructure and transaction-cost
+questions, where tick depth is the point and calendar span is not. Pricing a
+strategy's stop rule against real ES friction is a test this data does well.
