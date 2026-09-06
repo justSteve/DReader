@@ -447,3 +447,46 @@ doctrine and mark the entry `promoted`.
   a one-glance judgement on any single chart image (axis not monotonic → the
   chart is decor and none of its metadata is citable). Consumed by the
   Strader zgent as `st-kpbm`, a knowledge/ entry citing this file.
+
+## 2026-09-05 — Two blind zooms diagnose a chart-metadata invention without frames
+
+**Status: suspected** (one observation; confirm on a second video before
+proposing it as doctrine).
+
+On IUWvHVout94 the wide pass reported, as a `visual` claim, "chart displayed
+using Dow Jones Futures (YM) on 30-minute and 5-minute timeframes". Frames
+were unavailable, so the disagreement was resolved with two clipped asks over
+the same window, each forbidden the other's evidence channel:
+
+- a **pixels-only** ask ("Ignore audio. Quote every label you can read; if you
+  cannot read a number, say so") — found no ticker, no price axis, no
+  TradingView chrome at all;
+- an **audio-only** ask ("Answer ONLY from the spoken audio. Ignore everything
+  on screen") — found the presenter *saying* "the Dow Jones futures".
+
+The two answers together explain the error rather than merely contradicting
+it: Gemini had migrated a spoken instrument name into an on-screen
+chart-metadata claim. That is the chart-metadata-invention mode already
+logged against the SMDX corpus, but this is the first time it was *localized*
+— we know which channel the fact came from and which one it was falsely
+attributed to.
+
+**Why it works:** the two asks are cheap (~15K prompt tokens each on a 2-minute
+clip) and the constraint is what does the work — "ignore everything on screen"
+removes the substrate the hallucination needs. Frames remain the doctrine
+tiebreaker, since both passes are still Gemini; but when frames are
+unavailable, agreement between two blinded passes is a materially stronger
+result than one wide pass, and disagreement between them is diagnostic.
+
+**Open:** does the blinded pair ever agree on a claim that frames later
+refute? Until that is tested, grade a two-blind-zoom finding as verified-by-
+cross-check, not verified-by-pixels, and say which on the card.
+
+## 2026-09-05 — `yta.py frames` needs `.venv/bin` on PATH
+
+`frames` shells out to a bare `yt-dlp`, which is installed in the venv and not
+on PATH, so the command dies with `FileNotFoundError: [Errno 2] No such file
+or directory: 'yt-dlp'` even though `.venv/bin/yt-dlp` exists and works.
+Workaround: `export PATH="$PWD/.venv/bin:$PATH"` before the call. Real fix:
+have yta.py resolve the interpreter's sibling `yt-dlp` (`Path(sys.executable).parent / "yt-dlp"`)
+and fall back to PATH. Status: **confirmed**, not yet fixed.
