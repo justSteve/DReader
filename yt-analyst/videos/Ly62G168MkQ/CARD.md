@@ -20,9 +20,11 @@ confirm acceptance, **not** high/low extremes. Second independent statement of
 the channel's close rule alongside [jXR1afMy-3o](../jXR1afMy-3o/CARD.md).
 
 **The three formations** are drawn by hand: capital **P** and lowercase **b**
-(12:40), then **D** (14:55). A **P-profile** is named at 06:49 as an upside
-impulse followed by consolidation near the highs — confirming the shape reading
-that [m3IMdc7QwN4](../m3IMdc7QwN4/CARD.md) makes explicit.
+(12:40), then **D** (14:55). A **P-profile** is named at 06:46: *"a market
+imbalance on the buy side, meaning more buyers than sellers"*. *(Corrected 2026-09-07:
+"an upside impulse followed by consolidation near the highs" was Gemini's
+paraphrase, `verbatim: null`, and the "shape reading" is ours —
+[m3IMdc7QwN4](../m3IMdc7QwN4/CARD.md) says **phases**.)*
 
 **70% written in green ink** on the Paint canvas at 15:46 — sideways
 consolidation is ~70% of market activity.

@@ -17,7 +17,10 @@ label diagram appears at 06:13 — and the agreement between the two is useful
 corroboration of the vocabulary.
 
 **A presenter-identity problem worth recording.** At 00:19 the speaker
-introduces himself as **"Thomas Voigt, coach and trainer of Patrick Nill"**.
+introduces himself as coach and trainer of Patrick Nill; the surname is heard
+as **"Voigt"** by Gemini and **"Polvald"** by the captions *(Corrected 2026-09-07: the
+previous quotation marks implied a verbatim string; the run is `verbatim:
+null`)*.
 Elsewhere in the sweep Gemini renders the same voice as **"Thomas Vorwald"**
 ([0CrkbfuIhkc](../0CrkbfuIhkc/CARD.md)), and the channel handle is
 `@tom_vorwald_en`. **Two readings of one spoken surname, unresolved.** Do not
@@ -28,9 +31,14 @@ what is actually evidenced.
 **Two claims not found elsewhere in the corpus:**
 
 1. **Institutions need 1.5–2 days to route and position large order flows**
-   (03:17). This is the mechanism behind multi-day composite profiles and
-   behind why value areas persist. Unsourced but load-bearing for the method.
-2. **He dismisses the retail "stop-loss waves" concept** (09:51), attributing
+   (03:17), hedged — *"sometimes … depending on which stock or which
+   instrument"* (03:13). That this is the mechanism behind multi-day composite
+   profiles is our inference, not his statement *(Corrected 2026-09-07)*. Unsourced
+   but load-bearing for the method.
+2. **He rejects the "stop-loss waves" label** (09:51) while conceding the
+   mechanical stop-out a sentence earlier (*"hits the brakes and exits"*,
+   09:35–09:46) *(Corrected 2026-09-07: "retail" is never spoken; the position is
+   agency-rejection, the same shape as RwQBdF9TSvc)*, attributing
    rapid moves instead to **institutional futures hedging**. This is the third
    independent rejection of stop-hunting on this channel — see
    [RwQBdF9TSvc](../RwQBdF9TSvc/CARD.md) — and it puts the channel firmly
@@ -63,8 +71,9 @@ _(anything peculiar to this video/channel: layout, chart software, segment struc
 - **Presenter name is unresolved** — "Thomas Voigt" here, "Thomas Vorwald"
   elsewhere, handle `@tom_vorwald_en`. Never assert the legal name from this
   corpus; report the channel identity instead.
-- He names **68.2%** (one standard deviation) as the value-area basis — more
-  precise than the usual "70%"; use his figure when quoting this channel.
+- He names **68.2% or 70%** — *"as a rule, you use 68.2 or 70% of all trades of
+  the day"* (06:30) — as the value-area basis; the one-standard-deviation
+  reading is ours, he never says it *(Corrected 2026-09-07)*.
 - Another title promising an entry with no entry rule in the video. This
   channel's titles are not descriptions of content.
 

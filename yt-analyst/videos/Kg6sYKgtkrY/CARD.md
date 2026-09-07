@@ -48,7 +48,7 @@ title, this is scenario planning, not a strategy specification.
 _(curated by Claude Code: one entry per interrogation session — date, aim, verdict)_
 
 - **2026-09-06 — comparative wide pass (epic dr-zk8).** Standardised
-  orderflow wide pass, identical question across all 19 sweep videos. Verdict: PbD applied to swing timeframes across six markets; third attestation of the POC/VPOC distinction. Dated levels make it scorable later.
+  orderflow wide pass, identical question across all 19 sweep videos. Verdict: PbD applied to swing timeframes across five markets (corrected 2026-09-07: Bitcoin, EUR/USD & 6E, S&P, Silver, Copper — gold is only mentioned); third attestation of the POC/VPOC distinction. Dated levels make it scorable later.
 
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_

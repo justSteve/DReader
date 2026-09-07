@@ -31,8 +31,9 @@ market-profile video has balance about 70% of the time, the volume-profile
 video has a return to fair value in about 70% of phases. So the real thesis is
 that a high hit rate is a property of the regime, not of the pattern. He names
 PbD as the way to read the regime and never expands it; the crisis-PbD video
-resolved it for the corpus as profile shapes, P for upward imbalance, b for
-downward, D for balance.
+resolved it for the corpus in his own words: the letters are phases, P the
+aggressive trend phase up, b the aggressive trend phase down, D the balance
+phase. The reading of them as profile shapes is ours.
 
 The first worked chart is a place not to trade, which is good teaching. This
 week's ES profile sits inside last week's, so the market is in equilibrium and

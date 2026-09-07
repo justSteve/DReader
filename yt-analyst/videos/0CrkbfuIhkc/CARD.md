@@ -38,8 +38,10 @@ conditions rather than forecasts.
 | Alphabet | above **325** *"based on the closing price"* | 10:04 |
 | Tesla | *"as long as we stay below 400… treated with caution"* | 11:43 |
 
-**Note the Alphabet level is explicitly close-based** (10:04) — the only place
-in the sweep where he ties a level to a **closing price**, which is the
+**Note the Alphabet level is explicitly close-based** (10:04) — one of several
+places in the sweep where he ties a level to a **closing price** *(Corrected 2026-09-07:
+previously "the only place"; the sweep's "Closes, not wicks" section lists
+`Ly62G168MkQ`, `jXR1afMy-3o`, `uFxYcpiaOpw`, `YkclL6xgu-s`)*, which is the
 specification his multi-timeframe video
 ([HySZZSjMxF8](../HySZZSjMxF8/CARD.md)) advertises but never states as a rule.
 
@@ -59,7 +61,7 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
 
 - **2026-09-06 — comparative wide pass (epic dr-zk8).** One standardised
   orderflow-focused wide pass, identical question across the sweep for
-  comparability. Verdict: a falsifiable outlook -- dated, conditional, level-specific. Also the only place in the sweep where he ties a level to a closing price. Championship figures disagree with the other card's.
+  comparability. Verdict: a falsifiable outlook -- dated, conditional, level-specific. Also ties a level to a closing price (one of several in the sweep — corrected 2026-09-07). Championship figures disagree with the other card's.
 
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_

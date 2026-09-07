@@ -67,9 +67,11 @@ Whiteboard slides + AI mock charts.
   $50,010 ×50 · $50,000 ×20 · $49,995 ×10 · $49,900 ×10 · $49,850 ×30 ·
   $49,800 ×10 · $49,750 ×30 · $49,700 ×40; SELLS $50,150 ×10 with a void
   below — "NEXT SELL ORDER — FAR ABOVE — GAP IN BETWEEN"; "NOTHING TO
-  MATCH — PRICE JUMPS $90 INSTANTLY" (03:58, verified). (The drawn gap is
-  $50,010→$50,150 = $140; the caption says $90 — the slide's own
-  inconsistency.) "THIS IS A FAIR VALUE GAP — PRICE SKIPPED HERE" (04:07);
+  MATCH — PRICE JUMPS $90 INSTANTLY" (03:58, verified). (The narration puts the
+  next sell order at **$50,100** — *"the next available sell order is at
+  $50,100 … Price jumps $90 in a single transaction"* (03:40–04:02) — so the
+  $90 caption is right and the **drawn** book's $50,150 is the inconsistent
+  element. *(Corrected 2026-09-07: this card previously blamed the caption.)* "THIS IS A FAIR VALUE GAP — PRICE SKIPPED HERE" (04:07);
   "NOT RANDOM — LIQUIDITY DISAPPEARED: FAIR VALUE GAP = VOID WHERE NO
   RESTING LIMIT ORDERS" (04:18).
 - **04:26–05:55 the spread — verified (frames-425-438).** "THE BID-ASK
@@ -179,8 +181,9 @@ Whiteboard slides + AI mock charts.
 **Numbers.** Ladders: every transcribed row exact (28/28); three whole
 ladders omitted (02:00, 03:56, 06:41) and recovered from frames. Slide
 arithmetic: $50,000→$50,010 = $10 ✓; $50.00/$50.05 = $0.05 ✓; 5k+2k+8k =
-15k ✓; the gap book's $50,010→$50,150 = $140 vs the "$90" caption ✗
-(source error). No performance claims.
+15k ✓; the gap book is drawn to $50,150 where the narration says $50,100
+($50,010→$50,100 = $90 ✓ caption; drawn book ✗, source error — corrected
+2026-09-07). No performance claims.
 
 **Not specified:** any way to *see* the order book on a chart beyond
 "volume profile" and candle shape; no depth, no thresholds.
@@ -210,7 +213,8 @@ _(anything peculiar to this video/channel: layout, chart software, segment struc
   implies a book is on screen, pull frames regardless of what the zoom
   returned.
 - Two source-side errors worth knowing before quoting the video: the
-  "$90 jump" caption sits on a drawn $140 gap, and the "liquidity sweep"
+  "$90 jump" caption matches the spoken $50,100 but sits on a book drawn to
+  $50,150 (corrected 2026-09-07), and the "liquidity sweep"
   title is illustrated with a corporate cash-sweep diagram.
 - Series cross-refs: "FROM VIDEO 1 — AGGRESSION MOVES PRICE"; "SIZE
   PROBLEM (VIDEO 3)"; video 4's candle shapes and video 5's timeframes

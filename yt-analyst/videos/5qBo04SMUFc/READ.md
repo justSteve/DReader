@@ -57,7 +57,7 @@ the bounce. At the first low a large seller was absorbed and a tail formed;
 at the second the bounce came from aggressive buyers, people who will need
 to sell when it fails, so he calls that support weak, and it breaks. The
 Vorwald channel's [weak highs and lows](../1utSjHs_Mq8/CARD.md), extremes
-built by retail that tend to get revisited, is the kindred idea reached from
+built by weak hands that tend to get revisited, is the kindred idea reached from
 profile shape rather than delta.
 
 That makes the conflict with that channel's [podcast
@@ -312,7 +312,7 @@ method. It does not test it.
 > no other source in the corpus states in this form: the same bounce is
 > strong or weak depending on who made it. A bounce made by buyers is made
 > by people who will have to sell when it fails. The Vorwald channel's "weak
-> highs and lows", extremes built by retail that tend to be revisited and
+> highs and lows", extremes built by weak hands that tend to be revisited and
 > broken, is the kindred idea, reached from profile shape rather than delta.
 
 **Obvious and non-obvious** *(17:20)*

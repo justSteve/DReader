@@ -55,8 +55,15 @@ Two details that matter:
 - **There is no threshold. ABSENT** — no multiple of average volume, no bar
   count, no percentage, no lookback, no baseline (confirmed by dedicated zoom,
   runs/20260906-070316). "Increased volume" is judged by eye off the histogram.
-- **It is a trade-through, not a close.** He says price must *"trade below"*
-  / *"trade back down from"* the volume level. No candle close is required.
+- **He says price must *"trade below"* / *"trade back down from"* the volume
+  level** (10:43–10:52) and never mentions a candle close either way.
+  *(Corrected 2026-09-07: this card previously stated "no candle close is
+  required" as his rule; the transcript is silent, and the "rather than a
+  candle close" wording was Gemini's inference, `verbatim: null`.)*
+- Option two he names himself: *"This gives me a really nice B structure setup
+  to trade"* (09:18–09:30) — the b of PbD, previously unrecorded (added
+  2026-09-07; dubbed audio, unframed). "Fakeout wick" was Gemini's phrase; he
+  says *"where the market previously set that swing high"* (09:41).
 
 ### What the description promises and the video does not deliver
 

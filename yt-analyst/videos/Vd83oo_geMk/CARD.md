@@ -66,8 +66,10 @@ he makes the same concession in both videos.)*
 
 **Iceberg orders** (14:10): a large order continuously absorbed and refilled
 at a level without price moving much. Matches the definition in
-[IUWvHVout94](../IUWvHVout94/CARD.md) (Trading Notes, 04:57) — third
-independent arrival on this concept across the corpus.
+[IUWvHVout94](../IUWvHVout94/CARD.md) (Trading Notes, 04:57) — the second
+independent arrival on this concept across the corpus; Carmine describes the
+mechanism as absorption and never names it *(Corrected 2026-09-07: previously
+"third")*.
 
 **Workspace** (05:38): candles + volume profile, TPO/market profile,
 footprint/cluster charts and DOM windows in one layout; a DOM array across

@@ -554,3 +554,185 @@ own uncertainties call the header *"partially compressed and low resolution"*;
 no rank digit and is not sorted by return); and what he **says** at 00:15 is
 *"the two-time World Cup Championships of trading **leader**"* — leader, not
 champion.
+
+---
+
+# 2026-09-07 · second composition run — 27 reads, central reconciliation
+
+Twenty-seven composers (12 Vorwald, 10 SMDX, Trading Notes, AlgoTrade Pro,
+the AI video, two Trader Dale) reported; three frame pulls settled the
+load-bearing disputes. Substantive corrections applied to cards and syntheses
+on this date; minor class-1 hedges are logged here and left in the cards where
+the substance holds.
+
+## `1utSjHs_Mq8` — Vorwald, market profile · **class 4, 5** · FRAMES
+- **Instrument.** Card said `6E` Euro FX (one run's visual). Spoken levels
+  6,714 / 6,758 are S&P levels; `frames-005-120/f_0002.jpg` shows a Sierra
+  Chart header on CME dated 2025-10-22. **Fixed**; the Lesson "not index-only"
+  withdrawn.
+- Class 5: "weak highs created by *retail*" — 09:34 says *"weak traders"*.
+  Propagated to the sweep and `5qBo04SMUFc/READ.md`. **All three fixed.**
+- Class 1/4 minor: value area "roughly 70% … or time spent" — 13:11 "where
+  70% of the trades took place". Logged.
+- Omission: buying tail = "at least three distinct letters standing completely
+  alone" (09:02).
+
+## `K8qtT2_axPo` — Vorwald, market profile hub · **class 2** · FRAMES
+- **Platform.** Card's backticked `Powered by VolFix.net` was `verbatim:
+  null`; the fallback run read "shiftnest". `frames-012-040/f_0006.jpg`
+  (00:22): header `ESH26-CME [CBV][M] #4 … TPOs: 1.25 x 30 min · 2025-12-18`,
+  axis 6,780–6,960, no watermark. Platform is **Sierra Chart**, screenshots
+  in HyperSnap 8; instrument ESH26. **Fixed** in card, Lessons and the sweep.
+- Class 4/5 minor: "initial balance = opening 30 min | 02:55" (term at 07:31);
+  "time vs volume | 02:15" (content at 05:35, 14:08). Logged.
+- Class 1 light: ledgers "weak hands" drops 13:38 "or have held it up".
+
+## `VumVuGnCcFM` — Vorwald, VWAP · **class 1, 2, 4, 5** · FRAMES
+- `>20%` IS on the canvas (`frames-940-958/f_0009.jpg`, ≈09:56); spoken as
+  "about 20% of trading days for many products". Card **confirmed and
+  annotated** with both.
+- Class 1: "invalidating mean-reversion" — 08:00 "caution is advised". Logged.
+- Class 2/4: "liquidated during a runaway trend" — 11:06 "some news comes out".
+  Logged.
+- Class 5: "institutional participants" — 04:04 "large market participants".
+- Cross-ref: "identical to 43JaKHRvxHk's Rule 1" — matches that video's 06:30
+  balance rule; the Rule-1 match is this video's 11:43–11:49. **Fixed.**
+
+## `YkclL6xgu-s` — Vorwald, volume · **class 1, 2, 4, 5**
+- **Class 1, important.** "600 vs baselines of 800 and 1,000 on previous
+  days" — 02:40 *"just imagine … 800 … maybe you even had 1,000"*. Hypotheticals
+  recorded as observed baselines, in Findings and Sessions. **Fixed.**
+- Class 2: stop "below the prior established volume consolidation block" —
+  12:06 "below the last volumes". Logged.
+- Class 1: weekly signal "signals" — 08:23 "higher likelihood"; the
+  low-volume condition dropped; timestamp 06:19 → 08:21. Logged.
+- Class 4/5 minor: POC definition at 07:06 not 05:40; "ES, FDAX, CL" are our
+  tickers for "S&P future, DAX future or crude oil".
+
+## `HySZZSjMxF8` — Vorwald, multi-timeframe hub · **class 1, 5**
+- **Class 1.** "No candle close is required" — 10:43–10:52 never mentions a
+  close; the wording was Gemini's `verbatim: null` inference. **Fixed.**
+- Class 5: he names option two *"a really nice B structure setup"* (09:18);
+  unrecorded. **Added.** "Fakeout wick" was Gemini's. **Fixed.**
+- Class 5 minor: "balance phase" for his "sideways".
+
+## `zAwEX_tRUfE` — Vorwald, 1-minute scalping (ES) · **class 1**
+- "Requires no confirmation at all beyond the break" — 03:41–04:09 names
+  acceptance / a stable balance above the level. **Fixed.**
+- "'Accumulation' … is absorption in Carmine's vocabulary" — 06:24 describes
+  initiative buying establishing acceptance; the gloss was ours. **Fixed.**
+- Minor: "computed once", "no indicators at all" are compression. Logged.
+
+## `aursfDVYzUk` — Vorwald, entry with volume · **class 1, 2, 5**
+- Name set in quotation marks was `verbatim: null`; captions say "Polvald".
+  **Fixed** (fourth rendering, name stays unresolved).
+- "Institutions *need* 1.5–2 days … mechanism behind composite profiles" —
+  03:13 "sometimes … depending on which instrument"; mechanism ours. **Fixed.**
+- "Dismisses the *retail* stop-loss waves" — concedes the stop-out at 09:35,
+  rejects the label; "retail" never spoken. **Fixed.**
+- "68.2% is one standard deviation" — 06:30 "68.2 or 70%"; SD gloss ours.
+  **Fixed.**
+- Omission: 07:56 "70% of the time we are in stable market phases".
+
+## `Ly62G168MkQ` — Vorwald, PbD beginners · **class 2, 5**
+- P-profile "consolidation near the highs — confirming the shape reading" —
+  06:46 "a market imbalance on the buy side"; shapes gloss is ours. **Fixed.**
+- Class 2 minor: 05:10 "confirm acceptance" is Gemini's wording; substance OK.
+- Class 3-adjacent: "70% in green ink at 15:46" rests on a null-verbatim
+  visual; spoken "about 70%" at 15:43. Logged, unframed.
+- Class 1 minor: Lessons generalises "DAX and Gold on 1-minute" from one video.
+
+## `43JaKHRvxHk` — Vorwald, VWAP wrong · **class 1, 5**
+- Two-mode summary (trend = pullback / balance = target) is our compression
+  of three uses at 08:12–10:11. **Fixed.**
+- Minor: Rule 1 "pull-back" glosses the dub's "counter trades"; "classify the
+  open first" — 04:44 "for example"; "strictly the current day" — 01:50
+  "usually". Bands 0.5/1/1.5/2 from a truncated study bar, unframed. Logged.
+
+## `YmygDgtoxO8` — Vorwald, volume profile · **class 1, 2**
+- "Explosive breakouts occur" — 11:47 "probability … is very high", and the
+  12:08–12:24 counter-case dropped. **Fixed.**
+- Mild: base rate 05:36 conditional and "typically"; "explicitly departs from
+  convention on POC" — 06:58 "a bit differently". Logged.
+
+## `Kg6sYKgtkrY` — Vorwald, 2026 strategy · **class 1, 2, 4**
+- "Six markets" — five charted. **Fixed** (Sessions).
+- Class 2: "what market profilers call" single prints — 02:45 "would *partly*
+  call"; "thin vertical price movement zones" is Gemini's. Logged.
+- Class 1/4: "6900 as lower *profile* boundary" — 09:44 "lower boundary".
+  Logged.
+
+## `0CrkbfuIhkc` — Vorwald, crash or all-in · **class 1**
+- "The only place in the sweep where he ties a level to a closing price" —
+  the sweep lists four others. **Fixed** (Findings and Sessions).
+- Minor: "MS Paint drawings (03:14)" asserted where the run hedged the tool;
+  the 6,850 → 6,300 → 4,600 table drops the "with liquidity" condition and
+  the "high probability / for now" hedges (03:54–04:35). Logged.
+- "Break-in" third instance at 09:45 (Google) — cut for scope.
+
+## `GGe2widuvPs` — SMDX, mechanics · **class 4**
+- Card blamed the "$90" caption for a "$140" drawn gap; narration says the
+  next sell order is at $50,100 (03:40–04:02), so the caption is right and
+  the drawing is off. **Fixed** in card (three places) and SMDX synthesis.
+
+## `UL5QOCSKnU0` — AlgoTrade Pro backtest · **class 2, 4**
+- "Presented as givens with no account" — 02:14 "keeping the defaults".
+  **Fixed.**
+- Pro Tip "no number" — 06:07 "win rate jump by 3 to 5%". **Fixed.**
+- Settings row `2 ATR PIP VALUE (Both Stop Loss & Profit Target)` and the
+  SPX500 rows (5-min `99.46 | 23.77 | 49.08 | 491`, two runs) were absent.
+  **Added, unframed**, with the note that the ATR stop would undercut the
+  card's swing-stop cost arithmetic.
+- Class 2 minor: MTF panel defaults claim is `verbatim: null`.
+
+## `iPDi9_nzn-o` — SMDX ChoCH · **class 4**
+- "1–2 candle snap-back" is the slide; spoken 09:15 "one to three", 09:22
+  "one or two". Logged.
+- "Not specified: stop/target" — the stop is on screen at 11:53 (frames).
+  **Fixed** (target only).
+- Source error flagged in the read: 12:27 "stops = sell orders, institution
+  fills short" inverts the mechanics (absorbing sells makes you long).
+
+## `sASTlqfPg-8` — AI video · **class 1, 4**
+- "Zero debt" is the slide; narration "minimal debt" (03:15–03:24). Logged.
+- "Synthesis of Schwager's Stock Market Wizards" — never named; title card
+  only. "Horizon of months to years" — never stated. Both inference stated
+  as observation. Logged; card verdict stands with that caveat.
+
+## `dAlP8UZXT48` — SMDX structure · **class 1 borderline**
+- "ChoCH = first warning" drops 07:15 "multiple changes of character in
+  sequence are a trend reversal confirmed". Logged.
+
+## `EW_TtV_rgzY` — SMDX timeframes · **class 1 soft**
+- The card frames slide text as the rule where the speech hedges ("one of the
+  most costly", 03:01; "most of the setups", 11:21). Logged.
+
+## `7F9wBYse-Nk`, `Ex5Dk_wVygw`, `YwqfGuktXrc`, `d2RzSJC98o8`, `jb6Odrq6alA`,
+## `oktlv1rOG9Q` — SMDX · **clean**
+- Source-level notes only: slides harden the presenter's own spoken hedges
+  (YwqfGuktXrc 05:36; d2RzSJC98o8 06:06); d2RzSJC98o8 06:55 "at least two
+  candles" vs 05:03 "three to five"; 7F9wBYse-Nk institution list differs
+  between slide (03:14) and narration (03:05). Mock charts are BTC/USDT
+  (Lessons candidates for scope).
+
+## `IUWvHVout94` — Trading Notes · **class 2, 4, 5**
+- "Never says whether the structure shift needs a close" — 12:53 *"it does
+  it on candle closes, exactly like our rule"*, inside the Flux Charts demo.
+  Gap narrows to "stated only in the sponsor segment". Logged; grade reasoning
+  should reflect it.
+- Liquidity definition set as a quote was a stitched `verbatim: null`
+  paraphrase; "retail stop losses" — "retail" never spoken; "ChoCH" spoken
+  only in the demo. Logged.
+- Unrecorded inconsistency: the worked example enters *on the sweep*
+  (`STEP 3 ENTRY ON SWEEP`, 09:27), contradicting step 3 and Mistake 3.
+- Cascade found by the composer: `Vd83oo_geMk/CARD.md` still says "third
+  independent arrival" on icebergs; the brief says two. **Checked below.**
+
+## `vVMJa7dyYWE`, `8O_GIxjhLkc` — Trader Dale (cards written 2026-09-07)
+- Pitch span 29:51–36:42 was stitched from two slide timestamps; the pitch
+  is 29:51–31:25 and 32:05–36:41 is a quiz with method content. **Fixed.**
+- "Roughly 70% … rotation" in quotation marks was a paraphrase of *"I would
+  say like maybe 70%"*. **Fixed.**
+- ES short: entry-criteria list, the dark-ring sentence and the "Academy
+  membership" pitch were paraphrases or inferences. **Fixed** with the
+  transcript wording.

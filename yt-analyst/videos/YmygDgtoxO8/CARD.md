@@ -39,7 +39,12 @@ divergence is stated but **not explained** — a gap worth a zoom when quota
 allows.
 
 **Breakout logic** (11:51): when price moves into overlap areas or above key
-value highs **after accepting lower prices**, explosive breakouts occur.
+value highs **after accepting lower prices**, *"the probability that the market
+will break out explosively above this level is very high"* (11:47–11:54) — and
+the next sentences (12:08–12:24) give the counter-case: news pushes price to
+the level and *"the market participants push the price back down"*.
+*(Corrected 2026-09-07: previously "explosive breakouts occur", a probability recorded as
+an occurrence with the counter-case dropped.)*
 
 **A worked aggregation example** (02:22–02:30): 100 trades at a level, then 70
 more, summing to **170** at that price — the clearest teaching of how a profile
@@ -61,8 +66,9 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_
 
-- **`VolaTrader`** (© 2023, 09:30) is a third platform for this channel,
-  alongside VolFix and TradingView. Do not assume one platform.
+- **`VolaTrader`** (© 2023, 09:30) is another platform for this channel,
+  alongside Sierra Chart and TradingView (the "VolFix" reading on
+  `K8qtT2_axPo` was withdrawn 2026-09-07). Do not assume one platform.
 - The German label block at 00:14 is the best single reference for profile
   vocabulary in the corpus — quote it rather than re-deriving.
 - OPEN: he says he treats POC differently from convention and never explains

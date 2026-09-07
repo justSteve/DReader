@@ -137,8 +137,10 @@ series is entirely conceptual and every number is illustrative.
   per-timeframe minimums; v4's "close = final verdict" is cited by v9
   for the wick-vs-close rule.
 - Source errors worth knowing before quoting: v1's spread ladder breaks
-  at T3 ($100.00 printed where the pattern needs $100.15); v6 captions a
-  drawn $140 order-book gap as "$90" and illustrates "liquidity sweep"
+  at T3 ($100.00 printed where the pattern needs $100.15); v6 draws its
+  order-book gap to $50,150 while the narration says $50,100, so the "$90"
+  caption is right and the drawing is off (corrected 2026-09-07); v6 also
+  illustrates "liquidity sweep"
   with a bank cash-sweep diagram; v8's "max 5–6 swings" slide draws 7;
   v9 twice labels a close below an HL "BULLISH CHOCH".
 

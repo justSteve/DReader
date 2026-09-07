@@ -144,8 +144,9 @@ looseness in the source (HL4 is $70,600). 42100/41700, 66,450/66,120 are
 mock-chart decor. The one numeric rule: 1–2 candle snap-back = sweep.
 
 **Not specified:** any volume threshold; how many candles make a trend
-"prolonged"; stop/target for the 4H entry (video 10 covers the retest
-entry).
+"prolonged"; target for the 4H entry (the stop *is* on screen at 11:53,
+"STOP LOSS BELOW 4H LOW", frames — corrected 2026-09-07; video 10 covers the
+retest entry).
 
 **Verification.** 60 frames at 1 fps over nine windows (00:00–00:05,
 01:46–01:58, 02:26–02:34, 04:53–05:05, 09:20–09:26, 09:36–09:42,

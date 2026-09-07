@@ -25,13 +25,16 @@ statement of *why* the value area matters that the corpus holds.
 
 **The numbers:**
 - The market reverts to equilibrium/VPOC roughly **70%** of the time (09:02).
-- Strong trend days written on the canvas as **>20%** (09:48). Note this is a
+- Strong trend days written on the canvas as **>20%** (≈09:56, frame-verified 2026-09-07: `frames-940-958/f_0009.jpg`), spoken as *"about 20% of trading days for many products"* (09:46). Note this is a
   *third* figure alongside the channel's usual 30% imbalance share — 70/30 and
   70/>20 do not quite reconcile, and he does not address the gap.
 
 **The rule** (10:35): trade mean-reversion bounces to VWAP **only when market
 structure is sideways and balanced**. Identical in substance to
-[43JaKHRvxHk](../43JaKHRvxHk/CARD.md)'s Rule 1, arrived at in a different video.
+[43JaKHRvxHk](../43JaKHRvxHk/CARD.md)'s **balance rule at 06:30** *(Corrected 2026-09-07:
+previously "Rule 1"; that video's Rule 1 is the trend pull-back, which this
+video states at 11:43–11:49 — *"look for a trade at the VWAP in order to
+continue in the direction of the trend"* — previously unrecorded here)*.
 
 **The risk warning is the most honest sentence on the channel** (11:07): a
 trader may succeed **20 times** adding counter-trend to VWAP and be

@@ -12,9 +12,13 @@
 ## Findings
 _(curated by Claude Code: verified findings with timestamps)_
 
-**Platform named: `Powered by VolFix.net`** (watermark, 00:22) — the first
-time this channel's charting software is legible. Analysis is again done in
-**MS Paint** over screenshots.
+**Platform: Sierra Chart, on the S&P future.** *(Corrected 2026-09-07 by frames:
+`frames-012-040/f_0006.jpg` at 00:22 shows the chart header `ESH26-CME
+[CBV][M] #4 - Period: 1 Days, TPOs: 1.25 x 30 min · 2025-12-18`, a price axis
+of 6,780–6,960, and no watermark anywhere. "Powered by VolFix.net" was one
+run's `verbatim: null` visual claim; the fallback run read "shiftnest".
+Screenshots are taken and annotated in **HyperSnap 8** (German UI), not MS
+Paint.)*
 
 **The corpus's most complete Market Profile vocabulary.** Attributed at 01:03
 to **Peter Steidlmayer**, who developed TPO (Time Price Opportunity).
@@ -65,8 +69,10 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_
 
-- **VolFix** is the platform (watermark 00:22) — legible here and nowhere else
-  in the sweep; assume VolFix when the DOM/profile layout recurs.
+- **Sierra Chart** is the platform (frame-verified 2026-09-07: header
+  `ESH26-CME [CBV][M]`); the same menu bar appears in `1utSjHs_Mq8`. The
+  "VolFix" reading is withdrawn. Instrument here is **ESH26**, the March 2026
+  S&P future — the axis Gemini could not read is 6,780–6,960.
 - POC (time) vs VPOC (volume) — use this distinction when reading any other
   card's "POC" claim; older corpus cards do not make it.
 - Instrument is illegible; do not attribute a symbol to this video.

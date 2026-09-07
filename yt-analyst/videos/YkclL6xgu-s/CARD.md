@@ -15,11 +15,13 @@ _(curated by Claude Code: verified findings with timestamps)_
 **The most operationally concrete video in the sweep** — it gives a volume
 *baseline* method, session timing, and actual stop and target rules.
 
-**A comparative volume baseline, with numbers** (02:32, 02:43): roughly **600
-contracts** traded in the first 5 minutes after the open, against baselines of
-**800 and 1,000** contracts on previous days. This is the only place in the
-corpus where "is volume high today?" is answered by an explicit **comparison to
-the same window on prior sessions** rather than by eye. It is exactly the
+**A comparative volume baseline, with one number** (02:32, 02:43): roughly **600
+contracts** traded in the first 5 minutes after the open. The comparators are
+hypothetical — *"just imagine the day before at the market opening, 800
+contracts. The day before that, maybe you even had 1,000 contracts"* (02:40–02:50).
+*(Corrected 2026-09-07: this card previously recorded 800 and 1,000 as observed
+prior-session baselines.)* The method — compare the same window on prior
+sessions rather than judge by eye — is real; the figures are an illustration. It is exactly the
 threshold discipline that
 [HySZZSjMxF8](../HySZZSjMxF8/CARD.md)'s volume exhaustion lacks.
 
@@ -59,7 +61,7 @@ notification leaks on screen at 10:57 — static screenshots, personal desktop.
 _(curated by Claude Code: one entry per interrogation session — date, aim, verdict)_
 
 - **2026-09-06 — comparative wide pass (epic dr-zk8).** Standardised
-  orderflow wide pass, identical question across all 19 sweep videos. Verdict: the sweep's most operationally concrete video -- a comparative volume baseline (600 vs 800/1,000 contracts in the first 5 minutes), DAX closing-auction timing and mechanics, and explicit stop and target rules.
+  orderflow wide pass, identical question across all 19 sweep videos. Verdict: the sweep's most operationally concrete video -- a comparative volume baseline (600 contracts in the first 5 minutes against hypothetical 800/1,000 — corrected 2026-09-07), DAX closing-auction timing and mechanics, and explicit stop and target rules.
 
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_

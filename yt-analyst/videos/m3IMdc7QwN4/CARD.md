@@ -85,8 +85,9 @@ _(anything peculiar to this video/channel: layout, chart software, segment struc
 
 - **`PbD` = balance and trend *phases*, in his words** — D large balance, P aggressive up, b aggressive down (07:44–07:55). Not an initialism. The letter-*shape* reading is ours and should be labelled as such wherever it appears.
   Cite 07:46 of this video; it is the only expansion in 19 videos.
-- Sierra Chart here — a fifth platform for this channel (with VolFix,
-  VolaTrader, TradingView, ATAS).
+- Sierra Chart here — as on `K8qtT2_axPo` and `1utSjHs_Mq8` (frame-verified
+  2026-09-07; the earlier "VolFix" reading was withdrawn). Other platforms on
+  the channel: VolaTrader, TradingView, ATAS.
 - The leaderboards show **2nd and 3rd** places. Do not repeat "World Champion"
   as fact from this corpus.
 

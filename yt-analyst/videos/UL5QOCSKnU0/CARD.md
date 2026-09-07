@@ -95,8 +95,20 @@ target or the stop was touched first inside a bar. That flaw inflates exactly
 this kind of hybrid exit, and it is unquantifiable from the video.
 
 **5. No in-sample / out-of-sample split is stated anywhere** (confirmed,
-wide pass). Length 70 and Band Multiplier 1.2 are presented as givens with
-no account of how they were chosen.
+wide pass). Length 70 and Band Multiplier 1.2 are the indicator defaults — *"For
+today's test, we are keeping the defaults so results stay fair and
+realistic"* (02:14). *(Corrected 2026-09-07: previously "presented as givens with no
+account of how they were chosen"; the choice is accounted for, which weakens
+the optimisation concern and leaves the no-split concern intact.)*
+
+**Added 2026-09-07, from the runs, unframed.** The settings column the zoom
+read includes `2 ATR PIP VALUE (Both Stop Loss & Profit Target)`, which
+conflicts with the spoken swing-low stop that this card's ES cost arithmetic
+(7.00 pts, 1.89×) assumes; a frame of the 04:41 settings column would settle
+which stop generated the trades. The per-asset table also carries **SPX500**
+rows this card omitted: 5-min `99.46 | 23.77 | 49.08 | 491` (two runs agree),
+30-min `53.65 | 19.04 | 47.73 | 660` and 1-h `18.7 | 25.28 | 48.77 | 324`
+(wide pass only).
 
 **6. Even taken at face value the results are untradeable.** +125% over two
 years against a **−75% max drawdown**, and two of the five 5-minute assets
@@ -106,8 +118,10 @@ lose money (GBPUSD −40.69%, XAUUSD −35.53% — 04:54).
 
 06:06 spoken: *"you can easily add a baseline filter, like a 200 EMA, only
 taking longs above it and shorts below."* **This is untested** — it is
-offered after the results and changes the tested rules, so no number in the
-video applies to it. 06:45 shows the indicator's placement on
+offered after the results and changes the tested rules. He does attach a
+number, *"you'll see your win rate jump by 3 to 5%"* (06:07), spoken and
+backed by no table *(added 2026-09-07; previously "no number in the video
+applies to it")*. 06:45 shows the indicator's placement on
 `algotradepro.com/indicators-ranking` (`52.33% 195.31% 1114 | 53.44% 192.51%
 857 | 55.36% 276.66% 517`) — the channel's own leaderboard, which is also the
 product being sold.

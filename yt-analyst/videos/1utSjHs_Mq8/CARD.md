@@ -15,7 +15,7 @@ _(curated by Claude Code: verified findings with timestamps)_
 Companion to [K8qtT2_axPo](../K8qtT2_axPo/CARD.md); same subject, and the two
 agree on every definition they share — useful internal corroboration.
 
-**Instrument is legible here: `6E` CME Euro FX futures** (01:11). Profile
+**Instrument: the S&P 500 future on CME.** *(Corrected 2026-09-07 by frames: `frames-005-120/f_0002.jpg` shows a Sierra Chart header "…CME [CB…][M] … TPOs: 1.25 x 30 min · 2025-10-22", and the spoken levels 6,714 / 6,758 are S&P levels for late 2025; the earlier `6E` Euro FX reading was one run's visual guess, contradicted by the other run and by the price scale.)* Profile
 blocks are **30-minute** intervals (01:52). Steidlmayer dated to the **1980s,
 trading soybeans** (00:50).
 
@@ -28,7 +28,7 @@ candles (02:46) and touched **6758 seven times** (04:34).
    highest-time-spent price**. This is the operational payoff of the POC/VPOC
    distinction — the market spending time somewhere it did not trade size (or
    vice versa) is the tell. Genuinely sophisticated, and unique in the corpus.
-2. **Weak highs and weak lows** (09:30): extremes created by *retail*
+2. **Weak highs and weak lows** (09:30): extremes created by *retail* *(Corrected 2026-09-07: his word at 09:34 is *"weak traders"*; "retail" was Gemini's, `verbatim: null`.)*
    participants carry a **high probability of being revisited and broken**.
    This is the constructive counterpart to the podcast's rejection of stop
    hunting — the level fails not because it is hunted but because it was never
@@ -56,7 +56,7 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_
 
-- Instrument here is **6E** (Euro FX) — this channel is not index-only.
+- Instrument here is the **S&P 500 future** (frames, 2026-09-07); the earlier `6E` reading and the "not index-only" inference are withdrawn. Platform is **Sierra Chart** (menu bar File · Edit · Chart · Analysis · Tools · Spreadsheet · Trade · Global Settings · Window · CB · CW · Help), the same as `K8qtT2_axPo`.
 - The "anomaly" (volume POC vs time POC divergence) is the reason the POC/VPOC
   distinction matters; treat the two cards as one lesson.
 - The value-area re-entry rule is the sweep's most rule-shaped statement —

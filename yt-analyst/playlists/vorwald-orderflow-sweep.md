@@ -59,7 +59,7 @@ used here as the more conservative of the two. The sense is identical.)*
 **Instruments he reads.** DOM/order book (20 levels default, settable to 100),
 footprint/cluster charts with a delta histogram, volume profile (composite and
 periodic), and Market Profile/TPO. Platforms vary by video and must not be
-assumed: **VolFix** (`K8qtT2_axPo` watermark), **VolaTrader**
+assumed: **Sierra Chart** (`K8qtT2_axPo` header `ESH26-CME`, frame-verified 2026-09-07; previously misread as a VolFix watermark; same menu bar in `1utSjHs_Mq8`), **VolaTrader**
 (`YmygDgtoxO8` © 2023), **TradingView** (`0CrkbfuIhkc`, `HySZZSjMxF8`),
 **ATAS on dxFeed** (`zAwEX_tRUfE`), plus a German-language DOM execution panel
 (`Kauf`/`Verkauf`, `vl01TiVTuoQ` 06:08). Teaching is almost always done in
@@ -94,8 +94,9 @@ Carmine and SMDX both use "POC" loosely; this is a real analytical improvement.
   absorption but never trades *toward* resting size.
 - **Iceberg** (`Vd83oo_geMk` 14:10): a large order continuously absorbed and
   refilled without price moving.
-- **Weak highs/lows** (`1utSjHs_Mq8` 09:30): extremes built by retail carry a
-  high probability of being revisited and broken.
+- **Weak highs/lows** (`1utSjHs_Mq8` 09:34): extremes built by *"weak
+  traders"* carry a high probability of being revisited and broken ("retail"
+  was Gemini's word — corrected 2026-09-07).
 - **Volume exhaustion** (`HySZZSjMxF8` 10:43): volume spikes at a pre-located
   extreme, then price trades back below where the increased volume began.
 

@@ -64,3 +64,89 @@ is a DAX session, Euwax Sentiment included. Card and read remain on disk.
 
 The three playlist syntheses in `playlists/` and the 25 card-only videos still
 carry other-instrument detail; they are shown as written.
+
+## 2026-09-07 · second composition run — 27 reads
+
+Cuts reported by the composers and logged here centrally. Method and theory
+are kept throughout; what goes is instrument-specific detail. `[...]` marks an
+elision inside a quotation.
+
+- **`0CrkbfuIhkc`** — 01:11 Nasdaq/Bitcoin; 02:11 Mag-7 share of the Nasdaq;
+  04:37–05:52 Nasdaq daily profile (16,000→26,000, volume-spike tip);
+  05:55–06:58 Bitcoin (double b, 72,000); 07:00–13:45 Apple, Amazon, Google,
+  Meta, Tesla, Nvidia, Microsoft (levels and reads); 11:12, 12:54 the "Lars"
+  anecdote; 14:00 "Nasdaq". The close-based level and "pre-indicator" thesis
+  survive as method with no figure or name.
+- **`1utSjHs_Mq8`** — none (instrument frame-verified as the S&P future).
+- **`43JaKHRvxHk`** — 01:54 study bar `Euro Total Volume … VWAP: 25191.00`:
+  price and instrument omitted; bands kept as a tool setting.
+- **`HySZZSjMxF8`** — 01:34–01:39 Nasdaq 29,605 elided; one clause keeps that
+  the demonstration runs on a Nasdaq chart.
+- **`K8qtT2_axPo`** — none; the price axis Gemini could not read is omitted
+  (frames later showed ESH26).
+- **`Kg6sYKgtkrY`** — 00:27–00:34 market list; 01:07–01:19 BTC/gold/silver
+  risk-on examples elided; 02:02–04:00 Bitcoin (first B, b-structure, address
+  hedging) cut, principle kept retitled; 04:00–06:34 EUR/USD and 6E (1.1770)
+  cut; 10:14–13:14 Silver (150% year, 30–28, 70/71/67, above 80) cut;
+  13:15–14:24 Copper cut; 14:26 thin-liquidity kept as theory.
+- **`Ly62G168MkQ`** — chart captions `DAX Futures • 1m • EUREX` (04:36) and
+  `Gold Futures • 1m • COMEX` (10:07) omitted; the walk-throughs kept because
+  no instrument or figure is spoken (judgment call, reviewable); 11:13
+  "break in" elided per the brief.
+- **`VumVuGnCcFM`** — 02:51 "VWAP for DAX future" elided; 01:25 chart header
+  `Inside Dax Future 60 min … Eurex` omitted.
+- **`YkclL6xgu-s`** — 02:12–02:50 "this is the DAX future" and the
+  600/800/1,000 counts elided (method kept); 03:32–03:40 DAX closing auction
+  17:30–17:35 elided; 04:07–04:15 Adidas 150,000/80,000 shares elided to the
+  mechanism; 12:27–12:31 "DAX future or crude oil" elided, "S&P future" kept.
+- **`YmygDgtoxO8`** — none; the 09:30 ticker is illegible and the 08:41
+  footprint figures were not reproduced.
+- **`aursfDVYzUk`** — 05:09–05:46 levels 23,740/23,800 and 5,000 contracts
+  elided; 10:28–10:54 commodity-producer hedging cut; 12:43–13:00
+  Starbucks/coffee hedger cut, conclusion kept.
+- **`zAwEX_tRUfE`** — none (entirely ES).
+- **`7F9wBYse-Nk`** — 03:23/03:29 Bitcoin elided ($2 billion kept); 06:40,
+  07:17 EUR/USD elided; 07:03 1.0848/1.0850 and 01:49 $50,000 never carried.
+- **`EW_TtV_rgzY`** — 05:37 BTC entry $67,850 / 150 points cut; 05:28 "200
+  pips or points" → "200 [...] points"; mock-chart decor (BTC/USDT, EMA
+  values, $60k/$40k) not carried; "42 for 24/7 crypto" dropped.
+- **`Ex5Dk_wVygw`** — 01:45–04:25 forex tour cut; 04:33–06:05 forex risk
+  figures elided, leverage lesson kept; 06:08–10:08 crypto segment cut;
+  13:37–16:11 commodities cut, "you trade the contract, not the physical"
+  kept with oil/wheat elided; 16:34–18:38 rule branches: figures and
+  sessions cut, stocks branch kept; 19:08 asset list elided.
+- **`GGe2widuvPs`** — 02:11–02:35 "Bitcoin" elided twice, the
+  $50,000/$50,010 arithmetic kept as a whiteboard illustration (judgment
+  call); 05:26–05:51 forex sessions cut, aside restates as Globex overnight vs
+  cash session; BTC mock figures and "1,200 BTC @ $62,500" not used.
+- **`YwqfGuktXrc`** — 04:40 "ticks or pips" → "ticks [...]".
+- **`d2RzSJC98o8`** — 08:34–08:50 300/50-pip moves elided; BTC mock prices
+  (03:09, 07:13, 10:47, 12:17) not used; 07:35 "20 swing points … 2 weeks"
+  elided (not in card).
+- **`dAlP8UZXT48`** — BTC mock levels $68,150 / 68,410 / 64,250 omitted.
+- **`iPDi9_nzn-o`** — BTC/USDT 4H worked-example figures ($59,850–$73,800,
+  $67,800, 42100/41700, 66,450/66,120) omitted; "crypto 4-hour chart" named
+  once.
+- **`jb6Odrq6alA`** — 01:55–02:16 forex/share/oil "you trade a contract"
+  examples omitted; 03:57, 09:08–09:21, 09:46, 10:15, 13:06 Bitcoin framing
+  elided; slides "DAILY FOREX VOLUME: $7 TRILLION", "BID $49,990 / ASK
+  $50,010", "+45.2% (Unrealized)", "BITCOIN AT $50,000" not used; 16:19
+  preview list cut.
+- **`oktlv1rOG9Q`** — hook chart (BTC/USDT 4H, 33k–38k) and 01:57 worked
+  candle (O 68,150 / H 69,850.50 / L=C 66,200.10) omitted; 02:48 spoken
+  $50,000→48,000→51,000 kept (no instrument named; reviewable).
+- **`IUWvHVout94`** — 08:33–09:49 Dow futures short and 09:52–10:48 Nasdaq
+  futures long cut entirely; 10:50–14:01 backtesting lead magnet and Flux
+  Charts demo cut except the 12:46–12:56 candle-close sentence.
+- **`UL5QOCSKnU0`** — 04:08 "Bitcoin to gold" elided; 04:47–04:57 Bitcoin,
+  GBP/USD, gold elided ("two markets were deep in the red"); 05:05–05:11
+  Tesla 120% / gold 74 cut; per-asset non-S&P rows omitted.
+- **`sASTlqfPg-8`** — 04:25–04:41 1% vs 65% management ownership elided;
+  TSLA on-screen omitted. The video is single-name equity and options
+  throughout; the strategy's own thresholds were kept as theory
+  (reviewable).
+- **`vVMJa7dyYWE`** — 36:42–38:20 NinjaTrader/FXCM/IC Markets cut;
+  29:51–31:25 pitch cut; forex quiz exhibits carry no spoken pair or pip, so
+  nothing to elide; 05:23 ES idea not quoted.
+- **`8O_GIxjhLkc`** — none on scope (entirely ES); pitches and the 04:42
+  "15-point range" (not in card) cut.

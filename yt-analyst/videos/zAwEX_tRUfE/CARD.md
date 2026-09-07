@@ -111,9 +111,12 @@ element is volume-at-price:
   Value Area *is* a volume-at-price object. This is Carmine's ep. 6 volume
   frameworks with the measurement moved from the live tape to yesterday's
   close.
-- **"Accumulation" below the equilibrium line** (06:14) is absorption in
-  Carmine's vocabulary — passive interest building against the prevailing
-  push.
+- **"Accumulation" below the equilibrium line** (06:14): his words describe
+  initiative buying establishing acceptance — *"significant buying power
+  entered the market right here … a new equilibrium up here"* (06:24–06:39).
+  *(Corrected 2026-09-07: the earlier gloss that this is Carmine's absorption,
+  passive interest against the push, was ours and does not fit his
+  description.)*
 - **Both reject indicators on principle.** Vorwald: no indicator on the chart.
   Carmine: indicators are downstream of order flow.
 - **He is running an order-flow-native platform and using almost none of it.**
@@ -165,8 +168,9 @@ system whose selection rule is published somewhere else on the channel.
 
 Secondary divergence: Carmine confirms in **"The Now"** — live tape or
 footprint, *never a candle close*, because waiting for a close widens the stop
-from ~2 pts to ~7 pts and kills the R. Vorwald requires no confirmation at all
-beyond the break, and his stop is not a point distance but an *acceptance*
+from ~2 pts to ~7 pts and kills the R. Vorwald names a loose confirmation — acceptance, *"a stable balance forming
+above this area"* (03:41–04:09) — with no quantity attached *(Corrected 2026-09-07:
+previously "no confirmation at all beyond the break")*, and his stop is not a point distance but an *acceptance*
 condition ("if the market accepts the old equilibrium again"). Acceptance is a
 slower, looser trigger than anything Carmine would accept, and it is
 unquantified here.

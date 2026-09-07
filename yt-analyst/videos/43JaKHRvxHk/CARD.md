@@ -38,7 +38,12 @@ corpus.
   toward VWAP** rather than expecting breakouts (06:30).
 
 So: trending → VWAP is a dynamic **pull-back entry**; balanced → VWAP is a
-**mean-reversion target**. Same tool, opposite use, selected by regime. **This
+**mean-reversion target**. *(Corrected 2026-09-07: this two-mode summary is our
+compression. He gives **three** uses at 08:12–10:11 — the trend follower buys
+the pullback; the counter-trader fades a steep VWAP with price "running
+extremely high" and takes VWAP as the target; the scalper works range edges
+when VWAP is flat. The target use lives in the trend regime, not in
+balance.)* Same tool, several uses, selected by regime. **This
 is the clearest statement of regime-dependence anywhere in the corpus**, and it
 is the missing piece for the mode-switching problem logged against
 [zAwEX_tRUfE](../zAwEX_tRUfE/CARD.md): the channel *does* have a selection
