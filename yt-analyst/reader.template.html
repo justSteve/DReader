@@ -1,0 +1,625 @@
+<title>yt-analyst Ledger</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #f3f4f6; --panel: #ffffff; --ink: #14171c; --ink2: #3a404a; --muted: #7b8190; --faint: #b6bcc7;
+  --rule: #d7dae0; --rule2: #e8eaee; --tint: #eaeef5; --tint2: #f4f6fa; --hover: #f0f2f6;
+  --accent: #2f5f9e; --accent-ink: #1f4373; --corr: #b2731d; --corr-tint: #fbefd6;
+  --v: #1f7a4d; --u: #a0561c; --focus: #2f5f9e;
+  --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15181d; --panel: #1c2027; --ink: #e6e8ec; --ink2: #c3c8d1; --muted: #8a91a0; --faint: #4d5563;
+    --rule: #2c323b; --rule2: #262b33; --tint: #232a36; --tint2: #1f242d; --hover: #232830;
+    --accent: #7fa6dc; --accent-ink: #a9c4ea; --corr: #d09a4a; --corr-tint: #3a2f1c;
+    --v: #5fbf8a; --u: #d8935a; --focus: #7fa6dc;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15181d; --panel: #1c2027; --ink: #e6e8ec; --ink2: #c3c8d1; --muted: #8a91a0; --faint: #4d5563;
+  --rule: #2c323b; --rule2: #262b33; --tint: #232a36; --tint2: #1f242d; --hover: #232830;
+  --accent: #7fa6dc; --accent-ink: #a9c4ea; --corr: #d09a4a; --corr-tint: #3a2f1c;
+  --v: #5fbf8a; --u: #d8935a; --focus: #7fa6dc;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 14px/1.5 var(--sans); -webkit-font-smoothing: antialiased; overflow: hidden; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-ink); text-decoration: underline; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.lbl { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 11.5px; color: var(--muted); text-align: right; white-space: nowrap; }
+.chip { display: inline-flex; align-items: center; gap: 5px; padding: 1px 7px; border: 1px solid var(--rule); border-radius: 2px; font-family: var(--mono); font-size: 10.5px; color: var(--muted); background: var(--panel); white-space: nowrap; line-height: 1.5; }
+.chip.on { color: var(--accent); border-color: var(--accent); }
+.chip.corr { color: var(--corr); border-color: var(--corr); }
+.dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex: none; }
+.dot.read { background: var(--accent); }
+.dot.card { border: 1px solid var(--faint); }
+
+/* ---- frame ---- */
+#app { display: grid; grid-template-columns: 320px minmax(0, 1fr) 280px; height: 100vh; }
+.pane { overflow-y: auto; overflow-x: hidden; min-width: 0; }
+#lib { background: var(--panel); border-right: 1px solid var(--rule); display: flex; flex-direction: column; }
+#rail { background: var(--panel); border-left: 1px solid var(--rule); padding: 18px 16px 40px 16px; display: flex; flex-direction: column; gap: 22px; font-size: 12.5px; }
+#main { padding: 18px 32px 80px 32px; }
+.narrow-only { display: none; }
+@media (max-width: 1180px) {
+  #app { grid-template-columns: 300px minmax(0, 1fr); }
+  #rail { display: none; }
+  #rail.open { display: flex; position: fixed; right: 0; top: 0; bottom: 0; width: 300px; z-index: 5; box-shadow: -8px 0 24px rgba(0,0,0,.12); }
+  .narrow-only { display: inline-flex; }
+}
+@media (max-width: 820px) {
+  #app { grid-template-columns: minmax(0, 1fr); }
+  #lib { display: none; }
+  #lib.open { display: flex; position: fixed; left: 0; top: 0; bottom: 0; width: 300px; z-index: 5; box-shadow: 8px 0 24px rgba(0,0,0,.12); }
+  #main { padding: 14px 16px 60px 16px; }
+}
+
+/* ---- library ---- */
+.libhead { padding: 14px 16px 10px 16px; display: flex; flex-direction: column; gap: 10px; border-bottom: 1px solid var(--rule2); position: sticky; top: 0; background: var(--panel); z-index: 2; }
+.libtitle { display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
+.libtitle b { font-weight: 600; }
+.search { display: flex; align-items: center; gap: 8px; padding: 6px 9px; border: 1px solid var(--rule); border-radius: 2px; color: var(--muted); background: var(--panel); }
+.search input { flex: 1; border: 0; background: none; color: var(--ink); font: inherit; outline: none; min-width: 0; }
+.search input::placeholder { color: var(--muted); }
+.controls { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 11.5px; color: var(--muted); }
+.controls select { font: inherit; font-size: 11.5px; color: var(--ink2); background: var(--panel); border: 1px solid var(--rule); border-radius: 2px; padding: 2px 4px; }
+.toggle { display: inline-flex; align-items: center; gap: 5px; padding: 2px 7px; border: 1px solid var(--rule); border-radius: 2px; color: var(--muted); }
+.toggle.on { color: var(--accent); border-color: var(--accent); }
+.liblist { padding: 6px 0 24px 0; }
+.group { padding: 12px 16px 0 16px; }
+.grouphead { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; text-align: left; padding: 4px 0; color: var(--muted); }
+.grouphead .lbl { color: var(--ink2); }
+.grouphead .cnt { font-family: var(--mono); font-size: 11px; }
+.row { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 1px 8px; align-items: center; padding: 6px 16px; margin: 0 -16px; font-size: 12.5px; color: var(--ink2); border-bottom: 1px solid var(--rule2); text-align: left; width: calc(100% + 32px); }
+.row:hover { background: var(--hover); }
+.row.on { background: var(--tint); color: var(--ink); }
+.row .t { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.35; }
+.row.on .t { font-weight: 500; }
+.row .d { grid-column: 2; display: flex; gap: 8px; font-family: var(--mono); font-size: 10.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.row .d .grow { flex: 1; }
+.docrow { grid-template-columns: 14px minmax(0, 1fr) 44px; }
+.empty { padding: 24px 16px; color: var(--muted); }
+
+/* ---- reader ---- */
+.meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+.meta .sep { color: var(--faint); }
+.meta .grow { flex: 1; }
+h1.title { font-size: 24px; line-height: 1.2; font-weight: 600; margin: 0 0 8px 0; letter-spacing: -.01em; text-wrap: balance; }
+.l0 { font-size: 15.5px; line-height: 1.5; color: var(--ink2); margin: 0 0 18px 0; display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 0; max-width: 780px; }
+.l0 .mono { font-size: 10.5px; color: var(--muted); padding-top: 4px; }
+.band { border-top: 1px solid var(--rule); }
+.bandhead { display: flex; align-items: center; gap: 12px; min-height: 36px; font-size: 12px; color: var(--muted); width: 100%; text-align: left; padding: 0; flex-wrap: wrap; }
+.bandhead:hover .lbl { color: var(--ink); }
+.bandhead svg { transition: transform .15s; flex: none; }
+.band.closed .bandhead svg { transform: rotate(-90deg); }
+.band.closed .bandbody { display: none; }
+.bandbody { padding: 2px 0 16px 22px; }
+.prose { max-width: 720px; font-size: 14.5px; line-height: 1.6; }
+.prose p { margin: 0 0 10px 0; text-wrap: pretty; }
+.prose h3, .prose h4 { font-size: 13px; margin: 18px 0 6px 0; }
+.prose ul, .prose ol { padding-left: 22px; margin: 0 0 10px 0; }
+.prose li { margin: 2px 0; }
+.prose blockquote { margin: 0 0 10px 0; padding: 0 0 0 14px; border-left: 2px solid var(--rule); color: var(--ink2); }
+.prose code { font-family: var(--mono); font-size: 12px; background: var(--tint); padding: 0 4px; border-radius: 2px; }
+.prose hr { border: 0; border-top: 1px solid var(--rule2); margin: 14px 0; }
+.prose strong.v { color: var(--v); } .prose strong.u { color: var(--u); }
+.prose mark.corr { background: var(--corr-tint); color: inherit; padding: 0 2px; }
+.prose .xref { border-bottom: 1px dotted var(--accent); }
+.prose .ref { color: var(--muted); border-bottom: 1px dotted var(--faint); }
+.tablewrap { overflow-x: auto; margin: 0 0 12px 0; }
+.prose table { border-collapse: collapse; font-size: 13px; min-width: 100%; }
+.prose th, .prose td { text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid var(--rule2); vertical-align: top; }
+.prose th { font-weight: 600; font-size: 11.5px; color: var(--muted); }
+.prose td .num { text-align: left; }
+
+/* L3 */
+.passages { display: flex; flex-direction: column; gap: 20px; max-width: 780px; }
+.pass { display: flex; flex-direction: column; gap: 6px; }
+.phead { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 14px; align-items: baseline; }
+.phead .ts { font-family: var(--mono); font-size: 11.5px; color: var(--muted); text-align: right; }
+.phead .ph { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.phead .ph b { font-weight: 600; }
+.phead .ph a { font-family: var(--mono); font-size: 11px; }
+.qrow { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 14px; }
+.qrow .q { margin: 0; font-size: 14.5px; line-height: 1.6; }
+.qrow .q p { margin: 0 0 8px 0; } .qrow .q p:last-child { margin-bottom: 0; }
+.aside { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 14px; background: var(--tint); padding: 9px 0; margin: 2px 0 0 0; }
+.aside .who { font-family: var(--mono); font-size: 10.5px; color: var(--accent); text-align: right; padding-top: 3px; font-weight: 500; }
+.aside .body { padding-right: 14px; font-size: 13.5px; line-height: 1.55; color: var(--ink2); }
+.aside .body p { margin: 0 0 6px 0; } .aside .body p:last-child { margin-bottom: 0; }
+.aside.note { background: var(--tint2); }
+.tsmark { font-family: var(--mono); font-size: 11.5px; color: var(--muted); padding-left: 70px; }
+.toc { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--muted); margin: 0 0 14px 0; max-width: 780px; }
+.toc a { color: var(--ink2); } .toc a .mono { color: var(--muted); font-size: 11px; margin-right: 5px; }
+
+/* home */
+.home h1 { font-size: 22px; margin: 0 0 6px 0; font-weight: 600; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 16px 0 26px 0; max-width: 780px; }
+.stat { border-top: 1px solid var(--rule); padding-top: 8px; }
+.stat .v { font-family: var(--mono); font-size: 20px; font-variant-numeric: tabular-nums; }
+.stat .k { font-size: 11.5px; color: var(--muted); }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; max-width: 900px; }
+.list { display: flex; flex-direction: column; }
+.list a, .list .li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; padding: 5px 0; border-bottom: 1px solid var(--rule2); color: var(--ink2); font-size: 13px; }
+.list a .t { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.list a .n { font-family: var(--mono); font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* rail */
+.rsec { display: flex; flex-direction: column; gap: 7px; }
+.rsec .lbl { display: flex; justify-content: space-between; align-items: baseline; }
+.rsec .lbl .mono { font-weight: 400; letter-spacing: 0; text-transform: none; }
+.link { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 8px; align-items: start; }
+.link .sub { color: var(--muted); font-size: 11.5px; }
+.kv { display: flex; justify-content: space-between; gap: 10px; }
+.kv .mono { color: var(--muted); font-size: 11.5px; }
+.audit { border-top: 1px solid var(--rule2); padding-top: 8px; }
+.audit .ah { width: 100%; text-align: left; color: var(--ink2); display: flex; gap: 8px; align-items: baseline; }
+.audit .ah .mono { color: var(--corr); font-size: 11px; flex: none; }
+.audit .ab { display: none; margin-top: 8px; font-size: 12.5px; }
+.audit.open .ab { display: block; }
+.audit .ab .prose { font-size: 12.5px; }
+.grade { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: baseline; }
+.grade .g { font-family: var(--mono); font-size: 16px; }
+.topbar { display: none; }
+@media (max-width: 1180px) {
+  .topbar { display: flex; gap: 8px; margin-bottom: 12px; }
+}
+.iconbtn { display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; border: 1px solid var(--rule); border-radius: 2px; color: var(--muted); font-size: 12px; }
+@media (prefers-reduced-motion: reduce) { .bandhead svg { transition: none; } }
+</style>
+
+<div id="app">
+  <nav id="lib" class="pane" aria-label="Library"></nav>
+  <main id="main" class="pane"></main>
+  <aside id="rail" class="pane" aria-label="Context"></aside>
+</div>
+
+<script id="corpus" type="application/json">__DATA__</script>
+<script>
+"use strict";
+const DATA = JSON.parse(document.getElementById("corpus").textContent);
+const byId = Object.fromEntries(DATA.cards.map(c => [c.id, c]));
+const byDoc = Object.fromEntries(DATA.references.map(r => [r.file, r]));
+
+/* ------------------------------------------------------------ storage --- */
+function load(k, d) { try { const v = localStorage.getItem("ledger:" + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } }
+function save(k, v) { try { localStorage.setItem("ledger:" + k, JSON.stringify(v)); } catch (e) {} }
+
+const state = {
+  q: load("q", ""),
+  sort: load("sort", "uploaded"),
+  readsOnly: load("readsOnly", false),
+  closedGroups: load("closedGroups", {}),
+  closedBands: load("closedBands", {}),
+  route: null,
+};
+
+/* ------------------------------------------------------------ helpers --- */
+function esc(s) {
+  return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function slug(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""); }
+function fmtN(n) { return n == null ? "" : n.toLocaleString("en-US"); }
+function fmtDur(s) {
+  if (s == null) return "";
+  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = s % 60;
+  return (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(x).padStart(2, "0");
+}
+function fmtTotal(s) { const h = Math.floor(s / 3600), m = Math.round((s % 3600) / 60); return h + "h" + String(m).padStart(2, "0") + "m"; }
+function shortTitle(c) { return c.title || c.id; }
+function watchAt(c, s) { return "https://www.youtube.com/watch?v=" + c.id + (s ? "&t=" + s + "s" : ""); }
+function chev() { return '<svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"></path></svg>'; }
+function arrowIn() { return '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 6H2"></path><path d="M5 3 2 6l3 3"></path></svg>'; }
+function arrowOut() { return '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8"></path><path d="M7 3l3 3-3 3"></path></svg>'; }
+
+/* ------------------------------------------------------------ markdown --- */
+/* Ported from yta.py's browse template, hardened against real card content:
+   a "|" line is only a table when a separator row follows, and emphasis must
+   not eat literal asterisks that are transcribed screen glyphs. */
+const CORR_RE = /corrected 20\d\d-\d\d-\d\d|\bAMENDED\b/gi;
+
+function hrefRoute(h, self) {
+  let m = h.match(/^(?:\.\.\/)+([A-Za-z0-9_-]{6,})\/(?:CARD|READ)\.md(?:#.*)?$/) || h.match(/^videos\/([A-Za-z0-9_-]+)\//);
+  if (m) return byId[m[1]] ? "#/v/" + m[1] : null;
+  m = h.match(/^(?:\.\.\/)*playlists\/(.+\.md)$/);
+  if (m) return byDoc[m[1]] ? "#/d/" + m[1] : null;
+  if (/^(?:\.\.\/)*AUDIT\.md$/.test(h)) return "#/d/AUDIT.md";
+  if (/^(?:CARD|READ)\.md$/.test(h) && self) return "#/v/" + self;
+  if (/^(?:\.\.\/)*INDEX\.md$/.test(h)) return "#/";
+  return null;
+}
+
+function inline(s, self) {
+  const codes = [];
+  s = esc(s);
+  s = s.replace(/`([^`]+)`/g, (m, c) => { codes.push(c); return "@@C" + (codes.length - 1) + "@@"; });
+  s = s.replace(/\[([^\]]*)\]\(([^)\s]+)\)/g, (m, t, h) => {
+    h = h.replace(/&amp;/g, "&");
+    if (/^https?:/.test(h)) return '<a href="' + esc(h) + '" target="_blank" rel="noopener">' + t + "</a>";
+    if (h.charAt(0) === "#") return '<a href="#" class="jump" data-anchor="' + esc(h.slice(1)) + '">' + t + "</a>";
+    const r = hrefRoute(h, self);
+    return r ? '<a href="' + r + '" class="xref">' + t + "</a>" : '<span class="ref" title="' + esc(h) + '">' + t + "</span>";
+  });
+  s = s.replace(/\*\*(Unverified[^*]*)\*\*/g, '<strong class="u">$1</strong>');
+  s = s.replace(/\*\*(Verified[^*]*)\*\*/g, '<strong class="v">$1</strong>');
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  s = s.replace(/(^|[^*\w])\*([^\s*](?:[^*\n]*[^\s*])?)\*(?![\w*])/g, "$1<em>$2</em>");
+  s = s.replace(/(^|[\s("“—])_([^_\n]+)_(?=$|[\s.,;:)"”!?—])/g, "$1<em>$2</em>");
+  s = s.replace(CORR_RE, m => '<mark class="corr">' + m + "</mark>");
+  s = s.replace(/@@C(\d+)@@/g, (m, i) => "<code>" + codes[Number(i)] + "</code>");
+  return s;
+}
+function cells(r) { return r.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map(c => c.trim()); }
+function tableBlock(rows, self) {
+  const head = cells(rows[0]);
+  const align = cells(rows[1]).map(a => /:$/.test(a) ? (/^:/.test(a) ? "center" : "right") : "left");
+  let out = '<div class="tablewrap"><table><thead><tr>';
+  head.forEach((h, i) => { out += '<th style="text-align:' + (align[i] || "left") + '">' + inline(h, self) + "</th>"; });
+  out += "</tr></thead><tbody>";
+  for (let r = 2; r < rows.length; r++) {
+    const c = cells(rows[r]);
+    out += "<tr>";
+    head.forEach((_, j) => { out += '<td style="text-align:' + (align[j] || "left") + '">' + inline(c[j] || "", self) + "</td>"; });
+    out += "</tr>";
+  }
+  return out + "</tbody></table></div>";
+}
+function listBlock(items, self) {
+  const tag = items.length && items[0].ord ? "ol" : "ul";
+  let out = "<" + tag + ">", open = false, started = false;
+  for (const it of items) {
+    if (it.depth > 0) {
+      if (!open) { out += "<ul>"; open = true; }
+      out += "<li>" + inline(it.text, self) + "</li>";
+    } else {
+      if (open) { out += "</ul>"; open = false; }
+      if (started) out += "</li>";
+      out += "<li>" + inline(it.text, self);
+      started = true;
+    }
+  }
+  if (open) out += "</ul>";
+  if (started) out += "</li>";
+  return out + "</" + tag + ">";
+}
+function isTable(lines, i) {
+  return /^\s*\|/.test(lines[i]) && i + 1 < lines.length && /^\s*\|[\s:|-]+\|?\s*$/.test(lines[i + 1]);
+}
+function md(src, self) {
+  const lines = String(src || "").split("\n"), out = [];
+  let i = 0;
+  while (i < lines.length) {
+    const l = lines[i];
+    if (/^\s*$/.test(l)) { i++; continue; }
+    const h = l.match(/^(#{1,4})\s+(.*)$/);
+    if (h) { const lv = Math.min(4, h[1].length + 1); out.push("<h" + lv + ' id="h-' + slug(h[2]) + '">' + inline(h[2], self) + "</h" + lv + ">"); i++; continue; }
+    if (/^\s*(-{3,}|_{3,}|\*{3,})\s*$/.test(l)) { out.push("<hr>"); i++; continue; }
+    if (isTable(lines, i)) {
+      const rows = [];
+      while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(lines[i]); i++; }
+      out.push(tableBlock(rows, self)); continue;
+    }
+    if (/^\s*(?:[-*]|\d+\.)\s+/.test(l)) {
+      const items = [];
+      while (i < lines.length) {
+        const m = lines[i].match(/^(\s*)(?:[-*]|(\d+)\.)\s+(.*)$/);
+        if (m) items.push({ depth: m[1].length >= 2 ? 1 : 0, ord: !!m[2], text: m[3] });
+        else if (items.length && /^\s+\S/.test(lines[i])) items[items.length - 1].text += " " + lines[i].trim();
+        else break;
+        i++;
+      }
+      out.push(listBlock(items, self)); continue;
+    }
+    if (/^\s*>/.test(l)) {
+      const q = [];
+      while (i < lines.length && /^\s*>/.test(lines[i])) { q.push(lines[i].replace(/^\s*>\s?/, "")); i++; }
+      out.push("<blockquote>" + md(q.join("\n"), self) + "</blockquote>"); continue;
+    }
+    const para = [lines[i].trim()]; i++;
+    while (i < lines.length && !/^\s*$/.test(lines[i]) && !/^#{1,4}\s/.test(lines[i]) &&
+           !/^\s*(?:[-*]|\d+\.)\s/.test(lines[i]) && !isTable(lines, i) && !/^\s*>/.test(lines[i])) {
+      para.push(lines[i].trim()); i++;
+    }
+    out.push("<p>" + inline(para.join(" "), self) + "</p>");
+  }
+  return out.join("");
+}
+
+/* ------------------------------------------------------------ library --- */
+const SORTS = {
+  uploaded: (a, b) => (b.uploaded || "").localeCompare(a.uploaded || ""),
+  views: (a, b) => (b.views || 0) - (a.views || 0),
+  duration: (a, b) => (b.duration_s || 0) - (a.duration_s || 0),
+  title: (a, b) => shortTitle(a).localeCompare(shortTitle(b)),
+  links: (a, b) => (b.links_in.length + b.links_out.length) - (a.links_in.length + a.links_out.length),
+};
+
+function matches(c) {
+  if (state.readsOnly && !c.read) return false;
+  const q = state.q.trim().toLowerCase();
+  if (!q) return true;
+  const hay = [c.title, c.channel, c.id, c.read && c.read.l0].filter(Boolean).join(" ").toLowerCase();
+  return q.split(/\s+/).every(w => hay.includes(w));
+}
+
+function renderLib() {
+  const lib = document.getElementById("lib");
+  const cur = state.route;
+  const total = DATA.cards.reduce((s, c) => s + (c.duration_s || 0), 0);
+  let h = '<div class="libhead">' +
+    '<div class="libtitle"><b><a href="#/" style="color:inherit">yt-analyst</a> <span style="color:var(--muted);font-weight:400">ledger</span></b>' +
+    '<span class="mono" style="font-size:11px;color:var(--muted)">' + DATA.counts.cards + ' · ' + fmtTotal(total) + '</span></div>' +
+    '<label class="search"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="7" cy="7" r="4.5"></circle><path d="M10.5 10.5 14 14"></path></svg>' +
+    '<input id="q" type="search" placeholder="Filter title, channel, id" value="' + esc(state.q) + '" aria-label="Filter"></label>' +
+    '<div class="controls"><span>Sort</span><select id="sort" aria-label="Sort">' +
+    [["uploaded", "newest"], ["views", "most viewed"], ["duration", "longest"], ["links", "most linked"], ["title", "title"]].map(([k, v]) => '<option value="' + k + '"' + (state.sort === k ? " selected" : "") + '>' + v + '</option>').join("") +
+    '</select><button class="toggle' + (state.readsOnly ? " on" : "") + '" id="readsOnly" aria-pressed="' + state.readsOnly + '"><span class="dot read"></span>reads only</button></div></div>';
+
+  h += '<div class="liblist">';
+  let shown = 0;
+  for (const g of DATA.channels) {
+    const cards = g.cards.map(id => byId[id]).filter(matches).sort(SORTS[state.sort] || SORTS.uploaded);
+    if (!cards.length) continue;
+    shown += cards.length;
+    const nRead = g.cards.filter(id => byId[id].read).length;
+    const closed = !!state.closedGroups[g.name] && !state.q;
+    h += '<div class="group"><button class="grouphead" data-group="' + esc(g.name) + '" aria-expanded="' + !closed + '">' +
+      '<span class="lbl">' + esc(g.name) + '</span><span class="cnt">' + g.cards.length + ' · ' + nRead + ' read</span></button>';
+    if (!closed) {
+      for (const c of cards) {
+        const on = cur && cur.kind === "v" && cur.id === c.id;
+        h += '<a class="row' + (on ? " on" : "") + '" href="#/v/' + c.id + '" title="' + esc(shortTitle(c)) + '">' +
+          '<span class="dot ' + (c.read ? "read" : "card") + '"></span>' +
+          '<span class="t">' + esc(shortTitle(c)) + '</span>' +
+          '<span class="d"><span>' + esc(c.uploaded || "") + '</span><span class="grow"></span><span>' + fmtN(c.views) + (c.views != null ? ' views' : '') + '</span><span>' + fmtDur(c.duration_s) + '</span></span></a>';
+      }
+    }
+    h += '</div>';
+  }
+  if (!shown) h += '<div class="empty">Nothing matches “' + esc(state.q) + '”.</div>';
+
+  if (!state.readsOnly && DATA.references.length) {
+    const closed = !!state.closedGroups["__docs"] && !state.q;
+    const docs = DATA.references.filter(r => !state.q || r.title.toLowerCase().includes(state.q.trim().toLowerCase()));
+    if (docs.length) {
+      h += '<div class="group"><button class="grouphead" data-group="__docs" aria-expanded="' + !closed + '"><span class="lbl">Documents</span><span class="cnt">' + DATA.references.length + '</span></button>';
+      if (!closed) for (const r of docs) {
+        const on = cur && cur.kind === "d" && cur.id === r.file;
+        h += '<a class="row docrow' + (on ? " on" : "") + '" href="#/d/' + esc(r.file) + '"><span class="dot card"></span><span class="t">' + esc(r.title) + '</span><span class="num">' + Math.round(r.chars / 1000) + 'k</span></a>';
+      }
+      h += '</div>';
+    }
+  }
+  h += '</div>';
+  lib.innerHTML = h;
+
+  const q = document.getElementById("q");
+  q.addEventListener("input", () => { state.q = q.value; save("q", state.q); renderLibKeepFocus(); });
+  document.getElementById("sort").addEventListener("change", e => { state.sort = e.target.value; save("sort", state.sort); renderLib(); });
+  document.getElementById("readsOnly").addEventListener("click", () => { state.readsOnly = !state.readsOnly; save("readsOnly", state.readsOnly); renderLib(); });
+  lib.querySelectorAll(".grouphead").forEach(b => b.addEventListener("click", () => {
+    const g = b.dataset.group; state.closedGroups[g] = !state.closedGroups[g]; save("closedGroups", state.closedGroups); renderLib();
+  }));
+}
+function renderLibKeepFocus() {
+  const pos = document.getElementById("q").selectionStart;
+  const scroll = document.getElementById("lib").scrollTop;
+  renderLib();
+  const q = document.getElementById("q"); q.focus(); q.setSelectionRange(pos, pos);
+  document.getElementById("lib").scrollTop = scroll;
+}
+
+/* ------------------------------------------------------------- reader --- */
+function bandOpen(key) { return !state.closedBands[key]; }
+function band(key, label, extra, body, cls) {
+  const open = bandOpen(key);
+  return '<section class="band' + (open ? "" : " closed") + (cls ? " " + cls : "") + '" data-band="' + esc(key) + '">' +
+    '<button class="bandhead" aria-expanded="' + open + '">' + chev() + '<span class="lbl">' + label + '</span>' + (extra || "") + '</button>' +
+    '<div class="bandbody">' + body + '</div></section>';
+}
+
+function linkContext(from, to) {
+  /* what the linking read or card says about the target: the first sentence that cites it */
+  const src = byId[from]; if (!src) return "";
+  const texts = [];
+  if (src.read) texts.push(src.read.l2_md, ...src.read.asides.map(a => a.markdown));
+  texts.push(...src.sections.map(s => s.markdown));
+  const re = new RegExp("[^.\\n]*\\]\\(\\.\\./" + to.replace(/[-]/g, "\\-") + "/(?:CARD|READ)\\.md\\)[^.\\n]*");
+  for (const t of texts) { const m = (t || "").match(re); if (m) { const s = m[0].replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/[*_`]/g, "").trim(); return s.length > 140 ? s.slice(0, 137) + "…" : s; } }
+  return "";
+}
+
+function renderPassage(c, p, idx) {
+  let h = '<article class="pass" id="p-' + idx + '">';
+  if (p.heading) {
+    h += '<div class="phead"><span class="ts">' + esc(p.ts) + '</span><div class="ph"><b>' + inline(p.heading, c.id) + '</b>' +
+      (p.ts_s != null ? '<a href="' + watchAt(c, p.ts_s) + '" target="_blank" rel="noopener">watch ' + esc(p.ts) + '</a>' : "") + '</div></div>';
+  }
+  for (const b of p.blocks) {
+    if (b.kind === "quote") h += '<div class="qrow"><span></span><div class="q">' + md(b.markdown, c.id) + '</div></div>';
+    else if (b.kind === "aside") h += '<div class="aside"><span class="who">EDITOR</span><div class="body">' + md(b.markdown, c.id) + '</div></div>';
+    else {
+      const t = b.markdown.trim();
+      if (/^-{3,}$/.test(t)) continue;
+      const ts = t.match(/^\*\((\d{1,2}:\d{2}(?::\d{2})?)\)\*$/);
+      if (ts) { h += '<div class="tsmark">' + esc(ts[1]) + '</div>'; continue; }
+      h += '<div class="aside note"><span class="who"></span><div class="body">' + md(t, c.id) + '</div></div>';
+    }
+  }
+  return h + '</article>';
+}
+
+function renderVideo(c) {
+  const r = c.read;
+  let h = '<div class="topbar narrow-only"><button class="iconbtn" id="openLib">Library</button><button class="iconbtn" id="openRail">Context</button></div>';
+  h += '<div class="meta"><span class="mono">' + esc(c.id) + '</span><span class="sep">·</span><span>' + esc(c.channel_key || "") + '</span>' +
+    (c.uploaded ? '<span class="sep">·</span><span class="mono">' + esc(c.uploaded) + '</span>' : "") +
+    (c.duration_s != null ? '<span class="sep">·</span><span class="mono">' + fmtDur(c.duration_s) + '</span>' : "") +
+    (c.views != null ? '<span class="sep">·</span><span class="mono">' + fmtN(c.views) + ' views</span>' : "") +
+    '<span class="grow"></span>' +
+    (c.status ? '<span class="chip">' + esc(c.status) + '</span>' : "") +
+    '<span class="chip">' + c.runs + ' run' + (c.runs === 1 ? "" : "s") + '</span>' +
+    (r ? '<span class="chip on">read</span>' : '<span class="chip">card only</span>') +
+    '<a class="chip" href="' + watchAt(c) + '" target="_blank" rel="noopener">watch</a></div>';
+  h += '<h1 class="title">' + esc(shortTitle(c)) + '</h1>';
+  if (c.channel && c.channel !== c.channel_key) h += '<div style="font-size:12.5px;color:var(--muted);margin:-2px 0 12px 0;max-width:780px">' + inline(c.channel, c.id) + '</div>';
+
+  if (r) {
+    h += '<p class="l0"><span class="mono">L0</span><span>' + inline(r.l0 || "", c.id) + '</span></p>';
+    h += band("l1", "L1 · In brief", '<span class="mono">' + fmtN(r.words.l1) + ' w</span>', '<div class="prose">' + md(r.l1_md, c.id) + '</div>');
+    const paras = (r.l2_md.match(/\n\n+/g) || []).length + 1;
+    h += band("l2", "L2 · The argument", '<span class="mono">' + fmtN(r.words.l2) + ' w · ' + paras + ' ¶</span>', '<div class="prose">' + md(r.l2_md, c.id) + '</div>');
+    const heads = r.passages.filter(p => p.heading);
+    const toc = '<nav class="toc" aria-label="Passages">' + r.passages.map((p, i) => p.heading ? '<a href="#" class="jumpto" data-target="p-' + i + '"><span class="mono">' + esc(p.ts) + '</span>' + esc(p.heading) + '</a>' : "").join("") + '</nav>';
+    h += band("l3", "L3 · " + esc(r.l3_name || "In his words"),
+      '<span class="mono">' + fmtN(r.words.l3) + ' w · ' + heads.length + ' passages · ' + r.asides.length + ' asides</span>',
+      toc + '<div class="passages">' + r.passages.map((p, i) => renderPassage(c, p, i)).join("") + '</div>');
+  } else {
+    h += '<p class="l0"><span class="mono">—</span><span style="color:var(--muted)">No read composed yet. What follows is the agent-facing card.</span></p>';
+  }
+
+  const cardBody = c.sections.map(s => '<h3 id="s-' + slug(s.name) + '">' + esc(s.name) + '</h3>' + md(s.markdown, c.id)).join("");
+  h += band(r ? "card" : "card-only", "Card · agent-facing record", '<span class="mono">' + c.section_names.join(" · ") + ' · ' + Math.round(c.chars / 1000) + 'k chars</span>' +
+    (c.corrections ? '<span class="mono" style="color:var(--corr)">' + c.corrections + ' correction' + (c.corrections === 1 ? "" : "s") + '</span>' : ""),
+    '<div class="prose">' + cardBody + '</div>', r ? "" : "");
+  return h;
+}
+
+function renderRail(c) {
+  if (!c) { return ""; }
+  let h = "";
+  const ins = c.links_in.map(id => byId[id]).filter(Boolean), outs = c.links_out.map(id => byId[id]).filter(Boolean);
+  h += '<div class="rsec"><span class="lbl">Graph <span class="mono">' + ins.length + ' in · ' + outs.length + ' out</span></span>';
+  if (!ins.length && !outs.length) h += '<div style="color:var(--muted)">No card links to this one, and it links to none.</div>';
+  for (const o of ins) h += '<div class="link" style="color:var(--accent)">' + arrowIn() + '<div><a href="#/v/' + o.id + '">' + esc(shortTitle(o)) + '</a><div class="sub">' + esc(o.channel_key || "") + (linkContext(o.id, c.id) ? ' · ' + esc(linkContext(o.id, c.id)) : "") + '</div></div></div>';
+  for (const o of outs) h += '<div class="link" style="color:var(--muted)">' + arrowOut() + '<div><a href="#/v/' + o.id + '">' + esc(shortTitle(o)) + '</a><div class="sub">' + esc(o.channel_key || "") + (linkContext(c.id, o.id) ? ' · ' + esc(linkContext(c.id, o.id)) : "") + '</div></div></div>';
+  h += '</div>';
+
+  if (c.grades && Object.keys(c.grades).length) {
+    h += '<div class="rsec"><span class="lbl">Grades</span><div class="grade">' + Object.values(c.grades).map(g => '<span class="g">' + esc(g.display) + '</span><span>' + esc(g.axis) + '</span>').join("") + '</div></div>';
+  }
+
+  const v = c.verification || {};
+  h += '<div class="rsec"><span class="lbl">Verification marks <span class="mono">in the card</span></span>' +
+    '<div class="kv"><span>“verified”</span><span class="mono">' + v.verified + '</span></div>' +
+    '<div class="kv"><span>“unverified”</span><span class="mono">' + v.unverified + '</span></div>' +
+    '<div class="kv"><span>frame citations</span><span class="mono">' + v.frames + '</span></div>' +
+    '<div class="kv"><span>arithmetic checks</span><span class="mono">' + v.arithmetic + '</span></div>' +
+    '<div style="color:var(--muted);font-size:11.5px">Counts of the card’s own words, not a grade. A card that marks nothing is unknown, not unverified.</div></div>';
+
+  h += '<div class="rsec"><span class="lbl" style="color:var(--corr)">Corrections <span class="mono">' + c.corrections + (c.audit.length ? ' · audited' : "") + '</span></span>';
+  if (!c.audit.length && !c.corrections) h += '<div style="color:var(--muted)">No correction annotations. ' + (c.read ? "" : "The card has not been audited against its transcript.") + '</div>';
+  for (const [i, a] of c.audit.entries()) {
+    h += '<div class="audit" data-audit="' + i + '"><button class="ah" aria-expanded="false"><span class="mono">' + (a.clean ? "clean" : "class " + a.classes.join(", ")) + '</span><span>' + inline(a.heading.replace(/`[^`]+`\s*—\s*/, "").replace(/·\s*\*\*[^*]+\*\*\s*$/, ""), c.id) + '</span></button>' +
+      '<div class="ab"><div class="prose">' + md(a.markdown, c.id) + '</div><a href="#/d/AUDIT.md">Open the full audit log</a></div></div>';
+  }
+  h += '</div>';
+
+  if (c.read) {
+    h += '<div class="rsec"><span class="lbl">Read <span class="mono">' + fmtN(c.read.words.total) + ' w</span></span>' +
+      '<div class="kv"><span>L1 In brief</span><span class="mono">' + fmtN(c.read.words.l1) + '</span></div>' +
+      '<div class="kv"><span>L2 The argument</span><span class="mono">' + fmtN(c.read.words.l2) + '</span></div>' +
+      '<div class="kv"><span>L3 ' + esc(c.read.l3_name || "") + '</span><span class="mono">' + fmtN(c.read.words.l3) + '</span></div>' +
+      '<div class="kv"><span>Editor asides</span><span class="mono">' + c.read.asides.length + '</span></div></div>';
+  }
+
+  h += '<div class="rsec"><span class="lbl">Card</span>' +
+    (c.playlist ? '<div class="kv"><span>Playlist</span><span class="mono" style="text-align:right">' + inline(c.playlist, c.id) + '</span></div>' : "") +
+    (c.bead ? '<div class="kv"><span>Bead</span><span class="mono">' + esc(c.bead) + '</span></div>' : "") +
+    (c.first_analyzed ? '<div class="kv"><span>First analyzed</span><span class="mono">' + esc(c.first_analyzed) + '</span></div>' : "") +
+    '<div class="kv"><span>Runs</span><span class="mono">' + c.runs + '</span></div>' +
+    (c.playlist_refs.length ? '<div>' + c.playlist_refs.map(f => '<a href="#/d/' + esc(f) + '.md">' + esc((byDoc[f + ".md"] || {}).title || f) + '</a>').join("<br>") + '</div>' : "") +
+    '</div>';
+  return h;
+}
+
+function renderDoc(r) {
+  return '<div class="topbar narrow-only"><button class="iconbtn" id="openLib">Library</button></div>' +
+    '<div class="meta"><span class="mono">' + esc(r.file) + '</span><span class="sep">·</span><span class="mono">' + Math.round(r.chars / 1000) + 'k chars</span></div>' +
+    '<div class="prose" style="max-width:780px">' + md(r.markdown.replace(/^# .*\n/, ""), null).replace(/^/, '<h1 class="title">' + esc(r.title) + '</h1>') + '</div>';
+}
+
+function renderHome() {
+  const cards = DATA.cards.slice();
+  const total = cards.reduce((s, c) => s + (c.duration_s || 0), 0);
+  const dates = cards.map(c => c.uploaded).filter(Boolean).sort();
+  const hubs = cards.slice().sort((a, b) => b.links_in.length - a.links_in.length).slice(0, 6);
+  const viewed = cards.slice().sort(SORTS.views).slice(0, 6);
+  const corrected = cards.filter(c => c.corrections).sort((a, b) => b.corrections - a.corrections).slice(0, 6);
+  const reads = cards.filter(c => c.read).sort(SORTS.uploaded);
+  let h = '<div class="topbar narrow-only"><button class="iconbtn" id="openLib">Library</button></div><div class="home">' +
+    '<h1>Reading the yt-analyst corpus</h1>' +
+    '<p style="color:var(--ink2);max-width:720px;margin:0">Two layers. The card is the agent-facing record, dense and provenance-marked. The read is composed from the presenter’s transcript in four levels, and composing it audited the card. Drop from any claim to the presenter’s own words: that is the move that caught every error the audit found.</p>' +
+    '<div class="stats">' +
+    '<div class="stat"><div class="v">' + DATA.counts.cards + '</div><div class="k">videos</div></div>' +
+    '<div class="stat"><div class="v">' + DATA.counts.reads + '</div><div class="k">reads composed</div></div>' +
+    '<div class="stat"><div class="v">' + DATA.counts.channels + '</div><div class="k">channels</div></div>' +
+    '<div class="stat"><div class="v">' + fmtTotal(total) + '</div><div class="k">of video</div></div>' +
+    '<div class="stat"><div class="v">' + DATA.counts.edges + '</div><div class="k">cross-references</div></div>' +
+    '<div class="stat"><div class="v">' + DATA.counts.asides + '</div><div class="k">editor asides</div></div>' +
+    '<div class="stat"><div class="v">' + DATA.counts.corrections + '</div><div class="k">corrections in cards</div></div>' +
+    '<div class="stat"><div class="v">' + DATA.counts.runs + '</div><div class="k">Gemini runs</div></div>' +
+    '</div>' +
+    '<div class="cols">' +
+    '<div><div class="lbl" style="margin-bottom:6px">Most referred to</div><div class="list">' + hubs.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + c.links_in.length + ' in</span></a>').join("") + '</div></div>' +
+    '<div><div class="lbl" style="margin-bottom:6px">Most viewed</div><div class="list">' + viewed.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + fmtN(c.views) + '</span></a>').join("") + '</div></div>' +
+    '<div><div class="lbl" style="margin-bottom:6px;color:var(--corr)">Most corrected</div><div class="list">' + corrected.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + c.corrections + '</span></a>').join("") + '</div></div>' +
+    '<div><div class="lbl" style="margin-bottom:6px">Reads, newest upload first</div><div class="list">' + reads.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + esc(c.uploaded || "") + '</span></a>').join("") + '</div></div>' +
+    '</div>' +
+    (dates.length ? '<p style="color:var(--muted);font-size:12px;margin-top:26px">Uploads ' + esc(dates[0]) + ' to ' + esc(dates[dates.length - 1]) + '. Built from the curated cards and reads only; raw model output is never shown.</p>' : "") +
+    '</div>';
+  return h;
+}
+
+function renderHomeRail() {
+  return '<div class="rsec"><span class="lbl">Channels</span>' + DATA.channels.map(g => '<div class="kv"><span>' + esc(g.name) + '</span><span class="mono">' + g.cards.length + '</span></div>').join("") + '</div>' +
+    '<div class="rsec"><span class="lbl">Documents</span>' + DATA.references.map(r => '<div><a href="#/d/' + esc(r.file) + '">' + esc(r.title) + '</a></div>').join("") + '</div>' +
+    '<div class="rsec"><span class="lbl">Evidence grades</span><div style="color:var(--ink2)">In descending order: frame-verified, two-source cross-check, arithmetic, spoken and unverified, paraphrase. A quotation the card cannot trace to a verbatim field is a paraphrase, however it reads.</div></div>';
+}
+
+/* ------------------------------------------------------------- routing --- */
+function parseRoute() {
+  const hsh = location.hash.replace(/^#\/?/, "");
+  const m = hsh.match(/^v\/([A-Za-z0-9_-]+)/); if (m && byId[m[1]]) return { kind: "v", id: m[1] };
+  const d = hsh.match(/^d\/(.+)$/); if (d && byDoc[decodeURIComponent(d[1])]) return { kind: "d", id: decodeURIComponent(d[1]) };
+  return { kind: "home" };
+}
+
+function render() {
+  state.route = parseRoute();
+  save("route", location.hash);
+  const main = document.getElementById("main"), rail = document.getElementById("rail");
+  if (state.route.kind === "v") { const c = byId[state.route.id]; main.innerHTML = renderVideo(c); rail.innerHTML = renderRail(c); document.title = shortTitle(c) + " · yt-analyst Ledger"; }
+  else if (state.route.kind === "d") { const r = byDoc[state.route.id]; main.innerHTML = renderDoc(r); rail.innerHTML = renderHomeRail(); document.title = r.title + " · yt-analyst Ledger"; }
+  else { main.innerHTML = renderHome(); rail.innerHTML = renderHomeRail(); document.title = "yt-analyst Ledger"; }
+  main.scrollTop = 0; rail.scrollTop = 0;
+  renderLib();
+  wire();
+  const on = document.querySelector("#lib .row.on"); if (on) on.scrollIntoView({ block: "nearest" });
+}
+
+function wire() {
+  document.querySelectorAll(".band .bandhead").forEach(b => b.addEventListener("click", () => {
+    const sec = b.closest(".band"), key = sec.dataset.band;
+    sec.classList.toggle("closed"); state.closedBands[key] = sec.classList.contains("closed"); save("closedBands", state.closedBands);
+    b.setAttribute("aria-expanded", !sec.classList.contains("closed"));
+  }));
+  document.querySelectorAll(".jumpto").forEach(a => a.addEventListener("click", e => { e.preventDefault(); const t = document.getElementById(a.dataset.target); if (t) t.scrollIntoView({ block: "start" }); }));
+  document.querySelectorAll(".jump").forEach(a => a.addEventListener("click", e => { e.preventDefault(); const t = document.getElementById("h-" + slug(a.dataset.anchor)) || document.getElementById(a.dataset.anchor); if (t) t.scrollIntoView({ block: "start" }); }));
+  document.querySelectorAll(".audit .ah").forEach(b => b.addEventListener("click", () => { const a = b.closest(".audit"); a.classList.toggle("open"); b.setAttribute("aria-expanded", a.classList.contains("open")); }));
+  const ol = document.getElementById("openLib"), or = document.getElementById("openRail");
+  if (ol) ol.addEventListener("click", () => document.getElementById("lib").classList.toggle("open"));
+  if (or) or.addEventListener("click", () => document.getElementById("rail").classList.toggle("open"));
+  document.getElementById("main").addEventListener("click", () => { document.getElementById("lib").classList.remove("open"); document.getElementById("rail").classList.remove("open"); }, { once: true });
+}
+
+window.addEventListener("hashchange", render);
+if (!location.hash) { const last = load("route", ""); if (last) location.hash = last; }
+render();
+</script>

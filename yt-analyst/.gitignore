@@ -25,3 +25,6 @@ corpus.json
 videos/*/transcript.txt
 videos/*/transcript.vtt
 design/reading-ui/yt-analyst-reads.html
+
+# assembled reading interface — rerun `python3 build_reader.py`
+reader.html

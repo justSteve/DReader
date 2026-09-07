@@ -173,8 +173,11 @@ expand the history.
   `0CrkbfuIhkc · 1utSjHs_Mq8 · 43JaKHRvxHk · HySZZSjMxF8 · K8qtT2_axPo ·
   Kg6sYKgtkrY · Ly62G168MkQ · VumVuGnCcFM · YkclL6xgu-s · YmygDgtoxO8 ·
   aursfDVYzUk · zAwEX_tRUfE`
-- `build_corpus.py` does not yet read `READ.md`. **It will need to** — add the
-  four levels as structured fields and the editor asides as a separate list.
+- ~~`build_corpus.py` does not yet read `READ.md`.~~ Done 2026-09-07: each card
+  carries `read` (L0, L1/L2 markdown, L3 passages with timestamps, asides as
+  their own list, word counts), `audit` entries from `AUDIT.md`, a
+  `corrections` count and `verification` mark counts. `build_reader.py`
+  assembles `reader.html` (the Ledger interface) from `reader.template.html`.
 - Frame pulls that would settle open questions: the `$208,000` vs `$28,000`
   overlay (Carmine ep. 1, 00:01–00:08), the DAX ladder's last digit
   (`vl01TiVTuoQ` 04:00), and whether "break-in" is a term or a dub artefact

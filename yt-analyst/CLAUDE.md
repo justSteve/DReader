@@ -58,6 +58,13 @@ reconcile centrally, and you grep repo-wide after each one, because an important
 claim is usually stated in more than one file.
 
 `UI-BRIEF.md` is the guidance for building a reading interface over all this.
+`reader.html` IS that interface — the "Ledger" direction Steve chose from the
+`/design` exploration (sketches in `design/reading-ui/`). Three panes: library,
+the read in collapsible L0–L3 bands with editor asides as labelled rows, and a
+context rail (link graph with the citing sentence, verification-mark counts,
+corrections with the audit entry inline). `python3 build_corpus.py &&
+python3 build_reader.py` regenerates it after any card or read change; it is
+gitignored and published as an Artifact.
 
 `build_corpus.py` flattens every card into one `corpus.json` — the data layer
 the card-reader UI is built on. Per card: header metadata (title, channel,
