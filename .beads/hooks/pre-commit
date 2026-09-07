@@ -22,3 +22,15 @@ if command -v bd >/dev/null 2>&1; then
   if [ $_bd_exit -ne 0 ]; then exit $_bd_exit; fi
 fi
 # --- END BEADS INTEGRATION v1.0.2 ---
+
+# --- credential estate gate (COO, 2026-09-07, co-9g1lx) — outside the beads
+# markers so a beads reinstall keeps it. The same block Strader carries. Fails
+# closed if the script is gone: a gate that passes when its scanner is missing
+# is not a gate.
+GATE=/root/projects/COO/factory/scripts/gitleaks-pre-commit.sh
+if [ -x "$GATE" ]; then
+  "$GATE" "$@" || exit $?
+else
+  echo >&2 "gitleaks gate: $GATE missing or not executable — refusing the commit"
+  exit 1
+fi
