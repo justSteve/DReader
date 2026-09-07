@@ -45,6 +45,20 @@ a playlist synthesis. It embeds a snapshot of the card text, so it is
 gitignored and goes stale the moment a card changes — rerun it after
 `yta.py index`. No network, no assets: open the file in a browser.
 
+`videos/<id>/READ.md` is the HUMAN-facing layer, composed from the video's
+transcript rather than from the card — the card is a lossy compression that
+already discarded the presenter's voice. Four levels: a one-line L0, a ~150-word
+overview, the argument with corpus cross-links inline, and an edited transcript
+with editorial asides. Written under
+`.claude/skills/composing-card-reads/SKILL.md`; hand every composer
+`.compose-brief.md`, which carries the corrected corpus facts. Composing a read
+**audits its card** — that is half the job, and it found ~75 errors, logged by
+failure class in `AUDIT.md`. Composers never edit `CARD.md`; corrections
+reconcile centrally, and you grep repo-wide after each one, because an important
+claim is usually stated in more than one file.
+
+`UI-BRIEF.md` is the guidance for building a reading interface over all this.
+
 `build_corpus.py` flattens every card into one `corpus.json` — the data layer
 the card-reader UI is built on. Per card: header metadata (title, channel,
 uploaded, duration, views, status, bead, playlist, run count), every curated
