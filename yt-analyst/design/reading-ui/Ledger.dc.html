@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; background: #f3f4f6; color: #14171c; font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    a { color: #2f5f9e; text-decoration: none; } a:hover { color: #1f4373; text-decoration: underline; }
+    .mono { font-family: "IBM Plex Mono", Menlo, Consolas, monospace; }
+    p { margin: 0 0 10px 0; text-wrap: pretty; }
+    .band { border-top: 1px solid #d7dae0; }
+    .bandhead { display: flex; align-items: center; gap: 12px; height: 34px; font-size: 12px; color: #5b6270; }
+    .lbl { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; }
+    .row { display: grid; grid-template-columns: 22px 60px 1fr 84px 56px; gap: 10px; align-items: center; height: 30px; font-size: 12.5px; color: #3a404a; border-bottom: 1px solid #e8eaee; }
+    .num { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: #7b8190; text-align: right; }
+    .chip { display: inline-flex; align-items: center; gap: 5px; padding: 1px 7px; border: 1px solid #d7dae0; border-radius: 2px; font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: #5b6270; background: #fff; white-space: nowrap; }
+    .qrow { display: grid; grid-template-columns: 56px 1fr; gap: 14px; }
+    .aside { display: grid; grid-template-columns: 56px 1fr; gap: 14px; background: #eaeef5; padding: 9px 0 9px 0; margin: 8px 0 0 0; }
+    .aside .who { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: #2f5f9e; text-align: right; padding-top: 3px; font-weight: 500; }
+    .xref { color: #2f5f9e; border-bottom: 1px dotted #2f5f9e; }
+    .corr { background: #fbefd6; }
+  </style>
+</helmet>
+<div style="width: 1440px; min-height: 1500px; background: #f3f4f6; display: grid; grid-template-columns: 320px 1fr 280px;">
+
+  <div style="background: #fff; border-right: 1px solid #d7dae0; display: flex; flex-direction: column; padding: 14px 16px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+      <div style="font-weight: 600; font-size: 13px;">yt-analyst <span style="color: #7b8190; font-weight: 400;">corpus</span></div>
+      <div class="mono" style="font-size: 11px; color: #7b8190;">43 · 11h38m</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px; padding: 6px 9px; border: 1px solid #d7dae0; border-radius: 2px; color: #7b8190; font-size: 12.5px; margin-bottom: 14px;">
+      <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="4.5"></circle><path d="M10.5 10.5 14 14"></path></svg>
+      <span>Filter title, channel, id</span>
+    </div>
+    <div class="lbl" style="color: #7b8190; margin-bottom: 6px;">Tom Vorwald EN <span class="mono" style="font-weight: 400; letter-spacing: 0;">21 · 9 read</span></div>
+    <div class="row"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2f5f9e; display: block;"></span><span class="mono" style="font-size: 11px; color: #7b8190;">2025-11</span><span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Master orderflow trading</span><span class="num">11,008</span><span class="num">21:40</span></div>
+    <div class="row" style="background: #eaeef5; margin: 0 -16px; padding: 0 16px; color: #14171c;"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2f5f9e; display: block;"></span><span class="mono" style="font-size: 11px; color: #7b8190;">2025-11</span><span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500;">The truth about heatmap and liquidity</span><span class="num">31,793</span><span class="num">15:13</span></div>
+    <div class="row"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2f5f9e; display: block;"></span><span class="mono" style="font-size: 11px; color: #7b8190;">2025-10</span><span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Wall Street scalper: the truth about order flow</span><span class="num">9,260</span><span class="num">38:12</span></div>
+    <div class="row"><span style="width: 7px; height: 7px; border-radius: 50%; border: 1px solid #b6bcc7; display: block;"></span><span class="mono" style="font-size: 11px; color: #7b8190;">2025-06</span><span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Volume profile: the truth about it</span><span class="num">314,208</span><span class="num">18:04</span></div>
+    <div class="row"><span style="width: 7px; height: 7px; border-radius: 50%; border: 1px solid #b6bcc7; display: block;"></span><span class="mono" style="font-size: 11px; color: #7b8190;">2025-05</span><span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">How powerful is volume trading really?</span><span class="num">236,410</span><span class="num">24:31</span></div>
+    <div class="row"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2f5f9e; display: block;"></span><span class="mono" style="font-size: 11px; color: #7b8190;">2025-04</span><span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">PbD: the world's best trading strategy</span><span class="num">71,273</span><span class="num">29:55</span></div>
+    <div class="row" style="color: #7b8190;"><span></span><span></span><span>15 more</span><span></span><span></span></div>
+    <div class="lbl" style="color: #7b8190; margin: 18px 0 6px 0;">Smart Money Decode X <span class="mono" style="font-weight: 400; letter-spacing: 0;">10 · 0 read</span></div>
+    <div class="row"><span style="width: 7px; height: 7px; border-radius: 50%; border: 1px solid #b6bcc7; display: block;"></span><span class="mono" style="font-size: 11px; color: #7b8190;">2025-08</span><span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Zero to advanced trader, part 1</span><span class="num">18,120</span><span class="num">14:02</span></div>
+    <div class="row" style="color: #7b8190;"><span></span><span></span><span>9 more</span><span></span><span></span></div>
+    <div class="lbl" style="color: #7b8190; margin: 18px 0 6px 0;">Carmine Rosato <span class="mono" style="font-weight: 400; letter-spacing: 0;">8 · 8 read</span></div>
+    <div class="row"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2f5f9e; display: block;"></span><span class="mono" style="font-size: 11px; color: #7b8190;">2024-10</span><span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">The only trading strategy you need</span><span class="num">100,803</span><span class="num">22:10</span></div>
+    <div class="row" style="color: #7b8190;"><span></span><span></span><span>7 more</span><span></span><span></span></div>
+    <div class="lbl" style="color: #7b8190; margin: 18px 0 6px 0;">4 more channels <span class="mono" style="font-weight: 400; letter-spacing: 0;">4 · 1 read</span></div>
+  </div>
+
+  <div style="padding: 18px 32px 40px 32px; display: flex; flex-direction: column;">
+    <div style="display: flex; align-items: center; gap: 10px; font-size: 12px; color: #5b6270; margin-bottom: 10px;">
+      <span class="mono">Vd83oo_geMk</span><span>·</span><span>Tom Vorwald EN / WorldClassEdge</span><span>·</span><span class="mono">2025-11-07</span><span>·</span><span class="mono">15:13</span><span>·</span><span class="mono">31,793 views</span><span style="flex-grow: 1;"></span><span class="chip">closed</span><span class="chip">1 run</span><span class="chip">read</span>
+    </div>
+    <h1 style="font-size: 24px; line-height: 1.2; font-weight: 600; margin: 0 0 8px 0; letter-spacing: -.01em;">The truth about heatmap and liquidity</h1>
+    <p style="font-size: 15px; line-height: 1.5; color: #3a404a; margin: 0 0 18px 0;"><span class="mono" style="font-size: 10.5px; color: #7b8190; margin-right: 8px;">L0</span>The case against heatmaps from an order-book desk, and the corpus's first concrete number for what counts as a large order: over 250 to 300 ES contracts.</p>
+
+    <div class="band">
+      <div class="bandhead"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="#7b8190" stroke-width="1.5"><path d="M2 3.5 5 6.5 8 3.5"></path></svg><span class="lbl">L1 · In brief</span><span class="mono">170 w</span></div>
+      <div style="padding: 0 0 12px 22px; max-width: 720px;">
+        <p>A German order-flow desk explains why it does not trade from a heatmap. The presenter grants the tool everything it actually does: it shows where large resting orders are and where they were, and it will tell you whether they were thick or thin. What it cannot show is how those orders were executed, in what chunks and at what speed, and therefore who was doing the executing. For him that missing half is the whole game.</p>
+        <p>This matters because Carmine Rosato's series makes the Bookmap heatmap a core instrument. Two practitioners, one object, opposite verdicts, and no statistics on either side. The video also gives the corpus its first concrete size threshold for the ES book, and a second independent definition of an iceberg order.</p>
+      </div>
+    </div>
+
+    <div class="band">
+      <div class="bandhead"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="#7b8190" stroke-width="1.5"><path d="M2 3.5 5 6.5 8 3.5"></path></svg><span class="lbl">L2 · The argument</span><span class="mono">1,010 w · 9 ¶</span><span class="mono" style="color: #b2731d;">1 corrected</span></div>
+      <div style="padding: 0 0 12px 22px; max-width: 720px;">
+        <p>He opens by saying that institutional traders, and his own group at Trade the Traders, don't use heatmaps, and that the order books are the true market. <span class="corr">But the argument that follows is not that the heatmap lies.</span> It shows where the large orders are, and it can tell you whether they are "really big, very thick, and strong, or if they're just somewhat large." He even concedes a heatmap can be set to carry the same size information his book does. The objection is to what is left out.</p>
+        <div style="display: grid; grid-template-columns: 56px 1fr; gap: 14px; background: #fbefd6; padding: 8px 0; margin: 0 0 12px 0; font-size: 13px;">
+          <span class="mono" style="font-size: 10.5px; color: #b2731d; text-align: right; padding-top: 2px; font-weight: 500;">WAS</span>
+          <div style="padding-right: 12px;"><span style="color: #5b6270;">“This video directly contradicts Carmine, and it is the sharpest genuine cross-source conflict in the corpus.”</span> Overturned 2026-09-06 by the transcript audit: “such a wonderful tool”, demonstrated on screen at 08:44. <a href="#">AUDIT.md · class 1</a></div>
+        </div>
+        <p>But first, a number. To read size at all you need to know what large means in your instrument, and for the ES he says it: an order needs to be over 250 or 300 contracts, isolated and on its own, before you can judge it truly large; at 400, 500 or 600 you know. Carmine's series never puts a number on size. The nearest comparison is <a class="xref" href="#">the podcast on this same channel</a> <span class="chip">RwQBdF9TSvc</span>, where 10,000 ES contracts bought in the book is the example of genuinely large activity: a different quantity, a stretch of executed buying rather than one resting order, consistent, and an order of magnitude above.</p>
+        <p style="color: #7b8190;">7 more paragraphs</p>
+      </div>
+    </div>
+
+    <div class="band">
+      <div class="bandhead"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="#7b8190" stroke-width="1.5"><path d="M2 3.5 5 6.5 8 3.5"></path></svg><span class="lbl">L3 · In his words</span><span class="mono">2,640 w · 14 passages · 9 asides</span><span class="chip">captions · EN dub</span></div>
+      <div style="padding: 0 0 12px 22px; max-width: 760px; display: flex; flex-direction: column; gap: 18px;">
+
+        <div>
+          <div class="qrow" style="margin-bottom: 4px;"><span class="mono" style="font-size: 11.5px; color: #7b8190; text-align: right;">01:34</span><div style="display: flex; gap: 10px; align-items: baseline;"><span style="font-weight: 600;">Spoofing</span><span class="chip">spoken · unverified</span></div></div>
+          <div class="qrow"><span></span><p style="margin: 0;">“Is there spoofing happening there? That's something people talk about a lot. Orders that are placed and then pulled away again just before they're reached, which by the way is absolutely forbidden. Nevertheless, it does happen sometimes.”</p></div>
+          <div class="aside"><span class="who">EDITOR</span><div style="padding-right: 14px; font-size: 13.5px;">The card records this as a firmer stance than his step-by-step guide, where spoofing “probably still does” exist. Read the second sentence: he concedes the same thing here. Forbidden, and it happens. The two videos agree.</div></div>
+        </div>
+
+        <div>
+          <div class="qrow" style="margin-bottom: 4px;"><span class="mono" style="font-size: 11.5px; color: #7b8190; text-align: right;">02:19</span><div style="display: flex; gap: 10px; align-items: baseline;"><span style="font-weight: 600;">What the heatmap shows, and what large means</span><span class="chip">spoken · unverified</span><span class="chip">cited by 2</span></div></div>
+          <div class="qrow"><span></span><p style="margin: 0;">“At the end of the day, the heat map shows you where the large orders are. Now, of course, you need to know how big they are. The heat map can show you if they're really big, very thick, and strong, or if they're just somewhat large. But honestly, if you don't really know the market and, for example, you don't know that in the S&amp;P 500, that is in the ES future, an order needs to be over 250 or 300 contracts, isolated and on its own, for you to be able to judge that it's truly large. If you know it has 500 contracts, 400, 600, then you know it's really big. And yes, you can set all this information in a heat map and then you have it.”</p></div>
+          <div class="aside"><span class="who">EDITOR</span><div style="padding-right: 14px; font-size: 13.5px;">The first size threshold anywhere in this corpus. Note the qualifier “isolated and on its own”: a single resting order, not a band and not a sum. For scale, the podcast on this channel uses 10,000 ES contracts bought as its example of genuinely large activity, and Carmine's Bookmap in episode three tags routine prints at 31 and 65. He gives the number for the ES only.</div></div>
+        </div>
+
+        <div>
+          <div class="qrow" style="margin-bottom: 4px;"><span class="mono" style="font-size: 11.5px; color: #7b8190; text-align: right;">03:01</span><div style="display: flex; gap: 10px; align-items: baseline;"><span style="font-weight: 600;">The objection</span><span class="chip">spoken · unverified</span></div></div>
+          <div class="qrow"><span></span><p style="margin: 0;">“But what you don't have is when you look at past block orders that were placed somewhere, block orders from before, you have no idea how they were executed. Were they filled in large chunks, in small chunks, at high speed, at low speed? You can't immediately see that here at first. And that information is important for you because you need to know who was playing the markets aggressively there.”</p></div>
+          <div class="aside"><span class="who">EDITOR</span><div style="padding-right: 14px; font-size: 13.5px;">The whole case in four sentences. Carmine's heatmap has bubbles for exactly this, executed aggression sized and coloured by side. But he credits speed to the DOM, never to the heatmap, and his own example of a bid that pulled before it traded is this objection in his mouth. The live disagreement is whether the bubble picture carries pace and intent. Neither man has measured it.</div></div>
+        </div>
+
+        <p style="color: #7b8190; margin: 0;">11 more passages</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: #fff; border-left: 1px solid #d7dae0; padding: 18px 16px; display: flex; flex-direction: column; gap: 22px; font-size: 12.5px;">
+    <div>
+      <div class="lbl" style="color: #7b8190; margin-bottom: 8px;">Graph <span class="mono" style="font-weight: 400; letter-spacing: 0;">4 in · 3 out</span></div>
+      <div style="display: flex; flex-direction: column; gap: 7px;">
+        <div style="display: grid; grid-template-columns: 14px 1fr; gap: 8px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#2f5f9e" stroke-width="1.5"><path d="M10 6H2"></path><path d="M5 3 2 6l3 3"></path></svg><div><a href="#">Wall Street scalper: the truth about order flow</a><div style="color: #7b8190;">Vorwald · retail-myth vs this read's grant</div></div></div>
+        <div style="display: grid; grid-template-columns: 14px 1fr; gap: 8px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#2f5f9e" stroke-width="1.5"><path d="M10 6H2"></path><path d="M5 3 2 6l3 3"></path></svg><div><a href="#">Master orderflow trading, step by step</a><div style="color: #7b8190;">Vorwald · 20 rows, settable to 100</div></div></div>
+        <div style="display: grid; grid-template-columns: 14px 1fr; gap: 8px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#2f5f9e" stroke-width="1.5"><path d="M10 6H2"></path><path d="M5 3 2 6l3 3"></path></svg><div><a href="#">How powerful is volume trading really?</a><div style="color: #7b8190;">Vorwald</div></div></div>
+        <div style="display: grid; grid-template-columns: 14px 1fr; gap: 8px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#2f5f9e" stroke-width="1.5"><path d="M10 6H2"></path><path d="M5 3 2 6l3 3"></path></svg><div><a href="#">After 8 years, the best trading tools</a><div style="color: #7b8190;">Carmine ep. 3 · the Bookmap side</div></div></div>
+        <div style="display: grid; grid-template-columns: 14px 1fr; gap: 8px; margin-top: 4px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#7b8190" stroke-width="1.5"><path d="M2 6h8"></path><path d="M7 3l3 3-3 3"></path></svg><div><a href="#">Read liquidity like a pro</a><div style="color: #7b8190;">Trading Notes · iceberg definition</div></div></div>
+        <div style="display: grid; grid-template-columns: 14px 1fr; gap: 8px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#7b8190" stroke-width="1.5"><path d="M2 6h8"></path><path d="M7 3l3 3-3 3"></path></svg><div><a href="#">Wall Street scalper</a> · <a href="#">Master orderflow</a></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="lbl" style="color: #7b8190; margin-bottom: 8px;">Evidence <span class="mono" style="font-weight: 400; letter-spacing: 0;">14 claims</span></div>
+      <div style="display: flex; flex-direction: column; gap: 5px;">
+        <div style="display: flex; justify-content: space-between;"><span>Frame-verified</span><span class="mono" style="color: #7b8190;">2</span></div>
+        <div style="display: flex; justify-content: space-between;"><span>Two-source cross-check</span><span class="mono" style="color: #7b8190;">3</span></div>
+        <div style="display: flex; justify-content: space-between;"><span>Arithmetic</span><span class="mono" style="color: #7b8190;">0</span></div>
+        <div style="display: flex; justify-content: space-between;"><span>Spoken, unverified</span><span class="mono" style="color: #7b8190;">9</span></div>
+        <div style="display: flex; justify-content: space-between; color: #7b8190;"><span>Paraphrase (verbatim: null)</span><span class="mono">0 quoted</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="lbl" style="color: #b2731d; margin-bottom: 8px;">Corrections <span class="mono" style="font-weight: 400; letter-spacing: 0;">1</span></div>
+      <div style="color: #3a404a;">2026-09-06 · class 1 · “rejects heatmaps” was never his position. Propagated to the channel sweep and one synthesis table; both fixed. <a href="#">Audit</a></div>
+    </div>
+    <div>
+      <div class="lbl" style="color: #7b8190; margin-bottom: 8px;">Card</div>
+      <div style="color: #3a404a;">Findings · Sessions · Lessons (this video)</div>
+      <div style="color: #7b8190;">3,268 chars · <a href="#">open CARD.md</a> · <a href="#">export JSON</a></div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

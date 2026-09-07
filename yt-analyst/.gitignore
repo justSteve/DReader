@@ -24,3 +24,4 @@ corpus.json
 # fetched YouTube auto-captions — substrate for READ.md, rerun `fetch_transcripts.py`
 videos/*/transcript.txt
 videos/*/transcript.vtt
+design/reading-ui/yt-analyst-reads.html

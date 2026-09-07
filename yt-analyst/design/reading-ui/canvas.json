@@ -1,0 +1,14 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "title": "A · Marginalia", "x": 0, "y": 0, "w": 1440, "h": 1860 },
+    { "file": "Ledger.dc.html", "title": "B · Ledger", "x": 1560, "y": 0, "w": 1440, "h": 1500 },
+    { "file": "TwoVoices.dc.html", "title": "C · Two voices", "x": 3120, "y": 0, "w": 1440, "h": 1560 }
+  ],
+  "annotations": [
+    { "id": "how-to-judge", "x": 0, "y": -260, "w": 520, "text": "Three directions for reading the corpus, all showing the same read (the heatmap video: four inbound links, one overturned finding) so they compare fairly.\n\nJudge on typography, hierarchy and density. Browser zoom does not reach inside an artboard; interaction (claim-to-evidence click, collapsing levels, filters) comes with the built Artifact." },
+    { "id": "note-a", "x": 560, "y": -260, "w": 400, "text": "A · MARGINALIA — editorial\nOne serif reading measure; editor asides, evidence marks, inbound links and the correction all live in the right margin beside the passage they belong to. Keeps browser.html's warm paper palette.\n\nTradeoff: needs ~1200px; on narrow screens margin notes must fold back inline. A 5,600-word L3 leaves long stretches of empty margin." },
+    { "id": "note-b", "x": 1560, "y": -260, "w": 400, "text": "B · LEDGER — dense, data-first\nLibrary list always visible on the left, link graph and evidence counts always on the right. Levels are collapsible bands with word counts; asides are labelled inline rows; every id, count and timestamp is monospace.\n\nTradeoff: the most information per screen and the least pleasure per word. Reading a long L3 in a 760px measure at 14px is work." },
+    { "id": "note-c", "x": 3120, "y": -260, "w": 400, "text": "C · TWO VOICES — the claim-to-evidence gesture made structural\nArgument on the left, the presenter's words on the right; picking a claim brings up the passage it rests on, with the editor's voice set under it in a second typeface. Inbound amendments sit in the header, not a footer.\n\nTradeoff: reading L3 straight through, in order, becomes a secondary path. Two panes fight below ~1100px." }
+  ],
+  "launch": { "view": "canvas" }
+}
