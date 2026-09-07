@@ -817,3 +817,38 @@ into English and returning the translation in the verbatim field.
 **Rule:** on any dubbed channel, treat `verbatim` as *evidence of meaning, not
 of wording*, and say so on the card. Reserve "verbatim" as a claim for
 frame-verified strings.
+
+## 2026-09-07 — Gemini reads a futures price axis wrong and *coherently* wrong
+
+**Status: suspected** (one video, three runs; wants a second video before it
+graduates).
+
+On `8O_GIxjhLkc` (Trader Dale, ES short on TradingView Bar Replay) the wide
+pass and a 00:00–01:50 zoom **agreed** that the chart was `ESU2024`, dated
+August 2024, priced 5,580–5,650, and the wide pass put the discrepancy with
+the presenter's spoken "August 17th, 2026" into `uncertainties` as if the
+*presenter* had misspoken. A second zoom (07:20–09:45) read the same chart at
+7,79x–7,80x but assigned the order prices wrongly (entry 7,798.50 / stop
+7,801 / target 7,795). Frames (`frames-000-020/f_0006.jpg`,
+`frames-900-935/f_0009.jpg`, `f_0016.jpg`) show `ESU2026 · Sep 2026`, replay
+clock `Mon 17 Aug '26`, entry 7,795.50, stop 7,800.00 (−225 USD), target
+7,790.00 (+275 USD). Every one of Gemini's ES price sets was wrong or
+misassigned; the disclaimer text, the dollar figures and the toast wording
+were right.
+
+Two things worth carrying:
+
+- **Agreement between runs is not verification when both runs read the same
+  low-resolution axis.** Two runs invented the same plausible 2024 price
+  regime for an ES chart near 7,800. Doctrine step 4's "numbers satisfying
+  independent equations" still holds — the fabricated set did not close
+  against the $225 / $275 labels, and that is what flagged it.
+- **The `uncertainties` field can assert a false discrepancy.** It has been
+  honest about *declining* fine print; here it confidently misdiagnosed which
+  side of a conflict was wrong. Treat an uncertainty that blames the presenter
+  for a date or price as a frame request, not a finding.
+
+**Rule (proposed):** on any futures chart, price-axis and order-ticket
+readings from YouTube-URL ingestion are unverified until framed, whatever the
+run count. Zoom on the ticket, pull frames, read the dollar labels and close
+the arithmetic at the contract multiplier.
