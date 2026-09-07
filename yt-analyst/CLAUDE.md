@@ -66,6 +66,20 @@ corrections with the audit entry inline). `python3 build_corpus.py &&
 python3 build_reader.py` regenerates it after any card or read change; it is
 gitignored and published as an Artifact.
 
+**Steve's notes and questions live in the reader's artifact database.** Double-
+clicking a paragraph in `reader.html` stores a document in the collection
+`notes` of the published artifact (URL in bead dr-gm5 / dr-cwl): fields
+`kind` (`note` | `question`), `text`, `video`, `title`, `section`, `excerpt`
+(the anchored paragraph), `created`, `response` (null until answered). At the
+start of a session, look for open questions with the Artifact tool:
+`action: read_db`, `db_op: query`, `collection: notes`, `query.where:
+[["kind","==","question"],["response","==",null]]`. Answer by `write_db`,
+`db_op: update`, `data: {"response": {"text": "…", "at": "<ISO date>", "by":
+"agent"}}` — the page renders it under Steve's question, labelled AGENT.
+Answers follow the interrogation doctrine: cite the card, pull frames when the
+question is about a number, never guess. Notes (`kind: note`) are Steve's own
+and are read, not answered, unless he asks.
+
 `build_corpus.py` flattens every card into one `corpus.json` — the data layer
 the card-reader UI is built on. Per card: header metadata (title, channel,
 uploaded, duration, views, status, bead, playlist, run count), every curated

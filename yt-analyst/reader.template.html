@@ -180,6 +180,38 @@ h1.title { font-size: 24px; line-height: 1.2; font-weight: 600; margin: 0 0 8px 
   .topbar { display: flex; gap: 8px; margin-bottom: 12px; }
 }
 .iconbtn { display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; border: 1px solid var(--rule); border-radius: 2px; color: var(--muted); font-size: 12px; }
+/* annotations */
+.annotatable { cursor: text; }
+.anno-glyph { display: inline-flex; align-items: center; gap: 3px; vertical-align: baseline; margin-left: 6px; padding: 0 5px; border: 1px solid var(--rule); border-radius: 2px; font-family: var(--mono); font-size: 10px; line-height: 1.6; color: var(--accent); background: var(--panel); position: relative; top: -1px; }
+.anno-glyph.q { color: var(--corr); }
+.anno-glyph .n { font-weight: 500; }
+.anno-glyph .resp { width: 5px; height: 5px; border-radius: 50%; background: var(--v); }
+.anno-glyph:hover { border-color: currentColor; }
+.anno-panel { margin: 6px 0 12px 0; border-left: 2px solid var(--rule); padding: 2px 0 2px 14px; display: flex; flex-direction: column; gap: 10px; max-width: 720px; }
+.anno-entry { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; font-size: 13.5px; line-height: 1.55; }
+.anno-entry .who { font-family: var(--mono); font-size: 10.5px; text-align: right; padding-top: 3px; color: var(--accent); font-weight: 500; }
+.anno-entry.q .who { color: var(--corr); }
+.anno-entry .body { white-space: pre-wrap; color: var(--ink); }
+.anno-entry .when { font-family: var(--mono); font-size: 10.5px; color: var(--muted); margin-top: 2px; display: flex; gap: 10px; }
+.anno-entry .when button { color: var(--muted); text-decoration: underline dotted; }
+.anno-entry .when button:hover { color: var(--ink); }
+.anno-resp { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; background: var(--tint); padding: 8px 0; margin-top: 6px; font-size: 13.5px; line-height: 1.55; }
+.anno-resp .who { font-family: var(--mono); font-size: 10.5px; text-align: right; padding-top: 3px; color: var(--v); font-weight: 500; }
+.anno-resp .body { padding-right: 12px; white-space: pre-wrap; color: var(--ink2); }
+.anno-pending { color: var(--muted); font-size: 12px; font-style: italic; }
+.anno-compose { margin: 8px 0 12px 0; padding: 10px 12px; border: 1px solid var(--rule); background: var(--panel); display: flex; flex-direction: column; gap: 8px; max-width: 720px; }
+.anno-compose .kinds { display: flex; gap: 6px; }
+.anno-compose .kind { padding: 3px 9px; border: 1px solid var(--rule); border-radius: 2px; font-size: 12px; color: var(--muted); }
+.anno-compose .kind.on { color: var(--ink); border-color: var(--ink2); background: var(--tint); }
+.anno-compose textarea { font: inherit; font-size: 13.5px; line-height: 1.5; color: var(--ink); background: var(--panel); border: 1px solid var(--rule); border-radius: 2px; padding: 6px 8px; min-height: 68px; resize: vertical; }
+.anno-compose .row { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted); }
+.anno-compose .row .grow { flex: 1; }
+.anno-compose .btn { padding: 3px 10px; border: 1px solid var(--rule); border-radius: 2px; font-size: 12px; color: var(--ink2); }
+.anno-compose .btn.primary { color: var(--panel); background: var(--accent); border-color: var(--accent); }
+.anno-compose .btn.primary:hover { background: var(--accent-ink); }
+.anno-hint { font-size: 11.5px; color: var(--muted); margin: 8px 0 0 0; }
+.anno-orphans { margin-top: 28px; border-top: 1px solid var(--rule); padding-top: 10px; max-width: 720px; }
+.anno-orphans .ex { color: var(--muted); font-size: 12px; font-style: italic; }
 @media (prefers-reduced-motion: reduce) { .bandhead svg { transition: none; } }
 </style>
 
@@ -554,6 +586,7 @@ function renderRail(c) {
       '<div class="kv"><span>Editor asides</span><span class="mono">' + c.read.asides.length + '</span></div></div>';
   }
 
+  h += '<div class="rsec"><span class="lbl">Your notes</span><div id="rail-notes"></div><div style="color:var(--muted);font-size:11.5px">Double-click any paragraph to add a note or a question.</div></div>';
   h += '<div class="rsec"><span class="lbl">Card</span>' +
     (c.playlist ? '<div class="kv"><span>Playlist</span><span class="mono" style="text-align:right">' + inline(c.playlist, c.id) + '</span></div>' : "") +
     (c.bead ? '<div class="kv"><span>Bead</span><span class="mono">' + esc(c.bead) + '</span></div>' : "") +
@@ -580,7 +613,7 @@ function renderHome() {
   const reads = cards.filter(c => c.read).sort(SORTS.uploaded);
   let h = '<div class="topbar narrow-only"><button class="iconbtn" id="openLib">Library</button></div><div class="home">' +
     '<h1>Reading the yt-analyst corpus</h1>' +
-    '<p style="color:var(--ink2);max-width:720px;margin:0">Two layers. The card is the agent-facing record, dense and provenance-marked. The read is composed from the presenter’s transcript in four levels, and composing it audited the card. Drop from any claim to the presenter’s own words: that is the move that caught every error the audit found.</p>' +
+    '<p style="color:var(--ink2);max-width:720px;margin:0">Two layers. The card is the agent-facing record, dense and provenance-marked. The read is composed from the presenter’s transcript in four levels, and composing it audited the card. Drop from any claim to the presenter’s own words: that is the move that caught every error the audit found. Double-click any paragraph to leave a note or ask the agent a question; a marker stays on the paragraph.</p>' +
     '<div class="stats">' +
     '<div class="stat"><div class="v">' + DATA.counts.cards + '</div><div class="k">videos</div></div>' +
     '<div class="stat"><div class="v">' + DATA.counts.reads + '</div><div class="k">reads composed</div></div>' +
@@ -609,6 +642,143 @@ function renderHomeRail() {
     '<div class="rsec"><span class="lbl">Evidence grades</span><div style="color:var(--ink2)">In descending order: frame-verified, two-source cross-check, arithmetic, spoken and unverified, paraphrase. A quotation the card cannot trace to a verbatim field is a paraphrase, however it reads.</div></div>';
 }
 
+/* --------------------------------------------------------- annotations --- */
+/* Double-click a paragraph to leave a note or a question for the agent. Entries
+   live in the artifact's shared db (collection "notes"); when the db is not
+   available in this view they fall back to this browser only. Anchors are a
+   hash of route + section + the paragraph's text, so a rewritten paragraph
+   orphans its notes — they are listed at the foot of the page, not lost. */
+const Annos = {
+  db: null, dbReady: false, unsub: null, entries: [], byAnchor: {}, open: {},
+  init() {
+    const p = (window.claude && typeof window.claude.use === "function") ? window.claude.use("db") : Promise.resolve(null);
+    p.then(db => { this.db = db; this.dbReady = true; this.subscribe(); }).catch(() => { this.dbReady = true; this.subscribe(); });
+  },
+  hash(str) { let h = 5381; for (let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0; return (h >>> 0).toString(36); },
+  routeKey() { const r = state.route || {}; return r.kind === "v" ? "v:" + r.id : r.kind === "d" ? "d:" + r.id : "home"; },
+  paraText(el) { return (el.textContent || "").replace(/\s+/g, " ").trim().replace(/\s*(watch at \d{1,2}:\d{2})\s*$/, ""); },
+  anchorFor(el) {
+    const band = el.closest(".band"); const section = band ? band.dataset.band : (el.closest(".l0") ? "l0" : "head");
+    const text = this.paraText(el).replace(/[\d]+ (notes?|questions?)$/, "").trim();
+    return "a" + this.hash(this.routeKey() + "|" + section + "|" + text.slice(0, 240));
+  },
+  paragraphs() {
+    return Array.from(document.querySelectorAll("#main .prose > p, #main .prose li, #main .prose blockquote > p, #main .q > p, #main .aside .body > p, #main .l0 > span:last-child, #main .prose td"))
+      .filter(el => !el.closest(".anno-compose, .anno-panel, .anno-orphans") && this.paraText(el).length > 20);
+  },
+  /* ---- storage ---- */
+  localAll() { return load("notes", []); },
+  localSave(arr) { save("notes", arr); },
+  subscribe() {
+    if (this.unsub) { this.unsub(); this.unsub = null; }
+    const route = this.routeKey();
+    if (this.db) {
+      try {
+        this.unsub = this.db.collection("notes").where("route", "==", route).onSnapshot(
+          snap => { this.entries = snap.docs.filter(d => d.exists).map(d => Object.assign({ id: d.id }, d.data())); this.apply(); },
+          err => { this.entries = []; this.apply(); });
+      } catch (e) { this.entries = []; this.apply(); }
+    } else {
+      this.entries = this.localAll().filter(e => e.route === route); this.apply();
+    }
+  },
+  async put(entry) {
+    if (this.db) { await this.db.collection("notes").doc(entry.id).set(entry); }
+    else { const all = this.localAll().filter(e => e.id !== entry.id); all.push(entry); this.localSave(all); this.subscribe(); }
+  },
+  async remove(id) {
+    if (this.db) { await this.db.collection("notes").doc(id).delete(); }
+    else { this.localSave(this.localAll().filter(e => e.id !== id)); this.subscribe(); }
+  },
+  /* ---- rendering ---- */
+  apply() {
+    document.querySelectorAll("#main .anno-glyph, #main .anno-panel, #main .anno-orphans").forEach(n => n.remove());
+    this.byAnchor = {};
+    for (const e of this.entries) (this.byAnchor[e.anchor] = this.byAnchor[e.anchor] || []).push(e);
+    const seen = new Set();
+    for (const el of this.paragraphs()) {
+      el.classList.add("annotatable");
+      const a = this.anchorFor(el); const list = this.byAnchor[a]; if (!list) continue;
+      seen.add(a);
+      list.sort((x, y) => (x.created || "").localeCompare(y.created || ""));
+      const nQ = list.filter(e => e.kind === "question").length, nN = list.length - nQ, answered = list.some(e => e.response && e.response.text);
+      const g = document.createElement("button"); g.className = "anno-glyph" + (nQ && !nN ? " q" : ""); g.setAttribute("aria-expanded", !!this.open[a]);
+      g.title = (nN ? nN + " note" + (nN === 1 ? "" : "s") : "") + (nN && nQ ? ", " : "") + (nQ ? nQ + " question" + (nQ === 1 ? "" : "s") : "") + (answered ? ", answered" : "");
+      g.innerHTML = (nN ? this.penIcon() : "") + (nQ ? this.qIcon() : "") + '<span class="n">' + list.length + '</span>' + (answered ? '<span class="resp"></span>' : "");
+      g.addEventListener("click", ev => { ev.stopPropagation(); this.open[a] = !this.open[a]; this.apply(); });
+      el.appendChild(g);
+      if (this.open[a]) el.insertAdjacentElement("afterend", this.panel(a, list, el));
+    }
+    const orphans = this.entries.filter(e => !seen.has(e.anchor));
+    if (orphans.length) {
+      const o = document.createElement("section"); o.className = "anno-orphans";
+      o.innerHTML = '<div class="lbl" style="margin-bottom:8px">Notes whose paragraph has changed <span class="mono" style="font-weight:400;letter-spacing:0">' + orphans.length + '</span></div>';
+      for (const e of orphans) { const d = document.createElement("div"); d.style.marginBottom = "12px"; d.innerHTML = '<div class="ex">“' + esc((e.excerpt || "").slice(0, 160)) + '…”</div>'; d.appendChild(this.entryEl(e)); o.appendChild(d); }
+      document.getElementById("main").appendChild(o);
+    }
+    const rail = document.getElementById("rail-notes");
+    if (rail) { const q = this.entries.filter(e => e.kind === "question"); const open = q.filter(e => !(e.response && e.response.text));
+      rail.innerHTML = '<div class="kv"><span>Notes</span><span class="mono">' + (this.entries.length - q.length) + '</span></div><div class="kv"><span>Questions</span><span class="mono">' + q.length + (open.length ? " · " + open.length + " open" : "") + '</span></div>' +
+        (this.dbReady && !this.db ? '<div style="color:var(--muted);font-size:11.5px">Stored in this browser only; the agent cannot see them here.</div>' : ""); }
+  },
+  panel(anchor, list, el) {
+    const p = document.createElement("div"); p.className = "anno-panel";
+    for (const e of list) p.appendChild(this.entryEl(e));
+    const add = document.createElement("button"); add.className = "anno-hint"; add.textContent = "Add another (or double-click the paragraph)"; add.addEventListener("click", () => this.compose(el, anchor));
+    p.appendChild(add);
+    return p;
+  },
+  entryEl(e) {
+    const d = document.createElement("div"); d.className = "anno-entry" + (e.kind === "question" ? " q" : "");
+    const who = '<span class="who">' + (e.kind === "question" ? "STEVE ?" : "STEVE") + '</span>';
+    const when = '<div class="when"><span>' + esc(fmtDate(e.created)) + '</span><button data-del="' + esc(e.id) + '">delete</button></div>';
+    let resp = "";
+    if (e.response && e.response.text) resp = '<div class="anno-resp"><span class="who">AGENT</span><div class="body">' + esc(e.response.text) + (e.response.at ? '<div class="when" style="color:var(--muted)">' + esc(fmtDate(e.response.at)) + '</div>' : "") + '</div></div>';
+    else if (e.kind === "question") resp = '<div class="anno-pending">Awaiting the agent’s answer.</div>';
+    d.innerHTML = who + '<div><div class="body">' + esc(e.text) + '</div>' + when + resp + '</div>';
+    d.querySelector("[data-del]").addEventListener("click", () => { if (confirm("Delete this " + e.kind + "?")) this.remove(e.id); });
+    return d;
+  },
+  compose(el, anchor) {
+    document.querySelectorAll(".anno-compose").forEach(n => n.remove());
+    anchor = anchor || this.anchorFor(el);
+    const box = document.createElement("div"); box.className = "anno-compose";
+    let kind = "note";
+    box.innerHTML = '<div class="kinds"><button class="kind on" data-kind="note">Note</button><button class="kind" data-kind="question">Question to agent</button></div>' +
+      '<textarea placeholder="Anchored to this paragraph." aria-label="Your text"></textarea>' +
+      '<div class="row"><span class="hint">' + (this.dbReady && !this.db ? "Saved in this browser only." : "Shared with the agent.") + '</span><span class="grow"></span><button class="btn" data-act="cancel">Cancel</button><button class="btn primary" data-act="save">Save</button></div>';
+    box.querySelectorAll(".kind").forEach(b => b.addEventListener("click", () => { kind = b.dataset.kind; box.querySelectorAll(".kind").forEach(x => x.classList.toggle("on", x === b)); box.querySelector("textarea").focus(); }));
+    const ta = box.querySelector("textarea");
+    const close = () => box.remove();
+    const saveIt = async () => {
+      const text = ta.value.trim(); if (!text) { ta.focus(); return; }
+      const c = state.route.kind === "v" ? byId[state.route.id] : null;
+      const band = el.closest(".band");
+      const entry = { id: anchor + "-" + Date.now().toString(36), anchor, route: this.routeKey(), video: c ? c.id : null, title: c ? shortTitle(c) : (state.route.kind === "d" ? state.route.id : "home"),
+        section: band ? band.dataset.band : "head", kind, text, excerpt: this.paraText(el).slice(0, 300), created: new Date().toISOString(), response: null };
+      box.querySelector("[data-act=save]").disabled = true;
+      this.open[anchor] = true;
+      try { await this.put(entry); close(); }
+      catch (err) { box.querySelector(".hint").textContent = "Could not save (" + (err && err.code || "error") + "). Try again."; box.querySelector("[data-act=save]").disabled = false; }
+    };
+    box.querySelector("[data-act=cancel]").addEventListener("click", close);
+    box.querySelector("[data-act=save]").addEventListener("click", saveIt);
+    ta.addEventListener("keydown", ev => { if (ev.key === "Escape") close(); if ((ev.ctrlKey || ev.metaKey) && ev.key === "Enter") saveIt(); });
+    const after = el.nextElementSibling && el.nextElementSibling.classList.contains("anno-panel") ? el.nextElementSibling : el;
+    after.insertAdjacentElement("afterend", box);
+    ta.focus();
+  },
+  penIcon() { return '<svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 10l1-3 5.5-5.5 2 2L5 9z"></path></svg>'; },
+  qIcon() { return '<svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 4.5a2 2 0 1 1 2.7 1.9c-.5.2-.7.6-.7 1.1"></path><circle cx="6" cy="9.6" r=".5" fill="currentColor"></circle></svg>'; },
+};
+document.getElementById("main").addEventListener("dblclick", ev => {
+  if (ev.target.closest("a, button, textarea, .anno-compose, .anno-panel")) return;
+  const el = ev.target.closest("#main .prose > p, #main .prose li, #main .prose blockquote > p, #main .q > p, #main .aside .body > p, #main .l0 > span:last-child, #main .prose td");
+  if (!el || Annos.paraText(el).length <= 20) return;
+  ev.preventDefault(); const sel = window.getSelection && window.getSelection(); if (sel && sel.removeAllRanges) sel.removeAllRanges();
+  Annos.compose(el);
+});
+
 /* ------------------------------------------------------------- routing --- */
 function parseRoute() {
   const hsh = location.hash.replace(/^#\/?/, "");
@@ -628,6 +798,7 @@ function render() {
   renderLib();
   wire();
   const on = document.querySelector("#lib .row.on"); if (on) on.scrollIntoView({ block: "nearest" });
+  Annos.open = {}; Annos.subscribe();
 }
 
 function wire() {
@@ -645,6 +816,7 @@ function wire() {
   document.getElementById("main").addEventListener("click", () => { document.getElementById("lib").classList.remove("open"); document.getElementById("rail").classList.remove("open"); }, { once: true });
 }
 
+Annos.init();
 window.addEventListener("hashchange", render);
 if (!location.hash) { const last = load("route", ""); if (last) location.hash = last; }
 render();
