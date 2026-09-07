@@ -1,6 +1,6 @@
 # Read: Master Orderflow Trading: The Ultimate Step-by-Step Guide 2026
 
-> **The corpus's cleanest one-line definition of order flow, and its widest calibration of what a large resting order looks like market by market: 325 contracts on the S&P, single digits on the DAX, thousands a side in bonds, twos and fours in gold.**
+> **The corpus's cleanest one-line definition of order flow, and its live calibration of what a large resting order looks like on the S&P: a 325-contract ask the market runs to, against the channel's stated threshold of over 250 to 300.**
 
 - **Channel:** Tom Vorwald EN / WorldClassEdge · **Uploaded:** 2026-07-01 · **Duration:** 12:03
 - **Card:** [CARD.md](CARD.md) · **Watch:** https://www.youtube.com/watch?v=vl01TiVTuoQ
@@ -14,11 +14,11 @@ aggressively. It climbs from candlestick to volume to footprint to the live
 book and rests on one premise: liquidity is what the market likes to seek, so
 a large resting order is a destination.
 
-What makes it worth reading is the calibration. He puts the books side by
-side: a 325-contract ask on the S&P, single-digit rows on the DAX, five and
-six thousand a side in the bond futures, twos and fours and sixes in gold.
-"Large" is a per-market quantity, and nothing else in the corpus shows it
-across this many markets at once.
+What makes it worth reading is the calibration. Before a large order means
+anything you must know what large is in your instrument, and he shows it on
+the live S&P book: a 325-contract ask, and the market running to it. "Large"
+is a per-market quantity, and this is the corpus's live demonstration of it
+on the ES.
 
 There is no trade and no risk number. The entry promised in the opening is a
 fill.
@@ -56,13 +56,11 @@ lows. Here, liquidity is resting size you can see in the book. Same word,
 different object, and this video only ever means the visible one.
 
 The method is calibration. Before a large order means anything you must know
-what large is here, so he shows the books: a 325-contract ask on the S&P; a
-DAX ladder of 1, 1, 2, 4, 3, 5, 33; crude oil about as thin as the DAX; bond
-futures with five and six thousand a side; gold offering twos, fours and
-sixes. The channel's heatmap video puts the ES threshold at over 250 to 300
-contracts, and its companion order-flow video shows a 676-contract ES bid and
-a DAX ladder of 2, 4, 8, 11, 7. Together they are the corpus's reference for a
-large resting order, market by market. Carmine does the same for a different
+what large is here, so he shows the book: a 325-contract ask on the S&P, and
+the market running to it. The channel's heatmap video puts the ES threshold at
+over 250 to 300 contracts, and its companion order-flow video shows a
+676-contract ES bid. Together they are the corpus's reference for a large
+resting order on the ES. Carmine does the same for a different
 quantity: in his third episode he disclaims a fixed delta number, then reads
 the session's typical range, 200 to 500, and calls anything over a thousand an
 outlier. Same discipline, different variable: Carmine calibrates aggression,
@@ -178,27 +176,16 @@ no stop and no target.
 > "Here we're seeing the living book right now. Here you can now wonderfully
 > see how the market ticks. What immediately strikes me here is a huge order on
 > the selling side, so on the ask side of the S&P 500. Let's take a look at
-> those. Those are 325 contracts. Let's look at the book for the DAX future.
-> There you already see 1, 1, 2, 4, 3, 5, 33. So, a fraction of the liquidity
-> that is available to us in the S&P 500. So, it's clear to us, okay? Markets
-> like to strive for where there's high liquidity, and you can see it here. This
-> is where this order was processed. That means the market ran exactly to where
-> the liquidity is."
-
-> "And if I look at crude oil here, for example, similar to DAX future right
-> now in terms of liquidity, then I already see much, much smaller numbers. That
-> means if I were to see a 100 block here, for example, then I know, oh, a large
-> trader has an ambition to be filled. So, he wants someone to buy his position
-> from him."
+> those. Those are 325 contracts. [...] Markets like to strive for where
+> there's high liquidity, and you can see it here. This is where this order was
+> processed. That means the market ran exactly to where the liquidity is."
 
 > **Editor —** The companion video on this channel names this front-running: a
 > large resting order acts as a magnet and price is drawn to it. It is the one
 > element of this channel's order-flow method that Carmine never uses; he fades
 > absorption at a level and does not trade toward size. Note that one fill on
 > one live book is a demonstration, not evidence, and no count of reached
-> versus pulled is ever offered. Two caveats on the numbers: the crude-oil
-> "100 block" is a caption reading the card has not checked, and the last DAX
-> figure is heard as "33" by one transcription and "3, 3" by the other.
+> versus pulled is ever offered.
 
 **Thin areas and fast moves** *(04:45)*
 
@@ -291,34 +278,6 @@ no stop and no target.
 > does supply is a retest rule in all but name: price holding above the filled
 > level with buying still fast is the level being defended, which is Carmine's
 > "pullbacks hold" test on a block rather than a breakout.
-
-**The scalper's desk** *(09:01)*
-
-> "And here you can get an impression of what a desk looks like, for example,
-> for an order book scalper. He has many markets here. Crude oil, Russell,
-> Nasdaq, S&P, DAX future, Euro Stoxx. And so on and so forth. Here we have
-> gold. Here we have Bund future. Here we have ZN and all these values, as you
-> can see in the books, 5,000, 6,000 positions in the bid and the ask. Now, we
-> have something completely different here as a counterpart, for example.
-> Let's take the gold price, for instance. And here you see contract sizes that
-> are offered for buying and selling of two or four or six. That is of course,
-> well, let's say a massive difference."
-
-> "And if you want to learn to read how a book really works, then I can
-> recommend taking liquid markets such as bonds, such as ZN, such as the Euro
-> Stoxx, such as the corresponding currency futures like 6E, 6B, which is a bit
-> more illiquid. There you can learn to act with the corresponding large market
-> participants. You can learn to read there how is it, at what speed is it.
-> When you hit into the markets, you'll notice that there are speeds. Some of
-> these speeds are high speeds, while others are low speeds."
-
-> **Editor —** Assembled across this video and its companion, the corpus's
-> reference for "large" now reads: S&P, a 325 ask here and a 676 bid there,
-> against a stated threshold of over 250 to 300; DAX, 1, 1, 2, 4, 3, 5, 33 here
-> and 2, 4, 8, 11, 7 there; Bund and ZN, five and six thousand a side; gold,
-> twos, fours and sixes. No other source in the corpus puts these side by side.
-> The advice to learn the book on the deep markets first follows directly: in a
-> book that thick, a real order stands out and a single trader cannot move it.
 
 **The strategy, and what to do when it fails** *(10:23)*
 

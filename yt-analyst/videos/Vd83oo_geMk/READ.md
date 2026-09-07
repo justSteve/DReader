@@ -170,8 +170,7 @@ mechanism unnamed — no shared citation, one concept.
 **The book array** *(04:13)*
 
 > "Here you have the corresponding volume profile for each respective market.
-> This one is ZM. That's CL, that's the Russell, Nasdaq, S&P, FDAX, and so on.
-> Now, you can see here for each pair, we currently have 20 orders visible
+> [...] Now, you can see here for each pair, we currently have 20 orders visible
 > above and below the market. And of course, there are stories like in heat
 > maps where you can see a lot more and so on. Yes, that's the case with us
 > too. You just have to set it up yourself."

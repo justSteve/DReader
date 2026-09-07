@@ -28,3 +28,6 @@ design/reading-ui/yt-analyst-reads.html
 
 # assembled reading interface — rerun `python3 build_reader.py`
 reader.html
+
+# YouTube cover images for the reader banner — rerun `python3 fetch_thumbs.py`
+videos/*/thumb.jpg

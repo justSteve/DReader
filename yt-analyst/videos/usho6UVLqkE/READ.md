@@ -1,17 +1,17 @@
 # Read: The Orderflow System that 95% of Traders do NOT know
 
-> **The order book read live, market by market, and the corpus's first setup that trades toward a large resting order instead of fading it: front-running the magnet.**
+> **The order book read live, and the corpus's first setup that trades toward a large resting order instead of fading it: front-running the magnet.**
 
 - **Channel:** Tom Vorwald EN / WorldClassEdge · **Uploaded:** 2025-11-27 · **Duration:** 17:43
 - **Card:** [CARD.md](CARD.md) · **Watch:** https://www.youtube.com/watch?v=usho6UVLqkE
 
 ## In brief
 
-A German order-flow desk teaches the DOM from four live books. The presenter
+A German order-flow desk teaches the DOM from the live book. The presenter
 starts with what the book is, resting limit orders on both sides with the
 day's volume profile beside them, and insists that before you read one you
-have to know what a normal size is in that instrument: three contracts at a
-Russell level, blocks of 74 and 48 on the ES, single digits on the DAX. Then
+have to know what a normal size is in that instrument: on the ES, resting
+blocks of 74 and 48 are ordinary furniture. Then
 he shows a 676-contract bid against a background of small resting orders and
 argues that an order of that size is a magnet. The market is drawn toward it,
 and the setup he calls front-running trades that pull. He watches the order
@@ -32,13 +32,12 @@ same ladder with volume-at-price and delta columns; this one carries the
 day's profile down its edge. High volume on it means acceptance; low volume
 means the market rushed through.
 
-The first practical contribution is calibration. He puts four books side by
-side and asks what one large market sell would do to the Russell: sweep the
-bids downward until it is filled. So "you also need to know what order sizes
-are reasonable in such a book for the respective instrument." Three limit
-buys at 2247.1 on the Russell. Sell blocks of 74 and 48 on the ES. A DAX
-ladder of single digits and an eleven, "much, much, much, much less going
-on." The step-by-step guide on this channel runs the same exercise with a
+The first practical contribution is calibration. He asks what one large
+market sell would do to a thin book: sweep the bids downward until it is
+filled. So "you also need to know what order sizes are reasonable in such a
+book for the respective instrument." On the ES, sell blocks of 74 and 48,
+"much larger during the main trading hours." The step-by-step guide on this
+channel runs the same exercise with a
 325-contract ES ask, and the heatmap video supplies the threshold that turns
 observation into a rule: a single standalone ES order has to be over 250 to
 300 contracts before it counts as truly large. Against that number, 74 and 48
@@ -126,15 +125,11 @@ close, is what this presenter calls speed.
 > ladder with volume-at-price columns on each side and a delta column; this
 > one puts the day's profile beside the price instead.
 
-**Four books, and what one market order does** *(02:31)*
+**What one market order does** *(02:31)*
 
-> "Here, I've placed four order books side by side for you, and I want to
-> show you what we can observe in these books. The first one, let's take this
-> one here, is the Russell. Here, for example, we currently see at the price
-> level 2,247.1, there are three limit orders. So, traders who want to buy at
-> that price in the book. Then, as we look further down to the respective
-> price levels, we can see how many orders are waiting in the book to be
-> bought. What does that mean? That means if someone now goes and sells at
+> "[...] as we look further down to the respective price levels, we can see
+> how many orders are waiting in the book to be bought. What does that mean?
+> That means if someone now goes and sells at
 > market, right here, these orders will be filled. And if, for example,
 > someone were to sell 100 contracts at market, what would happen then? In
 > the end, he would basically wipe out the entire book downwards until 100
@@ -145,35 +140,29 @@ close, is what this presenter calls speed.
 > want to read order books, you also need to know what order sizes are
 > reasonable in such a book for the respective instrument."
 
-**ES against DAX** *(03:43)*
+**Blocks on the ES** *(03:43)*
 
-> "You can see this quite well if you compare the S&P 500, which is this one
-> here, and the DAX future, which is this one here. For example, you can
-> immediately see here on the sell side where predefined limit sell orders
-> have been placed in the book. There are sometimes blocks of 74 contracts or
-> 48 contracts. This can be much larger during the main trading hours of the
-> S&P 500. In the DAX, for example, you see here there are two contracts,
-> four contracts, four contracts, eight contracts, 11 contracts, seven
-> contracts. There is much, much, much, much less going on. This means there
-> are far fewer traders who want to sell at these price levels. And on the
-> buy side at the lower prices, you see exactly the same thing. And that
-> means if you want to scalp using the order book, if you want to use the
-> order book to your advantage, you absolutely have to first get to know
-> which key figures are actually necessary for the relevant instrument."
+> "You can see this quite well [...] the S&P 500, which is this one here.
+> For example, you can immediately see here on the sell side where predefined
+> limit sell orders have been placed in the book. There are sometimes blocks
+> of 74 contracts or 48 contracts. This can be much larger during the main
+> trading hours of the S&P 500. [...] if you want to scalp using the order
+> book, if you want to use the order book to your advantage, you absolutely
+> have to first get to know which key figures are actually necessary for the
+> relevant instrument."
 
 > **Editor —** This is the channel's per-market calibration, and it is the
-> most reusable thing on it. The step-by-step guide shows a single 325 ES ask,
-> a DAX ladder of the same order as this one, and bond futures with 5,000 to
-> 6,000 a side; the heatmap video sets the bar for "truly large" at over 250
-> to 300 ES contracts, isolated and on its own. The DAX ladder here is spoken,
-> not read off a frame, and he says "four contracts" twice.
+> most reusable thing on it. The step-by-step guide shows a single 325 ES ask;
+> the heatmap video sets the bar for "truly large" at over 250 to 300 ES
+> contracts, isolated and on its own. The block sizes here are spoken, not
+> read off a frame.
 
 **The profile inside the book** *(04:45)*
 
 > "The next thing you can see in the order book is the so-called volume
 > profile of the corresponding day that you are currently actually looking
 > at. So, you can clearly see here that by far the highest trading volumes
-> were executed in the price range of 2,246.4. These here are the completed
+> were executed in [one] price range. These here are the completed
 > trades that took place on this day. Of course, you can also display the
 > total numbers here, but for me, it's completely sufficient to have the
 > information about where the so-called high volume price areas are. So, I
@@ -181,10 +170,9 @@ close, is what this presenter calls speed.
 > very low volumes? In those areas, the market simply had no interest in
 > lingering and usually rushed through quickly."
 
-> **Editor —** He does not name the instrument in this passage. The peak at
-> 2246.4 sits a few ticks under the 2247.1 level he read on the Russell a
-> minute earlier, so the card's attribution to the Russell is consistent with
-> the price axis. The vocabulary he waves at, "I've already explained this in
+> **Editor —** He does not name the instrument in this passage and the book
+> on screen is not the ES; read it for the method, which is the same on any
+> book. The vocabulary he waves at, "I've already explained this in
 > a volume profile video," is on the channel's two profile videos.
 
 **The order that stands out** *(05:56)*

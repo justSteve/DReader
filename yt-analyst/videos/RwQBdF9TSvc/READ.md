@@ -26,10 +26,9 @@ looks like a hunt is pain: the overweight side runs out of money and sells at
 market into a thin book.
 
 The real data is about that thinness. In the COVID crash the market makers and
-the high-frequency firms withdrew; sometimes 80% of the normal book was
-missing, DAX spreads went to 20 points, and Euro Stoxx depth fell from a few
-hundred contracts a side to single digits. Nothing else in the corpus puts
-numbers on what execution costs do when it matters.
+the high-frequency firms withdrew, and sometimes 80% of the normal book was
+missing. Nothing else in the corpus puts a number on what liquidity does when
+it matters.
 
 ## The argument
 
@@ -89,9 +88,8 @@ each visit consumes orders, reached from the opposite camp.
 **The numbers, and what kind they are.** The stressed-liquidity passage is the
 reason to keep this video. When volatility passes a speed threshold the
 algorithms and high-frequency firms, the biggest liquidity providers there
-are, withdraw: sometimes 80% of the normal book is missing, DAX spreads
-reached 20 points, and a Euro Stoxx book that normally shows, let's say, 300
-to 500 contracts a side went to single digits. It is the corpus's only data on
+are, withdraw: sometimes 80% of the normal book is missing. It is the
+corpus's only data on
 execution costs in a crisis, and every depth assumption in the corpus was
 built in calm markets. The other number is a scale reference: 10,000 ES
 contracts being bought means "something big", though it could be one player or
@@ -411,15 +409,11 @@ other calls the flow.
 > missing."
 
 > **Unmarked speaker** *(26:10)*: "Exactly. And if someone traded during the
-> COVID period, for example, they saw that in the DAX we sometimes had spreads
-> of 20 points. That's no joke. In the Euro Stoxx, which normally has a bid
-> and ask of, let's say, 300 to 500 contracts, sometimes a bit more, sometimes
-> a bit less, we sometimes had single-digit numbers. Yes. And what I want to
-> say with this is, if you simply know and understand this, and you know that
-> these big players are no longer active, then you just have to be very
-> careful. I also know this from those oil trades, which got extremely
-> exciting when oil eventually went into negative territory and so on. In such
-> situations it is simply essential to know the rules of the big players,
+> COVID period, for example, they saw [...] spreads [...] That's no joke.
+> [...] And what I want to say with this is, if you simply know and understand
+> this, and you know that these big players are no longer active, then you
+> just have to be very careful. [...] In such situations it is simply
+> essential to know the rules of the big players,
 > because otherwise there will always be situations in the markets that we
 > can't explain, at least not in that moment. That's why we can only manage
 > our risk. And if you think this is your biggest opportunity, then go
@@ -431,9 +425,9 @@ other calls the flow.
 
 > **Editor —** The corpus's only data on what liquidity does in a crisis. The
 > captions do not separate the speakers across this passage, and the
-> "Exactly" at 26:10 reads like a hand-off, so the 80% and the DAX and Euro
-> Stoxx figures may come from different mouths. Keep the hedges: "sometimes
-> 80%", "let's say, 300 to 500". Every depth-based figure in the corpus, from
+> "Exactly" at 26:10 reads like a hand-off, so the 80% and the spread remarks
+> may come from different mouths. Keep the hedge: "sometimes 80%". Every
+> depth-based figure in the corpus, from
 > Carmine's 1.5-to-3.5-point stops on 30 contracts to this channel's 250-to-300
 > threshold, assumes a book that, on this account, is the first thing to
 > leave. It also feeds the stop-hunt argument from the other side: with the

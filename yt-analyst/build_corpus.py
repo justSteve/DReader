@@ -289,6 +289,10 @@ def build():
                      "chars": len(atext)})
     for c in cards:
         c["audit"] = audit_by_id.get(c["id"], [])
+    edits = ROOT / "EDITS.md"
+    if edits.exists():
+        etext = edits.read_text()
+        refs.append({"file": edits.name, "title": "Scope edits log", "markdown": etext, "chars": len(etext)})
 
     ids = {c["id"] for c in cards}
     edges = [e for e in edges if e["to"] in ids]

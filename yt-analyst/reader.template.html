@@ -135,6 +135,15 @@ h1.title { font-size: 24px; line-height: 1.2; font-weight: 600; margin: 0 0 8px 
 .aside .body p { margin: 0 0 6px 0; } .aside .body p:last-child { margin-bottom: 0; }
 .aside.note { background: var(--tint2); }
 .tsmark { font-family: var(--mono); font-size: 11.5px; color: var(--muted); padding-left: 70px; }
+.wl { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 4px; }
+.wl:hover { color: var(--accent); }
+.wl svg { flex: none; }
+.tsl { font-family: var(--mono); font-size: .92em; color: var(--accent); border-bottom: 1px dotted var(--accent); }
+.banner { display: block; max-width: 780px; margin: 0 0 14px 0; position: relative; }
+.banner img { display: block; width: 100%; max-height: 250px; object-fit: cover; border-radius: 2px; background: var(--tint); }
+.banner .play { position: absolute; right: 10px; bottom: 10px; display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; background: rgba(20,23,28,.72); color: #fff; font-family: var(--mono); font-size: 11px; border-radius: 2px; }
+.grades { display: inline-flex; gap: 6px; font-family: var(--mono); font-size: 10.5px; color: var(--ink2); font-variant-numeric: tabular-nums; }
+.grades span b { font-weight: 500; }
 .toc { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--muted); margin: 0 0 14px 0; max-width: 780px; }
 .toc a { color: var(--ink2); } .toc a .mono { color: var(--muted); font-size: 11px; margin-right: 5px; }
 
@@ -211,6 +220,10 @@ function fmtDur(s) {
   const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = s % 60;
   return (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(x).padStart(2, "0");
 }
+function fmtDate(iso) { const m = String(iso || "").match(/^(\d{4})-(\d{2})-(\d{2})/); return m ? Number(m[2]) + "-" + Number(m[3]) + "-" + m[1].slice(2) : (iso || ""); }
+function gradeStr(c) { const g = c.grades || {}; const parts = []; if (g.clarity) parts.push("C " + g.clarity.display); if (g.alignment) parts.push("A " + g.alignment.display); return parts.join(" · "); }
+function gradesHtml(c) { const g = c.grades || {}; if (!g.clarity && !g.alignment) return ""; return '<span class="grades">' + (g.clarity ? '<span title="Clarity">Clarity <b>' + esc(g.clarity.display) + '</b></span>' : "") + (g.alignment ? '<span title="' + esc(g.alignment.axis) + '">Align <b>' + esc(g.alignment.display) + '</b></span>' : "") + '</span>'; }
+function playIcon() { return '<svg width="9" height="10" viewBox="0 0 9 10" fill="currentColor" aria-hidden="true"><path d="M1 1v8l7-4z"></path></svg>'; }
 function fmtTotal(s) { const h = Math.floor(s / 3600), m = Math.round((s % 3600) / 60); return h + "h" + String(m).padStart(2, "0") + "m"; }
 function shortTitle(c) { return c.title || c.id; }
 function watchAt(c, s) { return "https://www.youtube.com/watch?v=" + c.id + (s ? "&t=" + s + "s" : ""); }
@@ -239,13 +252,23 @@ function inline(s, self) {
   const codes = [];
   s = esc(s);
   s = s.replace(/`([^`]+)`/g, (m, c) => { codes.push(c); return "@@C" + (codes.length - 1) + "@@"; });
+  const links = [];
   s = s.replace(/\[([^\]]*)\]\(([^)\s]+)\)/g, (m, t, h) => {
     h = h.replace(/&amp;/g, "&");
-    if (/^https?:/.test(h)) return '<a href="' + esc(h) + '" target="_blank" rel="noopener">' + t + "</a>";
-    if (h.charAt(0) === "#") return '<a href="#" class="jump" data-anchor="' + esc(h.slice(1)) + '">' + t + "</a>";
-    const r = hrefRoute(h, self);
-    return r ? '<a href="' + r + '" class="xref">' + t + "</a>" : '<span class="ref" title="' + esc(h) + '">' + t + "</span>";
+    let out;
+    if (/^https?:/.test(h)) out = '<a href="' + esc(h) + '" target="_blank" rel="noopener">' + t + "</a>";
+    else if (h.charAt(0) === "#") out = '<a href="#" class="jump" data-anchor="' + esc(h.slice(1)) + '">' + t + "</a>";
+    else { const r = hrefRoute(h, self); out = r ? '<a href="' + r + '" class="xref">' + t + "</a>" : '<span class="ref" title="' + esc(h) + '">' + t + "</span>"; }
+    links.push(out); return "@@L" + (links.length - 1) + "@@";
   });
+  s = s.replace(/\b(20\d\d)-(\d\d)-(\d\d)\b/g, (m, y, mo, d) => Number(mo) + "-" + Number(d) + "-" + y.slice(2));
+  if (self && byId[self]) {
+    s = s.replace(/(^|[^\d:])(\d{1,2}):(\d{2})(?![\d:])/g, (m, pre, a, b) => {
+      const secs = Number(a) * 60 + Number(b);
+      return pre + '<a class="tsl" href="' + watchAt(byId[self], secs) + '" target="_blank" rel="noopener" title="Open the video at ' + a + ":" + b + '">' + a + ":" + b + "</a>";
+    });
+  }
+  s = s.replace(/@@L(\d+)@@/g, (m, i) => links[Number(i)]);
   s = s.replace(/\*\*(Unverified[^*]*)\*\*/g, '<strong class="u">$1</strong>');
   s = s.replace(/\*\*(Verified[^*]*)\*\*/g, '<strong class="v">$1</strong>');
   s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
@@ -332,9 +355,10 @@ function md(src, self) {
 }
 
 /* ------------------------------------------------------------ library --- */
+function gradeNum(c) { const g = c.grades || {}; return (g.alignment ? g.alignment.numeric : 0) + (g.clarity ? g.clarity.numeric : 0); }
 const SORTS = {
   uploaded: (a, b) => (b.uploaded || "").localeCompare(a.uploaded || ""),
-  views: (a, b) => (b.views || 0) - (a.views || 0),
+  grade: (a, b) => gradeNum(b) - gradeNum(a) || SORTS.uploaded(a, b),
   duration: (a, b) => (b.duration_s || 0) - (a.duration_s || 0),
   title: (a, b) => shortTitle(a).localeCompare(shortTitle(b)),
   links: (a, b) => (b.links_in.length + b.links_out.length) - (a.links_in.length + a.links_out.length),
@@ -358,7 +382,7 @@ function renderLib() {
     '<label class="search"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="7" cy="7" r="4.5"></circle><path d="M10.5 10.5 14 14"></path></svg>' +
     '<input id="q" type="search" placeholder="Filter title, channel, id" value="' + esc(state.q) + '" aria-label="Filter"></label>' +
     '<div class="controls"><span>Sort</span><select id="sort" aria-label="Sort">' +
-    [["uploaded", "newest"], ["views", "most viewed"], ["duration", "longest"], ["links", "most linked"], ["title", "title"]].map(([k, v]) => '<option value="' + k + '"' + (state.sort === k ? " selected" : "") + '>' + v + '</option>').join("") +
+    [["uploaded", "newest"], ["grade", "graded first"], ["duration", "longest"], ["links", "most linked"], ["title", "title"]].map(([k, v]) => '<option value="' + k + '"' + (state.sort === k ? " selected" : "") + '>' + v + '</option>').join("") +
     '</select><button class="toggle' + (state.readsOnly ? " on" : "") + '" id="readsOnly" aria-pressed="' + state.readsOnly + '"><span class="dot read"></span>reads only</button></div></div>';
 
   h += '<div class="liblist">';
@@ -377,7 +401,7 @@ function renderLib() {
         h += '<a class="row' + (on ? " on" : "") + '" href="#/v/' + c.id + '" title="' + esc(shortTitle(c)) + '">' +
           '<span class="dot ' + (c.read ? "read" : "card") + '"></span>' +
           '<span class="t">' + esc(shortTitle(c)) + '</span>' +
-          '<span class="d"><span>' + esc(c.uploaded || "") + '</span><span class="grow"></span><span>' + fmtN(c.views) + (c.views != null ? ' views' : '') + '</span><span>' + fmtDur(c.duration_s) + '</span></span></a>';
+          '<span class="d"><span>' + esc(fmtDate(c.uploaded)) + '</span><span class="grow"></span><span>' + esc(gradeStr(c)) + '</span><span>' + fmtDur(c.duration_s) + '</span></span></a>';
       }
     }
     h += '</div>';
@@ -416,7 +440,7 @@ function renderLibKeepFocus() {
 }
 
 /* ------------------------------------------------------------- reader --- */
-function bandOpen(key) { return !state.closedBands[key]; }
+function bandOpen(key) { return key in state.closedBands ? !state.closedBands[key] : key !== "card"; }
 function band(key, label, extra, body, cls) {
   const open = bandOpen(key);
   return '<section class="band' + (open ? "" : " closed") + (cls ? " " + cls : "") + '" data-band="' + esc(key) + '">' +
@@ -442,7 +466,7 @@ function renderPassage(c, p, idx) {
       (p.ts_s != null ? '<a href="' + watchAt(c, p.ts_s) + '" target="_blank" rel="noopener">watch ' + esc(p.ts) + '</a>' : "") + '</div></div>';
   }
   for (const b of p.blocks) {
-    if (b.kind === "quote") h += '<div class="qrow"><span></span><div class="q">' + md(b.markdown, c.id) + '</div></div>';
+    if (b.kind === "quote") h += '<div class="qrow"><span></span><div class="q">' + md(b.markdown, c.id) + (p.ts_s != null ? '<a class="wl" href="' + watchAt(c, p.ts_s) + '" target="_blank" rel="noopener">' + playIcon() + 'watch at ' + esc(p.ts) + '</a>' : "") + '</div></div>';
     else if (b.kind === "aside") h += '<div class="aside"><span class="who">EDITOR</span><div class="body">' + md(b.markdown, c.id) + '</div></div>';
     else {
       const t = b.markdown.trim();
@@ -458,10 +482,11 @@ function renderPassage(c, p, idx) {
 function renderVideo(c) {
   const r = c.read;
   let h = '<div class="topbar narrow-only"><button class="iconbtn" id="openLib">Library</button><button class="iconbtn" id="openRail">Context</button></div>';
+  if (c.thumb) h += '<a class="banner" href="' + watchAt(c) + '" target="_blank" rel="noopener" title="Open the video on YouTube"><img src="data:image/jpeg;base64,' + c.thumb + '" alt="Cover image of the video"><span class="play">' + playIcon() + 'watch on YouTube</span></a>';
   h += '<div class="meta"><span class="mono">' + esc(c.id) + '</span><span class="sep">·</span><span>' + esc(c.channel_key || "") + '</span>' +
-    (c.uploaded ? '<span class="sep">·</span><span class="mono">' + esc(c.uploaded) + '</span>' : "") +
+    (c.uploaded ? '<span class="sep">·</span><span class="mono">' + esc(fmtDate(c.uploaded)) + '</span>' : "") +
     (c.duration_s != null ? '<span class="sep">·</span><span class="mono">' + fmtDur(c.duration_s) + '</span>' : "") +
-    (c.views != null ? '<span class="sep">·</span><span class="mono">' + fmtN(c.views) + ' views</span>' : "") +
+    (gradesHtml(c) ? '<span class="sep">·</span>' + gradesHtml(c) : "") +
     '<span class="grow"></span>' +
     (c.status ? '<span class="chip">' + esc(c.status) + '</span>' : "") +
     '<span class="chip">' + c.runs + ' run' + (c.runs === 1 ? "" : "s") + '</span>' +
@@ -485,7 +510,7 @@ function renderVideo(c) {
   }
 
   const cardBody = c.sections.map(s => '<h3 id="s-' + slug(s.name) + '">' + esc(s.name) + '</h3>' + md(s.markdown, c.id)).join("");
-  h += band(r ? "card" : "card-only", "Card · agent-facing record", '<span class="mono">' + c.section_names.join(" · ") + ' · ' + Math.round(c.chars / 1000) + 'k chars</span>' +
+  h += band(r ? "card" : "card-only", "Card · agent-facing record, unedited", '<span class="mono">' + c.section_names.join(" · ") + ' · ' + Math.round(c.chars / 1000) + 'k chars</span>' +
     (c.corrections ? '<span class="mono" style="color:var(--corr)">' + c.corrections + ' correction' + (c.corrections === 1 ? "" : "s") + '</span>' : ""),
     '<div class="prose">' + cardBody + '</div>', r ? "" : "");
   return h;
@@ -532,7 +557,7 @@ function renderRail(c) {
   h += '<div class="rsec"><span class="lbl">Card</span>' +
     (c.playlist ? '<div class="kv"><span>Playlist</span><span class="mono" style="text-align:right">' + inline(c.playlist, c.id) + '</span></div>' : "") +
     (c.bead ? '<div class="kv"><span>Bead</span><span class="mono">' + esc(c.bead) + '</span></div>' : "") +
-    (c.first_analyzed ? '<div class="kv"><span>First analyzed</span><span class="mono">' + esc(c.first_analyzed) + '</span></div>' : "") +
+    (c.first_analyzed ? '<div class="kv"><span>First analyzed</span><span class="mono">' + esc(fmtDate(c.first_analyzed)) + '</span></div>' : "") +
     '<div class="kv"><span>Runs</span><span class="mono">' + c.runs + '</span></div>' +
     (c.playlist_refs.length ? '<div>' + c.playlist_refs.map(f => '<a href="#/d/' + esc(f) + '.md">' + esc((byDoc[f + ".md"] || {}).title || f) + '</a>').join("<br>") + '</div>' : "") +
     '</div>';
@@ -550,7 +575,7 @@ function renderHome() {
   const total = cards.reduce((s, c) => s + (c.duration_s || 0), 0);
   const dates = cards.map(c => c.uploaded).filter(Boolean).sort();
   const hubs = cards.slice().sort((a, b) => b.links_in.length - a.links_in.length).slice(0, 6);
-  const viewed = cards.slice().sort(SORTS.views).slice(0, 6);
+  const graded = cards.filter(c => c.grades && Object.keys(c.grades).length).sort(SORTS.grade);
   const corrected = cards.filter(c => c.corrections).sort((a, b) => b.corrections - a.corrections).slice(0, 6);
   const reads = cards.filter(c => c.read).sort(SORTS.uploaded);
   let h = '<div class="topbar narrow-only"><button class="iconbtn" id="openLib">Library</button></div><div class="home">' +
@@ -561,6 +586,7 @@ function renderHome() {
     '<div class="stat"><div class="v">' + DATA.counts.reads + '</div><div class="k">reads composed</div></div>' +
     '<div class="stat"><div class="v">' + DATA.counts.channels + '</div><div class="k">channels</div></div>' +
     '<div class="stat"><div class="v">' + fmtTotal(total) + '</div><div class="k">of video</div></div>' +
+    '<div class="stat"><div class="v">' + DATA.counts.graded + '</div><div class="k">graded</div></div>' +
     '<div class="stat"><div class="v">' + DATA.counts.edges + '</div><div class="k">cross-references</div></div>' +
     '<div class="stat"><div class="v">' + DATA.counts.asides + '</div><div class="k">editor asides</div></div>' +
     '<div class="stat"><div class="v">' + DATA.counts.corrections + '</div><div class="k">corrections in cards</div></div>' +
@@ -568,11 +594,11 @@ function renderHome() {
     '</div>' +
     '<div class="cols">' +
     '<div><div class="lbl" style="margin-bottom:6px">Most referred to</div><div class="list">' + hubs.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + c.links_in.length + ' in</span></a>').join("") + '</div></div>' +
-    '<div><div class="lbl" style="margin-bottom:6px">Most viewed</div><div class="list">' + viewed.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + fmtN(c.views) + '</span></a>').join("") + '</div></div>' +
+    '<div><div class="lbl" style="margin-bottom:6px">Graded, Clarity and Alignment</div><div class="list">' + graded.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + esc(gradeStr(c)) + '</span></a>').join("") + '</div></div>' +
     '<div><div class="lbl" style="margin-bottom:6px;color:var(--corr)">Most corrected</div><div class="list">' + corrected.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + c.corrections + '</span></a>').join("") + '</div></div>' +
-    '<div><div class="lbl" style="margin-bottom:6px">Reads, newest upload first</div><div class="list">' + reads.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + esc(c.uploaded || "") + '</span></a>').join("") + '</div></div>' +
+    '<div><div class="lbl" style="margin-bottom:6px">Reads, newest upload first</div><div class="list">' + reads.map(c => '<a href="#/v/' + c.id + '"><span class="t">' + esc(shortTitle(c)) + '</span><span class="n">' + esc(fmtDate(c.uploaded)) + '</span></a>').join("") + '</div></div>' +
     '</div>' +
-    (dates.length ? '<p style="color:var(--muted);font-size:12px;margin-top:26px">Uploads ' + esc(dates[0]) + ' to ' + esc(dates[dates.length - 1]) + '. Built from the curated cards and reads only; raw model output is never shown.</p>' : "") +
+    (dates.length ? '<p style="color:var(--muted);font-size:12px;margin-top:26px">Uploads ' + esc(fmtDate(dates[0])) + ' to ' + esc(fmtDate(dates[dates.length - 1])) + '. Built from the curated cards and reads only; raw model output is never shown.' + (DATA.counts.excluded ? ' ' + DATA.counts.excluded + ' video' + (DATA.counts.excluded === 1 ? "" : "s") + ' omitted as off-scope; reads are edited to SPX/ES (<a href="#/d/EDITS.md">scope edits log</a>).' : "") + '</p>' : "") +
     '</div>';
   return h;
 }

@@ -179,3 +179,12 @@ creates a silent inconsistency.
 - Read L1 aloud. If it sounds like a database row, rewrite it.
 - Do not touch `CARD.md`. If composing surfaces a factual error in the card,
   report it — do not fix it here and let the two drift.
+
+## Scope: SPX/ES only
+
+The reads serve a trader of the S&P. Detail on any other instrument is cut,
+including passages that make a general order-flow point on a DAX, gold, bond
+or Euro Stoxx example; elide inside quotations with `[...]`, retitle the
+passage if its title named the instrument, and rewrite L0–L2 so no cut figure
+survives there. Log each cut in `yt-analyst/EDITS.md`. `CARD.md` keeps the
+full record; only `READ.md` is scoped.

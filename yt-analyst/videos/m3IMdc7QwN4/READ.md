@@ -48,7 +48,7 @@ minutes. That is one 30-minute block of the profile from
 and the next day opens and shifts its balance up. The participants who played
 here, he says, had an idea, and it was that the price will rise.
 
-The second example is the b, and here he says the letter. Gold sells off
+The second example is the b, and here he says the letter. Price sells off
 aggressively and goes sideways; the sideways phase is acceptance of lower
 prices. He draws the volume profile freehand beside it: low, high, low, more,
 nothing at the bottom. The thin band between the nodes is unfair price traded
@@ -175,10 +175,10 @@ a 2. No slide in the sweep shows a 1 beside either name.
 > that a close high in the range means the buyers who made the move were
 > still in it at the bell.
 
-**The b on gold** *(02:26)*
+**The b** *(02:26)*
 
-> "Let's take the gold chart for this, and we won't ask ourselves the
-> question, what news led to this movement happening, but only that the
+> "[...] we won't ask ourselves the question, what news led to this movement
+> happening, but only that the
 > movement happened. The opposite of the long idea just now, I'd like to
 > present the short side to you. That meant a very aggressive sell-off took
 > place here, and then there was initially a sideways phase here. And this
@@ -188,13 +188,13 @@ a 2. No slide in the sweep shows a 1 beside either name.
 > you can see it again, how wonderfully markets react when the price gets back
 > there. And it's not always like that, but often. But look up here. Up here,
 > this pattern already existed, and here, too, there was aggressive selling.
-> This means that the price of gold has already been aggressively sold off
+> This means that the price [...] has already been aggressively sold off
 > twice in this section here. And that helps us understand that there is
 > selling pressure at present."
 
 > **Editor —** "Not always, but often" is a hedge worth keeping; the channel
-> is not usually this careful. The daily gold chart has the volume profile on
-> the left and the histogram below.
+> is not usually this careful. The daily chart he draws on, which is not the
+> ES, has the volume profile on the left and the histogram below.
 
 **Drawing the profile by hand** *(03:35)*
 
