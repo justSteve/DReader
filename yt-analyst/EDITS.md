@@ -60,10 +60,12 @@ is a DAX session, Euwax Sentiment included. Card and read remain on disk.
 - L3 04:13 "The book array": the instrument roll-call (ZM, CL, Russell,
   Nasdaq, S&P, FDAX) elided; the 20-rows point kept.
 
-## Not yet scoped
+## Scope status
 
-The three playlist syntheses in `playlists/` and the 25 card-only videos still
-carry other-instrument detail; they are shown as written.
+Every in-scope video (44) carries a scoped read as of the 2026-09-07 second
+run; the three playlist syntheses were scoped on 2026-09-08 (entry below).
+The five judgment calls flagged in the second run were reviewed and accepted
+by Steve on 2026-09-08; nothing in this log is awaiting review.
 
 ## 2026-09-07 · second composition run — 27 reads
 
@@ -91,7 +93,7 @@ elision inside a quotation.
   13:15–14:24 Copper cut; 14:26 thin-liquidity kept as theory.
 - **`Ly62G168MkQ`** — chart captions `DAX Futures • 1m • EUREX` (04:36) and
   `Gold Futures • 1m • COMEX` (10:07) omitted; the walk-throughs kept because
-  no instrument or figure is spoken (judgment call, reviewable); 11:13
+  no instrument or figure is spoken (judgment call — accepted by Steve 2026-09-08); 11:13
   "break in" elided per the brief.
 - **`VumVuGnCcFM`** — 02:51 "VWAP for DAX future" elided; 01:25 chart header
   `Inside Dax Future 60 min … Eurex` omitted.
@@ -117,7 +119,7 @@ elision inside a quotation.
   sessions cut, stocks branch kept; 19:08 asset list elided.
 - **`GGe2widuvPs`** — 02:11–02:35 "Bitcoin" elided twice, the
   $50,000/$50,010 arithmetic kept as a whiteboard illustration (judgment
-  call); 05:26–05:51 forex sessions cut, aside restates as Globex overnight vs
+  call — accepted by Steve 2026-09-08); 05:26–05:51 forex sessions cut, aside restates as Globex overnight vs
   cash session; BTC mock figures and "1,200 BTC @ $62,500" not used.
 - **`YwqfGuktXrc`** — 04:40 "ticks or pips" → "ticks [...]".
 - **`d2RzSJC98o8`** — 08:34–08:50 300/50-pip moves elided; BTC mock prices
@@ -134,19 +136,43 @@ elision inside a quotation.
   preview list cut.
 - **`oktlv1rOG9Q`** — hook chart (BTC/USDT 4H, 33k–38k) and 01:57 worked
   candle (O 68,150 / H 69,850.50 / L=C 66,200.10) omitted; 02:48 spoken
-  $50,000→48,000→51,000 kept (no instrument named; reviewable).
+  $50,000→48,000→51,000 kept (no instrument named; accepted by Steve 2026-09-08).
 - **`IUWvHVout94`** — 08:33–09:49 Dow futures short and 09:52–10:48 Nasdaq
   futures long cut entirely; 10:50–14:01 backtesting lead magnet and Flux
   Charts demo cut except the 12:46–12:56 candle-close sentence.
 - **`UL5QOCSKnU0`** — 04:08 "Bitcoin to gold" elided; 04:47–04:57 Bitcoin,
   GBP/USD, gold elided ("two markets were deep in the red"); 05:05–05:11
-  Tesla 120% / gold 74 cut; per-asset non-S&P rows omitted.
+  Tesla 120% / gold 74 cut; per-asset non-S&P rows omitted; the S&P rows
+  stand unframed (accepted by Steve 2026-09-08).
 - **`sASTlqfPg-8`** — 04:25–04:41 1% vs 65% management ownership elided;
   TSLA on-screen omitted. The video is single-name equity and options
   throughout; the strategy's own thresholds were kept as theory
-  (reviewable).
+  (accepted by Steve 2026-09-08).
 - **`vVMJa7dyYWE`** — 36:42–38:20 NinjaTrader/FXCM/IC Markets cut;
   29:51–31:25 pitch cut; forex quiz exhibits carry no spoken pair or pip, so
   nothing to elide; 05:23 ES idea not quoted.
 - **`8O_GIxjhLkc`** — none on scope (entirely ES); pitches and the 04:42
   "15-point range" (not in card) cut.
+
+## 2026-09-08 · playlist syntheses
+
+The syntheses are human-facing in the reader, so the scope rule reaches them.
+Prose is cut without markers; the cuts are logged here.
+
+- **`vorwald-orderflow-sweep.md`** — the numbers table loses the DAX-spread
+  (20 points) and Euro-Stoxx-depth (300–500 → single digits) rows, the
+  COVID-era "up to 80%" row stays; the per-instrument book-calibration
+  paragraph becomes ES-only (325 / 676 / 74 / 48 / 250–300), DAX, bonds and
+  gold dropped; the "score the dated outlooks" item keeps the ES levels
+  (6,850 → 6,300 → 4,600; 6840/6900) and drops BTC, AAPL, GOOGL, TSLA, 6E and
+  Silver. The playlist table keeps its row for the DAX live-trade video: an
+  index entry, no figures, and the video itself stays omitted from the reader.
+- **`smdx-zero-to-advanced-PLU9kIorYkc18.md`** — the Markets paragraph loses
+  the forex, crypto and commodities detail and the capital-based branches of
+  the selection rule, keeping leverage, stocks and "contracts not goods"
+  (matching the `Ex5Dk_wVygw` read); the swing-weighting rule loses its
+  300/50-pip figures (matching `d2RzSJC98o8`). The verification-method notes
+  that mention pip figures as Gemini failure cases are kept: they are about
+  the tool, not the instrument.
+- **`orderflow-series-PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ.md`** — nothing to
+  cut; the Goldman panel is evidence about a firm, not an instrument.

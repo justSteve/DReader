@@ -358,6 +358,10 @@ not earned.
 **2. Class 4 — an unresolved digit.** The DAX ladder is carded `1, 1, 2, 4, 3,
 5, 33`. Captions hear eight digits: *"1 1 2 4 3 5 3 3"*. No frames exist. Now
 recorded as unresolved; a five-second frame pull at 04:00 would settle it.
+**Settled 2026-09-08 by frames** (`videos/vl01TiVTuoQ/frames-356-408/f_0007.jpg`,
+≈04:02): the FDAXM6 ask column reads 1, 1, 2, 4, 3, 4, 5, 3, 3 upward from
+25152 — every level single-digit, the "33" a joined pair. Card corrected; the
+sweep's ladder sentence is now out of scope (EDITS.md 2026-09-08).
 
 **3. Class 1 + terminology.** "Level 3 showing up to 100 orders deep" drops the
 hedge that immediately follows — *"**I don't even know exactly how many** you

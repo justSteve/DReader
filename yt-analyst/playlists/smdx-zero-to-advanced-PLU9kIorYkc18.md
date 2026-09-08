@@ -53,15 +53,13 @@ final liquidity grab below support; "NO SELLERS LEFT — SHARP REVERSAL")
 retail FOMO ("RETAIL FOMO = INSTITUTION'S EXIT LIQUIDITY") → markdown
 ("FASTER THAN THE RISE"). "SAME CYCLE — EVERY MARKET, EVERY TIMEFRAME."
 
-**Markets (2).** Forex ($7T/day, 24/5, OTC, 90 %+ institutional, 100:1
-leverage = "#1 REASON RETAIL LOSES"), crypto (24/7, most volatile,
-80 %+ drawdowns, on-chain transparency), stocks (9:30–4 ET, gap risk,
-the only market with structural buying pressure, information asymmetry),
-commodities (contracts not goods; six drivers; gold = fear
-thermometer, 95 % store of value). Selection rule — four variables,
-CAPITAL · TIME · RISK TOLERANCE · LIFESTYLE: ≤ $5,000 → crypto; $5,000–
-$50,000 + committed session hours → forex; long horizon → stocks; macro
-thinker → commodities. "DEEP ONE > SHALLOW FOUR."
+**Markets (2).** A four-venue tour, kept here only where it bears on an
+index future: leverage is the "#1 REASON RETAIL LOSES"; stocks (9:30–4 ET,
+gap risk, the only market with structural buying pressure, information
+asymmetry); in commodities you trade contracts, not goods. Selection rule —
+four variables, CAPITAL · TIME · RISK TOLERANCE · LIFESTYLE; long horizon →
+stocks; the other branches are off-scope (EDITS.md). "DEEP ONE > SHALLOW
+FOUR."
 
 **Reading candles (4).** Open = start, close = "MOST IMPORTANT PRICE …
 FINAL VERDICT", body = who won and by how much, wicks = failed attempts
@@ -90,8 +88,8 @@ Qualify swings by counting candles each side: 1 = noise · 3 = starting
 to mean something · 5+ = significant; tiers MINOR 1–3 (internal, entry
 timing) · INTERMEDIATE 3–5 (4H/daily analysis) · MAJOR 5+ (HTF anchors,
 the liquidity pools); minimums 4H = 2, daily = 3; max 5–6 swings per
-daily screen; weight by move size (300 pips + 8 candles = major; 50 pips
-+ 2 = minor). Swing magnitude reads momentum ("SWING HIGHS BARELY HIGHER
+daily screen; weight by move size (a large move over 8 candles = major; a
+small one over 2 = minor). Swing magnitude reads momentum ("SWING HIGHS BARELY HIGHER
 = MOMENTUM WEAKENING"). External (daily) structure = direction; internal
 (4H) = when to enter: "INTERNAL BOS IN EXTERNAL DIRECTION = ENTRY
 SIGNAL". Order block = the candle right before a swing point.

@@ -129,8 +129,6 @@ This sweep closes several of those gaps:
 | Value area basis | **68.2% or 70%** | `aursfDVYzUk` 06:31 |
 | Institutional routing time for size | **1.5–2 days** | `aursfDVYzUk` 03:17 |
 | Order-book depth lost in a COVID-scale event | up to **80%** | `RwQBdF9TSvc` 26:04 |
-| DAX spread under that stress | **20 points** | `RwQBdF9TSvc` 26:17 |
-| Euro Stoxx depth under stress | **300–500 → single digits** | `RwQBdF9TSvc` 26:23 |
 
 **Arithmetic check on the framework.** At a 50% hit rate the break-even
 risk-reward is exactly **1.00**, so an average *around* two leaves roughly
@@ -146,10 +144,11 @@ Gemini's claim at 07:18 is `kind: spoken` with `verbatim: null` — a paraphrase
 the **200–300 trades** figure is flatly stated. The gap in the corpus is still
 closed, just less firmly than claimed.
 
-**Per-instrument book calibration** (`vl01TiVTuoQ`, `usho6UVLqkE`) — useful
-because "a big order" means different things per market: ES showed a 325 and a
-676-contract order; DAX prints `1 1 2 4 3 5 3 3` (last digit unresolved) and, spoken, *"two, four, four, eight, 11, seven contracts"*; bond futures
-carry 5,000–6,000 a side; gold shows 2, 4, 6.
+**Book calibration on the ES** (`vl01TiVTuoQ`, `usho6UVLqkE`, `Vd83oo_geMk`) —
+useful because "a big order" is a number, not an adjective: the ES showed a
+325-contract ask and a 676-contract bid, blocks of 74 and 48, and the heatmap
+video's 250–300 threshold for a level worth watching. The other markets he
+calibrates stay on the cards (scope, EDITS.md).
 
 ## Where this channel contradicts the rest of the corpus
 
@@ -428,11 +427,10 @@ evidenced on screen; never a legal name taken from audio.
    ([YmygDgtoxO8](../videos/YmygDgtoxO8/CARD.md) 06:55) — stated, never
    explained. Zoom 06:40–07:30.
 3. **Score the dated outlooks.** [0CrkbfuIhkc](../videos/0CrkbfuIhkc/CARD.md)
-   (ES below 6,850 → 6,300 → 4,600; BTC below 72,000; AAPL below 240; GOOGL
-   above 325 on a close; TSLA below 400) and
-   [Kg6sYKgtkrY](../videos/Kg6sYKgtkrY/CARD.md) (6E 1.1770; ES 6840/6900;
-   Silver 30/28, 70/71/67, above 80) against what the market then did — the
-   treatment the Trade Brigade newsletter already gets.
+   (ES below 6,850 → 6,300 → 4,600) and
+   [Kg6sYKgtkrY](../videos/Kg6sYKgtkrY/CARD.md) (ES 6840/6900) against what
+   the market then did — the treatment the Trade Brigade newsletter already
+   gets. His calls on other instruments stay on the cards.
 4. **The 80–90% claim needs its R:R.** A zoom on
    [uFxYcpiaOpw](../videos/uFxYcpiaOpw/CARD.md) around the entry demonstration
    may recover stop and target distances from the chart even though he never

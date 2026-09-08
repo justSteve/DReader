@@ -39,7 +39,7 @@ because it calibrates what "large" means per market:
 | Instrument | Observed book sizes | t |
 |---|---|---|
 | S&P 500 (ES) | a single ask-side order of **325 contracts** | 03:56 |
-| DAX (FDAX) | `1, 1, 2, 4, 3, 5, 3, 3` **or** `…5, 33` — unresolved | 04:02 |
+| DAX (FDAX) | single digits, **1–5 per level** — the ask column reads 1, 1, 2, 4, 3, 4, 5, 3, 3 upward from 25152; no "33" anywhere in the book (frames 2026-09-08, `frames-356-408/f_0007.jpg`) | 04:02 |
 | Bond futures | **5,000–6,000** per side | 09:23 |
 | Gold | `2 or 4 or 6` | 09:39 |
 
@@ -79,6 +79,10 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
 - **2026-09-06 — comparative wide pass (epic dr-zk8).** One standardised
   orderflow-focused wide pass, identical question across all 19 sweep videos
   for comparability. Verdict: the corpus's best one-line definition of order flow, plus per-instrument book-size calibration. No tradeable rules.
+- **2026-09-08 — frame pull 03:56–04:08 (dr-gm5).** Settled the DAX-ladder digit
+  the 2026-09-06 audit left open: the FDAXM6 ask column is single digits
+  throughout (max 5); the captions' "3 3" are two levels, the carded "33" was
+  Gemini joining them. Findings row corrected.
 
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_
