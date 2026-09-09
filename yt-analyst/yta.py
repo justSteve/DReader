@@ -409,8 +409,14 @@ def cmd_frames(args):
     # appended (clip.mp4.webm) and ffmpeg then can't find the file [dr-bot].
     for stale in out_dir.glob("clip.*"):
         stale.unlink()
+    # Resolve yt-dlp beside the running interpreter first: called from a
+    # shell without the venv activated, a bare "yt-dlp" is not on PATH and
+    # every window fails after the Gemini work was already paid for
+    # (2026-09-08, LESSONS.md).
+    ytdlp = Path(sys.executable).with_name("yt-dlp")
+    ytdlp = str(ytdlp) if ytdlp.exists() else "yt-dlp"
     subprocess.run([
-        "yt-dlp", "--download-sections", f"*{fmt_ts(start)}-{fmt_ts(end)}",
+        ytdlp, "--download-sections", f"*{fmt_ts(start)}-{fmt_ts(end)}",
         # Prefer h264/mp4: ffmpeg's section download of YouTube's VP9/webm
         # DASH stream returned a clip with a zero-length video track
         # (frame=0) on 2026-08-29; avc1 mp4 sections decode and are ~7x

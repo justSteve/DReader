@@ -740,3 +740,17 @@ the substance holds.
 - ES short: entry-criteria list, the dark-ring sentence and the "Academy
   membership" pitch were paraphrases or inferences. **Fixed** with the
   transcript wording.
+
+## 2026-09-08 · `GzCq0tvFzhU` — SMDX #13, fair value gaps · **clean**
+
+No hedge hardened, no paraphrase quoted, no spoken claim attributed to the
+screen, no number the transcript contradicts, no name wrong — the presenter
+speaks no price, level, stop or size in 12:37, so every figure is a slide
+figure and carries its frame. Two nits applied centrally: the spoken-only row
+was anchored to slide times (05:45 / 10:08) where the words fall at 05:49 and
+10:13; the spoken definition is explicitly *wick to wick* (00:48), now on the
+card, and the slide "TENDS TOWARD EFFICIENCY" drops the narration's "general".
+The second reader's frame pass (same day) is a separate class of finding —
+inverted zone-boundary labels on every bullish diagram — recorded on the card.
+
+---

@@ -852,3 +852,42 @@ Two things worth carrying:
 readings from YouTube-URL ingestion are unverified until framed, whatever the
 run count. Zoom on the ticket, pull frames, read the dollar labels and close
 the arithmetic at the contract multiplier.
+
+## 2026-09-08 — `yta.py frames` needs the venv on PATH; yt-dlp clip pulls fail transiently
+
+**Status: confirmed** (nine windows, one video, `GzCq0tvFzhU`).
+
+`frames` shells out to a bare `yt-dlp`. Run from a shell where the venv is not
+activated (Claude Code's Bash tool, a cron, a runner script), every window
+dies with `FileNotFoundError: 'yt-dlp'` after the Gemini-side work has already
+been paid for. `ask` is unaffected. Fix in the runner: `export
+PATH=$PWD/.venv/bin:$PATH` before the loop, or call `.venv/bin/yt-dlp`
+explicitly. yt-dlp also warned "No supported JavaScript runtime could be
+found" on this box; extraction still worked.
+
+Second observation: with PATH fixed, three of nine windows failed with
+`subprocess.CalledProcessError` from yt-dlp, and the same three succeeded
+unchanged on a retry a few minutes later. Treat a frames failure as transient
+first: retry up to three times with a 15 s gap before reading the error.
+
+**Rule:** a frames runner sets PATH and retries; a "no frames" directory is a
+failed pull, not an empty window — delete it before re-pulling so the count
+means something.
+
+## 2026-09-08 — A mock chart can carry a real platform's wordmark
+
+**Status: suspected** (one video, two frames).
+
+The wide-pass question asks Gemini to "name any tools or platforms shown".
+On `GzCq0tvFzhU` it answered "TradingView with BTC/USDT and SPX500 charts".
+Frames: the 00:01 chart is an AI imitation of a TradingView screen — a
+"TradingView" wordmark bottom-left, a "BTC/USDT, 4H" header, and a price axis
+whose labels run 240000 → 180000 → 170000 → 155000 → 120000 → 128000. The
+03:59 chart says "BTC/USDT 4H Oanda | D" with mixed time-tick formats. Gemini
+read the wordmark correctly and reported a platform that was never used.
+
+**Rule (proposed):** a platform named by Gemini is a *string on screen*, not
+evidence the video was made on that platform. On the AI-slide channels, do
+not put a platform in the card header unless a frame shows a live UI (menus,
+cursor, consistent axis). The corpus-wide "Tools" field should say "none
+shown" for Smart Money Decode X.

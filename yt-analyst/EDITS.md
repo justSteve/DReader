@@ -176,3 +176,27 @@ Prose is cut without markers; the cuts are logged here.
   the tool, not the instrument.
 - **`orderflow-series-PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ.md`** — nothing to
   cut; the Goldman panel is evidence about a firm, not an instrument.
+
+## 2026-09-08 · `GzCq0tvFzhU` — SMDX #13, fair value gaps
+
+The video is instrument-free in speech; its worked numbers live only on the
+AI-drawn slides, and those are foreign-exchange or fabricated.
+
+- **L0–L2:** no worked figure carried over. L2 refers to the precision slide's
+  example generically ("an exact top and an exact bottom") and to the one
+  chart labelled with an index without naming its price level.
+- **L3 "Not every gap is equal" (05:24):** the factor-1 comparison elided
+  inside the quote — "a massive `[...]` move on the daily chart" versus "a
+  `[...]` move on the 5-minute chart" (the spoken multi-hundred-pip / 20-pip
+  pair). The aside states that the worked comparison is a foreign-exchange
+  example and points at the card.
+- **L3 "When price returns" (04:00):** the aside describes the precision
+  slide's zone without its 34,500 / 34,200 / 300-points-wide figures.
+- **L3 "Structural fog" (09:57):** the mock chart named without its 1,450
+  index level. The spoken "3 seconds to form on a 1 minute chart" is kept —
+  those are timeframes, not instrument prices.
+- **Never carried in:** the 1.1200 / 1.1100 axis on the FILLED / UNFILLED /
+  UNCERTAIN panel, the two mock order-book ladders (100.30–100.65 and
+  155.05–155.40), and the BTC/USDT mock-chart headers at 00:01 and 03:59.
+
+`CARD.md` keeps all of it, unedited.
