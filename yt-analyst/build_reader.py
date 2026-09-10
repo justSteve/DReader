@@ -6,7 +6,8 @@ published page cannot load anything from the network. Rerun after
 `python3 build_corpus.py`.
 
 Scope decisions that belong to the reader, not the corpus, live here:
-EXCLUDE drops videos Steve does not want shown (see EDITS.md).
+EXCLUDE drops videos Steve does not want shown (see EDITS.md); cards whose
+header status is `shelved` are dropped the same way.
 
   python3 build_reader.py [--out reader.html]
 """
@@ -20,7 +21,9 @@ EXCLUDE = {
 
 
 def scope(corpus):
-    cards = [c for c in corpus["cards"] if c["id"] not in EXCLUDE]
+    cards = [c for c in corpus["cards"]
+             if c["id"] not in EXCLUDE
+             and (c.get("status") or "").split()[:1] != ["shelved"]]
     ids = {c["id"] for c in cards}
     edges = [e for e in corpus["edges"] if e["from"] in ids and e["to"] in ids]
     for c in cards:

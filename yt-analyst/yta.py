@@ -572,7 +572,8 @@ def collect_videos():
 
 
 def render_index(vids):
-    carded = [v for v in vids if v["card"]]
+    shelved = [v for v in vids if v["card"] and v["status"] == "shelved"]
+    carded = [v for v in vids if v["card"] and v["status"] != "shelved"]
     orphans = [v for v in vids if not v["card"]]
 
     groups = {}
@@ -651,6 +652,21 @@ def render_index(vids):
                          f"{md_cell(v['status'])} | {v['runs']} |")
             L.append("")
 
+    if shelved:
+        L.append("## Shelved")
+        L.append("")
+        L.append("_Cards kept for reference but withdrawn from the browser and "
+                 "reader — assessed and found not worth the corpus's attention. "
+                 "Read the card before starting on the same channel again._")
+        L.append("")
+        L.append("| Channel | Video | Title | Uploaded | Len | Runs |")
+        L.append("|---|---|---|---|---:|---:|")
+        for v in sorted(shelved, key=lambda v: (v["author"].lower(), v["uploaded"])):
+            link = f"[`{v['id']}`](videos/{v['id']}/CARD.md)"
+            L.append(f"| {md_cell(v['author'])} | {link} | {md_cell(v['title'], 78)} | "
+                     f"{md_cell(v['uploaded'])} | {md_cell(v['duration'])} | {v['runs']} |")
+        L.append("")
+
     if orphans:
         L.append("## No card yet")
         L.append("")
@@ -678,10 +694,13 @@ def cmd_index(args):
         sys.stdout.write(md)
         return
     INDEX_PATH.write_text(md)
-    carded = sum(1 for v in vids if v["card"])
-    authors = len({v["author"] for v in vids if v["card"]})
-    print(f"{INDEX_PATH.name}: {carded} videos, {authors} channels"
-          + (f", {len(vids) - carded} without a card" if carded != len(vids) else ""))
+    shown = [v for v in vids if v["card"] and v["status"] != "shelved"]
+    shelved = sum(1 for v in vids if v["card"] and v["status"] == "shelved")
+    orphans = sum(1 for v in vids if not v["card"])
+    authors = len({v["author"] for v in shown})
+    print(f"{INDEX_PATH.name}: {len(shown)} videos, {authors} channels"
+          + (f", {shelved} shelved" if shelved else "")
+          + (f", {orphans} without a card" if orphans else ""))
 
 
 # --------------------------------------------------------------- export ----
@@ -935,6 +954,8 @@ def browse_documents():
 
     for v in vids:
         d = VIDEOS_DIR / v["id"]
+        if v["card"] and v["status"] == "shelved":
+            continue   # kept on disk and in INDEX.md's Shelved section, not shown
         if not v["card"]:
             docs.append({
                 "key": f"v:{v['id']}", "kind": "video", "id": v["id"],

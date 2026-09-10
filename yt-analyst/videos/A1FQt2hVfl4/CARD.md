@@ -6,7 +6,7 @@
 - **Uploaded:** 2026-08-28 · **Duration:** 42:28 (2548 s) · **Views:** 3,770
 - **Playlist:** none (standalone paste, 2026-09-10) · bead: dr-y1k (filed by COO after the beads witness repair, 2026-09-10)
 - **First analyzed:** 2026-09-10
-- **Status:** open
+- **Status:** shelved — 2026-09-10, Steve: not enough here for the browser; card kept for any future Trader Rob video (see EDITS.md)
 
 ## Findings
 _(curated by Claude Code: verified findings with timestamps)_

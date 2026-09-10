@@ -173,7 +173,10 @@ Before finishing a session on a video, update its CARD.md:
   chart software, layout, recurring segment structure, where the dense data
   lives. Future sessions on this channel read this first.
 - **Status**: flip `open` → `closed` when the video's questions are answered;
-  a closed card can be reopened.
+  a closed card can be reopened. `shelved` is the third state: the card stays
+  on disk and in INDEX.md's Shelved section but the browser and reader drop
+  it — for videos assessed and found not worth showing (Steve's call; log it
+  in EDITS.md). Read a shelved card before starting on its channel again.
 - Never edit the `## Run log` section — it is machine-appended.
 - Regenerate the index (`yta.py index`) after any header change, and commit
   `INDEX.md` with the card.

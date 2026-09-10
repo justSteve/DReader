@@ -200,3 +200,14 @@ AI-drawn slides, and those are foreign-exchange or fabricated.
   155.05–155.40), and the BTC/USDT mock-chart headers at 00:01 and 03:59.
 
 `CARD.md` keeps all of it, unedited.
+
+## 2026-09-10 · `A1FQt2hVfl4` — Trader Rob, Trapped Buyers & Sellers — shelved
+
+Steve, after the credibility assessment: "not enough here to warrant keeping
+the card in the browser." The card is the first from this channel and its
+Findings hold the assessment (hindsight-only replays, no losses shown, funnel
+to a paid room, substance already covered by the Rosato series) plus the
+frame-verified platform and level facts. Status set to `shelved`: kept on disk
+and under INDEX.md's Shelved section, dropped from `browser.html` and
+`reader.html`. Reopen only if more Trader Rob videos arrive and the channel
+earns a second look.
