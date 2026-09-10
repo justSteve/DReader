@@ -891,3 +891,15 @@ evidence the video was made on that platform. On the AI-slide channels, do
 not put a platform in the card header unless a frame shows a live UI (menus,
 cursor, consistent axis). The corpus-wide "Tools" field should say "none
 shown" for Smart Money Decode X.
+
+### 2026-09-10 — Gemini invents platform names and chart dates from UI fragments (suspected)
+
+On A1FQt2hVfl4 (zoom 30:00–36:40) Gemini reported "MotiveWave, 5-minute chart
+of MNQ 09-24 from 07/18/2024". The frame shows a Deepchart® watermark, the
+contract MNQ-202609 and a 28/08/2026 date stamp; NQ ≈ 29,700 makes a 2024 date
+impossible. It also read a "TraderRob" label as "TraderDale" (36:40) and a
+"29%" delta figure as "25%" (39:52). All four were stated without an
+uncertainty flag. Same family as the Cherry Bomb derived-numbers lesson:
+identity-like fields (platform, date, contract month, brand names) can be
+confabulated from a partial UI read. Status: suspected — treat platform,
+date and name reads as needing frames when they are load-bearing.

@@ -122,7 +122,7 @@ _`#` is the video's position in its playlist (not its episode number); `Runs` co
 
 | # | Video | Title | Uploaded | Len | Status | Runs |
 |---:|---|---|---|---:|---|---:|
-| — | [`A1FQt2hVfl4`](videos/A1FQt2hVfl4/CARD.md) | Simple Way to Find Trapped Buyers and Sellers on the NQ and ES | 2026-08-28 | 42:28 | open | 1 |
+| — | [`A1FQt2hVfl4`](videos/A1FQt2hVfl4/CARD.md) | Simple Way to Find Trapped Buyers and Sellers on the NQ and ES | 2026-08-28 | 42:28 | open | 4 |
 
 ## Trading Notes
 
