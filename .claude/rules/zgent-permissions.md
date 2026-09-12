@@ -21,7 +21,7 @@ DReader is an **enterprise service provider**. It exists to serve other agents w
 - LOG all cross-agent queries for observability
 
 ## Data Collection
-- SCRAPE Discord channels via computer-use (Selenium, Playwright, DOM)
+- COLLECT Discord channels from Steve's own screen captures (Game Bar video → Gemini transcription, `discord-reader/`); browser automation of the account is retired (2026-09-12)
 - STORE messages, threads, and metadata in SQLite
 - RECONSTRUCT conversation threads from flat message streams
 - DEDUPLICATE entries using content hashing

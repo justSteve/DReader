@@ -43,13 +43,15 @@ a word, then stop. **Silence means Deferred, never Yes** (Steve, 2026-09-12,
 global rule for every agent): an unanswered ask stays open on its bead and
 nobody proceeds on it.
 
-## Constraint: No Discord API Access
+## Constraint: No Discord API Access, No Account Automation
 
-DReader has no access to the Discord API — no bot token, no OAuth app, no REST endpoints. This is a permanent constraint, not a gap to be filled. All message retrieval must work through computer-use: browser-based DOM scraping via Playwright. Do not propose or build solutions that assume API access.
+DReader has no access to the Discord API — no bot token, no OAuth app, no REST endpoints. This is a permanent constraint, not a gap to be filled. Do not propose or build solutions that assume API access.
+
+Browser automation of Steve's account (Playwright/Selenium DOM scraping) was **retired by Steve on 2026-09-12** (dr-4ov). Retrieval is now **screen capture**: Steve pages through Discord on his own screen, Game Bar records it, and Gemini transcribes the video (`discord-reader/`). Do not propose reviving the scraper; the code is preserved at git tag `playwright-retired` if that ruling is ever reversed.
 
 ## Architecture
 
-Collection runs in Python (Playwright); the query/serve layer runs in TypeScript (Express + SQLite). Both halves share the same SQLite database.
+Collection is `discord-reader/` (Python: screen-capture video → Gemini → transcript dossiers on disk). The query/serve layer is TypeScript (Express + SQLite). **They are not yet connected**: transcripts do not reach the database. Bridging them is the open architectural need.
 
 ### TypeScript Query Layer
 
@@ -61,15 +63,15 @@ Collection runs in Python (Playwright); the query/serve layer runs in TypeScript
 | Logging | `src/logging/` | Structured JSONL logger — transport-based, daily rotation, zero deps |
 | CLI | `src/cli/` | init-db, validate-config, db-reset, db-backup |
 
-### Python Retrieval (`src/retrieval/`)
+### Collection (`discord-reader/`)
 
-Playwright-based Discord Web scraper using AX-tree-first locators and a persistent browser context. Automates Chromium to extract messages from discord.com DOM and writes to the same SQLite database the TypeScript query layer reads from.
+`dread.py` ingests a Game Bar capture of a paged-through Discord channel, uploads it to Gemini Flash at high media resolution, and writes `transcript.json` / `transcript.md` / `CARD.md` into `discord-reader/captures/<id>/` (gitignored: private). Doctrine, verification procedure and lessons live in `discord-reader/CLAUDE.md` and `discord-reader/LESSONS.md`. Forum channels: each post is a thread and is captured on its own.
 
 ## What Every Claude Instance Must Understand
 
 1. **Beads-first is non-negotiable.** Read the gate at the top of this file. Use `bd` commands. No exceptions.
 2. **Service provider role.** DReader exists to serve other agents with Discord intel. See `.claude/rules/zgent-permissions.md`.
-3. **No Discord API.** All retrieval is computer-use via Playwright DOM scraping. Never propose API-based solutions.
+3. **No Discord API, no account automation.** Retrieval is Steve's screen captures transcribed by Gemini. Never propose API-based or browser-automation solutions.
 4. **Structured logging.** Use `createLogger('component')` not `console.log`.
 
 ## Key Commands
@@ -79,8 +81,8 @@ npm run dev          # Start API server (Express, query layer)
 npm run test         # Run Jest tests (TypeScript)
 npm run init-db      # Initialize SQLite database
 npm run db:reset     # Reset database
-PYTHONPATH=. .venv/bin/pytest tests/retrieval/   # Run Python scraper tests
-python -m src.retrieval --help                    # Playwright scraper CLI
+cd discord-reader && .venv/bin/python dread.py ingest --label "server/channel"   # transcribe newest capture
+cd discord-reader && .venv/bin/python dread.py env                                # credential check
 bd ready             # Find available work
 bd show <id>         # View issue details
 bd update <id> --claim  # Claim work
@@ -96,7 +98,8 @@ bd prime             # Re-read PRIME.md (context for new sessions)
 | `src/domain/thread-reconstruction/` | Thread rebuilder |
 | `src/services/` | DatabaseService, schema |
 | `src/logging/` | Structured JSONL logger |
-| `src/retrieval/` | Playwright Discord Web scraper (Python) |
+| `discord-reader/` | Screen-capture → Gemini transcription (Python), capture dossiers |
+| `docs/retired/` | Retired browser-automation track: findings kept, code at tag `playwright-retired` |
 | `.beads/` | Beads (work authorization) |
 
 ## Session Completion

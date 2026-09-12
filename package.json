@@ -14,7 +14,7 @@
     "db:reset": "ts-node src/cli/db-reset.ts",
     "db:backup": "ts-node src/cli/db-backup.ts"
   },
-  "keywords": ["discord", "scraper", "threads", "playwright"],
+  "keywords": ["discord", "threads", "intelligence"],
   "author": "",
   "license": "MIT",
   "dependencies": {
