@@ -903,3 +903,16 @@ uncertainty flag. Same family as the Cherry Bomb derived-numbers lesson:
 identity-like fields (platform, date, contract month, brand names) can be
 confabulated from a partial UI read. Status: suspected — treat platform,
 date and name reads as needing frames when they are load-bearing.
+
+### 2026-09-12 — Uploaded-file path: `--resolution` is a real lever (confirmed, from discord-reader)
+
+Relay per dr-vm0. discord-reader's first ingest (21 s Game Bar clip, 2 fps,
+Files API upload, gemini-flash-latest) measured 3,308 prompt tokens at default
+and at `MEDIA_RESOLUTION_LOW` (identical), 11,624 at `HIGH`: ~63 vs ~261
+tokens/frame after the 32/s audio term, i.e. the two rates the Sampling-knobs
+cost model predicted. So the uploaded-file path samples LOW by default and
+HIGH is honored — unlike YouTube-URL ingestion, where the knob is inert. It
+was also a fidelity knob there: at default Gemini confabulated 4 of 5 Discord
+timestamps and dropped a message; at high all were correct. Implication for
+yta.py's members-only upload path (dr-3jr): expect `--resolution high` to
+matter for small on-screen text, at ~3.5× the video tokens.
