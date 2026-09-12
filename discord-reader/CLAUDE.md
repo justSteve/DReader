@@ -10,7 +10,9 @@ doctrine, different source.
 Paging is the doctrine (ruled 2026-08-28); scrolling is legacy fallback.
 
 1. Focus Discord, **click into the message pane** (so PageDown drives the
-   channel, not a sidebar), navigate to the starting point.
+   channel, not a sidebar), navigate to the starting point. In a **forum
+   channel** (post list instead of messages), open the post first and click
+   into the post's own pane; each post is a thread and is captured on its own.
 2. **Win+Alt+R** starts Game Bar recording of the focused window.
 3. **PageDown → hold ~1 second → repeat** until the endpoint. Never press
    Esc mid-capture (Discord jumps to newest). If an image/embed is loading,

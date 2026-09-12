@@ -101,6 +101,7 @@ the JSON):
       "author": "display name as shown",
       "text": "full message text, verbatim",
       "reply_to": "author of the quoted/replied-to message if shown, else null",
+      "reply_to_text": "the first words of the quoted reply preview, verbatim, else null",
       "attachments": "brief description of images/embeds/links, else null"
     }
   ],
@@ -108,7 +109,11 @@ the JSON):
 }
 
 Rules:
-- Verbatim text; never paraphrase, summarize, or merge messages.
+- Verbatim text; never paraphrase, summarize, or merge messages. Keep emoji
+  that are part of the message text (a 🔥 or 🟢 leading a header is text).
+- Forum posts: the channel may be a forum whose post opens with a title,
+  then the poster's opening message (badge "OP"), then replies. Transcribe
+  the title into context and the opening message as the first message.
 - Consecutive messages by the same author with no new header are separate
   entries if Discord renders them as separate messages.
 - Carry date dividers ("August 27, 2026") into the date field of following
@@ -335,7 +340,11 @@ def render_markdown(payload, capture_id, label):
             lines += [f"## {d}", ""]
             cur_date = d
         t = f" `{m['time']}`" if m.get("time") else ""
-        reply = f" _(replying to {m['reply_to']})_" if m.get("reply_to") else ""
+        reply = ""
+        if m.get("reply_to"):
+            quoted = m.get("reply_to_text")
+            reply = (f" _(replying to {m['reply_to']}: \"{quoted}\")_" if quoted
+                     else f" _(replying to {m['reply_to']})_")
         lines.append(f"**{m.get('author', '?')}**{t}{reply}")
         lines.append(m.get("text", ""))
         if m.get("attachments"):

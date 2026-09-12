@@ -63,6 +63,24 @@ lesson. Confirmed twice (or decisively once) → promote into CLAUDE.md, mark
   headers are the weakest reads even at high res (🟢/🔴 read as 🟥; one of
   three reply links missed). Spot-check both from frames when load-bearing.
 
+## Discord structure — forum channels (2026-09-12, confirmed from InvestiTrade #lessons)
+
+- A **Forum channel** shows a post list, not messages. Each **post is a
+  thread**: title, date divider, the creator's opening message (badge "OP"),
+  then replies. Capture by opening the post and clicking into its message
+  pane; the post list on the left is its own scroll region and stays put.
+- Authors chain structure with Discord **replies** (quoted preview line above
+  a message). Author-only `reply_to` loses the chain when one author replies
+  to themself; the schema now carries `reply_to_text` (first words of the
+  preview, verbatim). Verified on the second capture: 6/6 previews detected.
+- Second capture, high res: 8/8 timestamps, verbatim text, one leading emoji
+  dropped. Seam/continuity/boundary clean (n=2). Prompt now says leading
+  emoji are text; watch whether that holds.
+- For the DReader data model: a forum post needs thread id + title on every
+  message; the Playwright scraper's channel-id addressing must extend to
+  `/channels/<server>/<forum>/threads/<post>`. Noted for the serve layer,
+  not built.
+
 ## Open questions (standing diagnostics)
 
 - 2026-08-28 suspected → confirmed n=1 (Verdicts above) — 2 fps + 1s page holds yields ≥1 clean sample per
