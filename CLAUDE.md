@@ -35,6 +35,14 @@ DReader is a Discord intelligence collector that scrapes, stores, and serves Dis
 
 Collect information from Discord channels and make it queryable by sibling zgents. DReader publishes its query API according to shared enterprise conventions so any zgent in the ecosystem can discover and use it.
 
+## Asking Steve
+
+If the agent can decide it, it decides, does it, and reports. When something
+genuinely needs Steve: one sentence with a recommended answer he can accept in
+a word, then stop. **Silence means Deferred, never Yes** (Steve, 2026-09-12,
+global rule for every agent): an unanswered ask stays open on its bead and
+nobody proceeds on it.
+
 ## Constraint: No Discord API Access
 
 DReader has no access to the Discord API — no bot token, no OAuth app, no REST endpoints. This is a permanent constraint, not a gap to be filled. All message retrieval must work through computer-use: browser-based DOM scraping via Playwright. Do not propose or build solutions that assume API access.
