@@ -916,3 +916,24 @@ was also a fidelity knob there: at default Gemini confabulated 4 of 5 Discord
 timestamps and dropped a message; at high all were correct. Implication for
 yta.py's members-only upload path (dr-3jr): expect `--resolution high` to
 matter for small on-screen text, at ~3.5× the video tokens.
+
+## 2026-09-15 — A chart frame plus the session clock is a provenance check against our own tape
+
+**Status: confirmed** (one decisive observation, `KKfmvQj6ChY`; second use
+of the Strader ES corpus as a referee after the AlgoTrade Pro backtest).
+
+TradingView frames carry two things Gemini never reports and that settle
+provenance outright: the **session clock** (bottom-right, `HH:MM:SS UTC-4`)
+and the **in-progress bar's OHLC** in the legend. One frame gave
+`ES1! 1h  O6,640.00 H6,651.00 L6,638.25 C6,641.25` at `14:28:01 UTC-4`;
+Strader's `data/corpus/2026-03-13/databento_glbx_es.jsonl` from 14:00:00 to
+14:28:02 ET gives O 6640.0 / H 6651.0 / L 6638.25, last 6641.75 — open, high
+and low exact, close within a tick and a second. That fixed the recording
+date (nine days before upload), made "just before market close" literal, and
+proved the chart was live rather than replay. Cost: one frame pull, one
+Python loop, under a minute.
+
+Use it whenever a video shows ES with a visible clock and legend and the
+date falls inside the corpus (2025-05-27 → 2026-09-06, afternoons only
+except July 2026). It verifies the *chart*, not any claim made about it —
+the attribution caveat (2026-08-30) still applies to figures Gemini reads.
