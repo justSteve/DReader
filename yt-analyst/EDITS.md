@@ -211,3 +211,12 @@ frame-verified platform and level facts. Status set to `shelved`: kept on disk
 and under INDEX.md's Shelved section, dropped from `browser.html` and
 `reader.html`. Reopen only if more Trader Rob videos arrive and the channel
 earns a second look.
+
+## 2026-09-15 · `KKfmvQj6ChY` — Arjo, "Read Liquidity Like a Pro" — shelved
+
+Steve's call after reading the assessment (dr-a3l). The card stays on disk
+and in INDEX.md's Shelved section; browser and reader drop it. Reason as
+assessed: not order flow — an ICT/SMC market-structure framework that
+measures nothing, with its one mechanism claim unsupported and cut against
+by the corpus's footprint evidence. The terminology map and the Carmine
+trapped-participants comparison remain on the card for reference.

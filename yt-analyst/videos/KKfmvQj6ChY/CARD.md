@@ -5,7 +5,7 @@
 - **Channel:** Arjo (@Arjoio, 280K subs) — "The MMT" / tradingmmt.com
 - **Uploaded:** 2026-03-22 · **Duration:** 54:16 (3256 s) · **Views:** 399,508
 - **First analyzed:** 2026-09-15
-- **Status:** closed
+- **Status:** shelved
 - **Bead:** dr-a3l (Steve's ask: presenter sounds credible, narrow aspect of order flow at unusual depth, terms don't line up with the rest of the corpus — assess credibility, map the terms)
 
 ## Findings
