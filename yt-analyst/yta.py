@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
-"""yta.py v0.3 — YouTube analyst: Gemini Flash as a perception service.
+"""yta.py v0.4 — YouTube analyst: Gemini Flash as a perception service.
+
+Changes from v0.3:
+  - Local captures (dr-22w.1): `ask`, `frames` and the new `transcribe`
+    accept `--file PATH --id ID` in place of `--url`, for Game Bar
+    recordings of members-only material (the InvestiTrade course). The file
+    is uploaded once through the Gemini Files API and the handle cached in
+    videos/<id>/upload.json for 48 h, so every zoom reuses it. On this path
+    `--resolution` is a real lever (default = low; LESSONS.md 2026-09-12).
+  - `transcribe` writes videos/<id>/transcript.{json,txt} and slides.md — the
+    substrate READ.md is composed from — plus thumb.jpg, in chunks of
+    --chunk minutes so no single reply outruns the output limit.
 
 Changes from v0.2:
   - Per-video dossiers: everything for a video lives under videos/<video_id>/.
@@ -12,6 +23,7 @@ Changes from v0.2:
 Subcommands:
   ask     Interrogate a video (whole or clipped window). JSON out, archived.
   frames  Download a clip window and dump frames for pixel-level verification.
+  transcribe  Local capture -> timestamped speech + slide text (transcript.*).
   index   Regenerate INDEX.md — every card, grouped by channel/author.
   export  Emit the curated findings as JSON for sibling zgents.
   env     Say where the credential came from and whether it still works.
@@ -79,6 +91,37 @@ Rules:
 
 QUESTION: {question}
 """
+
+TRANSCRIBE_PROMPT = """This video is a screen recording of one chapter of a recorded
+trading course: a presenter narrates over slides and over chart software
+(thinkorswim, Bookmap, footprint charts). Captions may be burned in at the
+bottom of the frame; the audio is authoritative and the captions are a cross-check.
+
+Produce JSON ONLY (no fences, no prose outside it) with this exact shape:
+
+{
+  "segments": [
+    {"t": "MM:SS", "speech": "the presenter's words, verbatim, for the ~10-20 s beginning at t",
+     "screen": "slide | chart | mixed | other",
+     "note": "what changed on screen at t if anything (new slide title, chart tool, a level drawn, the orange clock label reading), else null"}
+  ],
+  "slides": [
+    {"t": "MM:SS", "title": "slide heading verbatim", "text": "every bullet verbatim, one per line, in the slide's final built-up form"}
+  ],
+  "uncertainties": ["anything not heard or read clearly"]
+}
+
+Rules:
+- Timestamps are measured from the START of the video segment you were given.
+- Speech is VERBATIM: keep his phrasing, his numbers, his hedges. You may drop
+  pure stutters ("we we we") but never summarize, reorder or clean up meaning.
+- Cover the whole segment with no gaps: consecutive segments should abut.
+- Transcribe numbers exactly as spoken and exactly as written; never round.
+- Every distinct slide appears once in "slides", at its first appearance, with
+  its complete text. If bullets are revealed progressively, give the final form.
+- If something cannot be read or heard, put it in uncertainties rather than guess.
+"""
+
 
 CARD_TEMPLATE = """# Video: {video_id}
 
@@ -218,6 +261,179 @@ def ensure_card(video_id, url):
     return card
 
 
+CARD_TEMPLATE_LOCAL = """# Video: {video_id}
+
+- **URL:** —
+- **Source:** local capture `{path}` ({size_mb:.0f} MB, {duration})
+- **First analyzed:** {date}
+- **Status:** open
+
+## Findings
+_(curated by Claude Code: verified findings with timestamps)_
+
+## Sessions
+_(curated by Claude Code: one entry per interrogation session — date, aim, verdict)_
+
+## Lessons (this video)
+_(anything peculiar to this video/channel: layout, chart software, segment structure)_
+
+## Run log
+_(machine-appended by yta.py — do not edit above this line's entries)_
+"""
+
+LOCAL_ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,60}$")
+UPLOAD_TTL_S = 47 * 3600  # Files API keeps an upload 48 h; leave a margin
+
+
+def probe_duration(path):
+    """Seconds, via ffprobe; 0 if it cannot tell."""
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "csv=p=0", str(path)],
+            capture_output=True, text=True, check=True).stdout.strip()
+        return int(float(out))
+    except (subprocess.CalledProcessError, ValueError, FileNotFoundError):
+        return 0
+
+
+def resolve_source(args):
+    """(video_id, url_or_None, local_path_or_None, card) from --url/--file."""
+    path = getattr(args, "file", None)
+    if path:
+        path = Path(path).expanduser().resolve()
+        if not path.is_file():
+            sys.exit(f"--file: not a file: {path}")
+        vid = getattr(args, "id", None)
+        if not vid or not LOCAL_ID_RE.match(vid):
+            sys.exit("--file needs --id: a slug like it-orderflow-absorption-4142 "
+                     "(lowercase letters, digits, hyphens; it names videos/<id>/)")
+        if extract_video_id(vid + "x") and len(vid) == 11:
+            sys.exit(f"--id {vid} looks like a YouTube id; pick a slug")
+        card = video_dir(vid) / "CARD.md"
+        if not card.exists():
+            secs = probe_duration(path)
+            card.write_text(CARD_TEMPLATE_LOCAL.format(
+                video_id=vid, path=path, size_mb=path.stat().st_size / 1e6,
+                duration=f"{fmt_ts(secs)} ({secs} s)" if secs else "duration unknown",
+                date=datetime.now().strftime("%Y-%m-%d")))
+        return vid, None, path, card
+    url = getattr(args, "url", None)
+    if not url:
+        sys.exit("give --url (YouTube) or --file PATH --id ID (local capture)")
+    vid = extract_video_id(url)
+    if not vid:
+        sys.exit(f"Could not extract a YouTube video id from: {url}")
+    url = canonical_url(vid)
+    return vid, url, None, ensure_card(vid, url)
+
+
+def upload_cached(client, vid, path):
+    """Upload a local video through the Files API once; reuse the handle.
+
+    videos/<id>/upload.json records name/uri/mime/expiry. A cached handle is
+    verified with files.get before use; anything short of ACTIVE re-uploads.
+    Uploads of ~1 GB take minutes over the WSL bridge, so the cache is what
+    makes clipped follow-ups near-free on this path too.
+    """
+    cache = video_dir(vid) / "upload.json"
+    if cache.exists():
+        try:
+            rec = json.loads(cache.read_text())
+            if (rec.get("path") == str(path) and rec.get("size") == path.stat().st_size
+                    and rec.get("expires", 0) > time.time() + 300):
+                f = client.files.get(name=rec["name"])
+                if f.state.name == "ACTIVE":
+                    print(f"[upload reused: {f.name}, expires "
+                          f"{datetime.fromtimestamp(rec['expires']):%Y-%m-%d %H:%M}]",
+                          file=sys.stderr)
+                    return f
+        except Exception as e:  # stale, expired, deleted server-side
+            print(f"[upload cache unusable: {e}; re-uploading]", file=sys.stderr)
+    print(f"[uploading {path.name} ({path.stat().st_size / 1e6:.0f} MB)...]",
+          file=sys.stderr)
+    t0 = time.time()
+    f = client.files.upload(file=str(path))
+    while f.state.name == "PROCESSING":
+        time.sleep(4)
+        f = client.files.get(name=f.name)
+    if f.state.name != "ACTIVE":
+        sys.exit(f"Upload failed: file state {f.state.name}")
+    cache.write_text(json.dumps({
+        "name": f.name, "uri": f.uri, "mime_type": f.mime_type,
+        "path": str(path), "size": path.stat().st_size,
+        "uploaded": datetime.now().isoformat(timespec="seconds"),
+        "expires": time.time() + UPLOAD_TTL_S,
+    }, indent=2))
+    print(f"[upload active: {f.name} in {time.time() - t0:.0f}s]", file=sys.stderr)
+    return f
+
+
+def video_part_for(client, vid, url, path, vm_kwargs):
+    from google.genai import types
+    if path is not None:
+        g = upload_cached(client, vid, path)
+        fd = types.FileData(file_uri=g.uri, mime_type=g.mime_type)
+    else:
+        fd = types.FileData(file_uri=url)
+    return types.Part(
+        file_data=fd,
+        video_metadata=types.VideoMetadata(**vm_kwargs) if vm_kwargs else None,
+    )
+
+
+def resolution_config(resolution, **kw):
+    from google.genai import types
+    if resolution:
+        kw["media_resolution"] = {
+            "low": types.MediaResolution.MEDIA_RESOLUTION_LOW,
+            "medium": types.MediaResolution.MEDIA_RESOLUTION_MEDIUM,
+            "high": types.MediaResolution.MEDIA_RESOLUTION_HIGH,
+        }[resolution]
+    return types.GenerateContentConfig(**kw)
+
+
+def parse_json_reply(text, empty_diag=None):
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        cleaned = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
+        try:
+            return json.loads(cleaned)
+        except json.JSONDecodeError:
+            return {"summary": None, "claims": [], "uncertainties": [],
+                    "raw_unparsed": text, "empty_response": empty_diag}
+
+
+def response_text(resp, answered_model):
+    """(text, empty_diag): surface why a reply is empty instead of dying in
+    json.loads [dr-08s.9]."""
+    text = resp.text
+    if text is not None:
+        return text, None
+    cands = getattr(resp, "candidates", None) or []
+    reasons = [str(getattr(c, "finish_reason", None)) for c in cands]
+    fb = getattr(resp, "prompt_feedback", None)
+    print(f"[empty response from {answered_model}: "
+          f"finish_reasons={reasons} prompt_feedback={fb}]", file=sys.stderr)
+    return "", {"finish_reasons": reasons, "prompt_feedback": str(fb) if fb else None}
+
+
+def new_run_dir(vid):
+    ts = datetime.now().strftime("%Y%m%d-%H%M%S")
+    run_dir = video_dir(vid) / "runs" / ts
+    run_dir.parent.mkdir(parents=True, exist_ok=True)
+    n = 1
+    while True:  # parallel asks can share a second; never overwrite an archive
+        try:
+            run_dir.mkdir()
+            return ts, run_dir
+        except FileExistsError:
+            n += 1
+            ts = f"{ts.split('-')[0]}-{ts.split('-')[1]}-{n}"
+            run_dir = run_dir.parent / ts
+
+
 def append_run_log(card, line):
     with open(card, "a", encoding="utf-8") as f:
         f.write(line.rstrip() + "\n")
@@ -290,13 +506,7 @@ def cmd_ask(args):
     from google.genai import types
 
     require_key()
-
-    vid = extract_video_id(args.url)
-    if not vid:
-        sys.exit(f"Could not extract a YouTube video id from: {args.url}")
-    url = canonical_url(vid)
-    card = ensure_card(vid, url)
-
+    vid, url, path, card = resolve_source(args)
     client = genai.Client()
 
     vm_kwargs = {}
@@ -307,66 +517,24 @@ def cmd_ask(args):
     if args.fps is not None:
         vm_kwargs["fps"] = args.fps
 
-    video_part = types.Part(
-        file_data=types.FileData(file_uri=url),
-        video_metadata=types.VideoMetadata(**vm_kwargs) if vm_kwargs else None,
-    )
+    video_part = video_part_for(client, vid, url, path, vm_kwargs)
     prompt = ANALYST_PROMPT.replace("{question}", args.question)
-
-    cfg_kwargs = {"response_mime_type": "application/json"}
-    if args.resolution:
-        cfg_kwargs["media_resolution"] = {
-            "low": types.MediaResolution.MEDIA_RESOLUTION_LOW,
-            "medium": types.MediaResolution.MEDIA_RESOLUTION_MEDIUM,
-            "high": types.MediaResolution.MEDIA_RESOLUTION_HIGH,
-        }[args.resolution]
 
     answered_model, resp = generate_with_retry(
         client,
         args.model,
         types.Content(parts=[video_part, types.Part(text=prompt)]),
-        types.GenerateContentConfig(**cfg_kwargs),
+        resolution_config(args.resolution, response_mime_type="application/json"),
     )
 
-    text = resp.text
-    if text is None:
-        # Empty response: blocked, truncated, or unprocessable video. Surface
-        # the reason instead of dying in json.loads [dr-08s.9].
-        cands = getattr(resp, "candidates", None) or []
-        reasons = [str(getattr(c, "finish_reason", None)) for c in cands]
-        fb = getattr(resp, "prompt_feedback", None)
-        text = ""
-        empty_diag = {"finish_reasons": reasons,
-                      "prompt_feedback": str(fb) if fb else None}
-        print(f"[empty response from {answered_model}: "
-              f"finish_reasons={reasons} prompt_feedback={fb}]", file=sys.stderr)
-    else:
-        empty_diag = None
-    try:
-        payload = json.loads(text)
-    except json.JSONDecodeError:
-        cleaned = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
-        try:
-            payload = json.loads(cleaned)
-        except json.JSONDecodeError:
-            payload = {"summary": None, "claims": [], "uncertainties": [],
-                       "raw_unparsed": text, "empty_response": empty_diag}
+    text, empty_diag = response_text(resp, answered_model)
+    payload = parse_json_reply(text, empty_diag)
 
     usage = getattr(resp, "usage_metadata", None)
-    ts = datetime.now().strftime("%Y%m%d-%H%M%S")
-    run_dir = video_dir(vid) / "runs" / ts
-    run_dir.parent.mkdir(parents=True, exist_ok=True)
-    n = 1
-    while True:  # parallel asks can share a second; never overwrite an archive
-        try:
-            run_dir.mkdir()
-            break
-        except FileExistsError:
-            n += 1
-            ts = f"{ts.split('-')[0]}-{ts.split('-')[1]}-{n}"
-            run_dir = run_dir.parent / ts
+    ts, run_dir = new_run_dir(vid)
     (run_dir / "request.json").write_text(json.dumps({
-        "url": url, "question": args.question,
+        "url": url, "file": str(path) if path else None,
+        "question": args.question,
         "model_requested": args.model, "model_answered": answered_model,
         "start": args.start, "end": args.end, "fps": args.fps,
         "resolution": args.resolution,
@@ -393,16 +561,28 @@ def cmd_ask(args):
 
 
 def cmd_frames(args):
-    vid = extract_video_id(args.url)
-    if not vid:
-        sys.exit(f"Could not extract a YouTube video id from: {args.url}")
-    url = canonical_url(vid)
+    vid, url, path, _card = resolve_source(args)
     start, end = parse_ts(args.start), parse_ts(args.end)
 
     out_dir = Path(args.out) if args.out else (
         video_dir(vid) / f"frames-{fmt_ts(start).replace(':', '')}-"
                          f"{fmt_ts(end).replace(':', '')}")
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    if path is not None:
+        # Local capture: cut straight from the file, no download step.
+        # -ss before -i seeks by keyframe then decodes to the exact time.
+        for stale in out_dir.glob("f_*.jpg"):
+            stale.unlink()
+        subprocess.run([
+            "ffmpeg", "-y", "-v", "error", "-ss", str(start), "-to", str(end),
+            "-i", str(path), "-vf", f"fps={args.fps}",
+            str(out_dir / "f_%04d.jpg"),
+        ], check=True)
+        n = len(list(out_dir.glob("f_*.jpg")))
+        print(f"{n} frames in {out_dir}/ "
+              f"(frame k ≈ t={fmt_ts(start)} + (k-1)/{args.fps}s)")
+        return
 
     # Let yt-dlp choose the container (mp4/webm/mkv depending on the
     # selected streams) — a hardcoded .mp4 name gets a second extension
@@ -444,6 +624,153 @@ def cmd_frames(args):
           f"(frame k ≈ t={fmt_ts(start)} + (k-1)/{args.fps}s)")
 
 
+# ----------------------------------------------------------- transcribe ----
+# The substrate for READ.md. YouTube videos get theirs free from yt-dlp
+# (fetch_transcripts.py); a local capture has no caption track, so Gemini
+# does it, in chunks so no single reply runs into the output limit.
+
+def chunk_offset(payload, a, b, slack=15):
+    """Offset to add to a chunk's timestamps so they are file-absolute.
+
+    Returns 0 when the reply's timestamps already sit inside the window
+    [a, b] (file frame) and a when they sit inside [0, b-a] (clip frame).
+    A window starting at 0 is the same in both frames. When neither frame
+    fits, prefer the clip frame the prompt asked for, and say so.
+    """
+    if a == 0:
+        return 0
+    ts = [parse_ts(x.get("t") or "0")
+          for k in ("segments", "slides") for x in payload.get(k) or []]
+    if not ts:
+        return a
+    lo, hi = min(ts), max(ts)
+    if a - slack <= lo and hi <= b + slack:
+        return 0
+    if lo <= (b - a) + slack:
+        return a
+    print(f"[warn: chunk {fmt_ts(a)}-{fmt_ts(b)} timestamps span "
+          f"{fmt_ts(lo)}-{fmt_ts(hi)}, fit neither frame; treating as clip-relative]",
+          file=sys.stderr)
+    return a
+
+
+def cmd_transcribe(args):
+    from google import genai
+    from google.genai import types
+
+    require_key()
+    if not getattr(args, "file", None):
+        sys.exit("transcribe works on local captures: --file PATH --id ID")
+    vid, _url, path, card = resolve_source(args)
+    vdir = video_dir(vid)
+    total = probe_duration(path)
+    start = parse_ts(args.start) if args.start else 0
+    end = parse_ts(args.end) if args.end else total
+    if not end:
+        sys.exit("could not determine the file's duration; give --end")
+    chunk = int(args.chunk * 60)
+    windows = [(a, min(a + chunk, end)) for a in range(start, end, chunk)]
+
+    client = genai.Client()
+    vm_base = {"fps": args.fps} if args.fps else {}
+    segments, slides, uncertainties, runs, tok_in, tok_out = [], [], [], [], 0, 0
+    models = set()
+    for a, b in windows:
+        vm = dict(vm_base, start_offset=f"{a}s", end_offset=f"{b}s")
+        print(f"[transcribe {fmt_ts(a)}-{fmt_ts(b)}]", file=sys.stderr)
+        part = video_part_for(client, vid, None, path, vm)
+        answered, resp = generate_with_retry(
+            client, args.model,
+            types.Content(parts=[part, types.Part(text=TRANSCRIBE_PROMPT)]),
+            resolution_config(args.resolution, response_mime_type="application/json"),
+        )
+        models.add(answered)
+        text, empty_diag = response_text(resp, answered)
+        payload = parse_json_reply(text, empty_diag)
+        usage = getattr(resp, "usage_metadata", None)
+        ts, run_dir = new_run_dir(vid)
+        (run_dir / "request.json").write_text(json.dumps({
+            "file": str(path), "mode": "transcribe",
+            "model_requested": args.model, "model_answered": answered,
+            "start": fmt_ts(a), "end": fmt_ts(b), "fps": args.fps,
+            "resolution": args.resolution,
+            "prompt_tokens": getattr(usage, "prompt_token_count", None),
+            "output_tokens": getattr(usage, "candidates_token_count", None),
+        }, indent=2))
+        (run_dir / "response.json").write_text(json.dumps(payload, indent=2))
+        runs.append(ts)
+        tok_in += getattr(usage, "prompt_token_count", 0) or 0
+        tok_out += getattr(usage, "candidates_token_count", 0) or 0
+
+        # The window is a start/end offset on the WHOLE uploaded file, and
+        # Gemini then timestamps from the file's start regardless of the
+        # prompt rule (LESSONS.md 2026-09-17: it-orderflow-trapped-4304,
+        # 10:00-13:15 chunk came back 10:00-13:04 and was re-based to 20:00+).
+        # Detect which frame the reply is in and re-base only when needed;
+        # --absolute forces the file frame.
+        off = 0 if args.absolute else chunk_offset(payload, a, b)
+        for seg in payload.get("segments") or []:
+            seg["t"] = fmt_ts(parse_ts(seg.get("t") or "0") + off)
+            segments.append(seg)
+        for sl in payload.get("slides") or []:
+            sl["t"] = fmt_ts(parse_ts(sl.get("t") or "0") + off)
+            slides.append(sl)
+        for u in payload.get("uncertainties") or []:
+            uncertainties.append(f"[{fmt_ts(a)}-{fmt_ts(b)}] {u}")
+        if payload.get("raw_unparsed"):
+            uncertainties.append(f"[{fmt_ts(a)}-{fmt_ts(b)}] reply not JSON; "
+                                 f"see runs/{ts}/response.json")
+        append_run_log(card,
+                       f"- {ts} [{fmt_ts(a)}-{fmt_ts(b)}] {answered} "
+                       f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
+                       f"{getattr(usage, 'candidates_token_count', '?')}) — "
+                       f"transcribe — runs/{ts}/")
+
+    segments.sort(key=lambda x: parse_ts(x["t"]))
+    slides.sort(key=lambda x: parse_ts(x["t"]))
+    out = {
+        "id": vid, "file": str(path), "duration_s": total,
+        "window": [fmt_ts(start), fmt_ts(end)], "chunk_s": chunk,
+        "models": sorted(models), "resolution": args.resolution or "default(low)",
+        "fps": args.fps, "prompt_tokens": tok_in, "output_tokens": tok_out,
+        "runs": runs, "segments": segments, "slides": slides,
+        "uncertainties": uncertainties,
+        "generated": datetime.now().isoformat(timespec="seconds"),
+    }
+    (vdir / "transcript.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    lines = [f"[{s['t']}] {(s.get('speech') or '').strip()}" for s in segments]
+    (vdir / "transcript.txt").write_text("\n".join(lines) + "\n")
+    md = [f"# Slides — {vid}", "",
+          f"_Transcribed by yta.py from `{path.name}`; every slide once, at first "
+          "appearance, text verbatim as Gemini read it. Verify load-bearing numbers "
+          "against frames._", ""]
+    for sl in slides:
+        md.append(f"## {sl['t']} — {sl.get('title') or '(untitled)'}")
+        md.append("")
+        for ln in (sl.get("text") or "").splitlines():
+            if ln.strip():
+                md.append(f"- {ln.strip()}")
+        md.append("")
+    if uncertainties:
+        md.append("## Uncertainties")
+        md.append("")
+        md += [f"- {u}" for u in uncertainties]
+        md.append("")
+    (vdir / "slides.md").write_text("\n".join(md))
+
+    thumb = vdir / "thumb.jpg"
+    if not thumb.exists():
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(min(60, total // 2)),
+                        "-i", str(path), "-frames:v", "1", "-vf", "scale=640:-1",
+                        "-q:v", "6", str(thumb)], check=False)
+
+    print(f"{vid}: {len(segments)} segments, {len(slides)} slides, "
+          f"{len(uncertainties)} uncertainties over {len(windows)} chunk(s); "
+          f"tokens prompt={tok_in} output={tok_out}; models {sorted(models)}")
+    print(f"[wrote {vdir / 'transcript.json'}, transcript.txt, slides.md]",
+          file=sys.stderr)
+
+
 # ---------------------------------------------------------------- index ----
 # Reads the curated header block of every videos/<id>/CARD.md and emits
 # INDEX.md grouped by channel/author. Never reads below the first "## ".
@@ -458,7 +785,7 @@ AUTHOR_ALIASES = {}
 
 FIELD_RE = re.compile(r"\*\*([A-Za-z][A-Za-z ]*?):\*\*")
 RUNLOG_RE = re.compile(r"^- (\d{8}-\d{6}) ")
-PLAYLIST_ID_RE = re.compile(r"\b(PL[A-Za-z0-9_-]{5,})")
+PLAYLIST_ID_RE = re.compile(r"\b(PL[A-Za-z0-9_-]{5,}|course-[a-z0-9]+(?:-[a-z0-9]+)*)")
 PLAYLIST_POS_RE = re.compile(r"#(\d+)")
 SECONDS_RE = re.compile(r"\((\d+)\s*s\)")
 
@@ -1549,8 +1876,13 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
 
+    def source_args(sp):
+        sp.add_argument("--url", help="YouTube URL")
+        sp.add_argument("--file", help="local capture (mp4) instead of --url")
+        sp.add_argument("--id", help="dossier id for --file: a slug naming videos/<id>/")
+
     a = sub.add_parser("ask", help="interrogate video via Gemini")
-    a.add_argument("--url", required=True)
+    source_args(a)
     a.add_argument("--question", required=True)
     a.add_argument("--start", help="clip start (MM:SS or seconds)")
     a.add_argument("--end", help="clip end")
@@ -1560,12 +1892,28 @@ def main():
     a.set_defaults(func=cmd_ask)
 
     f = sub.add_parser("frames", help="pull frames for verification")
-    f.add_argument("--url", required=True)
+    source_args(f)
     f.add_argument("--start", required=True)
     f.add_argument("--end", required=True)
     f.add_argument("--fps", type=float, default=1)
     f.add_argument("--out", help="output directory (default: videos/<id>/frames-*)")
     f.set_defaults(func=cmd_frames)
+
+    t = sub.add_parser("transcribe",
+                       help="local capture -> transcript.{json,txt} + slides.md")
+    t.add_argument("--file", required=True, help="local capture (mp4)")
+    t.add_argument("--id", required=True, help="dossier id: slug naming videos/<id>/")
+    t.add_argument("--start", help="window start (MM:SS); default 0")
+    t.add_argument("--end", help="window end; default: file duration")
+    t.add_argument("--chunk", type=float, default=10.0,
+                   help="minutes per Gemini call (default 10)")
+    t.add_argument("--fps", type=float, help="sampling fps (default 1)")
+    t.add_argument("--resolution", choices=["low", "medium", "high"],
+                   help="upload path honors this; default low")
+    t.add_argument("--absolute", action="store_true",
+                   help="model timestamps are file-absolute already (skip re-basing)")
+    t.add_argument("--model", default=DEFAULT_MODEL)
+    t.set_defaults(func=cmd_transcribe)
 
     i = sub.add_parser("index", help="regenerate INDEX.md from the cards")
     i.add_argument("--stdout", action="store_true",

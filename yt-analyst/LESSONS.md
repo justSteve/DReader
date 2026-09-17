@@ -937,3 +937,19 @@ Use it whenever a video shows ES with a visible clock and legend and the
 date falls inside the corpus (2025-05-27 → 2026-09-06, afternoons only
 except July 2026). It verifies the *chart*, not any claim made about it —
 the attribution caveat (2026-08-30) still applies to figures Gemini reads.
+
+## 2026-09-17 — Uploaded-file path: a windowed chunk is timestamped from the FILE, not the clip
+
+**Status: confirmed** (two runs, `it-orderflow-trapped-4304`, both 10:00-13:15
+chunks came back 10:00-13:04 / 13:05 despite the prompt rule "timestamps are
+measured from the start of the segment you were given").
+
+On the Files-API path a window is `video_metadata.start_offset/end_offset` on
+the whole uploaded file, and Gemini keeps the file's clock: it does not treat
+the window as a new zero. `transcribe` used to add the window start on top,
+so chunk two of a 13-minute file landed at 20:00-23:04 (runs
+`20260917-112310/-112333`). Fix in `chunk_offset()`: look at where the reply's
+timestamps sit — inside `[a, b]` means file frame, inside `[0, b-a]` means clip
+frame — and re-base only in the second case; `--absolute` still forces the file
+frame. The YouTube-URL path with `--start/--end` was never checked for this;
+assume nothing there until a clipped ask shows which frame it uses.

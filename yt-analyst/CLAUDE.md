@@ -159,6 +159,38 @@ Measured 2026-08-28 (controlled 5-run comparison, LESSONS.md):
 - Upshot: the accurate configuration and the cheapest configuration are the
   same one.
 
+## Local captures (course recordings, members-only material)
+
+Material Gemini cannot fetch by URL — the InvestiTrade Orderflow course
+(bead dr-22w), members-only streams — arrives as Game Bar recordings in
+`/mnt/c/Users/steve/OneDrive/Videos/Captures/`. Every command takes
+`--file PATH --id ID` in place of `--url`; `ID` is a slug you choose
+(`it-orderflow-<topic>`) and names `videos/<id>/` exactly as a YouTube id
+would. The file stays where Steve put it; the card records its path.
+
+- **One upload, many asks.** The first call uploads the file through the
+  Gemini Files API (minutes for a gigabyte over the WSL bridge) and caches
+  the handle in `videos/<id>/upload.json`; every later ask, clipped or not,
+  reuses it until Google expires it at 48 h. Do not delete the cache file
+  mid-session.
+- **Start with `transcribe`, not `ask`.** `yta.py transcribe --file … --id …`
+  is the wide pass on this path: it writes `transcript.json`,
+  `transcript.txt` (`[MM:SS] speech`, the READ.md substrate the YouTube
+  cards get from captions) and `slides.md` (every slide once, verbatim), in
+  chunks of `--chunk` minutes so no reply outruns the output limit, and
+  re-bases each chunk's timestamps onto the file. Ask questions after that,
+  on clipped windows, as the doctrine says.
+- **`--resolution` is live here** (LESSONS.md 2026-09-12): default is low.
+  Slides and narration read fine at low; footprint cells, DOM numbers and
+  the orange clock labels need `--resolution high` on a clipped window, at
+  roughly 3.5× the video tokens.
+- **`frames` cuts straight from the file** with ffmpeg; no download step.
+- **Header fields YouTube would supply are yours to fill**: Title, Channel
+  (`Carmine Rosato — InvestiTrade Orderflow Course, ch. N`), Duration comes
+  from ffprobe; Uploaded and Views stay absent. Group chapters with
+  `**Playlist:** course-investitrade-orderflow #N` so INDEX.md orders them and
+  finds the synthesis in `playlists/`.
+
 ## Card maintenance (end of every session)
 
 Before finishing a session on a video, update its CARD.md:
