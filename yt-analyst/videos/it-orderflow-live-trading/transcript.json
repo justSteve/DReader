@@ -1,0 +1,602 @@
+{
+  "id": "it-orderflow-live-trading",
+  "file": "/mnt/c/Users/steve/OneDrive/Videos/Captures/LiveTrading.mp4",
+  "duration_s": 913,
+  "window": [
+    "0:00",
+    "15:13"
+  ],
+  "chunk_s": 600,
+  "models": [
+    "gemini-flash-latest"
+  ],
+  "resolution": "default(low)",
+  "fps": null,
+  "prompt_tokens": 83862,
+  "output_tokens": 6573,
+  "runs": [
+    "20260917-154339",
+    "20260917-154400"
+  ],
+  "segments": [
+    {
+      "t": "0:00",
+      "speech": "",
+      "screen": "chart",
+      "note": "Thinkorswim multi-chart layout with DOM on left"
+    },
+    {
+      "t": "0:09",
+      "speech": "Couple things I wanna go over before the market opens is the plan on the S&P 500. Pull up a 30 minute chart. And what we're",
+      "screen": "chart",
+      "note": "Maximizes 30-minute /ES chart"
+    },
+    {
+      "t": "0:19",
+      "speech": "gonna see here is yesterday the market was very balanced. There was no clear direction. We sold off, then we rallied, and we really",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "0:27",
+      "speech": "pretty much closed right where we opened at. It was a flat day. And because of that, there's not gonna be any new supply or demand zones. There's no new imbalances. It's basically",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "0:37",
+      "speech": "just a wash of a day. Now the day yesterday, we had a downside target of 4180. This level today is not very important to me. However,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "0:49",
+      "speech": "it's the only level that I have on my charts, which yesterday got respected pretty well, that I'm gonna keep on just in case the market sells off. I don't wanna miss a sell",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:00",
+      "speech": "off targeting demand just because I don't have this level on my charts. To the upside, I have a 4210 level. This is coincides with a pre-market",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:10",
+      "speech": "high. This coincides with an area of very low volume that if we could get above this, the market should have open doors to rally into the next",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:21",
+      "speech": "resistance level, the next supply level, or the next area of selling that I found on the tape. Now the next area of selling, which I found on the tape,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:31",
+      "speech": "happened on May 30th, which was Tuesday, where we saw very aggressive selling at 4224 to 4232. Now I base my",
+      "screen": "mixed",
+      "note": "Opens Discord channel window #es-spy-pre-market-plan"
+    },
+    {
+      "t": "1:40",
+      "speech": "analysis off these levels. I'm gonna keep 4210 on my chart, and I'm gonna keep 4170 to 4150, which is this very large green demand zone. This formed",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "1:50",
+      "speech": "back on, I wanna say, Friday of that very large rally. So my bullish plan today is if we could get above 4210, I wanna scalp longs targeting",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "2:02",
+      "speech": "4224 to 4232. My bearish plan, which I'm not so convinced with this 4180 level. However, I'm gonna",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "2:12",
+      "speech": "go over another piece of confirmation. But if we break below this 4180 level, then I wanna scalp short targeting 4170 demand",
+      "screen": "chart",
+      "note": "Minimizes Discord window back to /ES 30m chart"
+    },
+    {
+      "t": "2:21",
+      "speech": "all the way down to 4150, and it's my job to gauge what happens inside of this green box. This could be a very good long opportunity.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:30",
+      "speech": "This is gonna be a good opportunity that if I do get short beforehand, I wanna gauge the tape and get an area inside this where I could scale out and protect profits if",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:39",
+      "speech": "I do take the market short beforehand. Now to add on top of this, I think the 4180 level on the S&P could be a high quality one if the Nasdaq",
+      "screen": "mixed",
+      "note": "Brings up Discord /NQ plan"
+    },
+    {
+      "t": "2:50",
+      "speech": "fails to hold this 14255 demand zone. It's bounced the market yesterday. It's also bounced the market overnight.",
+      "screen": "chart",
+      "note": "Switches to /NQ 30m chart"
+    },
+    {
+      "t": "2:59",
+      "speech": "We also are putting in higher lows, and we also are putting in lower lows. Nasdaq has been a relatively stronger name, meaning when the S&P 500",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "3:07",
+      "speech": "has not rallied so much, the Nasdaq has been relatively stronger and has rallied higher than the S&P. Now in the overnight session,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "3:17",
+      "speech": "something has changed. The Nasdaq is a little weaker compared to the S&P 500, which we normally have been seeing. So because of this,",
+      "screen": "chart",
+      "note": "Restores multi-chart layout"
+    },
+    {
+      "t": "3:27",
+      "speech": "if the Nasdaq does, in fact, break below this 14255 demand, it's bounced price multiple times. If the reaction is different, we're gonna get a different result. Then I expect the",
+      "screen": "chart",
+      "note": "Maximizes /NQ chart"
+    },
+    {
+      "t": "3:39",
+      "speech": "bearish plan where opportunity to play the market short on the Nasdaq will be a nice one. But also for those who specifically trade the S&P, this might offer a very",
+      "screen": "chart",
+      "note": "Switches to /ES 30m chart"
+    },
+    {
+      "t": "3:49",
+      "speech": "nice opportunity to scalp it short if the Nasdaq gives up its support level as well. So it's very important to have levels and then gauge what the market does at your levels of interest. I'm gonna keep my screens",
+      "screen": "chart",
+      "note": "Restores multi-chart layout"
+    },
+    {
+      "t": "4:00",
+      "speech": "recording throughout the morning, and I will let you guys know if I take a trade and my thoughts as I'm in that trade. So the selling is very heavy.",
+      "screen": "chart",
+      "note": "Cuts to open session live trading layout"
+    },
+    {
+      "t": "4:07",
+      "speech": "We could see very aggressive selling. If you pull up even Bookmap, we could see all the aggressive selling coming into the market as we start moving lower. This",
+      "screen": "mixed",
+      "note": "Switches to Bookmap window"
+    },
+    {
+      "t": "4:15",
+      "speech": "is a very good sign because selling is heavy, but this does not mean to chase a move from a straight move down from the open about 13 points lower. So I wanna see a pullback",
+      "screen": "chart",
+      "note": "Switches back to Thinkorswim layout"
+    },
+    {
+      "t": "4:24",
+      "speech": "up. You see how stronger Nasdaq is right now, and we've moved about 13 points off from the highs without a rally up, without a relief bounce. I need",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:33",
+      "speech": "to get in on a relief bounce. I cannot chase this downside move, especially when the weakness is not there. Apple is holding that 177 level.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:41",
+      "speech": "So here's a little relief. This is exactly what I wanna see right at my 4180 level. This is exactly what I wanna see. I need to see relief. I need to see consolidation.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:51",
+      "speech": "I cannot just get in because we moved straight down. I would like to see this rally now fail, and then it's gonna provide a nice opportunity.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:59",
+      "speech": "PMI flash in a minute. So you could tell the book has thinned out, and that's normal for when news gets released. I'm short here.",
+      "screen": "chart",
+      "note": "Enters short trade on DOM at 4182"
+    },
+    {
+      "t": "5:07",
+      "speech": "4182 taking a stab at this. The action is very, very weak in my eyes. Sellers keep hitting the market. We're at the lower portion of the range.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:16",
+      "speech": "Nasdaq is holding this support. If Nasdaq cracks it, this sell-off below 4180 is gonna be very, very strong. I'm gonna put my stop loss above",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:23",
+      "speech": "this 4186 level. So I'm risking about 4 points to make 12, 3 to 1. Now we just need this to crack.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:31",
+      "speech": "Bookmap shows that aggressive selling, we get that relief up. All these buyers might be trapped now. If the market puts aggression to them, that's just gonna cause a",
+      "screen": "mixed",
+      "note": "Switches to Bookmap window overlaying chart"
+    },
+    {
+      "t": "5:39",
+      "speech": "further sell-off because these guys have to stop out. So I'm now looking for selling aggression to step in. Fast orders hitting the bid",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "5:48",
+      "speech": "with large size. If we can get that below 4180, the setup is gonna work out very, very well. So here's that break below 418",
+      "screen": "chart",
+      "note": "Minimizes Bookmap back to Thinkorswim"
+    },
+    {
+      "t": "5:56",
+      "speech": "0. Now my job is to observe what the market does at this level. If we spot buying pressure down here, then I'm gonna get out of this short position.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:04",
+      "speech": "Definitely need the weakness to hit the Nasdaq. The Nasdaq is now being stronger. So now my eyes",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:11",
+      "speech": "are on the tape. I am watching to see if buying steps into the market. Right now, we're below that 4180 level, and there's heavy aggressive selling.",
+      "screen": "mixed",
+      "note": "Brings up Bookmap window"
+    },
+    {
+      "t": "6:20",
+      "speech": "So if buying now steps in, my short is not favorable in my eyes because of all the selling below my level, yet there's no continuation. But market can't",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "6:28",
+      "speech": "go straight down. There's gonna be moves up. There's gonna be consolidation. You gotta let it play out. But there's nothing on your tape indicating at this moment",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "6:36",
+      "speech": "that this sell-off is gonna fail. I just I'm not a huge fan at this moment of all this selling into the low, yet the market cannot move any lower.",
+      "screen": "chart",
+      "note": "Hides Bookmap"
+    },
+    {
+      "t": "6:46",
+      "speech": "So we need that to change, and we need the market to move lower. So here's that aggressive selling. We need the pressure to continue now. So even though we",
+      "screen": "mixed",
+      "note": "Brings Bookmap back up"
+    },
+    {
+      "t": "6:53",
+      "speech": "see all this selling at the low, yet the market's not selling off, it's not a red flag yet because the market's having a hard time moving up. So I",
+      "screen": "chart",
+      "note": "Hides Bookmap"
+    },
+    {
+      "t": "7:00",
+      "speech": "have no reason to worry in this short position. I'm still up 3 points. Very close to stopping myself out. I re-bid above 4",
+      "screen": "chart",
+      "note": "Price bounces back up toward 4186"
+    },
+    {
+      "t": "7:08",
+      "speech": "187, I'm out of this thing, and I'll gladly take a 5 point loss. All right, I'm out of this thing. 4187, 5 point loss.",
+      "screen": "chart",
+      "note": "Stops out of position on DOM at 4187"
+    },
+    {
+      "t": "7:17",
+      "speech": "Okay, looking back on my short entry directly at 4180, my entry, I would not say was bad.",
+      "screen": "chart",
+      "note": "Shows wider chart of subsequent rally"
+    },
+    {
+      "t": "7:24",
+      "speech": "What I will say was bad was I was not reacting to that move up and the lack of follow-through to the downside. When I entered was a very, very good entry. However,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "7:34",
+      "speech": "when we broke below 4180, and reviewing this chart now after the fact, the lack of downside follow-through indicated that the downside short",
+      "screen": "mixed",
+      "note": "Opens Bookmap playback window"
+    },
+    {
+      "t": "7:44",
+      "speech": "has a lower odd of working out. We see all this aggressive selling coming to 4180 low, 4178. There's tons of selling hitting the market, yet the market is not moving lower.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "7:57",
+      "speech": "What I did incorrectly was I should have recognized this and took profits off when I had it. And if we kept selling off, I could have just reentered that",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "8:07",
+      "speech": "setup. However, losing 5 points is not a major deal. What is a major deal was this could have provided a very good opportunity to get long at these lows.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "8:18",
+      "speech": "The better setup would have been reverse my short, get long, and I would have been able to ride a nice rally up just by spotting how weak those",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "8:26",
+      "speech": "sellers were and how strong those passive buyers were holding the market up, basically like a floor or a level of support directly at my 4180 target.",
+      "screen": "chart",
+      "note": "Hides Bookmap back to Thinkorswim layout"
+    },
+    {
+      "t": "8:37",
+      "speech": "Now the market rallied off this level, and having FOMO for not reversing my position and taking it long at this low because Apple did bounce off 177,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:46",
+      "speech": "and the Nasdaq bounced off this demand zone, right? Everything looks good always after the fact. Now what I'm watching for is this 4210",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:55",
+      "speech": "level to break aggressively. So you saw how we did not break aggressively below 4180. If the same thing happens here and I get long beforehand,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:03",
+      "speech": "then I'm gonna use the action that I just took from 4180 to manage this trade correctly at 4210. So I am watching a strong break above 42",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:12",
+      "speech": "10 to play the market long, targeting this 4224, 4232 level of supply. I will update you guys when the market moves next and I make an entry.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:23",
+      "speech": "I'm viewing this consolidation right here as a very bullish sign. There is aggressive selling holding up near here the highs, which is bullish. We are",
+      "screen": "chart",
+      "note": "Shows consolidation near 4207"
+    },
+    {
+      "t": "9:32",
+      "speech": "only 5 points away from my level. If aggressive buying comes in, I have no problem getting in early, anticipating that we will break 4210.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:41",
+      "speech": "And then depending on the reaction up there is what I will do to manage the trade accordingly. But I am liking this consolidation and how well it's holding. I'm long 420",
+      "screen": "chart",
+      "note": "Enters long trade on DOM at 4207.25"
+    },
+    {
+      "t": "9:51",
+      "speech": "7, but I'm long anticipating that we break out above 4210, and the aggression needs to continue above 4",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:00",
+      "speech": "4210. I like how aggressive and how low this volume is on the consolidation and how well it's holding, only 5 points away from 4210 level.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:10",
+      "speech": "So now my job is to gauge what happens at 4210. You have tons of buying into this level. Very, very strong buying into this level. Very strong buying.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:20",
+      "speech": "Similar to what we saw before, we don't wanna see this strong buying, but no follow through. We wanna see strong buying have continuation. Earlier, we saw strong selling, but no continuation.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:30",
+      "speech": "But this is very, very strong buying through this level. 488, 444, and the buying is continuing now.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:38",
+      "speech": "My target for this trade is 4222 to 4232. It's not gonna go straight up forever. I have a very good entry that I'm comfortable holding this position.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:48",
+      "speech": "There will be pullbacks. There will be consolidation, but this breakout is very, very strong. See, we're holding on that pullback, which is a very good sign.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:56",
+      "speech": "Now we need to break these highs. There's not much resistance from where we're at right now at 4212 into this 4224 level. There's not much resistance. There's not much supply.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:07",
+      "speech": "It's almost like there's open doors that if the buying is continued to be strong like we're seeing right now, we should see a very nice rally up into 4224.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:17",
+      "speech": "So you see how this is different from earlier? Earlier, we broke below our key level and was failing. Here, we're breaking above the key level. We're holding. Aggression is still into the market.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:27",
+      "speech": "The action is feels different and is reacting different to the key level. There is not much resistance. There is not much supply above now. Here's another high of day break.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:38",
+      "speech": "You wanna see the aggression continue. We got a 336 lot offer at 2- 4215. I don't really look at passive orders much, but VIX, very strong.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:47",
+      "speech": "Apple, very strong. Tesla's about to turn green on the day. See, now there's strong buying at these highs.",
+      "screen": "mixed",
+      "note": "Briefly overlays charts of /VXM23 and AAPL"
+    },
+    {
+      "t": "11:55",
+      "speech": "So you want to see the market move away from this very fast. You wanna see a fast tape away from this. You don't wanna see this level fail, then come below and it acts as resistance.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:06",
+      "speech": "You do not wanna see that. If I see that, I'm gonna exit this position early. New high of day, 4217. Lots of trades hitting the offer.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:15",
+      "speech": "All I want is 5 more points in 4224. If we can get a strong push up into that, I'll be very, very happy. Very, very good sign to be a bull.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:22",
+      "speech": "Here's another high of day test. Just a slow grind up, aggressive buying hitting the market. Pullbacks are hitting with aggressive selling, but that aggressive selling is getting absorbed.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:32",
+      "speech": "Here's another high of day break. It's just a slow grind up, breaking highs. The only problem with grinds up like this is it's almost like taking the stairs higher and the elevator down.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:43",
+      "speech": "So when there is a pullback, it loses a lot of those gains. So I'm being very, very cautious right now, but all I want is 1 more quick push up. Here's 4- 4220.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:53",
+      "speech": "This 400 lot seller is trying to get hit, 207 lots. I just took 3 contracts off up here at 4219.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:01",
+      "speech": "I just sold 75 percent of my position up here near the highs 4218. I'm protecting myself. I have a few contracts open in case we wanna rally an extra 2 to 4 points into my target.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:12",
+      "speech": "Some of my position is still open. However, I closed some to lock it in. I don't like the slow grind up. I am selling into strength, which is what I like doing in positions like this.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:24",
+      "speech": "I still have a couple open in case we wanna rally higher. If anybody else is in a position like this, you have to scale out, in my opinion, just like I did to protect yourself.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:34",
+      "speech": "You don't wanna give up on a 13 point profit when a sell-off in a 1-minute candle could give up 10 points of those 13 point gain that you have.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:44",
+      "speech": "There's another high of day test. Anybody buying this breakout, in my opinion, chasing up here near these highs is asking for a losing trade to get reversed on if you're buying a breakout on the highs like this.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:56",
+      "speech": "Yeah, I mean, there's still tons of aggressive buying hitting the market. Here's a new high. Here's the 24 target. I'm all out of this trade. 4222 right after 4224 hit.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:06",
+      "speech": "All out of this trade. This thing could keep ripping up. I just do not like this slow grind up. A pullback definitely is imminent and I don't feel like sitting in a pullback and giving up some gains.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:17",
+      "speech": "I went down from minus 25 points to up 40 points on the day. That's a 65 point swing. This thing could keep running and honestly, it's very, very bullish.",
+      "screen": "chart",
+      "note": "On-screen text annotation appears: '65 points TOTAL for all contracts **'"
+    },
+    {
+      "t": "14:26",
+      "speech": "But I had a plan. My target hits, I scaled out before my first target just because of the conditions. And we can keep going up, but I'm not gonna look at how much I could have made or how much I should have made if I kept holding.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:40",
+      "speech": "I sold when my target hits, and I never regret my plan. I'm focused on the present moment. There's 1,200 lots which are actually hitting the bid near the highs up here and the selling continues.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:50",
+      "speech": "Never look at the future and say how much more you could have made if you kept holding and you didn't sell. That'll just affect your thoughts and affect your decisions for the next couple trades.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:59",
+      "speech": "This is a perfect example to remain patient. And if you take a losing trade, do not put your head down. Instead, focus on another good opportunity.",
+      "screen": "chart",
+      "note": null
+    }
+  ],
+  "slides": [],
+  "uncertainties": [],
+  "generated": "2026-09-17T15:44:00"
+}

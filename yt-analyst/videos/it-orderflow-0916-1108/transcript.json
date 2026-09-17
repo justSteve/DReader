@@ -1,0 +1,1172 @@
+{
+  "id": "it-orderflow-0916-1108",
+  "file": "/mnt/c/Users/steve/OneDrive/Videos/Captures/Orderflow Trading Course _ InvestiTrade - Google Chrome 2026-09-16 11-08-12.mp4",
+  "duration_s": 2205,
+  "window": [
+    "0:00",
+    "36:45"
+  ],
+  "chunk_s": 600,
+  "models": [
+    "gemini-flash-latest"
+  ],
+  "resolution": "default(low)",
+  "fps": null,
+  "prompt_tokens": 202215,
+  "output_tokens": 17912,
+  "runs": [
+    "20260917-145943",
+    "20260917-150017",
+    "20260917-150058",
+    "20260917-150131"
+  ],
+  "segments": [
+    {
+      "t": "0:00",
+      "speech": "In these next few lessons, we're gonna go into exact trades and all the tools and all the platforms that we've went over so far. We're gonna put the pieces to the puzzle together.",
+      "screen": "slide",
+      "note": "Slide title: Strong Buying / Selling Absorption"
+    },
+    {
+      "t": "0:13",
+      "speech": "Now when you're trading and you're looking to buy or sell something, when you're looking to formulate a plan, market context is very, very important.",
+      "screen": "slide",
+      "note": "Context bullets appear on slide"
+    },
+    {
+      "t": "0:23",
+      "speech": "What is the theme of the market? What is the story the market is telling you? The market is essentially a storyteller. Remember back in kindergarten when you would learn how to read a book,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:34",
+      "speech": "and the teacher would say you have to use context clues to figure out what that word means? Context means the same thing in the market. What is the theme of market participants?",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:46",
+      "speech": "What is the conditions of the market? This is gonna give us context about what we are trying to figure out. So the context for this first trade is we're gonna go over the S&P,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:57",
+      "speech": "and 4142 has been a level which has acted as support once we're above it, and resistance once we are below it. How I determine a key level is, does this level serve as an important reference point to the market?",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:12",
+      "speech": "Are we holding it? Are we rejecting it? Is it a level that the market is respecting and we see activity on the tape if it is tested? And this 4142 level that I'm gonna go over has been a level which has been respected.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:24",
+      "speech": "Every time we are below it, it acts as resistance. Every time we are above it, it also acts as support. Here we could see it acting as resistance.",
+      "screen": "chart",
+      "note": "Switches to thinkorswim /ES 30m chart with yellow line at 4142"
+    },
+    {
+      "t": "1:40",
+      "speech": "You know, some days we break through it, but it's just been a level that I have in the back of my mind. And this is where math serves an important role in the market, or having a strong memory.",
+      "screen": "chart",
+      "note": "Zooms out on 30m chart"
+    },
+    {
+      "t": "1:51",
+      "speech": "Because a lot of people this day would probably remove this level, right, after we break above it, then break below it, and it doesn't really serve an inflection point in the market or the market doesn't really respect it well.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:02",
+      "speech": "But the following day, if I had that back on my charts, we see we opened up at it, it acted as resistance, rallied up into it, acted as resistance, and sold off.",
+      "screen": "chart",
+      "note": "Zooms in to show resistance touches around 4142"
+    },
+    {
+      "t": "2:11",
+      "speech": "So this has just been a level back in May of 2023 where the market has just respected it, rejected, and acted as support once we are above or below it. So that's the first point to this thesis.",
+      "screen": "chart",
+      "note": "Panning across May 2023 chart history"
+    },
+    {
+      "t": "2:24",
+      "speech": "The second point to this context is last week, the market broke out of balance, and a break out of balance needs to bring continuation.",
+      "screen": "slide",
+      "note": "Switches back to slide"
+    },
+    {
+      "t": "2:35",
+      "speech": "In this example, the market returned back into balance, and 4142 is about the midpoint of the previous balance range.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:44",
+      "speech": "What this means is in this area right here, the market broke out of balance. We could see that we are balanced. We are finding value, we are consolidating. Market participants are agreeing on price.",
+      "screen": "chart",
+      "note": "Switches to 30m chart, draws green rectangle for balance area"
+    },
+    {
+      "t": "2:56",
+      "speech": "And I'm sure if I pulled up a volume profile, you would see a lot of volume being transacted inside of this rectangular range. Then an external force, maybe larger time frame participants entering the market,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "3:09",
+      "speech": "and we start rallying up over here, breaking us out of this balance range. Now a breakout of balance should act or should bring continuation, especially after let's just call it the balance range high,",
+      "screen": "chart",
+      "note": "Draws second rectangle showing breakout range"
+    },
+    {
+      "t": "3:24",
+      "speech": "acts as support or acts as demand where we hold it and we find value outside of this balance range. And in this case, we saw it and it brought about two or three days of continuation up after we broke out of this balance range.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "3:40",
+      "speech": "Now, two, three days after that, the market sells off and we move back into this balance range. And about halfway through this balance range coincides with that 4142 level.",
+      "screen": "chart",
+      "note": "Shows sell-off back down into original balance rectangle"
+    },
+    {
+      "t": "3:52",
+      "speech": "It's essentially the midpoint or the 50 percent line of the high to the low of a balanced range.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:02",
+      "speech": "On top of all this, overnight on this day of this setup, we were finding support around 4142 and 4140.",
+      "screen": "slide",
+      "note": "Switches back to slide"
+    },
+    {
+      "t": "4:11",
+      "speech": "I could pull up a 5 minute chart, and what you're gonna see is the market essentially holds this level, and it also acts as support. Despite it being relatively flat overnight, we see the market holding it,",
+      "screen": "chart",
+      "note": "Switches to thinkorswim 5m chart"
+    },
+    {
+      "t": "4:24",
+      "speech": "holding it, holding it. We actually sell off and then rally up, and on a smaller time frame, this little consolidation right here was a lack of trade to the downside because we sold off, the market immediately reclaimed back above this level,",
+      "screen": "chart",
+      "note": "Points to overnight dip below 4142"
+    },
+    {
+      "t": "4:36",
+      "speech": "and it now coincides with 4142. And this serves as an important area on my chart because of all these factors. Now that's context.",
+      "screen": "chart",
+      "note": "Draws small rectangle around the dip and reclaim"
+    },
+    {
+      "t": "4:47",
+      "speech": "Now here's the execution, and here's the thesis backing this setup. The market opens up and immediately we sell off into this 4142 to 4140 general region.",
+      "screen": "slide",
+      "note": "Right column added to slide: Execution bullets"
+    },
+    {
+      "t": "4:59",
+      "speech": "I don't want people coming up with an exact level that we have to bounce off 4142 or bounce off 100 dollars perfectly. We can't break below it, we can't give the market room to breathe.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "5:10",
+      "speech": "You gotta give the market room to breathe. You gotta give it room for error. You gotta give it room for participants to leverage into larger positions. You just have to — it's not gonna reject or bounce to the exact point,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "5:22",
+      "speech": "to the exact tick every single time. So 4142, 4140, even if you wanna call it 4137, it's a general area or a general region.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "5:32",
+      "speech": "And remember what I said in the earlier slides about how it can be general areas of absorption? Well, this is the exact point here. This is gonna be a general area.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "5:41",
+      "speech": "What we're gonna see is the market opens up, it sells off, and you're gonna see a ton of aggressive selling activity at this 4142, 4140 level. Yet the market is failing to move lower,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "5:53",
+      "speech": "despite many, many aggressive sell orders hitting the bid and below the bid. And on top of this, the market is gonna move off this level or bounce off of it temporarily,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "6:06",
+      "speech": "and we come back, return to that level, and it gets tested, and yet again we see all the aggressive selling. You'll see what I mean with a candlestick chart.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "6:16",
+      "speech": "And then eventually the market reverses up, sellers give up, and then buyers step in. And this is gonna be a nice valid reversal, spotting selling absorption or if you wanna call it strong buying in this case.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "6:28",
+      "speech": "Now go into a 5 minute chart. We're gonna see this very well. Here's our 4142 level. The market's gonna sell off into this, and I'm gonna show you the tape.",
+      "screen": "chart",
+      "note": "Switches to thinkorswim 5m chart"
+    },
+    {
+      "t": "6:37",
+      "speech": "And I want you to keep an eye on this 4142 to about 4137 because there's multiple times, over six or seven tests, that we come into it and aggressive selling hits the bid, yet we are not selling off much lower.",
+      "screen": "chart",
+      "note": "Highlights multiple candle wicks touching/testing 4142"
+    },
+    {
+      "t": "6:52",
+      "speech": "So now I'm gonna pull up Sierra Charts up here. And here we have a VWAP is my purple line on a 1 minute chart. And here to the left, we have a delta footprint on a 5 point range.",
+      "screen": "chart",
+      "note": "Opens Sierra Chart window side by side (footprint on left, 1m chart on right)"
+    },
+    {
+      "t": "7:05",
+      "speech": "Now I'm gonna play this replay, and you're gonna see this footprint essentially print new data and new information. And I wanna try to get this to the best of you guys as possible.",
+      "screen": "chart",
+      "note": "Starts replay at 9:33:34 am"
+    },
+    {
+      "t": "7:14",
+      "speech": "And the first bounce comes around 9:38 Eastern time. So I'm gonna speed this up a little bit. Let's go even faster.",
+      "screen": "chart",
+      "note": "Speeds up Sierra Chart replay controller"
+    },
+    {
+      "t": "7:25",
+      "speech": "And this is using the Sierra Charts replay feature. And then I'm also gonna show you the heat map, what that looked like. But I just want to get this to 9:38.",
+      "screen": "chart",
+      "note": "Replay advances through 9:35, 9:36"
+    },
+    {
+      "t": "7:33",
+      "speech": "And what you're gonna see here, I'm gonna speed it up again just so this video doesn't take hours, is look at all this aggressive selling coming into the low here at 4140, 4142, right?",
+      "screen": "chart",
+      "note": "Replay clock reaches 9:37-9:38; footprint shows heavy sell volume at low"
+    },
+    {
+      "t": "7:44",
+      "speech": "The market's trying to move lower, and you could see it on a 1 minute chart. Then we start to move higher. So at this point, there's really not absorption just yet.",
+      "screen": "chart",
+      "note": "Replay reaches 9:40-9:41; price ticks up"
+    },
+    {
+      "t": "7:54",
+      "speech": "Essentially, all I see is the market selling off into 4142, 4140. And I don't really see absorption. I mean, yes, there is some selling at the low. We can look at the delta profile, but there's nothing significant.",
+      "screen": "chart",
+      "note": "Replay clock at 9:42:00 pm [am]"
+    },
+    {
+      "t": "8:06",
+      "speech": "We just see 243 lots, 326 lots, negative delta at the low, and then the market tries to move up off of this.",
+      "screen": "chart",
+      "note": "Points out numbers on footprint delta column at low"
+    },
+    {
+      "t": "8:15",
+      "speech": "Now when it starts to become interesting is around — you're gonna see another pullback into this, but it's around 9:50 Eastern where we dip back down.",
+      "screen": "chart",
+      "note": "Replay advances past 9:43, 9:44"
+    },
+    {
+      "t": "8:24",
+      "speech": "So now we move up. And remember what I said in that example earlier? I'll pull this back up over here. It was like six or seven, I don't know the exact number, tests.",
+      "screen": "slide",
+      "note": "Brings slide window back to foreground"
+    },
+    {
+      "t": "8:34",
+      "speech": "Essentially, the market moves off this level and it returns back to it, right? So in this example right here, the market came into this 4142 level, and now we're starting to move up.",
+      "screen": "chart",
+      "note": "Minimizes slide, back to Sierra Chart replay at 9:45:43"
+    },
+    {
+      "t": "8:45",
+      "speech": "But I don't really see anything in this ex— in this case at this moment that's telling me to take the market long just yet. It happens a little later on around 9:50, because now we're gonna return back to 4142,",
+      "screen": "chart",
+      "note": "Replay advances past 9:46, 9:47"
+    },
+    {
+      "t": "8:58",
+      "speech": "and you're gonna spot aggressive selling at this level. Let's slow it down right here. Right here, right? Let's go to real time speed.",
+      "screen": "chart",
+      "note": "Replay hits 9:50:34 / 9:51:04, slows replay to 1.00x"
+    },
+    {
+      "t": "9:09",
+      "speech": "Now the market come back into 4140, 4142. And now we start to see buying come into the market yet again, right? Delta's pretty flat. I'm not gonna comment much on delta.",
+      "screen": "chart",
+      "note": "Footprint printing at 4140-4142"
+    },
+    {
+      "t": "9:19",
+      "speech": "Like I said, I don't really use it that much in my analysis. But now the market comes off into 4140, and we're having a hard time breaking below it despite the selling into the market.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:30",
+      "speech": "Now I'm gonna speed it up once again. The market's gonna rally back up into, like, the 47s, 48s. And then a few minutes later, around 10:12, so I gotta speed this up a little faster.",
+      "screen": "chart",
+      "note": "Speeds up replay past 9:52, 9:53, 9:58"
+    },
+    {
+      "t": "9:44",
+      "speech": "There's really nothing here just yet indicating a potential bounce. Yeah, we're failing to break below the low, but the aggressive selling is not so, so aggressive.",
+      "screen": "chart",
+      "note": "Replay passes 10:00:00, 10:02:00"
+    },
+    {
+      "t": "9:55",
+      "speech": "We see aggressive selling. And on the on the 1 minute chart, we see a double bottom down here, but their selling is not",
+      "screen": "chart",
+      "note": "Replay at 10:03:45 pm [am], cursor points at double bottom on 1m chart"
+    },
+    {
+      "t": "10:00",
+      "speech": "a double bottom down here, but their selling is not really, really aggressive like you're going to see right here at 10 12. So let me slow this down here at 10 12. So now we see selling return to the",
+      "screen": "chart",
+      "note": "Replay window opened at 10:07, speed reduced"
+    },
+    {
+      "t": "10:10",
+      "speech": "market. Now we're forming like a triple bottom. And what's going to happen here is we're going to break the low. So these scenarios where we're failing to break a low, in this case,",
+      "screen": "chart",
+      "note": "Cursor tracks 10:12 candle forming at the low"
+    },
+    {
+      "t": "10:20",
+      "speech": "if you put your stop loss below the low of day, and let's just say you got long on that first double bottom, most likely you're going to stop out if your stop is below low of day. In these examples,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:30",
+      "speech": "you have to give the trade a little more room to breathe in case we break the low, because look at all this selling right here on the footprint. Negative 3 40 delta, negative 5 40 delta, negative 2",
+      "screen": "chart",
+      "note": "Presenter zooms into footprint chart on left showing red delta bars"
+    },
+    {
+      "t": "10:41",
+      "speech": "40 delta, right? This is real time. I'm going to go to 1 speed. There's all this selling right here. Yet the market now delta is starting to come down a little bit.",
+      "screen": "chart",
+      "note": "Speed set to 1x"
+    },
+    {
+      "t": "10:50",
+      "speech": "Yeah, we can't break below it. We should break below it. And again, the market's going to rally. We're going to come back and test it, and we're going to see all the selling. Negative 8 95 delta, negative 4 30 delta,",
+      "screen": "chart",
+      "note": "Footprint bars display delta numbers -895, -430"
+    },
+    {
+      "t": "11:03",
+      "speech": "negative 800 delta, now negative 900 delta, right? So in real time right now, we're seeing tons of selling at the low, and I'm also going to show you the depth of market. So this is just a footprint example.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:15",
+      "speech": "I'm going to show you the same examples on a depth of market after I show you this footprint. So let me make this smaller. So now we see all these selling at the low.",
+      "screen": "chart",
+      "note": "Presenter resizes footprint window"
+    },
+    {
+      "t": "11:27",
+      "speech": "If buying steps in, sure, maybe take a stab at it long. I would not put a stop loss at low of day in this example, just because, number one, the selling is strong, and number",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:37",
+      "speech": "two, you're prone to a fake low of day breakout, because think about it about context, right? If we break a low, many are going to get short below the low. Many also are going to place stop losses below the low. So",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:49",
+      "speech": "it's a perfect level that if buyers are trying to get into the market, it's a very good point for them to buy when others are selling, shorting, or even stopping out",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:00",
+      "speech": "of a long position early. Now at 10 20, I added the clock for these examples. Same thing. We're going to see the market, you know, now it's bouncing off of this,",
+      "screen": "chart",
+      "note": "Replay clock at 10:16 pm"
+    },
+    {
+      "t": "12:12",
+      "speech": "right? Now we got like a triple bottom. And then at 10 20, we're going to return back to this level. Now this is real time speed right here, or I'll go to 2 speed.",
+      "screen": "chart",
+      "note": "Replay speed adjusted to 2x"
+    },
+    {
+      "t": "12:25",
+      "speech": "Watch what happens down here at these lows. And look how it's the data is being represented on a candle chart. We're going to break low of day here, I think we come to like 4 1 3 7.",
+      "screen": "chart",
+      "note": "Candle chart breaks previous low down toward 4137"
+    },
+    {
+      "t": "12:36",
+      "speech": "Look at all the selling. Tons of selling hitting the low, right? Delta breaking the previous low. This is in real time. We're seeing all the selling. The market technically",
+      "screen": "chart",
+      "note": "Cumulative delta line breaks previous low"
+    },
+    {
+      "t": "12:51",
+      "speech": "should move a lot or I wouldn't call it a lot, but the market should not be in the same point despite all this selling. Then when you see this at any of these points, now",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:03",
+      "speech": "at this moment right here at 10 20, 10 12 when we saw that last bounce, this is where, okay, now I know there's tons of selling, and now I know these sellers are not getting rewarded. All it takes for them to stop out,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:14",
+      "speech": "all it takes is for aggressive buying to step in, or all it takes is for these sellers to give up, and the market has a good chance of reversing to the upside. I see at this moment we have resistance",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:25",
+      "speech": "at this high. Let me add this horizontal line. I know we got resistance at this area right here at 4 1 5 2. So if I'm getting long",
+      "screen": "chart",
+      "note": "Presenter adds green horizontal line at 4152"
+    },
+    {
+      "t": "13:36",
+      "speech": "right here, my first target would be break of this 4 1 5 2. It also aligns with a low volume strip. Up here we see high volume, then low volume above that. I would target a 4 1 5 2 break.",
+      "screen": "chart",
+      "note": "Cursor points to volume profile at 4152"
+    },
+    {
+      "t": "13:50",
+      "speech": "And then my target above that, I would probably target, you know, 4 1 6 0, maybe this 4 1 5 8 area in this general level. But if I'm looking to capitalize on a short-term reversal like this,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:04",
+      "speech": "I want to capitalize and take profits off table fast and then manage the trade accordingly to keep runners. But look at all this aggressive selling. I want to speed this up because I don't want it to take so long.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:19",
+      "speech": "And it's the beauty of the replay feature. Look at all this selling. I'm going to show you a DOM. So I will show you the DOM after this, so don't get ahead of yourself. I just want to show you what it looks like on a footprint.",
+      "screen": "chart",
+      "note": "Presenter briefly opens Bookmap DOM window, then closes it"
+    },
+    {
+      "t": "14:32",
+      "speech": "Seeing all this, market is not selling off at all. This is at 10 20. The market theoretically should",
+      "screen": "chart",
+      "note": "Footprint showing continuous high negative volume delta"
+    },
+    {
+      "t": "14:47",
+      "speech": "mean, this is a what? A 10 minute period, right? This 5 tick range started at 10 0 5, call it. This candle right here, 10 0 5.",
+      "screen": "chart",
+      "note": "Presenter points out narrow range on candle chart"
+    },
+    {
+      "t": "14:58",
+      "speech": "And we've been stuck at 4 1 3 9 to about 4 1 4 2 for about 20 minutes despite all that selling. Now buying is going to step into the market.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "15:10",
+      "speech": "Let's say we're long already. Our stop loss is maybe 3, 4 points below now the current low if you want to give it room to breathe, and you're going to see aggressive buying step into the market.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "15:20",
+      "speech": "There's going to be one more dip at 10 32. So let me speed this up again. Now, boom, aggressive buying steps into the market. Whether you're",
+      "screen": "chart",
+      "note": "Replay speed increased; green buying bars appear on footprint"
+    },
+    {
+      "t": "15:32",
+      "speech": "long already or you're not long, I would be looking for now dips back into it to hold, because look what happens. Come back into the we dumped back into the forties, 42s,",
+      "screen": "chart",
+      "note": "Market pulls back to 4142"
+    },
+    {
+      "t": "15:46",
+      "speech": "and you saw all that dip right down here. That was a little fast, that replay. But it dipped right down, automatically got bought up. That's another buy signal. We should be in this trade long, whether we got",
+      "screen": "chart",
+      "note": "Candle wicks down to 4142 and snaps back up"
+    },
+    {
+      "t": "15:57",
+      "speech": "long at the forties at the low when we spotted that absorption, or we're long up here when that dip right there just got bought up. In this example, if we managed and put a proper stop loss where we gave that trade room to breathe,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "16:11",
+      "speech": "because now the market's been open for an hour and we have not moved off of that 4 1 4 2 level. The way I look at it is this, right? Let's say we want to get an entry,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "16:21",
+      "speech": "so there's two ways you can do it, and this comes with experience. And I didn't really even want to talk about this, but now that this example shows it, I think it's a good time to introduce it.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "16:33",
+      "speech": "Let's say we saw that absorption down here and we got long at the forties or the 39s. The confirmation to get into that trade right there when we saw that absorption was really not proper just yet,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "16:47",
+      "speech": "because what's stopping the market for tons of, you know, 10 times more sellers step in and the market sells off off of that, right? So if you get in before the move, the chances of it working out are slimmer.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "16:59",
+      "speech": "However, your risk, because you are getting in before the move and essentially at the low, is going to be smaller. So you are going to take, let's just call it, more losing trades this way.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "17:10",
+      "speech": "And I prefer to do it this way, because I know I could take a 2, 3 point loss, walk away from it, and take the same entry 5 minutes later and it'd be a 20, 30 point winner. So",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "17:22",
+      "speech": "you might take losing trades a lot more this way, but your reward is going to be much higher, and the probability of it working out is going to be lower. But I'd rather compensate that way,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "17:32",
+      "speech": "because I'll get in before the move and before those late longs start chasing it, because if you're a candlestick trader, you're going to probably wait for this thing to, let's just say, break above VWAP or break above my green line.",
+      "screen": "chart",
+      "note": "Presenter points to purple VWAP and green resistance line"
+    },
+    {
+      "t": "17:44",
+      "speech": "And by the time it breaks out above that, it's going to be too late. But if you wait for the buying to step in and you don't get in at the lows, now let's just say we got along with the 44s or the 45s, that's totally fine.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "17:57",
+      "speech": "It's better confirmation and the chances of working out are going to be higher. However, we are getting in not so much close to the bottom, which means our reward is going to be a little closer and our risk is going to be a little wider.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "18:13",
+      "speech": "So it really depends and you got to play around with it. There's no right way to do it. It's all about testing it and collecting data. I prefer to get in before the move and take a 2 point, 3 point, 4 point loss, it's a paper cut.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "18:25",
+      "speech": "Yeah, it sucks losing, but I know if I time my next entry right after that losing trade, I know I'll be able to capitalize on a 20, 30 point rally off of that level, and I'm cool with taking small losses because my winners are getting me in before",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "18:38",
+      "speech": "the move actually happens. So now we see that dip down, and let's fast forward this to 25 speed. And then you're going to see what you're going to see here",
+      "screen": "chart",
+      "note": "Replay fast-forwarded to 25x"
+    },
+    {
+      "t": "18:50",
+      "speech": "is the market aggressively shoots up, and you're going to see ton of aggressive buying now step in. Tons of buying now stepping in. Market moves up, and we're going to get a rally above that resistance.",
+      "screen": "chart",
+      "note": "Market rallies up through 4152"
+    },
+    {
+      "t": "19:03",
+      "speech": "This is where I would scale out of my position above that resistance level, because I know a lot of late longs are going to be FOMOing into it. They're going to be chasing this. I would scale into some strength right here at that",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "19:14",
+      "speech": "break, hold a couple runners, adjust my stop loss so the trade can never go red at me at this point, and I have a nice winner on my hands, just simply capitalizing, spotting all this aggressive selling, yet there's no follow through.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "19:27",
+      "speech": "We see selling right here. We see selling right here. We see selling right here. Then the market comes up, we dip back down, and where we spotted that selling, that holds and we see it for about 6, 7 or 8 other times",
+      "screen": "chart",
+      "note": "Cursor points across multiple footprint bars showing absorbed selling"
+    },
+    {
+      "t": "19:40",
+      "speech": "after we tested it and the market never the sellers never got rewarded. So this is the example for this trade.",
+      "screen": "slide",
+      "note": "Screen switches to 'Strong Buying / Selling Absorption' slide at 19:42"
+    },
+    {
+      "t": "19:48",
+      "speech": "Let's go over a heat map because essentially we're going to see the same information just visually in a different way, and I will overlay the heat map and the depth of market together. I'm going to pull up the depth of market here. I'm",
+      "screen": "chart",
+      "note": "Screen switches to Bookmap heat map at 19:49; DOM window opened at 19:58"
+    },
+    {
+      "t": "20:00",
+      "speech": "the depth of market here. I'm actually gonna reset all this, and let's go over here when the market sells off",
+      "screen": "chart",
+      "note": "Bookmap DOM replay on right of screen, heat map on left"
+    },
+    {
+      "t": "20:08",
+      "speech": "up here. Now we got a depth of market. And you could see the price on the depth of market, and you're gonna see it align with what you wanna see.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "20:17",
+      "speech": "Let me actually zoom in a little more so you guys could have better view of it, and let's go to the DOM. Okay. Keep an eye on that 4142 level.",
+      "screen": "chart",
+      "note": "Opens DOM Pro settings dialog to adjust font and size"
+    },
+    {
+      "t": "20:28",
+      "speech": "I'm gonna fast forward this. I'm actually gonna make this smaller so it doesn't",
+      "screen": "chart",
+      "note": "Resizes Bookmap windows"
+    },
+    {
+      "t": "20:38",
+      "speech": "Okay. So the first example happens at 9:38. Let's go to 9:38, and then I'm gonna slow down the pace over here. Okay.",
+      "screen": "mixed",
+      "note": "Slide partly visible behind Bookmap loading events window; fast forwards replay"
+    },
+    {
+      "t": "20:49",
+      "speech": "First thing we see is the market sell off aggressively. So now remember what I showed you on the footprint? This is gonna show us the same thing, just visually different. We get the same information no matter what tool we use.",
+      "screen": "chart",
+      "note": "Replay running around 09:37:30"
+    },
+    {
+      "t": "21:00",
+      "speech": "Market sells off aggressively into 4142. We see large aggressive market sell bubbles. Those are prints. We see a bid gets filled down here, and a large seller down here. There's a delta minus 118, minus 88, minus 116.",
+      "screen": "chart",
+      "note": "Focusing on red sell bubbles at 4142-4140 region"
+    },
+    {
+      "t": "21:15",
+      "speech": "At this moment, like I said earlier, this doesn't really spark absorption just yet. This doesn't really spark a long entry just yet. Could it have worked? Absolutely. And could you have taken long by just using this activity? Absolutely. But",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "21:30",
+      "speech": "there's not much at this moment. Now we break that low, same thing. Now more aggressive selling, but we cannot sell off. Let's fast forward it.",
+      "screen": "chart",
+      "note": "Replay breaks low around 09:38:23"
+    },
+    {
+      "t": "21:42",
+      "speech": "We're having a hard time selling off down there. Now I'm gonna go to 9:50. That's when the next move happens. Slow it down.",
+      "screen": "chart",
+      "note": "Skips forward to 09:49:29"
+    },
+    {
+      "t": "21:53",
+      "speech": "So here's the low at 4142. Boom. Aggressive selling now steps into the market, and we're not selling off any lower. Let's fast forward it.",
+      "screen": "chart",
+      "note": "09:49:50 sell prints appear at 4142"
+    },
+    {
+      "t": "22:08",
+      "speech": "More selling steps in. We can look at the depth of market, large size on the recent ask, recent bid trades. Delta is also starting to build. Let's see if I could pause this.",
+      "screen": "chart",
+      "note": "Replay at 09:50:50, pauses replay"
+    },
+    {
+      "t": "22:21",
+      "speech": "There was just an 800 lot recent bid trade, and we're having a hard time breaking below it. K. Now the next test, I see this. Okay, this looks like a really good long. Let me take it long. Let me target this high. No problem with that at all, right?",
+      "screen": "chart",
+      "note": "Points out bid trade on DOM and chart bounce"
+    },
+    {
+      "t": "22:36",
+      "speech": "You wanna get in before the move. Next test happens at 10:12. Come down to the forties. Look at all that aggressive selling. Delta now is still going even more negative.",
+      "screen": "chart",
+      "note": "Replay advanced to 10:11"
+    },
+    {
+      "t": "22:46",
+      "speech": "A bid gets filled. More selling in this level. Ask yourself, if we're seeing all this selling on multiple times after multiple returns back into this level, why can we not sell off? Why?",
+      "screen": "chart",
+      "note": "10:12-10:13 aggressive sell volume at 4140"
+    },
+    {
+      "t": "23:00",
+      "speech": "And that answer that we cannot come up with why, like I don't know why we're not selling off, that is an answer in itself because that's telling us, hey, something's going on right here. Maybe there's a passive buyer and he's strong, and there's really strong buying going on at these lows.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "23:16",
+      "speech": "Yeah, technically, we see selling, but technically, I call this strong buying because despite all the selling, we're not seeing the market sell off. You could get long right now. Maybe two, three points below the low, four points below the low. Right?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "23:31",
+      "speech": "K. Next next, at 10:20, the next inflection point comes. Okay. I also wanna mention one thing. Delta is not so important unless there's, like, a really massive size. So, you know, we're seeing nine hundreds, we're seeing eight hundreds, we're seeing six hundreds, we're seeing five hundreds on the Delta profile.",
+      "screen": "chart",
+      "note": "Cursor points to VBD column on DOM"
+    },
+    {
+      "t": "23:53",
+      "speech": "If I seen something maybe of, like, 5,000 or, like, 3,000, then I would watch that level specifically. But if I were to look at all the delta, the VBD column, that's volume profile delta,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "24:05",
+      "speech": "I see essentially like, people will see this 993 positive delta, and they'll think it's a level they have to watch. Number one, it doesn't matter because it's not an important level of interest. It only really matters at important levels of interest unless there's a huge anomaly or there's a huge discrepancy",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "24:23",
+      "speech": "where we see, like, a 5k lot or a 5k negative delta or 5k positive delta at a specific price when the average is, like, 600 or 500. Right? When there's a huge discrepancy or huge outlier, then I'll watch that specific level. Else, this 993 positive delta is not important. This negative 700 is not important.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "24:42",
+      "speech": "What's important to me is my 4142, 4140 level is tons of selling, tons of negative delta, and the market's failing to move lower off of that. That's that's what's important to me. So don't drive yourself crazy looking at every single price delta or every single price selling and buying.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "25:00",
+      "speech": "Important inflection points. Now look, look at all the selling into my level. We actually even broke the low of day. So now a new low of day formed. If a new low of day formed, many are getting short. Many longs are stopping out below the low.",
+      "screen": "chart",
+      "note": "Replay around 10:20-10:21 breaking LOD"
+    },
+    {
+      "t": "25:14",
+      "speech": "It's a perfect area that that aggressive buyer or excuse me, that strong buyer, heavy buyer, could add to a position, leverage in, and potentially bring the market higher if these now short stop out. Another low of day is broken, 10:20. Fast forward it even more.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "25:33",
+      "speech": "We should be in long at this point. Either if we're getting an entry right here when buying steps in or if we're not in long prior to that, we should have risk on the table. Do we know a setup is gonna work out before we enter it? Absolutely not.",
+      "screen": "chart",
+      "note": "Replay hits 10:23 bouncing up"
+    },
+    {
+      "t": "25:46",
+      "speech": "But as traders, it's our job to identify opportunity. That's our first step. Right now we see opportunity. Why do we see opportunity? Well, it's very simple. Everything that I've mentioned so far on this slide, that's our opportunity.",
+      "screen": "slide",
+      "note": "Switches back to full screen slide: Strong Buying / Selling Absorption"
+    },
+    {
+      "t": "25:59",
+      "speech": "We got the context aligning with the thesis and the execution. We see all the selling, yet the market's not selling off any lower. This is a flag for us to potentially get long. So now we identified opportunity.",
+      "screen": "mixed",
+      "note": "Brings Bookmap window back over the slide"
+    },
+    {
+      "t": "26:10",
+      "speech": "Now as a trader, our second step is to manage risk. Our risk is so low at these points right here. So do we know a trade is gonna work out before we enter? Absolutely not. But as long as the risk makes sense and we see opportunity, that's a trade you have to put on.",
+      "screen": "chart",
+      "note": "Shows Bookmap at 10:23"
+    },
+    {
+      "t": "26:25",
+      "speech": "If you hesitate, you get in late, you're gonna skew your risk to reward. We just broke another low of day and we're bouncing. Look at the delta. Anything below 4140 is all negative delta. We're lacking trade at the low of day.",
+      "screen": "chart",
+      "note": "Advances to 10:24-10:25"
+    },
+    {
+      "t": "26:38",
+      "speech": "Every time we come into it, we bounce. There's a lack of trade facilitation at the low down here. This is a sign, as I mentioned earlier, that a potential reversal could happen. Now I see aggressive buying come in. If we didn't get in long earlier, I'm in long right here. Maybe on a pullback down, you could get long.",
+      "screen": "chart",
+      "note": "Large green buy bubbles appear around 10:26"
+    },
+    {
+      "t": "26:55",
+      "speech": "Whatever the case may be, but aggressive buying steps in. At 10:32, we're actually gonna dip down. So watch this dip down right here, right back into 4142. Right at this right here where this negative 1300 delta is, it holds, it's supported.",
+      "screen": "chart",
+      "note": "Advances replay to 10:31-10:32 pullback"
+    },
+    {
+      "t": "27:14",
+      "speech": "This long looks really good at this point. I'm gonna fast forward it, and then aggressive buying steps in. We could target a 4152 break, as I mentioned earlier, and then the market gravitates.",
+      "screen": "chart",
+      "note": "Fast forwards replay past 10:35 through 10:50"
+    },
+    {
+      "t": "27:23",
+      "speech": "So so this is also a very good tip. It's very hard to organize this information because the tape is so unique and there's so many variables affecting it. A good area that I like targeting is where a sell-off initiated,",
+      "screen": "chart",
+      "note": "Scrolls Bookmap chart to look at morning open"
+    },
+    {
+      "t": "27:40",
+      "speech": "where there's large size of a sell-off which is initiated, or where a large size where buying has initiated. So in this case, the selling at the open started around in a general area, 4158, 4156-ish, 4157.",
+      "screen": "chart",
+      "note": "Points to open selloff around 09:30-09:35"
+    },
+    {
+      "t": "27:56",
+      "speech": "So if I'm in long down here, my first target will be that resistance break that I showed you around 4151. I will scale out of the position there. And then my final target would probably be the 56s or 57s.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "28:08",
+      "speech": "When we're scalping with a 3, 4 point risk, and we're getting a a 16 point reward, that's really, really good risk to reward. And if you're getting 16 points, unless you say 10 contracts or 20 contracts, you're making really good money really fast.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "28:23",
+      "speech": "So I'm gonna replay this, and then the market, you know, rallies really aggressively and really strong off of that level. Strong buying then steps in. And that's what you wanna see. You wanna see that strong buying step in, really strong pushes up,",
+      "screen": "chart",
+      "note": "Replays the rally up to 4157"
+    },
+    {
+      "t": "28:38",
+      "speech": "and we're in long, and this setup is looking really, really good, and it's working out in our favor really well. And that's the first setup of selling at those lows yet no follow-through. I hope the footprint could help you visualize what it looks like,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "28:53",
+      "speech": "compare it on a footprint, and then compare it on a heat map, and then compare it on a DOM because, again, the same information just visually in a different way, and comparing it to the candlestick chart. This is what it looks like.",
+      "screen": "mixed",
+      "note": "Shows Sierra Chart footprint briefly, then thinkorswim 5-min candle chart"
+    },
+    {
+      "t": "29:04",
+      "speech": "Strong rally, then we get the break above that resistance level into the sixties, seventies, and then I'm gonna show you this dip down because bids also step in.",
+      "screen": "chart",
+      "note": "thinkorswim 5-min chart with 4142 key level marked"
+    },
+    {
+      "t": "29:13",
+      "speech": "All right. So now later in the day, around 11:40 Eastern, 11:41 Eastern, the market where we spotted that absorption and all that strong heavy buying happened around 10:30, 9:30, 10:20 in this general area, and that rally right here",
+      "screen": "chart",
+      "note": "Yellow circles drawn around 4142 touches"
+    },
+    {
+      "t": "29:31",
+      "speech": "is when the market moved off of that and we capitalized on the long. Now about 30 minutes after that, we dip back down into 4142, and there's very interesting, similar, but a little different action down here",
+      "screen": "chart",
+      "note": "Points to 11:40 dip back to 4142 level"
+    },
+    {
+      "t": "29:46",
+      "speech": "that also provided a really nice opportunity that if you do not get long earlier, you could have redeemed yourself and is also offered a very nice opportunity to get long with very, very small risk. So pulling up Book-",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "30:00",
+      "speech": "long with very, very small risk. So pulling up Bookmap over here,",
+      "screen": "chart",
+      "note": "thinkorswim 3 m candle chart"
+    },
+    {
+      "t": "30:02",
+      "speech": "I'll show you Bookmap and I'll show you the, depth of market. Again, whether you use Bookmap, whether you use Sierra",
+      "screen": "mixed",
+      "note": "Bookmap window and DOM opened side-by-side with thinkorswim chart"
+    },
+    {
+      "t": "30:08",
+      "speech": "Charts heatmap, Jigsaw's heatmap, the concepts I'm going over could be relatable and similar. It does not matter what platform you use.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "30:17",
+      "speech": "I just love this replay feature. So I'm going to play this and keep an eye on 4140 to 4142. So earlier in the day, here's where we spotted that absorption,",
+      "screen": "mixed",
+      "note": "Bookmap replay controls used"
+    },
+    {
+      "t": "30:30",
+      "speech": "one time down here, so let me make this a little bigger. The first time, the second time, right, the third time,",
+      "screen": "chart",
+      "note": "Bookmap maximized to full screen"
+    },
+    {
+      "t": "30:38",
+      "speech": "the fourth time. You could see all that aggressive selling after the fact. And you also see the delta, the cumulative delta down trending. Let me actually pull up Sierra Chart here.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "30:49",
+      "speech": "And on this sell-off to the downside, let me make this right here. When we sold off earlier,",
+      "screen": "mixed",
+      "note": "Sierra Chart opened next to Bookmap"
+    },
+    {
+      "t": "30:57",
+      "speech": "right, and the market was moving lower, look at how the delta was down trending, and the delta was breaking the lows despite us putting in lower lows and putting us lower highs.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "31:07",
+      "speech": "So we see all that aggressive selling. It's supported by the delta, by price, it's supported by cumulative delta, and we get the aggressive buying out of that. Now what's interesting,",
+      "screen": "chart",
+      "note": "Bookmap full screen"
+    },
+    {
+      "t": "31:16",
+      "speech": "is look at these stacks of bids. Pulling up the depth of market here, I got to fast forward this because this doesn't show the 40s.",
+      "screen": "mixed",
+      "note": "Bookmap and DOM displayed side-by-side"
+    },
+    {
+      "t": "31:26",
+      "speech": "So what's going to be interesting here is we see a little thick, thick bids. And this happens, let's fast forward this,",
+      "screen": "chart",
+      "note": "Bookmap replay fast-forwarded"
+    },
+    {
+      "t": "31:34",
+      "speech": "specifically at 4140 where we spotted all that absorption earlier. We didn't see these thick bids down here earlier when we bounced, but for some reason now",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "31:43",
+      "speech": "we're spotting them, and they're coming into the market. So let's fast forward this. And remember what I said earlier: I don't really put much emphasis on resting orders or level 2 orders",
+      "screen": "mixed",
+      "note": "DOM opened next to Bookmap"
+    },
+    {
+      "t": "31:53",
+      "speech": "unless they show intention or unless they get filled. So I have my level 2 data, my bid and ask data, get highlighted once it reaches a certain threshold. I think it's like 100",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "32:05",
+      "speech": "or 200 maybe lots, or 250 lots, whatever the case may be. So these are thicker bids now. They're highlighted in bold, and that also corresponds",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "32:13",
+      "speech": "to what we see on the heatmap, how someone's looking to bid 279, 257, 288, 300.",
+      "screen": "chart",
+      "note": "Bookmap heatmap view"
+    },
+    {
+      "t": "32:22",
+      "speech": "So that's different from what we're seeing. We're seeing normal of 100, 106, 107, you know, so 300-lot passive buy order down there, especially at 4140 where we spotted all that aggressive selling,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "32:36",
+      "speech": "is a little interesting to me. So now as we come into it, I'm asking myself: does this hold, or is the buyer that was getting in earlier now looking to defend this area? Is he actually looking to get in with larger size?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "32:48",
+      "speech": "And the question I'm asking myself is does this get defended? Do buyers protect this? Does it get filled? Does it bounce? Does it break and act as resistance once we're below? What's going to happen down here at 4140?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "33:01",
+      "speech": "So I'm going to slow it down, pull up the DOM, and let's play this replay.",
+      "screen": "mixed",
+      "note": "Bookmap and DOM side-by-side"
+    },
+    {
+      "t": "33:07",
+      "speech": "So what you're going to see here is, slow it down even more. So now this is real-time speed, this is no sped up. Actually I'll go I'll go two.",
+      "screen": "mixed",
+      "note": "Replay speed adjusted"
+    },
+    {
+      "t": "33:16",
+      "speech": "You're going to see these bids get eaten up, meaning you're going to see the market come into them and they hold. There's somebody selling into it just like we saw earlier,",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "33:24",
+      "speech": "but he's getting filled. So now look, he's getting filled. We see them start to thin out. Now that 300-lot buy order disappears because there was aggressive sellers hitting him, he gets filled,",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "33:36",
+      "speech": "and we hold this. This is what's important: we hold this very aggressive large bid at 4140.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "33:43",
+      "speech": "The bids are still there, there's aggressive selling at 4140, and that large bid now gets filled. We eventually come back down into this bid, and I think we test him again.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "33:55",
+      "speech": "But when I see this, this is an opportunity for me saying, okay, I don't mind taking the market long. If I'm in at 4140, I'll put my risk below 4138, 4137 at this point,",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "34:06",
+      "speech": "and I'm risking three or four points. And if I'm targeting the high or I'm targeting VWAP or I'm targeting supply above,",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "34:14",
+      "speech": "for me to get a 2-to-1, all I need is a six-point rally from this if my risk is three points. And six points from this is nothing, right?",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "34:23",
+      "speech": "So if I'm in long right now, that's totally fine. I have no problem putting risk on the table. Again, if your losses are small and you're getting in before the market moves, that's fine. It might not work out for you a lot of the times,",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "34:34",
+      "speech": "and you might have a lower win rate, but you're getting in before the move where your wins will take care of themselves. That's just how I like trading.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "34:42",
+      "speech": "So we're going to fast forward this even more. Those bids remain down there. They stay down, and we're going to dip back down into 4140. And look,",
+      "screen": "mixed",
+      "note": "Replay fast-forwarded to x16"
+    },
+    {
+      "t": "34:55",
+      "speech": "he started to thin out, right? Once we saw the sell-off, the bids get filled, we put in a higher low, and now all we need to see is aggressive buying. We start seeing it come in,",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "35:07",
+      "speech": "negative 1700 delta, those bids are still down there thick and bold, defending it. We're holding the bid. He got filled, and now we start to see aggressive buying coming into the market.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "35:19",
+      "speech": "If you did not get in long, this is also now a valid signal. Let's slow it down, come back into the 40s, it holds,",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "35:27",
+      "speech": "come back into the 40s, it holds again, and then boom, aggressive buying steps in. And we pull back right into 4140, and it's holding. Look at all this holding.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "35:36",
+      "speech": "These bids are holding it. They're still stepping in, they're respecting the market.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "35:42",
+      "speech": "No risk or no trades below 4140 at that point. It was just a large sell-off, bids stepped in, aggressive selling into those bids, and then aggressive market buying thereafter.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "35:53",
+      "speech": "And then we're going to get a really, really nice rally off of that. And that goes to show you not one time did we trade below 4140 after that, and that bid defended it, and we get a really, really nice rally.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "36:04",
+      "speech": "So we spotted those bids not only on the heatmap, but also on the bid order book, the depth of market, the level 2, whatever you want to call it.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "36:13",
+      "speech": "We saw the aggressive selling into that level, failed continuation, and then aggressive buying came out of that, and then the market rallied up. And that was the nice long-side play.",
+      "screen": "mixed",
+      "note": null
+    },
+    {
+      "t": "36:24",
+      "speech": "And I think by the end of the day this thing, you know, rallied significantly. This third oval right here is where we saw that. It was about a 15, 20-minute period,",
+      "screen": "chart",
+      "note": "Back to thinkorswim 3 m candle chart"
+    },
+    {
+      "t": "36:32",
+      "speech": "and here's that rally. And you could have capitalized on a nice 30, 40-point rally off of that low and off of all that absorption and those bids stepping in.",
+      "screen": "chart",
+      "note": "Zoomed out thinkorswim chart showing full-day rally"
+    }
+  ],
+  "slides": [
+    {
+      "t": "0:19",
+      "title": "Strong Buying / Selling Absorption",
+      "text": "• CONTEXT: 4142 has been a KEY LEVEL which has acted as support once above and resistance once below.\n• Last week broke out of balance + returned BACK into balance. 4142 is about the midpoint of previous balance range.\n• Overnight relatively flat finding support around 4142/40s\n• Execution: Market opens and immediately sells off into this 4142/4140 region.\n• There is TONS of aggressive selling at this level yet market is failing to move LOWER.\n• 6+ tests (moved off the level and returned)\n• Market reversed after sellers gave up + buyers stepped in."
+    },
+    {
+      "t": "19:42",
+      "title": "Strong Buying / Selling Absorption",
+      "text": "• CONTEXT: 4142 has been a KEY LEVEL which has acted as support once above and resistance once below.\n• Last week broke out of balance + returned BACK into balance. 4142 is about the midpoint of previous balance range.\n• Overnight relatively flat finding support around 4142/40s\n• Execution: Market opens and immediately sells off into this 4142/4140 region.\n• There is TONS of aggressive selling at this level yet market is failing to move LOWER.\n• 6+ tests (moved off the level and returned)\n• Market reversed after sellers gave up + buyers stepped in."
+    },
+    {
+      "t": "25:54",
+      "title": "Strong Buying / Selling Absorption",
+      "text": "CONTEXT: 4142 has been a KEY LEVEL which has acted as support once above and resistance once below.\nLast week broke out of balance + returned BACK into balance. 4142 is about the midpoint of previous balance range.\nOvernight relatively flat finding support around 4142/40s\nExecution: Market opens and immediately sells off into this 4142/4140 region.\nThere is TONS of aggressive selling at this level yet market is failing to move LOWER.\n6+ tests (moved off the level and returned)\nMarket reversed after sellers gave up + buyers stepped in."
+    }
+  ],
+  "uncertainties": [],
+  "generated": "2026-09-17T15:01:31"
+}

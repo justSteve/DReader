@@ -1,0 +1,590 @@
+{
+  "id": "it-orderflow-0917-0723",
+  "file": "/mnt/c/Users/steve/OneDrive/Videos/Captures/Orderflow Trading Course _ InvestiTrade - Google Chrome 2026-09-17 07-23-09.mp4",
+  "duration_s": 854,
+  "window": [
+    "0:00",
+    "14:14"
+  ],
+  "chunk_s": 600,
+  "models": [
+    "gemini-flash-latest"
+  ],
+  "resolution": "default(low)",
+  "fps": null,
+  "prompt_tokens": 78491,
+  "output_tokens": 7635,
+  "runs": [
+    "20260917-140043",
+    "20260917-140112"
+  ],
+  "segments": [
+    {
+      "t": "0:00",
+      "speech": "",
+      "screen": "chart",
+      "note": "Bookmap chart displayed."
+    },
+    {
+      "t": "0:07",
+      "speech": "So for this setup, we're going to see aggressive selling coming off a supply zone. This also relates to a key level. For this type of scenario,",
+      "screen": "slide",
+      "note": "Slide titled 'Aggressive Sellers off Key Level' displayed."
+    },
+    {
+      "t": "0:16",
+      "speech": "I would need to see it at a supply zone, or demand zone, or a key level, or just an important reference point from the chart.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:25",
+      "speech": "It cannot be at a random level or random zone. I prefer not to see that. I prefer to see it at a supply, demand, or resistance, support level.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:35",
+      "speech": "So here we have a 15-minute supply zone, and it was formed two days prior at 4220.25.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:40",
+      "speech": "As you can see here, we have some consolidation. We even got some consolidation from the overnight session. The market opens up, consolidates,",
+      "screen": "chart",
+      "note": "Switches to thinkorswim /ES 15m chart showing supply zone."
+    },
+    {
+      "t": "0:49",
+      "speech": "and then drops down lower. This validates our 15-minute demand zone. The market rallies at the open directly into this 15-minute,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "0:57",
+      "speech": "and we sell off about 30 points lower from the high, all the way down into the low.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:02",
+      "speech": "Now, we're going to see a very strong rally at the open. We're going to see very aggressive market buying, and as long as they put pressure,",
+      "screen": "slide",
+      "note": "Returns to slide 'Aggressive Sellers off Key Level'."
+    },
+    {
+      "t": "1:10",
+      "speech": "they continuously hit the offer at the open and they're putting pressure, putting pressure, buying, buying, buying directly at the open and thereafter,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:20",
+      "speech": "it's usually a good opportunity to scalp long, and it would best to be if it was like above a resistance level or it was holding VWAP.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:28",
+      "speech": "But most of the time, and I said this in one of the previous lessons, that usually, but not always, at aggressive offer trades directly at the open—",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:37",
+      "speech": "we see it right here, we see it right here, we see it rally, we see it holding VWAP, right? And as long as they continuously put pressure",
+      "screen": "chart",
+      "note": "Switches to Bookmap replay showing green buying bubbles at open."
+    },
+    {
+      "t": "1:45",
+      "speech": "and hold on dips and more buying comes in, it's a very good opportunity to scalp the market long.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:50",
+      "speech": "And in this case, let's just say you even got long above 4210, you would have been able to catch a 10-point rally into that supply zone.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:59",
+      "speech": "So quick little scalps, not exposing yourself very long for the market.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:03",
+      "speech": "I'm going to pull up the depth of market, and let's keep going through this.",
+      "screen": "chart",
+      "note": "DOM ladder opened briefly on Bookmap."
+    },
+    {
+      "t": "2:07",
+      "speech": "So what we're going to see is after this very strong buying and the very aggressive at-offer trades, we're going to get that rally into a supply zone,",
+      "screen": "slide",
+      "note": "Returns to slide 'Aggressive Sellers off Key Level'."
+    },
+    {
+      "t": "2:17",
+      "speech": "and there's no real strong or clear absorption or any trapped participants.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:23",
+      "speech": "We've been going over so far about trapped, about absorption, heavy selling, strong buying, et cetera.",
+      "screen": "chart",
+      "note": "Switches to footprint chart (Delta 25K CME ES, orange clock 21:15:27)."
+    },
+    {
+      "t": "2:29",
+      "speech": "In this example, we essentially rally into supply. Yeah, the delta's positive at supply where we have the high, because keep in mind,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:35",
+      "speech": "remember what I said earlier about the market will move up until the last buyer buys. So in this example, you know, we have tons of buying up here,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:42",
+      "speech": "but the buying got shut down and sellers eventually stepped into the market. The market's going to move up until the last buyer buys,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:50",
+      "speech": "or there's a lack of buying, which the market then will have to—the sellers or the producers are going to have to lower their prices.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:58",
+      "speech": "Others can take advantage of it by shorting or selling to capitalize on another further downside move until the market finds an area",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "3:06",
+      "speech": "of acceptance, of fair value, where buyers and sellers essentially are like agreeing on price.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "3:13",
+      "speech": "So we're going to see a rally into the supply zone. We're not going to see any real strong absorption or trapped participants on the tape.",
+      "screen": "slide",
+      "note": "Returns to slide 'Aggressive Sellers off Key Level'."
+    },
+    {
+      "t": "3:20",
+      "speech": "However, what we are going to see is as we rally into the supply zone—and remember what I said, this is really only valid at a key level",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "3:29",
+      "speech": "or a supply/demand imbalance—where we're going to see a lot of trades hitting the bid and below the bid, meaning aggressive sellers are stepping in,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "3:36",
+      "speech": "after we reject that key level, or after we reject the supply zone. And then I'm going to get into filling low volume nodes in the profile.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "3:45",
+      "speech": "So I'm going to pull up Bookmap here. I'm going to pull up the depth of market, and I'm actually even going to pull up a 15-minute chart",
+      "screen": "chart",
+      "note": "Switches to thinkorswim 15m chart."
+    },
+    {
+      "t": "3:52",
+      "speech": "where we have that supply zone. We get a rally up into that supply zone and we fell. This is a 15-minute candle, so from the low to the high",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:00",
+      "speech": "is 4220 to a low of about 4191. So about 30 points from low to high.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:07",
+      "speech": "Now I'm going to play this replay on Bookmap, and the most important thing I want you all to keep an eye on is the Time and Sales that I have up here to the left.",
+      "screen": "chart",
+      "note": "Switches to Bookmap with DOM and T&S panel."
+    },
+    {
+      "t": "4:16",
+      "speech": "So let's make this a little smaller. Keep an eye on the Time and Sales, because what you're going to see here",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:23",
+      "speech": "is very aggressive trades to the sell side on the Time and Sales, very large size.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:29",
+      "speech": "In this example, I have my Time and Sales set to a minimum of 40 to filter out all the noise. Again, I like to see large blocks.",
+      "screen": "chart",
+      "note": "T&S Min size set to 40 highlighted."
+    },
+    {
+      "t": "4:38",
+      "speech": "And I'm going to hit play. Let's pull up a depth of market. And automatically right there—let's try to go back so you can catch that—",
+      "screen": "chart",
+      "note": "Replay starts, large red sales hit T&S."
+    },
+    {
+      "t": "4:47",
+      "speech": "you're going to see a ton of selling, and I'm actually going to slow it down once it gets closer.",
+      "screen": "chart",
+      "note": "Replay rewound."
+    },
+    {
+      "t": "4:52",
+      "speech": "So let's slow it down to real-time speed and just give this a little time. It's going to be a slower example than most.",
+      "screen": "chart",
+      "note": "Replay speed set to x1."
+    },
+    {
+      "t": "4:59",
+      "speech": "But keep an eye on all the aggressive selling. So we hit supply, we're at 4220 right now. Remember supply's at 4220.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:08",
+      "speech": "We're at supply. Now, our job as traders, if we're trying to get a reversal, is spotting selling coming into the market.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:14",
+      "speech": "Maybe an offer will step in, which in this example, it does not. Maybe we'll see trapped participants, which in this example, we do not.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:21",
+      "speech": "Maybe we'll see absorption. In this example, we really do not. Yeah, some buying up here, but nothing significant at all.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:28",
+      "speech": "Let's fast-forward this a little bit more, and you're going to start keeping an eye on the Time and Sales, like I mentioned.",
+      "screen": "chart",
+      "note": "Replay speed toggled to x2."
+    },
+    {
+      "t": "5:36",
+      "speech": "Right? Slow it down. You're going to start to see aggressive selling step in.",
+      "screen": "chart",
+      "note": "Replay speed set back to x1."
+    },
+    {
+      "t": "5:42",
+      "speech": "And you'll see large bubbles, you'll see a fast-moving tape. So right now, look, 224 just came in, 129 just came in at 4220, right?",
+      "screen": "chart",
+      "note": "Red bubbles appear at 4220; T&S prints red 224, 129."
+    },
+    {
+      "t": "5:52",
+      "speech": "Pull up the DOM. We don't see any offers. We got some low volume areas here on the profile,",
+      "screen": "chart",
+      "note": "DOM ladder opened."
+    },
+    {
+      "t": "5:59",
+      "speech": "and more aggressive selling will step in. Just be patient with it. You'll see the tape start moving fast. This is real time. Okay.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:07",
+      "speech": "See how the tape just moved semi-fast right there? It's kind of hard to see, but we started to see more aggressive selling coming in.",
+      "screen": "chart",
+      "note": "Rapid sells print on T&S."
+    },
+    {
+      "t": "6:15",
+      "speech": "So at this moment you got to ask yourself: is it an opportunity that I see, and does the risk make sense?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:21",
+      "speech": "If you say yes to both of them, then you put that trade on. Because if we're getting short right here at 4218,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:26",
+      "speech": "and in this example putting our stop loss above the high of day would be more valid than an absorption or a trapped participant example,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:33",
+      "speech": "so we're really risking three points at this moment, or call it four points, to make potentially,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:39",
+      "speech": "in this example, the targets for this trade. And a little tip is when there is a lack of trade at a specific level,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:48",
+      "speech": "so I pull up the volume profile, and this RTH is a regular trading hours volume profile, meaning just the cash session from 9:30 Eastern to 4:00 p.m.",
+      "screen": "chart",
+      "note": "Points cursor to RTH column on Bookmap."
+    },
+    {
+      "t": "7:00",
+      "speech": "The CVP, I would just ignore in this example. It's just what I have on my chart, the chart volume profile. And the SVP column is the overnight and the regular trading hours session.",
+      "screen": "chart",
+      "note": "Explains CVP and SVP columns."
+    },
+    {
+      "t": "7:12",
+      "speech": "When you see a price or multiple prices—I'd rather see multiple prices of it—where there's a lack of trade,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "7:18",
+      "speech": "so you see how there was no trades done here where I'm hovering my cursor over on the bid? There's zero volume done at 4211 and a quarter on the bid side,",
+      "screen": "chart",
+      "note": "Cursor points to zero volume nodes on DOM."
+    },
+    {
+      "t": "7:27",
+      "speech": "and there's zero volume done at 4210 and a quarter. So see how there's zero bid volume down here? That's a lack of trade at that area, or there's just a lack of volume.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "7:36",
+      "speech": "It's not bullish, it's not bearish, however those tend to get filled. Not always, those tend to gravitate where price is going to head next.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "7:47",
+      "speech": "So if I'm short up here at the 4218s, where I did enter this market short,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "7:54",
+      "speech": "this is also an example where you cannot hesitate. If you hesitate, you are going to skew your risk-to-reward if you think about it too much,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:02",
+      "speech": "or you question your entry, or you are too concerned about losing. If you hesitate on an entry like this and you get short, let's just say, at 4216 or 4215,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:14",
+      "speech": "in my opinion it is best to just not even take the trade if you hesitate and get a late entry.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:20",
+      "speech": "However, looking at the profile, zooming out, those areas where the volume is extremely low and there's a lack of trades on one side of the market,",
+      "screen": "chart",
+      "note": "Zooms out on Bookmap to show low volume areas."
+    },
+    {
+      "t": "8:30",
+      "speech": "best at multiple prices, those tend to get filled. So my entry for this trade was 4218, my stop loss was above 4221,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:39",
+      "speech": "so I'm risking about three points, and my first target for this trade was 4210.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:46",
+      "speech": "So I'm risking about three or four points to make about eight points, two-to-one risk-to-reward, right? And that's my first target.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:54",
+      "speech": "Now, what I do is I look at the chart, and I say, okay, if we reject supply, where will the market gravitate towards next?",
+      "screen": "chart",
+      "note": "Switches to thinkorswim ES 15m chart."
+    },
+    {
+      "t": "9:03",
+      "speech": "I don't see any demand pre-market, I don't see any demand in the day prior. So what I will probably do is mark these lows here at 4198,",
+      "screen": "chart",
+      "note": "Draws horizontal line on chart at 4197.75 / 4198."
+    },
+    {
+      "t": "9:13",
+      "speech": "I would call it 4200, which is the whole number. So that would be, if we get below 4210, my first target, I would then target 4198,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:21",
+      "speech": "because I don't have demand near price. The nearest demand zone is down here at these 4180s. And from where I got short, I'm not looking to capitalize on a 40-point scalp.",
+      "screen": "chart",
+      "note": "Zooms out to show demand zone around 4180s."
+    },
+    {
+      "t": "9:30",
+      "speech": "Could I hold runners and it goes down there? Yeah, for sure, right? But I'm looking to scale some into strength with my entry at 4210, and the rest below 4200.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:41",
+      "speech": "So going back to Bookmap, now that we understand that, as soon as you see the aggressive selling step in, you cannot hesitate.",
+      "screen": "chart",
+      "note": "Switches back to Bookmap chart replay."
+    },
+    {
+      "t": "9:48",
+      "speech": "I'm actually going to replay this and go back, because the tape starts speeding up around 4310. Let's pull up the DOM,",
+      "screen": "chart",
+      "note": "Rewinds Bookmap replay, pulls up DOM ladder."
+    },
+    {
+      "t": "9:58",
+      "speech": "and let's play this example.",
+      "screen": "chart",
+      "note": "Replay resumes."
+    },
+    {
+      "t": "10:00",
+      "speech": "...at real-time speed. Keep an eye on the time and sales around 43, uh 9:43:12 seconds. Okay, 224 comes in, 129 comes in. Right, this is in real time. So we're seeing some selling step in,",
+      "screen": "chart",
+      "note": "Bookmap replay at 1x speed"
+    },
+    {
+      "t": "10:15",
+      "speech": "right? Look at the delta, negative 770. Some more sell prints are coming through. I could even lower this to 25 if I want. I could even go this just to sell orders if I really want to, right?",
+      "screen": "chart",
+      "note": "Presenter adjusts Min size filter on Time & Sales"
+    },
+    {
+      "t": "10:30",
+      "speech": "Watch when the selling comes in, and watch what the market does. I'm going to make this all, actually, and we'll go back to 40. Look at this lots, look at these lots coming in now: 60s, 40s, 70s.",
+      "screen": "chart",
+      "note": "Changes Min size back to 40"
+    },
+    {
+      "t": "10:45",
+      "speech": "There's a lot of selling coming in now. We start to see red start to flip on the delta. Now we see this area of low volume starting to get filled out. Now more aggressive selling steps in: large red bubbles on the heat map, right?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:00",
+      "speech": "Look at the trades on the bid side, they're starting to come in. The tape is starting to speed up. 110 lots, 100 lots, and I'm just going to speed it up. 100 lots, 111 lots.",
+      "screen": "chart",
+      "note": "Replay speed increased to X4"
+    },
+    {
+      "t": "11:15",
+      "speech": "Look at all the selling coming in: 230, 200, 80, 90. Look at all the selling coming in. Look at all the aggression. Look, look, look at all this aggression, right? Remember, 4211, 4210 was my target.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:30",
+      "speech": "Market's going to sell off into that, and you sell, if you're short, into that weakness. Or if you want to call it strength, you could call it strength. But you want to sell when the market is coming in your favor like that with a fast-moving tape,",
+      "screen": "chart",
+      "note": "Replay speed increased to X8"
+    },
+    {
+      "t": "11:45",
+      "speech": "moving very fast in the direction that you are in short or long. Now the market's going to keep selling off, and I want you to keep an eye on, look at these pops. Remember what I said earlier? You want to see rallies fail.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:01",
+      "speech": "So now that we are below this area of low volume, now you'd want these 4216s to about 4218s to act as resistance if we're in short. If we're in short and we start to reclaim above this area of low volume and start to reclaim back",
+      "screen": "chart",
+      "note": "Replay speed increased to X32"
+    },
+    {
+      "t": "12:16",
+      "speech": "above where we got short at 2, 4218, I would just get the out the remainder at breakeven. Remember, we're out 50% down here, or we're out 75% down here, or even maybe 90 depending on the conditions.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:33",
+      "speech": "And now I'll adjust my stop-loss to about where I entered at 4218, maybe give it a one point breathing room at 4219. But ideally, you'd want this area of low volume right here to act as resistance. So now fast-forwarding this tape, we come into these 4216s, it acts as resistance. Any rally, you want to see fail.",
+      "screen": "chart",
+      "note": "Replay speed increased to X128"
+    },
+    {
+      "t": "12:49",
+      "speech": "And then the selling is going to continue going lower, and these 4210s get filled. All that aggressive selling, you saw how fast that was? That's what you want to see when you're short. This is what you want to see when you're short, and then we come into our final $4,200 target, and this would have been a Look at all that selling! Look at that selling!",
+      "screen": "chart",
+      "note": "Price hits target at 4200"
+    },
+    {
+      "t": "13:07",
+      "speech": "Beautiful, that is a thing of art, and if you're in short, that thing looks amazing, and you know you're printing, and you know it's a really good setup just spotting all that aggressive selling. Now looking back at a delta chart, you could you could see it also on the delta chart. So here's when we come into 4220, 4212.",
+      "screen": "chart",
+      "note": "Switches to Sierra Chart footprint delta chart at 03:19"
+    },
+    {
+      "t": "13:25",
+      "speech": "Really no absorption, really no trapped, but but look at the delta. Look at thereafter when we reject supply, we see aggressive selling here. We see aggressive selling here, minus 620 lots negative delta at the low, minus 580, minus 400, right? So we see the selling come in even on a delta chart.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:43",
+      "speech": "And when you see that, you cannot hesitate. You got to take the trade. Look at all the delta bars on the bottom, that means there's more aggressive at-bid trades, meaning aggressive selling than at-offer trades. And the thing just kept going down, and kept going down below 4200, and you had a really, really nice short on your hands",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:00",
+      "speech": "if you used the tape on this. Just spotting aggressive selling, rejecting the supply zone, and going with the flows of the market.",
+      "screen": "chart",
+      "note": "Briefly shows thinkorswim chart at 04:07 before switching back to Bookmap at 04:12"
+    }
+  ],
+  "slides": [
+    {
+      "t": "0:07",
+      "title": "Aggressive Sellers off Key Level",
+      "text": "• CONTEXT & Execution: 15m supply formed 2 days prior at 4220.25.\n• Strong rally at the open. Aggressive market buying with continuous pressure directly at open usually is a good opportunity to scalp long.\n• Rallied into supply. No real strong/clear absorption or trapped participants.\n• Large trades hitting bid and below bid after rejecting supply.\n• Filling in the LVNs in the profile."
+    }
+  ],
+  "uncertainties": [],
+  "generated": "2026-09-17T14:01:12"
+}

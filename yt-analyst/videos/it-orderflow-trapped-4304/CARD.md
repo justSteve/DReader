@@ -1,12 +1,12 @@
 # Video: it-orderflow-trapped-4304
 
 - **Title:** Trapped Participants / Heavy Selling — the 4304 supply short (InvestiTrade Orderflow course)
-- **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 3
-- **Playlist:** course-investitrade-orderflow #3
+- **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 4
+- **Playlist:** course-investitrade-orderflow #4
 - **Duration:** 13:15
 - **Bead:** dr-22w.1
 - **URL:** —
-- **Source:** local capture `/mnt/c/Users/steve/OneDrive/Videos/Captures/Orderflow Trading Course _ InvestiTrade - Google Chrome 2026-09-16 13-24-51.mp4` (371 MB, 13:15 (795 s))
+- **Source:** local capture `/mnt/c/Users/steve/OneDrive/Videos/Captures/trapped_alreadyDone.mp4` (371 MB, 13:15 (795 s))
 - **First analyzed:** 2026-09-17
 - **Status:** open
 
@@ -28,9 +28,10 @@ _(curated by Claude Code: one entry per interrogation session — date, aim, ver
 ## Lessons (this video)
 _(anything peculiar to this video/channel: layout, chart software, segment structure)_
 
-- Chapter position #3 is the RECORDING order on 2026-09-16 (concepts →
-  absorption → trapped → heavy selling), not a course table of contents;
-  fix it if the course numbering turns out different.
+- Playlist position #4 is recording order across the eight captures (deck,
+  absorption, acceptance higher, trapped, heavy selling, aggressive sellers
+  1–2, live trading) — Steve 2026-09-17: Carmine's numbering is not worth
+  reconstructing.
 - One slide only (0:07, "Trapped Participants / Heavy Selling"); the rest is
   a thinkorswim replay at speed, then Bookmap from ~13:04. Levels: supply /
   HOD 4304, new HOD 4305 (9:20), break of 4300 (~11:27), ~35-40 pt sell-off.

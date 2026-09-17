@@ -1,0 +1,529 @@
+{
+  "id": "it-orderflow-0916-1339",
+  "file": "/mnt/c/Users/steve/OneDrive/Videos/Captures/Orderflow Trading Course _ InvestiTrade - Google Chrome 2026-09-16 13-39-46.mp4",
+  "duration_s": 1065,
+  "window": [
+    "0:00",
+    "17:45"
+  ],
+  "chunk_s": 600,
+  "models": [
+    "gemini-flash-latest"
+  ],
+  "resolution": "default(low)",
+  "fps": null,
+  "prompt_tokens": 97695,
+  "output_tokens": 8320,
+  "runs": [
+    "20260917-130703",
+    "20260917-130742"
+  ],
+  "segments": [
+    {
+      "t": "0:00",
+      "speech": "",
+      "screen": "chart",
+      "note": "Bookmap replay screen"
+    },
+    {
+      "t": "0:05",
+      "speech": "So this next example is going to be based off of the previous one because this forms a similar trade off of the last lesson that you just looked at about trapped buyers and heavy selling.",
+      "screen": "slide",
+      "note": "Slide: Heavy Selling / Absorption / Trapped Buyers (CONTEXT)"
+    },
+    {
+      "t": "0:17",
+      "speech": "So the context for this setup is under that last setup, we rejected that supply zone after spotting those trapped buyers at 4304.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:26",
+      "speech": "Pulling up this chart, on this day is where we spotted those trapped buyers, and this is the sell off that we got from those trapped buyers at supply on that high-of-day break that led to all that buying, but no follow through,",
+      "screen": "chart",
+      "note": "thinkorswim 30m chart showing selloff from 4304"
+    },
+    {
+      "t": "0:41",
+      "speech": "and the aggressive selling there after. So that aggressive sell off formulated this new supply zone here at 4302 and a quarter.",
+      "screen": "chart",
+      "note": "Presenter draws supply zone at 4302.25"
+    },
+    {
+      "t": "0:51",
+      "speech": "So we have a new supply zone which formed from a previous supply zone, from an area where we have a lot of trapped buyers, and aggressive selling validates this imbalance.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:00",
+      "speech": "Now fast forward, the next day did not trade at that level. Now on this day, we are going to see the market rally into this 4302 and a quarter supply zone,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:10",
+      "speech": "even into 4304 where we rejected the other day, and we put in a lower high, and it doesn't matter what timeframe you look at: 5 minute, 1 minute, 15 minute, 30 minute, you're still going to see the lower high and you're still going to see the rejection.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:27",
+      "speech": "So the context of this setup is we created a new supply zone on a 30m chart off of that old previous supply zone,",
+      "screen": "slide",
+      "note": "Slide returns: Heavy Selling / Absorption / Trapped Buyers (CONTEXT)"
+    },
+    {
+      "t": "1:37",
+      "speech": "and the execution of this is very, very similar. Actually, it's it's it's almost identical to the previous lesson of trapped buyers and the heavy selling.",
+      "screen": "slide",
+      "note": "Execution bullet points appear on slide"
+    },
+    {
+      "t": "1:48",
+      "speech": "So what we're going to see here is a ton of aggressive buying at the open. And usually, ton of aggressive buying at the open is a very, very bullish sign, and you probably will see a nice 5, 10, 15 point rally off of that,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:02",
+      "speech": "depending on the conditions, depending on the average range, depending on a lot of other things. But usually directly at the open, aggressive buying with continuation is a very bullish sign.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:13",
+      "speech": "So we see that sort of, not exactly at 9:30 like I would like to see, it happens a little later on, around like 9:35-ish, 9:36 I believe. But we're going to see a lot of aggressive buying directly into that supply zone that formed two days ago.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:27",
+      "speech": "Now what we're going to see on the tape is new absorption and new aggressive buyers buying into this area where there's a seller obviously resisting price or serving at at that price that we cannot move any higher.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:43",
+      "speech": "He's not visible, we don't really see an offer passive on the Level 2. Like I said, you're not always going to see that. It's more of a general area where we could spot this absorption. It doesn't have to be at a specific level.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:54",
+      "speech": "I have shown you an example in another video about a specific price point. This is a general area where he's not visible on the Level 2 and we spot him. And how we know he's a heavy seller because we see all this buying, but no follow through.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "3:10",
+      "speech": "So what is that force that's not enabling the market from gravitating higher? It has to be a seller absorbing all that buying, right? Also, we see a positive uptrending, very strong delta, validating my point of all that aggressive buying,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "3:24",
+      "speech": "and then the aggressive seller eventually steps in, causing a further sell off to the downside. So first, this time I am actually going to play the heatmap and the depth of market.",
+      "screen": "mixed",
+      "note": "Footprint chart window flashes briefly then switches to Bookmap"
+    },
+    {
+      "t": "3:37",
+      "speech": "And this is around 9:38, 9:36-ish, we see the aggressive buying step into the open. So what I said earlier about it, you know, aggressive buying directly at the open, we don't really see it here. It happens about six minutes into the market being open.",
+      "screen": "chart",
+      "note": "Bookmap replay running"
+    },
+    {
+      "t": "3:49",
+      "speech": "And that necessarily always the not always constitutes to continuation, because this example is going to be a perfect reason of that. So around 9:45 to about 9:50, we're going to see this absorption.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:02",
+      "speech": "But the first thing we're going to see here is directly into 4302, where the market is right now, we see all the aggressive buying, we see the delta uptrending very, very strong, aggressive buying stepping into the market.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:14",
+      "speech": "Some offers get filled. This really isn't significant to me, those offers. I don't really pay attention to that that much. It's not at, you know, it's it's it's it's not like we saw earlier with a full one handle. You know, they were there for a while,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:29",
+      "speech": "and that could just be, you know, a a a long looking to get out of a position and put a passive order there. What's key for the setup is now we're inside a supply of 4302 and a quarter.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:39",
+      "speech": "We see all this aggressive buying now step in. The real buying happens around 9:53, because that's where my entry was and why I entered the setup. But to slow this down a little bit,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:52",
+      "speech": "keep an eye: we we remain above 4300, and there's tons of buying here. We break the high, tons of buying before that, positive delta still uptrending.",
+      "screen": "chart",
+      "note": "Presenter slows Bookmap replay speed"
+    },
+    {
+      "t": "5:00",
+      "speech": "And one thing I want to note here is we broke the high of day, and the delta also broke the previous high. So the previous high was around positive 3600 delta, as you can see that little data tool where my mouse is.",
+      "screen": "chart",
+      "note": "Mouse hovers over CVD indicator"
+    },
+    {
+      "t": "5:12",
+      "speech": "On this high where we just broke over, the delta was about positive 4600, let's just call it, right? On that high-of-day break. So that technically should bring some continuation, right?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:25",
+      "speech": "Now more buying steps in, the delta is still going to start uptrending. We break the high even more, and at 9:50, 9:52 is where I really start becoming interested because look.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:36",
+      "speech": "Look at the depth of market. All right, positive 915, positive delta, positive 400, positive 770, positive 770, right? So we're seeing this pace continue above the high.",
+      "screen": "chart",
+      "note": "DOM column showing positive delta values"
+    },
+    {
+      "t": "5:51",
+      "speech": "We're seeing all this aggressive buying. We're seeing a fast moving tape. Um, but we're not moving higher, and we're doing this at a supply zone, and at a very key supply zone.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:00",
+      "speech": "Why this is very key is because this sold the market off about 30, 40 points, where we broke a low and the the aggression there, back on that day where it's very important to always keep an eye and memorize what happens on certain days,",
+      "screen": "chart",
+      "note": "Switches to thinkorswim 30m chart"
+    },
+    {
+      "t": "6:17",
+      "speech": "even if you have to write it down, was that was very, very aggressive activity. So even if there's sellers factored in up here at the high, if we come back at a later date to retest that, you want to see those sellers defend that position if they even are short up here, right?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:32",
+      "speech": "And that's where we get this rejection from. And it was a very, very similar rejection. Actually, it was an identical sell off from the day prior or the two days prior to where we're seeing in this example: rallied into the same level and sold off into the same level, plus or minus, you know, two or so points.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "6:49",
+      "speech": "So without getting repetitive, because it's, you know, the same things, the same patterns repeat themselves. So if you think I get repetitive, it's just because it's what happens and it's it's very, very clear. So here we're going to break the high, right? I'm going to slow this down even more.",
+      "screen": "chart",
+      "note": "Switches back to Bookmap replay"
+    },
+    {
+      "t": "7:04",
+      "speech": "I'm actually going to back it up a little bit more to about 9:50, and we're going to break the high. Keep an eye when we break the high: the delta plus 1100 at 4302 and 1/2, plus 900 at 4301 and 1/2,",
+      "screen": "chart",
+      "note": "Replays around 09:50:00"
+    },
+    {
+      "t": "7:18",
+      "speech": "and everything above 4300, like we saw the day prior, was all positive delta, right? Now the delta is really, really uptrending.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "7:27",
+      "speech": "So we never broke this previous high here at 4304 just yet. We are going to break it, but we haven't broken it yet, and then look and and look at the delta. Let me see if I could make this bigger.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "7:40",
+      "speech": "So we have not broken that high just yet, and the delta is also continuing to uptrend and skyrocket. So what that's telling me is they are still buying this move aggressively.",
+      "screen": "chart",
+      "note": "Presenter expands CVD sub-panel"
+    },
+    {
+      "t": "7:50",
+      "speech": "Despite the market not moving, despite us not breaking the previous high yet, yet the delta is telling me aggressive buyers are still buying into this market. And we can validate that by looking at the depth of market,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:02",
+      "speech": "and we're also going to validate that in a couple seconds when I pull up the footprint over here. So let's play this, and at 9:52, we break the high.",
+      "screen": "mixed",
+      "note": "Footprint chart flashes briefly"
+    },
+    {
+      "t": "8:11",
+      "speech": "Watch the high of day. Boom, high of day just broken. That is the high of this day, I believe at 4304 and 3/4. The high of day is put in,",
+      "screen": "chart",
+      "note": "Price breaks high of day on Bookmap"
+    },
+    {
+      "t": "8:22",
+      "speech": "maybe we break it by another point or so, but now the selling is going to step in. So with all this coming into the market, an entry point should be somewhere in this range. You had about 10,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:35",
+      "speech": "about 13 minutes, 14 minutes to enter. I entered at 9:53 right at this moment at 4303. That was my entry point.",
+      "screen": "chart",
+      "note": "Replay reaches 09:53"
+    },
+    {
+      "t": "8:43",
+      "speech": "4303 on this move up right here, I got short simply because the delta, how aggressive buyers were, yet there's no follow through, right? The delta's uptrending, we see all this on the depth of market,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:54",
+      "speech": "and I'm getting short just speculating that we're going to sell off. These buyers are going to give up, and sellers are going to step in. So you had about 13 minutes to enter this trade. What I'm going to do, and what I did was, I did not put my stop loss above the high.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:06",
+      "speech": "For these setups, you have to give it a little room to breathe. For example, if I got short on this rejection right here at supply, right, and I put my stop loss above the high, well I would have gotten stopped out of this trade.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:20",
+      "speech": "Now I re-enter up here at this high, and I put my stop loss above 4304. Well guess what? 10 minutes later, I'm going to stop out of that position, right?",
+      "screen": "chart",
+      "note": "Presenter points to subsequent pops above highs"
+    },
+    {
+      "t": "9:32",
+      "speech": "And think about it: I'm exiting and stopping out of that position, I'm just giving more liquidity when I cover my short to whoever is selling to all these buyers.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:42",
+      "speech": "And I'm the bait fish in the water to someone above the sea putting their fishing pole in the water, grabbing all the liquidity for a dump down.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:51",
+      "speech": "So me stopping out of this position by putting my stop above the high is just feeding more fish to the fisherman for him to get a large position",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:00",
+      "speech": "to make a lot of money when this thing does dump and sell off much lower. So scenarios like this, when they were looking for trapped, or absorption, or or or a reversal like this, in certain conditions and certain markets—it's not does not apply to everything—",
+      "screen": "chart",
+      "note": "Bookmap chart replay running"
+    },
+    {
+      "t": "10:17",
+      "speech": "putting your stop loss above the high is not valid, because like I said, you're going to have high of day breaks like this. You've got to give it 2, 3, 4 point buffer room depending on your entry, right? And even if you do stop out, let's just say we stop out of this position and, you know, we take a loss here, it gets frustrated.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:35",
+      "speech": "Well, guess what? If we got short at 4302, we're stopping out at 4303, 4304. We're taking a 2-point loss right there, right? Now, we get short at 4304 again. And 6 minutes later, 7 minutes later, we stop out at 4304 and 1/2. We just took a 1/2-point loss.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:53",
+      "speech": "So now we're down 2 and 1/2 points, at most 3 points on the day, right? Off two trades, we're down 3 points. I can guarantee you, when you are correct on your timing, you're going to get at least 2, 3 times that, 4 times that amount.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:10",
+      "speech": "And that's why risk management and making sure your risk-reward is solid, so your winners take care of themselves, and paper cuts don't even make you bleed. You want to position yourself that when you lose, you're losing small enough, and your winners are going to take care of your themselves,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:25",
+      "speech": "especially on reversal setups like this, or honestly, even any setup, just in general. Your winners have to take care of themselves, and don't get all mad you take a loss that was 2 and 1/2 points or 2 points, right? 'Cause I guarantee you, if you time the market correctly,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:40",
+      "speech": "your winners will make you feel very good and they will outweigh those losers. So now we're seeing all this absorption, without getting off-topic here. We see all this positive Delta,",
+      "screen": "chart",
+      "note": "Bookmap window layout adjusted to show DOM ladder side-by-side"
+    },
+    {
+      "t": "11:52",
+      "speech": "and let's replay this. Selling is going to step in. We're in short already, keep in mind. An offer just bleeped right there. Aggressive selling steps into the market, it becomes a lot heavier, right?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:03",
+      "speech": "Any rally back up into 4302, 4303, 4304 has to fail. Any rally has to fail. Remember, you want to see buyers get in, they're trapped on the way up,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:15",
+      "speech": "and the market traps them and aggressively sells off. So any rally into this range you would want to see it fail, and aggressive selling keeps coming into the market. They're hammering in, right?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:26",
+      "speech": "Hammering in some selling pressure. Boom! Rally up into 4302. It failed! You saw that rally up into 4302? That happened around 10:00 Eastern. We get a rally into 4302 right there. Boom! Fails.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:39",
+      "speech": "Aggressive sell selling steps in there after, and we're in short, and we are getting paid. We are getting paid because we watched the tape, we spotted all this activity, and we are going with the flows of the market.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:51",
+      "speech": "We are respecting what the tape is telling us, and we are reading the price action from other market participants via market-generated information. And this thing kept selling off and our and this short entry at 4303 seriously paid a shit ton of money this day. It was a very, very good setup, and just spotting all this action.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:08",
+      "speech": "And if you're using a candlestick chart, you know,",
+      "screen": "slide",
+      "note": "Slide: Heavy Selling / Absorption / Trapped Buyers"
+    },
+    {
+      "t": "13:12",
+      "speech": "you know really, what what do you see right here? If you're using a candlestick chart, what off of this analysis other than a high of day failed breakout,",
+      "screen": "chart",
+      "note": "Switches to thinkorswim candlestick chart"
+    },
+    {
+      "t": "13:22",
+      "speech": "so we broke above the high inside of supply, which I talk about is very bearish. What else do we see here? Nothing. But if we pull up the tape, it tells us everything that we need to know, and that's why the tape is the most leading indicator that you will ever, ever have.",
+      "screen": "chart",
+      "note": "DOM ladder opened over right side of candlestick chart at 13:30"
+    },
+    {
+      "t": "13:36",
+      "speech": "So now I have Sierra going, and now you're going to start to see all the aggressive buying. I'm going to slow it down when we get to 9:50. So here you see all the aggressive buying,",
+      "screen": "chart",
+      "note": "Sierra Chart footprint replay starts, orange clock reading 9:40:13"
+    },
+    {
+      "t": "13:47",
+      "speech": "all the aggressive buying stepping in. I'm on 5 speed now. Look at all this buying, positive Delta, breaking the highs, right? Near the high. Keep in mind, we're inside of supply. Positive Delta bar right here of above 4,000 on a 5-tick range—or 20-tick range, right?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:02",
+      "speech": "Now watch what happens when the selling steps in. We see all this buying, it's evident, right? 9:53, watch what happens. 9:53, 9:54, watch how the tides change. This is where I'm short right here, 4303. I'm in short right now at this moment.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:17",
+      "speech": "We cannot move any higher. I'm taking a stab at it. My stop loss is about 3 points above the high. Now a new footprint opens up, 16 minutes later, and you're going to see all the aggressive sellers step into the market. Let's fast forward this even more.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:31",
+      "speech": "At 10:00, you're going to see that rally into 4302, which it fails. Look, selling starting to step in. Stepping in, 10:00 comes, we get that rally back up into 4302,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:47",
+      "speech": "immediate rejection. Look at the Now, now look at the Delta. It's starting to to switch. You see how it's switching? See how selling stepping in now, despite all that aggressive buying, right? It's getting repetitive. As I'm recording this, I'm like, 'Carmine, you're getting repetitive.'",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "15:01",
+      "speech": "Well, that's good, because I want you to this to become like second nature to you, and you don't even got to think about it, and just you react to it, right? Look at all this aggressive selling. Look how the tides switched on this Delta footprint chart when we broke the high of day above 4303, 4304.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "15:17",
+      "speech": "Look at all this aggressive selling stepping in. We're in short, we're like, 'Wow, this thing is going to sell off, this thing looks good.' We have such a good entry that if it does come up, we could stop out maybe for breakeven, or stop out for a 2, 3-point loss. Who cares, right?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "15:31",
+      "speech": "Cuz watch what happens now. Let's fast forward this even more. Look at this selling pouring in. It's obvious, it's very clear. Look at all this red. Selling off even further, let's fast forward this even more. Look at all this aggressive selling. Look at all the selling.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "15:47",
+      "speech": "That is a beautiful thing if we are in short, right? Remember, market can't move in your favor forever. You're going to have consolidation, you're going to have bounces, you just got to make sure they fail. And and you know, we're up we're up 20 points from the high right now.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "16:03",
+      "speech": "We're up 20 points from the high of day, and that's how you snipe an entry. And I want to mention as well, same goes for exits or targets. Like, let's just say I see the selling up here and I and and we're in short at 4303, right? And my and my target was—",
+      "screen": "chart",
+      "note": "Switches to thinkorswim candlestick chart at 16:06"
+    },
+    {
+      "t": "16:19",
+      "speech": "my target was, let's just call it low of day. And we come into low of day, and I see selling continue. Well, maybe I'll scale out 50% there, or 75%, and I'll use my take profit strategy. And I'll hold the remainder because I know how aggressive the selling is,",
+      "screen": "chart",
+      "note": "Draws price level line at low of day on chart"
+    },
+    {
+      "t": "16:35",
+      "speech": "and I won't regret not holding onto a position because the market's telling me that it's super, super weak, right? Or let's just say I have a target down here. My target's down here at 4285. But the market comes down into 4289, 4288, and I see buying on the tape,",
+      "screen": "chart",
+      "note": "Draws lower price level line at 4285"
+    },
+    {
+      "t": "16:53",
+      "speech": "similar to exactly what I'm going over, any type of clue or any type of sign that buying's there, right? Well, if my target's 4 point lower, maybe I'll get out my full position if I spot buying down here, right?",
+      "screen": "chart",
+      "note": "Pulls up Sierra Chart footprint replay window briefly (16:54–16:59)"
+    },
+    {
+      "t": "17:06",
+      "speech": "So there's really no correct way to do it. You just want to go with the flows. No one could predict the next move. You want to react to the outcome. And if you try to predict, you're going to make irrational decisions. Just react. If nothing happens, great. If something happens, act upon it. Don't hesitate and don't think.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "17:23",
+      "speech": "The market in the present moment will have all our answers. Always remember that. Focus on the present moment, because it will have all our answers in the now. If you're too concerned about the future or you're worrying about the past, you are going to be blinded in the now, which has all our answers in the present moment.",
+      "screen": "slide",
+      "note": "Slide returns at 17:31: Heavy Selling / Absorption / Trapped Buyers"
+    }
+  ],
+  "slides": [
+    {
+      "t": "0:05",
+      "title": "Heavy Selling / Absorption / Trapped Buyers",
+      "text": "• CONTEXT: Last module rejected the supply after spotting trapped buyers at 4304.\n• That sell off created NEW supply on a 30m at 4302.25\n• Execution: Tons of aggressive buying at the open directly into that strong 4302.25 supply which was created from the trapped buyers 2 days ago.\n• Tons of new absorption / aggressive buyers buying into a heavy seller (not visible)\n• Aggressive buying + strong POSITIVE uptrending delta.\n• Aggressive selling steps in after causing further sell off"
+    },
+    {
+      "t": "13:08",
+      "title": "Heavy Selling / Absorption / Trapped Buyers",
+      "text": "• CONTEXT: Last module rejected the supply after spotting trapped buyers at 4304.\n• That sell off created NEW supply on a 30m at 4302.25\n• Execution: Tons of aggressive buying at the open directly into that strong 4302.25 supply which was created from the trapped buyers 2 days ago.\n• Tons of new absorption / aggressive buyers buying into a heavy seller (not visible)\n• Aggressive buying + strong POSITIVE uptrending delta.\n• Aggressive selling steps in after causing further sell off"
+    }
+  ],
+  "uncertainties": [],
+  "generated": "2026-09-17T13:07:42"
+}

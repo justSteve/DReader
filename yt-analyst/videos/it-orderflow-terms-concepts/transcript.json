@@ -1,0 +1,986 @@
+{
+  "id": "it-orderflow-terms-concepts",
+  "file": "/mnt/c/Users/steve/OneDrive/Videos/Captures/TermsAndConcepts.mp4",
+  "duration_s": 2143,
+  "window": [
+    "0:00",
+    "35:43"
+  ],
+  "chunk_s": 600,
+  "models": [
+    "gemini-flash-latest"
+  ],
+  "resolution": "default(low)",
+  "fps": null,
+  "prompt_tokens": 196568,
+  "output_tokens": 16445,
+  "runs": [
+    "20260917-160050",
+    "20260917-160122",
+    "20260917-160143",
+    "20260917-160206"
+  ],
+  "segments": [
+    {
+      "t": "0:00",
+      "speech": "understand some very important concepts and you're going to hear me use a lot of terms in these slides, especially when we get to the examples with the trades and the strategies.",
+      "screen": "slide",
+      "note": "Slide: Concepts/Terms To Understand"
+    },
+    {
+      "t": "0:15",
+      "speech": "So it's important to understand these next few slides. As I mentioned in the first video, I'm making trading decisions based on the flow of orders.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:25",
+      "speech": "The word flow is an operative word because it can mean so many things. A lot of traders think that reading the tape or reading order flow is as simple as saying, okay, there's a thousand lot buy order which hit the offer,",
+      "screen": "slide",
+      "note": "New bullet appears: Flow = operative word as it can mean many things. Then: If 1000 lots hit the offer (aggressive buy), does that automatically mean we should also be a buyer? NO."
+    },
+    {
+      "t": "0:40",
+      "speech": "and that means it's an aggressive buyer removing liquidity from the market, he's using a market order, he hits the market, he wants to get in now, he's very aggressive and he comes in with large size.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:51",
+      "speech": "A lot of people think that, they see that, and they think, okay, the market's going to shoot up a thousand points and we're going to rally to the moon. If we see a large buyer, a large seller, or a large bid stepping in, or a large offer stepping in,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:05",
+      "speech": "it doesn't automatically mean that we are going to move in a direction, continue in a direction, or reverse. There's more things and there's more tools that must be used to understand the flows and understand the context as this is an operative word.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:21",
+      "speech": "So if we see a thousand lots hit the offer, which is an aggressive buy, a lot of people think, oh, I should be a buyer as well. It's not as simple as that. If it was that simple by spotting a large buyer hit the market and we get in with him,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:35",
+      "speech": "then it would be so easy to trade, and it's not that easy. You have to put more pieces to the puzzle together and think outside the box and spot the non-obvious before it becomes obvious.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:47",
+      "speech": "If a thousand lots hitting the offer is obviously a buyer, then if everybody's seeing this information, then being a buyer and everybody's long is not going to make that breakout as effective.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:00",
+      "speech": "Now, there's definitely times where I see large buyers, large sellers, and I follow them, and I follow their footsteps and take that trade with them, but it doesn't automatically mean if we spot a buy order, spot a sell order, that we should also be a buyer or a seller.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:14",
+      "speech": "You have to use more pieces to the puzzle to come up with a valid trade. Now, these four key pieces of information that we're going to break down specifically in the examples videos,",
+      "screen": "slide",
+      "note": "Bullet appears: Orderflow= 4 key pieces of information."
+    },
+    {
+      "t": "2:24",
+      "speech": "and as I mentioned earlier, the first one is volume. If we see a lot of volume coming into the market, if we're breaking out above a key level of resistance or we're breaking out above supply,",
+      "screen": "slide",
+      "note": "Sub-bullet a appears: a. Volume (follow through/lack of follow through)"
+    },
+    {
+      "t": "2:35",
+      "speech": "you need to ask yourself: does this volume bring follow-through, or is there a lack of follow-through in the market? If there's follow-through, then we're going to want to take that breakout if the volume supports it and the flow of the orders is in our favor.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "2:52",
+      "speech": "However, if we break through our key level of resistance, or we break above supply, or we break a high or some level that we're watching that we expect once it breaks it should keep going up, well, if there's a lack of volume,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "3:04",
+      "speech": "a lack of transactional data and a lack of orders coming through the market above that, that lack of follow-through might give us a valid trade to reverse, play the opposing direction, or not take a, let's just call it a breakout trade where we thought it was going to follow through and start moving up.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "3:23",
+      "speech": "The second one is direction. What is the context? Where was the direction before? What is the trend? What is the current day's trend? What is last week's trend? What's the monthly trend? What's the context?",
+      "screen": "slide",
+      "note": "Sub-bullet b appears: b. Direction (context, uptick/downtick, where was market before and where does it go next?)"
+    },
+    {
+      "t": "3:35",
+      "speech": "Is everybody, you know, euphoric? Is everybody fearing? Is there a lot of greed in the market? What's going on? Are we upticking after we see buys? Are we downticking after we see sells? Where are we going next? How does the market respond?",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "3:49",
+      "speech": "What's the direction? If we see a lot of buyers coming into the market and we're not moving up, well, the volume's not supporting the breakout and since we're not moving up, we're not moving in a direction that we should,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "4:00",
+      "speech": "and that's telling us the market could possibly reverse and start moving lower to advertise price at lower prices to see if buyers are buying down there because there was a lack of buying when they tried to move it up.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "4:14",
+      "speech": "So where was it before? That's kind of the general context. And where does it go after we spot these orders or this volume coming into the market? Also, what's the pace? Is there volatility? Is there volume? Is there momentum?",
+      "screen": "slide",
+      "note": "Sub-bullet c appears: c. Pace (VVM, fast/slow moving market)"
+    },
+    {
+      "t": "4:27",
+      "speech": "That's what VVM stands for: volatility, volume, momentum. If we see the volume coming in, does it bring volatility? I kind of relate volatility and momentum to direction and pace.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "4:40",
+      "speech": "If we see large volume coming into the market, we should see the market speed up, we should see it move fast, and we should see it, let's just say, head up if buyers are coming into the market.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "4:51",
+      "speech": "Or is this large volume coming into the market not producing a fast market that's compensating or adjusting to the volume coming in? If I'm seeing buyers hit the market aggressively and we start moving up, and start moving up,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "5:04",
+      "speech": "but it's so slow and the volatility and the volume is low—or the volume is high, but let's just say the volatility is low—then I know we got a slow-moving market, and if I'm trying to, let's just say, long a breakout, even if volume supports it,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "5:17",
+      "speech": "I know that I have to adjust that trade to the volatility because it might move in a slow manner, whereas if I'm scalping, I would want it to move in a fast manner. So pace is very, very important.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "5:27",
+      "speech": "And also, I don't really look at time very much, and I'm going to show you an example of acceptance and a lack of acceptance, but time definitely plays a critical role in the market.",
+      "screen": "slide",
+      "note": "Sub-bullet d appears: d. Time (acceptance/lack of acceptance) (effort versus reward)"
+    },
+    {
+      "t": "5:40",
+      "speech": "Let's just say you're a buyer of a home, and you're urgent to buy a house. You're homeless right now, let's just say you're living with your parents and you got to get out, they're driving you crazy, you got no space, you want to go live alone, you want to go live with your friends, whatever the case may be.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "5:54",
+      "speech": "And you're in a time pinch to find a house. Well, you're probably going to pay a little out of pocket for higher prices, and you accept that because you're in a time constraint.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "6:07",
+      "speech": "Or time could also mean acceptance and lack of acceptance. If the market comes up to, let's just call it for simplicity purposes, a hundred dollars, and the market's hanging out at a hundred dollars for two days or three days,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "6:20",
+      "speech": "well, that's telling me that we have a large amount of time at this price or in this, you know, general range. And what that tells me is if we're hanging out at a hundred dollars, there's acceptance here. Buyers are willing to pay this price, and sellers are willing to sell at this price.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "6:36",
+      "speech": "This is acceptance, and time brings value because if we're hanging out at a hundred dollars, then sellers find value at selling at this price and buyers find value at buying at this price.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "6:49",
+      "speech": "However, if we come up and let's just say we break or we come into a supply zone, we rally up into it and we spend very little time—because that's something that I want to see if we're rejecting a supply or demand zone—",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "7:02",
+      "speech": "if we rally into a supply zone and the market hits it, and as soon as we hit it a seller steps into the market, there's not much time spent there, but there's a lot of volume spent there, then that might be a good opportunity to reverse the market because there's a lack of acceptance.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "7:19",
+      "speech": "As the market comes up, buyers are not willing to buy at these high prices and sellers are saying, okay, price is way too high, buyers are not buying up here, I got to lower the price. And what that's going to do is it's going to bring the market down with it.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "7:35",
+      "speech": "Also, we can look at it as effort versus reward. Put yourself in the perspective of other participants. If I'm a buyer on something, or if I'm a seller on something, a valid edge in the market itself is putting you in the position of other traders.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "7:49",
+      "speech": "If we see, in this example up here, about a thousand lots which hit the offer and we see tons of buyers above the high, and let's just put ourselves in the position—and this is what I mean about going with the flows of the market and the operative word of understanding the auction in the market",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "8:06",
+      "speech": "and how price, if it facilitates trade or there's a lack of facilitation—if we break a high and we know a lot of buyers are long above the high, and they're showing effort to bring the market higher,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "8:19",
+      "speech": "we need the market to go up for those buyers to make profit. However, if we consolidate, or we sell off a little lower from where all those buyers got long, well, guess what? Those buyers are not going to get rewarded.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "8:32",
+      "speech": "And if I have, let's just call it a short timeframe perspective, meaning when I got in long, I wanted that market to move in my favor, time and pace, in a very fast and acceptable manner, but we're not seeing that and I'm a large fund or a large position trader in the market and I'm not getting rewarded,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "8:50",
+      "speech": "well, I'm going to dump that position because I'm not getting rewarded and I showed all this effort, because now my original long trade, the chances of it moving in my favor, let's just say, is lower from when I first entered when I perceived it as a high opportunity.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "9:06",
+      "speech": "So now we're showing tons of effort to bring the market higher, but the market is not rewarding us. Well, if I put myself in the position of those traders, if I'm not getting rewarded and I need this thing to work out right in my favor automatically and I'm in with large size,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "9:19",
+      "speech": "I'm just going to exit that position, I'm going to dump it, and that could also fuel a further reversal in the market if there's tons of effort, but there's no reward. If you're showing effort in the market, you want to get rewarded,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "9:31",
+      "speech": "because you're not going to show effort if you don't think there's a reward. And this is how a lot of reversals happen and changes in direction with these four key points of order flow information.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "9:40",
+      "speech": "Now, before we go any further, we need to recap some information that is in the tape reading section of the course, because if you don't understand this and you forgot about it or you're not aware of it, the next couple concepts are just not going to make sense at all.",
+      "screen": "slide",
+      "note": "Slide transition to: Market IS An Auction / To recap:"
+    },
+    {
+      "t": "9:56",
+      "speech": "So it's vital, whether you are aware of this knowledge or not aware of it, that",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "10:00",
+      "speech": "There's a buyer and a seller for every single transaction. There's always going to be a passive and an aggressive participant for every transaction. When I talk about a passive participant, I am talking about a participant who is patient and puts a limit order on the order book.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "10:17",
+      "speech": "It's you saying, \"I'm patient, I'm passive, and I will wait for the market to come to the price that I am willing to pay.\" These are done via limit orders, which get shown on the order book or the Level 2. And these orders complete a transaction once an aggressive participant steps in.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "10:35",
+      "speech": "An aggressive participant is defined by a market order, which means, \"I want to get into the market right now. I don't care about the price I am willing to pay. I'm willing to pay at any price. I don't care what the price is. I'm aggressive, I want in now.\" For a transaction to be completed, there must be a passive and there must be an aggressive participant.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "10:54",
+      "speech": "There must be a limit order which gets hit by a market order. There must be liquidity being removed by—or there must be liquidity that's added to the market, and that liquidity which was added to the market must get removed by a market order. There's always going to be four different viewpoints, and it depends if you're passive or aggressive.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "11:14",
+      "speech": "If I'm passive and I want to buy something, I'm going to put a limit order to buy on the bid. If I'm passive and I want to sell something, I'm going to sell something on the ask or the offer.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "11:32",
+      "speech": "If I'm aggressive and I want in now, I am going to essentially hit the ask. I'm going to remove liquidity from the market by using a market order. My market order is going to get filled on the ask or higher than the ask.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "11:47",
+      "speech": "If I'm aggressive and I want to sell, I sell by hitting the bid or using a market order where my market order is going to hit a limit order on the bid or below the bid, depending on how aggressive I am. So those are four different viewpoints. Depends if you're talking about a passive buyer or passive seller, or aggressive buyer and aggressive seller.",
+      "screen": "slide",
+      "note": "Slide briefly switches to 'Four DIFFERENT Scenarios' at 12:07"
+    },
+    {
+      "t": "12:08",
+      "speech": "Now throughout these videos, you're going to hear me refer to something maybe I call strong buying. And what—when I say strong buying or aggressive buying or heavy buying, it can mean these next couple concepts. So if we see aggressive selling hit the bid,",
+      "screen": "slide",
+      "note": "Slide changes to 'Strong BUYING:'"
+    },
+    {
+      "t": "12:26",
+      "speech": "meaning we see tons of selling coming into the market at bid trades or below bid trades, because trades can get hit below the bid if they are large and aggressive enough. If we see that, or if we see aggressive selling at the low of day, below a support level, or aggressive selling into a key level,",
+      "screen": "slide",
+      "note": "Bullets appear: 'Aggressive SELLING into the LOWS' and 'into a KEY LEVEL below'"
+    },
+    {
+      "t": "12:49",
+      "speech": "and this is the key part: if we see all these three points—it could be one of them, it could be all three—yet the market cannot move much lower compared to all that aggressive selling at the bid trades. This is the most vital part to this, meaning the first three bullet points shows there's aggressive selling into the market.",
+      "screen": "slide",
+      "note": "Bullet appears: 'YET, the market cannot move much lower...'"
+    },
+    {
+      "t": "13:10",
+      "speech": "However, we see all this selling, and they're hitting the market so hard, they're so aggressive, but we cannot move lower compared to all this selling that we're seeing. Because of all this selling, the market should move lower because of all the selling at the bid, yet we're not moving lower.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "13:29",
+      "speech": "I consider this to be strong buying, because what this tells me is there's a strong passive buyer essentially absorbing all this aggressive selling. You might see a passive buyer on the bid, meaning you might see on the Level 2 a really large order there, or you might not. It could be hidden, because it might be in a general area or it might be at a specific price.",
+      "screen": "slide",
+      "note": "Bullet appears: '= STRONG passive BUYER absorbing all this aggressive selling...'"
+    },
+    {
+      "t": "13:51",
+      "speech": "So if you ever hear me say strong buying, sometimes it does not mean actual buyers hitting the market. It might mean someone's passively buying quietly, or he's showing his intention, to people who are aggressive selling, but the market can't move lower because there's somebody buying all that selling pressure.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "14:13",
+      "speech": "Also, when I say strong buying, this could also mean not very aggressive selling, but there's large bids supporting the market. Meaning we're coming down, we're selling off, we're moving lower, we're moving lower, and then all of a sudden a bid steps in. And that bid essentially acts like a floor, and he supports price as we move higher. He defends the pullbacks.",
+      "screen": "slide",
+      "note": "Slide changes to next 'Strong BUYING:' slide"
+    },
+    {
+      "t": "14:35",
+      "speech": "So sometimes we might not see aggressive selling, but we might see the market sell off. Maybe it's moving slow, it's not in a fast manner, there's not a lot of volume, there's not a lot of volatility, but we are moving lower. Yet we see a very, very large bid supporting the market, acting like a floor. He gets filled, and the market starts moving higher. That I will also consider strong buying.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "14:58",
+      "speech": "Along with large at offer trades or above offer trades. That means there's aggressive market buy orders coming into the market, and I will classify that as strong buying. If we see the market breaking out above a high or above a key level of resistance, I want to see a lot of large at offer trades or above the offer trades, and that pressure to continue to the upside.",
+      "screen": "slide",
+      "note": "Bullet appears: 'Large AT OFFER trades or ABOVE OFFER trades...'"
+    },
+    {
+      "t": "15:23",
+      "speech": "If you hit the offer and you're hitting it with such large size, that means you don't care the price you're willing to pay. You want in right now, and if you see this above your level, you want to see it bring continuation and any pullback or dip must hold. If I see that, I consider that strong buying because there's large at offer trades or above the offer—",
+      "screen": "slide",
+      "note": "Sub-bullet appears: 'a. \"I want in NOW\"...'"
+    },
+    {
+      "t": "15:47",
+      "speech": "some people call that the ask, I like calling it the offer—and that just tells me there's large, aggressive market buyers removing liquidity from the market, causing it to move higher as long as the passive sellers who are adding liquidity to the market do not act like a wall to price. Dips are bought, and this also could be done by higher lows. We dip down, you want to see that low that it creates higher than the previous.",
+      "screen": "slide",
+      "note": "Bullet appears: 'Dips are being bought (higher lows)'"
+    },
+    {
+      "t": "16:10",
+      "speech": "Now flip this a little bit now. Now we're going to talk about heavy selling or strong selling, or even aggressive selling, if you hear me say that in these videos. Now what this does is aggressive buying hitting the offer. So exactly what I just said right here, how this equates to strong buying, right, large at offer trades,",
+      "screen": "slide",
+      "note": "Slide changes to 'Heavy SELLING (strong selling):'"
+    },
+    {
+      "t": "16:32",
+      "speech": "this could also mean heavy selling if we see aggressive buying into the market. Maybe we see buyers buying the high of day. Maybe they're buying a pre-market high, or they're just buying a breakout above a key level of any resistance level that you have on your charts. The key part to this is,",
+      "screen": "slide",
+      "note": "Bullets appear: 'Aggressive BUYING into the HIGHS' and 'into a KEY LEVEL above.'"
+    },
+    {
+      "t": "16:49",
+      "speech": "if we see all this buying and the market can't move higher compared to all the aggressive buying that we're seeing at the offer or above the offer type of trades, and we're not compensating for all this of buying coming into the market—we're seeing it all come in, yet the market is having a hard time moving higher—",
+      "screen": "slide",
+      "note": "Bullet appears: 'YET, the market cannot move much HIGHER...'"
+    },
+    {
+      "t": "17:09",
+      "speech": "how I view this is there's a strong passive seller absorbing all this aggressive buying. Again, he might show his size, he might not. But if we see tons of buying near the high and the market can't continue moving higher and we start moving lower, as I mentioned in the earlier slides, to move lower to facilitate more trade, I will consider this heavy selling as there's a seller absorbing all the aggressive buying.",
+      "screen": "slide",
+      "note": "Bullet appears: '= STRONG passive SELLER absorbing all this aggressive buying...'"
+    },
+    {
+      "t": "17:33",
+      "speech": "So these three bullet points need to be validated by a failed move higher. Remember what I said: a lack of trade facilitation at higher prices, well guess what, the market's going to have to move lower. And this is what I classify as heavy or strong selling.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "17:50",
+      "speech": "Also, what else I classify as heavy or strong selling is we might not see all this buying, but we might see the market start moving higher, gravitating higher very, very slow. We're putting in higher highs, we're putting in higher lows, and then all of a sudden we come up to a level and there's large offers, passive on the order book, on the Level 2. We see a large ask, thousand lots.",
+      "screen": "slide",
+      "note": "Slide changes to next 'Heavy SELLING (strong selling):' slide"
+    },
+    {
+      "t": "18:14",
+      "speech": "And this guy's resisting the market from moving higher. Well, this passive seller, or this offer, or this large seller sitting on the ask is acting like a ceiling to higher prices and he's resisting—that's where the word resistance comes from—he's resisting price from moving higher. So if we see large offers and the market cannot move higher and we start moving lower and that large offer defends that area of price,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "18:37",
+      "speech": "then I consider that aggressive or I consider that—excuse me—heavy selling or strong selling near the highs, wherever it may be if I see a large offer and he shows intention. Now I will say one thing: a lot of people put too much emphasis on resting orders or passive orders or orders on the Level 2.",
+      "screen": "slide",
+      "note": "Bullet appears: 'Large AT BID trades or BELOW BID = aggressive market sell order...'"
+    },
+    {
+      "t": "19:00",
+      "speech": "And I don't put much emphasis on any order I see on the Level 2 unless it shows that it is getting filled, and unless it shows intention. It is highly illegal to spoof the market, but theoretically, right now, I could go put a thousand-lot offer to sell at a hundred dollars, let's just call it.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "19:25",
+      "speech": "And as the market comes up to that hundred-dollar mark, I can remove that and I'm spoofing or scaring the market. So resting orders or orders that I put on the Level 2 really don't show intention unless it is filled. So I don't put much emphasis on any order unless it's getting filled, unless they are adding to that position once it is filled, and unless they are defending price and showing intention.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "19:48",
+      "speech": "All resting orders could potentially be fake if they don't get filled or they don't show intention, because it's very simple and very easy to remove them. I want to make that",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "20:00",
+      "speech": "very, very clear. Do not put so much of an emphasis on watching the Level 2 at a random point where it doesn't get filled. But if I see a thousand lot seller at a hundred bucks, and the market comes up to a hundred, and there's tons of buying at that hundred, and we're eating away that offer, we're eating him away, and there's tons of, tons of aggressive buying,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "20:19",
+      "speech": "yet the market can't move higher, and this large offer adds, and adds, and adds, and is acting like a ceiling, or a wall to move higher, well then guess what? If selling comes into the market, I have no problem taking the market short despite all that buying, because there's a large offer, he's very heavy selling, and he's strongly selling into the market while there's so many people buying into him.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "20:40",
+      "speech": "Also, when I say heavy selling, strong selling, this could also mean the aggressive way. Large at-bid trades or below bid. These are aggressive market sell orders, strong or heavy selling. If the market's selling off at bid trades or below the bid trades, it shows strong intention to get in now, cause you think, we're speculating the market needs to move lower.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "21:03",
+      "speech": "This needs to bring continuation, and any move up, or any rally higher must be sold into, and any bounce that we see into the market must fail for that heavy selling, or that strong selling to continue moving lower. And if I see these strong bounces fail, and we start moving lower after we bounce, and they are sold into, if you ever hear me say that,",
+      "screen": "slide",
+      "note": "Slide bullet appears: a. \"I want in NOW\"... This needs to bring continuation + rallies must be sold into/failed bounces."
+    },
+    {
+      "t": "21:27",
+      "speech": "then I consider that strong selling, and the chances of the market moving lower is higher. Also, you want to see lower highs being put in. So as the market bounces, you don't want to see it break the previous high. You want to see the high coming lower than the previous high, whether you're talking about a short time frame or large time frame. It does not matter.",
+      "screen": "slide",
+      "note": "Slide bullet appears: • Rallies are being sold. Bounces fail (lower highs)"
+    },
+    {
+      "t": "21:49",
+      "speech": "Now, you're going to hear me say absorption a lot. And this is a key point to a possible reversal trade. If we see aggressive selling into the low, or aggressive buying into the high, but there's no follow through, right? If there's aggression in one direction, you want to see follow through, cause that means the market's going to continue in that direction.",
+      "screen": "slide",
+      "note": "New slide: Absorption"
+    },
+    {
+      "t": "22:11",
+      "speech": "However, if we see aggressive selling into the low and there's no follow through, well guess what? It's a good chance that if buyers step in, the market's going to move up. Or if we see aggressive buying into the highs, and there's no continuation to the upside, and the last buyer buys, and these guys are stuck up there, well guess what?",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "22:28",
+      "speech": "No follow through means the market's going to have to move lower, to a lower price. And we're going to be able to capitalize on short-term reversals this way, with absorption. The Level 2 may show passive orders absorbing all the market orders, and sometimes he doesn't show his size and it's hidden.",
+      "screen": "slide",
+      "note": "Slide bullets appear: Level 2 may show passive order absorbing all the market orders / Sometimes that passive participant doesn't show his size and is \"hidden.\""
+    },
+    {
+      "t": "22:47",
+      "speech": "And there's different algos to do this, there's different order types to do this. You'd be surprised on the tools out there that large funds could have access to that retail traders can't. Sometimes you could hide your size, there's ways to do it with algos to, you know, maybe make one lots or a hundred lots and hide your size, or you could even show it.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "23:06",
+      "speech": "So sometimes you might see large passive orders absorbing all the aggression. Sometimes you might see tons of aggression, but no passive orders, and the concepts are the same regardless of hidden or actual orders you see on the order book. Now, this could be to a specific price or it could be to a general area, meaning the S&P 500 comes down into 4,005 to 4,000, a five-point range,",
+      "screen": "slide",
+      "note": "Slide bullet appears: • Can be SPECIFIC price or can be general area."
+    },
+    {
+      "t": "23:34",
+      "speech": "five handle range. But every time we come into 4,005 to 4,000, we see tons of selling, but the market can't break below 4,000. Even though it's directly not at 4,000, but it's 4,005 to 4,000, it's a general area. So you might see it at an area, or you might see it at a specific price. The concepts are going to be the same, it doesn't matter.",
+      "screen": "slide",
+      "note": "New slide: Trapped Participants briefly displays then switches back to Absorption"
+    },
+    {
+      "t": "23:56",
+      "speech": "A lot of times you will see it at a specific price, and some of the times you will see it just in a general area. And sometimes these general areas is how I formulate key levels or key zones that I do watch. Also, you're going to hear me talk about trapped participants. When I talk about a trapped participant,",
+      "screen": "slide",
+      "note": "New slide: Trapped Participants"
+    },
+    {
+      "t": "24:14",
+      "speech": "essentially it's very, very similar to absorption. However, context plays an important role in this. So if we see the aggressive selling, the aggressive buying into a level, but there's no follow through, these guys are not only getting absorbed, but if they are done at specific inflection points in the market,",
+      "screen": "slide",
+      "note": "Slide bullet appears: • Aggressive selling/buying into a level but no FOLLOW THROUGH."
+    },
+    {
+      "t": "24:34",
+      "speech": "they can become trapped. It's best above areas where you know people are buying or selling, or stopping out of a position. Where is this? Things that are very obvious, that everybody could spot. Remember, the best trades come from spotting the not-so-obvious before it becomes obvious. Where this is done: high of day, low of day.",
+      "screen": "slide",
+      "note": "Slide bullet appears: • Best above HOD/LOD, support/resistance/ supply & demand or anywhere majority of traders would buy or sell / stop out of positions."
+    },
+    {
+      "t": "24:55",
+      "speech": "If I see the market break the low, and there's tons of selling below the low, and we fake-out break below the low of day, and start moving higher, well guess what? Those guys who sold below the low are going to be trapped, and if they have to stop out of their position and they have to cover their shorts, well guess what?",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "25:13",
+      "speech": "By you covering your shorts, you're just going to fuel the market higher. So technically shorts are buyers, because for shorts to get out of their position, they have to cover or buy, and flip that to the long side. If I'm longing a high of day break, and there's tons of aggression at the high, and we break pre-market high, or we break a resistance level, or we break above a supply zone,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "25:35",
+      "speech": "and there's no follow through, and I just saw a lot of traders get long above the high, and the market immediately rejects it, well guess what? Those longs are going to have to exit and stop out, and for longs to exit or get out of their trade, they're going to have to sell. And their selling, if sellers step in, could fuel and add more gasoline to the fire that the market could reverse and start selling lower.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "25:56",
+      "speech": "So a lot of trapped participants formulate potential reversals in the market, because the market wants to put max pain to those participants. Where there's pain, there's going to be gain for others. Always remember that. So that's why I always say to put yourself in the head of other traders, or position yourself to where other people are buying or selling,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "26:15",
+      "speech": "and that gives you an edge in itself, because where there's max pain, there will be gain for other traders, and we can use this information via market-generated information from the market auction, via order flow, to gain an insight of where traders are buying, where they're selling, and where they're trapped, and we're going to get into that, so don't worry.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "26:36",
+      "speech": "So as I just mentioned, if I see 1,000 lots hit the offer above a pre-market high, and then immediately offers passive sellers step in, and then we see aggressive sellers hitting the bid, I know those potential buyers who are trapped above the high, that just hit the offer above high of day, are going to be trapped.",
+      "screen": "slide",
+      "note": "Slide bullet appears: • If I see 10,000 lots hit the offer above premarket high and immediately offers step in + aggressive selling down, I know those potential buyers are \"trapped\" and if the market puts pressure on them, eventually they have to stop out."
+    },
+    {
+      "t": "26:53",
+      "speech": "And if the market puts pressure on them, they're going to eventually have to stop out. You got to think outside the box and use context. Context is important, and without context, we're kind of just get a blank canvas, and we're not going to be able to read the picture correctly if we don't have the context of it.",
+      "screen": "slide",
+      "note": "Slide bullet appears: • Think outside the box. Use context!"
+    },
+    {
+      "t": "27:10",
+      "speech": "You know, you could crop out one thing that I said, and if you didn't hear what I said before that, that sentence that you just cropped out might not make any sense, or it might be twisted the wrong way cause you didn't hear the context of what happened before that. It's the same thing in the market. What happened before?",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "27:26",
+      "speech": "Where are people buying? Where are people selling? Are they trapped? Are they finding acceptance? Think outside the box, and you could get potential nice trades, especially even reversals from this as well. You're also going to hear me say acceptance at higher prices. Now, this doesn't always have to be the case,",
+      "screen": "slide",
+      "note": "New slide: Acceptance at Higher Prices"
+    },
+    {
+      "t": "27:43",
+      "speech": "but I would like to see aggressive buying to the upside, meaning the market rallies up and we break above a resistance level, we are inside of a supply zone, or we're inside of an area that sellers were once present, you want to see aggressive buying come into that level. Once we get that, or if there's a lack of that, that's fine.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "28:03",
+      "speech": "However, if the market consolidates, what consolidation tells me is the market is balanced. When the market is balanced, you have buyers and sellers agreeing on price. If you have both participants agreeing on a specific price, meaning the market rallies into 4,000, and buyers are willing to buy at 4,000, and sellers are also willing to sell at 4,000,",
+      "screen": "slide",
+      "note": "Slide bullet appears: • Market consolidates / builds VALUE = finds acceptance higher."
+    },
+    {
+      "t": "28:29",
+      "speech": "well, that's when you're going to get consolidation, and that's what we call value. There's tons of transactions getting transacted there, both participants don't have an edge because we are balanced, and this tells me that we are finding acceptance higher. These prices are accepted by both participants. Now, as long as we",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "28:53",
+      "speech": "show aggression after this consolidation, after this value gets built—and I equate value to a lot of time being spent there, because a lot of time gets spent at a specific price or general area, that means there's going to be a lot of volume being transacted there, because we get that consolidation and we get all these buyers and sellers transacting prices, right?",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "29:15",
+      "speech": "If buyers step in after this consolidation, this not only formulates our demand zone, but this also brings continuation, because we are accepting higher prices and buyers now are willing to pay a higher premium at a higher price. And sellers are going to love that because they're going to keep raising their prices and bring the market higher until buying dries up,",
+      "screen": "slide",
+      "note": "Slide bullet appears: • Any dip or sell off lower = BOUGHT up and aggressive sellers become \"trapped\""
+    },
+    {
+      "t": "29:38",
+      "speech": "if that makes sense. So, once we see this aggression near the highs, or this consolidation, or this acceptance before that last rally, you want to see dips or sell-offs lower, right? We're not going to move straight up. We're going to have essentially like a flagpole, or like a wedge. And this is actually the basis to how wedges form,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "30:00",
+      "speech": "or flags form is you get that rally up, that's the flagpole, then you get the consolidation, right? The consolidation is not going to keep moving up.",
+      "screen": "slide",
+      "note": "Slide 'Acceptance at Higher Prices' displayed with first three bullets"
+    },
+    {
+      "t": "30:08",
+      "speech": "You're going to move down, you're going to move up, you're going to move down, you're going to move up. So any dip or any move lower should get bought up.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "30:15",
+      "speech": "That's why you want to see higher lows. Sometimes you might get a lower low, but you want to see that consolidation hold and value build near the highs.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "30:24",
+      "speech": "Those moves lower get bought up, and sometimes those moves lower will be late sellers entering the market.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "30:31",
+      "speech": "If late sellers enter the market, meaning they see it come up and then it dips down, how many of you have shorted let's just say a upside move,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "30:40",
+      "speech": "you get in the first sign of weakness, the market comes down temporarily, and then immediately rallies back up and you stop out of your position?",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "30:48",
+      "speech": "Well, guess what? That's you becoming trapped. If we see that, the chances of the market moving higher because we're finding acceptance here is going to be much higher.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "30:58",
+      "speech": "Also, new demand begins to form, anything indicating that the market is accepting higher prices and showing no signs of a lack of trade facilitation,",
+      "screen": "slide",
+      "note": "Fourth bullet appears at 00:58, fifth bullet appears at 01:01"
+    },
+    {
+      "t": "31:09",
+      "speech": "meaning an immediate rejection, not a lot of volume getting transacted there, and the market moves away from that very fast.",
+      "screen": "slide",
+      "note": "Sixth bullet appears at 01:11"
+    },
+    {
+      "t": "31:17",
+      "speech": "If we see consolidation at this area, I would prefer to see it not at the highest price, but at least near the highs,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "31:26",
+      "speech": "during a lower volume time. Even in the afternoon session, a lot of times you'll see the market move up in the morning,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "31:32",
+      "speech": "and then for two, three hours consolidate the whole afternoon session when everybody goes to lunch. We're consolidating with lower volume,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "31:40",
+      "speech": "but as time goes on, we're building value because now this move has taken two, three hours to occur.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "31:48",
+      "speech": "Then buyers step in and the market moves higher because we've found acceptance there. It's more time to build value at higher prices,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "31:54",
+      "speech": "and this is what I mean by acceptance at higher prices. And I'm going to show you examples of this, so if you have any questions, don't worry.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "32:02",
+      "speech": "But now flip this again: acceptance at lower prices. If we see aggressive selling to the downside,",
+      "screen": "slide",
+      "note": "Slide changes to 'Acceptance at Lower Prices'"
+    },
+    {
+      "t": "32:09",
+      "speech": "that's step number one. Is it vital? No, but I would like to see that. If the market moves lower,",
+      "screen": "slide",
+      "note": "Second bullet appears at 02:06"
+    },
+    {
+      "t": "32:16",
+      "speech": "and we start to discover price near let's just say a low of day, which flag out, maybe a bear flag forms, or a wedge forms near the low,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "32:25",
+      "speech": "what that's telling me is we are consolidating, and as the market sold off, when we opened up we were at 4,000, but now we sold off to 3900.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "32:35",
+      "speech": "Well, as we move down from 3900, we have buyers willing to buy and we still have sellers willing to sell.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "32:42",
+      "speech": "We are building value or we are consolidating. The market is balanced there. We are finding acceptance at these lower prices.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "32:50",
+      "speech": "This is not unfair to either a buyer and not unfair to either a seller. We're accepting it.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "32:57",
+      "speech": "If we see any rally higher after that consolidation or any bounce up, we must see this get sold into,",
+      "screen": "slide",
+      "note": "Third bullet appears at 02:56"
+    },
+    {
+      "t": "33:05",
+      "speech": "and those aggressive buyers on this rally become trapped. How many of you had tried to long a low of day,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "33:13",
+      "speech": "meaning the market sold off, you think it's going to bounce off of a support level, you think it's going to bounce off a demand zone?",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "33:19",
+      "speech": "As soon as we start moving up, you hit a market order and you get in long. Now essentially you're buying on this rally,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "33:26",
+      "speech": "then the market starts to come down, and we break the low of day and you stop out of your position, and then we keep heading lower.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "33:33",
+      "speech": "Well, guess what? That validates that concept that you were trapped. You just bought that rally,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "33:39",
+      "speech": "the market moved lower, broke the low, your position is underwater, you're trapped, and you selling,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "33:45",
+      "speech": "let's just say thousands of other people are also selling, stopping out, that's just going to fuel further selling to the downside.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "33:52",
+      "speech": "So any rally or any bounce after this, I would prefer to see it get sold into, and aggressive buyers are present, but they become trapped.",
+      "screen": "slide",
+      "note": "Fourth bullet appears at 03:53"
+    },
+    {
+      "t": "34:03",
+      "speech": "I also would like to see new supply form, because after consolidation and after balance, as long as sellers aggressively hit the bid thereafter",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "34:11",
+      "speech": "and the market drops, new supply will form at that area, or it could just be anything indicating that the market is just accepting those lower prices",
+      "screen": "slide",
+      "note": "Fifth bullet appears at 04:13"
+    },
+    {
+      "t": "34:20",
+      "speech": "and showing no signs of a lack of trade facilitation. If the market moves lower, right, and immediately we bounce and large bids step in,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "34:28",
+      "speech": "and aggressive buying comes in, and we start putting in higher lows and then also higher highs, that's showing that at that low of day,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "34:36",
+      "speech": "there's a lack of trade facilitation to the sell side, and it's a good chance the market may move up and bounce off of that level.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "34:42",
+      "speech": "So you want to see no signs of lack of trade facilitation. And no sign of lack of trade means we are building value,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "34:50",
+      "speech": "we are consolidating, and we are finding acceptance lower. If we weren't finding the acceptance lower and there was a lack of trade facilitation,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "34:58",
+      "speech": "because no acceptance also means no trade facilitation, meaning if the market sold off and immediately bounced and didn't spend a lot of time down there,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "35:07",
+      "speech": "good chance we are going to reverse to the upside. Consolidation at that area during low volume by time.",
+      "screen": "slide",
+      "note": "Sixth bullet appears at 05:10"
+    },
+    {
+      "t": "35:15",
+      "speech": "Like I said earlier, maybe it's the afternoon session, we're hanging out at the lows all all afternoon. Then all of a sudden, two hours before the market closes,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "35:23",
+      "speech": "sellers hit the market. That area of consolidation during low volume by time was more time for you to build value,",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "35:30",
+      "speech": "build a short position, and build a position for the market to move lower and capitalize on a downside short position.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "35:39",
+      "speech": "",
+      "screen": "slide",
+      "note": "Slide changes to 'Heavy SELLING (strong selling):'"
+    }
+  ],
+  "slides": [
+    {
+      "t": "0:00",
+      "title": "Concepts/Terms To Understand",
+      "text": "• I'm making trading decisions based on the flow of orders.\nFlow = operative word as it can mean many things.\n• If 1000 lots hit the offer (aggressive buy), does that automatically mean we should also be a buyer? NO.\n• Orderflow= 4 key pieces of information.\na. Volume (follow through/lack of follow through)\nb. Direction (context, uptick/downtick, where was market before and where does it go next?)\nc. Pace (VVM, fast/slow moving market)\nd. Time (acceptance/lack of acceptance) (effort versus reward)"
+    },
+    {
+      "t": "9:40",
+      "title": "Market IS An Auction / To recap:",
+      "text": "- There is a BUYER and a SELLER for every transaction.\n- There will always be a PASSIVE and an AGGRESSIVE participant for every transaction.\n- There will always be FOUR different viewpoints:\n- Passive BUYERS buy on the BID\n- Passive SELLERS sell on the ASK (offer)\n- Aggressive buyers buy by \"hitting\" ASK\n- Aggressive sellers sell by \"hitting\" the BID"
+    },
+    {
+      "t": "10:00",
+      "title": "To recap:",
+      "text": "- There is a BUYER and a SELLER for every transaction.\n- There will always be a PASSIVE and an AGGRESSIVE participant for every transaction.\n- There will always be FOUR different viewpoints:\n- Passive BUYERS buy on the BID\n- Passive SELLERS sell on the ASK (offer)\n- Aggressive buyers buy by \"hitting\" ASK\n- Aggressive sellers sell by \"hitting\" the BID"
+    },
+    {
+      "t": "12:07",
+      "title": "Four DIFFERENT Scenarios",
+      "text": "BUYERS:\n1. PASSIVE BUYER: BID -----------> Aggressive SELLER: BID\n2. AGGRESSIVE BUYER: ASK -----------> Passive SELLER: ASK\nSELLERS:\n1. PASSIVE SELLER: ASK -----------> Aggressive BUYER: ASK\n2. AGGRESSIVE SELLER: BID -----------> Passive BUYER: BID\n- There will ALWAYS be a PASSIVE participant and ALWAYS be a AGGRESSIVE participant to EVERY transaction. (Market to a limit order)\n- Just depends on what participant you are and how much interest you have in the market..."
+    },
+    {
+      "t": "12:09",
+      "title": "Strong BUYING:",
+      "text": "• Aggressive SELLING into the BID\n• Aggressive SELLING into the LOWS\n• Aggressive Selling into a KEY LEVEL below\nYET, the market cannot move much lower compared to all the aggressive selling (at bid trades) *****\n= STRONG passive BUYER absorbing all this aggressive selling. ** (can be hidden)"
+    },
+    {
+      "t": "14:13",
+      "title": "Strong BUYING:",
+      "text": "• Not much aggressive selling (at bid or lower trades) BUT there are large BIDS (passive) supporting the market. These bids act like a floor and support price as we move higher.\n• Large AT OFFER trades or ABOVE OFFER trades = aggressive market buy order = strong buying.\na. \"I want in NOW\"... This needs to bring continuation + pullbacks must hold.\n• Dips are being bought (higher lows)"
+    },
+    {
+      "t": "16:10",
+      "title": "Heavy SELLING (strong selling):",
+      "text": "• Aggressive into BUYING into the offer (ask)\n• Aggressive BUYING into the HIGHS\n• Aggressive BUYING into a KEY LEVEL above.\nYET, the market cannot move much HIGHER compared to all the aggressive BUYING (at offer/ask trades)\n= STRONG passive SELLER absorbing all this aggressive buying. ** (can be hidden)"
+    },
+    {
+      "t": "17:49",
+      "title": "Heavy SELLING (strong selling):",
+      "text": "• Not much aggressive buying (at offer or above trades) BUT there are large OFFERS (passive) RESISTING the market from moving higher. These offers act like a ceiling and resist price.\n• Large AT BID trades or BELOW BID = aggressive market sell order = strong/heavy selling."
+    },
+    {
+      "t": "20:00",
+      "title": "Heavy SELLING (strong selling):",
+      "text": "• Not much aggressive buying (at offer or above trades) BUT there are large OFFERS (passive) RESISTING the market from moving higher. These offers act like a ceiling and resist price.\n• Large AT BID trades or BELOW BID = aggressive market sell order = strong/heavy selling.\na. \" I want in NOW\"... This needs to bring continuation + rallies must be sold into/failed bounces.\n• Rallies are being sold. Bounces fail (lower highs)"
+    },
+    {
+      "t": "21:44",
+      "title": "Absorption",
+      "text": "• Aggressive selling/buying into a level but no FOLLOW THROUGH.\n• Level 2 may show passive order absorbing all the market orders.\n• Sometimes that passive participant doesn't show his size and is \"hidden.\"\n• Can be SPECIFIC price or can be general area."
+    },
+    {
+      "t": "23:56",
+      "title": "Trapped Participants",
+      "text": "• Aggressive selling/buying into a level but no FOLLOW THROUGH.\n• Best above HOD/LOD, support/resistance/ supply & demand or anywhere majority of traders would buy or sell / stop out of positions.\n• If I see 10,000 lots hit the offer above premarket high and immediately offers step in + aggressive selling down, I know those potential buyers are \"trapped\" and if the market puts pressure on them, eventually they have to stop out.\n• Think outside the box. Use context!"
+    },
+    {
+      "t": "27:37",
+      "title": "Acceptance at Higher Prices",
+      "text": "• Aggressive buying to the upside.\n• Market consolidates / builds VALUE = finds acceptance higher.\n• Any dip or sell off lower = BOUGHT up and aggressive sellers become \"trapped\""
+    },
+    {
+      "t": "30:00",
+      "title": "Acceptance at Higher Prices",
+      "text": "• Aggressive buying to the upside.\n• Market consolidates / builds VALUE = finds acceptance higher.\n• Any dip or sell off lower = BOUGHT up and aggressive sellers become \"trapped\"\n• New demand begins to form.\n• Anything indicating that the market is ACCEPTING higher prices (buyers and sellers agreeing on price being this high) and showing no signs of lack of trade facilitation.\n• Consolidation at the area wanting acceptance (highs) during LOWER volume by TIME. (more time to build value)"
+    },
+    {
+      "t": "31:58",
+      "title": "Acceptance at Lower Prices",
+      "text": "• Aggressive selling to the downside.\n• Market consolidates / builds VALUE = finds acceptance lower.\n• Any rally or bounce higher = sold into and aggressive buyers on this rally become \"trapped.\"\n• New supply begins to form.\n• Anything indicating that the market is ACCEPTING lower prices (buyers and sellers agreeing on price being this low) and showing no signs of lack of trade facilitation.\n• Consolidation at the area wanting acceptance (lows) during LOWER volume by TIME. (more time to build value)"
+    },
+    {
+      "t": "35:39",
+      "title": "Heavy SELLING (strong selling):",
+      "text": "• Not much aggressive buying (at offer or above trades) BUT there are large OFFERS (passive) RESISTING the market from moving higher. These offers act like a ceiling and resist price."
+    }
+  ],
+  "uncertainties": [],
+  "generated": "2026-09-17T16:02:06"
+}

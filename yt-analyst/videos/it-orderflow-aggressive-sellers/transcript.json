@@ -1,0 +1,517 @@
+{
+  "id": "it-orderflow-aggressive-sellers",
+  "file": "/mnt/c/Users/steve/OneDrive/Videos/Captures/AgreesiveSellers.mp4",
+  "duration_s": 869,
+  "window": [
+    "0:00",
+    "14:29"
+  ],
+  "chunk_s": 600,
+  "models": [
+    "gemini-flash-latest"
+  ],
+  "resolution": "default(low)",
+  "fps": null,
+  "prompt_tokens": 79856,
+  "output_tokens": 7711,
+  "runs": [
+    "20260917-152000",
+    "20260917-152025"
+  ],
+  "segments": [
+    {
+      "t": "0:00",
+      "speech": "Now this is gonna be a perfect example of understanding what I mean by thinking outside the box, putting context together, creating your own story with what the market's telling you, and taking a valid trade off of that.",
+      "screen": "slide",
+      "note": "Slide titled 'Aggressive Sellers off Key Level'"
+    },
+    {
+      "t": "0:17",
+      "speech": "So the first thing I wanna say is the market's gonna sell off into a range from the previous day where we found acceptance from buyers.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:27",
+      "speech": "Now what I mean by that is let's just zoom out. And exactly what I said earlier in these slides about finding acceptance and seeing consolidation near a high, especially at like a supply zone,",
+      "screen": "chart",
+      "note": "Switches to thinkorswim intraday candlestick chart"
+    },
+    {
+      "t": "0:38",
+      "speech": "right here we see some consolidation near the high after a strong rally, and then we get the move up for some continuation.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "0:46",
+      "speech": "Not the strongest rally after this consolidation. I would like to see a little bit of a stronger one, but we have acceptance because there's a ton of volume being built near the highs.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "0:56",
+      "speech": "We are consolidating and potentially forming demand if buyers then thereafter step in and cause a strong imbalance for a rally higher.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:07",
+      "speech": "Now what I really liked about this consolidation range, and this just general area—remember, general area. Doesn't have to be specific. It's just a general range at 4285, if you wanna call it 4286, you could—",
+      "screen": "chart",
+      "note": "Draws rectangle highlighting afternoon consolidation range"
+    },
+    {
+      "t": "1:20",
+      "speech": "was in the afternoon session on this day, we dipped down and it held very, very well. Then overnight, we're holding this level pretty well.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:30",
+      "speech": "Yeah, I mean, keep in mind, we're still inside this range. This is not a valid demand or supply zone technically, but we're still holding this range where the day prior we found acceptance from buyers at.",
+      "screen": "chart",
+      "note": "Draws rectangle over overnight range"
+    },
+    {
+      "t": "1:45",
+      "speech": "Because we keep holding it, it's acting as support, and they're defending it, and they're buying at these prices. Now if the market in the overnight session, let's just say, came lower and broke this range right here",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "1:56",
+      "speech": "and maybe traded down here where I'm hovering my cursor over, then I would not be watching this to the long side, and I would be more interested to see how the market reacts at that demand zone.",
+      "screen": "chart",
+      "note": "Draws small rectangle below the range"
+    },
+    {
+      "t": "2:06",
+      "speech": "So because of how well we held this general range right here overnight, I continued to watch it the rest of the day.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:14",
+      "speech": "And this was actually a plan that if we broke below these 4280s and these 4277s, then I would be open to playing short targeting this demand zone,",
+      "screen": "chart",
+      "note": "Extends rectangle box forward"
+    },
+    {
+      "t": "2:25",
+      "speech": "because essentially, if sellers are strong enough to get us below this acceptance range where buyers were once strong, then I knew if the sellers had the strength to take us below this,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:35",
+      "speech": "we'd be able to capitalize on a nice 15-point scalp into the nearest demand zone because there's nothing in between here to here. Right? There's no other demand. There's no other support.",
+      "screen": "chart",
+      "note": "Draws vertical box between acceptance range and lower demand zone"
+    },
+    {
+      "t": "2:46",
+      "speech": "It's essentially if sellers are strong, where once buyers were strong, then I would be open to playing short targeting the next demand zone. In this scenario, it doesn't happen. We hold this level very well overnight.",
+      "screen": "chart",
+      "note": "Removes temporary drawings"
+    },
+    {
+      "t": "2:59",
+      "speech": "In fact, at the open, we bounce off of this after rejecting supply. So this is where we're gonna spot some buying activity at these lows after we rejected the supply zone.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "3:10",
+      "speech": "So going back into this, earlier in the morning, the market rejected that supply. We sold off. And this was actually an example in the earlier lectures about shorting the trap participants above that 4304 supply.",
+      "screen": "slide",
+      "note": "Switches back to slide 'Aggressive Sellers off Key Level'"
+    },
+    {
+      "t": "3:25",
+      "speech": "Remember that example? Well, this is the same day. So, essentially, the dip is gonna get bought at that 4386 area, or this is actually 4286 it's supposed to be.",
+      "screen": "slide",
+      "note": "Points cursor to typo on third bullet"
+    },
+    {
+      "t": "3:35",
+      "speech": "So 4286 area from the previous day acceptance. And then I spotted some strange activity on the tape, which acts as support at 4290, and I got long off of that level.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "3:47",
+      "speech": "So looking back at the chart, there's a rejection of supply. There's the sell off into 4286. It's not 4386. It's meant to say 4286.",
+      "screen": "chart",
+      "note": "Switches to thinkorswim chart, then pulls up slide briefly to highlight typo"
+    },
+    {
+      "t": "3:59",
+      "speech": "Now I'm gonna pull up Bookmap, and what you're gonna see here is I'm gonna be able to visually show it to you better on the Delta footprint and the heat map so you could visually see the historic data,",
+      "screen": "chart",
+      "note": "Pulls up Bookmap replay window over thinkorswim"
+    },
+    {
+      "t": "4:14",
+      "speech": "because it was more of historic data for this type of trade. So I'm gonna remove the time and sales. Now what we're gonna see here is as the market rejected that supply zone right here and sold off,",
+      "screen": "chart",
+      "note": "Removes Time and Sales column from Bookmap"
+    },
+    {
+      "t": "4:24",
+      "speech": "we come down into this 4286 level perfectly. That's actually low of day. Right? 4286 is low of day.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:31",
+      "speech": "Then we consolidate and formulate this, like, little wedge or whatever you wanna call it, where we put in higher lows and we also put in lower highs. So we're going like this. Right?",
+      "screen": "chart",
+      "note": "Draws converging trendlines forming a wedge on Bookmap"
+    },
+    {
+      "t": "4:43",
+      "speech": "And then we're also going like this, because we're putting in higher lows. Just like this.",
+      "screen": "chart",
+      "note": "Adjusts lower trendline"
+    },
+    {
+      "t": "4:49",
+      "speech": "Now keep in mind, on the delta, this was the cherry on top. This was the selling feature of the house. This was the selling feature of this trade.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "4:59",
+      "speech": "The delta, despite this wedge, was putting in higher highs and putting in higher lows. So what that tells me is as the market was consolidating, not finding a direction,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:10",
+      "speech": "there were tons of aggressive buyers stepping into the market. Now off this sole reason alone was not valid enough for me to get long. Off this sole reason alone was not valid enough for me to get long.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:25",
+      "speech": "I'm gonna show you what made me get long and what actually made me click that buy button. But I liked this wedge. And keep in mind the context, we're at that previous accepted range.",
+      "screen": "chart",
+      "note": "Switches between thinkorswim and Bookmap"
+    },
+    {
+      "t": "5:38",
+      "speech": "Right? We're forming this wedge, and the delta is uptrending. We're putting in higher highs. We're putting in higher lows. We're still negative on the delta. That's not that big of an issue. I'm more concerned about what's happening right now.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:49",
+      "speech": "And the delta is putting in higher highs and putting in higher lows despite the consolidation and despite unclear direction.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "5:58",
+      "speech": "Now what we're gonna see here is the market then, let's fast forward this, consolidates for about 30 minutes or 20 minutes inside of this range.",
+      "screen": "chart",
+      "note": "Switches to Sierra Chart 1-minute bar chart and cumulative delta"
+    },
+    {
+      "t": "6:10",
+      "speech": "Now what piqued my interest the most was I want you to keep a close eye on this 4290 to about 4288 area on the charts,",
+      "screen": "chart",
+      "note": "Maximizes Sierra Chart Delta footprint chart; orange clock reads 10:17:25"
+    },
+    {
+      "t": "6:22",
+      "speech": "because what we're gonna see here, and I'm actually gonna highlight it, 4290 to about 4—this just general area right here. I'm gonna keep it highlighted for some time.",
+      "screen": "chart",
+      "note": "Draws red/green highlighted rectangle at 4288-4290 on footprint; orange clock reads 10:17:57"
+    },
+    {
+      "t": "6:33",
+      "speech": "Now what we're gonna see here, and this is when the wedge is developing. So I'm gonna align both charts up. This is when the wedge is developing. Let's get this over here.",
+      "screen": "chart",
+      "note": "Arranges footprint chart side-by-side with candlestick chart; orange clock reads 10:18:18"
+    },
+    {
+      "t": "6:46",
+      "speech": "We're gonna see this wedge form. Let's go like that. And let's actually speed up this recording. So the wedge hasn't developed yet, but we see nothing on the delta has really made itself significant to me yet because the wedge still hasn't formed.",
+      "screen": "chart",
+      "note": "Fast forwards replay; orange clock advances to 10:19:10"
+    },
+    {
+      "t": "7:01",
+      "speech": "But let's fast forward this, because this occurs around 10:35 we start breaking out. Now I want you to keep an eye on all the positive delta at 4290.",
+      "screen": "chart",
+      "note": "Replay advances; orange clock reaches 10:20:27"
+    },
+    {
+      "t": "7:12",
+      "speech": "Watch when the market's gonna rally up here. Watch all the strong buying at this 4290 level. See all this aggressive buying right there?",
+      "screen": "chart",
+      "note": "Market rallies up into 4290 on footprint; orange clock reads 10:21:47"
+    },
+    {
+      "t": "7:20",
+      "speech": "This is telling me as the market's trying to come up, there's aggressive buyers trying to step into the market. Now from a contextual standpoint,",
+      "screen": "chart",
+      "note": "Orange clock reads 10:22:56"
+    },
+    {
+      "t": "7:28",
+      "speech": "despite all this aggressive buying, the market is failing to move higher. Right? So from a contextual standpoint, we're seeing all this buying. We're seeing the delta start to increase higher.",
+      "screen": "chart",
+      "note": "Orange clock reads 10:23:41"
+    },
+    {
+      "t": "7:40",
+      "speech": "We're putting in those higher highs on the delta, yet the chart is still consolidating. We're seeing all this volume build up, but we're not moving higher.",
+      "screen": "chart",
+      "note": "Orange clock reads 10:24:35"
+    },
+    {
+      "t": "7:50",
+      "speech": "So again, this hasn't given me a reason to enter a trade just yet. I wanna make that very clear. I'm gonna show you what made me take the trade.",
+      "screen": "chart",
+      "note": "Orange clock reads 10:25:36"
+    },
+    {
+      "t": "7:58",
+      "speech": "Just let's keep going through it. I'm gonna speed it up. But see all this volume build up at 4290? And that's that wedge we got. So you could see it on a chart, and I'm actually gonna highlight it on the chart as well so you can understand that visually.",
+      "screen": "chart",
+      "note": "Draws rectangle on right candlestick chart; orange clock reads 10:26:45"
+    },
+    {
+      "t": "8:11",
+      "speech": "4290 is just this area right here. So we see the rectangle here, we see the rectangle here, that's where it is in relation to one another.",
+      "screen": "chart",
+      "note": "Highlights corresponding level across footprint and price charts"
+    },
+    {
+      "t": "8:21",
+      "speech": "We're seeing all this buying come in, but I love to see this positive delta just at this region. Something's holding it back. Something's holding it back.",
+      "screen": "chart",
+      "note": "Orange clock reads 10:27:43"
+    },
+    {
+      "t": "8:29",
+      "speech": "Look, just just came back up. Again, testing it. Tons of buying up here. Tons of buying. Yet we're still wedging. Right? Pulling up the the heat map now,",
+      "screen": "chart",
+      "note": "Orange clock reads 10:29:13"
+    },
+    {
+      "t": "8:37",
+      "speech": "10:30 now it's. We're seeing all this buying come in, yet we're still wedging. Right? Pulling up the heat map now, we're still seeing this little wedge.",
+      "screen": "chart",
+      "note": "Switches to Bookmap replay window showing wedge lines"
+    },
+    {
+      "t": "8:45",
+      "speech": "Let's go to 10:31. Go back here. Okay. Then around what time is this? 10:31, we dip back down and test the lower trend line. Right?",
+      "screen": "chart",
+      "note": "Advances Bookmap replay to 10:31"
+    },
+    {
+      "t": "8:58",
+      "speech": "Now going back to Sierra, we're still wedging. Now this is a 15-minute little wedge pattern that we just formed down here. So going back to here, going back to here, let's play this again.",
+      "screen": "chart",
+      "note": "Switches back to Sierra Chart footprint and price window"
+    },
+    {
+      "t": "9:09",
+      "speech": "The market's gonna dip back down for one last time. Also to note, we do see a negative delta at the lows. We don't see nothing really significant. We don't really see any major outliers. We don't see nothing that really sparks a crazy interest.",
+      "screen": "chart",
+      "note": "Orange clock reads 10:30:48, advancing to 10:31:11"
+    },
+    {
+      "t": "9:25",
+      "speech": "But we see this wedge. We see the delta uptrending, cumulative delta uptrending, and we saw the positive delta at 4290.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "9:33",
+      "speech": "Now what's very important here, what made me enter this trade was, could this be a seller entering the market? Maybe looking to cover a short position, maybe someone on the passive side and absorbing all the buying and actually is in short?",
+      "screen": "chart",
+      "note": "Orange clock reads 10:32:05"
+    },
+    {
+      "t": "9:47",
+      "speech": "Who knows? Right? And that's why the reaction after the fact is the most important indicator of order flow. It's reacting to the information the market's providing and reacting to the reaction after the fact. It's using the generated information by the market and making solid",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:00",
+      "speech": "using the generated information by the market and making solid trading decisions based off of that. It's not predicting saying, 'oh, I'm seeing all this buying. Let's get in long automatically.' Or, 'oh, I'm seeing all this buying. Let's full port my position.' No. It's reacting to the",
+      "screen": "chart",
+      "note": "Sierra Chart footprint and replay charts side-by-side; orange replay clock reads 10:32:05"
+    },
+    {
+      "t": "10:12",
+      "speech": "information the market's providing. And at this moment, the market's providing me information that there's a positive delta at at 4 2 9 0 and the market cannot get above it. Now the market breaks above this level,",
+      "screen": "chart",
+      "note": "Orange clock updates to 10:32:13, then 10:32:23"
+    },
+    {
+      "t": "10:24",
+      "speech": "right? This is the key aspect here. I think it is at 10 35. The key aspect here is once we broke above this level at 4 2 9 0 and all this positive delta by price at 4 2 9 0, it holds",
+      "screen": "chart",
+      "note": "Orange clock advances to 10:33:13"
+    },
+    {
+      "t": "10:39",
+      "speech": "and it acts as support. That is the confirmation of taking this trade. We spotted this activity",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:44",
+      "speech": "at 4 2 9 0, and then it later, once we are above it, it gets defended and it acts as support. That was my reason for entering this trade. And that",
+      "screen": "slide",
+      "note": "Slide titled \"Aggressive Sellers off Key Level\""
+    },
+    {
+      "t": "10:56",
+      "speech": "actually was the sole reason for entering this trade, was seeing how it then later acts as support. We sell off into it. Look at now the selling coming into the market. You see all that selling right there? I'm",
+      "screen": "chart",
+      "note": "Switches back to Sierra Chart replay; orange clock reads 10:33:13"
+    },
+    {
+      "t": "11:08",
+      "speech": "actually gonna slow it down even more. We start to see selling come into the market. I believe we dip down into it 1 more time. 4 2 9 0. Look. We're back into 4 2",
+      "screen": "chart",
+      "note": "Orange clock advances to 10:34:07, 10:34:49, 10:35:00"
+    },
+    {
+      "t": "11:18",
+      "speech": "9 0. Selling is stepping in. Look. The delta's the delta just turned red there. Look. Back into this rectangle. It holds.",
+      "screen": "chart",
+      "note": "Orange clock reaches 10:35:35, then 10:36:00"
+    },
+    {
+      "t": "11:28",
+      "speech": "Because of this level and this selling coming in right now you see the selling coming in? It's holding. It was once an area where we saw positives buying, we got above it, now it's acting as support.",
+      "screen": "chart",
+      "note": "Orange clock advances past 10:36:34"
+    },
+    {
+      "t": "11:41",
+      "speech": "You could almost look at it as old resistance now turning into support. So now we see all this aggressive selling coming into the level. Now I am waiting for aggressive buying to step in thereafter,",
+      "screen": "chart",
+      "note": "Orange clock advances past 10:36:45"
+    },
+    {
+      "t": "11:50",
+      "speech": "and I take the market long, putting my stop loss below 4 2 9 0. Didn't really give it a lot of room to breathe because what's gonna happen here is aggressive buying steps in. There's aggressive selling at 4",
+      "screen": "chart",
+      "note": "Orange clock advances past 10:36:59"
+    },
+    {
+      "t": "12:01",
+      "speech": "2 9 0. It holds. Now aggressive buying steps in. So now our longs are looking really, really good. It",
+      "screen": "chart",
+      "note": "Orange clock fast-forwards to 10:46:04"
+    },
+    {
+      "t": "12:07",
+      "speech": "held so well. It acted as support once we were below it, and we got aggressive buying off of that move up. Now dips above that should get bought up, and",
+      "screen": "chart",
+      "note": "Orange clock advances to 10:47:45, 10:49:00"
+    },
+    {
+      "t": "12:16",
+      "speech": "I'm gonna speed it up even more because this thing absolutely rallied, and it was a really, really nice long. So now we're seeing selling coming in near the highs",
+      "screen": "chart",
+      "note": "Orange clock fast-forwards through 10:52:00 - 10:57:00"
+    },
+    {
+      "t": "12:24",
+      "speech": "up here, and eventually, this thing takes off. It takes a little time, but our longs are not worrying right now. We're 7 points above our entry, 6 points above our entry. Right? We consolidate",
+      "screen": "chart",
+      "note": "Orange clock advances to 11:09:00, 11:14:00"
+    },
+    {
+      "t": "12:32",
+      "speech": "almost like finding acceptance up here. Alright? Dips are getting bought up. Cannot freak out. Market is not gonna move in your direction right away, always. And we had a really nice rally on our hands.",
+      "screen": "chart",
+      "note": "Orange clock advances through 11:20:00 to 11:38:00"
+    },
+    {
+      "t": "12:43",
+      "speech": "I could let this play out, and you could see the really large rally, but I wanna show you Bookmap. So we keep going up, keep going up, and let's",
+      "screen": "chart",
+      "note": "Orange clock reaches 11:46:00 - 11:56:00"
+    },
+    {
+      "t": "12:51",
+      "speech": "look at Bookmap so we could see that better. So so here's all that step buying at 4 2 9 0. Let's mark it with a rectangle on Bookmap.",
+      "screen": "chart",
+      "note": "Slide appears briefly at 02:51, then Bookmap software opens at 02:52"
+    },
+    {
+      "t": "13:00",
+      "speech": "Here's all this buying at 4 2 9 0. Alright? Watch when we break out of it. Here's that breakout. Now we're gonna see it come back down,",
+      "screen": "chart",
+      "note": "Yellow rectangle drawn around 4290 area on Bookmap"
+    },
+    {
+      "t": "13:11",
+      "speech": "and we're gonna see aggressive selling at that level. Look. Aggressive selling right there. More aggressive selling. Right? We come off it. It. We dip back down into it, and we're gonna see more aggressive selling.",
+      "screen": "chart",
+      "note": "Bookmap replaying price dip back into yellow box"
+    },
+    {
+      "t": "13:24",
+      "speech": "More aggressive selling. We're holding it. Aggressive buying steps in, and then this thing looks good. I'm gonna fast forward it really fast. Tons of aggressive selling at that level. Again, third time.",
+      "screen": "chart",
+      "note": "Fast-forwarding Bookmap replay speed"
+    },
+    {
+      "t": "13:35",
+      "speech": "3 different times. Consolidate, we consolidate, and it's a slow grind up uptrend higher. And that was the example at 4 3 0 4. You remember from earlier in the slides?",
+      "screen": "chart",
+      "note": "Bookmap chart zoomed out showing full rally"
+    },
+    {
+      "t": "13:47",
+      "speech": "So looking back at this, that could have been a valid target. So here's where we spotted those buyers down here. And remember that example I explained earlier in the slides",
+      "screen": "chart",
+      "note": "Slide briefly appears at 03:47, then Thinkorswim 5-minute candlestick chart displayed at 03:48"
+    },
+    {
+      "t": "13:56",
+      "speech": "at 4 3 0 5 when we trapped all those buyers above high a day? Maybe that could have been your target up here, and you would have had a nice 20 point rally to the upside. Right? We're not getting greedy.",
+      "screen": "chart",
+      "note": "Highlighting entry box and target levels on Thinkorswim"
+    },
+    {
+      "t": "14:06",
+      "speech": "Very slow grind uptrending up. Dips are getting bought up. We're putting in higher highs. We're putting in higher lows. This thing rallied into supply and dipped down off of that from that earlier example.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:16",
+      "speech": "Just simply spotting those buyers at 4 2 9 0. Once we are were above it, it acted as support and then further fuel higher for another nice rally up.",
+      "screen": "chart",
+      "note": "Zooming in on the 4290 support area and subsequent rally"
+    }
+  ],
+  "slides": [
+    {
+      "t": "0:00",
+      "title": "Aggressive Sellers off Key Level",
+      "text": "CONTEXT & Execution: Market sells off into a range from previous day where market found acceptance from buyers.\nEarlier in morning, market rejected supply at 4304.\nThe dip gets bought up at ~ 4386 AREA from previous days acceptance.\nI spot strange activity on the tape which acts as support (4290)\nI get long off this level"
+    },
+    {
+      "t": "10:43",
+      "title": "Aggressive Sellers off Key Level",
+      "text": "• CONTEXT & Execution: Market sells off into a range from previous day where market found acceptance from buyers.\n• Earlier in morning, market rejected supply at 4304.\n• The dip gets bought up at ~ 4386 AREA from previous days acceptance.\n• I spot strange activity on the tape which acts as support (4290)\n• I get long off this level"
+    }
+  ],
+  "uncertainties": [],
+  "generated": "2026-09-17T15:20:25"
+}

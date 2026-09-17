@@ -1,0 +1,421 @@
+{
+  "id": "it-orderflow-0917-0657",
+  "file": "/mnt/c/Users/steve/OneDrive/Videos/Captures/Orderflow Trading Course _ InvestiTrade - Google Chrome 2026-09-17 06-57-17.mp4",
+  "duration_s": 1153,
+  "window": [
+    "0:00",
+    "19:13"
+  ],
+  "chunk_s": 600,
+  "models": [
+    "gemini-flash-latest"
+  ],
+  "resolution": "default(low)",
+  "fps": null,
+  "prompt_tokens": 105702,
+  "output_tokens": 7949,
+  "runs": [
+    "20260917-134152",
+    "20260917-134350"
+  ],
+  "segments": [
+    {
+      "t": "0:00",
+      "speech": "So now let's talk more about strong buying. We see a bid bleep into the market where he appears out of nowhere. And then we're also going to talk about acceptance higher and how to capitalize on trending moves or moves for continuation once the market does rally high.",
+      "screen": "slide",
+      "note": "Slide titled 'Strong Buying/Bids & Acceptance Higher'"
+    },
+    {
+      "t": "0:26",
+      "speech": "So the context for this first scenario is we have 15 minute demand at 4266.5. Overnight we're going to bounce off that level and essentially the market breaks out of balance. It had a range where we were balanced.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "0:41",
+      "speech": "And outside of the balance range, meaning we break out of it, and directly outside we have demand below us to support us. And in this example you're going to see a breakout of balance to the downside and demand gets supported where we spot strong buying and strong bids. The nearest supply above is 4285 and then that 4302 level as well.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "1:05",
+      "speech": "So pulling up thinkorswim, here we have our 15 minute demand zone. In fact this is a level that you probably could even draw down to 42 uh 4249 sort of low if you want to call it because technically there still was buying down near these lows in this range even though the low of that basing came over here.",
+      "screen": "chart",
+      "note": "Switches to thinkorswim chart showing balance range and demand zone rectangle properties"
+    },
+    {
+      "t": "1:25",
+      "speech": "So now we have demand over here and the area of balance which I'm talking about is everywhere between above demand but below supply. So we were inside of this range for about 1, 2, 3, 4 different days, about a week period. We were stuck inside of this balance range.",
+      "screen": "chart",
+      "note": "Highlights shaded balance range boxes on thinkorswim chart"
+    },
+    {
+      "t": "1:45",
+      "speech": "Now the rules of balance is you take the market outside of balance as long as the participant which took us out of balance shows continuation. Meaning if the market breaks below this balance range, which technically the balance range low was around 4270, ideally if sellers take us outside below this range, you want to follow those sellers unless initiative action or responsive action from the opposing participants step in.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:14",
+      "speech": "In this example you're going to see buyers step in and lead us to a rally higher. Now if we see a failed breakout or failed breakdown outside of balance, a good rule of thumb is we move to the outside or the opposing range of balance. Meaning if we break below to the downside outside of balance below yet buyers step in, the good rule of thumb is we are going to test the upper balance range.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "2:43",
+      "speech": "Flip that, if we break the upper balance range and sellers step in, the reverse of this example I'm going to show you, right? Let's just say sellers step in at the high, the idea is you want to take it to the bottom lower portion of the balance range because that shows initiative action from the opposing participants.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "3:03",
+      "speech": "So in this example overnight we broke out of balance, but there was initiative action or excuse me responsive action from buyers buying outside of balance and that is a bullish indication that the market has a high odd of coming up at least to the midpoint of the balance range, but better yet to the upper side of the balance range. So that's the context of this scenario.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "3:27",
+      "speech": "And the execution again is very similar to what we've been seeing, but now I want to introduce acceptance at higher prices. So the execution is we sell off into demand, there's aggressive selling at that level, yet the market moves higher on aggressive buying. So we see buying step in off demand.",
+      "screen": "slide",
+      "note": "Slide returns with Execution bullets revealed on the right"
+    },
+    {
+      "t": "3:43",
+      "speech": "That's something you want to see. You want to see at-offer trades ideally saying, okay, I want the market to come up, I want in now, I want to get in and I'm going to aggressively buy it. Then a bid steps in, randomly, what I call bleeps into the market where he appears out of nowhere, and it was for a 1 tick range, but it was after an aggressive order hits.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "4:02",
+      "speech": "And then we continue to rally after and then we're going to see acceptance at higher prices at 4277, 4285. And I want to talk about something that's going to give us more confidence that the trend is going to continue or how to hold on to runners and winners for longer into our upper balance range target, let's just call it, or any other target we're talking about.",
+      "screen": "slide",
+      "note": null
+    },
+    {
+      "t": "4:23",
+      "speech": "Also before I get into the charts, this doesn't always have to apply to demand or support or resistance. If this was at an area anywhere on the chart, it would be an area that I'm watching and I'm going to keep an eye on moving forward. However the cherry on top of the pie was this was at demand.",
+      "screen": "chart",
+      "note": "Switches back to thinkorswim chart"
+    },
+    {
+      "t": "4:40",
+      "speech": "So is demand or is support or supply or resistance a necessity? Absolutely not. I could take the trade without it being at a zone or at a key level. However because it was at one, it gave it more confidence and confluence and confirmations.",
+      "screen": "mixed",
+      "note": "Briefly flips to slide and then opens Bookmap"
+    },
+    {
+      "t": "4:56",
+      "speech": "So pulling up the heat map and pulling up the depth of market here, I want you to keep a close eye on this 4266 level of demand. Remember 4266 and a quarter?",
+      "screen": "chart",
+      "note": "Bookmap window displayed"
+    },
+    {
+      "t": "5:08",
+      "speech": "Essentially the market comes down into 4266 and as you can see from this chart we're going to bounce off this level. We break the previous low and automatically reclaim. So this is a lower day break, a lower day fake out, and then we immediately reclaim back up.",
+      "screen": "chart",
+      "note": "Switches to thinkorswim 1-min chart with purple VWAP/moving average line"
+    },
+    {
+      "t": "5:25",
+      "speech": "And you could see how we start climbing higher and aggressive buying steps into the market. So just looking at the cumulative delta, you could see the delta, the aggressive buying stepping in solely off of this chart as well.",
+      "screen": "chart",
+      "note": "Shows cumulative delta oscillator pane below price"
+    },
+    {
+      "t": "5:37",
+      "speech": "Now pulling up the the footprint chart here, these three bars below right here what I'm highlighting, 1, 2, 3, you could see obviously aggressive selling coming into this level and that was done at 4266, 4265, 4267, right where we have that demand zone.",
+      "screen": "chart",
+      "note": "Switches to footprint chart view highlighting red selling bars at lows"
+    },
+    {
+      "t": "5:55",
+      "speech": "Then the market sells off, all this aggressive selling at demand, and then we start coming up. You could see the nice two green or in this case blue because I switched my green to blue, positive delta on a on a 5-handle footprint delta. All this aggressive buying now steps in and then we find acceptance here at 4277, 4279, 4280, and I'm going to get into that.",
+      "screen": "chart",
+      "note": "Footprint chart highlights blue positive delta bars rising"
+    },
+    {
+      "t": "6:21",
+      "speech": "But I want to show you what this first looks like at the low at demand. So we're going to sell off and watch us break this low. Remember how I showed you on the chart we break that low of day? Well watch what happens when we break the low.",
+      "screen": "chart",
+      "note": "Switches to Bookmap replay"
+    },
+    {
+      "t": "6:33",
+      "speech": "We're going to break it right here, and you see all that selling? Look at the look at the DOM, right? Look at everything below 4272, negative 1100 delta. Oh it's just all red, right? Look at the recent bid rates: minus 577, minus 500, minus 600, minus 600, minus 500 directly at the low of day.",
+      "screen": "chart",
+      "note": "Bookmap replay showing price dropping through 4268 towards 4265"
+    },
+    {
+      "t": "6:52",
+      "speech": "So aggressive selling we could see on the heat map, we could see it on the delta, we could see it on the DOM, we could also see it on the footprint, right? Like I said, it's going to show us the same information just visually differently. We see the selling here.",
+      "screen": "mixed",
+      "note": "Quick toggle between footprint and Bookmap charts"
+    },
+    {
+      "t": "7:05",
+      "speech": "Now what's important here is despite the selling, right, despite the non-follow-through, we get a bid that bleeps in, right? And one thing I want to note, and remember what I said earlier about how I don't put much emphasis on passive orders.",
+      "screen": "chart",
+      "note": "Bookmap replay showing price at 4266 with large resting bid at 4265.50"
+    },
+    {
+      "t": "7:19",
+      "speech": "This bid never gets filled ever. But what I have noticed is as the market moves in the direction we want it to, so you're going to see the market rally, and as we come higher, you're going to see a bid step in.",
+      "screen": "chart",
+      "note": "Replay resumes as price starts bouncing from 4266"
+    },
+    {
+      "t": "7:36",
+      "speech": "Watch as we come higher, right? So that's why I don't put emphasis on passive orders. Now a really, really thick bid for 400 lots just stepped in, 390s steps in as the market comes up.",
+      "screen": "chart",
+      "note": "Bookmap highlights orange horizontal bid bar at 4266.25 / 4265.50 (390 - 416 size)"
+    },
+    {
+      "t": "7:49",
+      "speech": "When you see the market move in the direction, let's just say you want it to, because right now we're at demand, we're seeing that aggressive selling, it is leaning towards the bull side as long as we don't, you know, aggressively, aggressively sell off.",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:01",
+      "speech": "If I see a bid step in as the market's moving up, I view that as this guy is defending a position that if it comes down, you want it to act as support or just the chances of it moving higher is higher. So I see that bid step in, I see all that aggressive selling step in and it actually is negative 666, right?",
+      "screen": "chart",
+      "note": "Bookmap shows CVD at -666 at bottom"
+    },
+    {
+      "t": "8:21",
+      "speech": "And the DOM doesn't show um down to 4265 uh down here. Actually it will if I backdate a little bit. So let's play it, and and you'll see that when that bid steps in, you see him down here? He's like all alone, it's bolded at 390 at 4265 despite all that selling.",
+      "screen": "chart",
+      "note": "Bookmap reloads events, displays 390 bid at 4265.00/4265.25"
+    },
+    {
+      "t": "8:41",
+      "speech": "Right, when I see that, I gain confidence that this long is going to work out. I gain extra confirmation, I gain confidence, and we could go over four or five confirmations that we have right now to take the market long, and this was my reason to get long at 4267, right?",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "8:56",
+      "speech": "So now I'm going to hit play and watch all the aggressive buying step in and keep a note on the delta how it's going to strongly uptrend and keep an eye on the DOM on all the recent ask trades and keep an eye on how we start moving up in a fast pace with all this aggressive buying.",
+      "screen": "chart",
+      "note": "Bookmap playback resumes; green bubbles print as price moves upward"
+    },
+    {
+      "t": "9:13",
+      "speech": "Now this is what you want to see if you're long. See all this buying coming in? See on the DOM? It's kind of hard to see on the DOM, which is why I like showing you guys the heat map uh because I have it sped up by 16. It's obviously not going to move this fast in real time, and then that'll give you a better edge to actually spot it in real time.",
+      "screen": "chart",
+      "note": "Bookmap speed set to x16, price rallies to 4272+"
+    },
+    {
+      "t": "9:29",
+      "speech": "But see how the delta is strongly uptrending now? See how all the aggressive market buying is coming in? See how that bid is just holding and staying there, right? I like to see that. We see the aggressive selling, we see the bid automatically bleep in as we start coming up.",
+      "screen": "chart",
+      "note": "CVD turns sharply upward; price moves to 4273"
+    },
+    {
+      "t": "9:42",
+      "speech": "And if you want to flip it to the short side, you want to see the market rally up into, let's just call it supply or even a key level or maybe even not, right? Then the market sells off and as we start selling off, you see an offer bleep in as we're moving in that direction. That's a good sign the market could continue in that direction.",
+      "screen": "chart",
+      "note": "Price reaches 4274 on Bookmap chart"
+    },
+    {
+      "t": "10:00",
+      "speech": "and that's what I want to see, especially for this type of trade. Look at all that aggressive buying. Right? Look at all that aggressive buying. We're in long. This thing is looking good. Now,",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "10:12",
+      "speech": "this is what I mean about acceptance at higher prices. You get the scenario of spotting those bids at the low. You get the scenario of seeing the selling at the low, etc. We went over those plenty of plenty of times, right? That's not every setup we take. You gotta put the pieces to the puzzle together. Sometimes it's not gonna be as clear, and sometimes it will be very clear. There's really no right way. And don't always look for answers for you. Look at answers from the market. The market will give us what we need. Now,",
+      "screen": "slide",
+      "note": "new slide: Strong Buying/Bids & Acceptance Higher"
+    },
+    {
+      "t": "10:32",
+      "speech": "we're in long. And remember what I said earlier, how there's no resistance, there's no supply until this 4285 level? And let's just say that was our target, right? Maybe we sold full position there. Maybe our upper target was the upper",
+      "screen": "chart",
+      "note": "switches to Bookmap Replay chart; at 10:40 switches to thinkorswim chart"
+    },
+    {
+      "t": "10:48",
+      "speech": "balance of supply because we're using that theory of the market should gravitate towards the upper balance range. Maybe that was our final target, right? Well, what happens here is we consolidate inside of supply. This usually happens on trending days, and it could also be flipped to the downside. So what I'm explaining right",
+      "screen": "chart",
+      "note": "draws green rectangle on thinkorswim chart"
+    },
+    {
+      "t": "11:08",
+      "speech": "now to the upside, just reverse it if you wanna talk about the short side. As the market moves up and you're expecting continuation or you're expecting trending moves higher, obviously you wanna spot higher highs and higher lows on a chart. But if we have a resistance level or if we",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:25",
+      "speech": "have a supply zone or anything that could stop the market from moving higher or lower, you wanna find acceptance there saying, okay, buyers are accepting these higher prices. And as long as they show initiative to bring the market higher, we should see continuation. So for acceptance types of plays or plays you want",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "11:42",
+      "speech": "to expect trend continuation, here's the buying at the low at the demand zone, right? And here's the consolidation around 4277, 4280. Obviously, we could see all this aggressive buying down here at at at the highs,",
+      "screen": "chart",
+      "note": "switches to footprint chart; orange clock label reading 19:26:37"
+    },
+    {
+      "t": "12:00",
+      "speech": "but what's vital for acceptance plays is you wanna see this consolidation. If there was a volume profile up here, you would see actually, we could see it on on on on Bookmap. So let's fast forward it to about 10:38.",
+      "screen": "chart",
+      "note": "switches to thinkorswim, then Bookmap Replay chart"
+    },
+    {
+      "t": "12:15",
+      "speech": "You're gonna see a lot of volume being transacted up here near these highs. So if I were just to zoom out to this range right here, we see a ton of volume in this middle column that the market is finding acceptance at these prices. So you see this chart profile column?",
+      "screen": "chart",
+      "note": "zooms out range on Bookmap chart"
+    },
+    {
+      "t": "12:35",
+      "speech": "We are finding acceptance at these prices because volume is building at these prices. If volume builds, what that's telling me is buyers and sellers are agreeing on price. They're fighting it out. As long as buyers can defend this area and show initiative",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "12:53",
+      "speech": "that the market could go higher and prove that they are aggressive and defending it and bid step in and and trap sellers enter the market, then the chances of the market moving higher is also higher. So what you wanna see on a delta",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "13:05",
+      "speech": "is as this consolidation happens, you want to see the delta hold. And what's very important to note here is I'm gonna pull up the rectangle tool again. As this market pulls back right where I'm highlighting, look at the delta at this range.",
+      "screen": "chart",
+      "note": "switches to thinkorswim 1-minute chart with cumulative delta; draws green rectangle"
+    },
+    {
+      "t": "13:21",
+      "speech": "It's uptrending. So we start selling off, yet the delta is uptrending. What that's telling me is there's less aggressive sellers entering the market, and buyers are defending this price. Also, we can see it right here. The market what I have highlighted right here in the delta and",
+      "screen": "chart",
+      "note": "draws second green rectangle on delta sub-chart"
+    },
+    {
+      "t": "13:41",
+      "speech": "the price, as we're selling off, the delta is uptrending and we're holding. So buyer entering the market and sellers are not as aggressive. Now if sellers are aggressive, you want to see them become trapped. As simple as possible,",
+      "screen": "chart",
+      "note": "briefly switches to Bookmap chart"
+    },
+    {
+      "t": "13:51",
+      "speech": "what this is gonna show so you see this consolidation up here, right? All this consolidation is acceptance at this range. We're building value. We're spending a lot of time here. We're building volume by price, and we're finding acceptance at this range. What you wanna see is sellers become trapped. So you",
+      "screen": "chart",
+      "note": "switches to footprint chart; orange clock label reading 19:28:57; draws green rectangle"
+    },
+    {
+      "t": "14:10",
+      "speech": "see right here of negative 781 delta, right? What this is telling me is as the market's rallying higher and as we start coming lower, sellers are like, oh, I'm shorting this move. This thing is gonna reverse. This thing's gonna sell off, and sellers then",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:26",
+      "speech": "enter the market. So think about it from an auction concept or an auction perspective. If sellers step into the market, right, and the market recognizes this and the market starts moving higher, well, those sellers are gonna have to cover, and the market's gonna",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "14:43",
+      "speech": "have to rally higher. How many times have you guys entered a short position and then the market stops you out and it keeps climbing higher and keeps climbing higher, and where you got short would have been a great opportunity to get long? This is exactly what I mean. A lot of early shorts that get in and try to get a reversal",
+      "screen": "chart",
+      "note": null
+    },
+    {
+      "t": "15:03",
+      "speech": "enter the market short. So we see a negative 781 delta. Let me make this a little bit bigger. I think we see a negative 781, negative 212, negative 260, all at the low. Negative 215, right? That's telling me shorts are trying to enter the market.",
+      "screen": "chart",
+      "note": "zooms in on footprint chart; orange clock label reading 19:30:11"
+    },
+    {
+      "t": "15:21",
+      "speech": "And if the market puts pressure on them, aka buyers, and in this example, buyers are putting pressure on them because we see them aggressively still entering the market despite all that selling. Once that selling gives up and those sellers have to stop out and the buyers really, really put aggression into",
+      "screen": "chart",
+      "note": "switches to thinkorswim, then footprint chart"
+    },
+    {
+      "t": "15:37",
+      "speech": "the market, that's when it could fuel a further higher, especially with spending a lot of time down here. So where I showed you those sellers stepped in was this dip down. And a lot of people are gonna see that aggressive selling and be like, oh, let me take the market short. Right? And they're just fueling a further move higher because we're consolidating. And then also a bid randomly bleeps in over here.",
+      "screen": "chart",
+      "note": "switches to Bookmap Replay chart"
+    },
+    {
+      "t": "15:56",
+      "speech": "And let's replay this. We dip down. Again, people are getting short just to eventually break the high, and that's what you wanna see for acceptance. And that would have been a nice little scalp, just, you know, 10, 12 point scalp off that little scenario, now 15 point scalp off that scenario. Then the market",
+      "screen": "chart",
+      "note": "replays Bookmap price action"
+    },
+    {
+      "t": "16:14",
+      "speech": "continues to rally higher, and this consolidation rings around 11 o'clock to about 12, 12:15, exactly what I mentioned. That example I showed you was on a 1 minute chart. Right? That was before that 4285 supply zone. That was as we're coming higher and we're consolidating.",
+      "screen": "chart",
+      "note": "switches to thinkorswim 15-minute, then 1-minute chart"
+    },
+    {
+      "t": "16:32",
+      "speech": "Now we're inside of supply and this is what you wanna see. You wanna see consolidation. This is a 15 minute candlestick chart. Pulling up the delta footprint, here, where I'm gonna highlight is where all that aggressive consolidation was. And similar to what I said earlier, down the lows, we see a ton of trapped sellers. And",
+      "screen": "chart",
+      "note": "switches to footprint chart; orange clock label reading 19:32:41; draws green rectangle"
+    },
+    {
+      "t": "16:51",
+      "speech": "towards the highs, we see a ton of aggressive buyers. So as long as the aggressive buyers hold and the sellers continue to come into the market and get trapped, that's when we're gonna get that upside continuation, especially consolidating inside of supply. Because if you think about it, this consolidation, as long as buyers step in, is also gonna formulate demand.",
+      "screen": "chart",
+      "note": "displays footprint alongside thinkorswim chart"
+    },
+    {
+      "t": "17:09",
+      "speech": "Then the market rallies. You coulda got a nice 15 point rally off of that as well. We dip back down directly into this consolidation range low right here. And guess where that was done at? Right where that selling earlier was from. And if we were to look what happened down here about 2 hours later after that rally up so here's that",
+      "screen": "chart",
+      "note": "switches to thinkorswim, then footprint chart; orange clock label reading 19:33:25"
+    },
+    {
+      "t": "17:29",
+      "speech": "rally up. Here's that pullback lower. Same thing happens that we saw earlier. We see all the aggressive selling here. We see more aggressive selling there. People are getting short. And look at all the buying that comes in after that. That's exactly what you wanna see, accepting higher prices, getting long on a dip for a trending continuation day,",
+      "screen": "chart",
+      "note": "switches to thinkorswim chart"
+    },
+    {
+      "t": "17:49",
+      "speech": "and eventually, this thing came into 4302 perfectly by end of day into the upper balance range of supply, which we have been rejecting a lot recently. So that is how you can capitalize",
+      "screen": "chart",
+      "note": "draws rectangle properties and highlights 4302 supply level"
+    },
+    {
+      "t": "18:04",
+      "speech": "by using Delta or just common sense of trapped sellers entering the market. They're getting short on any sign of weakness, yet they're not following through to the downside. The market comes up, and we're seeing all this positive delta and all this aggressive buying, and that's putting pressure on those sellers who got in short. If they gotta stop out, that's just gonna fuel a further rally higher.",
+      "screen": "chart",
+      "note": "switches to footprint chart; orange clock label reading 19:34:09"
+    },
+    {
+      "t": "18:23",
+      "speech": "And just just the best advice I could give for reading the tape now that I'm, you know, recording these videos and and thinking about things as we go through them is just use common sense. Put yourself in the position or the head of other traders. And now that you know how the auction works, get creative with it. Put the pieces together. Create your own context.",
+      "screen": "chart",
+      "note": "switches to thinkorswim chart"
+    },
+    {
+      "t": "18:43",
+      "speech": "If you see buyers, you see sellers, don't hesitate. Just take the trade. Put the pieces together. Formulate your own story. The market's telling you it and you gotta put the context clues to create your own plan of whatever the story the market is trying to portray to you. It's not gonna tell you, hey, Carmine, buy here, or, hey, Carmine, sell here. It's gonna say, hey, something's going on here. Watch what happens here because it might give you good signs that of where the market's gonna head next.",
+      "screen": "slide",
+      "note": "switches to slide: Strong Buying/Bids & Acceptance Higher"
+    }
+  ],
+  "slides": [
+    {
+      "t": "0:00",
+      "title": "Strong Buying/Bids & Acceptance Higher",
+      "text": "• CONTEXT: 15m demand at 4266.5.\n• Bounced off demand overnight.\n• Broke OUT OF BALANCE range where bottom outside of balance is 4266.5 demand\n• Nearest supply/resistance above is 4285.5 then 4302.\n• Execution: Sell off into 4266.50 demand.\n• Aggressive selling then market moves higher on aggressive buying.\n• Bid steps in and market continues to rally thereafter.\n• Acceptance at higher prices: ~ 4277, 4285 supply."
+    },
+    {
+      "t": "10:12",
+      "title": "Strong Buying/Bids & Acceptance Higher",
+      "text": "• CONTEXT: 15m demand at 4266.5.\n• Bounced off demand overnight.\n• Broke OUT OF BALANCE range where bottom outside of balance is 4266.5 demand\n• Nearest supply/resistance above is 4285.5 then 4302.\n• Execution: Sell off into 4266.50 demand.\n• Aggressive selling then market moves higher on aggressive buying.\n• Bid steps in and market continues to rally thereafter.\n• Acceptance at higher prices: ~ 4277, 4285 supply."
+    }
+  ],
+  "uncertainties": [],
+  "generated": "2026-09-17T13:43:50"
+}
