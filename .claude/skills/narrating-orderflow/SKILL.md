@@ -35,6 +35,29 @@ expectation + invalidation. 120–220 words per utterance.
 
 ## Scale: numbers are evidence, never the sentence
 
+A size is only a size against a named comparison set. Choose the set to fit
+the question, and say which one you used:
+
+- **The day so far, qualified by the day's character.** "Heaviest minute
+  since the open" on a day that has already moved thirty points is a different
+  sentence from the same words on a day that has moved eight. State the
+  character in the context move so every later size word inherits it (Carmine:
+  "depending on the conditions, depending on the average range" — 0916-1339 2:02;
+  "the rally was done on lower volume by time" — trapped-4304 2:19).
+- **Local references over whole-session ranks.** Minutes stuck in how many
+  points; what the same effort bought an hour ago; how much of this price's
+  volume arrived just now; the heaviest hit *this level* has taken today.
+  These survive the time of day. A whole-session percentile does not: by the
+  afternoon it ranks every minute against the opening hour.
+- **Cross-day references name their day type.** "A normal 14:00 minute" means
+  nothing unless it is a normal 14:00 minute *on a day like this one*. Never
+  compare to calendar-adjacent days; compare to same-type days, or not at all.
+- **Detector events and percentiles are prompts to look, never verdicts to
+  narrate.** They tell you where to point your attention; the read still has
+  to earn its sentence from effort, result and context. Percentiles do not
+  belong in the fact sheet the narrator reads from.
+
+
 - Say the size in words **relative to the session**, then the print if it helps:
   *"the busiest minute of the morning, five times a normal one"* (12,921 vs a
   2,500 median), not *"12,921 contracts, 99th percentile"*.
@@ -49,6 +72,11 @@ expectation + invalidation. 120–220 words per utterance.
 
 ## Editorial license and its bounds
 
+Every read says how much weight it can bear, in the trader's register, not in
+numbers (Strader's "grades, not gates": a label near the line must say so).
+"A fight at the level, not a resolved one" is a coin-flip spoken properly;
+"they are trapped and they know it" is a strong grade and needs a strong tell.
+
 You may say *absorbed, trapped, not getting paid, failing, giving up, stepping
 in, defending, leaning on*. Each one needs its tell in the same sentence or the
 one before: effort **and** the result that contradicts it. Without both it is a
@@ -59,6 +87,26 @@ will sell off"); state a rule as a law of the market ("low-effort advance means
 a missing seller"); narrate anything the tape has not shown yet. Carmine's
 frame is opportunity and risk, never prediction: *"do we know a setup is gonna
 work out before we enter it? Absolutely not"* (absorption 25:33).
+
+## Deriving inference, expectation and invalidation
+
+The first three moves are read off the tape. The last three are looked up
+from the pattern the first three make, then graded. Carmine's four scenarios
+(Terms deck, `it-orderflow-terms-concepts` 12:09–35:39) each carry a fixed
+triple; the judgment left after the lookup is (a) which side showed effort
+without reward, (b) whether the level is one where obvious traders act, and
+(c) how strong a word the tell earns.
+
+| Pattern (context + effort + result) | Inference: who is wrong-sided | Expectation: the one observable | Invalidation |
+|---|---|---|---|
+| Selling into a low or level; price will not go lower (deck 12:09, 21:44; absorption chapter 0916-1108) | Sellers not paid; a passive buyer absorbing, shown or hidden | Dips into the level hold, then at-offer buying and a fast tape away | Level breaks and the bounce back into it is sold; it now acts as resistance |
+| Buying into a high or level; price will not go higher (deck 16:10; trapped-4304, 0916-1339) | Buyers not paid; a passive seller absorbing | Rallies into the level fail, then at-bid selling | Level breaks and the dip back into it is bought; it now acts as support |
+| Either of the above **at a spot where obvious traders act** — high/low of day, a breakout level, a stop cluster (deck 23:56) | Add *who*: breakout longs or shorts, and the stop-outs, are trapped | Pressure on them: price moves against them and their bounce fails | They get rewarded: follow-through in their direction |
+| Aggressive move, then consolidation near the extreme on lower volume by time (deck 27:37, 31:58; 0917-0657) | Both sides accepting the new price; whoever fades the dips is the trapped one | Dips bought, higher lows (or the mirror), then continuation | The consolidation breaks against the move and the dip is not bought |
+
+A read that does not fit a row is narrated as what it is — effort, result,
+and "no clear scenario yet" — never forced into one (Carmine, 0917-0723 2:17:
+"there's no real strong or clear absorption or any trapped participants").
 
 ## Cadence
 
@@ -76,6 +124,19 @@ someone who missed the last one must still get the read.
 | Adjective without tell ("clear absorption") | Name the effort and the failed result |
 | Six numbers in one breath | One per sentence; drop the ones that do not change the read |
 | Ending on a list of levels | End on one thing to watch and one thing that proves you wrong |
+
+## Input contract (what the fact sheet must carry)
+
+The narrator reads from a fact sheet, never from the raw tape or from a
+detector's verdict. It must hold: the session's levels (open, high and low
+with times, prior close and range, overnight range, where the big moves of
+the day started); the day's character so far (range covered, pace); each
+minute's effort as a multiple of the day's typical minute *and* the running
+maxima on each side, buy and sell separately; result as displacement over
+time at the level; volume at price at the level split by aggressor, with how
+much of it is recent; and whether the level is one where obvious traders act.
+No percentiles, no cell names. Everything observable at the cutoff, nothing
+after it.
 
 ## Self-check before you send
 

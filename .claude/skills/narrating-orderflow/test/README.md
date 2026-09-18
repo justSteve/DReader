@@ -26,3 +26,15 @@ means. You know nothing after 10:43. Return only the narration text."
 To re-test after editing the skill: run the same prompt through a fresh
 general-purpose agent with the skill loaded and grade against the six moves
 and the self-check in SKILL.md.
+
+## 2026-09-18 — edits pending re-test (Steve: hold the test for now)
+
+Added after Steve's review: (1) the scenario lookup table deriving inference /
+expectation / invalidation from the first three moves; (2) comparison-set rules
+for scale — day so far qualified by the day's character, local references over
+whole-session ranks, cross-day references name their day type, detector events
+are prompts not verdicts; (3) grade-in-prose under editorial license; (4) the
+input contract, which drops percentiles from the fact sheet. **Untested**: the
+planned re-test is the same day at 14:00 CT, where developing percentiles are
+most misleading, and `episode_factsheet.py` needs the percentile fields removed
+and day-character / running-maxima-by-side fields added first.
