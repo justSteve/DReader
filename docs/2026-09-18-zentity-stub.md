@@ -1,9 +1,10 @@
 # Zentity — the stub a conventional architect would hand you
 
-Draft for Steve, 2026-09-18. Not a canon and not a ruling. This is the shape a
-working software architect would put on the table on day one, with the slots
-filled from what the enterprise already holds, so the job in front of you is
-editing and deciding rather than authoring from nothing.
+Draft for Steve, 2026-09-18. Not a canon and not a ruling.
+
+This is the shape a working software architect would put on the table on day
+one. The slots are filled from what the enterprise already holds. The job in
+front of you is editing and deciding, not authoring from nothing.
 
 Its home, once adopted, is COO. It sits in DReader because that is where it was
 written; nothing here is DReader's to rule on.
@@ -47,7 +48,8 @@ scattered state suggests.
   checklists, a catalog and an evaluator. COO's framing of it is the sharpest
   sentence anyone has written on this: *"the contract is the Zentity and the
   strategies are data conforming to it."*
-- **One header standard is already in use:** OKF, extended, read as data by
+- **One header standard is already in use:** OKF (Open Knowledge Format, the
+  typed front matter on every knowledge file), extended, and read as data by
   `Strader/strader/entities/canon.py` — `id`, `type`, `status`, `owner`,
   `provenance{origin, ref}`, `sources[]`, `lineage{supersedes, since, commit}`,
   `cite[]`. Thirty-three knowledge files and nine playbook records are being
@@ -59,30 +61,34 @@ scattered state suggests.
   carrying an explicit **price-frame**, because the absence of exactly those
   two attributes caused two real vocabulary incidents.
 
-So: two definitions, one hard rule, one worked contract, one header standard,
-one eleven-entity survey, and one empty registry (`COO/entities.json`:
-`"people": []`, seven bare project strings). The parts exist. Nobody has put
-them in one place.
+So the record holds two definitions and one hard rule. It holds one worked
+contract, one header standard and one eleven-entity survey. It also holds one
+empty registry — `COO/entities.json` carries `"people": []` and seven bare
+project strings. The parts exist. Nobody has put them in one place.
 
 ## 2. On the limitation you named
 
 Worth saying plainly, because it bears on how to read everything below.
 
-You said you haven't been on an architecturally-oriented team defining
-higher-order constructs, and that your success has been in bringing cohesion to
-disparate parts. The addendum records your own account of BankWebinars:
-*"The BW UI worked because the entities were done right — the rich object model
-came first, the UI emerged from it."* That is thirty years of exactly this
-work. What you are missing is the **vocabulary and the artifact shapes**, not
-the judgement — and the vocabulary is about four hours of reading, while the
-judgement is the part nobody can hand you.
+You said two things. You haven't been on an architecturally-oriented team
+defining higher-order constructs. Your success has come from bringing cohesion
+to disparate parts.
 
-The instinct you describe as your strength also has a conventional name. When
-an organisation has five partial models of the same thing in five places, the
-classical move is **not** to unify them into one global model — it is to name
-each context, say which model holds inside it, and define the translation at
-each seam. That is context mapping, and it is the senior half of this
-discipline. Your instinct is already pointed at it.
+The addendum records your own account of BankWebinars: *"The BW UI worked
+because the entities were done right — the rich object model came first, the UI
+emerged from it."* That is thirty years of exactly this work.
+
+What you are missing is the **vocabulary and the artifact shapes**, not the
+judgement. The vocabulary is about four hours of reading. The judgement is the
+part nobody can hand you.
+
+The instinct you describe as your strength also has a conventional name.
+
+When an organisation has five partial models of the same thing in five places,
+the classical move is **not** to unify them into one global model. It is to
+name each context, say which model holds inside it, then define the translation
+at each seam. That is context mapping. It is the senior half of this
+discipline, and your instinct is already pointed at it.
 
 ## 3. The frame — what any entity definition has to answer
 
@@ -106,8 +112,8 @@ an entity yet. It is an attribute, an event, or a report.
 This is the one place I would push back on the vocabulary as it stands, and it
 is the most useful thing in this document.
 
-**"Zentity" as you defined it answers *is it ours?*** — a thing we took, forked,
-decorated and now own, which composes with our other models.
+**"Zentity" as you defined it answers *is it ours?*** It names a thing we took,
+forked, decorated and now own, which composes with our other models.
 
 **"Entity" in the conventional sense answers *does it have identity?*** — a
 thing that stays itself when its attributes change. A bead is an entity: change
@@ -124,15 +130,18 @@ both jobs. Keeping them apart costs one sentence and buys the whole model:
 
 Your decoration definition is then precisely a **transition across that
 table**: something moves from *not ours* to *ours* by being forked and
-decorated. That is why Zentity reads as a *discipline* rather than a taxonomy —
-it names an act, not a category. The addendum says as much: *"invest in entities
-for things that matter, accept that early models will be broken and remade,
-count the breaking as part of the cost of doing modeling well."*
+decorated. That is why Zentity reads as a *discipline* rather than a taxonomy.
+It names an act, not a category.
 
-**Recommended:** keep **Zentity** for the ownership axis (what we own and
-compose), and use **entity** plainly for the identity axis (what OKF's header
-already describes). One word, two jobs, is how vocabularies rot — and st-1s1,
-the Mancini/Carmine level-provenance incident, is the standing local proof.
+The addendum says as much: *"invest in entities for things that matter, accept
+that early models will be broken and remade, count the breaking as part of the
+cost of doing modeling well."*
+
+**Recommended:** keep **Zentity** for the ownership axis, meaning what we own
+and compose. Use **entity** plainly for the identity axis, which is what the
+OKF header already describes. One word doing two jobs is how vocabularies rot.
+The Mancini/Carmine level-provenance incident (st-1s1) is the standing local
+proof.
 
 ## 5. The stub — the document to edit
 
@@ -141,9 +150,9 @@ the Mancini/Carmine level-provenance incident, is the standing local proof.
 
 ### 5.1 Definition
 
-> A **Zentity** is an object model this enterprise owns — usually arrived at by
-> decorating something that already existed — which composes with our other
-> owned models through a declared contract.
+> A **Zentity** is an object model this enterprise owns, usually arrived at by
+> decorating something that already existed. It composes with our other owned
+> models through a declared contract.
 
 ### 5.2 The test — a candidate qualifies when all four hold
 
@@ -182,8 +191,8 @@ lineage:      {supersedes, since, commit}
 cite:         [headings]         — required on method types
 ```
 
-Plus the two the trade-language survey paid for in incidents, which belong in
-the base and not in one repo's dialect:
+Add the two attributes the trade-language survey paid for in incidents. They
+belong in the base, not in one repo's dialect:
 
 ```
 provenance    on EVERY entity, not only knowledge files
@@ -210,24 +219,24 @@ discipline for renames — which OKF already has.)*
 
 ### 5.6 Relations — **DECIDE**
 
-The enterprise already expresses relations three incompatible ways: beads'
-typed dependencies (`parent`, `blocked-by`, `discovered-from`), knowledge files'
-`[[wikilinks]]` and `Related` lines, and yt-analyst's `{from, to, via}` edges
-(47 cards, 411 edges). Pick one shape for the base and let the rest translate
-to it.
+The enterprise already expresses relations three incompatible ways. Beads carry
+typed dependencies: `parent`, `blocked-by`, `discovered-from`. Knowledge files
+use `[[wikilinks]]` and `Related` lines. yt-analyst uses `{from, to, via}`
+edges, 411 of them across 47 cards. Pick one shape for the base and let the
+rest translate to it.
 
-*(Recommended: `{from, to, kind}` with a closed `kind` vocabulary — it is the
-simplest of the three, it is the only one already machine-read at scale, and
-both others map onto it without loss.)*
+*(Recommended: `{from, to, kind}` with a closed `kind` vocabulary. It is the
+simplest of the three. It is the only one already machine-read at scale. Both
+others map onto it without loss.)*
 
 ### 5.7 The register — **DECIDE**
 
 `COO/entities.json` exists and is empty. Either fill it or delete it; an empty
 registry is worse than none, because it reads as an answer.
 
-*(Recommended: fill it, generated from the sources rather than hand-maintained —
-a hand-maintained registry is the same failure class as everything in
-`DReader/docs/retired/REGISTER.md`.)*
+*(Recommended: fill it, and generate it from the sources rather than
+maintaining it by hand. A hand-maintained registry is the same failure class as
+everything in `DReader/docs/retired/REGISTER.md`.)*
 
 ## 6. The inventory — the cohesion work, which is yours
 
@@ -252,11 +261,10 @@ list. Columns are the frame's questions 1, 3 and 4.
 | **desk page** | `/var/moo/desk/` | slug | the producer | overwritten in place | a view, not an entity |
 | **service** | — | — | — | — | **undefined, and it is what dr-ok8 waits on** |
 
-The bottom row is the one that connects this to the work already queued: your
-own ruling of 2026-09-18 — *"every service can expect to be queried by other
-services, and that has to be part of what being a service is, built in to its
-object model"* — cannot be implemented until **service** has a row in this
-table.
+The bottom row connects this to work already queued. Your ruling of 2026-09-18
+said it plainly: *"every service can expect to be queried by other services,
+and that has to be part of what being a service is, built in to its object
+model."* That cannot be implemented until **service** has a row in this table.
 
 ## 7. The four decisions that unlock everything else
 
@@ -281,10 +289,10 @@ Each is one word from you.
    conversation, not code.
 4. **Write the one-page definition** that survives the sort, and put it in COO
    where both other repos can read it.
-5. **Map the seams** — for each place two repos name the same thing
-   differently, write the translation, and never claim the two are the same
-   thing (st-1s1 is the standing lesson).
-6. *Then* build the visualiser (dr-ok8), which becomes trivial once §5.6 has an
+5. **Map the seams.** Where two repos name the same thing differently, write
+   the translation. Never claim the two are the same thing; st-1s1 is the
+   standing lesson.
+6. *Then* build the visualiser (dr-ok8). It becomes trivial once §5.6 has an
    answer: one relation shape, one renderer.
 
 Steps 1–3 are where your cohesion instinct does the real work. Step 6 is the
