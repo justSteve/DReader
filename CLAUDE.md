@@ -29,11 +29,21 @@ Reference the bead ID in your commit messages: `[dr-xxx] description`.
 
 ## What This Is
 
-DReader is a Discord intelligence collector that scrapes, stores, and serves Discord channel data for the Gas City enterprise. Other zgents query DReader for Discord context: conversation history, thread reconstructions, channel metadata.
+DReader is the enterprise's external-intel collector: material Steve cannot get
+at scale by any API — Discord channels he pages through on his own screen, and
+video — read by Gemini and kept as verified dossiers on disk.
+
+It does not scrape, does not store to a database, and serves nothing today. Those
+three verbs described machinery retired between April and September 2026; see
+`docs/retired/REGISTER.md` before assuming any of them.
 
 ## Mission
 
-Collect information from Discord channels and make it queryable by sibling zgents. DReader publishes its query API according to shared enterprise conventions so any zgent in the ecosystem can discover and use it.
+Collect information Steve cannot otherwise get at scale — Discord channels he
+pages through on his own screen, and video — and turn it into verified dossiers.
+Making those queryable by sibling zgents is the standing intent; the query
+surface awaits the enterprise convention (dr-ok8), and no serving layer exists
+in the meantime.
 
 ## Asking Steve
 
@@ -51,17 +61,17 @@ Browser automation of Steve's account (Playwright/Selenium DOM scraping) was **r
 
 ## Architecture
 
-Collection is `discord-reader/` (Python: screen-capture video → Gemini → transcript dossiers on disk). The query/serve layer is TypeScript (Express + SQLite). **They are not yet connected**: transcripts do not reach the database. Bridging them is the open architectural need.
+Collection is `discord-reader/` (Python: screen-capture video → Gemini →
+transcript dossiers on disk) and `yt-analyst/` (the same doctrine over video).
+Both produce **dossiers**: a card, a transcript, and a run log per capture.
 
-### TypeScript Query Layer
-
-| Layer | Path | Purpose |
-|-------|------|---------|
-| API | `src/api/` | Express REST server for channels, messages, threads (read-only query surface) |
-| Thread Reconstruction | `src/domain/thread-reconstruction/` | ThreadAnalyzer — rebuilds conversation threads from flat messages |
-| Storage | `src/services/` | DatabaseService (better-sqlite3), schema.sql |
-| Logging | `src/logging/` | Structured JSONL logger — transport-based, daily rotation, zero deps |
-| CLI | `src/cli/` | init-db, validate-config, db-reset, db-backup |
+There is no serving layer. The TypeScript query layer (Express + SQLite) was
+**cut on 2026-09-18** by Steve's ruling — its writer had been retired in April
+and it had no consumer (dr-qyd; code at tag `query-layer-retired`, premises it
+invalidates in `docs/retired/REGISTER.md`). What siblings can query, and how, is
+an enterprise convention rather than this repo's to invent, and it sits behind
+the zentity definition (dr-ok8). Until that lands, the dossiers on disk are the
+product.
 
 ### Collection (`discord-reader/`)
 
@@ -72,15 +82,13 @@ Collection is `discord-reader/` (Python: screen-capture video → Gemini → tra
 1. **Beads-first is non-negotiable.** Read the gate at the top of this file. Use `bd` commands. No exceptions.
 2. **Service provider role.** DReader exists to serve other agents with Discord intel. See `.claude/rules/zgent-permissions.md`.
 3. **No Discord API, no account automation.** Retrieval is Steve's screen captures transcribed by Gemini. Never propose API-based or browser-automation solutions.
-4. **Structured logging.** Use `createLogger('component')` not `console.log`.
+4. **Read `docs/retired/REGISTER.md` before proposing.** Four tracks are retired;
+   the register lists the premises each one invalidates. Proposing against a
+   retired premise is the most common wasted turn in this repo.
 
 ## Key Commands
 
 ```bash
-npm run dev          # Start API server (Express, query layer)
-npm run test         # Run Jest tests (TypeScript)
-npm run init-db      # Initialize SQLite database
-npm run db:reset     # Reset database
 cd discord-reader && .venv/bin/python dread.py ingest --label "server/channel"   # transcribe newest capture
 cd discord-reader && .venv/bin/python dread.py env                                # credential check
 bd ready             # Find available work
@@ -94,12 +102,10 @@ bd prime             # Re-read PRIME.md (context for new sessions)
 
 | Path | Purpose |
 |------|---------|
-| `src/api/` | Express REST server (read-only query surface) |
-| `src/domain/thread-reconstruction/` | Thread rebuilder |
-| `src/services/` | DatabaseService, schema |
-| `src/logging/` | Structured JSONL logger |
 | `discord-reader/` | Screen-capture → Gemini transcription (Python), capture dossiers |
-| `docs/retired/` | Retired browser-automation track: findings kept, code at tag `playwright-retired` |
+| `yt-analyst/` | Gemini-as-perception over video: cards, reads, corpus, reader |
+| `docs/retired/REGISTER.md` | **What is retired and what each ruling invalidates — read before proposing** |
+| `docs/retired/` | Retired tracks: findings kept, code at tags `playwright-retired`, `query-layer-retired` |
 | `.beads/` | Beads (work authorization) |
 
 ## Session Completion
