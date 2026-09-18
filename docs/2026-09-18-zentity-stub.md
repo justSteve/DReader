@@ -297,3 +297,28 @@ Each is one word from you.
 
 Steps 1–3 are where your cohesion instinct does the real work. Step 6 is the
 part that looked like the request and is actually the consequence.
+
+---
+
+## 9. Rulings — Steve, 2026-09-18
+
+**All four decisions in §7: yes.**
+
+1. Zentity and entity stay separate axes — ownership and identity.
+2. OKF's extended header is the base for every entity, not only knowledge files.
+3. Relations are `{from, to, kind}` with a closed `kind` vocabulary.
+4. The register is generated, not hand-maintained.
+
+**And one addition.** The unified query convention extends to a **CLI
+convention**; Steve reports it has been discussed and general consensus
+reached. Formally put forward the same day, in the **Fork Doctrine** context
+(`COO/conventions/fork-doctrine-offensive-not-defensive.md`), as the base to
+decorate:
+
+> https://github.com/mvanhorn/cli-printing-press
+
+Recorded here as a reference only. The convention, the nomination and the fork
+assessment are COO's lane, not DReader's — bundled to Chief the same day.
+
+**Open question, also to Chief:** OKF is forked. Has the fork kept up with
+upstream? Steve's note: beads only, at this point.
