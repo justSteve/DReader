@@ -1,0 +1,26 @@
+2026-08-14 cutoff 10:00 CT — events in the last 30 minutes
+
+  from the RTH open (91 minutes in the ranking sample, 1 events in the session):
+    09:59 SUPERLATIVE MAX-SELL-DELTA sig=alert
+    last minutes:
+      09:53  vol   1929  d   -183  net  -2.75  effort  24.4  effect  89.9  F3
+      09:54  vol   2115  d   +439  net  -0.25  effort  37.1  effect  20.6  F4
+      09:55  vol   1914  d   +164  net  +1.00  effort  23.8  effect  58.1  F3
+      09:56  vol   2003  d   -593  net  -1.75  effort  31.6  effect  79.3  F3
+      09:57  vol   1534  d    -80  net  +0.50  effort  11.9  effect  36.4  F4
+      09:58  vol   1226  d   -206  net  -0.25  effort   2.8  effect  20.2  F4
+      09:59  vol   3035  d   -835  net  -2.25  effort  76.1  effect  86.7  F1
+      10:00  vol   2914  d    +28  net  +3.25  effort  70.9  effect  92.9  F1
+
+  from the Globex open (431 minutes in the ranking sample, 12 events in the session):
+    09:56 CLIMAX SELL sig=alert
+    09:59 SUPERLATIVE MAX-SELL-DELTA sig=alert
+    last minutes:
+      09:53  vol   1929  d   -183  net  -2.75  effort  84.6  effect  98.0  F1
+      09:54  vol   2115  d   +439  net  -0.25  effort  87.2  effect  39.3  F2
+      09:55  vol   1914  d   +164  net  +1.00  effort  84.2  effect  85.2  F1
+      09:56  vol   2003  d   -593  net  -1.75  effort  85.8  effect  95.2  F1
+      09:57  vol   1534  d    -80  net  +0.50  effort  81.4  effect  64.7  F1
+      09:58  vol   1226  d   -206  net  -0.25  effort  78.9  effect  39.0  F2
+      09:59  vol   3035  d   -835  net  -2.25  effort  95.0  effect  97.0  F1
+      10:00  vol   2914  d    +28  net  +3.25  effort  93.9  effect  98.5  F1

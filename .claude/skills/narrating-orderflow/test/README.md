@@ -38,3 +38,29 @@ input contract, which drops percentiles from the fact sheet. **Untested**: the
 planned re-test is the same day at 14:00 CT, where developing percentiles are
 most misleading, and `episode_factsheet.py` needs the percentile fields removed
 and day-character / running-maxima-by-side fields added first.
+
+## 2026-09-18 — this fixture is no longer the only one [dr-22w.4]
+
+`../episodes/` holds nine episodes covering all four rows of the scenario table
+plus a null, built by a generalized fact-sheet builder on the revised input
+contract (no percentiles; day character; running maxima by side). Four of the
+eight scenario episodes go the read's way and four do not. Re-tests should run
+against that set; this directory stays as the RED/GREEN record.
+
+Two corrections to what is here, found while building it:
+
+- The overnight range quoted in `briefing-1043.md` was a midnight-to-open range
+  labelled as a 17:00 open. The true 2026-08-24 overnight high is 7703.25, not
+  7686.5 (the low, 7664.5, is right). `episode-facts.json` is left as issued —
+  it is what the narrators were handed — and the briefing now carries the
+  correction inline. **Both narrations cited it**: the baseline names "7686.50
+  overnight high" as a target above, and the skilled one says "the overnight
+  high is nine and a half points up." It is 26.25 points up. Neither narrator
+  could have known; the error entered through the fact sheet and passed
+  untouched through both the narration and the grading. That is the argument
+  for the input contract being a build step with its own tests, and it is why
+  the new builder records the window each overnight range was measured over.
+- The percentile fields this fixture carries are the ones the revised contract
+  drops, and `../episodes/README.md` records why they are worse than they look:
+  the 10:41–42 bars rank at effort 84.7 / 90.4 only because the ranking sample
+  starts at the prior 17:00. Against the RTH session they rank 26.1 and 54.5.

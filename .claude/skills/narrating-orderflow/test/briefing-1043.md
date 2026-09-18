@@ -4,7 +4,7 @@ This is the same information the two narrators were given (their JSON, rendered 
 
 ## Session context
 - Friday 08-21 RTH: open 7695.75, high 7714.0, low 7676.75, close 7691.0
-- Overnight (Sun 17:00 → 08:30): high 7686.5, low 7664.5
+- Overnight (Sun 17:00 → 08:30): high **7703.25**, low 7664.5 — *corrected 2026-09-18 (dr-22w.4). The fact sheet the two narrators read said 7686.5, and `episode-facts.json` still does, because it is the record of what they were given. A corpus day is a calendar day in CT, so the Sunday evening session lives in the 08-23 file; the old builder read only 08-24 from midnight and called it the overnight. Both narrations used it: the baseline lists "7686.50 overnight high" as a target and the skilled one says "the overnight high is nine and a half points up." On the corrected figure it is 26.25 points up. The error is the fact sheet's, not the narrators'.*
 - Today opened 7681.75. Session high 7682.75 at 08:30:00; session low 7655.0 at 08:45:04. Last 7677.0.
 - Session POC so far: 7663.0 (10163 contracts)
 - Typical minute so far: 2500 contracts (median). Busiest minute: 12964.

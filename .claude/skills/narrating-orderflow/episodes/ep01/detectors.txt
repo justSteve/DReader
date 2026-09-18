@@ -1,0 +1,29 @@
+2026-08-26 cutoff 09:28 CT — events in the last 30 minutes
+
+  from the RTH open (59 minutes in the ranking sample, 2 events in the session):
+    09:25 SUPERLATIVE MAX-SELL-DELTA sig=alert
+    09:27 SUPERLATIVE MAX-SELL-DELTA sig=alert
+    last minutes:
+      09:21  vol   2971  d   -405  net  -1.25  effort  56.7  effect  51.0  F1
+      09:22  vol   3628  d   -126  net  -1.25  effort  78.3  effect  50.9  F1
+      09:23  vol   2862  d   -376  net  -0.75  effort  52.8  effect  33.3  F2
+      09:24  vol   3337  d   -409  net  -1.75  effort  70.0  effect  61.8  F1
+      09:25  vol   4303  d   -593  net  -2.50  effort  83.0  effect  75.9  F1
+      09:26  vol   4869  d   -317  net  -1.50  effort  86.8  effect  57.0  F1
+      09:27  vol   4864  d   -612  net  -1.50  effort  85.3  effect  56.9  F1
+      09:28  vol   4185  d    +75  net  +2.75  effort  78.8  effect  80.5  F1
+
+  from the Globex open (569 minutes in the ranking sample, 22 events in the session):
+    09:04 ABSORPTION-CLUSTER START sig=alert
+    09:05 ABSORPTION-CLUSTER END sig=note
+    09:25 SUPERLATIVE MAX-SELL-DELTA sig=alert
+    09:27 SUPERLATIVE MAX-SELL-DELTA sig=alert
+    last minutes:
+      09:21  vol   2971  d   -405  net  -1.25  effort  96.0  effect  81.7  F1
+      09:22  vol   3628  d   -126  net  -1.25  effort  98.0  effect  81.6  F1
+      09:23  vol   2862  d   -376  net  -0.75  effort  95.5  effect  65.0  F1
+      09:24  vol   3337  d   -409  net  -1.75  effort  97.1  effect  89.9  F1
+      09:25  vol   4303  d   -593  net  -2.50  effort  98.3  effect  96.5  F1
+      09:26  vol   4869  d   -317  net  -1.50  effort  98.7  effect  85.9  F1
+      09:27  vol   4864  d   -612  net  -1.50  effort  98.5  effect  85.8  F1
+      09:28  vol   4185  d    +75  net  +2.75  effort  97.8  effect  97.3  F1

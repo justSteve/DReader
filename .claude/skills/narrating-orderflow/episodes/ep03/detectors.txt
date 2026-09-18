@@ -1,0 +1,25 @@
+2026-08-26 cutoff 10:11 CT — events in the last 30 minutes
+
+  from the RTH open (102 minutes in the ranking sample, 2 events in the session):
+    (none)
+    last minutes:
+      10:04  vol   1776  d   -264  net  -0.25  effort  19.5  effect  13.2  F4
+      10:05  vol   1932  d    +98  net  +1.00  effort  27.6  effect  40.6  F4
+      10:06  vol   1265  d    +91  net  +0.25  effort   2.6  effect  13.4  F4
+      10:07  vol   2217  d   +241  net  +0.00  effort  39.3  effect   3.6  F4
+      10:08  vol   1775  d   +277  net  +0.75  effort  19.7  effect  32.3  F4
+      10:09  vol   1611  d    -43  net  -1.00  effort  16.0  effect  42.5  F4
+      10:10  vol   2397  d    +69  net  -0.25  effort  49.0  effect  14.4  F4
+      10:11  vol   1721  d   +269  net  +0.25  effort  20.1  effect  14.7  F4
+
+  from the Globex open (612 minutes in the ranking sample, 22 events in the session):
+    (none)
+    last minutes:
+      10:04  vol   1776  d   -264  net  -0.25  effort  86.7  effect  25.9  F2
+      10:05  vol   1932  d    +98  net  +1.00  effort  88.0  effect  72.8  F1
+      10:06  vol   1265  d    +91  net  +0.25  effort  83.6  effect  25.9  F2
+      10:07  vol   2217  d   +241  net  +0.00  effort  89.9  effect   6.7  F2
+      10:08  vol   1775  d   +277  net  +0.75  effort  86.3  effect  62.5  F1
+      10:09  vol   1611  d    -43  net  -1.00  effort  85.4  effect  72.9  F1
+      10:10  vol   2397  d    +69  net  -0.25  effort  91.4  effect  25.9  F2
+      10:11  vol   1721  d   +269  net  +0.25  effort  86.0  effect  26.0  F2

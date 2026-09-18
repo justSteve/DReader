@@ -138,6 +138,16 @@ much of it is recent; and whether the level is one where obvious traders act.
 No percentiles, no cell names. Everything observable at the cutoff, nothing
 after it.
 
+Every figure states the window it was measured over, and the sheet is built by
+code that is tested, because the narrator cannot audit it: the first fixture's
+"overnight range" was a midnight-to-open range labelled 17:00, and both graded
+narrations repeated it (`episodes/README.md`, 2026-09-18).
+
+**Practice episodes:** `episodes/` — nine cutoffs from the ES tape, two per row
+above and one that fits no row, each with the fact sheet, the held-back
+aftermath and a key. Four of the eight scenario episodes go the read's way and
+four do not. `test/` is the RED/GREEN record for the skill itself.
+
 ## Self-check before you send
 
 Count the numbers. More than one per sentence, or any percentile: rewrite.

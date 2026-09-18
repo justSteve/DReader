@@ -1,0 +1,1473 @@
+{
+ "episode": {
+  "id": "ep02",
+  "instrument": "ES",
+  "day": "2026-08-31",
+  "cutoff_ct": "13:27",
+  "note": "Everything here was observable at the cutoff. The narrator knows nothing after it."
+ },
+ "prior_session": {
+  "date": "2026-08-28",
+  "open": 7746.25,
+  "close": 7722.5,
+  "high": 7782.5,
+  "high_t": "10:01:08",
+  "low": 7711.75,
+  "low_t": "12:10:13",
+  "range": 70.75,
+  "volume": 1242016,
+  "poc": 7722.0,
+  "poc_volume": 16478
+ },
+ "overnight_before_the_open": {
+  "high": 7718.5,
+  "low": 7691.5,
+  "from": "08-31 00:00",
+  "evening_session_present": false,
+  "range": 27.0
+ },
+ "day_character": {
+  "minutes_since_open": 298,
+  "range_so_far": 29.5,
+  "recent_days_full_range": {
+   "median": 40.62,
+   "smallest": 25.0,
+   "largest": 70.75,
+   "days": 10,
+   "from": "2026-08-17",
+   "to": "2026-08-28"
+  },
+  "volume_so_far": 559630,
+  "typical_volume_by_this_minute": 666652,
+  "pace_vs_typical": 0.84,
+  "typical_minute_so_far": 1505.0
+ },
+ "session_so_far": {
+  "open": 7701.25,
+  "last": 7692.0,
+  "high": 7704.25,
+  "high_time": "08:31",
+  "low": 7674.75,
+  "low_time": "09:25",
+  "biggest_legs": [
+   {
+    "from": "09:26",
+    "to": "09:58",
+    "start_price": 7675.75,
+    "end_price": 7692.0,
+    "net_points": 16.25,
+    "minutes": 32,
+    "volume": 73989,
+    "delta": 3123
+   },
+   {
+    "from": "08:30",
+    "to": "08:44",
+    "start_price": 7701.25,
+    "end_price": 7686.0,
+    "net_points": -15.25,
+    "minutes": 14,
+    "volume": 70360,
+    "delta": 210
+   },
+   {
+    "from": "08:47",
+    "to": "09:27",
+    "start_price": 7687.25,
+    "end_price": 7675.0,
+    "net_points": -12.25,
+    "minutes": 40,
+    "volume": 114005,
+    "delta": -967
+   }
+  ],
+  "busiest_minute": {
+   "t": "08:30",
+   "volume": 9871,
+   "delta": 533
+  },
+  "biggest_buy_delta_minute": {
+   "t": "12:39",
+   "volume": 1589,
+   "delta": 681
+  },
+  "biggest_sell_delta_minute": {
+   "t": "13:26",
+   "volume": 2746,
+   "delta": -874
+  }
+ },
+ "levels_in_play": [
+  {
+   "level": 7691.5,
+   "what": "overnight low",
+   "distance": -0.5,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7701.25,
+   "what": "today's open",
+   "distance": 9.25,
+   "obvious_traders_act_here": true,
+   "made_at": "08:30",
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7704.25,
+   "what": "session high so far",
+   "distance": 12.25,
+   "obvious_traders_act_here": true,
+   "made_at": "08:31",
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7674.75,
+   "what": "session low so far",
+   "distance": -17.25,
+   "obvious_traders_act_here": true,
+   "made_at": "09:25",
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7711.75,
+   "what": "prior session low",
+   "distance": 19.75,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7718.5,
+   "what": "overnight high",
+   "distance": 26.5,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7722.0,
+   "what": "prior session most-traded price",
+   "distance": 30.0,
+   "obvious_traders_act_here": false,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7722.5,
+   "what": "prior session close",
+   "distance": 30.5,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7782.5,
+   "what": "prior session high",
+   "distance": 90.5,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  }
+ ],
+ "at_the_level": {
+  "level": 7690.75,
+  "minutes_in_contact": 44,
+  "separate_visits": 9,
+  "first_touch": "08:33",
+  "minutes_since_first_touch": 295,
+  "points_travelled_since_first_touch": 21.75,
+  "net_since_first_touch": -3.0
+ },
+ "five_minute_bars_so_far": [
+  {
+   "t": "08:30",
+   "o": 7701.25,
+   "h": 7704.25,
+   "l": 7690.75,
+   "c": 7691.5,
+   "vol": 31404,
+   "delta": 302
+  },
+  {
+   "t": "08:35",
+   "o": 7691.75,
+   "h": 7692.75,
+   "l": 7685.25,
+   "c": 7690.5,
+   "vol": 23974,
+   "delta": -84
+  },
+  {
+   "t": "08:40",
+   "o": 7690.5,
+   "h": 7694.5,
+   "l": 7685.25,
+   "c": 7686.0,
+   "vol": 18548,
+   "delta": 184
+  },
+  {
+   "t": "08:45",
+   "o": 7686.25,
+   "h": 7694.0,
+   "l": 7682.5,
+   "c": 7689.0,
+   "vol": 26751,
+   "delta": -23
+  },
+  {
+   "t": "08:50",
+   "o": 7688.75,
+   "h": 7693.25,
+   "l": 7685.5,
+   "c": 7692.75,
+   "vol": 15773,
+   "delta": 667
+  },
+  {
+   "t": "08:55",
+   "o": 7692.75,
+   "h": 7695.0,
+   "l": 7688.75,
+   "c": 7689.5,
+   "vol": 13881,
+   "delta": 561
+  },
+  {
+   "t": "09:00",
+   "o": 7689.75,
+   "h": 7691.0,
+   "l": 7685.0,
+   "c": 7685.75,
+   "vol": 11060,
+   "delta": -92
+  },
+  {
+   "t": "09:05",
+   "o": 7685.75,
+   "h": 7688.75,
+   "l": 7682.25,
+   "c": 7682.75,
+   "vol": 12840,
+   "delta": -12
+  },
+  {
+   "t": "09:10",
+   "o": 7682.75,
+   "h": 7687.0,
+   "l": 7681.25,
+   "c": 7686.25,
+   "vol": 11787,
+   "delta": -103
+  },
+  {
+   "t": "09:15",
+   "o": 7686.25,
+   "h": 7688.25,
+   "l": 7683.5,
+   "c": 7687.25,
+   "vol": 10268,
+   "delta": -80
+  },
+  {
+   "t": "09:20",
+   "o": 7687.25,
+   "h": 7687.5,
+   "l": 7677.5,
+   "c": 7677.5,
+   "vol": 13725,
+   "delta": -1549
+  },
+  {
+   "t": "09:25",
+   "o": 7677.5,
+   "h": 7678.5,
+   "l": 7674.75,
+   "c": 7676.75,
+   "vol": 15877,
+   "delta": -329
+  },
+  {
+   "t": "09:30",
+   "o": 7676.75,
+   "h": 7679.25,
+   "l": 7675.75,
+   "c": 7676.25,
+   "vol": 10878,
+   "delta": 84
+  },
+  {
+   "t": "09:35",
+   "o": 7676.5,
+   "h": 7685.75,
+   "l": 7675.75,
+   "c": 7684.0,
+   "vol": 13780,
+   "delta": 466
+  },
+  {
+   "t": "09:40",
+   "o": 7684.0,
+   "h": 7688.75,
+   "l": 7683.75,
+   "c": 7686.0,
+   "vol": 10843,
+   "delta": 615
+  },
+  {
+   "t": "09:45",
+   "o": 7686.0,
+   "h": 7686.5,
+   "l": 7681.5,
+   "c": 7682.25,
+   "vol": 10595,
+   "delta": 101
+  },
+  {
+   "t": "09:50",
+   "o": 7682.0,
+   "h": 7686.5,
+   "l": 7681.5,
+   "c": 7686.25,
+   "vol": 8418,
+   "delta": 776
+  },
+  {
+   "t": "09:55",
+   "o": 7686.25,
+   "h": 7692.0,
+   "l": 7685.25,
+   "c": 7687.5,
+   "vol": 12396,
+   "delta": 490
+  },
+  {
+   "t": "10:00",
+   "o": 7687.5,
+   "h": 7692.5,
+   "l": 7684.75,
+   "c": 7685.5,
+   "vol": 13799,
+   "delta": -397
+  },
+  {
+   "t": "10:05",
+   "o": 7685.5,
+   "h": 7690.0,
+   "l": 7684.0,
+   "c": 7684.75,
+   "vol": 7530,
+   "delta": -166
+  },
+  {
+   "t": "10:10",
+   "o": 7684.75,
+   "h": 7687.75,
+   "l": 7683.25,
+   "c": 7685.25,
+   "vol": 7849,
+   "delta": -439
+  },
+  {
+   "t": "10:15",
+   "o": 7685.5,
+   "h": 7687.0,
+   "l": 7681.5,
+   "c": 7685.75,
+   "vol": 7318,
+   "delta": -160
+  },
+  {
+   "t": "10:20",
+   "o": 7685.5,
+   "h": 7688.75,
+   "l": 7683.75,
+   "c": 7688.5,
+   "vol": 7018,
+   "delta": 342
+  },
+  {
+   "t": "10:25",
+   "o": 7688.5,
+   "h": 7689.75,
+   "l": 7686.0,
+   "c": 7687.5,
+   "vol": 7460,
+   "delta": -8
+  },
+  {
+   "t": "10:30",
+   "o": 7687.25,
+   "h": 7688.0,
+   "l": 7682.25,
+   "c": 7685.5,
+   "vol": 10152,
+   "delta": -504
+  },
+  {
+   "t": "10:35",
+   "o": 7685.5,
+   "h": 7686.5,
+   "l": 7682.25,
+   "c": 7683.75,
+   "vol": 6624,
+   "delta": -192
+  },
+  {
+   "t": "10:40",
+   "o": 7684.0,
+   "h": 7686.75,
+   "l": 7681.75,
+   "c": 7686.0,
+   "vol": 5729,
+   "delta": 341
+  },
+  {
+   "t": "10:45",
+   "o": 7686.25,
+   "h": 7688.25,
+   "l": 7684.25,
+   "c": 7686.5,
+   "vol": 5935,
+   "delta": 161
+  },
+  {
+   "t": "10:50",
+   "o": 7686.5,
+   "h": 7691.25,
+   "l": 7686.25,
+   "c": 7688.75,
+   "vol": 7643,
+   "delta": 279
+  },
+  {
+   "t": "10:55",
+   "o": 7688.5,
+   "h": 7689.0,
+   "l": 7680.75,
+   "c": 7682.0,
+   "vol": 7851,
+   "delta": -243
+  },
+  {
+   "t": "11:00",
+   "o": 7682.0,
+   "h": 7682.0,
+   "l": 7678.0,
+   "c": 7679.5,
+   "vol": 9365,
+   "delta": 19
+  },
+  {
+   "t": "11:05",
+   "o": 7679.25,
+   "h": 7679.75,
+   "l": 7677.25,
+   "c": 7679.0,
+   "vol": 7047,
+   "delta": 561
+  },
+  {
+   "t": "11:10",
+   "o": 7679.0,
+   "h": 7685.75,
+   "l": 7678.25,
+   "c": 7685.0,
+   "vol": 9957,
+   "delta": 1207
+  },
+  {
+   "t": "11:15",
+   "o": 7685.0,
+   "h": 7685.5,
+   "l": 7680.5,
+   "c": 7683.75,
+   "vol": 6436,
+   "delta": 300
+  },
+  {
+   "t": "11:20",
+   "o": 7683.75,
+   "h": 7684.5,
+   "l": 7680.25,
+   "c": 7682.5,
+   "vol": 5798,
+   "delta": 358
+  },
+  {
+   "t": "11:25",
+   "o": 7682.5,
+   "h": 7687.25,
+   "l": 7682.25,
+   "c": 7687.0,
+   "vol": 5763,
+   "delta": 575
+  },
+  {
+   "t": "11:30",
+   "o": 7686.75,
+   "h": 7687.25,
+   "l": 7684.0,
+   "c": 7686.0,
+   "vol": 8676,
+   "delta": -54
+  },
+  {
+   "t": "11:35",
+   "o": 7686.0,
+   "h": 7687.25,
+   "l": 7679.75,
+   "c": 7680.25,
+   "vol": 6025,
+   "delta": -907
+  },
+  {
+   "t": "11:40",
+   "o": 7680.25,
+   "h": 7685.25,
+   "l": 7679.5,
+   "c": 7682.0,
+   "vol": 8101,
+   "delta": -199
+  },
+  {
+   "t": "11:45",
+   "o": 7681.75,
+   "h": 7686.5,
+   "l": 7681.75,
+   "c": 7685.25,
+   "vol": 5546,
+   "delta": 660
+  },
+  {
+   "t": "11:50",
+   "o": 7685.25,
+   "h": 7687.75,
+   "l": 7684.75,
+   "c": 7686.0,
+   "vol": 4599,
+   "delta": 195
+  },
+  {
+   "t": "11:55",
+   "o": 7686.0,
+   "h": 7687.75,
+   "l": 7685.5,
+   "c": 7686.5,
+   "vol": 4470,
+   "delta": -88
+  },
+  {
+   "t": "12:00",
+   "o": 7686.5,
+   "h": 7686.75,
+   "l": 7683.5,
+   "c": 7684.75,
+   "vol": 5457,
+   "delta": -131
+  },
+  {
+   "t": "12:05",
+   "o": 7684.75,
+   "h": 7686.0,
+   "l": 7683.0,
+   "c": 7683.5,
+   "vol": 3959,
+   "delta": 113
+  },
+  {
+   "t": "12:10",
+   "o": 7683.75,
+   "h": 7687.25,
+   "l": 7683.5,
+   "c": 7687.25,
+   "vol": 3721,
+   "delta": 299
+  },
+  {
+   "t": "12:15",
+   "o": 7687.0,
+   "h": 7688.5,
+   "l": 7684.75,
+   "c": 7686.5,
+   "vol": 5977,
+   "delta": 285
+  },
+  {
+   "t": "12:20",
+   "o": 7686.5,
+   "h": 7687.5,
+   "l": 7684.75,
+   "c": 7685.75,
+   "vol": 4673,
+   "delta": -145
+  },
+  {
+   "t": "12:25",
+   "o": 7685.75,
+   "h": 7686.0,
+   "l": 7681.5,
+   "c": 7682.0,
+   "vol": 5486,
+   "delta": -458
+  },
+  {
+   "t": "12:30",
+   "o": 7682.0,
+   "h": 7683.25,
+   "l": 7679.25,
+   "c": 7680.75,
+   "vol": 7815,
+   "delta": 245
+  },
+  {
+   "t": "12:35",
+   "o": 7680.75,
+   "h": 7686.25,
+   "l": 7680.75,
+   "c": 7686.25,
+   "vol": 6004,
+   "delta": 1284
+  },
+  {
+   "t": "12:40",
+   "o": 7686.0,
+   "h": 7690.5,
+   "l": 7685.5,
+   "c": 7690.5,
+   "vol": 8504,
+   "delta": 1402
+  },
+  {
+   "t": "12:45",
+   "o": 7690.5,
+   "h": 7692.5,
+   "l": 7689.25,
+   "c": 7691.25,
+   "vol": 8590,
+   "delta": 736
+  },
+  {
+   "t": "12:50",
+   "o": 7691.25,
+   "h": 7695.75,
+   "l": 7691.0,
+   "c": 7695.75,
+   "vol": 7901,
+   "delta": 179
+  },
+  {
+   "t": "12:55",
+   "o": 7695.5,
+   "h": 7696.25,
+   "l": 7691.5,
+   "c": 7693.0,
+   "vol": 6615,
+   "delta": -111
+  },
+  {
+   "t": "13:00",
+   "o": 7693.0,
+   "h": 7694.25,
+   "l": 7689.75,
+   "c": 7693.5,
+   "vol": 10929,
+   "delta": -221
+  },
+  {
+   "t": "13:05",
+   "o": 7693.75,
+   "h": 7695.0,
+   "l": 7692.25,
+   "c": 7694.5,
+   "vol": 5069,
+   "delta": 1
+  },
+  {
+   "t": "13:10",
+   "o": 7694.25,
+   "h": 7695.0,
+   "l": 7692.25,
+   "c": 7695.0,
+   "vol": 4197,
+   "delta": 15
+  },
+  {
+   "t": "13:15",
+   "o": 7694.75,
+   "h": 7695.75,
+   "l": 7693.25,
+   "c": 7694.75,
+   "vol": 4687,
+   "delta": 229
+  },
+  {
+   "t": "13:20",
+   "o": 7694.5,
+   "h": 7696.25,
+   "l": 7692.75,
+   "c": 7694.0,
+   "vol": 5189,
+   "delta": -49
+  },
+  {
+   "t": "13:25",
+   "o": 7694.0,
+   "h": 7694.25,
+   "l": 7690.75,
+   "c": 7692.0,
+   "vol": 5368,
+   "delta": -962
+  }
+ ],
+ "last_minutes": [
+  {
+   "t": "12:48",
+   "o": 7691.5,
+   "h": 7692.0,
+   "l": 7690.75,
+   "c": 7691.5,
+   "volume": 994,
+   "effort_x": 0.63,
+   "delta": 58,
+   "net": 0.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:49",
+   "o": 7691.5,
+   "h": 7692.5,
+   "l": 7691.0,
+   "c": 7691.25,
+   "volume": 1487,
+   "effort_x": 0.95,
+   "delta": -19,
+   "net": -0.25,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:50",
+   "o": 7691.25,
+   "h": 7695.0,
+   "l": 7691.0,
+   "c": 7694.0,
+   "volume": 2316,
+   "effort_x": 1.47,
+   "delta": 326,
+   "net": 2.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:51",
+   "o": 7694.0,
+   "h": 7695.5,
+   "l": 7694.0,
+   "c": 7695.0,
+   "volume": 1521,
+   "effort_x": 0.97,
+   "delta": -63,
+   "net": 1.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:52",
+   "o": 7695.0,
+   "h": 7695.75,
+   "l": 7694.25,
+   "c": 7694.25,
+   "volume": 1975,
+   "effort_x": 1.25,
+   "delta": -191,
+   "net": -0.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:53",
+   "o": 7694.5,
+   "h": 7695.75,
+   "l": 7694.25,
+   "c": 7695.25,
+   "volume": 1114,
+   "effort_x": 0.71,
+   "delta": -18,
+   "net": 0.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:54",
+   "o": 7695.25,
+   "h": 7695.75,
+   "l": 7694.75,
+   "c": 7695.75,
+   "volume": 975,
+   "effort_x": 0.62,
+   "delta": 125,
+   "net": 0.5,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:55",
+   "o": 7695.5,
+   "h": 7696.25,
+   "l": 7694.25,
+   "c": 7695.0,
+   "volume": 1908,
+   "effort_x": 1.22,
+   "delta": 20,
+   "net": -0.5,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:56",
+   "o": 7695.0,
+   "h": 7695.25,
+   "l": 7694.0,
+   "c": 7694.25,
+   "volume": 1076,
+   "effort_x": 0.69,
+   "delta": -2,
+   "net": -0.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:57",
+   "o": 7694.25,
+   "h": 7694.5,
+   "l": 7691.75,
+   "c": 7692.0,
+   "volume": 1664,
+   "effort_x": 1.06,
+   "delta": -264,
+   "net": -2.25,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:58",
+   "o": 7691.75,
+   "h": 7692.75,
+   "l": 7691.5,
+   "c": 7692.25,
+   "volume": 998,
+   "effort_x": 0.64,
+   "delta": 96,
+   "net": 0.5,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "12:59",
+   "o": 7692.25,
+   "h": 7693.25,
+   "l": 7692.0,
+   "c": 7693.0,
+   "volume": 969,
+   "effort_x": 0.62,
+   "delta": 39,
+   "net": 0.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:00",
+   "o": 7693.0,
+   "h": 7693.0,
+   "l": 7689.75,
+   "c": 7690.25,
+   "volume": 4585,
+   "effort_x": 2.94,
+   "delta": -305,
+   "net": -2.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:01",
+   "o": 7690.5,
+   "h": 7692.75,
+   "l": 7690.25,
+   "c": 7692.5,
+   "volume": 2222,
+   "effort_x": 1.42,
+   "delta": 108,
+   "net": 2.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:02",
+   "o": 7692.25,
+   "h": 7693.25,
+   "l": 7691.0,
+   "c": 7692.5,
+   "volume": 2097,
+   "effort_x": 1.33,
+   "delta": -85,
+   "net": 0.25,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:03",
+   "o": 7692.25,
+   "h": 7694.25,
+   "l": 7692.25,
+   "c": 7694.0,
+   "volume": 1139,
+   "effort_x": 0.73,
+   "delta": 95,
+   "net": 1.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:04",
+   "o": 7693.75,
+   "h": 7694.0,
+   "l": 7693.25,
+   "c": 7693.5,
+   "volume": 886,
+   "effort_x": 0.57,
+   "delta": -34,
+   "net": -0.25,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:05",
+   "o": 7693.75,
+   "h": 7693.75,
+   "l": 7692.25,
+   "c": 7692.25,
+   "volume": 978,
+   "effort_x": 0.63,
+   "delta": 90,
+   "net": -1.5,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:06",
+   "o": 7692.5,
+   "h": 7694.75,
+   "l": 7692.25,
+   "c": 7694.5,
+   "volume": 1308,
+   "effort_x": 0.84,
+   "delta": 4,
+   "net": 2.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:07",
+   "o": 7694.5,
+   "h": 7694.5,
+   "l": 7693.25,
+   "c": 7693.75,
+   "volume": 960,
+   "effort_x": 0.62,
+   "delta": -150,
+   "net": -0.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:08",
+   "o": 7693.5,
+   "h": 7694.75,
+   "l": 7693.25,
+   "c": 7694.75,
+   "volume": 1026,
+   "effort_x": 0.66,
+   "delta": 34,
+   "net": 1.25,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:09",
+   "o": 7694.5,
+   "h": 7695.0,
+   "l": 7694.0,
+   "c": 7694.5,
+   "volume": 797,
+   "effort_x": 0.52,
+   "delta": 23,
+   "net": 0.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:10",
+   "o": 7694.25,
+   "h": 7694.5,
+   "l": 7693.0,
+   "c": 7693.5,
+   "volume": 1107,
+   "effort_x": 0.72,
+   "delta": -87,
+   "net": -0.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:11",
+   "o": 7693.5,
+   "h": 7693.75,
+   "l": 7692.25,
+   "c": 7693.5,
+   "volume": 911,
+   "effort_x": 0.59,
+   "delta": -11,
+   "net": 0.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:12",
+   "o": 7693.5,
+   "h": 7693.75,
+   "l": 7692.5,
+   "c": 7692.75,
+   "volume": 837,
+   "effort_x": 0.55,
+   "delta": -51,
+   "net": -0.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:13",
+   "o": 7692.5,
+   "h": 7694.0,
+   "l": 7692.5,
+   "c": 7693.0,
+   "volume": 706,
+   "effort_x": 0.46,
+   "delta": 2,
+   "net": 0.5,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:14",
+   "o": 7693.0,
+   "h": 7695.0,
+   "l": 7693.0,
+   "c": 7695.0,
+   "volume": 636,
+   "effort_x": 0.42,
+   "delta": 162,
+   "net": 2.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:15",
+   "o": 7694.75,
+   "h": 7695.0,
+   "l": 7694.25,
+   "c": 7694.75,
+   "volume": 1359,
+   "effort_x": 0.89,
+   "delta": 79,
+   "net": 0.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:16",
+   "o": 7694.75,
+   "h": 7695.75,
+   "l": 7693.25,
+   "c": 7695.0,
+   "volume": 1257,
+   "effort_x": 0.83,
+   "delta": 119,
+   "net": 0.25,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:17",
+   "o": 7695.0,
+   "h": 7695.0,
+   "l": 7693.5,
+   "c": 7694.0,
+   "volume": 910,
+   "effort_x": 0.6,
+   "delta": -100,
+   "net": -1.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:18",
+   "o": 7694.25,
+   "h": 7694.75,
+   "l": 7693.5,
+   "c": 7694.25,
+   "volume": 704,
+   "effort_x": 0.46,
+   "delta": 68,
+   "net": 0.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:19",
+   "o": 7694.0,
+   "h": 7694.75,
+   "l": 7694.0,
+   "c": 7694.75,
+   "volume": 457,
+   "effort_x": 0.3,
+   "delta": 63,
+   "net": 0.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:20",
+   "o": 7694.5,
+   "h": 7696.25,
+   "l": 7694.5,
+   "c": 7695.5,
+   "volume": 1203,
+   "effort_x": 0.8,
+   "delta": 327,
+   "net": 1.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:21",
+   "o": 7695.25,
+   "h": 7695.25,
+   "l": 7693.75,
+   "c": 7693.75,
+   "volume": 1167,
+   "effort_x": 0.77,
+   "delta": -211,
+   "net": -1.5,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:22",
+   "o": 7693.5,
+   "h": 7694.0,
+   "l": 7692.75,
+   "c": 7693.25,
+   "volume": 1144,
+   "effort_x": 0.76,
+   "delta": -114,
+   "net": -0.25,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:23",
+   "o": 7693.25,
+   "h": 7695.0,
+   "l": 7693.0,
+   "c": 7694.75,
+   "volume": 919,
+   "effort_x": 0.61,
+   "delta": 85,
+   "net": 1.5,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:24",
+   "o": 7694.5,
+   "h": 7695.0,
+   "l": 7694.0,
+   "c": 7694.0,
+   "volume": 756,
+   "effort_x": 0.5,
+   "delta": -136,
+   "net": -0.5,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:25",
+   "o": 7694.0,
+   "h": 7694.25,
+   "l": 7691.75,
+   "c": 7692.5,
+   "volume": 1773,
+   "effort_x": 1.18,
+   "delta": -139,
+   "net": -1.5,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 743,
+   "set_a_new_max": null
+  },
+  {
+   "t": "13:26",
+   "o": 7692.5,
+   "h": 7692.5,
+   "l": 7690.75,
+   "c": 7691.5,
+   "volume": 2746,
+   "effort_x": 1.82,
+   "delta": -874,
+   "net": -1.0,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 874,
+   "set_a_new_max": "sell"
+  },
+  {
+   "t": "13:27",
+   "o": 7691.25,
+   "h": 7692.5,
+   "l": 7691.25,
+   "c": 7692.0,
+   "volume": 849,
+   "effort_x": 0.56,
+   "delta": 51,
+   "net": 0.75,
+   "max_buy_minute_so_far": 681,
+   "max_sell_minute_so_far": 874,
+   "set_a_new_max": null
+  }
+ ],
+ "volume_at_price_last_10_min": [
+  {
+   "price": 7696.25,
+   "bought": 110,
+   "sold": 0,
+   "delta": 110,
+   "session_volume_at_this_price": 237,
+   "share_arrived_in_last_10_min": 0.46
+  },
+  {
+   "price": 7696.0,
+   "bought": 88,
+   "sold": 30,
+   "delta": 58,
+   "session_volume_at_this_price": 687,
+   "share_arrived_in_last_10_min": 0.17
+  },
+  {
+   "price": 7695.75,
+   "bought": 42,
+   "sold": 43,
+   "delta": -1,
+   "session_volume_at_this_price": 880,
+   "share_arrived_in_last_10_min": 0.1
+  },
+  {
+   "price": 7695.5,
+   "bought": 110,
+   "sold": 95,
+   "delta": 15,
+   "session_volume_at_this_price": 1790,
+   "share_arrived_in_last_10_min": 0.11
+  },
+  {
+   "price": 7695.25,
+   "bought": 125,
+   "sold": 111,
+   "delta": 14,
+   "session_volume_at_this_price": 2672,
+   "share_arrived_in_last_10_min": 0.09
+  },
+  {
+   "price": 7695.0,
+   "bought": 378,
+   "sold": 231,
+   "delta": 147,
+   "session_volume_at_this_price": 3784,
+   "share_arrived_in_last_10_min": 0.16
+  },
+  {
+   "price": 7694.75,
+   "bought": 431,
+   "sold": 294,
+   "delta": 137,
+   "session_volume_at_this_price": 4162,
+   "share_arrived_in_last_10_min": 0.17
+  },
+  {
+   "price": 7694.5,
+   "bought": 472,
+   "sold": 557,
+   "delta": -85,
+   "session_volume_at_this_price": 4297,
+   "share_arrived_in_last_10_min": 0.24
+  },
+  {
+   "price": 7694.25,
+   "bought": 280,
+   "sold": 414,
+   "delta": -134,
+   "session_volume_at_this_price": 3451,
+   "share_arrived_in_last_10_min": 0.2
+  },
+  {
+   "price": 7694.0,
+   "bought": 457,
+   "sold": 386,
+   "delta": 71,
+   "session_volume_at_this_price": 3759,
+   "share_arrived_in_last_10_min": 0.22
+  },
+  {
+   "price": 7693.75,
+   "bought": 415,
+   "sold": 471,
+   "delta": -56,
+   "session_volume_at_this_price": 3427,
+   "share_arrived_in_last_10_min": 0.26
+  },
+  {
+   "price": 7693.5,
+   "bought": 221,
+   "sold": 285,
+   "delta": -64,
+   "session_volume_at_this_price": 4173,
+   "share_arrived_in_last_10_min": 0.12
+  },
+  {
+   "price": 7693.25,
+   "bought": 282,
+   "sold": 323,
+   "delta": -41,
+   "session_volume_at_this_price": 4190,
+   "share_arrived_in_last_10_min": 0.14
+  },
+  {
+   "price": 7693.0,
+   "bought": 131,
+   "sold": 260,
+   "delta": -129,
+   "session_volume_at_this_price": 4398,
+   "share_arrived_in_last_10_min": 0.09
+  },
+  {
+   "price": 7692.75,
+   "bought": 31,
+   "sold": 113,
+   "delta": -82,
+   "session_volume_at_this_price": 4234,
+   "share_arrived_in_last_10_min": 0.03
+  },
+  {
+   "price": 7692.5,
+   "bought": 219,
+   "sold": 126,
+   "delta": 93,
+   "session_volume_at_this_price": 5019,
+   "share_arrived_in_last_10_min": 0.07
+  },
+  {
+   "price": 7692.25,
+   "bought": 262,
+   "sold": 317,
+   "delta": -55,
+   "session_volume_at_this_price": 6522,
+   "share_arrived_in_last_10_min": 0.09
+  },
+  {
+   "price": 7692.0,
+   "bought": 345,
+   "sold": 369,
+   "delta": -24,
+   "session_volume_at_this_price": 6269,
+   "share_arrived_in_last_10_min": 0.11
+  },
+  {
+   "price": 7691.75,
+   "bought": 251,
+   "sold": 286,
+   "delta": -35,
+   "session_volume_at_this_price": 6698,
+   "share_arrived_in_last_10_min": 0.08
+  },
+  {
+   "price": 7691.5,
+   "bought": 45,
+   "sold": 101,
+   "delta": -56,
+   "session_volume_at_this_price": 6101,
+   "share_arrived_in_last_10_min": 0.02
+  },
+  {
+   "price": 7691.25,
+   "bought": 429,
+   "sold": 472,
+   "delta": -43,
+   "session_volume_at_this_price": 7297,
+   "share_arrived_in_last_10_min": 0.12
+  },
+  {
+   "price": 7691.0,
+   "bought": 273,
+   "sold": 917,
+   "delta": -644,
+   "session_volume_at_this_price": 9959,
+   "share_arrived_in_last_10_min": 0.12
+  },
+  {
+   "price": 7690.75,
+   "bought": 22,
+   "sold": 98,
+   "delta": -76,
+   "session_volume_at_this_price": 8198,
+   "share_arrived_in_last_10_min": 0.01
+  }
+ ]
+}

@@ -1,0 +1,1305 @@
+{
+ "episode": {
+  "id": "ep01",
+  "instrument": "ES",
+  "day": "2026-08-26",
+  "cutoff_ct": "09:28",
+  "note": "Everything here was observable at the cutoff. The narrator knows nothing after it."
+ },
+ "prior_session": {
+  "date": "2026-08-25",
+  "open": 7695.0,
+  "close": 7691.0,
+  "high": 7701.25,
+  "high_t": "08:34:55",
+  "low": 7663.25,
+  "low_t": "09:30:28",
+  "range": 38.0,
+  "volume": 717586,
+  "poc": 7686.75,
+  "poc_volume": 15663
+ },
+ "overnight_before_the_open": {
+  "high": 7698.25,
+  "low": 7670.75,
+  "from": "08-25 17:00",
+  "evening_session_present": true,
+  "range": 27.5
+ },
+ "day_character": {
+  "minutes_since_open": 59,
+  "range_so_far": 23.75,
+  "recent_days_full_range": {
+   "median": 37.75,
+   "smallest": 25.0,
+   "largest": 61.0,
+   "days": 10,
+   "from": "2026-08-12",
+   "to": "2026-08-25"
+  },
+  "volume_so_far": 192985,
+  "typical_volume_by_this_minute": 213833,
+  "pace_vs_typical": 0.9,
+  "typical_minute_so_far": 2918
+ },
+ "session_so_far": {
+  "open": 7678.75,
+  "last": 7684.0,
+  "high": 7702.5,
+  "high_time": "09:04",
+  "low": 7678.75,
+  "low_time": "08:30",
+  "biggest_legs": [
+   {
+    "from": "09:06",
+    "to": "09:29",
+    "start_price": 7699.75,
+    "end_price": 7684.0,
+    "net_points": -15.75,
+    "minutes": 23,
+    "volume": 66233,
+    "delta": -3465
+   },
+   {
+    "from": "08:50",
+    "to": "09:07",
+    "start_price": 7691.25,
+    "end_price": 7701.75,
+    "net_points": 10.5,
+    "minutes": 17,
+    "volume": 43180,
+    "delta": 1690
+   },
+   {
+    "from": "08:30",
+    "to": "08:35",
+    "start_price": 7678.75,
+    "end_price": 7689.0,
+    "net_points": 10.25,
+    "minutes": 5,
+    "volume": 29188,
+    "delta": 1758
+   }
+  ],
+  "busiest_minute": {
+   "t": "08:30",
+   "volume": 9553,
+   "delta": 245
+  },
+  "biggest_buy_delta_minute": {
+   "t": "08:45",
+   "volume": 4955,
+   "delta": 1099
+  },
+  "biggest_sell_delta_minute": {
+   "t": "09:27",
+   "volume": 4864,
+   "delta": -612
+  }
+ },
+ "levels_in_play": [
+  {
+   "level": 7686.75,
+   "what": "prior session most-traded price",
+   "distance": 2.75,
+   "obvious_traders_act_here": false,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7678.75,
+   "what": "session low so far",
+   "distance": -5.25,
+   "obvious_traders_act_here": true,
+   "made_at": "08:30",
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7678.75,
+   "what": "today's open",
+   "distance": -5.25,
+   "obvious_traders_act_here": true,
+   "made_at": "08:30",
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7691.0,
+   "what": "prior session close",
+   "distance": 7.0,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7670.75,
+   "what": "overnight low",
+   "distance": -13.25,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7698.25,
+   "what": "overnight high",
+   "distance": 14.25,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7701.25,
+   "what": "prior session high",
+   "distance": 17.25,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7702.5,
+   "what": "session high so far",
+   "distance": 18.5,
+   "obvious_traders_act_here": true,
+   "made_at": "09:04",
+   "is_the_level_in_question": false
+  },
+  {
+   "level": 7663.25,
+   "what": "prior session low",
+   "distance": -20.75,
+   "obvious_traders_act_here": true,
+   "made_at": null,
+   "is_the_level_in_question": false
+  }
+ ],
+ "at_the_level": {
+  "level": 7680.5,
+  "minutes_in_contact": 6,
+  "separate_visits": 3,
+  "first_touch": "08:30",
+  "minutes_since_first_touch": 59,
+  "points_travelled_since_first_touch": 23.75,
+  "net_since_first_touch": 5.25
+ },
+ "five_minute_bars_so_far": [
+  {
+   "t": "08:30",
+   "o": 7678.75,
+   "h": 7690.75,
+   "l": 7678.75,
+   "c": 7689.0,
+   "vol": 29188,
+   "delta": 1758
+  },
+  {
+   "t": "08:35",
+   "o": 7689.25,
+   "h": 7690.5,
+   "l": 7680.25,
+   "c": 7688.0,
+   "vol": 20817,
+   "delta": 791
+  },
+  {
+   "t": "08:40",
+   "o": 7688.0,
+   "h": 7698.5,
+   "l": 7686.75,
+   "c": 7695.25,
+   "vol": 20126,
+   "delta": 1096
+  },
+  {
+   "t": "08:45",
+   "o": 7695.5,
+   "h": 7699.5,
+   "l": 7691.5,
+   "c": 7691.5,
+   "vol": 15718,
+   "delta": -48
+  },
+  {
+   "t": "08:50",
+   "o": 7691.25,
+   "h": 7698.75,
+   "l": 7688.5,
+   "c": 7698.75,
+   "vol": 13586,
+   "delta": 686
+  },
+  {
+   "t": "08:55",
+   "o": 7698.5,
+   "h": 7701.75,
+   "l": 7696.75,
+   "c": 7701.25,
+   "vol": 12286,
+   "delta": 766
+  },
+  {
+   "t": "09:00",
+   "o": 7701.25,
+   "h": 7702.5,
+   "l": 7698.25,
+   "c": 7700.75,
+   "vol": 11994,
+   "delta": 54
+  },
+  {
+   "t": "09:05",
+   "o": 7701.0,
+   "h": 7701.75,
+   "l": 7697.0,
+   "c": 7698.5,
+   "vol": 10215,
+   "delta": 81
+  },
+  {
+   "t": "09:10",
+   "o": 7698.5,
+   "h": 7698.75,
+   "l": 7693.0,
+   "c": 7694.0,
+   "vol": 13449,
+   "delta": -551
+  },
+  {
+   "t": "09:15",
+   "o": 7694.0,
+   "h": 7695.75,
+   "l": 7691.75,
+   "c": 7691.75,
+   "vol": 12640,
+   "delta": -226
+  },
+  {
+   "t": "09:20",
+   "o": 7691.75,
+   "h": 7692.75,
+   "l": 7686.0,
+   "c": 7686.5,
+   "vol": 14745,
+   "delta": -1241
+  },
+  {
+   "t": "09:25",
+   "o": 7686.25,
+   "h": 7687.25,
+   "l": 7680.5,
+   "c": 7684.0,
+   "vol": 18221,
+   "delta": -1447
+  }
+ ],
+ "last_minutes": [
+  {
+   "t": "08:49",
+   "o": 7695.25,
+   "h": 7696.0,
+   "l": 7691.5,
+   "c": 7691.5,
+   "volume": 2454,
+   "effort_x": 0.7,
+   "delta": -306,
+   "net": -3.75,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:50",
+   "o": 7691.25,
+   "h": 7691.75,
+   "l": 7688.75,
+   "c": 7689.0,
+   "volume": 3650,
+   "effort_x": 1.04,
+   "delta": -60,
+   "net": -2.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:51",
+   "o": 7689.25,
+   "h": 7692.25,
+   "l": 7688.5,
+   "c": 7692.0,
+   "volume": 2806,
+   "effort_x": 0.8,
+   "delta": 74,
+   "net": 2.75,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:52",
+   "o": 7692.0,
+   "h": 7694.0,
+   "l": 7692.0,
+   "c": 7693.25,
+   "volume": 2036,
+   "effort_x": 0.58,
+   "delta": -64,
+   "net": 1.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:53",
+   "o": 7693.0,
+   "h": 7696.5,
+   "l": 7692.25,
+   "c": 7696.25,
+   "volume": 2541,
+   "effort_x": 0.73,
+   "delta": 499,
+   "net": 3.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:54",
+   "o": 7696.25,
+   "h": 7698.75,
+   "l": 7695.5,
+   "c": 7698.75,
+   "volume": 2553,
+   "effort_x": 0.73,
+   "delta": 237,
+   "net": 2.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:55",
+   "o": 7698.5,
+   "h": 7700.0,
+   "l": 7696.75,
+   "c": 7699.5,
+   "volume": 2742,
+   "effort_x": 0.8,
+   "delta": 76,
+   "net": 1.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:56",
+   "o": 7699.5,
+   "h": 7701.75,
+   "l": 7698.0,
+   "c": 7700.0,
+   "volume": 2918,
+   "effort_x": 0.87,
+   "delta": 464,
+   "net": 0.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:57",
+   "o": 7699.75,
+   "h": 7700.5,
+   "l": 7698.5,
+   "c": 7699.0,
+   "volume": 1988,
+   "effort_x": 0.6,
+   "delta": -50,
+   "net": -0.75,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:58",
+   "o": 7699.0,
+   "h": 7700.0,
+   "l": 7698.25,
+   "c": 7699.0,
+   "volume": 2364,
+   "effort_x": 0.71,
+   "delta": -8,
+   "net": 0.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "08:59",
+   "o": 7699.0,
+   "h": 7701.5,
+   "l": 7697.5,
+   "c": 7701.25,
+   "volume": 2274,
+   "effort_x": 0.71,
+   "delta": 284,
+   "net": 2.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:00",
+   "o": 7701.25,
+   "h": 7701.25,
+   "l": 7698.25,
+   "c": 7700.25,
+   "volume": 3190,
+   "effort_x": 1.0,
+   "delta": 158,
+   "net": -1.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:01",
+   "o": 7700.0,
+   "h": 7700.75,
+   "l": 7698.5,
+   "c": 7699.5,
+   "volume": 2150,
+   "effort_x": 0.69,
+   "delta": -32,
+   "net": -0.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:02",
+   "o": 7699.5,
+   "h": 7701.25,
+   "l": 7699.25,
+   "c": 7700.75,
+   "volume": 1690,
+   "effort_x": 0.56,
+   "delta": 148,
+   "net": 1.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:03",
+   "o": 7700.75,
+   "h": 7701.5,
+   "l": 7699.75,
+   "c": 7700.75,
+   "volume": 1900,
+   "effort_x": 0.64,
+   "delta": 12,
+   "net": 0.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:04",
+   "o": 7700.75,
+   "h": 7702.5,
+   "l": 7700.25,
+   "c": 7700.75,
+   "volume": 3064,
+   "effort_x": 1.01,
+   "delta": -232,
+   "net": 0.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:05",
+   "o": 7701.0,
+   "h": 7701.25,
+   "l": 7698.0,
+   "c": 7699.75,
+   "volume": 3037,
+   "effort_x": 1.0,
+   "delta": 81,
+   "net": -1.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:06",
+   "o": 7699.75,
+   "h": 7701.75,
+   "l": 7698.0,
+   "c": 7701.75,
+   "volume": 2277,
+   "effort_x": 0.75,
+   "delta": 103,
+   "net": 2.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:07",
+   "o": 7701.75,
+   "h": 7701.75,
+   "l": 7698.75,
+   "c": 7699.0,
+   "volume": 1611,
+   "effort_x": 0.54,
+   "delta": -125,
+   "net": -2.75,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:08",
+   "o": 7699.0,
+   "h": 7700.0,
+   "l": 7698.0,
+   "c": 7698.75,
+   "volume": 1383,
+   "effort_x": 0.47,
+   "delta": 55,
+   "net": -0.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:09",
+   "o": 7698.75,
+   "h": 7699.25,
+   "l": 7697.0,
+   "c": 7698.5,
+   "volume": 1907,
+   "effort_x": 0.67,
+   "delta": -33,
+   "net": -0.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:10",
+   "o": 7698.5,
+   "h": 7698.75,
+   "l": 7696.5,
+   "c": 7697.75,
+   "volume": 2334,
+   "effort_x": 0.83,
+   "delta": -148,
+   "net": -0.75,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:11",
+   "o": 7697.5,
+   "h": 7698.75,
+   "l": 7696.75,
+   "c": 7697.75,
+   "volume": 1704,
+   "effort_x": 0.61,
+   "delta": 58,
+   "net": 0.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:12",
+   "o": 7697.5,
+   "h": 7697.75,
+   "l": 7694.0,
+   "c": 7694.5,
+   "volume": 3666,
+   "effort_x": 1.31,
+   "delta": -220,
+   "net": -3.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:13",
+   "o": 7694.75,
+   "h": 7695.0,
+   "l": 7693.0,
+   "c": 7695.0,
+   "volume": 3146,
+   "effort_x": 1.1,
+   "delta": -6,
+   "net": 0.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:14",
+   "o": 7695.0,
+   "h": 7696.0,
+   "l": 7693.5,
+   "c": 7694.0,
+   "volume": 2599,
+   "effort_x": 0.93,
+   "delta": -235,
+   "net": -1.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:15",
+   "o": 7694.0,
+   "h": 7694.75,
+   "l": 7692.5,
+   "c": 7693.0,
+   "volume": 3083,
+   "effort_x": 1.08,
+   "delta": 43,
+   "net": -1.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:16",
+   "o": 7693.0,
+   "h": 7693.75,
+   "l": 7692.0,
+   "c": 7693.5,
+   "volume": 2456,
+   "effort_x": 0.88,
+   "delta": -22,
+   "net": 0.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:17",
+   "o": 7693.25,
+   "h": 7694.5,
+   "l": 7693.0,
+   "c": 7693.75,
+   "volume": 2015,
+   "effort_x": 0.73,
+   "delta": -81,
+   "net": 0.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:18",
+   "o": 7693.5,
+   "h": 7695.75,
+   "l": 7692.5,
+   "c": 7693.5,
+   "volume": 2798,
+   "effort_x": 1.0,
+   "delta": 12,
+   "net": 0.0,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:19",
+   "o": 7693.25,
+   "h": 7694.25,
+   "l": 7691.75,
+   "c": 7691.75,
+   "volume": 2288,
+   "effort_x": 0.82,
+   "delta": -178,
+   "net": -1.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:20",
+   "o": 7691.75,
+   "h": 7692.75,
+   "l": 7691.25,
+   "c": 7691.25,
+   "volume": 1947,
+   "effort_x": 0.71,
+   "delta": 75,
+   "net": -0.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:21",
+   "o": 7691.5,
+   "h": 7691.75,
+   "l": 7690.0,
+   "c": 7690.25,
+   "volume": 2971,
+   "effort_x": 1.07,
+   "delta": -405,
+   "net": -1.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:22",
+   "o": 7690.25,
+   "h": 7690.5,
+   "l": 7688.0,
+   "c": 7689.0,
+   "volume": 3628,
+   "effort_x": 1.3,
+   "delta": -126,
+   "net": -1.25,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:23",
+   "o": 7689.0,
+   "h": 7690.75,
+   "l": 7688.0,
+   "c": 7688.25,
+   "volume": 2862,
+   "effort_x": 1.02,
+   "delta": -376,
+   "net": -0.75,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:24",
+   "o": 7688.25,
+   "h": 7688.75,
+   "l": 7686.0,
+   "c": 7686.5,
+   "volume": 3337,
+   "effort_x": 1.19,
+   "delta": -409,
+   "net": -1.75,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 537,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:25",
+   "o": 7686.25,
+   "h": 7687.25,
+   "l": 7683.75,
+   "c": 7683.75,
+   "volume": 4303,
+   "effort_x": 1.52,
+   "delta": -593,
+   "net": -2.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 593,
+   "set_a_new_max": "sell"
+  },
+  {
+   "t": "09:26",
+   "o": 7684.0,
+   "h": 7684.0,
+   "l": 7682.0,
+   "c": 7682.5,
+   "volume": 4869,
+   "effort_x": 1.7,
+   "delta": -317,
+   "net": -1.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 593,
+   "set_a_new_max": null
+  },
+  {
+   "t": "09:27",
+   "o": 7682.5,
+   "h": 7683.25,
+   "l": 7680.75,
+   "c": 7681.0,
+   "volume": 4864,
+   "effort_x": 1.68,
+   "delta": -612,
+   "net": -1.5,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 612,
+   "set_a_new_max": "sell"
+  },
+  {
+   "t": "09:28",
+   "o": 7681.25,
+   "h": 7684.0,
+   "l": 7680.5,
+   "c": 7684.0,
+   "volume": 4185,
+   "effort_x": 1.43,
+   "delta": 75,
+   "net": 2.75,
+   "max_buy_minute_so_far": 1099,
+   "max_sell_minute_so_far": 612,
+   "set_a_new_max": null
+  }
+ ],
+ "volume_at_price_last_10_min": [
+  {
+   "price": 7694.25,
+   "bought": 35,
+   "sold": 25,
+   "delta": 10,
+   "session_volume_at_this_price": 3875,
+   "share_arrived_in_last_10_min": 0.02
+  },
+  {
+   "price": 7694.0,
+   "bought": 161,
+   "sold": 148,
+   "delta": 13,
+   "session_volume_at_this_price": 3164,
+   "share_arrived_in_last_10_min": 0.1
+  },
+  {
+   "price": 7693.75,
+   "bought": 85,
+   "sold": 92,
+   "delta": -7,
+   "session_volume_at_this_price": 2480,
+   "share_arrived_in_last_10_min": 0.07
+  },
+  {
+   "price": 7693.5,
+   "bought": 61,
+   "sold": 64,
+   "delta": -3,
+   "session_volume_at_this_price": 2605,
+   "share_arrived_in_last_10_min": 0.05
+  },
+  {
+   "price": 7693.25,
+   "bought": 103,
+   "sold": 59,
+   "delta": 44,
+   "session_volume_at_this_price": 2451,
+   "share_arrived_in_last_10_min": 0.07
+  },
+  {
+   "price": 7693.0,
+   "bought": 180,
+   "sold": 267,
+   "delta": -87,
+   "session_volume_at_this_price": 2681,
+   "share_arrived_in_last_10_min": 0.17
+  },
+  {
+   "price": 7692.75,
+   "bought": 116,
+   "sold": 156,
+   "delta": -40,
+   "session_volume_at_this_price": 2225,
+   "share_arrived_in_last_10_min": 0.12
+  },
+  {
+   "price": 7692.5,
+   "bought": 144,
+   "sold": 160,
+   "delta": -16,
+   "session_volume_at_this_price": 1310,
+   "share_arrived_in_last_10_min": 0.23
+  },
+  {
+   "price": 7692.25,
+   "bought": 326,
+   "sold": 351,
+   "delta": -25,
+   "session_volume_at_this_price": 1419,
+   "share_arrived_in_last_10_min": 0.48
+  },
+  {
+   "price": 7692.0,
+   "bought": 461,
+   "sold": 415,
+   "delta": 46,
+   "session_volume_at_this_price": 1520,
+   "share_arrived_in_last_10_min": 0.58
+  },
+  {
+   "price": 7691.75,
+   "bought": 380,
+   "sold": 379,
+   "delta": 1,
+   "session_volume_at_this_price": 1062,
+   "share_arrived_in_last_10_min": 0.71
+  },
+  {
+   "price": 7691.5,
+   "bought": 113,
+   "sold": 83,
+   "delta": 30,
+   "session_volume_at_this_price": 799,
+   "share_arrived_in_last_10_min": 0.25
+  },
+  {
+   "price": 7691.25,
+   "bought": 362,
+   "sold": 317,
+   "delta": 45,
+   "session_volume_at_this_price": 1666,
+   "share_arrived_in_last_10_min": 0.41
+  },
+  {
+   "price": 7691.0,
+   "bought": 211,
+   "sold": 560,
+   "delta": -349,
+   "session_volume_at_this_price": 1911,
+   "share_arrived_in_last_10_min": 0.4
+  },
+  {
+   "price": 7690.75,
+   "bought": 283,
+   "sold": 334,
+   "delta": -51,
+   "session_volume_at_this_price": 1479,
+   "share_arrived_in_last_10_min": 0.42
+  },
+  {
+   "price": 7690.5,
+   "bought": 308,
+   "sold": 347,
+   "delta": -39,
+   "session_volume_at_this_price": 1637,
+   "share_arrived_in_last_10_min": 0.4
+  },
+  {
+   "price": 7690.25,
+   "bought": 535,
+   "sold": 492,
+   "delta": 43,
+   "session_volume_at_this_price": 2312,
+   "share_arrived_in_last_10_min": 0.44
+  },
+  {
+   "price": 7690.0,
+   "bought": 310,
+   "sold": 461,
+   "delta": -151,
+   "session_volume_at_this_price": 2606,
+   "share_arrived_in_last_10_min": 0.3
+  },
+  {
+   "price": 7689.75,
+   "bought": 253,
+   "sold": 151,
+   "delta": 102,
+   "session_volume_at_this_price": 2776,
+   "share_arrived_in_last_10_min": 0.15
+  },
+  {
+   "price": 7689.5,
+   "bought": 216,
+   "sold": 377,
+   "delta": -161,
+   "session_volume_at_this_price": 3107,
+   "share_arrived_in_last_10_min": 0.19
+  },
+  {
+   "price": 7689.25,
+   "bought": 322,
+   "sold": 394,
+   "delta": -72,
+   "session_volume_at_this_price": 2669,
+   "share_arrived_in_last_10_min": 0.27
+  },
+  {
+   "price": 7689.0,
+   "bought": 555,
+   "sold": 516,
+   "delta": 39,
+   "session_volume_at_this_price": 3242,
+   "share_arrived_in_last_10_min": 0.33
+  },
+  {
+   "price": 7688.75,
+   "bought": 371,
+   "sold": 487,
+   "delta": -116,
+   "session_volume_at_this_price": 2983,
+   "share_arrived_in_last_10_min": 0.29
+  },
+  {
+   "price": 7688.5,
+   "bought": 231,
+   "sold": 388,
+   "delta": -157,
+   "session_volume_at_this_price": 2539,
+   "share_arrived_in_last_10_min": 0.24
+  },
+  {
+   "price": 7688.25,
+   "bought": 408,
+   "sold": 428,
+   "delta": -20,
+   "session_volume_at_this_price": 2574,
+   "share_arrived_in_last_10_min": 0.32
+  },
+  {
+   "price": 7688.0,
+   "bought": 122,
+   "sold": 234,
+   "delta": -112,
+   "session_volume_at_this_price": 2076,
+   "share_arrived_in_last_10_min": 0.17
+  },
+  {
+   "price": 7687.75,
+   "bought": 7,
+   "sold": 68,
+   "delta": -61,
+   "session_volume_at_this_price": 1762,
+   "share_arrived_in_last_10_min": 0.04
+  },
+  {
+   "price": 7687.5,
+   "bought": 12,
+   "sold": 87,
+   "delta": -75,
+   "session_volume_at_this_price": 1526,
+   "share_arrived_in_last_10_min": 0.06
+  },
+  {
+   "price": 7687.25,
+   "bought": 193,
+   "sold": 205,
+   "delta": -12,
+   "session_volume_at_this_price": 2182,
+   "share_arrived_in_last_10_min": 0.18
+  },
+  {
+   "price": 7687.0,
+   "bought": 333,
+   "sold": 346,
+   "delta": -13,
+   "session_volume_at_this_price": 2747,
+   "share_arrived_in_last_10_min": 0.25
+  },
+  {
+   "price": 7686.75,
+   "bought": 990,
+   "sold": 1062,
+   "delta": -72,
+   "session_volume_at_this_price": 3937,
+   "share_arrived_in_last_10_min": 0.52
+  },
+  {
+   "price": 7686.5,
+   "bought": 601,
+   "sold": 807,
+   "delta": -206,
+   "session_volume_at_this_price": 2905,
+   "share_arrived_in_last_10_min": 0.48
+  },
+  {
+   "price": 7686.25,
+   "bought": 292,
+   "sold": 390,
+   "delta": -98,
+   "session_volume_at_this_price": 1699,
+   "share_arrived_in_last_10_min": 0.4
+  },
+  {
+   "price": 7686.0,
+   "bought": 92,
+   "sold": 163,
+   "delta": -71,
+   "session_volume_at_this_price": 1492,
+   "share_arrived_in_last_10_min": 0.17
+  },
+  {
+   "price": 7685.75,
+   "bought": 71,
+   "sold": 131,
+   "delta": -60,
+   "session_volume_at_this_price": 1557,
+   "share_arrived_in_last_10_min": 0.13
+  },
+  {
+   "price": 7685.5,
+   "bought": 86,
+   "sold": 180,
+   "delta": -94,
+   "session_volume_at_this_price": 1639,
+   "share_arrived_in_last_10_min": 0.16
+  },
+  {
+   "price": 7685.25,
+   "bought": 87,
+   "sold": 81,
+   "delta": 6,
+   "session_volume_at_this_price": 979,
+   "share_arrived_in_last_10_min": 0.17
+  },
+  {
+   "price": 7685.0,
+   "bought": 95,
+   "sold": 146,
+   "delta": -51,
+   "session_volume_at_this_price": 1471,
+   "share_arrived_in_last_10_min": 0.16
+  },
+  {
+   "price": 7684.75,
+   "bought": 3,
+   "sold": 47,
+   "delta": -44,
+   "session_volume_at_this_price": 1163,
+   "share_arrived_in_last_10_min": 0.04
+  },
+  {
+   "price": 7684.5,
+   "bought": 1,
+   "sold": 24,
+   "delta": -23,
+   "session_volume_at_this_price": 1389,
+   "share_arrived_in_last_10_min": 0.02
+  },
+  {
+   "price": 7684.25,
+   "bought": 86,
+   "sold": 130,
+   "delta": -44,
+   "session_volume_at_this_price": 677,
+   "share_arrived_in_last_10_min": 0.32
+  },
+  {
+   "price": 7684.0,
+   "bought": 189,
+   "sold": 135,
+   "delta": 54,
+   "session_volume_at_this_price": 764,
+   "share_arrived_in_last_10_min": 0.42
+  },
+  {
+   "price": 7683.75,
+   "bought": 516,
+   "sold": 472,
+   "delta": 44,
+   "session_volume_at_this_price": 1417,
+   "share_arrived_in_last_10_min": 0.7
+  },
+  {
+   "price": 7683.5,
+   "bought": 684,
+   "sold": 711,
+   "delta": -27,
+   "session_volume_at_this_price": 2339,
+   "share_arrived_in_last_10_min": 0.6
+  },
+  {
+   "price": 7683.25,
+   "bought": 384,
+   "sold": 443,
+   "delta": -59,
+   "session_volume_at_this_price": 2146,
+   "share_arrived_in_last_10_min": 0.39
+  },
+  {
+   "price": 7683.0,
+   "bought": 431,
+   "sold": 519,
+   "delta": -88,
+   "session_volume_at_this_price": 2360,
+   "share_arrived_in_last_10_min": 0.4
+  },
+  {
+   "price": 7682.75,
+   "bought": 769,
+   "sold": 821,
+   "delta": -52,
+   "session_volume_at_this_price": 3214,
+   "share_arrived_in_last_10_min": 0.49
+  },
+  {
+   "price": 7682.5,
+   "bought": 949,
+   "sold": 1035,
+   "delta": -86,
+   "session_volume_at_this_price": 3385,
+   "share_arrived_in_last_10_min": 0.59
+  },
+  {
+   "price": 7682.25,
+   "bought": 734,
+   "sold": 770,
+   "delta": -36,
+   "session_volume_at_this_price": 2844,
+   "share_arrived_in_last_10_min": 0.53
+  },
+  {
+   "price": 7682.0,
+   "bought": 493,
+   "sold": 724,
+   "delta": -231,
+   "session_volume_at_this_price": 2902,
+   "share_arrived_in_last_10_min": 0.42
+  },
+  {
+   "price": 7681.75,
+   "bought": 277,
+   "sold": 460,
+   "delta": -183,
+   "session_volume_at_this_price": 2221,
+   "share_arrived_in_last_10_min": 0.33
+  },
+  {
+   "price": 7681.5,
+   "bought": 610,
+   "sold": 554,
+   "delta": 56,
+   "session_volume_at_this_price": 2189,
+   "share_arrived_in_last_10_min": 0.53
+  },
+  {
+   "price": 7681.25,
+   "bought": 313,
+   "sold": 499,
+   "delta": -186,
+   "session_volume_at_this_price": 1854,
+   "share_arrived_in_last_10_min": 0.44
+  },
+  {
+   "price": 7681.0,
+   "bought": 186,
+   "sold": 217,
+   "delta": -31,
+   "session_volume_at_this_price": 1574,
+   "share_arrived_in_last_10_min": 0.26
+  },
+  {
+   "price": 7680.75,
+   "bought": 37,
+   "sold": 59,
+   "delta": -22,
+   "session_volume_at_this_price": 1702,
+   "share_arrived_in_last_10_min": 0.06
+  },
+  {
+   "price": 7680.5,
+   "bought": 21,
+   "sold": 89,
+   "delta": -68,
+   "session_volume_at_this_price": 1356,
+   "share_arrived_in_last_10_min": 0.08
+  }
+ ]
+}
