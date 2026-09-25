@@ -41,3 +41,5 @@ dossiers/*/chunks/
 dossiers/*/crops/
 dossiers/*/pages-*/
 dossiers/*/*.upload.json
+# private audio/document transcripts; already-tracked video transcripts stay tracked
+dossiers/*/transcript.json

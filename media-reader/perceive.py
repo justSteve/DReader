@@ -6,6 +6,7 @@ _root = str(Path(__file__).resolve().parent.parent)  # dreader_core, after this 
 if _root not in sys.path:
     sys.path.insert(1, _root)
 import json
+import re
 import subprocess
 from datetime import datetime
 
@@ -26,11 +27,75 @@ def window_label(start, end, crop):
     return " [full]"
 
 
+_CLIP_TS = re.compile(r"^\d+(?::\d+){0,2}$")
+
+
+def clip_seconds(t):
+    """Seconds for a clip-relative 'SS', 'MM:SS' or 'H:MM:SS' (or a whole
+    number); None for anything else ("about 0:05", "1:10-1:20", 5.5)."""
+    if isinstance(t, bool):
+        return None
+    if isinstance(t, int):
+        return t if t >= 0 else None
+    if isinstance(t, str) and _CLIP_TS.match(t.strip()):
+        return parse_ts(t.strip())
+    return None
+
+
+def _note(payload, text):
+    u = payload.get("uncertainties")
+    if not isinstance(u, list):
+        u = [u] if u else []
+        payload["uncertainties"] = u
+    u.append(text)
+
+
+def rebase_items(payload, key, offset, missing_as_zero=False):
+    """Shift payload[key][*]["t"] from clip time to file time, in place.
+    Never raises: an item or t it cannot read stays as the model wrote it and
+    is named in payload["uncertainties"]. The raw reply is archived first."""
+    if not isinstance(payload, dict) or not isinstance(payload.get(key), list):
+        return
+    for c in payload[key]:
+        if not isinstance(c, dict):
+            _note(payload, f"{key[:-1]} {c!r} not re-based (not an object; offset {offset}s)")
+            continue
+        t = c.get("t")
+        if t is None or t == "":
+            if missing_as_zero:
+                c["t"] = fmt_ts(offset)
+            continue
+        sec = clip_seconds(t)
+        if sec is None:
+            _note(payload, f"t {t!r} not re-based (clip-relative; offset {offset}s)")
+        else:
+            c["t"] = fmt_ts(sec + offset)
+
+
 def rebase_claims(payload, offset):
     """A local cut starts at 0; the card speaks in file time."""
-    for c in payload.get("claims") or []:
-        if c.get("t"):
-            c["t"] = fmt_ts(parse_ts(c["t"]) + offset)
+    rebase_items(payload, "claims", offset)
+
+
+def _order(item):
+    """Sort key for mixed re-based / un-rebasable items: unreadable last."""
+    sec = clip_seconds(item.get("t")) if isinstance(item, dict) else None
+    return (sec is None, sec or 0)
+
+
+def audio_window(src, start, end, who):
+    """(a, b) seconds for a local audio cut, clamped to the file's duration
+    when ffprobe knows it."""
+    total = probe_duration(src.path)
+    a = parse_ts(start) if start else 0
+    b = parse_ts(end) if end else total
+    if total:
+        if a >= total:
+            sys.exit(f"{who}: --start {fmt_ts(a)} is at or past the end ({fmt_ts(total)})")
+        b = min(b, total)
+    elif not b:
+        sys.exit(f"{who}: give an --end after --start (duration unknown)")
+    return a, b, total
 
 
 def cmd_ask(args):
@@ -54,10 +119,9 @@ def cmd_ask(args):
     # Audio windows are cut locally: VideoMetadata offsets apply to video only.
     offset = 0
     if src.kind == "audio" and (args.start or args.end):
-        a = parse_ts(args.start) if args.start else 0
-        b = parse_ts(args.end) if args.end else probe_duration(src.path)
-        if not b or b <= a:
-            sys.exit("ask: give an --end after --start (duration unknown)")
+        a, b, _ = audio_window(src, args.start, args.end, "ask")
+        if b <= a:
+            sys.exit("ask: give an --end after --start")
         cut, offset = cuts.cut_audio(src.path, a, b, dossier_dir(src.id) / "chunks"), a
     creds.require_key("mread.py")
     client = genai.Client()
@@ -83,8 +147,6 @@ def cmd_ask(args):
 
     text, empty_diag = gemini.response_text(resp, answered_model)
     payload = gemini.parse_json_reply(text, empty_diag, ASK_SHAPE)
-    if offset:
-        rebase_claims(payload, offset)
 
     usage = getattr(resp, "usage_metadata", None)
     ts, run_dir = runs.new_run_dir(dossier_dir(src.id))
@@ -100,7 +162,12 @@ def cmd_ask(args):
         "prompt_tokens": getattr(usage, "prompt_token_count", None),
         "output_tokens": getattr(usage, "candidates_token_count", None),
     }, indent=2))
+    # The raw reply is paid for: archive it before anything can go wrong.
     (run_dir / "response.json").write_text(json.dumps(payload, indent=2))
+    if offset:
+        payload = json.loads(json.dumps(payload))
+        rebase_claims(payload, offset)
+        (run_dir / "response.rebased.json").write_text(json.dumps(payload, indent=2))
 
     window = window_label(args.start, args.end, args.crop if crop_box else None)
     q_short = (args.question[:80] + "…") if len(args.question) > 80 else args.question
@@ -278,13 +345,11 @@ def transcribe_audio(args, src):
 
     creds.require_key("mread.py")
     d = dossier_dir(src.id)
-    total = probe_duration(src.path)
-    start = parse_ts(args.start) if args.start else 0
-    end = parse_ts(args.end) if args.end else total
-    if not end:
-        sys.exit("could not determine the file's duration; give --end")
+    start, end, total = audio_window(src, args.start, args.end, "transcribe")
     chunk = int(args.chunk * 60)
     windows = [(a, min(a + chunk, end)) for a in range(start, end, chunk)]
+    if not windows:
+        sys.exit("transcribe: empty window (--start at or after --end)")
     client = genai.Client()
     # run_ids, not runs: runs is the dreader_core module.
     segments, uncertainties, run_ids, models, tok_in, tok_out = [], [], [], set(), 0, 0
@@ -304,18 +369,22 @@ def transcribe_audio(args, src):
         (run_dir / "request.json").write_text(json.dumps({
             "kind": "audio", "file": str(src.path), "mode": "transcribe",
             "model_requested": args.model, "model_answered": answered,
-            "start": fmt_ts(a), "end": fmt_ts(b),
+            "start": fmt_ts(a), "end": fmt_ts(b), "offset_s": a,
             "prompt_tokens": getattr(usage, "prompt_token_count", None),
             "output_tokens": getattr(usage, "candidates_token_count", None),
         }, indent=2))
+        # Raw reply archived before re-basing: a paid reply is never lost.
         (run_dir / "response.json").write_text(json.dumps(payload, indent=2))
         run_ids.append(ts)
         tok_in += getattr(usage, "prompt_token_count", 0) or 0
         tok_out += getattr(usage, "candidates_token_count", 0) or 0
-        for seg in payload.get("segments") or []:
-            seg["t"] = fmt_ts(parse_ts(seg.get("t") or "0") + a)
-            segments.append(seg)
-        for u in payload.get("uncertainties") or []:
+        if not isinstance(payload, dict):
+            payload = {"segments": [], "uncertainties": [
+                f"reply was not an object; see runs/{ts}/"]}
+        rebase_items(payload, "segments", a, missing_as_zero=True)
+        segments += [s for s in payload.get("segments") or [] if isinstance(s, dict)]
+        u_list = payload.get("uncertainties")
+        for u in (u_list if isinstance(u_list, list) else [u_list] if u_list else []):
             uncertainties.append(f"[{fmt_ts(a)}-{fmt_ts(b)}] {u}")
         if payload.get("raw_unparsed"):
             uncertainties.append(f"[{fmt_ts(a)}-{fmt_ts(b)}] reply not JSON; see runs/{ts}/")
@@ -324,10 +393,12 @@ def transcribe_audio(args, src):
                             f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
                             f"{getattr(usage, 'candidates_token_count', '?')}) — "
                             f"transcribe — runs/{ts}/")
-    segments.sort(key=lambda x: parse_ts(x["t"]))
+    segments.sort(key=_order)
     (d / "transcript.json").write_text(json.dumps({
         "id": src.id, "kind": "audio", "file": str(src.path), "duration_s": total,
         "window": [fmt_ts(start), fmt_ts(end)], "chunk_s": chunk,
+        "speaker_labels": "per chunk — Speaker N in one chunk is not "
+                          "necessarily Speaker N in another",
         "models": sorted(models), "prompt_tokens": tok_in, "output_tokens": tok_out,
         "runs": run_ids, "segments": segments, "uncertainties": uncertainties,
         "generated": datetime.now().isoformat(timespec="seconds"),
@@ -348,14 +419,36 @@ def cmd_fetch(args):
     if not sources.LOCAL_ID_RE.match(args.id or ""):
         sys.exit("fetch needs --id: a slug naming dossiers/<id>/")
     d = dossier_dir(args.id)
+    rec = d / "source.json"
+    if rec.exists():
+        old = json.loads(rec.read_text())
+        old_kind = sources.KIND_BY_EXT.get(
+            Path(old.get("path", "")).suffix.lower(), ("unknown",))[0]
+        if old_kind != "audio":
+            sys.exit(f"fetch: --id {args.id} already holds a {old_kind} "
+                     f"({old.get('path')}); pick another --id")
+        if old.get("origin") != args.url:
+            for f in d.glob("source.*"):
+                if f.name != "source.json":
+                    f.unlink()
+            print(f"[{args.id}: replacing audio from {old.get('origin')} with {args.url}]",
+                  file=sys.stderr)
     ytdlp = Path(sys.executable).with_name("yt-dlp")
     ytdlp = str(ytdlp) if ytdlp.exists() else "yt-dlp"
-    subprocess.run([ytdlp, "-x", "--audio-format", "m4a",
-                    "-o", str(d / "source.%(ext)s"), args.url], check=True)
-    got = sorted(d.glob("source.*"))
-    got = [p for p in got if p.suffix != ".json"]
-    if not got:
-        sys.exit(f"yt-dlp produced no audio in {d}/")
-    src = resolve_source(_ap.Namespace(file=str(got[0]), id=args.id, url=None,
+    try:
+        r = subprocess.run([ytdlp, "-x", "--audio-format", "m4a", "--force-overwrites",
+                            "--print", "after_move:filepath",
+                            "-o", str(d / "source.%(ext)s"), args.url],
+                           check=True, capture_output=True, text=True)
+    except FileNotFoundError:
+        sys.exit(f"fetch: yt-dlp not found ({ytdlp})")
+    except subprocess.CalledProcessError as e:
+        tail = "\n".join((e.stderr or "").strip().splitlines()[-5:])
+        sys.exit(f"fetch: yt-dlp failed (exit {e.returncode}):\n{tail}")
+    printed = [ln.strip() for ln in (r.stdout or "").splitlines() if ln.strip()]
+    got = Path(printed[-1]) if printed else None
+    if not got or not got.is_file():
+        sys.exit(f"fetch: yt-dlp reported no audio file in {d}/")
+    src = resolve_source(_ap.Namespace(file=str(got), id=args.id, url=None,
                                        origin=args.url))
-    print(f"{src.id}: {src.kind} {got[0].name} — card {src.card}")
+    print(f"{src.id}: {src.kind} {got.name} — card {src.card}")

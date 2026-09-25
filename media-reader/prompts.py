@@ -129,7 +129,8 @@ prose outside the JSON) with this exact shape:
   ],
   "uncertainties": ["anything you could not hear clearly"]
 }
-""" + _CLAIMS_TAIL
+""" + _CLAIMS_TAIL.replace(
+    "Rules:\n", "Rules:\n- Write numbers as digits (4302, not four three oh two).\n", 1)
 
 AUDIO_TRANSCRIBE_PROMPT = """Transcribe this audio. Produce JSON ONLY (no fences, no prose
 outside it) with this exact shape:
@@ -146,8 +147,9 @@ Rules:
 - Timestamps are measured from the START of the audio you were given.
 - Speech is VERBATIM: keep phrasing, numbers and hedges; drop only pure stutters.
 - Cover the whole recording with no gaps: consecutive segments should abut.
-- Keep speaker labels consistent across the recording.
+- Name a speaker when the audio states the name; otherwise label Speaker 1, Speaker 2 within this recording.
 - Transcribe numbers exactly as spoken; never round.
+- Write numbers as digits (4302, not four three oh two).
 """
 
 PROMPT_FOR_KIND = {
