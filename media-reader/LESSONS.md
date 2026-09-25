@@ -1064,3 +1064,31 @@ and position-tool or ticket numbers. One frame of the header plus one of the
 tool usually settles them all. Run-to-run agreement does not count, and
 neither does internal arithmetic, because derived triples close by
 construction.
+
+## 2026-09-25 — The misreads go past chart identity: chat-panel text, dialog values, UI chrome
+
+**Status: suspected** (one video, `7tfsIthJ5s4`, LuxAlgo Quant; dr-2om).
+
+The 2026-09-25 confabulation rule covers chart-identity fields. On a UI demo,
+the same YouTube-URL misreading hit three other kinds of on-screen text, and
+none of them carried an uncertainty flag:
+
+- **Numbers inside an assistant's chat panel.** Several were swapped for
+  plausible neighbours, labelled `onscreen_text` with a `verbatim` field.
+  Examples: neutral band 76,420–76,480 came back as 76,420–76,460; "battle"
+  76,350–76,400 came back as 76,400–76,420; target 76,600–76,800 came back as
+  76,500–76,520. Wording also drifted: "corrective recovery" came back as
+  "consolidation under pressure".
+- **Settings-dialog and list values.** Stop buffer 0.35 came back as 0.25, and
+  R:R 1.2 as 1:2. Break buffer 0.1 came back as 0.5.
+- **UI chrome that is not there.** An `Upgrade` button was reported where the
+  frame shows `Journal` / `Panels`. One timeframe came back as `30m` where the
+  frame reads `5m`.
+
+The spoken narration was accurate throughout, as on the three earlier
+specimens.
+
+**Working rule:** on YouTube-URL ingestion, treat any small on-screen text
+Gemini quotes as `verbatim` as unread until framed, not just chart headers.
+That covers sidebars, dialogs and chat replies. Low-res pre-sampling makes
+10–12 px text guessable rather than legible, and Gemini guesses fluently.

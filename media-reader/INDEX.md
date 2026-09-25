@@ -16,7 +16,7 @@ _`#` is the video's position in its playlist (not its episode number); `Runs` co
 | [AlgoTrade Pro](#algotrade-pro) | Trading | 1 | 2026-09-04 | 8m | 0 |
 | [Callstack](#callstack) | AgentManagement | 1 | 2026-09-22 | 21m | 1 |
 | [fvid](#fvid) | Trading | 1 | 2026-09-05 | 7m | 0 |
-| [LuxAlgo](#luxalgo) | Trading | 1 | 2026-09-21 | 8m | 1 |
+| [LuxAlgo](#luxalgo) | Trading | 1 | 2026-09-21 | 8m | 0 |
 | [tastylive](#tastylive) | Trading | 1 | 2026-08-26 | 11m | 0 |
 | [Trading Notes](#trading-notes) | Trading | 1 | 2026-09-04 | 16m | 0 |
 
@@ -142,11 +142,11 @@ _`#` is the video's position in its playlist (not its episode number); `Runs` co
 
 ## LuxAlgo
 
-1 video · 2026-09-21 · 8m total · 1 card(s) open
+1 video · 2026-09-21 · 8m total · all cards closed
 
 | # | Video | Title | Uploaded | Len | Status | Runs |
 |---:|---|---|---|---:|---|---:|
-| — | [`7tfsIthJ5s4`](dossiers/7tfsIthJ5s4/CARD.md) | Quant Can Now Control Your Charts | 2026-09-21 | 7:57 | open | 0 |
+| — | [`7tfsIthJ5s4`](dossiers/7tfsIthJ5s4/CARD.md) | Quant Can Now Control Your Charts | 2026-09-21 | 7:57 | closed | 6 |
 
 ## tastylive
 
