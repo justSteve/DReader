@@ -96,7 +96,9 @@ curated card sections ONLY, never `runs/`. Fields the card format cannot
 supply (`id`, `kind`, `attachment`) are emitted as null with the reason
 stated in the output's `contract` block; never synthesize them — a made-up
 id looks stable across card revisions without being so. The export is
-generated on demand and not committed.
+generated on demand and not committed. Export schema v2 (2026-09-25): card
+paths are `dossiers/<id>/CARD.md`; the envelope's `contract.changes_from_v1`
+says so.
 
 ## Interrogation doctrine
 

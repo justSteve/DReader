@@ -270,7 +270,7 @@ function arrowOut() { return '<svg width="12" height="12" viewBox="0 0 12 12" fi
 const CORR_RE = /corrected 20\d\d-\d\d-\d\d|\bAMENDED\b/gi;
 
 function hrefRoute(h, self) {
-  let m = h.match(/^(?:\.\.\/)+([A-Za-z0-9_-]{6,})\/(?:CARD|READ)\.md(?:#.*)?$/) || h.match(/^videos\/([A-Za-z0-9_-]+)\//);
+  let m = h.match(/^(?:\.\.\/)+([A-Za-z0-9_-]{6,})\/(?:CARD|READ)\.md(?:#.*)?$/) || h.match(/^(?:\.\.\/)*dossiers\/([A-Za-z0-9_-]+)\//);
   if (m) return byId[m[1]] ? "#/v/" + m[1] : null;
   m = h.match(/^(?:\.\.\/)*playlists\/(.+\.md)$/);
   if (m) return byDoc[m[1]] ? "#/d/" + m[1] : null;

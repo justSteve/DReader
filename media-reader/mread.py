@@ -1263,7 +1263,7 @@ function slug(s) {
 
 /* repo-relative links become routes in this page */
 function hrefRoute(h) {
-  let m = h.match(/^videos\/([A-Za-z0-9_-]+)\//);
+  let m = h.match(/^(?:\.\.\/)*dossiers\/([A-Za-z0-9_-]+)\//);
   if (m) return byKey["v:" + m[1]] ? "#/v/" + m[1] : null;
   m = h.match(/^playlists\/(.+\.md)$/);
   if (m) return byKey["p:" + m[1]] ? "#/p/" + m[1] : null;
