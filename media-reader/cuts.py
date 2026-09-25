@@ -1,4 +1,5 @@
 """Local ffmpeg cuts: the zoom step for kinds Gemini cannot window itself."""
+import hashlib
 import os
 import re
 import subprocess
@@ -15,12 +16,13 @@ def parse_box(s):
 def crop_command(src, box, out_dir):
     x, y, w, h = box
     out = out_dir / f"crop-{x}-{y}-{w}x{h}.png"
-    # format=rgb24 before crop: on a 4:2:0 source (most screenshots/JPEGs),
+    # format=rgba before crop: on a 4:2:0 source (most screenshots/JPEGs),
     # cropping straight off the chroma-subsampled planes silently rounds an
-    # odd width/height down to the nearest even number. Converting first
-    # gives an exact crop at any size.
+    # odd width/height down to the nearest even number. rgb24 fixed that but
+    # flattened any transparent PNG to opaque black; rgba fixes the rounding
+    # the same way while keeping the alpha channel intact.
     return ["ffmpeg", "-y", "-v", "error", "-i", str(src),
-            "-vf", f"format=rgb24,crop={w}:{h}:{x}:{y}", "-frames:v", "1", str(out)], out
+            "-vf", f"format=rgba,crop={w}:{h}:{x}:{y}", "-frames:v", "1", str(out)], out
 
 
 def crop(src, box, out_dir):
@@ -42,7 +44,8 @@ def audio_cut_command(src, a, b, out_dir):
     # so FLAC chunks are re-encoded instead.
     suffix = src.suffix.lower()
     st = src.stat()
-    tag = f"{st.st_size:x}{int(st.st_mtime):x}"[-10:]
+    tag = hashlib.sha1(
+        f"{st.st_size}:{st.st_mtime_ns}:{src.resolve()}".encode()).hexdigest()[:10]
     out = out_dir / f"chunk-{a}-{b}-{tag}{suffix}"
     codec = ["-c:a", "flac"] if suffix == ".flac" else ["-c", "copy"]
     return ["ffmpeg", "-y", "-v", "error", "-ss", str(a), "-t", str(b - a),

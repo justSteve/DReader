@@ -1,11 +1,19 @@
 from pathlib import Path
 
+import hashlib
 import subprocess
 
 import pytest
 
 import cuts
 import perceive
+
+
+def pix_fmt(path):
+    return subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "stream=pix_fmt", "-of", "csv=p=0", str(path)],
+        capture_output=True, text=True, check=True).stdout.strip()
 
 
 def test_parse_box():
@@ -21,7 +29,7 @@ def test_parse_box_rejects(bad):
 def test_crop_command_and_output_name(tmp_path):
     cmd, out = cuts.crop_command(tmp_path / "shot.png", (10, 20, 300, 200), tmp_path / "crops")
     assert out == tmp_path / "crops" / "crop-10-20-300x200.png"
-    assert cmd[cmd.index("-vf") + 1] == "format=rgb24,crop=300:200:10:20"
+    assert cmd[cmd.index("-vf") + 1] == "format=rgba,crop=300:200:10:20"
 
 
 def test_audio_cut_command_uses_a_duration_not_an_end(tmp_path):
@@ -43,6 +51,16 @@ def test_audio_cut_command_chunk_name_is_keyed_to_the_source(tmp_path):
     _, out_a = cuts.audio_cut_command(a, 0, 60, tmp_path / "chunks")
     _, out_b = cuts.audio_cut_command(b, 0, 60, tmp_path / "chunks")
     assert out_a != out_b
+
+
+def test_audio_cut_command_chunk_tag_hashes_size_mtime_and_path(tmp_path):
+    src = tmp_path / "ep.m4a"
+    src.write_bytes(b"hello world")
+    st = src.stat()
+    expected = hashlib.sha1(
+        f"{st.st_size}:{st.st_mtime_ns}:{src.resolve()}".encode()).hexdigest()[:10]
+    _, out = cuts.audio_cut_command(src, 0, 60, tmp_path / "chunks")
+    assert out.name == f"chunk-0-60-{expected}.m4a"
 
 
 def test_audio_cut_command_reencodes_flac(tmp_path):
@@ -77,6 +95,22 @@ def test_crop_handles_odd_sizes_on_a_chroma_subsampled_jpeg(tmp_path):
                     "-frames:v", "1", "-pix_fmt", "yuvj420p", str(src)], check=True)
     out = cuts.crop(src, (13, 3, 101, 11), tmp_path / "crops")
     assert cuts.image_size(out) == (101, 11)
+
+
+def test_crop_keeps_alpha_on_a_transparent_png(tmp_path):
+    # A 64x64 fully-transparent canvas with a 16x16 opaque black square
+    # drawn at (24,24). format=rgb24 would flatten the transparent area to
+    # solid black; format=rgba must keep it transparent.
+    src = tmp_path / "shot.png"
+    subprocess.run(["ffmpeg", "-v", "error", "-f", "lavfi",
+                    "-i", "color=c=black@0.0:s=64x64",
+                    "-vf", "format=rgba,drawbox=x=24:y=24:w=16:h=16:color=black@1.0:t=fill",
+                    "-frames:v", "1", str(src)], check=True)
+    assert pix_fmt(src) == "rgba"
+    over_square = cuts.crop(src, (24, 24, 16, 16), tmp_path / "crops")
+    over_empty = cuts.crop(src, (0, 0, 16, 16), tmp_path / "crops")
+    assert pix_fmt(over_square) == "rgba"
+    assert pix_fmt(over_empty) == "rgba"
 
 
 def test_cut_audio_writes_atomically_and_cleans_up_on_failure(tmp_path, monkeypatch):
