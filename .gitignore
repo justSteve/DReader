@@ -28,3 +28,7 @@ build/
 
 # Beads / Dolt files (added by bd init)
 .beads-credential-key
+
+# dr-dqm refactor oracle — derived outputs, regenerated on demand
+.refactor-baseline/
+.refactor-now/
