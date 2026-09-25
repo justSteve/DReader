@@ -267,6 +267,7 @@ def build():
             "url": url,
             "title": hdr.get("title"),
             "channel": hdr.get("channel"),
+            "category": hdr.get("category"),
             "channel_key": (hdr.get("channel") or "").split("—")[0].split("(")[0].strip() or None,
             "uploaded": hdr.get("uploaded"),
             "duration": hdr.get("duration"),

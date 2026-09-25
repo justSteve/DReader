@@ -2,6 +2,7 @@
 
 - **Title:** Heavy Selling / Absorption / Trapped Buyers — Bookmap replay, 07-Jun-2023
 - **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 5
+- **Category:** Trading
 - **Playlist:** course-investitrade-orderflow #5
 - **Duration:** 17:45
 - **Bead:** dr-22w.2

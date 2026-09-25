@@ -2,6 +2,7 @@
 
 - **Title:** Strong Buying / Selling Absorption — 37-minute scenario walk-through
 - **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 2
+- **Category:** Trading
 - **Playlist:** course-investitrade-orderflow #2
 - **Duration:** 36:45
 - **Bead:** dr-22w.2

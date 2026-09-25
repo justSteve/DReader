@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=jXR1afMy-3o
 - **Title:** PbD: The World's BEST trading strategy (explained in detail)
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
+- **Category:** Trading
 - **Uploaded:** 2026-01-23 · **Duration:** 12:08 · **Views:** 71,273
 - **First analyzed:** 2026-09-06
 - **Status:** closed

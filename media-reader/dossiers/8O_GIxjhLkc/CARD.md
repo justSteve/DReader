@@ -4,6 +4,7 @@
 - **First analyzed:** 2026-09-07
 - **Title:** Textbook ES Short Using Smart Money & Order Flow
 - **Channel:** Trader Dale — presenter introduces himself as "Dan from Funded Trader Academy" (spoken 00:03, two runs; unverified)
+- **Category:** Trading
 - **Uploaded:** 2026-08-19
 - **Duration:** 11:44 (704 s)
 - **Views:** 3,843

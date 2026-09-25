@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=IUWvHVout94
 - **Title:** Read Liquidity Like a Pro: The 3 Step Strategy That Actually Works
 - **Channel:** Trading Notes (@TradingNotes1, 108K subs) — NOT Trade Brigade, see Lessons
+- **Category:** Trading
 - **Uploaded:** 2026-09-04 · **Duration:** 16:08 (968 s) · **Views:** 5,885
 - **First analyzed:** 2026-09-05
 - **Status:** closed

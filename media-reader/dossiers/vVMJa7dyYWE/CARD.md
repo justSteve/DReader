@@ -4,6 +4,7 @@
 - **First analyzed:** 2026-09-07
 - **Title:** The ONLY Volume Profile Trading Guide You'll Ever Need!
 - **Channel:** Trader Dale (trader-dale.com; TradingView "Trader_Dale")
+- **Category:** Trading
 - **Uploaded:** 2025-01-24
 - **Duration:** 38:34 (2314 s)
 - **Views:** 494,023

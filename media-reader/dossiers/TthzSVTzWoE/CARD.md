@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=TthzSVTzWoE
 - **Title:** Market Mechanics Ep 13: Liquidity Concepts & Inducements
 - **Channel:** The Trading Geek (@TheTradingGeek) — Brad Goh, "1% Club" mentorship / EdgeFlo
+- **Category:** Trading
 - **Uploaded:** 2026-05-28 · **Duration:** 53:52 (3232 s) · **Views:** 263,535
 - **First analyzed:** 2026-09-16
 - **Status:** closed

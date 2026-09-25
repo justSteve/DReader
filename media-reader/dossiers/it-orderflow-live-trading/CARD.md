@@ -2,6 +2,7 @@
 
 - **Title:** Live trading — pre-market plan on the S&P 30-minute chart and the session that followed (ES 6/1/23, thinkorswim)
 - **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 8
+- **Category:** Trading
 - **Playlist:** course-investitrade-orderflow #8
 - **Duration:** 15:13
 - **Bead:** dr-22w.2

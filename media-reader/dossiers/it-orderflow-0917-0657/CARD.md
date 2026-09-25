@@ -2,6 +2,7 @@
 
 - **Title:** Strong Buying/Bids & Acceptance Higher — 15m demand at 4266.5, out-of-balance breakout
 - **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 3
+- **Category:** Trading
 - **Playlist:** course-investitrade-orderflow #3
 - **Duration:** 19:13
 - **Bead:** dr-22w.2

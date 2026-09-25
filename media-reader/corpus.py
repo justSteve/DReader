@@ -125,6 +125,7 @@ def collect_videos():
             "kind": f.get("Kind") or ("youtube" if (f.get("URL") or "").startswith("http") else "video"),
             "title": f.get("Title", ""),
             "channel": f.get("Channel", ""),
+            "category": f.get("Category", ""),
             "author": author_of(f.get("Channel", "")),
             "uploaded": f.get("Uploaded", ""),
             "duration": (f.get("Duration", "") or "").split(" (")[0],
@@ -167,15 +168,16 @@ def render_index(vids):
     L.append("_`#` is the video's position in its playlist (not its episode "
              "number); `Runs` counts archived `ask` calls in the card's run log._")
     L.append("")
-    L.append("| Channel | Videos | Uploads | Runtime | Open cards |")
-    L.append("|---|---:|---|---:|---:|")
+    L.append("| Channel | Category | Videos | Uploads | Runtime | Open cards |")
+    L.append("|---|---|---:|---|---:|---:|")
     for a in order:
         g = groups[a]
         dates = sorted(v["uploaded"] for v in g if v["uploaded"])
         span = (dates[0] if len(dates) == 1
                 else f"{dates[0]} → {dates[-1]}") if dates else "—"
         n_open = sum(1 for v in g if v["status"] != "closed")
-        L.append(f"| [{md_cell(a)}](#{slug(a)}) | {len(g)} | {span} | "
+        cats = ", ".join(sorted({v["category"] for v in g if v["category"]})) or "—"
+        L.append(f"| [{md_cell(a)}](#{slug(a)}) | {md_cell(cats)} | {len(g)} | {span} | "
                  f"{fmt_hm(sum(v['seconds'] for v in g))} | {n_open} |")
     L.append("")
 
@@ -404,7 +406,7 @@ def build_export(vids):
             continue
         card_rel = f"dossiers/{v['id']}/CARD.md"
         videos.append({k: v[k] for k in (
-            "id", "title", "channel", "author", "uploaded", "duration",
+            "id", "title", "channel", "category", "author", "uploaded", "duration",
             "seconds", "status", "playlist_id", "playlist_pos", "runs")}
             | {"card_path": card_rel})
         text = (sources.DOSSIERS_DIR / v["id"] / "CARD.md").read_text(errors="replace")

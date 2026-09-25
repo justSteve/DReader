@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=5qBo04SMUFc
 - **Title:** How To Use Support and Resistance the RIGHT Way (title card: "WHY I BELIEVE SUPPORT AND RESISTANCE IS B*LLSHIT")
 - **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 5 (handle `carminerosato`; no brand wordmark on screen, but he **names his community aloud** at 17:25: *"I talk about this a lot in the invested trade Community"* — so Gemini's "InvestiTrade" was heard, not invented)
+- **Category:** Trading
 - **Uploaded:** 2024-11-08 · **Duration:** 29:21 (1761 s) · **Views:** 80,202
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #6 · bead dr-08s.5
 - **First analyzed:** 2026-08-28

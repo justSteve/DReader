@@ -2,6 +2,7 @@
 
 - **Title:** Aggressive Sellers off Key Level, part 2 — long off the 4290 tape support
 - **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 7
+- **Category:** Trading
 - **Playlist:** course-investitrade-orderflow #7
 - **Duration:** 14:29
 - **Bead:** dr-22w.2

@@ -2,6 +2,7 @@
 
 - **Title:** Concepts/Terms To Understand — the course's foundation deck (market is an auction, four scenarios: strong buying, heavy selling, absorption, trapped participants, acceptance)
 - **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 1
+- **Category:** Trading
 - **Playlist:** course-investitrade-orderflow #1
 - **Duration:** 35:43
 - **Bead:** dr-22w.2

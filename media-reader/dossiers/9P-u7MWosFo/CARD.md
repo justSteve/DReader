@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=9P-u7MWosFo
 - **Title:** Market Mechanics Ep 9: Fair Value Gaps / Imbalance
 - **Channel:** The Trading Geek (@TheTradingGeek) — Brad Goh, "1% Club" mentorship / EdgeFlo
+- **Category:** Trading
 - **Uploaded:** 2026-05-24 · **Duration:** 31:03 (1863 s) · **Views:** 237,250
 - **First analyzed:** 2026-09-16
 - **Status:** closed

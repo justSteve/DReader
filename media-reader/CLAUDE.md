@@ -58,6 +58,12 @@ line; older cards without one fall back to `youtube` when `**URL:**` is a link
 and `video` otherwise. Only `youtube` cards get a YouTube URL, cover image or
 watch link in the reader.
 
+A card also carries a `**Category:**` line, directly after `**Channel:**`: the
+subject area Steve files it under — `Trading` (every card before 2026-09-25)
+or `AgentManagement` (AI agents, orchestration, agent tooling). Steve names the
+category; do not infer a new one. INDEX.md shows it per channel; `export` and
+`corpus.json` carry it as `category`.
+
 `INDEX.md` at the root indexes every card, grouped by channel/author, with
 playlist position, upload date, length, status and run count. It is generated
 — `.venv/bin/python mread.py index` — never hand-edited. Read it to see what the

@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=Ly62G168MkQ
 - **Title:** The Simplest Day Trading Strategy for Beginners (PbD Method)
 - **Channel:** Tom Vorwald EN (@tom_vorwald_en) — "Trade The Traders" / WorldClassEdge
+- **Category:** Trading
 - **Uploaded:** 2026-07-31 · **Duration:** 16:10 · **Views:** 7,203
 - **First analyzed:** 2026-09-06
 - **Status:** closed

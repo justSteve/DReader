@@ -2,6 +2,7 @@
 
 - **Title:** Aggressive Sellers off Key Level, part 1 — Bookmap replay 22-May-2023, 4304 rejection and the 4290 tape
 - **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 6
+- **Category:** Trading
 - **Playlist:** course-investitrade-orderflow #6
 - **Duration:** 14:14
 - **Bead:** dr-22w.2

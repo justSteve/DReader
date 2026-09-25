@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=GzCq0tvFzhU
 - **Title:** Fair Value Gaps — Why Price Always Comes Back (And When It Does Not)
 - **Channel:** Smart Money Decode X (logo verified in-frame at 00:01, `frames-000-032/f_0002.jpg`; the wide pass read the watermark as "TRADING STRATEGY GUIDES", a misread)
+- **Category:** Trading
 - **Uploaded:** 2026-09-08 · **Duration:** 12:37 (757 s) · **Views:** 400 (same-day first contact)
 - **Playlist:** PLU9kIorYkc18 #13 · bead: none — `bd` refused the workspace on 2026-09-08 ("legacy Dolt server workspace detected"); see Sessions
 - **First analyzed:** 2026-09-08

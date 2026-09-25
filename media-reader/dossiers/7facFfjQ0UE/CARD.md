@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=7facFfjQ0UE
 - **Title:** How To Enter and Exit Trades Like a Professional
 - **Channel:** Carmine Rosato — "Trading Orderflow Series" ep. 7 (he names his community aloud at 26:37: *"anybody in the invest trade Community can see this happen"* — so Gemini's "Invest Trade" was heard, not invented; corrected 2026-09-06, and consistent with ep. 5's 17:25)
+- **Category:** Trading
 - **Uploaded:** 2024-11-18 · **Duration:** 32:19 (1939 s) · **Views:** 84,992
 - **Playlist:** PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ #8 · bead dr-08s.7
 - **First analyzed:** 2026-08-28

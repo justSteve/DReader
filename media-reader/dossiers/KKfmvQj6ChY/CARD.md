@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=KKfmvQj6ChY
 - **Title:** Read Liquidity Like a Pro in 54 Minutes
 - **Channel:** Arjo (@Arjoio, 280K subs) — "The MMT" / tradingmmt.com
+- **Category:** Trading
 - **Uploaded:** 2026-03-22 · **Duration:** 54:16 (3256 s) · **Views:** 399,508
 - **First analyzed:** 2026-09-15
 - **Status:** shelved

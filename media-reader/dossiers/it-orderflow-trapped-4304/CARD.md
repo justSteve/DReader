@@ -2,6 +2,7 @@
 
 - **Title:** Trapped Participants / Heavy Selling — the 4304 supply short (InvestiTrade Orderflow course)
 - **Channel:** Carmine Rosato — InvestiTrade Orderflow Course, ch. 4
+- **Category:** Trading
 - **Playlist:** course-investitrade-orderflow #4
 - **Duration:** 13:15
 - **Bead:** dr-22w.1

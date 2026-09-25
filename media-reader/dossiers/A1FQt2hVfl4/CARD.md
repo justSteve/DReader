@@ -3,6 +3,7 @@
 - **URL:** https://www.youtube.com/watch?v=A1FQt2hVfl4
 - **Title:** Simple Way to Find Trapped Buyers and Sellers on the NQ and ES
 - **Channel:** Trader Rob (robstrades.com)
+- **Category:** Trading
 - **Uploaded:** 2026-08-28 · **Duration:** 42:28 (2548 s) · **Views:** 3,770
 - **Playlist:** none (standalone paste, 2026-09-10) · bead: dr-y1k (filed by COO after the beads witness repair, 2026-09-10)
 - **First analyzed:** 2026-09-10
