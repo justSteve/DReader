@@ -1122,6 +1122,10 @@ Extend `VERIF_METHODS` (export):
     ("second_pass", r"second (?:pass|listen)|re-?listen"),
 ```
 
+- [ ] **Step 2b: `build_corpus.py` must not invent a YouTube URL for other kinds**
+
+Found in the B2 review: `build_corpus.py` gives every card `"url": "https://www.youtube.com/watch?v=<id>"`, so a document dossier gets a made-up YouTube link in `corpus.json` and in the reader. Read the card's `**Kind:**` field. Use the same fallback as `corpus.collect_videos`: `Kind`, else `youtube` when `URL` starts with `http`, else `video`. Emit `"kind"` on each card, and emit a YouTube `url` only for kind `youtube`; any other kind gets `null`. Check `build_reader.py` and `reader.template.html` for code that assumes a YouTube URL (cover images, "watch" links), and make them skip non-youtube kinds. The oracle must stay identical on the existing corpus, since every card there is youtube or video.
+
 - [ ] **Step 3: Oracle again, then restore the smoke dossiers**
 
 ```bash
