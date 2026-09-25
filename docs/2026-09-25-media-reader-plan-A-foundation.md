@@ -1325,6 +1325,18 @@ sys.path.insert(1, str(Path(__file__).resolve().parent.parent))  # dreader_core,
 
 In `perceive.py`, `creds.require_key("mread.py")` stays as it is.
 
+- [ ] **Step 1b: Make the delegation markers scan the whole tool**
+
+`tests/test_tools_delegate.py::test_no_private_logic` reads only `tool.__file__`. Once the tool is several modules, a copy regrown in `sources.py` would be invisible. Change it to scan every `*.py` directly in the tool's directory (not `.venv/`, and not the `yta.py` shim):
+```python
+    tool_dir = Path(tool.__file__).parent
+    for f in sorted(tool_dir.glob("*.py")):
+        if f.name == "yta.py" and f.parent.name == "media-reader":
+            continue  # the forwarding shim
+        assert marker not in f.read_text(), f"{f.name} contains {marker!r} — use dreader_core"
+```
+It must still pass for `discord-reader/`. Scanning that directory is harmless, since it holds only `dread.py`. Also check `build_corpus.py`, `build_reader.py`, `fetch_*.py` and `newsletters/` (a subdirectory, which the glob does not reach) for false hits, and report any.
+
 - [ ] **Step 2: Leave `mread.py` as the CLI**
 
 `mread.py` keeps its module docstring (it is the `--help` text), the `sys.path` insert, and:
