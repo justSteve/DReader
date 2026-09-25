@@ -31,13 +31,11 @@ Optional .env keys (settings only, never secrets):
 
 import argparse
 import json
-import logging
 import os
 import re
 import shutil
 import sys
 import time
-import warnings
 from datetime import datetime
 from pathlib import Path
 
@@ -46,13 +44,9 @@ CAPTURES_DIR = SCRIPT_DIR / "captures"
 
 # The shared core lives at the repo root [dr-dqm].
 sys.path.insert(1, str(SCRIPT_DIR.parent))  # after the tool's own dir, so a sibling module wins
-from dreader_core import creds  # noqa: E402
+from dreader_core import creds, gemini  # noqa: E402
 
-DEFAULT_MODEL = "gemini-flash-latest"
-FALLBACK_MODELS = ["gemini-2.5-flash"]
-RETRYABLE = {429, 500, 503}
-MAX_ATTEMPTS = 4
-BASE_DELAY_S = 5
+TRANSCRIPT_SHAPE = {"context": None, "messages": []}
 DEFAULT_FPS = 2.0  # ~1s page holds -> ~2 samples per page, >=1 clean still
 # Gemini media_resolution. Measured 2026-09-12 on the uploaded-file path
 # (dr-vm0), same 21 s clip: default == low (~63 tok/frame, 3.3k prompt
@@ -137,12 +131,6 @@ _(machine-appended by dread.py — do not edit entries)_
 """
 
 
-def quiet_sdk():
-    warnings.filterwarnings("ignore")
-    for name in ("google_genai", "google.genai", "google_genai.models"):
-        logging.getLogger(name).setLevel(logging.ERROR)
-
-
 def capture_source_dir():
     return Path(os.environ.get(
         "DREAD_CAPTURE_DIR", "/mnt/c/Users/steve/Videos/Captures"))
@@ -150,15 +138,6 @@ def capture_source_dir():
 
 def slugify(s):
     return re.sub(r"[^a-zA-Z0-9]+", "-", s).strip("-").lower() or "capture"
-
-
-def gen_config(resolution, **kw):
-    """GenerateContentConfig with the media_resolution knob applied."""
-    from google.genai import types
-    if resolution and resolution != "default":
-        kw["media_resolution"] = getattr(
-            types.MediaResolution, f"MEDIA_RESOLUTION_{resolution.upper()}")
-    return types.GenerateContentConfig(**kw)
 
 
 def build_prompt(mode):
@@ -179,44 +158,6 @@ def upload_video(client, path):
     return f
 
 
-def generate_with_retry(client, model, contents, config):
-    from google.genai import errors
-    chain = [model] + [m for m in FALLBACK_MODELS if m != model]
-    last_exc = None
-    for m in chain:
-        delay = BASE_DELAY_S
-        for attempt in range(1, MAX_ATTEMPTS + 1):
-            try:
-                return m, client.models.generate_content(
-                    model=m, contents=contents, config=config)
-            except errors.APIError as e:
-                code = getattr(e, "code", None) or getattr(e, "status_code", None)
-                if code in RETRYABLE:
-                    last_exc = e
-                    if attempt < MAX_ATTEMPTS:
-                        print(f"[{m}: {code}; retry {attempt}/{MAX_ATTEMPTS - 1} "
-                              f"in {delay}s]", file=sys.stderr)
-                        time.sleep(delay)
-                        delay *= 2
-                else:
-                    raise
-        if m != chain[-1]:
-            print(f"[{m}: exhausted retries; falling back]", file=sys.stderr)
-    raise last_exc
-
-
-def parse_json_reply(text):
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        cleaned = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
-        try:
-            return json.loads(cleaned)
-        except json.JSONDecodeError:
-            return {"context": None, "messages": [],
-                    "uncertainties": [], "raw_unparsed": text}
-
-
 def transcribe(client, model, video_path, fps, mode, resolution):
     from google.genai import types
     gfile = upload_video(client, video_path)
@@ -224,10 +165,10 @@ def transcribe(client, model, video_path, fps, mode, resolution):
         file_data=types.FileData(file_uri=gfile.uri, mime_type=gfile.mime_type),
         video_metadata=types.VideoMetadata(fps=fps) if fps else None,
     )
-    answered_model, resp = generate_with_retry(
+    answered_model, resp = gemini.generate_with_retry(
         client, model,
         types.Content(parts=[video_part, types.Part(text=build_prompt(mode))]),
-        gen_config(resolution, response_mime_type="application/json"),
+        gemini.media_config(resolution, response_mime_type="application/json"),
     )
     try:
         client.files.delete(name=gfile.name)
@@ -313,7 +254,8 @@ def cmd_ingest(args):
     client = genai.Client()
     answered_model, resp = transcribe(client, args.model, dest,
                                       args.fps, args.mode, args.resolution)
-    payload = parse_json_reply(resp.text)
+    text, empty_diag = gemini.response_text(resp, answered_model)
+    payload = gemini.parse_json_reply(text, empty_diag, TRANSCRIPT_SHAPE)
 
     (dossier / "transcript.json").write_text(json.dumps(payload, indent=2))
     (dossier / "transcript.md").write_text(
@@ -360,15 +302,17 @@ def cmd_ask(args):
         file_data=types.FileData(file_uri=gfile.uri, mime_type=gfile.mime_type),
         video_metadata=types.VideoMetadata(fps=args.fps) if args.fps else None,
     )
-    answered_model, resp = generate_with_retry(
+    answered_model, resp = gemini.generate_with_retry(
         client, args.model,
         types.Content(parts=[video_part, types.Part(text=prompt)]),
-        gen_config(args.resolution),
+        gemini.media_config(args.resolution),
     )
     try:
         client.files.delete(name=gfile.name)
     except Exception:
         pass
+
+    text, _ = gemini.response_text(resp, answered_model)
 
     ts = datetime.now().strftime("%Y%m%d-%H%M%S")
     run_dir = dossier / "runs" / ts
@@ -377,7 +321,7 @@ def cmd_ask(args):
         "capture": args.capture, "question": args.question,
         "model_requested": args.model, "model_answered": answered_model,
         "fps": args.fps, "resolution": args.resolution}, indent=2))
-    (run_dir / "answer.md").write_text(resp.text)
+    (run_dir / "answer.md").write_text(text)
 
     usage = getattr(resp, "usage_metadata", None)
     q_short = (args.question[:80] + "…") if len(args.question) > 80 else args.question
@@ -387,7 +331,7 @@ def cmd_ask(args):
                    f"{getattr(usage, 'candidates_token_count', '?')}) — "
                    f"Q: {q_short} — runs/{ts}/")
 
-    print(resp.text)
+    print(text)
     print(f"\n[archived to {run_dir}/]", file=sys.stderr)
 
 
@@ -397,7 +341,7 @@ def cmd_env(args):
 
 def main():
     creds.load_env(SCRIPT_DIR)
-    quiet_sdk()
+    gemini.quiet_sdk()
 
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -422,7 +366,7 @@ def main():
                    help="Gemini media resolution (high, the default, reads "
                         "timestamps and reply headers; default/low is ~3.5x "
                         "cheaper and confabulates them)")
-    i.add_argument("--model", default=DEFAULT_MODEL)
+    i.add_argument("--model", default=gemini.DEFAULT_MODEL)
     i.set_defaults(func=cmd_ingest)
 
     a = sub.add_parser("ask", help="follow-up question against a capture")
@@ -432,7 +376,7 @@ def main():
     a.add_argument("--fps", type=float, default=DEFAULT_FPS)
     a.add_argument("--resolution", choices=RESOLUTIONS,
                    default=DEFAULT_RESOLUTION)
-    a.add_argument("--model", default=DEFAULT_MODEL)
+    a.add_argument("--model", default=gemini.DEFAULT_MODEL)
     a.set_defaults(func=cmd_ask)
 
     v = sub.add_parser("env", help="where the credential came from, and does it work")

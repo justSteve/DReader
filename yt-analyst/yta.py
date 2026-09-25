@@ -35,13 +35,11 @@ Requires: GEMINI_API_KEY in the vault file /home/vault/DReader/env, mode 0600;
 
 import argparse
 import json
-import logging
 import os
 import re
 import subprocess
 import sys
 import time
-import warnings
 from datetime import datetime
 from pathlib import Path
 
@@ -50,15 +48,11 @@ VIDEOS_DIR = SCRIPT_DIR / "videos"
 
 # The shared core lives at the repo root [dr-dqm].
 sys.path.insert(1, str(SCRIPT_DIR.parent))  # after the tool's own dir, so a sibling module wins
-from dreader_core import creds  # noqa: E402
+from dreader_core import creds, gemini  # noqa: E402
 
-DEFAULT_MODEL = "gemini-flash-latest"
-# gemini-2.5-flash was retired 2026-09-06 and now 404s for new users,
-# which turned a transient 503 into a hard traceback [dr-9qo].
-FALLBACK_MODELS = ["gemini-3.6-flash"]
-RETRYABLE = {429, 500, 503}
-MAX_ATTEMPTS = 4
-BASE_DELAY_S = 5
+# The empty-reply shape an ask or transcribe falls back to when Gemini's reply
+# is not JSON — the keys the curated tooling reads first.
+ASK_SHAPE = {"summary": None, "claims": []}
 
 ANALYST_PROMPT = """You are a video analyst. Answer the question below about the
 video, then report your findings as JSON ONLY (no markdown fences, no prose
@@ -135,12 +129,6 @@ _(anything peculiar to this video/channel: layout, chart software, segment struc
 ## Run log
 _(machine-appended by yta.py — do not edit above this line's entries)_
 """
-
-
-def quiet_sdk():
-    warnings.filterwarnings("ignore")
-    for name in ("google_genai", "google.genai", "google_genai.models"):
-        logging.getLogger(name).setLevel(logging.ERROR)
 
 
 def extract_video_id(url):
@@ -293,43 +281,6 @@ def video_part_for(client, vid, url, path, vm_kwargs):
     )
 
 
-def resolution_config(resolution, **kw):
-    from google.genai import types
-    if resolution:
-        kw["media_resolution"] = {
-            "low": types.MediaResolution.MEDIA_RESOLUTION_LOW,
-            "medium": types.MediaResolution.MEDIA_RESOLUTION_MEDIUM,
-            "high": types.MediaResolution.MEDIA_RESOLUTION_HIGH,
-        }[resolution]
-    return types.GenerateContentConfig(**kw)
-
-
-def parse_json_reply(text, empty_diag=None):
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        cleaned = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
-        try:
-            return json.loads(cleaned)
-        except json.JSONDecodeError:
-            return {"summary": None, "claims": [], "uncertainties": [],
-                    "raw_unparsed": text, "empty_response": empty_diag}
-
-
-def response_text(resp, answered_model):
-    """(text, empty_diag): surface why a reply is empty instead of dying in
-    json.loads [dr-08s.9]."""
-    text = resp.text
-    if text is not None:
-        return text, None
-    cands = getattr(resp, "candidates", None) or []
-    reasons = [str(getattr(c, "finish_reason", None)) for c in cands]
-    fb = getattr(resp, "prompt_feedback", None)
-    print(f"[empty response from {answered_model}: "
-          f"finish_reasons={reasons} prompt_feedback={fb}]", file=sys.stderr)
-    return "", {"finish_reasons": reasons, "prompt_feedback": str(fb) if fb else None}
-
-
 def new_run_dir(vid):
     ts = datetime.now().strftime("%Y%m%d-%H%M%S")
     run_dir = video_dir(vid) / "runs" / ts
@@ -366,52 +317,6 @@ def fmt_ts(sec):
     return f"{h:d}:{m:02d}:{s:02d}" if h else f"{m:d}:{s:02d}"
 
 
-def generate_with_retry(client, model, contents, config):
-    """Call Gemini with backoff on transient errors, then model fallback.
-    Returns (model_that_answered, response)."""
-    from google.genai import errors
-    import httpx
-
-    chain = [model] + [m for m in FALLBACK_MODELS if m != model]
-    last_exc = None
-    for m in chain:
-        delay = BASE_DELAY_S
-        for attempt in range(1, MAX_ATTEMPTS + 1):
-            try:
-                resp = client.models.generate_content(
-                    model=m, contents=contents, config=config
-                )
-                return m, resp
-            except (errors.APIError, httpx.TransportError) as e:
-                # httpx.TransportError covers "Server disconnected without
-                # sending a response" (RemoteProtocolError), read timeouts
-                # and connect errors — seen 2026-08-29 under parallel asks
-                # [dr-8qq.13]; treat like a 503.
-                code = (getattr(e, "code", None) or getattr(e, "status_code", None)
-                        or (503 if isinstance(e, httpx.TransportError) else None))
-                if code in RETRYABLE:
-                    last_exc = e
-                    if attempt < MAX_ATTEMPTS:
-                        print(f"[{m}: {code}; retry {attempt}/{MAX_ATTEMPTS - 1} "
-                              f"in {delay}s]", file=sys.stderr)
-                        time.sleep(delay)
-                        delay *= 2
-                else:
-                    # A non-retryable error on the PRIMARY model is the real
-                    # answer — surface it (that is how API_KEY_INVALID reads).
-                    # On a fallback it is noise, most often the model having
-                    # been retired; keep the original 503 and move on.
-                    if m == chain[0]:
-                        raise
-                    print(f"[{m}: {code}, not usable as a fallback]",
-                          file=sys.stderr)
-                    last_exc = last_exc or e
-                    break
-        if m != chain[-1]:
-            print(f"[{m}: exhausted retries; falling back]", file=sys.stderr)
-    raise last_exc
-
-
 def cmd_ask(args):
     from google import genai
     from google.genai import types
@@ -431,15 +336,15 @@ def cmd_ask(args):
     video_part = video_part_for(client, vid, url, path, vm_kwargs)
     prompt = ANALYST_PROMPT.replace("{question}", args.question)
 
-    answered_model, resp = generate_with_retry(
+    answered_model, resp = gemini.generate_with_retry(
         client,
         args.model,
         types.Content(parts=[video_part, types.Part(text=prompt)]),
-        resolution_config(args.resolution, response_mime_type="application/json"),
+        gemini.media_config(args.resolution, response_mime_type="application/json"),
     )
 
-    text, empty_diag = response_text(resp, answered_model)
-    payload = parse_json_reply(text, empty_diag)
+    text, empty_diag = gemini.response_text(resp, answered_model)
+    payload = gemini.parse_json_reply(text, empty_diag, ASK_SHAPE)
 
     usage = getattr(resp, "usage_metadata", None)
     ts, run_dir = new_run_dir(vid)
@@ -590,14 +495,14 @@ def cmd_transcribe(args):
         vm = dict(vm_base, start_offset=f"{a}s", end_offset=f"{b}s")
         print(f"[transcribe {fmt_ts(a)}-{fmt_ts(b)}]", file=sys.stderr)
         part = video_part_for(client, vid, None, path, vm)
-        answered, resp = generate_with_retry(
+        answered, resp = gemini.generate_with_retry(
             client, args.model,
             types.Content(parts=[part, types.Part(text=TRANSCRIBE_PROMPT)]),
-            resolution_config(args.resolution, response_mime_type="application/json"),
+            gemini.media_config(args.resolution, response_mime_type="application/json"),
         )
         models.add(answered)
-        text, empty_diag = response_text(resp, answered)
-        payload = parse_json_reply(text, empty_diag)
+        text, empty_diag = gemini.response_text(resp, answered)
+        payload = gemini.parse_json_reply(text, empty_diag, ASK_SHAPE)
         usage = getattr(resp, "usage_metadata", None)
         ts, run_dir = new_run_dir(vid)
         (run_dir / "request.json").write_text(json.dumps({
@@ -1749,7 +1654,7 @@ def cmd_env(args):
 
 def main():
     creds.load_env(SCRIPT_DIR)
-    quiet_sdk()
+    gemini.quiet_sdk()
 
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -1767,7 +1672,7 @@ def main():
     a.add_argument("--end", help="clip end")
     a.add_argument("--fps", type=float, help="sampling fps (default 1; 0.1-60)")
     a.add_argument("--resolution", choices=["low", "medium", "high"])
-    a.add_argument("--model", default=DEFAULT_MODEL)
+    a.add_argument("--model", default=gemini.DEFAULT_MODEL)
     a.set_defaults(func=cmd_ask)
 
     f = sub.add_parser("frames", help="pull frames for verification")
@@ -1791,7 +1696,7 @@ def main():
                    help="upload path honors this; default low")
     t.add_argument("--absolute", action="store_true",
                    help="model timestamps are file-absolute already (skip re-basing)")
-    t.add_argument("--model", default=DEFAULT_MODEL)
+    t.add_argument("--model", default=gemini.DEFAULT_MODEL)
     t.set_defaults(func=cmd_transcribe)
 
     i = sub.add_parser("index", help="regenerate INDEX.md from the cards")
