@@ -42,6 +42,15 @@ def test_falls_back_after_exhausting_the_primary(monkeypatch):
     monkeypatch.setattr(gemini, "FALLBACK_MODELS", ["fb"])
     c = FakeClient({"m": [api_error(503)] * gemini.MAX_ATTEMPTS, "fb": ["ok"]})
     assert gemini.generate_with_retry(c, "m", None, None) == ("fb", "ok")
+    assert c.models.calls == ["m"] * gemini.MAX_ATTEMPTS + ["fb"]
+
+
+def test_backoff_doubles_each_retry(monkeypatch):
+    delays = []
+    monkeypatch.setattr(gemini.time, "sleep", lambda s: delays.append(s))
+    c = FakeClient({"m": [api_error(503)] * 3 + ["ok"]})
+    gemini.generate_with_retry(c, "m", None, None)
+    assert delays == [gemini.BASE_DELAY_S, 2 * gemini.BASE_DELAY_S, 4 * gemini.BASE_DELAY_S]
 
 
 def test_non_retryable_on_the_primary_is_the_answer():

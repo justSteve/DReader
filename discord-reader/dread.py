@@ -264,14 +264,20 @@ def cmd_ingest(args):
     usage = getattr(resp, "usage_metadata", None)
     n_msgs = len(payload.get("messages", []))
     n_unc = len(payload.get("uncertainties") or [])
-    append_run_log(card,
-                   f"- {ts} ingest mode={args.mode} {answered_model} "
-                   f"fps={args.fps} res={args.resolution} "
-                   f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
-                   f"{getattr(usage, 'candidates_token_count', '?')}) — "
-                   f"{n_msgs} messages, {n_unc} uncertainties")
+    unparsed = payload.get("raw_unparsed") is not None
+    log_line = (f"- {ts} ingest mode={args.mode} {answered_model} "
+                f"fps={args.fps} res={args.resolution} "
+                f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
+                f"{getattr(usage, 'candidates_token_count', '?')}) — "
+                f"{n_msgs} messages, {n_unc} uncertainties")
+    if unparsed:
+        log_line += " — UNPARSED reply, see transcript.json"
+    append_run_log(card, log_line)
 
-    print(f"\n{n_msgs} messages transcribed ({n_unc} uncertainties)")
+    if unparsed:
+        print(f"\nUNPARSED reply from {answered_model} — transcript.json holds the raw text")
+    else:
+        print(f"\n{n_msgs} messages transcribed ({n_unc} uncertainties)")
     print(f"transcript: {dossier / 'transcript.md'}")
     print(f"card:       {card}")
     if usage:
@@ -312,7 +318,9 @@ def cmd_ask(args):
     except Exception:
         pass
 
-    text, _ = gemini.response_text(resp, answered_model)
+    text, empty_diag = gemini.response_text(resp, answered_model)
+    empty_line = f"_(empty response: {empty_diag})_"
+    output = empty_line if text == "" else text
 
     ts = datetime.now().strftime("%Y%m%d-%H%M%S")
     run_dir = dossier / "runs" / ts
@@ -320,8 +328,9 @@ def cmd_ask(args):
     (run_dir / "request.json").write_text(json.dumps({
         "capture": args.capture, "question": args.question,
         "model_requested": args.model, "model_answered": answered_model,
-        "fps": args.fps, "resolution": args.resolution}, indent=2))
-    (run_dir / "answer.md").write_text(text)
+        "fps": args.fps, "resolution": args.resolution,
+        "empty_response": empty_diag}, indent=2))
+    (run_dir / "answer.md").write_text(output + ("\n" if text == "" else ""))
 
     usage = getattr(resp, "usage_metadata", None)
     q_short = (args.question[:80] + "…") if len(args.question) > 80 else args.question
@@ -331,7 +340,7 @@ def cmd_ask(args):
                    f"{getattr(usage, 'candidates_token_count', '?')}) — "
                    f"Q: {q_short} — runs/{ts}/")
 
-    print(text)
+    print(output)
     print(f"\n[archived to {run_dir}/]", file=sys.stderr)
 
 
