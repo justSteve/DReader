@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Flatten videos/*/CARD.md into one corpus.json for the card-reader UI.
 
-Reads ONLY the curated card text (never runs/), the same contract yta.py export
+Reads ONLY the curated card text (never runs/), the same contract mread.py export
 observes. Emits per-card metadata, the curated sections verbatim as markdown,
 parsed grades, and the cross-reference edges between cards — the link graph the
 cards have grown but that nothing currently surfaces.
@@ -33,7 +33,7 @@ VERIF_RE = re.compile(r"\b(un)?verified\b", re.I)
 
 def count_verification(secs):
     """How the card marks its own findings: bare counts of the words the card
-    uses, the same spellings yta.py export normalizes. Not a grade."""
+    uses, the same spellings mread.py export normalizes. Not a grade."""
     text = "\n".join(s["markdown"] for s in secs if s["name"].startswith("Findings"))
     marks = VERIF_RE.findall(text)
     return {

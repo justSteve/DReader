@@ -9,7 +9,7 @@ description: Use when describing live or replayed futures tape (footprint, delta
 
 A tape narration is a **read**, not a readout. The trader can see the numbers;
 what they cannot see is what the numbers add up to. Carmine Rosato's course
-narration (`yt-analyst/videos/it-orderflow-*/transcript.txt`) states the read
+narration (`media-reader/videos/it-orderflow-*/transcript.txt`) states the read
 in plain words first and uses a number only as the tell that earns it:
 *"buyers are showing a ton of effort at high of day and they are not getting
 rewarded"* (trapped-4304 4:56). Reference moves with timestamps:

@@ -15,7 +15,8 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 LETTERS = HERE / "letters"
 INDEX = LETTERS / "index.json"
-DEFAULT_SRC = glob.glob("/root/.claude/projects/-root-projects-DReader-yt-analyst/*/tool-results")
+DEFAULT_SRC = (glob.glob("/root/.claude/projects/-root-projects-DReader-yt-analyst/*/tool-results")
+               + glob.glob("/root/.claude/projects/-root-projects-DReader-media-reader/*/tool-results"))
 
 def body_of(m):
     return m.get("plaintextBody") or m.get("plaintext_body") or ""

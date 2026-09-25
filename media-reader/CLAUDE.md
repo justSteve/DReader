@@ -1,6 +1,6 @@
-# yt-analyst — operating instructions for Claude Code
+# media-reader — operating instructions for Claude Code
 
-You drive `yta.py`, a CLI that uses Gemini Flash as a perception service for
+You drive `mread.py`, a CLI that uses Gemini Flash as a perception service for
 YouTube videos. Gemini is the eyes; you are the analyst. Your job is to
 interrogate videos through it, verify what it reports, maintain the dossier,
 and deliver findings Steve can rely on.
@@ -8,12 +8,12 @@ and deliver findings Steve can rely on.
 ## Invocation
 
 Run from this directory. Activate the venv first (`source .venv/bin/activate`)
-or call the interpreter by path: `.venv/bin/python yta.py ...`.
+or call the interpreter by path: `.venv/bin/python mread.py ...`.
 The API key loads automatically from the vault file `/home/vault/DReader/env`
 — never ask for it, never echo it. It is deliberately not in this tree and not
 in the shell: a value in a file always beats one exported into the environment,
 so a stale exported key cannot shadow the live one. If a call comes back
-unauthenticated, run `.venv/bin/python yta.py env` — it names the file the key
+unauthenticated, run `.venv/bin/python mread.py env` — it names the file the key
 came from, prints its length and a sha256 prefix (never the value), and makes
 one live call to Google to say whether the key still works.
 
@@ -24,7 +24,7 @@ to bare `watch?v=ID` form itself.
 
 Every video gets a directory: `videos/<video_id>/`.
 
-- `CARD.md` — the video's dossier. yta.py creates the skeleton on first
+- `CARD.md` — the video's dossier. mread.py creates the skeleton on first
   contact and appends one line per run to the final `## Run log` section.
   Everything ABOVE that section is yours to curate (see Card maintenance).
 - `runs/<timestamp>/` — raw request/response JSON for each ask (a sub-card).
@@ -32,18 +32,18 @@ Every video gets a directory: `videos/<video_id>/`.
 
 `INDEX.md` at the root indexes every card, grouped by channel/author, with
 playlist position, upload date, length, status and run count. It is generated
-— `.venv/bin/python yta.py index` — never hand-edited. Read it to see what the
+— `.venv/bin/python mread.py index` — never hand-edited. Read it to see what the
 corpus already covers before starting on a new video; regenerate it whenever
 you add a card or change a card's header (title, channel, playlist, status).
 Grouping keys off the `**Channel:**` field: keep the channel name first, before
 any em dash or parenthetical, so videos by the same author fold together.
 
 `browser.html` is a single self-contained page for READING the corpus:
-`yta.py browse` regenerates it from the cards. A sortable, source-filterable
+`mread.py browse` regenerates it from the cards. A sortable, source-filterable
 table of every video; click a title to read its card, the generated index or
 a playlist synthesis. It embeds a snapshot of the card text, so it is
 gitignored and goes stale the moment a card changes — rerun it after
-`yta.py index`. No network, no assets: open the file in a browser.
+`mread.py index`. No network, no assets: open the file in a browser.
 
 `videos/<id>/READ.md` is the HUMAN-facing layer, composed from the video's
 transcript rather than from the card — the card is a lossy compression that
@@ -89,7 +89,7 @@ as later sessions amended earlier findings. It reads curated card text only,
 never `runs/`, and it excludes the machine-appended Run log. Regenerate after
 any card change; it is gitignored like `browser.html`.
 
-`yta.py export` emits the curated Findings as JSON on stdout (`--out PATH`
+`mread.py export` emits the curated Findings as JSON on stdout (`--out PATH`
 to write a file, `--video ID` to restrict) for sibling zgents — provenance,
 finding text, timestamps and a normalized verification grade. It reads the
 curated card sections ONLY, never `runs/`. Fields the card format cannot
@@ -105,7 +105,7 @@ generated on demand and not committed.
    its Lessons section tells you this channel's quirks.
 
 2. **Wide pass once.** Whole video, no clipping, defaults:
-   `yta.py ask --url "<URL>" --question "<question, plus: note timestamps
+   `mread.py ask --url "<URL>" --question "<question, plus: note timestamps
    where dense on-screen data appears>"`
    This is the map and the expensive shape (~100 tokens/second of video —
    YouTube-URL ingestion bills at Gemini's low per-frame rate; an 11-minute
@@ -131,7 +131,7 @@ generated on demand and not committed.
    `onscreen_text`/`visual` and load-bearing, provenance needs frames.
 
 5. **Verify by pixels when checks fail or stakes are high.**
-   `yta.py frames --url "<URL>" --start MM:SS --end MM:SS --fps 1`
+   `mread.py frames --url "<URL>" --start MM:SS --end MM:SS --fps 1`
    downloads only that window and dumps frames (frame k ≈ start + (k-1)/fps
    seconds; pad the window ±10s around a claim's timestamp). View the frames
    yourself and compare against Gemini's claims. You and Gemini are
@@ -173,7 +173,7 @@ would. The file stays where Steve put it; the card records its path.
   the handle in `videos/<id>/upload.json`; every later ask, clipped or not,
   reuses it until Google expires it at 48 h. Do not delete the cache file
   mid-session.
-- **Start with `transcribe`, not `ask`.** `yta.py transcribe --file … --id …`
+- **Start with `transcribe`, not `ask`.** `mread.py transcribe --file … --id …`
   is the wide pass on this path: it writes `transcript.json`,
   `transcript.txt` (`[MM:SS] speech`, the READ.md substrate the YouTube
   cards get from captions) and `slides.md` (every slide once, verbatim), in
@@ -210,7 +210,7 @@ Before finishing a session on a video, update its CARD.md:
   it — for videos assessed and found not worth showing (Steve's call; log it
   in EDITS.md). Read a shelved card before starting on its channel again.
 - Never edit the `## Run log` section — it is machine-appended.
-- Regenerate the index (`yta.py index`) after any header change, and commit
+- Regenerate the index (`mread.py index`) after any header change, and commit
   `INDEX.md` with the card.
 
 ## Lessons doctrine (tool-level)

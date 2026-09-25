@@ -1,4 +1,4 @@
-<title>yt-analyst Ledger</title>
+<title>media-reader Ledger</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 :root {
@@ -264,7 +264,7 @@ function arrowIn() { return '<svg width="12" height="12" viewBox="0 0 12 12" fil
 function arrowOut() { return '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8"></path><path d="M7 3l3 3-3 3"></path></svg>'; }
 
 /* ------------------------------------------------------------ markdown --- */
-/* Ported from yta.py's browse template, hardened against real card content:
+/* Ported from mread.py's (formerly yta.py's) browse template, hardened against real card content:
    a "|" line is only a table when a separator row follows, and emphasis must
    not eat literal asterisks that are transcribed screen glyphs. */
 const CORR_RE = /corrected 20\d\d-\d\d-\d\d|\bAMENDED\b/gi;
@@ -409,7 +409,7 @@ function renderLib() {
   const cur = state.route;
   const total = DATA.cards.reduce((s, c) => s + (c.duration_s || 0), 0);
   let h = '<div class="libhead">' +
-    '<div class="libtitle"><b><a href="#/" style="color:inherit">yt-analyst</a> <span style="color:var(--muted);font-weight:400">ledger</span></b>' +
+    '<div class="libtitle"><b><a href="#/" style="color:inherit">media-reader</a> <span style="color:var(--muted);font-weight:400">ledger</span></b>' +
     '<span class="mono" style="font-size:11px;color:var(--muted)">' + DATA.counts.cards + ' · ' + fmtTotal(total) + '</span></div>' +
     '<label class="search"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="7" cy="7" r="4.5"></circle><path d="M10.5 10.5 14 14"></path></svg>' +
     '<input id="q" type="search" placeholder="Filter title, channel, id" value="' + esc(state.q) + '" aria-label="Filter"></label>' +
@@ -612,7 +612,7 @@ function renderHome() {
   const corrected = cards.filter(c => c.corrections).sort((a, b) => b.corrections - a.corrections).slice(0, 6);
   const reads = cards.filter(c => c.read).sort(SORTS.uploaded);
   let h = '<div class="topbar narrow-only"><button class="iconbtn" id="openLib">Library</button></div><div class="home">' +
-    '<h1>Reading the yt-analyst corpus</h1>' +
+    '<h1>Reading the media-reader corpus</h1>' +
     '<p style="color:var(--ink2);max-width:720px;margin:0">Two layers. The card is the agent-facing record, dense and provenance-marked. The read is composed from the presenter’s transcript in four levels, and composing it audited the card. Drop from any claim to the presenter’s own words: that is the move that caught every error the audit found. Double-click any paragraph to leave a note or ask the agent a question; a marker stays on the paragraph.</p>' +
     '<div class="stats">' +
     '<div class="stat"><div class="v">' + DATA.counts.cards + '</div><div class="k">videos</div></div>' +
@@ -791,9 +791,9 @@ function render() {
   state.route = parseRoute();
   save("route", location.hash);
   const main = document.getElementById("main"), rail = document.getElementById("rail");
-  if (state.route.kind === "v") { const c = byId[state.route.id]; main.innerHTML = renderVideo(c); rail.innerHTML = renderRail(c); document.title = shortTitle(c) + " · yt-analyst Ledger"; }
-  else if (state.route.kind === "d") { const r = byDoc[state.route.id]; main.innerHTML = renderDoc(r); rail.innerHTML = renderHomeRail(); document.title = r.title + " · yt-analyst Ledger"; }
-  else { main.innerHTML = renderHome(); rail.innerHTML = renderHomeRail(); document.title = "yt-analyst Ledger"; }
+  if (state.route.kind === "v") { const c = byId[state.route.id]; main.innerHTML = renderVideo(c); rail.innerHTML = renderRail(c); document.title = shortTitle(c) + " · media-reader Ledger"; }
+  else if (state.route.kind === "d") { const r = byDoc[state.route.id]; main.innerHTML = renderDoc(r); rail.innerHTML = renderHomeRail(); document.title = r.title + " · media-reader Ledger"; }
+  else { main.innerHTML = renderHome(); rail.innerHTML = renderHomeRail(); document.title = "media-reader Ledger"; }
   main.scrollTop = 0; rail.scrollTop = 0;
   renderLib();
   wire();

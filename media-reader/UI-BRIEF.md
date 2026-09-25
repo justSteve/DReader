@@ -1,7 +1,7 @@
 # Brief — the reading UI
 
 Guidance for the next task: designing and building a reading interface over the
-yt-analyst corpus. Written 2026-09-07 at the end of the composition run, while
+media-reader corpus. Written 2026-09-07 at the end of the composition run, while
 the reasons behind the decisions are still recoverable.
 
 Steve's two choices, already made: **explore directions in `/design` first,
@@ -45,7 +45,7 @@ that produced the corpus.
 
 | Artifact | Count | Notes |
 |---|---|---|
-| `videos/<id>/CARD.md` | 43 | agent-facing record of truth; feeds `yta.py export` and sibling zgents |
+| `videos/<id>/CARD.md` | 43 | agent-facing record of truth; feeds `mread.py export` and sibling zgents |
 | `videos/<id>/READ.md` | **18** | human-facing, four levels; 12 remain uncomposed |
 | `videos/<id>/transcript.txt` | 43 | substrate; gitignored, regenerate with `fetch_transcripts.py` |
 | `playlists/*.md` | 3 | two order-flow syntheses + SMDX |
@@ -150,13 +150,13 @@ expand the history.
   Ctrl+wheel and Ctrl+± will not work in `/design` previews. Judge the
   directions on typography, hierarchy and density; interaction comes with the
   Artifact.
-- **`browser.html` already exists** (`yta.py browse`) — a sortable,
+- **`browser.html` already exists** (`mread.py browse`) — a sortable,
   source-filterable table of all 43 cards. It is the thing being replaced.
   Its weakness is the diagnosis Steve made: it shows agent-facing text.
 - **Author the Artifact page in HTML**, load the `artifact-design` skill before
   writing it, and load `artifact-capabilities` first if the page should persist
   anything (read-state, filters, notes).
-- Content is markdown. A renderer already exists in `yta.py`'s `browse`
+- Content is markdown. A renderer already exists in `mread.py`'s `browse`
   template and was hardened against real card content — two bugs worth not
   rediscovering: a line starting with `|` is only a table when a separator row
   follows, and emphasis matching must not eat literal asterisks that are

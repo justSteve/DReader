@@ -86,7 +86,7 @@ with measurable edge, and its bear warnings rarely play out within a week.
    cap and is written to the session's `tool-results/` directory instead of
    the context — that file is the ingest source. Append the date and
    threadId to `threads.txt`.
-2. Run, from `yt-analyst/`:
+2. Run, from `media-reader/`:
    ```
    .venv/bin/python newsletters/tradebrigade/ingest.py     # tool-results → letters/
    .venv/bin/python newsletters/tradebrigade/extract.py    # letters → extractions/L1_*.json

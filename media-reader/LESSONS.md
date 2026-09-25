@@ -1,5 +1,7 @@
 # LESSONS — yt-analyst
 
+_Entries before 2026-09-25 say `yt-analyst/` and `yta.py`: the directory and the tool were renamed `media-reader/` and `mread.py` that day (dr-dqm). Commands still work through the `yta.py` shim._
+
 Tool- and Gemini-level lessons only; video-specific observations go in that
 video's CARD.md. Each entry: date, status (suspected | confirmed), lesson.
 Promotion rule: confirmed twice (or decisively once) → fold into CLAUDE.md

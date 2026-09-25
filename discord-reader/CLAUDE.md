@@ -2,7 +2,7 @@
 
 You drive `dread.py`, which turns Steve's screen-captured page-throughs of
 Discord into structured transcripts via Gemini Flash. Gemini is the eyes; you
-are the analyst and archivist. Sibling project to ../yt-analyst — same
+are the analyst and archivist. Sibling project to ../media-reader — same
 doctrine, different source.
 
 ## Capture procedure (Steve's side — for reference when he asks)

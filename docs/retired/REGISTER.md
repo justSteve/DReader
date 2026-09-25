@@ -11,6 +11,26 @@ this directory.
 
 ## Retirements
 
+### 2026-09-25 — the name yt-analyst  [dr-dqm]
+
+Steve's ruling (2026-09-18, confirmed 09-25): *"the name YouTube-Analyst is too
+YouTube specific … this repository manages media ingestion."* Renamed
+`yt-analyst/` → `media-reader/`, `yta.py` → `mread.py`. `media-reader/yta.py` is a
+forwarding shim that says so on stderr.
+
+**Invalidates:**
+
+- the path `yt-analyst/` in any command, doc or config (history files keep it)
+- `yta.py` as the tool's name (the shim forwards; do not add features to it)
+- `/root/.claude/projects/-root-projects-DReader-yt-analyst/` as where new
+  session transcripts land (the newsletter ingester reads both)
+- the premise that each collector keeps its own copy of credential, retry and
+  upload code "by design" — `dreader_core/` holds the one copy, and
+  `tests/test_tools_delegate.py` fails if a copy grows back
+
+**Do not propose:** folding discord-reader into media-reader. Steve ruled 09-25
+that it shares the core only.
+
 ### 2026-09-18 — the TypeScript query layer and the SQLite store  [dr-qyd]
 
 Steve's ruling: *"we can safely cut all of it in that we are using a different

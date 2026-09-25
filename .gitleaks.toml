@@ -17,6 +17,6 @@ paths = [
   '''(^|/)__pycache__/''',
   '''(^|/)dist/''',
   '''(^|/)data/''',
-  '''^yt-analyst/videos/[^/]+/runs/''',
-  '''^yt-analyst/browser\.html$''',
+  '''^media-reader/videos/[^/]+/runs/''',
+  '''^media-reader/browser\.html$''',
 ]

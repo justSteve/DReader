@@ -1,7 +1,7 @@
 # Carmine's narration moves — style reference and rubric
 
 Verbatim lines from the InvestiTrade Orderflow course transcripts
-(`yt-analyst/videos/<card>/transcript.txt`), grouped by the move they perform.
+(`media-reader/videos/<card>/transcript.txt`), grouped by the move they perform.
 Use them to hear the register; grade a narration by whether each move is
 present and earns its adjective the way these do.
 

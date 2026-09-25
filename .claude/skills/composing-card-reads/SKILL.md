@@ -1,6 +1,6 @@
 ---
 name: composing-card-reads
-description: Use when writing or revising a human-facing READ.md for a yt-analyst video card — composing the presenter's transcript into a four-level progressive read with editorial cross-links
+description: Use when writing or revising a human-facing READ.md for a media-reader video card — composing the presenter's transcript into a four-level progressive read with editorial cross-links
 ---
 
 # Composing Card Reads
@@ -186,5 +186,5 @@ The reads serve a trader of the S&P. Detail on any other instrument is cut,
 including passages that make a general order-flow point on a DAX, gold, bond
 or Euro Stoxx example; elide inside quotations with `[...]`, retitle the
 passage if its title named the instrument, and rewrite L0–L2 so no cut figure
-survives there. Log each cut in `yt-analyst/EDITS.md`. `CARD.md` keeps the
+survives there. Log each cut in `media-reader/EDITS.md`. `CARD.md` keeps the
 full record; only `READ.md` is scoped.
