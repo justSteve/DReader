@@ -1,4 +1,5 @@
 import argparse
+import json
 
 import pytest
 
@@ -68,3 +69,59 @@ def test_origin_is_recorded_on_the_card(tmp_path):
     s = sources.resolve_source(ns(file=str(f), id="pod-ep-1",
                                   origin="https://example.com/ep1"))
     assert "https://example.com/ep1" in s.card.read_text()
+
+
+def test_repointing_to_another_kind_is_refused(tmp_path):
+    sources.resolve_source(ns(file=str(make(tmp_path, "a.pdf")), id="held-item"))
+    with pytest.raises(SystemExit, match="refusing"):
+        sources.resolve_source(ns(file=str(make(tmp_path, "b.png")), id="held-item"))
+
+
+def test_repointing_within_a_kind_warns_and_updates(tmp_path, capsys):
+    sources.resolve_source(ns(file=str(make(tmp_path, "a.pdf")), id="held-item"))
+    b = make(tmp_path, "b.pdf")
+    s = sources.resolve_source(ns(file=str(b), id="held-item"))
+    assert "repointing" in capsys.readouterr().err
+    rec = json.loads((s.card.parent / "source.json").read_text())
+    assert rec["path"] == str(b.resolve())
+
+
+def test_origin_survives_a_later_file_call(tmp_path):
+    f = make(tmp_path, "ep.m4a")
+    s = sources.resolve_source(ns(file=str(f), id="pod-ep-2",
+                                  origin="https://example.com/ep2"))
+    sources.resolve_source(ns(file=str(f), id="pod-ep-2"))
+    rec = json.loads((s.card.parent / "source.json").read_text())
+    assert rec["origin"] == "https://example.com/ep2"
+
+
+def test_id_alone_with_a_moved_file_says_how_to_recover(tmp_path):
+    f = make(tmp_path, "gone.png")
+    sources.resolve_source(ns(file=str(f), id="moved-item"))
+    f.unlink()
+    with pytest.raises(SystemExit, match="which no longer exists"):
+        sources.resolve_source(ns(id="moved-item"))
+
+
+def test_id_alone_is_validated_before_any_path_is_built(tmp_path):
+    # a source.json outside dossiers/ must not be reachable through ../
+    outside = tmp_path / "x"
+    outside.mkdir()
+    (outside / "source.json").write_text(json.dumps(
+        {"path": str(make(tmp_path, "o.png")), "origin": None}))
+    with pytest.raises(SystemExit, match=r"--id \.\./x: not a dossier id"):
+        sources.resolve_source(ns(id="../x"))
+
+
+def test_plain_text_card_names_no_page_extent(tmp_path):
+    s = sources.resolve_source(ns(file=str(make(tmp_path, "n.txt", b"hi")),
+                                  id="note-item"))
+    src_line = next(l for l in s.card.read_text().splitlines()
+                    if l.startswith("- **Source:**"))
+    assert "page" not in src_line
+
+
+def test_unreadable_pdf_card_says_pages_unknown(tmp_path):
+    s = sources.resolve_source(ns(file=str(make(tmp_path, "bad.pdf", b"not a pdf")),
+                                  id="bad-pdf-item"))
+    assert "pages unknown" in s.card.read_text()

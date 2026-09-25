@@ -25,7 +25,7 @@ class Source:
     bytes reach Gemini, and which verification commands apply. New kinds are
     added in KIND_BY_EXT and branch on `src.kind` where behaviour differs
     (media_part, the ask/transcribe/frames guards) [dr-dqm]."""
-    kind: str               # "youtube" | "video"
+    kind: str               # "youtube" | "video" | "audio" | "image" | "document"
     id: str
     card: Path
     url: str | None = None
@@ -190,9 +190,10 @@ def describe(path, kind):
         from cuts import image_size
         w, h = image_size(path)
         extent = f"{w}×{h}" if w else "size unknown"
-    elif kind == "document":
+    elif kind == "document" and path.suffix.lower() == ".pdf":
         from documents import page_count
-        extent = f"{page_count(path)} page(s)"
+        n = page_count(path)
+        extent = f"{n} page(s)" if n else "pages unknown"
     else:
         extent = ""
     return f"local `{path}` ({mb:.1f} MB{', ' + extent if extent else ''})"
@@ -214,8 +215,14 @@ def resolve_source(args):
     vid = getattr(args, "id", None)
     origin = getattr(args, "origin", None)
     if not path and not url and vid:
+        if not LOCAL_ID_RE.match(vid):
+            sys.exit(f"--id {vid}: not a dossier id "
+                     "(lowercase letters, digits, hyphens)")
         rec = _remembered(vid)
         path, origin = rec["path"], origin or rec.get("origin")
+        if not Path(path).is_file():
+            sys.exit(f"dossier {vid} remembers {path}, which no longer exists — "
+                     f"run once with --file NEWPATH --id {vid}")
     if path:
         path = Path(path).expanduser().resolve()
         if not path.is_file():
@@ -227,7 +234,19 @@ def resolve_source(args):
         if extract_video_id(vid + "x") and len(vid) == 11:
             sys.exit(f"--id {vid} looks like a YouTube id; pick a slug")
         d = dossier_dir(vid)
-        (d / "source.json").write_text(json.dumps(
+        rec_file = d / "source.json"
+        if rec_file.exists():
+            old = json.loads(rec_file.read_text())
+            origin = origin or old.get("origin")
+            old_path = Path(old["path"])
+            if old_path != path:
+                old_kind = KIND_BY_EXT.get(old_path.suffix.lower(), ("unknown",))[0]
+                if old_kind != kind:
+                    sys.exit(f"--id {vid} already holds a {old_kind} ({old_path}); "
+                             f"refusing to point it at a {kind}. Pick another --id.")
+                print(f"[{vid}: repointing from {old_path} to {path}]",
+                      file=sys.stderr)
+        rec_file.write_text(json.dumps(
             {"path": str(path), "origin": origin}, indent=2))
         card = d / "CARD.md"
         if not card.exists():
