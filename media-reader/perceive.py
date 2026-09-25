@@ -11,8 +11,9 @@ from datetime import datetime
 
 from dreader_core import creds, gemini, runs  # noqa: E402
 from dreader_core.runs import parse_ts, fmt_ts  # noqa: E402
-from prompts import TRANSCRIBE_PROMPT, ASK_SHAPE, ask_prompt  # noqa: E402
+from prompts import TRANSCRIBE_PROMPT, AUDIO_TRANSCRIBE_PROMPT, ASK_SHAPE, ask_prompt  # noqa: E402
 from sources import resolve_source, dossier_dir, media_part, probe_duration  # noqa: E402
+import sources  # noqa: E402
 import cuts  # noqa: E402
 
 
@@ -25,6 +26,13 @@ def window_label(start, end, crop):
     return " [full]"
 
 
+def rebase_claims(payload, offset):
+    """A local cut starts at 0; the card speaks in file time."""
+    for c in payload.get("claims") or []:
+        if c.get("t"):
+            c["t"] = fmt_ts(parse_ts(c["t"]) + offset)
+
+
 def cmd_ask(args):
     from google import genai
     from google.genai import types
@@ -35,18 +43,22 @@ def cmd_ask(args):
     if src.kind in ("document", "image") and (args.start or args.end or args.fps):
         sys.exit(f"ask: --start/--end/--fps do not apply to a {src.kind}; "
                  "ask about a page range in the question, or --crop an image")
-    if src.kind == "audio":
-        if args.fps:
-            sys.exit("ask: audio has no frames; --fps does not apply")
-        if args.start or args.end:
-            sys.exit("ask: audio windows arrive in Task B4; "
-                     "ask about the whole recording for now")
+    if src.kind == "audio" and args.fps:
+        sys.exit("ask: audio has no frames; --fps does not apply")
     cut, cut_mime, crop_box = None, None, None
     if getattr(args, "crop", None):
         if src.kind != "image":
             sys.exit("ask: --crop applies to images")
         crop_box = cuts.parse_box(args.crop)
         cut, cut_mime = cuts.crop(src.path, crop_box, dossier_dir(src.id) / "crops"), "image/png"
+    # Audio windows are cut locally: VideoMetadata offsets apply to video only.
+    offset = 0
+    if src.kind == "audio" and (args.start or args.end):
+        a = parse_ts(args.start) if args.start else 0
+        b = parse_ts(args.end) if args.end else probe_duration(src.path)
+        if not b or b <= a:
+            sys.exit("ask: give an --end after --start (duration unknown)")
+        cut, offset = cuts.cut_audio(src.path, a, b, dossier_dir(src.id) / "chunks"), a
     creds.require_key("mread.py")
     client = genai.Client()
 
@@ -71,6 +83,8 @@ def cmd_ask(args):
 
     text, empty_diag = gemini.response_text(resp, answered_model)
     payload = gemini.parse_json_reply(text, empty_diag, ASK_SHAPE)
+    if offset:
+        rebase_claims(payload, offset)
 
     usage = getattr(resp, "usage_metadata", None)
     ts, run_dir = runs.new_run_dir(dossier_dir(src.id))
@@ -82,6 +96,7 @@ def cmd_ask(args):
         "start": args.start, "end": args.end, "fps": args.fps,
         "resolution": args.resolution,
         "crop": args.crop if crop_box else None,
+        "offset_s": offset,
         "prompt_tokens": getattr(usage, "prompt_token_count", None),
         "output_tokens": getattr(usage, "candidates_token_count", None),
     }, indent=2))
@@ -137,13 +152,13 @@ def cmd_transcribe(args):
     from google import genai
     from google.genai import types
 
-    creds.require_key("mread.py")
-    if not getattr(args, "file", None):
-        sys.exit("transcribe works on local captures: --file PATH --id ID")
     src = resolve_source(args)
+    if src.kind == "audio":
+        return transcribe_audio(args, src)
     if src.kind != "video":
-        sys.exit(f"transcribe: {src.kind} sources are not supported yet "
+        sys.exit(f"transcribe: {src.kind} sources are not supported "
                  "(YouTube videos get captions from fetch_transcripts.py)")
+    creds.require_key("mread.py")
     vdir = dossier_dir(src.id)
     total = probe_duration(src.path)
     start = parse_ts(args.start) if args.start else 0
@@ -253,3 +268,94 @@ def cmd_transcribe(args):
           f"tokens prompt={tok_in} output={tok_out}; models {sorted(models)}")
     print(f"[wrote {vdir / 'transcript.json'}, transcript.txt, slides.md]",
           file=sys.stderr)
+
+
+def transcribe_audio(args, src):
+    """Chunked speech transcript of an audio file: each window is cut locally,
+    uploaded once (cached per chunk), and re-based onto file time."""
+    from google import genai
+    from google.genai import types
+
+    creds.require_key("mread.py")
+    d = dossier_dir(src.id)
+    total = probe_duration(src.path)
+    start = parse_ts(args.start) if args.start else 0
+    end = parse_ts(args.end) if args.end else total
+    if not end:
+        sys.exit("could not determine the file's duration; give --end")
+    chunk = int(args.chunk * 60)
+    windows = [(a, min(a + chunk, end)) for a in range(start, end, chunk)]
+    client = genai.Client()
+    # run_ids, not runs: runs is the dreader_core module.
+    segments, uncertainties, run_ids, models, tok_in, tok_out = [], [], [], set(), 0, 0
+    for a, b in windows:
+        print(f"[transcribe {fmt_ts(a)}-{fmt_ts(b)}]", file=sys.stderr)
+        piece = cuts.cut_audio(src.path, a, b, d / "chunks")
+        part = media_part(client, src, path=piece)
+        answered, resp = gemini.generate_with_retry(
+            client, args.model,
+            types.Content(parts=[part, types.Part(text=AUDIO_TRANSCRIBE_PROMPT)]),
+            gemini.media_config(None, response_mime_type="application/json"))
+        models.add(answered)
+        text, diag = gemini.response_text(resp, answered)
+        payload = gemini.parse_json_reply(text, diag, {"segments": []})
+        usage = getattr(resp, "usage_metadata", None)
+        ts, run_dir = runs.new_run_dir(d)
+        (run_dir / "request.json").write_text(json.dumps({
+            "kind": "audio", "file": str(src.path), "mode": "transcribe",
+            "model_requested": args.model, "model_answered": answered,
+            "start": fmt_ts(a), "end": fmt_ts(b),
+            "prompt_tokens": getattr(usage, "prompt_token_count", None),
+            "output_tokens": getattr(usage, "candidates_token_count", None),
+        }, indent=2))
+        (run_dir / "response.json").write_text(json.dumps(payload, indent=2))
+        run_ids.append(ts)
+        tok_in += getattr(usage, "prompt_token_count", 0) or 0
+        tok_out += getattr(usage, "candidates_token_count", 0) or 0
+        for seg in payload.get("segments") or []:
+            seg["t"] = fmt_ts(parse_ts(seg.get("t") or "0") + a)
+            segments.append(seg)
+        for u in payload.get("uncertainties") or []:
+            uncertainties.append(f"[{fmt_ts(a)}-{fmt_ts(b)}] {u}")
+        if payload.get("raw_unparsed"):
+            uncertainties.append(f"[{fmt_ts(a)}-{fmt_ts(b)}] reply not JSON; see runs/{ts}/")
+        runs.append_run_log(src.card,
+                            f"- {ts} [{fmt_ts(a)}-{fmt_ts(b)}] {answered} "
+                            f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
+                            f"{getattr(usage, 'candidates_token_count', '?')}) — "
+                            f"transcribe — runs/{ts}/")
+    segments.sort(key=lambda x: parse_ts(x["t"]))
+    (d / "transcript.json").write_text(json.dumps({
+        "id": src.id, "kind": "audio", "file": str(src.path), "duration_s": total,
+        "window": [fmt_ts(start), fmt_ts(end)], "chunk_s": chunk,
+        "models": sorted(models), "prompt_tokens": tok_in, "output_tokens": tok_out,
+        "runs": run_ids, "segments": segments, "uncertainties": uncertainties,
+        "generated": datetime.now().isoformat(timespec="seconds"),
+    }, indent=2, ensure_ascii=False))
+    (d / "transcript.txt").write_text("\n".join(
+        f"[{s['t']}] {s.get('speaker') or '?'}: {(s.get('speech') or '').strip()}"
+        for s in segments) + "\n")
+    print(f"{src.id}: {len(segments)} segments, {len(uncertainties)} uncertainties over "
+          f"{len(windows)} chunk(s); tokens prompt={tok_in} output={tok_out}")
+
+
+# ---------------------------------------------------------------- fetch ----
+
+def cmd_fetch(args):
+    """Download a podcast episode (any page yt-dlp understands) as audio into
+    the dossier, remember it, and create the card. Interrogate with --id after."""
+    import argparse as _ap
+    if not sources.LOCAL_ID_RE.match(args.id or ""):
+        sys.exit("fetch needs --id: a slug naming dossiers/<id>/")
+    d = dossier_dir(args.id)
+    ytdlp = Path(sys.executable).with_name("yt-dlp")
+    ytdlp = str(ytdlp) if ytdlp.exists() else "yt-dlp"
+    subprocess.run([ytdlp, "-x", "--audio-format", "m4a",
+                    "-o", str(d / "source.%(ext)s"), args.url], check=True)
+    got = sorted(d.glob("source.*"))
+    got = [p for p in got if p.suffix != ".json"]
+    if not got:
+        sys.exit(f"yt-dlp produced no audio in {d}/")
+    src = resolve_source(_ap.Namespace(file=str(got[0]), id=args.id, url=None,
+                                       origin=args.url))
+    print(f"{src.id}: {src.kind} {got[0].name} — card {src.card}")

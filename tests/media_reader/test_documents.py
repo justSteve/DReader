@@ -291,8 +291,10 @@ def test_verify_quotes_refuses_an_email_with_no_text_body(tmp_path, dossiers):
 # 10. ask guards fire before any client or key
 @pytest.mark.parametrize("flags,msg", [
     ({"fps": 2.0}, "audio has no frames"),
-    ({"start": "01:00"}, "audio windows arrive in Task B4"),
-    ({"end": "02:00"}, "audio windows arrive in Task B4"),
+    # B4: windows are allowed; one whose end cannot be found (no --end, and
+    # this fake mp3 has no duration) or precedes its start still exits first.
+    ({"start": "01:00"}, "give an --end after --start"),
+    ({"start": "02:00", "end": "01:00"}, "give an --end after --start"),
 ])
 def test_ask_rejects_windows_and_fps_for_audio(tmp_path, dossiers, monkeypatch, flags, msg):
     import perceive

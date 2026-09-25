@@ -143,3 +143,60 @@ def test_window_label():
     assert perceive.window_label("01:00", None, None) == " [01:00-end]"
     assert perceive.window_label(None, "02:00", None) == " [0:00-02:00]"
     assert perceive.window_label(None, None, "250,50,1500,120") == " [crop 250,50,1500,120]"
+
+
+def test_audio_claims_are_rebased_to_file_time():
+    payload = {"claims": [{"t": "0:05"}, {"t": "1:10"}, {"t": None}]}
+    perceive.rebase_claims(payload, 90)
+    assert [c["t"] for c in payload["claims"]] == ["1:35", "2:40", None]
+
+
+class _KeyReached(Exception):
+    pass
+
+
+def _audio_ask_args(tmp_path, **kw):
+    import argparse
+    audio = tmp_path / "ep.m4a"
+    audio.write_bytes(b"x")
+    base = dict(file=str(audio), id="audio-guard-test", url=None, question="q",
+                start=None, end=None, fps=None, resolution=None, crop=None,
+                model="m")
+    base.update(kw)
+    return argparse.Namespace(**base)
+
+
+def _fake_source(monkeypatch, tmp_path):
+    import sources
+    from sources import Source
+    monkeypatch.setattr(sources, "DOSSIERS_DIR", tmp_path / "dossiers")
+    src = Source(kind="audio", id="audio-guard-test", card=tmp_path / "CARD.md",
+                 path=tmp_path / "ep.m4a", mime="audio/mp4")
+    monkeypatch.setattr(perceive, "resolve_source", lambda args: src)
+
+    def key(_who):
+        raise _KeyReached()
+    monkeypatch.setattr(perceive.creds, "require_key", key)
+    cut_calls = []
+    monkeypatch.setattr(perceive.cuts, "cut_audio",
+                        lambda *a, **k: cut_calls.append(a) or tmp_path / "chunk.m4a")
+    return cut_calls
+
+
+def test_audio_ask_refuses_fps_before_the_key(tmp_path, monkeypatch):
+    _fake_source(monkeypatch, tmp_path)
+    with pytest.raises(SystemExit, match="no frames"):
+        perceive.cmd_ask(_audio_ask_args(tmp_path, fps=2.0))
+
+
+def test_audio_ask_window_passes_the_guard(tmp_path, monkeypatch):
+    cut_calls = _fake_source(monkeypatch, tmp_path)
+    with pytest.raises(_KeyReached):
+        perceive.cmd_ask(_audio_ask_args(tmp_path, start="1:00", end="1:40"))
+    assert [c[1:3] for c in cut_calls] == [(60, 100)]
+
+
+def test_audio_ask_window_refuses_end_before_start(tmp_path, monkeypatch):
+    _fake_source(monkeypatch, tmp_path)
+    with pytest.raises(SystemExit, match="--end after --start"):
+        perceive.cmd_ask(_audio_ask_args(tmp_path, start="1:40", end="1:00"))

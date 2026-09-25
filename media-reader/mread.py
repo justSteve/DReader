@@ -47,7 +47,7 @@ if _root not in sys.path:
     sys.path.insert(1, _root)
 from dreader_core import creds, gemini  # noqa: E402
 from corpus import cmd_index, cmd_export, cmd_browse, BROWSER_PATH  # noqa: E402
-from perceive import cmd_ask, cmd_transcribe  # noqa: E402
+from perceive import cmd_ask, cmd_transcribe, cmd_fetch  # noqa: E402
 from sources import SCRIPT_DIR  # noqa: E402
 from verify import cmd_frames, cmd_verify_quotes, cmd_pages, cmd_crop  # noqa: E402
 
@@ -106,9 +106,8 @@ def main():
     pg.set_defaults(func=cmd_pages)
 
     t = sub.add_parser("transcribe",
-                       help="local capture -> transcript.{json,txt} + slides.md")
-    t.add_argument("--file", required=True, help="local capture (mp4)")
-    t.add_argument("--id", required=True, help="dossier id: slug naming dossiers/<id>/")
+                       help="local capture or audio -> transcript.{json,txt} (+ slides.md for video)")
+    source_args(t)
     t.add_argument("--start", help="window start (MM:SS); default 0")
     t.add_argument("--end", help="window end; default: file duration")
     t.add_argument("--chunk", type=float, default=10.0,
@@ -120,6 +119,11 @@ def main():
                    help="model timestamps are file-absolute already (skip re-basing)")
     t.add_argument("--model", default=gemini.DEFAULT_MODEL)
     t.set_defaults(func=cmd_transcribe)
+
+    fe = sub.add_parser("fetch", help="download a podcast/audio page into a dossier")
+    fe.add_argument("--url", required=True)
+    fe.add_argument("--id", required=True)
+    fe.set_defaults(func=cmd_fetch)
 
     i = sub.add_parser("index", help="regenerate INDEX.md from the cards")
     i.add_argument("--stdout", action="store_true",
