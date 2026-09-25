@@ -12,7 +12,7 @@ from dreader_core.runs import parse_ts, fmt_ts  # noqa: E402
 from sources import resolve_source, dossier_dir  # noqa: E402
 import re  # noqa: E402
 
-from documents import NO_TEXT_BODY, extract_text, page_count, quote_status  # noqa: E402
+from documents import NO_TEXT_BODY, PreparedText, extract_text, page_count, quote_status  # noqa: E402
 
 
 def cmd_frames(args):
@@ -127,7 +127,8 @@ def cmd_verify_quotes(args):
         sys.exit(f"verify-quotes: no extractable text in {src.path.name} "
                  "(scanned PDF?) — use `pages` and read the page images")
     paged = suf == ".pdf"
-    rows = [(c, quote_status(c, text, paged)) for c in claims if c.get("verbatim")]
+    prep = PreparedText(text, paged)  # normalised once, not once per quote
+    rows = [(c, quote_status(c, prep, paged)) for c in claims if c.get("verbatim")]
     width = max([7] + [len(st) for _, st in rows])
     for c, st in rows:
         loc = f"p.{c['page']}" if c.get("page") else "   "

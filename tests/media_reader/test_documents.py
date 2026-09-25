@@ -332,3 +332,65 @@ def test_pages_renders_images_and_layout_text(two_col_pdf, dossiers):
     out = dossiers / "two-col-pages" / "pages-1-2"
     assert len(list(out.glob("p-*.png"))) == 2
     assert "Support at          Resistance at" in (out / "text.txt").read_text()
+
+
+# --- re-review fixes [dr-dqm.2] -----------------------------------------------
+
+# 1. a trailing period after a digit is not the end of the number
+def test_trailing_period_after_a_digit_does_not_end_the_number():
+    assert not documents.quote_found("SPY closed at 645.", "SPY closed at 645.31.")
+    assert documents.quote_found("SPY closed at 645.", "SPY closed at 645. Then")
+
+
+# 2. hyphenated line breaks join letters only
+def test_hyphen_join_is_letters_only():
+    assert not documents.quote_found("buy 510 contracts", "buy 5-\n10 contracts")
+    assert not documents.quote_found("640660", "zone 640-\n660")
+    assert documents.quote_found("640-660", "zone 640-\n660")
+    assert documents.quote_found("support", "sup-\nport")
+
+
+# 3. a dropped sign or decimal point is a different number
+def test_a_dropped_leading_sign_fails():
+    assert not documents.quote_found("12.5%", "loss of −12.5% today")
+    assert not documents.quote_found("12.5%", "loss of -12.5% today")
+    assert not documents.quote_found("5%", "yield 0.5% today")
+    assert documents.quote_found("12.5%", "gain of 12.5% today")
+    assert documents.quote_found("645", "SPY at $645 today")
+    assert documents.quote_found("$645", "SPY at $645 today")
+
+
+# 4. a dropped unit is a different claim
+def test_a_dropped_percent_fails():
+    assert not documents.quote_found("up 12", "up 12% on the week")
+    assert documents.quote_found("up 12%", "up 12% on the week")
+
+
+# 5. page labels
+@pytest.mark.parametrize("label", ["p. 2", "p.2", "page 2", "Page 2", 2, "2"])
+def test_page_labels_parse_to_a_number(label):
+    text = "one\fTarget 700 by Friday.\f"
+    assert documents.quote_status({"page": label, "verbatim": "Target 700"},
+                                  text, paged=True) == "OK"
+    assert documents.quote_status({"page": label, "verbatim": "one"},
+                                  text, paged=True) == "WRONG PAGE (found p.1)"
+
+
+def test_unparseable_page_label_is_found_but_unchecked():
+    text = "one\fTarget 700 by Friday.\f"
+    assert documents.quote_status({"page": "3-4", "verbatim": "Target 700"},
+                                  text, paged=True) == "OK (page unchecked)"
+    assert documents.quote_status({"page": "3-4", "verbatim": "Target 800"},
+                                  text, paged=True) == "MISSING"
+
+
+# 6. prepared once, same answers
+def test_prepared_text_gives_the_same_statuses():
+    text = "intro. Buyers step in\fat 640 and hold.\fTarget 700.\f"
+    prep = documents.PreparedText(text, paged=True)
+    for page, q in [(1, "step in at 640"), (3, "Target 700."), (1, "Target 700."),
+                    (2, "Target 800"), ("2-3", "and hold.")]:
+        c = {"page": page, "verbatim": q}
+        assert documents.quote_status(c, prep, paged=True) == \
+            documents.quote_status(c, text, paged=True)
+    assert documents.locate_quote("Target 700.", prep.pages) == [3]

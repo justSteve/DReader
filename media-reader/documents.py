@@ -4,7 +4,6 @@ import email
 import re
 import subprocess
 import unicodedata
-from functools import lru_cache
 from email import policy
 from html.parser import HTMLParser
 
@@ -123,71 +122,111 @@ def normalise(s):
     return re.sub(r"\s+", " ", s.translate(_TYPO)).strip()
 
 
-_LINE_HYPHEN = re.compile(r"(\w)[-\u2010\u00ad]\n\s*(\w)")
+# A line-end hyphen (ASCII, U+2010 or soft) between two word characters.
+# Joining the halves is only safe between LETTERS: "sup-\nport" is "support",
+# but "5-\n10" is never "510". Keeping the hyphen is always safe.
+_JOIN_LETTERS = re.compile(r"([^\W\d_])[-‐­]\n\s*([^\W\d_])")
+_KEEP_HYPHEN = re.compile(r"(\w)[-‐­]\n\s*(\w)")
 
 
-@lru_cache(maxsize=32)
-def _haystacks(text):
-    """The text as a quote may legitimately match it: as extracted, with
-    hyphenated line breaks joined ("sup-\\nport" -> "support"), and with the
-    break dropped but the hyphen kept ("well-\\nknown" -> "well-known")."""
+def _variants(text):
+    """The text as a quote may legitimately match it, normalised: as
+    extracted, with letter-letter line-end hyphens joined ("support"), and
+    with the break dropped but the hyphen kept ("well-known", "640-660")."""
     return tuple(dict.fromkeys((
         normalise(text),
-        normalise(_LINE_HYPHEN.sub(r"\1\2", text)),
-        normalise(_LINE_HYPHEN.sub(r"\1-\2", text)),
+        normalise(_JOIN_LETTERS.sub(r"\1\2", text)),
+        normalise(_KEEP_HYPHEN.sub(r"\1-\2", text)),
     )))
 
 
 def _pattern(quote):
-    """Anchored: a quote must not end inside a longer number or word, so
-    "closed at 645" does not pass on "closed at 645.31", nor "640" on "6400"."""
+    """Anchored, so a quote cannot pass by stopping short of what the source
+    says: "closed at 645" or "645." on "645.31", "640" on "6400", "12" on
+    "12%", "12.5%" on "-12.5%" or "5%" on "0.5%"."""
     q = normalise(quote)
     if not q:
         return None
     pat = re.escape(q)
-    if re.match(r"\w", q):
+    if q[0].isdigit():
+        pat = r"(?<![\w.,\-])" + pat   # no dropped sign, decimal or digits
+    elif re.match(r"\w", q):
         pat = r"(?<!\w)" + pat
-    if re.search(r"\w$", q):
+    if q[-1].isdigit():
+        pat += r"(?![\w%]|[.,]\d)"     # no dropped digits, decimals or unit
+    elif re.search(r"\w$", q):
         pat += r"(?![\w]|[.,]\d)"
+    elif re.search(r"\d[.,]$", q):
+        pat += r"(?!\d)"               # "645." is not the start of "645.31"
     return re.compile(pat)
 
 
+def _found(pat, variants):
+    return bool(pat) and any(pat.search(h) for h in variants)
+
+
 def quote_found(quote, text):
-    pat = _pattern(str(quote))
-    return bool(pat) and any(pat.search(h) for h in _haystacks(text))
+    return _found(_pattern(str(quote)), _variants(text))
 
 
 def check_quotes(claims, text):
     """[(claim, found)] for every claim that carries a verbatim quote."""
-    return [(c, quote_found(str(c["verbatim"]), text))
+    v = _variants(text)
+    return [(c, _found(_pattern(str(c["verbatim"])), v))
             for c in claims if c.get("verbatim")]
 
 
+class PreparedText:
+    """A document's text normalised once — whole, per page and per adjacent
+    page pair (quotes that cross a break) — so checking N quotes does not
+    normalise the document N times. Pages exist only when `paged` (a PDF,
+    whose text is \f-separated)."""
+
+    def __init__(self, text, paged):
+        self.paged = paged
+        self.whole = _variants(text)
+        raw = text.split("\f") if paged else []
+        self.pages = [_variants(p) for p in raw]
+        self.pairs = [_variants(raw[i] + "\n" + raw[i + 1]) for i in range(len(raw) - 1)]
+
+
 def locate_quote(quote, pages):
-    """1-based numbers of the pages whose text holds the quote."""
-    return [i for i, p in enumerate(pages, 1) if quote_found(quote, p)]
+    """1-based numbers of the pages holding the quote. `pages` are raw page
+    strings or PreparedText.pages."""
+    pat = _pattern(str(quote))
+    return [i for i, p in enumerate(pages, 1)
+            if _found(pat, p if isinstance(p, tuple) else _variants(p))]
+
+
+_PAGE_LABEL = re.compile(r"^\s*(?:p(?:age)?\.?\s*)?(\d+)\s*$", re.IGNORECASE)
 
 
 def _page_no(page):
-    try:
-        return int(str(page).strip())
-    except (TypeError, ValueError):
-        return None
+    """3, "3", "p. 3", "p.3", "page 3" -> 3; anything else -> None."""
+    m = _PAGE_LABEL.match(str(page)) if page is not None else None
+    return int(m[1]) if m else None
 
 
 def quote_status(claim, text, paged):
-    """"OK", "MISSING" or "WRONG PAGE (found p.N)". Pages are checked only
-    when `paged` (a PDF, whose text is \\f-separated) and the claim names a
-    numeric page; a quote spanning a page break is OK on either page."""
-    q = str(claim["verbatim"])
-    page = _page_no(claim.get("page")) if paged else None
+    """"OK", "OK (page unchecked)", "MISSING" or "WRONG PAGE (found p.N)".
+    `text` is the raw text or a PreparedText. Pages are checked only when
+    paged and the claim names a page; a label that is not one page number
+    ("3-4") is found-but-unchecked. A quote spanning a page break is OK on
+    either page."""
+    prep = text if isinstance(text, PreparedText) else PreparedText(text, paged)
+    pat = _pattern(str(claim["verbatim"]))
+    if not _found(pat, prep.whole):
+        return "MISSING"
+    label = claim.get("page")
+    if not prep.paged or label is None or str(label).strip() == "":
+        return "OK"
+    page = _page_no(label)
     if page is None:
-        return "OK" if quote_found(q, text) else "MISSING"
-    pages = text.split("\f")
-    hits = set(locate_quote(q, pages))
-    for i in range(len(pages) - 1):
-        if quote_found(q, pages[i] + "\n" + pages[i + 1]) and not hits & {i + 1, i + 2}:
-            hits |= {i + 1, i + 2}
+        return "OK (page unchecked)"
+    hits = {i for i, p in enumerate(prep.pages, 1) if _found(pat, p)}
+    for i, pair in enumerate(prep.pairs, 1):
+        if not hits & {i, i + 1} and _found(pat, pair):
+            hits |= {i, i + 1}
     if not hits:
         return "MISSING"
     if page in hits:
