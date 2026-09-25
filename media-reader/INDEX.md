@@ -144,7 +144,7 @@ _`#` is the video's position in its playlist (not its episode number); `Runs` co
 
 | # | Video | Title | Uploaded | Len | Status | Runs |
 |---:|---|---|---|---:|---|---:|
-| — | [`IUWvHVout94`](dossiers/IUWvHVout94/CARD.md) | Read Liquidity Like a Pro: The 3 Step Strategy That Actually Works | 2026-09-04 | 16:08 | closed | 5 |
+| — | [`IUWvHVout94`](dossiers/IUWvHVout94/CARD.md) | Read Liquidity Like a Pro: The 3 Step Strategy That Actually Works | 2026-09-04 | 16:08 | closed | 6 |
 
 ## Shelved
 

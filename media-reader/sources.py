@@ -21,9 +21,9 @@ DOSSIERS_DIR = SCRIPT_DIR / "dossiers"
 @dataclass
 class Source:
     """One piece of media and its dossier. `kind` decides the prompt, how the
-    bytes reach Gemini, and which verification commands apply. Plan B adds
-    "audio", "image" and "document" kinds; nothing else in the tool names a
-    kind directly [dr-dqm]."""
+    bytes reach Gemini, and which verification commands apply. New kinds are
+    added in KIND_BY_EXT and branch on `src.kind` where behaviour differs
+    (media_part, the ask/transcribe/frames guards) [dr-dqm]."""
     kind: str               # "youtube" | "video"
     id: str
     card: Path
