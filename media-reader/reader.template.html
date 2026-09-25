@@ -515,7 +515,9 @@ function renderPassage(c, p, idx) {
 function renderVideo(c) {
   const r = c.read;
   let h = '<div class="topbar narrow-only"><button class="iconbtn" id="openLib">Library</button><button class="iconbtn" id="openRail">Context</button></div>';
-  if (c.thumb && watchAt(c)) h += '<a class="banner" href="' + watchAt(c) + '" target="_blank" rel="noopener" title="Open the video on YouTube"><img src="data:image/jpeg;base64,' + c.thumb + '" alt="Cover image of the video"><span class="play">' + playIcon() + 'watch on YouTube</span></a>';
+  if (c.thumb) h += watchAt(c)
+    ? '<a class="banner" href="' + watchAt(c) + '" target="_blank" rel="noopener" title="Open the video on YouTube"><img src="data:image/jpeg;base64,' + c.thumb + '" alt="Cover image of the video"><span class="play">' + playIcon() + 'watch on YouTube</span></a>'
+    : '<div class="banner"><img src="data:image/jpeg;base64,' + c.thumb + '" alt="Cover image of the video"></div>';
   h += '<div class="meta"><span class="mono">' + esc(c.id) + '</span><span class="sep">·</span><span>' + esc(c.channel_key || "") + '</span>' +
     (c.uploaded ? '<span class="sep">·</span><span class="mono">' + esc(fmtDate(c.uploaded)) + '</span>' : "") +
     (c.duration_s != null ? '<span class="sep">·</span><span class="mono">' + fmtDur(c.duration_s) + '</span>' : "") +

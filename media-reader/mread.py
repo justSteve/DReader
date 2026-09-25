@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
-"""mread.py v0.5 — media-reader: Gemini Flash as a perception service over media.
+"""mread.py v0.6 — media-reader: Gemini Flash as a perception service over media.
+
+Changes from v0.5:
+  - New kinds (dr-dqm.2): documents (PDF, .txt, .eml, HTML), images and audio,
+    each with its own locator (page, region, timestamp) and verification
+    command: `verify-quotes` checks every quoted string against the document's
+    text, `pages` renders PDF pages as images, `crop` cuts an image region to
+    look at, and audio windows are cut locally and re-based onto the file.
+    `fetch` downloads one podcast episode's audio into a dossier.
+  - dossiers/<id>/source.json remembers the local file: after the first
+    `--file PATH --id ID`, every command needs only `--id ID`.
 
 Changes from v0.4:
   - Renamed from yt-analyst/yta.py (dr-dqm); credentials, retry, uploads and
@@ -25,15 +35,22 @@ Changes from v0.2:
     Steve; this script only ever appends to "## Run log" at the file's end.
 
 Subcommands:
-  ask     Interrogate a video (whole or clipped window). JSON out, archived.
-  frames  Download a clip window and dump frames for pixel-level verification.
-  transcribe  Local capture -> timestamped speech + slide text (transcript.*).
-  index   Regenerate INDEX.md — every card, grouped by channel/author.
-  export  Emit the curated findings as JSON for sibling zgents.
-  env     Say where the credential came from and whether it still works.
+  ask            Interrogate any media (whole, a clipped window or a crop). JSON out, archived.
+  frames         Dump video frames for a window, for pixel-level verification.
+  crop           Cut an image region to a file you can look at yourself.
+  pages          Render PDF pages as images, with their text layer.
+  verify-quotes  Check every quoted string of a document run against its text.
+  transcribe     Video capture or audio -> timestamped speech (+ slide text for video).
+  fetch          Download a podcast episode's audio into a dossier.
+  index          Regenerate INDEX.md — every card, grouped by channel/author.
+  browse         Regenerate browser.html, the self-contained reading page.
+  export         Emit the curated findings as JSON for sibling zgents.
+  env            Say where the credential came from and whether it still works.
 
 Requires: GEMINI_API_KEY in the vault file /home/vault/DReader/env, mode 0600;
-          `pip install google-genai`; yt-dlp + ffmpeg for frames.
+          `pip install google-genai`; yt-dlp + ffmpeg for frames and fetch;
+          ffmpeg for image crops and audio cuts; poppler-utils (pdftotext,
+          pdfinfo, pdftoppm) for documents.
           When a call comes back unauthenticated, run `mread.py env` first.
 """
 
@@ -65,11 +82,11 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     def source_args(sp):
-        sp.add_argument("--url", help="YouTube URL")
+        sp.add_argument("--url", help="YouTube URL (or use --file/--id)")
         sp.add_argument("--file", help="local file: video, audio, image or document")
         sp.add_argument("--id", help="dossier id (slug); alone, reuses the file the dossier remembers")
 
-    a = sub.add_parser("ask", help="interrogate video via Gemini")
+    a = sub.add_parser("ask", help="interrogate any media via Gemini")
     source_args(a)
     a.add_argument("--question", required=True)
     a.add_argument("--start", help="clip start (MM:SS or seconds)")

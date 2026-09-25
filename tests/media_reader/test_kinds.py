@@ -169,3 +169,24 @@ def test_build_corpus_invents_a_youtube_url_only_for_youtube(tmp_path, monkeypat
         "youtube", "https://www.youtube.com/watch?v=abcdefghijk")
     assert (cards["it-cap"]["kind"], cards["it-cap"]["url"]) == ("video", "—")
     assert (cards["tb-letter"]["kind"], cards["tb-letter"]["url"]) == ("document", None)
+
+
+def test_browser_links_youtube_only_for_youtube_cards(tmp_path, monkeypatch):
+    import corpus
+    d = sources.DOSSIERS_DIR
+    for vid, head in [("abcdefghijk", "- **URL:** https://www.youtube.com/watch?v=abcdefghijk"),
+                      ("it-cap", "- **URL:** —\n- **Kind:** video"),
+                      ("tb-letter", "- **Kind:** document")]:
+        (d / vid).mkdir(parents=True)
+        (d / vid / "CARD.md").write_text(f"# x\n\n{head}\n- **Status:** open\n\n## Findings\nok\n")
+    (d / "zyxwvutsrqp" / "runs").mkdir(parents=True)     # card-less, YouTube-shaped id
+    (d / "it-nocard" / "runs").mkdir(parents=True)       # card-less, local slug
+    monkeypatch.setattr(corpus, "INDEX_PATH", tmp_path / "no-INDEX.md")
+    monkeypatch.setattr(corpus, "PLAYLISTS_DIR", tmp_path / "no-playlists")
+    urls = {doc["id"]: doc["url"] for doc in corpus.browse_documents()["docs"]}
+    assert urls == {
+        "abcdefghijk": "https://www.youtube.com/watch?v=abcdefghijk",
+        "it-cap": "", "tb-letter": "",
+        "zyxwvutsrqp": "https://www.youtube.com/watch?v=zyxwvutsrqp",
+        "it-nocard": "",
+    }

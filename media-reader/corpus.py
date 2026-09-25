@@ -291,7 +291,7 @@ VERIF_METHODS = [
     ("cross_episode", r"cross[- ]episode|cross[- ]video"),
     ("quote_check", r"verify-quotes|quote[- ]check(?:ed)?"),
     ("page_image", r"\bpages-\d+-\d+\b|\bpage image\b"),
-    ("crop", r"\bcrop-\d+-\d+-\d+x\d+\b|\bcrop(?:ped)?\b"),
+    ("crop", r"\bcrop-\d+-\d+-\d+x\d+\b"),
     ("second_pass", r"second (?:pass|listen)|re-?listen"),
 ]
 # Cards mark verification in prose as well as in bold: "**Verified: frames**",
@@ -526,6 +526,9 @@ def _card_body(text):
     return text.strip()
 
 
+YOUTUBE_ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
+
+
 def browse_documents():
     """Every document the browser shows, plus the source list and totals."""
     vids = collect_videos()
@@ -541,7 +544,8 @@ def browse_documents():
                 "title": "(no card written)", "source": "(no card)",
                 "channel": "", "uploaded": "", "duration": "", "seconds": 0,
                 "status": "no card", "pos": 0, "playlist": "", "runs": v["runs"],
-                "url": f"https://www.youtube.com/watch?v={v['id']}",
+                "url": (f"https://www.youtube.com/watch?v={v['id']}"
+                        if YOUTUBE_ID_RE.match(v["id"]) else ""),
                 "file": f"dossiers/{v['id']}/",
                 "body": (f"_No `CARD.md` yet — {v['runs']} archived run"
                          f"{'' if v['runs'] == 1 else 's'} under "
@@ -549,6 +553,10 @@ def browse_documents():
             })
             continue
         text = (d / "CARD.md").read_text(errors="replace")
+        url = card_fields(text).get("URL", "") or ""
+        # Only a YouTube card has somewhere to watch; a local capture's "—" or a
+        # document's missing URL must not become a "watch on YouTube" link.
+        url = url if v["kind"] == "youtube" and url.startswith("http") else ""
         docs.append({
             "key": f"v:{v['id']}", "kind": "video", "id": v["id"],
             "title": v["title"], "source": v["author"], "channel": v["channel"],
@@ -556,7 +564,7 @@ def browse_documents():
             "seconds": v["seconds"], "status": v["status"] or "closed",
             "pos": v["playlist_pos"], "playlist": v["playlist_id"],
             "runs": v["runs"],
-            "url": card_fields(text).get("URL", ""),
+            "url": url,
             "file": f"dossiers/{v['id']}/CARD.md",
             "body": _card_body(text),
         })
