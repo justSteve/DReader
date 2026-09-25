@@ -42,7 +42,9 @@ import sys
 from pathlib import Path
 
 # The shared core lives at the repo root [dr-dqm].
-sys.path.insert(1, str(Path(__file__).resolve().parent.parent))  # after the tool's own dir, so a sibling module wins
+_root = str(Path(__file__).resolve().parent.parent)  # after the tool's own dir, so a sibling module wins
+if _root not in sys.path:
+    sys.path.insert(1, _root)
 from dreader_core import creds, gemini  # noqa: E402
 from corpus import cmd_index, cmd_export, cmd_browse, BROWSER_PATH  # noqa: E402
 from perceive import cmd_ask, cmd_transcribe  # noqa: E402

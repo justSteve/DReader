@@ -4,6 +4,7 @@ The copies drifted before: dread.py kept a retired fallback model, no
 transport-error retry and no empty-reply guard for weeks after yta.py fixed
 all three. This test fails when a copy grows back — by name (PRIVATE_COPIES)
 or by content (MARKERS)."""
+import ast
 import importlib.util
 import sys
 from pathlib import Path
@@ -53,6 +54,31 @@ def tool(request):
 @pytest.mark.parametrize("name", PRIVATE_COPIES)
 def test_no_private_copy(tool, name):
     assert not hasattr(tool, name), f"{tool.__name__} defines its own {name}"
+
+
+def _top_level_names(tree):
+    """Names a module binds at top level: defs, classes, assignment targets."""
+    for node in tree.body:
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)):
+            yield node.name
+        elif isinstance(node, (ast.Assign, ast.AnnAssign, ast.AugAssign)):
+            targets = node.targets if isinstance(node, ast.Assign) else [node.target]
+            for t in targets:
+                for n in ast.walk(t):
+                    if isinstance(n, ast.Name):
+                        yield n.id
+
+
+def test_no_private_copy_in_sibling_modules(tool):
+    # hasattr on the entry module misses a copy defined in a sibling module
+    # the entry point never re-exports (sources.py, perceive.py, ...).
+    tool_dir = Path(tool.__file__).parent
+    for f in sorted(tool_dir.glob("*.py")):
+        if f.name == "yta.py" and f.parent.name == "media-reader":
+            continue  # the forwarding shim
+        bound = set(_top_level_names(ast.parse(f.read_text(), filename=str(f))))
+        copies = sorted(bound & set(PRIVATE_COPIES))
+        assert not copies, f"{f.name} defines its own {copies} — use dreader_core"
 
 
 @pytest.mark.parametrize("marker", MARKERS)

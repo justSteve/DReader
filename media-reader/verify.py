@@ -2,7 +2,9 @@
 
 import sys
 from pathlib import Path
-sys.path.insert(1, str(Path(__file__).resolve().parent.parent))  # dreader_core, after this dir
+_root = str(Path(__file__).resolve().parent.parent)  # dreader_core, after this dir
+if _root not in sys.path:
+    sys.path.insert(1, _root)
 import subprocess
 
 from dreader_core.runs import parse_ts, fmt_ts  # noqa: E402

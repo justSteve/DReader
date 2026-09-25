@@ -1,10 +1,5 @@
 """The prompts mread.py sends Gemini, and the reply shape it falls back to."""
 
-import sys
-from pathlib import Path
-sys.path.insert(1, str(Path(__file__).resolve().parent.parent))  # dreader_core, after this dir
-
-
 # The empty-reply shape an ask or transcribe falls back to when Gemini's reply
 # is not JSON — the keys the curated tooling reads first.
 ASK_SHAPE = {"summary": None, "claims": []}

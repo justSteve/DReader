@@ -2,12 +2,12 @@
 
 import sys
 from pathlib import Path
-sys.path.insert(1, str(Path(__file__).resolve().parent.parent))  # dreader_core, after this dir
 import json
 import re
 from datetime import datetime
 
-from sources import SCRIPT_DIR, DOSSIERS_DIR  # noqa: E402
+import sources
+from sources import SCRIPT_DIR
 
 
 # ---------------------------------------------------------------- index ----
@@ -104,9 +104,9 @@ def playlist_synthesis(pl_id):
 def collect_videos():
     """One dict per dossiers/<id>/, whether or not it has a card."""
     out = []
-    if not DOSSIERS_DIR.is_dir():
+    if not sources.DOSSIERS_DIR.is_dir():
         return out
-    for d in sorted(DOSSIERS_DIR.iterdir(), key=lambda p: p.name.lower()):
+    for d in sorted(sources.DOSSIERS_DIR.iterdir(), key=lambda p: p.name.lower()):
         if not d.is_dir():
             continue
         card = d / "CARD.md"
@@ -396,7 +396,7 @@ def build_export(vids):
             "id", "title", "channel", "author", "uploaded", "duration",
             "seconds", "status", "playlist_id", "playlist_pos", "runs")}
             | {"card_path": card_rel})
-        text = (DOSSIERS_DIR / v["id"] / "CARD.md").read_text(errors="replace")
+        text = (sources.DOSSIERS_DIR / v["id"] / "CARD.md").read_text(errors="replace")
         for idx, block, header in findings_blocks(text):
             body = re.sub(r"\s+", " ", block.lstrip("- ").strip())
             verif = parse_verification(block)
@@ -521,7 +521,7 @@ def browse_documents():
     docs = []
 
     for v in vids:
-        d = DOSSIERS_DIR / v["id"]
+        d = sources.DOSSIERS_DIR / v["id"]
         if v["card"] and v["status"] == "shelved":
             continue   # kept on disk and in INDEX.md's Shelved section, not shown
         if not v["card"]:
@@ -577,16 +577,16 @@ def browse_documents():
     counts = {}
     for d in docs:
         counts[d["source"]] = counts.get(d["source"], 0) + 1
-    sources = sorted(counts, key=lambda s: (s == "(no card)", -counts[s], s.lower()))
+    source_names = sorted(counts, key=lambda s: (s == "(no card)", -counts[s], s.lower()))
 
     return {
         "generated": f"{datetime.now():%Y-%m-%d}",
         "docs": docs,
         "refs": refs,
-        "sources": [{"name": s, "count": counts[s]} for s in sources],
+        "sources": [{"name": s, "count": counts[s]} for s in source_names],
         "stats": {
             "cards": len(carded),
-            "sources": sum(1 for s in sources if s != "(no card)"),
+            "sources": sum(1 for s in source_names if s != "(no card)"),
             "runtime": fmt_hm(sum(d["seconds"] for d in carded)),
             "runs": sum(d["runs"] for d in docs),
             "open": sum(1 for d in carded if d["status"] != "closed"),
