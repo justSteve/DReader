@@ -48,7 +48,9 @@ VIDEOS_DIR = SCRIPT_DIR / "videos"
 
 # The shared core lives at the repo root [dr-dqm].
 sys.path.insert(1, str(SCRIPT_DIR.parent))  # after the tool's own dir, so a sibling module wins
-from dreader_core import creds, gemini  # noqa: E402
+from dreader_core import creds, gemini, runs, uploads  # noqa: E402
+
+parse_ts, fmt_ts = runs.parse_ts, runs.fmt_ts
 
 # The empty-reply shape an ask or transcribe falls back to when Gemini's reply
 # is not JSON — the keys the curated tooling reads first.
@@ -181,7 +183,6 @@ _(machine-appended by yta.py — do not edit above this line's entries)_
 """
 
 LOCAL_ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,60}$")
-UPLOAD_TTL_S = 47 * 3600  # Files API keeps an upload 48 h; leave a margin
 
 
 def probe_duration(path):
@@ -227,51 +228,10 @@ def resolve_source(args):
     return vid, url, None, ensure_card(vid, url)
 
 
-def upload_cached(client, vid, path):
-    """Upload a local video through the Files API once; reuse the handle.
-
-    videos/<id>/upload.json records name/uri/mime/expiry. A cached handle is
-    verified with files.get before use; anything short of ACTIVE re-uploads.
-    Uploads of ~1 GB take minutes over the WSL bridge, so the cache is what
-    makes clipped follow-ups near-free on this path too.
-    """
-    cache = video_dir(vid) / "upload.json"
-    if cache.exists():
-        try:
-            rec = json.loads(cache.read_text())
-            if (rec.get("path") == str(path) and rec.get("size") == path.stat().st_size
-                    and rec.get("expires", 0) > time.time() + 300):
-                f = client.files.get(name=rec["name"])
-                if f.state.name == "ACTIVE":
-                    print(f"[upload reused: {f.name}, expires "
-                          f"{datetime.fromtimestamp(rec['expires']):%Y-%m-%d %H:%M}]",
-                          file=sys.stderr)
-                    return f
-        except Exception as e:  # stale, expired, deleted server-side
-            print(f"[upload cache unusable: {e}; re-uploading]", file=sys.stderr)
-    print(f"[uploading {path.name} ({path.stat().st_size / 1e6:.0f} MB)...]",
-          file=sys.stderr)
-    t0 = time.time()
-    f = client.files.upload(file=str(path))
-    while f.state.name == "PROCESSING":
-        time.sleep(4)
-        f = client.files.get(name=f.name)
-    if f.state.name != "ACTIVE":
-        sys.exit(f"Upload failed: file state {f.state.name}")
-    cache.write_text(json.dumps({
-        "name": f.name, "uri": f.uri, "mime_type": f.mime_type,
-        "path": str(path), "size": path.stat().st_size,
-        "uploaded": datetime.now().isoformat(timespec="seconds"),
-        "expires": time.time() + UPLOAD_TTL_S,
-    }, indent=2))
-    print(f"[upload active: {f.name} in {time.time() - t0:.0f}s]", file=sys.stderr)
-    return f
-
-
 def video_part_for(client, vid, url, path, vm_kwargs):
     from google.genai import types
     if path is not None:
-        g = upload_cached(client, vid, path)
+        g = uploads.upload_cached(client, video_dir(vid) / "upload.json", path)
         fd = types.FileData(file_uri=g.uri, mime_type=g.mime_type)
     else:
         fd = types.FileData(file_uri=url)
@@ -279,42 +239,6 @@ def video_part_for(client, vid, url, path, vm_kwargs):
         file_data=fd,
         video_metadata=types.VideoMetadata(**vm_kwargs) if vm_kwargs else None,
     )
-
-
-def new_run_dir(vid):
-    ts = datetime.now().strftime("%Y%m%d-%H%M%S")
-    run_dir = video_dir(vid) / "runs" / ts
-    run_dir.parent.mkdir(parents=True, exist_ok=True)
-    n = 1
-    while True:  # parallel asks can share a second; never overwrite an archive
-        try:
-            run_dir.mkdir()
-            return ts, run_dir
-        except FileExistsError:
-            n += 1
-            ts = f"{ts.split('-')[0]}-{ts.split('-')[1]}-{n}"
-            run_dir = run_dir.parent / ts
-
-
-def append_run_log(card, line):
-    with open(card, "a", encoding="utf-8") as f:
-        f.write(line.rstrip() + "\n")
-
-
-def parse_ts(s):
-    """'HH:MM:SS' | 'MM:SS' | '95' -> seconds."""
-    if s is None:
-        return None
-    sec = 0
-    for p in str(s).split(":"):
-        sec = sec * 60 + int(p)
-    return sec
-
-
-def fmt_ts(sec):
-    h, rem = divmod(sec, 3600)
-    m, s = divmod(rem, 60)
-    return f"{h:d}:{m:02d}:{s:02d}" if h else f"{m:d}:{s:02d}"
 
 
 def cmd_ask(args):
@@ -347,7 +271,7 @@ def cmd_ask(args):
     payload = gemini.parse_json_reply(text, empty_diag, ASK_SHAPE)
 
     usage = getattr(resp, "usage_metadata", None)
-    ts, run_dir = new_run_dir(vid)
+    ts, run_dir = runs.new_run_dir(video_dir(vid))
     (run_dir / "request.json").write_text(json.dumps({
         "url": url, "file": str(path) if path else None,
         "question": args.question,
@@ -362,7 +286,7 @@ def cmd_ask(args):
     window = (f" [{args.start or '0:00'}-{args.end or 'end'}]"
               if (args.start or args.end) else " [full]")
     q_short = (args.question[:80] + "…") if len(args.question) > 80 else args.question
-    append_run_log(card,
+    runs.append_run_log(card,
                    f"- {ts}{window} {answered_model} "
                    f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
                    f"{getattr(usage, 'candidates_token_count', '?')}) — "
@@ -489,7 +413,9 @@ def cmd_transcribe(args):
 
     client = genai.Client()
     vm_base = {"fps": args.fps} if args.fps else {}
-    segments, slides, uncertainties, runs, tok_in, tok_out = [], [], [], [], 0, 0
+    # Named run_ids, not runs: the dreader_core.runs module import would
+    # otherwise be shadowed for the rest of this function's scope.
+    segments, slides, uncertainties, run_ids, tok_in, tok_out = [], [], [], [], 0, 0
     models = set()
     for a, b in windows:
         vm = dict(vm_base, start_offset=f"{a}s", end_offset=f"{b}s")
@@ -504,7 +430,7 @@ def cmd_transcribe(args):
         text, empty_diag = gemini.response_text(resp, answered)
         payload = gemini.parse_json_reply(text, empty_diag, ASK_SHAPE)
         usage = getattr(resp, "usage_metadata", None)
-        ts, run_dir = new_run_dir(vid)
+        ts, run_dir = runs.new_run_dir(video_dir(vid))
         (run_dir / "request.json").write_text(json.dumps({
             "file": str(path), "mode": "transcribe",
             "model_requested": args.model, "model_answered": answered,
@@ -514,7 +440,7 @@ def cmd_transcribe(args):
             "output_tokens": getattr(usage, "candidates_token_count", None),
         }, indent=2))
         (run_dir / "response.json").write_text(json.dumps(payload, indent=2))
-        runs.append(ts)
+        run_ids.append(ts)
         tok_in += getattr(usage, "prompt_token_count", 0) or 0
         tok_out += getattr(usage, "candidates_token_count", 0) or 0
 
@@ -536,7 +462,7 @@ def cmd_transcribe(args):
         if payload.get("raw_unparsed"):
             uncertainties.append(f"[{fmt_ts(a)}-{fmt_ts(b)}] reply not JSON; "
                                  f"see runs/{ts}/response.json")
-        append_run_log(card,
+        runs.append_run_log(card,
                        f"- {ts} [{fmt_ts(a)}-{fmt_ts(b)}] {answered} "
                        f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
                        f"{getattr(usage, 'candidates_token_count', '?')}) — "
@@ -549,7 +475,7 @@ def cmd_transcribe(args):
         "window": [fmt_ts(start), fmt_ts(end)], "chunk_s": chunk,
         "models": sorted(models), "resolution": args.resolution or "default(low)",
         "fps": args.fps, "prompt_tokens": tok_in, "output_tokens": tok_out,
-        "runs": runs, "segments": segments, "slides": slides,
+        "runs": run_ids, "segments": segments, "slides": slides,
         "uncertainties": uncertainties,
         "generated": datetime.now().isoformat(timespec="seconds"),
     }

@@ -213,3 +213,4 @@ Report:
 - 20260906-025759 [08:35-10:35] gemini-flash-latest (tok 11340/627) — Q: Answer ONLY from the SPOKEN AUDIO in this window. Ignore everything on screen.
 
 … — runs/20260906-025759/
+- 20260925-094330 [0:30-1:00] gemini-flash-latest (tok 2971/1025) — Q: What is on screen? (dr-dqm.1 smoke test) — runs/20260925-094330/

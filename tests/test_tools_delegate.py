@@ -21,7 +21,9 @@ PRIVATE_COPIES = ["parse_env_file", "secrets_path", "load_env", "require_key",
                   "SECRETS_POINTER", "DEFAULT_SECRETS_PATH",
                   "report_env", "SECRET_NAMES", "MODELS_URL",
                   "generate_with_retry", "parse_json_reply", "response_text",
-                  "quiet_sdk", "FALLBACK_MODELS", "RETRYABLE"]
+                  "quiet_sdk", "FALLBACK_MODELS", "RETRYABLE",
+                  "new_run_dir", "append_run_log", "upload_video",
+                  "upload_cached", "UPLOAD_TTL_S"]
 
 # Literals only a private copy of the shared logic would contain, whatever
 # it is named. Tasks 3-4 extend this list as more moves into dreader_core.
@@ -31,7 +33,8 @@ PRIVATE_COPIES = ["parse_env_file", "secrets_path", "load_env", "require_key",
 MARKERS = ["Path(\"/home/vault", "DREADER_SECRETS_FILE", "x-goog-api-key",
            "os.environ.update(", "hashlib.sha256(key",
            "FALLBACK_MODELS", "RETRYABLE", ".models.generate_content(",
-           "gemini-2.5-flash", "gemini-3.6-flash"]
+           "gemini-2.5-flash", "gemini-3.6-flash",
+           ".files.upload(", "UPLOAD_TTL_S", "FileExistsError"]
 
 
 @pytest.fixture(params=sorted(TOOLS), ids=sorted(TOOLS))

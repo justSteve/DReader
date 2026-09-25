@@ -44,7 +44,7 @@ CAPTURES_DIR = SCRIPT_DIR / "captures"
 
 # The shared core lives at the repo root [dr-dqm].
 sys.path.insert(1, str(SCRIPT_DIR.parent))  # after the tool's own dir, so a sibling module wins
-from dreader_core import creds, gemini  # noqa: E402
+from dreader_core import creds, gemini, runs, uploads  # noqa: E402
 
 TRANSCRIPT_SHAPE = {"context": None, "messages": []}
 DEFAULT_FPS = 2.0  # ~1s page holds -> ~2 samples per page, >=1 clean still
@@ -144,23 +144,9 @@ def build_prompt(mode):
     return TRANSCRIBE_PROMPT.replace("{header}", PROMPT_HEADER[mode])
 
 
-def upload_video(client, path):
-    """Upload a local video to the Gemini Files API and wait until ACTIVE."""
-    print(f"[uploading {path.name} "
-          f"({path.stat().st_size / 1e6:.1f} MB)...]", file=sys.stderr)
-    f = client.files.upload(file=str(path))
-    while f.state.name == "PROCESSING":
-        time.sleep(4)
-        f = client.files.get(name=f.name)
-    if f.state.name != "ACTIVE":
-        sys.exit(f"Upload failed: file state {f.state.name}")
-    print(f"[upload active: {f.name}]", file=sys.stderr)
-    return f
-
-
 def transcribe(client, model, video_path, fps, mode, resolution):
     from google.genai import types
-    gfile = upload_video(client, video_path)
+    gfile = uploads.upload_file(client, video_path)
     video_part = types.Part(
         file_data=types.FileData(file_uri=gfile.uri, mime_type=gfile.mime_type),
         video_metadata=types.VideoMetadata(fps=fps) if fps else None,
@@ -205,11 +191,6 @@ def render_markdown(payload, capture_id, label):
         lines += ["---", "## Uncertainties"]
         lines += [f"- {u}" for u in unc]
     return "\n".join(lines) + "\n"
-
-
-def append_run_log(card, line):
-    with open(card, "a", encoding="utf-8") as f:
-        f.write(line.rstrip() + "\n")
 
 
 def cmd_ingest(args):
@@ -272,7 +253,7 @@ def cmd_ingest(args):
                 f"{n_msgs} messages, {n_unc} uncertainties")
     if unparsed:
         log_line += " — UNPARSED reply, see transcript.json"
-    append_run_log(card, log_line)
+    runs.append_run_log(card, log_line)
 
     if unparsed:
         print(f"\nUNPARSED reply from {answered_model} — transcript.json holds the raw text")
@@ -298,7 +279,7 @@ def cmd_ask(args):
     card = dossier / "CARD.md"
 
     client = genai.Client()
-    gfile = upload_video(client, source)
+    gfile = uploads.upload_file(client, source)
     prompt = (f"This video is a screen capture of a Discord channel advanced "
               f"page by page (brief hold on each page; consecutive pages "
               f"overlap slightly). Answer the question about its content. "
@@ -322,9 +303,7 @@ def cmd_ask(args):
     empty_line = f"_(empty response: {empty_diag})_"
     output = empty_line if text == "" else text
 
-    ts = datetime.now().strftime("%Y%m%d-%H%M%S")
-    run_dir = dossier / "runs" / ts
-    run_dir.mkdir(parents=True, exist_ok=True)
+    ts, run_dir = runs.new_run_dir(dossier)
     (run_dir / "request.json").write_text(json.dumps({
         "capture": args.capture, "question": args.question,
         "model_requested": args.model, "model_answered": answered_model,
@@ -334,7 +313,7 @@ def cmd_ask(args):
 
     usage = getattr(resp, "usage_metadata", None)
     q_short = (args.question[:80] + "…") if len(args.question) > 80 else args.question
-    append_run_log(card,
+    runs.append_run_log(card,
                    f"- {ts} ask {answered_model} res={args.resolution} "
                    f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
                    f"{getattr(usage, 'candidates_token_count', '?')}) — "
