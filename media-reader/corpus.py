@@ -122,6 +122,7 @@ def collect_videos():
         out.append({
             "id": d.name,
             "card": True,
+            "kind": f.get("Kind") or ("youtube" if (f.get("URL") or "").startswith("http") else "video"),
             "title": f.get("Title", ""),
             "channel": f.get("Channel", ""),
             "author": author_of(f.get("Channel", "")),

@@ -8,26 +8,28 @@ if _root not in sys.path:
 import subprocess
 
 from dreader_core.runs import parse_ts, fmt_ts  # noqa: E402
-from sources import resolve_source, video_dir  # noqa: E402
+from sources import resolve_source, dossier_dir  # noqa: E402
 
 
 def cmd_frames(args):
-    vid, url, path, _card = resolve_source(args)
+    src = resolve_source(args)
+    if src.kind not in ("youtube", "video"):
+        sys.exit(f"frames: a {src.kind} source has no frames")
     start, end = parse_ts(args.start), parse_ts(args.end)
 
     out_dir = Path(args.out) if args.out else (
-        video_dir(vid) / f"frames-{fmt_ts(start).replace(':', '')}-"
+        dossier_dir(src.id) / f"frames-{fmt_ts(start).replace(':', '')}-"
                          f"{fmt_ts(end).replace(':', '')}")
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    if path is not None:
+    if src.path is not None:
         # Local capture: cut straight from the file, no download step.
         # -ss before -i seeks by keyframe then decodes to the exact time.
         for stale in out_dir.glob("f_*.jpg"):
             stale.unlink()
         subprocess.run([
             "ffmpeg", "-y", "-v", "error", "-ss", str(start), "-to", str(end),
-            "-i", str(path), "-vf", f"fps={args.fps}",
+            "-i", str(src.path), "-vf", f"fps={args.fps}",
             str(out_dir / "f_%04d.jpg"),
         ], check=True)
         n = len(list(out_dir.glob("f_*.jpg")))
@@ -56,7 +58,7 @@ def cmd_frames(args):
                "/bv*[ext=mp4][height<=1080]+ba"
                "/b[ext=mp4][height<=1080]/bv*[height<=1080]+ba/b[height<=1080]"),
         "--force-keyframes-at-cuts",
-        "-o", str(out_dir / "clip.%(ext)s"), url,
+        "-o", str(out_dir / "clip.%(ext)s"), src.url,
     ], check=True)
 
     clips = sorted(out_dir.glob("clip.*"))

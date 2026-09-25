@@ -12,7 +12,7 @@ from datetime import datetime
 from dreader_core import creds, gemini, runs  # noqa: E402
 from dreader_core.runs import parse_ts, fmt_ts  # noqa: E402
 from prompts import ANALYST_PROMPT, TRANSCRIBE_PROMPT, ASK_SHAPE  # noqa: E402
-from sources import resolve_source, video_dir, video_part_for, probe_duration  # noqa: E402
+from sources import resolve_source, dossier_dir, media_part, probe_duration  # noqa: E402
 
 
 def cmd_ask(args):
@@ -20,7 +20,7 @@ def cmd_ask(args):
     from google.genai import types
 
     creds.require_key("mread.py")
-    vid, url, path, card = resolve_source(args)
+    src = resolve_source(args)
     client = genai.Client()
 
     vm_kwargs = {}
@@ -31,7 +31,7 @@ def cmd_ask(args):
     if args.fps is not None:
         vm_kwargs["fps"] = args.fps
 
-    video_part = video_part_for(client, vid, url, path, vm_kwargs)
+    video_part = media_part(client, src, vm_kwargs)
     prompt = ANALYST_PROMPT.replace("{question}", args.question)
 
     answered_model, resp = gemini.generate_with_retry(
@@ -45,9 +45,10 @@ def cmd_ask(args):
     payload = gemini.parse_json_reply(text, empty_diag, ASK_SHAPE)
 
     usage = getattr(resp, "usage_metadata", None)
-    ts, run_dir = runs.new_run_dir(video_dir(vid))
+    ts, run_dir = runs.new_run_dir(dossier_dir(src.id))
     (run_dir / "request.json").write_text(json.dumps({
-        "url": url, "file": str(path) if path else None,
+        "kind": src.kind,
+        "url": src.url, "file": str(src.path) if src.path else None,
         "question": args.question,
         "model_requested": args.model, "model_answered": answered_model,
         "start": args.start, "end": args.end, "fps": args.fps,
@@ -60,14 +61,14 @@ def cmd_ask(args):
     window = (f" [{args.start or '0:00'}-{args.end or 'end'}]"
               if (args.start or args.end) else " [full]")
     q_short = (args.question[:80] + "…") if len(args.question) > 80 else args.question
-    runs.append_run_log(card,
+    runs.append_run_log(src.card,
                    f"- {ts}{window} {answered_model} "
                    f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
                    f"{getattr(usage, 'candidates_token_count', '?')}) — "
                    f"Q: {q_short} — runs/{ts}/")
 
     print(json.dumps(payload, indent=2))
-    print(f"\n[model: {answered_model}] [card: {card}] "
+    print(f"\n[model: {answered_model}] [card: {src.card}] "
           f"[archived to {run_dir}/]", file=sys.stderr)
     if usage:
         print(f"[tokens: prompt={usage.prompt_token_count} "
@@ -111,9 +112,12 @@ def cmd_transcribe(args):
     creds.require_key("mread.py")
     if not getattr(args, "file", None):
         sys.exit("transcribe works on local captures: --file PATH --id ID")
-    vid, _url, path, card = resolve_source(args)
-    vdir = video_dir(vid)
-    total = probe_duration(path)
+    src = resolve_source(args)
+    if src.kind != "video":
+        sys.exit(f"transcribe: {src.kind} sources are not supported yet "
+                 "(YouTube videos get captions from fetch_transcripts.py)")
+    vdir = dossier_dir(src.id)
+    total = probe_duration(src.path)
     start = parse_ts(args.start) if args.start else 0
     end = parse_ts(args.end) if args.end else total
     if not end:
@@ -130,7 +134,7 @@ def cmd_transcribe(args):
     for a, b in windows:
         vm = dict(vm_base, start_offset=f"{a}s", end_offset=f"{b}s")
         print(f"[transcribe {fmt_ts(a)}-{fmt_ts(b)}]", file=sys.stderr)
-        part = video_part_for(client, vid, None, path, vm)
+        part = media_part(client, src, vm)
         answered, resp = gemini.generate_with_retry(
             client, args.model,
             types.Content(parts=[part, types.Part(text=TRANSCRIBE_PROMPT)]),
@@ -140,9 +144,9 @@ def cmd_transcribe(args):
         text, empty_diag = gemini.response_text(resp, answered)
         payload = gemini.parse_json_reply(text, empty_diag, ASK_SHAPE)
         usage = getattr(resp, "usage_metadata", None)
-        ts, run_dir = runs.new_run_dir(video_dir(vid))
+        ts, run_dir = runs.new_run_dir(dossier_dir(src.id))
         (run_dir / "request.json").write_text(json.dumps({
-            "file": str(path), "mode": "transcribe",
+            "file": str(src.path), "mode": "transcribe",
             "model_requested": args.model, "model_answered": answered,
             "start": fmt_ts(a), "end": fmt_ts(b), "fps": args.fps,
             "resolution": args.resolution,
@@ -172,7 +176,7 @@ def cmd_transcribe(args):
         if payload.get("raw_unparsed"):
             uncertainties.append(f"[{fmt_ts(a)}-{fmt_ts(b)}] reply not JSON; "
                                  f"see runs/{ts}/response.json")
-        runs.append_run_log(card,
+        runs.append_run_log(src.card,
                        f"- {ts} [{fmt_ts(a)}-{fmt_ts(b)}] {answered} "
                        f"(tok {getattr(usage, 'prompt_token_count', '?')}/"
                        f"{getattr(usage, 'candidates_token_count', '?')}) — "
@@ -181,7 +185,7 @@ def cmd_transcribe(args):
     segments.sort(key=lambda x: parse_ts(x["t"]))
     slides.sort(key=lambda x: parse_ts(x["t"]))
     out = {
-        "id": vid, "file": str(path), "duration_s": total,
+        "id": src.id, "file": str(src.path), "duration_s": total,
         "window": [fmt_ts(start), fmt_ts(end)], "chunk_s": chunk,
         "models": sorted(models), "resolution": args.resolution or "default(low)",
         "fps": args.fps, "prompt_tokens": tok_in, "output_tokens": tok_out,
@@ -192,8 +196,8 @@ def cmd_transcribe(args):
     (vdir / "transcript.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
     lines = [f"[{s['t']}] {(s.get('speech') or '').strip()}" for s in segments]
     (vdir / "transcript.txt").write_text("\n".join(lines) + "\n")
-    md = [f"# Slides — {vid}", "",
-          f"_Transcribed by mread.py from `{path.name}`; every slide once, at first "
+    md = [f"# Slides — {src.id}", "",
+          f"_Transcribed by mread.py from `{src.path.name}`; every slide once, at first "
           "appearance, text verbatim as Gemini read it. Verify load-bearing numbers "
           "against frames._", ""]
     for sl in slides:
@@ -213,10 +217,10 @@ def cmd_transcribe(args):
     thumb = vdir / "thumb.jpg"
     if not thumb.exists():
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(min(60, total // 2)),
-                        "-i", str(path), "-frames:v", "1", "-vf", "scale=640:-1",
+                        "-i", str(src.path), "-frames:v", "1", "-vf", "scale=640:-1",
                         "-q:v", "6", str(thumb)], check=False)
 
-    print(f"{vid}: {len(segments)} segments, {len(slides)} slides, "
+    print(f"{src.id}: {len(segments)} segments, {len(slides)} slides, "
           f"{len(uncertainties)} uncertainties over {len(windows)} chunk(s); "
           f"tokens prompt={tok_in} output={tok_out}; models {sorted(models)}")
     print(f"[wrote {vdir / 'transcript.json'}, transcript.txt, slides.md]",

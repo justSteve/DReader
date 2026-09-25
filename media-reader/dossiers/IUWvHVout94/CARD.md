@@ -214,3 +214,4 @@ Report:
 
 … — runs/20260906-025759/
 - 20260925-094330 [0:30-1:00] gemini-flash-latest (tok 2971/1025) — Q: What is on screen? (dr-dqm.1 smoke test) — runs/20260925-094330/
+- 20260925-104224 [0:30-1:00] gemini-flash-latest (tok 2972/909) — Q: What is on screen? (dr-dqm.1 seam smoke test) — runs/20260925-104224/
