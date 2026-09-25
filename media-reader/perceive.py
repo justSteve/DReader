@@ -19,11 +19,19 @@ def cmd_ask(args):
     from google import genai
     from google.genai import types
 
-    creds.require_key("mread.py")
     src = resolve_source(args)
+    # Flag guards come before the key check and the client: a bad flag
+    # costs nothing and should say so first.
     if src.kind in ("document", "image") and (args.start or args.end or args.fps):
         sys.exit(f"ask: --start/--end/--fps do not apply to a {src.kind}; "
                  "ask about a page range in the question, or --crop an image")
+    if src.kind == "audio":
+        if args.fps:
+            sys.exit("ask: audio has no frames; --fps does not apply")
+        if args.start or args.end:
+            sys.exit("ask: audio windows arrive in Task B4; "
+                     "ask about the whole recording for now")
+    creds.require_key("mread.py")
     client = genai.Client()
 
     vm_kwargs = {}

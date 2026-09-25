@@ -10,7 +10,9 @@ import subprocess
 
 from dreader_core.runs import parse_ts, fmt_ts  # noqa: E402
 from sources import resolve_source, dossier_dir  # noqa: E402
-from documents import check_quotes, extract_text  # noqa: E402
+import re  # noqa: E402
+
+from documents import NO_TEXT_BODY, extract_text, page_count, quote_status  # noqa: E402
 
 
 def cmd_frames(args):
@@ -79,15 +81,27 @@ def cmd_frames(args):
           f"(frame k ≈ t={fmt_ts(start)} + (k-1)/{args.fps}s)")
 
 
+_RUN_NAME = re.compile(r"^(\d{8})-(\d{6})(?:-(\d+))?$")
+
+
 def latest_run(dossier, ts=None):
     runs_dir = dossier / "runs"
+    if not runs_dir.is_dir():
+        sys.exit(f"no runs/ under {dossier}/ — `ask` first")
     if ts:
-        return runs_dir / ts
+        run = runs_dir / ts
+        if not (run / "response.json").is_file():
+            sys.exit(f"no run {ts} with a response.json under {runs_dir}/")
+        return run
+
     # Run dirs are <date>-<time>[-n]; sort numerically on the collision
     # suffix so -10 follows -2 (plain name order would not) [Task 4 review].
+    # Anything else sorts first, so it is never taken for the newest.
     def order(d):
-        parts = d.name.split("-")
-        return (parts[0], parts[1], int(parts[2]) if len(parts) > 2 else 1)
+        m = _RUN_NAME.match(d.name)
+        if not m:
+            return (0, d.name, "", 0)
+        return (1, m[1], m[2], int(m[3] or 1))
     dirs = sorted((d for d in runs_dir.iterdir() if (d / "response.json").exists()),
                   key=order)
     if not dirs:
@@ -96,32 +110,50 @@ def latest_run(dossier, ts=None):
 
 
 def cmd_verify_quotes(args):
-    """Every verbatim quote in a run's claims must appear in the source text.
-    Exit 1 if any is missing — a missing quote is a finding, not a formatting nit."""
+    """Every verbatim quote in a run's claims must appear in the source text,
+    and, for a PDF, on the page the claim names. Exit 1 if any is missing or
+    on the wrong page — a finding, not a formatting nit."""
     src = resolve_source(args)
     if src.kind != "document":
         sys.exit(f"verify-quotes: {src.kind} sources have no text layer to check against")
     run = latest_run(dossier_dir(src.id), args.run)
     claims = json.loads((run / "response.json").read_text()).get("claims") or []
     text = extract_text(src.path)
+    suf = src.path.suffix.lower()
+    if suf == ".eml" and text.rstrip().endswith(NO_TEXT_BODY):
+        sys.exit(f"verify-quotes: no text body in {src.path.name} — "
+                 "the letter is images or attachments; read it by eye")
     if not text.strip():
         sys.exit(f"verify-quotes: no extractable text in {src.path.name} "
                  "(scanned PDF?) — use `pages` and read the page images")
-    rows = check_quotes(claims, text)
-    for c, ok in rows:
+    paged = suf == ".pdf"
+    rows = [(c, quote_status(c, text, paged)) for c in claims if c.get("verbatim")]
+    width = max([7] + [len(st) for _, st in rows])
+    for c, st in rows:
         loc = f"p.{c['page']}" if c.get("page") else "   "
-        print(f"{'OK     ' if ok else 'MISSING'} {loc:>5}  {c['verbatim'][:90]}")
-    missing = sum(1 for _, ok in rows if not ok)
-    print(f"\n{len(rows)} quoted claims in {run.name}: {len(rows) - missing} found, "
-          f"{missing} missing; {len(claims) - len(rows)} claims carry no quote")
-    sys.exit(1 if missing else 0)
+        print(f"{st:<{width}} {loc:>5}  {str(c['verbatim'])[:90]}")
+    missing = sum(1 for _, st in rows if st == "MISSING")
+    wrong = sum(1 for _, st in rows if st.startswith("WRONG PAGE"))
+    print(f"\n{len(rows)} quoted claims in {run.name}: {len(rows) - missing - wrong} found, "
+          f"{missing} missing, {wrong} on the wrong page; "
+          f"{len(claims) - len(rows)} claims carry no quote")
+    if not paged:
+        print("page check: n/a (not a PDF)")
+    sys.exit(1 if missing or wrong else 0)
 
 
 def cmd_pages(args):
-    """Render PDF pages to PNG (and their text layer) for Claude to read."""
+    """Render PDF pages to PNG (and their -layout text) for Claude to read."""
     src = resolve_source(args)
     if src.kind != "document" or src.path.suffix.lower() != ".pdf":
         sys.exit("pages: works on PDF documents")
+    if args.first < 1:
+        sys.exit(f"pages: --first {args.first}: pages start at 1")
+    if args.first > args.last:
+        sys.exit(f"pages: --first {args.first} is after --last {args.last}")
+    n = page_count(src.path)
+    if n is not None and args.last > n:
+        sys.exit(f"pages: --last {args.last}, but {src.path.name} has {n} page(s)")
     out = dossier_dir(src.id) / f"pages-{args.first}-{args.last}"
     out.mkdir(parents=True, exist_ok=True)
     rng = ["-f", str(args.first), "-l", str(args.last)]
