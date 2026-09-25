@@ -27,6 +27,7 @@ forwarding shim that says so on stderr.
 - the premise that each collector keeps its own copy of credential, retry and
   upload code "by design" — `dreader_core/` holds the one copy, and
   `tests/test_tools_delegate.py` fails if a copy grows back
+- videos/<id>/ as a dossier path; export schema_version 1 (paths) — now 2
 
 **Do not propose:** folding discord-reader into media-reader. Steve ruled 09-25
 that it shares the core only.

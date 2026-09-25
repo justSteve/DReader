@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Flatten videos/*/CARD.md into one corpus.json for the card-reader UI.
+"""Flatten dossiers/*/CARD.md into one corpus.json for the card-reader UI.
 
 Reads ONLY the curated card text (never runs/), the same contract mread.py export
 observes. Emits per-card metadata, the curated sections verbatim as markdown,
 parsed grades, and the cross-reference edges between cards — the link graph the
 cards have grown but that nothing currently surfaces.
 
-Also reads videos/<id>/READ.md — the human-facing layer — into structured
+Also reads dossiers/<id>/READ.md — the human-facing layer — into structured
 fields: the L0 line, L1/L2 markdown, L3 passages (heading, timestamp, quotes)
 with the editor asides pulled out as their own list; AUDIT.md into per-video
 audit entries; and a per-card count of correction annotations.
@@ -17,7 +17,7 @@ import json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-VIDEOS = ROOT / "videos"
+VIDEOS = ROOT / "dossiers"
 PLAYLISTS = ROOT / "playlists"
 
 MACHINE = "Run log"                      # never exposed as curated prose

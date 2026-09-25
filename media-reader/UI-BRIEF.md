@@ -45,9 +45,9 @@ that produced the corpus.
 
 | Artifact | Count | Notes |
 |---|---|---|
-| `videos/<id>/CARD.md` | 43 | agent-facing record of truth; feeds `mread.py export` and sibling zgents |
-| `videos/<id>/READ.md` | **18** | human-facing, four levels; 12 remain uncomposed |
-| `videos/<id>/transcript.txt` | 43 | substrate; gitignored, regenerate with `fetch_transcripts.py` |
+| `dossiers/<id>/CARD.md` | 43 | agent-facing record of truth; feeds `mread.py export` and sibling zgents |
+| `dossiers/<id>/READ.md` | **18** | human-facing, four levels; 12 remain uncomposed |
+| `dossiers/<id>/transcript.txt` | 43 | substrate; gitignored, regenerate with `fetch_transcripts.py` |
 | `playlists/*.md` | 3 | two order-flow syntheses + SMDX |
 | `AUDIT.md` | 556 lines | every correction, by failure class, with what propagated where |
 | `corpus.json` | generated | the data layer — `python3 build_corpus.py` |

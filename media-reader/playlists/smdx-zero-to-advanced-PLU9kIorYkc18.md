@@ -1,7 +1,7 @@
 # Playlist synthesis — Smart Money Decode X, "Zero to Advanced Trader — The Complete Trading Series" (10 videos)
 
 - **Playlist:** https://www.youtube.com/playlist?list=PLU9kIorYkc18
-- **Analyzed:** 2026-08-29 · bead epic `dr-8qq` · cards in `videos/<id>/CARD.md`
+- **Analyzed:** 2026-08-29 · bead epic `dr-8qq` · cards in `dossiers/<id>/CARD.md`
 - **Scope:** all 10 items present (the title promises 100; videos 1–10 exist, uploaded 2026-08-01 → 08-26).
 - **Format:** hand-drawn whiteboard explainers with AI-generated "TradingView"
   chart mock-ups; no presenter on camera, no live platform, no trades. Logo

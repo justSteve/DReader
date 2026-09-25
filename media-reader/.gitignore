@@ -1,6 +1,6 @@
 # working data — never commit (see CLAUDE.md Housekeeping)
-videos/*/runs/
-videos/*/frames-*/
+dossiers/*/runs/
+dossiers/*/frames-*/
 .venv/
 .env
 # transfer vehicles
@@ -22,15 +22,15 @@ browser.html
 corpus.json
 
 # fetched YouTube auto-captions — substrate for READ.md, rerun `fetch_transcripts.py`
-videos/*/transcript.txt
-videos/*/transcript.vtt
+dossiers/*/transcript.txt
+dossiers/*/transcript.vtt
 design/reading-ui/yt-analyst-reads.html
 
 # assembled reading interface — rerun `python3 build_reader.py`
 reader.html
 
 # YouTube cover images for the reader banner — rerun `python3 fetch_thumbs.py`
-videos/*/thumb.jpg
+dossiers/*/thumb.jpg
 
 # Gemini Files API handle for a local capture — expires 48 h after upload, machine-specific
-videos/*/upload.json
+dossiers/*/upload.json

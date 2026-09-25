@@ -7,11 +7,11 @@ description: Use when writing or revising a human-facing READ.md for a media-rea
 
 ## Overview
 
-`videos/<id>/CARD.md` is written for machines and for future analysts: dense,
+`dossiers/<id>/CARD.md` is written for machines and for future analysts: dense,
 timestamped, provenance-marked, deliberately compressed. It is the record of
 truth and it stays exactly as it is.
 
-`videos/<id>/READ.md` is the human version. It is composed **from the
+`dossiers/<id>/READ.md` is the human version. It is composed **from the
 transcript**, not from the card, because the card is a lossy compression that
 already discarded the presenter's voice, examples and explanations. You cannot
 decompress good reading out of it.
@@ -31,8 +31,8 @@ and put an editor around it.
 
 | File | Role |
 |---|---|
-| `videos/<id>/transcript.txt` | **The substrate.** The presenter's own words. |
-| `videos/<id>/CARD.md` | Fact-check and provenance. Timestamps, verbatim on-screen text, verified numbers. |
+| `dossiers/<id>/transcript.txt` | **The substrate.** The presenter's own words. |
+| `dossiers/<id>/CARD.md` | Fact-check and provenance. Timestamps, verbatim on-screen text, verified numbers. |
 | `playlists/*.md` | The corpus. Where this video agrees, conflicts, or fills a gap. |
 | `corpus.json` | Cross-reference edges — which cards already link here. |
 
@@ -153,7 +153,7 @@ classes:
    "greater than 2"; "if you should reach 50%" recorded as a "planning hit
    rate". This is the most common and most damaging class.
 2. **A paraphrase tabulated as a quote.** Check the run JSON under
-   `videos/<id>/runs/*/response.json`: a claim with **`verbatim: null`** is
+   `dossiers/<id>/runs/*/response.json`: a claim with **`verbatim: null`** is
    Gemini's paraphrase, not anyone's words. It must never appear in a card's
    numbers table as a stated value.
 3. **A spoken claim attributed to the screen.** Check `kind`. `kind: spoken` is

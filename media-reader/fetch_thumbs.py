@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch each video's YouTube cover image into videos/<id>/thumb.jpg, downscaled
+"""Fetch each video's YouTube cover image into dossiers/<id>/thumb.jpg, downscaled
 to 640px wide (JPEG q72, ~30 KB) so build_reader.py can inline it — the
 published page cannot load images from the network. Skips files that exist.
 
@@ -12,7 +12,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent
 force = "--force" in sys.argv
 done = skipped = failed = 0
-for vdir in sorted(p for p in (ROOT / "videos").iterdir() if p.is_dir()):
+for vdir in sorted(p for p in (ROOT / "dossiers").iterdir() if p.is_dir()):
     out = vdir / "thumb.jpg"
     if out.exists() and not force:
         skipped += 1

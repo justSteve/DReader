@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Assemble reader.html — the Ledger reading interface — from reader.template.html
 and corpus.json. The page is self-contained: the corpus and each video's cover
-image (videos/<id>/thumb.jpg, from fetch_thumbs.py) ride inline, because the
+image (dossiers/<id>/thumb.jpg, from fetch_thumbs.py) ride inline, because the
 published page cannot load anything from the network. Rerun after
 `python3 build_corpus.py`.
 
@@ -31,7 +31,7 @@ def scope(corpus):
         c["links_out"] = [i for i in c["links_out"] if i in ids]
         if c["read"]:
             c["read"]["links_out"] = [i for i in c["read"]["links_out"] if i in ids]
-        thumb = ROOT / "videos" / c["id"] / "thumb.jpg"
+        thumb = ROOT / "dossiers" / c["id"] / "thumb.jpg"
         c["thumb"] = base64.b64encode(thumb.read_bytes()).decode("ascii") if thumb.exists() else None
     channels = [{"name": g["name"], "cards": [i for i in g["cards"] if i in ids]} for g in corpus["channels"]]
     channels = [g for g in channels if g["cards"]]

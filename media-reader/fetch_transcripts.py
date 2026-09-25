@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch YouTube auto-captions for every carded video into videos/<id>/transcript.txt.
+"""Fetch YouTube auto-captions for every carded video into dossiers/<id>/transcript.txt.
 
 Captions are the substrate for the human-facing READ.md layer: they carry the
 presenter's own words, which the agent-facing CARD.md deliberately compresses
@@ -21,7 +21,7 @@ import re, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-VIDEOS = ROOT / "videos"
+VIDEOS = ROOT / "dossiers"
 YTDLP = ROOT / ".venv" / "bin" / "yt-dlp"
 
 

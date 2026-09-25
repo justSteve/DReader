@@ -22,7 +22,7 @@ to bare `watch?v=ID` form itself.
 
 ## Dossier layout
 
-Every video gets a directory: `videos/<video_id>/`.
+Every piece of media gets a directory: `dossiers/<id>/`.
 
 - `CARD.md` — the video's dossier. mread.py creates the skeleton on first
   contact and appends one line per run to the final `## Run log` section.
@@ -45,7 +45,7 @@ a playlist synthesis. It embeds a snapshot of the card text, so it is
 gitignored and goes stale the moment a card changes — rerun it after
 `mread.py index`. No network, no assets: open the file in a browser.
 
-`videos/<id>/READ.md` is the HUMAN-facing layer, composed from the video's
+`dossiers/<id>/READ.md` is the HUMAN-facing layer, composed from the video's
 transcript rather than from the card — the card is a lossy compression that
 already discarded the presenter's voice. Four levels: a one-line L0, a ~150-word
 overview, the argument with corpus cross-links inline, and an edited transcript
@@ -100,7 +100,7 @@ generated on demand and not committed.
 
 ## Interrogation doctrine
 
-1. **Check the card first.** If `videos/<id>/CARD.md` exists, read it before
+1. **Check the card first.** If `dossiers/<id>/CARD.md` exists, read it before
    asking Gemini anything — prior sessions may already hold the answer, and
    its Lessons section tells you this channel's quirks.
 
@@ -165,12 +165,12 @@ Material Gemini cannot fetch by URL — the InvestiTrade Orderflow course
 (bead dr-22w), members-only streams — arrives as Game Bar recordings in
 `/mnt/c/Users/steve/OneDrive/Videos/Captures/`. Every command takes
 `--file PATH --id ID` in place of `--url`; `ID` is a slug you choose
-(`it-orderflow-<topic>`) and names `videos/<id>/` exactly as a YouTube id
+(`it-orderflow-<topic>`) and names `dossiers/<id>/` exactly as a YouTube id
 would. The file stays where Steve put it; the card records its path.
 
 - **One upload, many asks.** The first call uploads the file through the
   Gemini Files API (minutes for a gigabyte over the WSL bridge) and caches
-  the handle in `videos/<id>/upload.json`; every later ask, clipped or not,
+  the handle in `dossiers/<id>/upload.json`; every later ask, clipped or not,
   reuses it until Google expires it at 48 h. Do not delete the cache file
   mid-session.
 - **Start with `transcribe`, not `ask`.** `mread.py transcribe --file … --id …`
@@ -244,7 +244,7 @@ produce the comparison, and record the verdict.
 
 ## Housekeeping
 
-- `videos/*/runs/` and `videos/*/frames-*/` are working data — never commit
+- `dossiers/*/runs/` and `dossiers/*/frames-*/` are working data — never commit
   them. CARD.md, INDEX.md and LESSONS.md ARE worth versioning if this
   directory is a repo: they're the distilled knowledge.
 - Prune a video's frames-* directories once its card is closed; keep runs/.

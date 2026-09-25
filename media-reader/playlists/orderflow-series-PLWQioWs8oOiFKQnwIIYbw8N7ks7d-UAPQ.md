@@ -1,7 +1,7 @@
 # Playlist synthesis — Carmine Rosato, "Trading Orderflow Series" (8 episodes)
 
 - **Playlist:** https://www.youtube.com/playlist?list=PLWQioWs8oOiFKQnwIIYbw8N7ks7d-UAPQ
-- **Analyzed:** 2026-08-28 · bead epic `dr-08s` · cards in `videos/<id>/CARD.md`
+- **Analyzed:** 2026-08-28 · bead epic `dr-08s` · cards in `dossiers/<id>/CARD.md`
 - **Scope:** playlist items 2–9 (ep. 1–8). Item 1 (`sPqeW4j-8Zk`, intro) skipped per Steve.
 - **Method per video:** wide pass → zooms on load-bearing numbers → arithmetic → frames → Opus verifier (eps. 1–7) or direct cross-reference (ep. 8).
 
@@ -91,7 +91,7 @@ most profitable month was a gross profit of **$28,000**. A 7.4× gap, with no
 frames at 00:00–00:10 to settle it. Do not repeat either figure until frames do.
 
 The Goldman **"236 profitable days"** panel is a different matter and **is
-frame-verified** — `videos/0QlGCz6U_1g/frames-233-243/f_0003.jpg` carries every
+frame-verified** — `dossiers/0QlGCz6U_1g/frames-233-243/f_0003.jpg` carries every
 figure (236 / 15 / 41 / 112 / $100M / $50–100M / $18.1B / 53% / 2012) and the
 histogram bars (0, 0, 2, 2, 12, 27, 56, 75, 37, 41) close arithmetically
 against them. It is cited evidence about Goldman's 2012 trading record, not a
