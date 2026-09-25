@@ -955,3 +955,88 @@ timestamps sit — inside `[a, b]` means file frame, inside `[0, b-a]` means cli
 frame — and re-base only in the second case; `--absolute` still forces the file
 frame. The YouTube-URL path with `--start/--end` was never checked for this;
 assume nothing there until a clipped ask shows which frame it uses.
+
+## 2026-09-25 — Documents: a newsletter's quoted levels all survive `verify-quotes`
+
+**Status: suspected** (one specimen, dr-dqm.2 Task B2).
+
+Specimen: the Trade Brigade letter of 2026-08-31 (`.txt`, inline text path),
+asked "Which SPY levels does the letter name, and what does it say about
+each? Quote it." Gemini returned 10 claims, each with a `verbatim`;
+`verify-quotes` found **10 of 10** in the source text, 0 `MISSING`, 0 with no
+quote (page check n/a: not a PDF). Every level Gemini named (767.50, 760.00,
+754.75, the expected-move bounds 778.57 / 761.70) is a quoted string in the
+letter, not a derived figure. One clean letter says nothing yet about PDFs,
+tables or a letter that states a level only in a chart — the next document
+specimen should be one of those.
+
+## 2026-09-25 — `verify-quotes` fails safe around hyphens and dashes; WRONG PAGE reads the printed label
+
+**Status: confirmed** (B2 code review, reproduced in the unit tests).
+
+The quote check normalises whitespace, quote marks and dashes (an em dash
+becomes "-"), then anchors the quote: one that starts with a digit must not
+follow a letter, digit, ".", "," or "-" in the source, and one that ends with
+a digit must not run on into more digits, a decimal or "%". A bare number next
+to a hyphen or dash therefore fails: "10" in "5-10", "2026" in "Q3-2026", a
+number right after an em dash. That is deliberate — the same anchors block a
+dropped minus sign or a dropped decimal ("5" passing for "-5" or "5.25") —
+but it means a `MISSING` on such a quote says **look at the page**,
+not "Gemini invented it". Read the source line before calling it a
+fabrication.
+
+`WRONG PAGE` compares the page label Gemini prints (what the document's own
+footer says) with the **physical** page index of the PDF. A document with
+front matter (cover, contents, roman-numbered pages) shows false `WRONG PAGE`
+results by the offset. Check one flagged quote with `pages` before trusting
+the rest.
+
+## 2026-09-25 — Images: a slide still reads verbatim; a crop returns exactly its box
+
+**Status: suspected** (one specimen, dr-dqm.2 Task B3).
+
+Specimen: a PNG still at 0:25 of the 11-08-12 InvestiTrade capture
+(`it-orderflow-0916-1108`), inline image path. Gemini and I (reading the
+same PNG) agreed **verbatim** on the slide title and its 3 bullets. The
+chapter's `slides.md` lists 7 bullets for that slide: `transcribe` records
+each slide once, in its final built-up state, and at 0:25 only 3 bullets had
+appeared. That is timing, not a reading error — when comparing a still with
+`slides.md`, check where in the build the still was taken. An `ask --crop`
+on the title's box returned exactly the title and nothing from outside it.
+
+## 2026-09-25 — Audio: the numbers came through; one term was misheard; the seam held once
+
+**Status: suspected** (one specimen, dr-dqm.2 Task B4).
+
+Specimen: the audio track of the 13-39-46 capture (`it-orderflow-0916-1339`,
+extracted to m4a), `transcribe --chunk 1.5` over the first 3 minutes,
+compared line by line with that chapter's video-path transcript.
+
+- **Numbers: all matched verbatim** — 4304, 4302¼, the 5/1/15/30-minute
+  timeframes, 9:30, 9:35-9:36.
+- **One misheard term:** audio "high-a-day", video "high-of-day" (correct:
+  high of day). The video path had the chart label to lean on; audio did not.
+  Expect jargon to drift more than numbers on audio.
+- **Notation drift, not error:** "1/4" vs "quarter", "30-minute" vs "30m".
+  The 1:00-1:40 ask spelled numbers in words ("four three o two and a
+  quarter") before the prompt asked for digits. Normalise before comparing
+  two passes, or a second-pass check reports false disagreements.
+- **Seam:** no words dropped or duplicated at the 1:30 chunk cut. One
+  observation only, and the cut is not word-aware — a word straddling a seam
+  can still be lost; check seams when a quote sits within a few seconds of
+  one.
+- **Speaker labels are per chunk:** "Speaker 1" in one chunk need not be
+  "Speaker 1" in the next.
+- **Re-basing:** the `ask --start 1:00 --end 1:40` came back with `t`
+  between 1:08 and 1:40 on the file's clock (offset 60 recorded in
+  `request.json`) — correct.
+
+## 2026-09-25 — Uplink is ~90 KB/s: smoke-test the upload path on a 30 s clip
+
+**Status: suspected** (one day's measurement).
+
+Today's uplink measured ~90 KB/s, so a whole Game Bar capture (hundreds of
+MB) takes about an hour to reach the Files API. To prove the file path works
+— credentials, mime type, the upload cache — cut a 30 s clip first
+(`ffmpeg -ss 0 -t 30 -i IN -c copy OUT`) and run the command on that. Upload
+the full file only once the clip has come back clean, and budget the hour.

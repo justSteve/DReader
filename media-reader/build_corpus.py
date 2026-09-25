@@ -250,9 +250,21 @@ def build():
                 if target != vdir.name and target not in {e["to"] for e in edges if e["from"] == vdir.name}:
                     edges.append({"from": vdir.name, "to": target, "via": "read"})
 
+        # Same fallback as corpus.collect_videos. Only a YouTube card may get a
+        # made-up watch URL; a local capture keeps its header's URL (or none),
+        # and documents, images and audio get null [dr-dqm.2].
+        kind = hdr.get("kind") or ("youtube" if (hdr.get("url") or "").startswith("http")
+                                   else "video")
+        if kind == "youtube":
+            url = hdr.get("url", f"https://www.youtube.com/watch?v={vdir.name}")
+        elif kind == "video":
+            url = hdr.get("url")
+        else:
+            url = None
         cards.append({
             "id": vdir.name,
-            "url": hdr.get("url", f"https://www.youtube.com/watch?v={vdir.name}"),
+            "kind": kind,
+            "url": url,
             "title": hdr.get("title"),
             "channel": hdr.get("channel"),
             "channel_key": (hdr.get("channel") or "").split("—")[0].split("(")[0].strip() or None,

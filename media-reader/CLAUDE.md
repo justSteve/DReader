@@ -1,9 +1,18 @@
 # media-reader — operating instructions for Claude Code
 
 You drive `mread.py`, a CLI that uses Gemini Flash as a perception service for
-YouTube videos. Gemini is the eyes; you are the analyst. Your job is to
-interrogate videos through it, verify what it reports, maintain the dossier,
-and deliver findings Steve can rely on.
+media: YouTube videos, local screen captures, audio, images and documents.
+Gemini is the eyes; you are the analyst. Your job is to interrogate the media
+through it, verify what it reports, maintain the dossier, and deliver findings
+Steve can rely on.
+
+Layout: `mread.py` is the CLI only; the work lives in `sources.py` (kinds,
+cards, `source.json`, what is sent to Gemini), `perceive.py` (`ask`,
+`transcribe`, `fetch`), `verify.py` (`frames`, `pages`, `verify-quotes`,
+`crop`), `corpus.py` (`index`, `browse`, `export`), `prompts.py`,
+`documents.py` (text extraction, quote checking) and `cuts.py` (local ffmpeg
+cuts and crops). Credentials, retry, the upload cache and run archives come
+from `../dreader_core/`, shared with discord-reader.
 
 ## Invocation
 
@@ -28,7 +37,26 @@ Every piece of media gets a directory: `dossiers/<id>/`.
   contact and appends one line per run to the final `## Run log` section.
   Everything ABOVE that section is yours to curate (see Card maintenance).
 - `runs/<timestamp>/` — raw request/response JSON for each ask (a sub-card).
+  `response.json` is always Gemini's reply exactly as it came back; when an
+  audio window was cut locally, `response.rebased.json` sits beside it with
+  every timestamp moved onto the whole file's clock. Cite the re-based copy,
+  keep the raw one as the record.
 - `frames-*/` — verification frames, colocated with their video.
+- `source.json` — for a local file (capture, audio, image, document) the path
+  it lives at and, for `fetch`, the page it came from. After the first
+  `--file PATH --id ID`, every command needs only `--id ID`.
+- `transcript.json` — gitignored by default, because audio and document
+  transcripts are often private. The course transcripts already tracked stay
+  tracked; add a new one with `git add -f` only when you mean to.
+
+A card's header says what the media is: a `**Kind:**` line (`youtube`,
+`video`, `audio`, `image`, `document`). YouTube videos and local video
+captures keep the `# Video:` card; audio, images and documents use the generic
+`# Media:` card, with a locator-neutral Findings section (timestamp, page or
+image region). INDEX.md, `export` and `corpus.json` read the `**Kind:**`
+line; older cards without one fall back to `youtube` when `**URL:**` is a link
+and `video` otherwise. Only `youtube` cards get a YouTube URL, cover image or
+watch link in the reader.
 
 `INDEX.md` at the root indexes every card, grouped by channel/author, with
 playlist position, upload date, length, status and run count. It is generated
@@ -98,7 +126,9 @@ stated in the output's `contract` block; never synthesize them — a made-up
 id looks stable across card revisions without being so. The export is
 generated on demand and not committed. Export schema v2 (2026-09-25): card
 paths are `dossiers/<id>/CARD.md`; the envelope's `contract.changes_from_v1`
-says so.
+says so. The verification vocabulary it reads from card prose covers the new
+kinds too: `quote_check` (verify-quotes), `page_image` (`pages-N-M`),
+`crop` and `second_pass` (a second, separately cut audio listen).
 
 ## Interrogation doctrine
 
@@ -192,6 +222,46 @@ would. The file stays where Steve put it; the card records its path.
   from ffprobe; Uploaded and Views stay absent. Group chapters with
   `**Playlist:** course-investitrade-orderflow #N` so INDEX.md orders them and
   finds the synthesis in `playlists/`.
+
+## Other kinds: documents, images, audio
+
+The video doctrine is *wide pass → zoom → check arithmetic → verify against
+pixels*, and arithmetic verifies consistency, not provenance. Each other kind
+has its own answer to "what is the independent check?":
+
+| Kind | Zoom | Independent check | Command |
+|---|---|---|---|
+| document | ask about a page range | **every `verbatim` quote must appear in the source text**. The check is mechanical, costs nothing, and catches a derived number presented as quoted | `verify-quotes`; `pages` renders page images for tables and figures |
+| image | `ask --crop x,y,w,h` | you view the image yourself. There is no second sample, so this is the only check (Strader, 2026-08-30). Apply the zero-cost filters first: footprint parity, too-neat numbers, non-monotonic axis | `crop` output is readable with the Read tool |
+| audio | `ask --start --end` on a local cut | no pixels. A load-bearing spoken number needs a **second, separately cut** pass over ±15 s that agrees verbatim. Disagreement goes to Steve with both versions | `ask` twice on offset windows |
+
+```
+mread.py ask --file F --id ID --question Q      # any kind; later calls: --id ID alone
+mread.py verify-quotes --id ID [--run TS]      # documents: every quote must be in the text
+mread.py pages --id ID --first N --last M      # PDFs: page images + text layer
+mread.py crop --id ID --box X,Y,W,H            # images: a zoom box to look at yourself
+mread.py ask --id ID --crop X,Y,W,H --question Q   # images: Gemini on the zoom box
+mread.py ask --id ID --start MM:SS --end MM:SS --question Q   # audio: cut locally
+mread.py transcribe --id ID [--chunk MIN]      # audio (and video captures)
+mread.py fetch --url URL --id ID               # podcast page → dossier audio
+```
+
+- New kinds get the `# Media:` card with `**Kind:**` (see Dossier layout).
+  INDEX.md tags them `· _document_`, `· _image_`, `· _audio_`; videos stay
+  untagged.
+- Source files and cuts are gitignored — `dossiers/*/source.*`, `source.json`,
+  `chunks/`, `crops/`, `pages-*/` — because newsletters and members-only
+  audio are private. The card records where the original lives.
+- Audio windows are cut **locally** with ffmpeg: Gemini's server-side offsets
+  apply to video only. Timestamps come back re-based onto the file
+  (`response.rebased.json`); the cut is not word-aware, so check a phrase
+  that straddles a chunk seam before quoting it.
+- A `MISSING` from `verify-quotes` means "look at the page", not "Gemini
+  invented it": the check fails safe around hyphens and dashes (LESSONS.md
+  2026-09-25). `WRONG PAGE` compares Gemini's printed page label with the
+  physical page index, so front matter produces false positives.
+- `fetch` downloads one episode (never a playlist) beside the old audio and
+  swaps it in only when the download succeeded.
 
 ## Card maintenance (end of every session)
 

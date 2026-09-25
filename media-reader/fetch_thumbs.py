@@ -5,7 +5,7 @@ published page cannot load images from the network. Skips files that exist.
 
   python3 fetch_thumbs.py [--force]
 """
-import io, sys, urllib.request
+import io, re, sys, urllib.request
 from pathlib import Path
 from PIL import Image
 
@@ -14,6 +14,12 @@ force = "--force" in sys.argv
 done = skipped = failed = 0
 for vdir in sorted(p for p in (ROOT / "dossiers").iterdir() if p.is_dir()):
     out = vdir / "thumb.jpg"
+    card = vdir / "CARD.md"
+    head = card.read_text(errors="replace").split("\n## ", 1)[0] if card.exists() else ""
+    kind = re.search(r"\*\*Kind:\*\*\s*(\S+)", head)
+    url = re.search(r"\*\*URL:\*\*\s*(\S+)", head)
+    if (kind and kind.group(1) != "youtube") or not (url and url.group(1).startswith("http")):
+        continue   # only YouTube videos have a cover to fetch [dr-dqm.2]
     if out.exists() and not force:
         skipped += 1
         continue

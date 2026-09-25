@@ -138,6 +138,12 @@ def collect_videos():
     return out
 
 
+def kind_tag(v):
+    """Videos are the corpus's default and stay untagged; other kinds say what they are."""
+    k = v.get("kind", "youtube")
+    return "" if k in ("youtube", "video") else f" · _{k}_"
+
+
 def render_index(vids):
     shelved = [v for v in vids if v["card"] and v["status"] == "shelved"]
     carded = [v for v in vids if v["card"] and v["status"] != "shelved"]
@@ -213,7 +219,7 @@ def render_index(vids):
             L.append("|---:|---|---|---|---:|---|---:|")
             for v in rows:
                 pos = str(v["playlist_pos"]) if v["playlist_pos"] else "—"
-                link = f"[`{v['id']}`](dossiers/{v['id']}/CARD.md)"
+                link = f"[`{v['id']}`](dossiers/{v['id']}/CARD.md)" + kind_tag(v)
                 L.append(f"| {pos} | {link} | {md_cell(v['title'], 78)} | "
                          f"{md_cell(v['uploaded'])} | {md_cell(v['duration'])} | "
                          f"{md_cell(v['status'])} | {v['runs']} |")
@@ -229,7 +235,7 @@ def render_index(vids):
         L.append("| Channel | Video | Title | Uploaded | Len | Runs |")
         L.append("|---|---|---|---|---:|---:|")
         for v in sorted(shelved, key=lambda v: (v["author"].lower(), v["uploaded"])):
-            link = f"[`{v['id']}`](dossiers/{v['id']}/CARD.md)"
+            link = f"[`{v['id']}`](dossiers/{v['id']}/CARD.md)" + kind_tag(v)
             L.append(f"| {md_cell(v['author'])} | {link} | {md_cell(v['title'], 78)} | "
                      f"{md_cell(v['uploaded'])} | {md_cell(v['duration'])} | {v['runs']} |")
         L.append("")
@@ -283,6 +289,10 @@ VERIF_METHODS = [
     ("arithmetic", r"arithmetic"),
     ("parity", r"parity"),
     ("cross_episode", r"cross[- ]episode|cross[- ]video"),
+    ("quote_check", r"verify-quotes|quote[- ]check(?:ed)?"),
+    ("page_image", r"\bpages-\d+-\d+\b|\bpage image\b"),
+    ("crop", r"\bcrop-\d+-\d+-\d+x\d+\b|\bcrop(?:ped)?\b"),
+    ("second_pass", r"second (?:pass|listen)|re-?listen"),
 ]
 # Cards mark verification in prose as well as in bold: "**Verified: frames**",
 # "(verified)", "verified in-frame", "(Slides unverified.)". Match the bare

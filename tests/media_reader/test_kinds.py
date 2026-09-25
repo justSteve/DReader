@@ -125,3 +125,47 @@ def test_unreadable_pdf_card_says_pages_unknown(tmp_path):
     s = sources.resolve_source(ns(file=str(make(tmp_path, "bad.pdf", b"not a pdf")),
                                   id="bad-pdf-item"))
     assert "pages unknown" in s.card.read_text()
+
+
+# ------------------------------------------------------- corpus catch-up ----
+
+def test_kind_tag_leaves_videos_untagged_and_names_other_kinds():
+    import corpus
+    assert corpus.kind_tag({"kind": "youtube"}) == ""
+    assert corpus.kind_tag({"kind": "video"}) == ""
+    assert corpus.kind_tag({}) == ""
+    assert corpus.kind_tag({"kind": "document"}) == " · _document_"
+
+
+@pytest.mark.parametrize("text,method", [
+    ("verified by verify-quotes", "quote_check"),
+    ("quote-checked against the letter", "quote_check"),
+    ("see pages-3-4/ for the table", "page_image"),
+    ("checked on the page image", "page_image"),
+    ("crops/crop-10-20-300x40.png shows it", "crop"),
+    ("a second pass over 1:00-1:40 agreed", "second_pass"),
+    ("re-listened at 2:10", "second_pass"),
+])
+def test_export_reads_the_new_verification_words(text, method):
+    import re
+    import corpus
+    pats = dict(corpus.VERIF_METHODS)
+    assert re.search(pats[method], text, re.I)
+
+
+def test_build_corpus_invents_a_youtube_url_only_for_youtube(tmp_path, monkeypatch):
+    import build_corpus
+    d = tmp_path / "dossiers"
+    for vid, head in [("abcdefghijk", "- **URL:** https://www.youtube.com/watch?v=abcdefghijk"),
+                      ("it-cap", "- **URL:** —"),
+                      ("tb-letter", "- **Kind:** document")]:
+        (d / vid).mkdir(parents=True)
+        (d / vid / "CARD.md").write_text(f"# x\n\n{head}\n- **Status:** open\n\n## Findings\nok\n")
+    monkeypatch.setattr(build_corpus, "VIDEOS", d)
+    monkeypatch.setattr(build_corpus, "PLAYLISTS", tmp_path / "no-playlists")
+    monkeypatch.setattr(build_corpus, "AUDIT", tmp_path / "no-AUDIT.md")
+    cards = {c["id"]: c for c in build_corpus.build()["cards"]}
+    assert (cards["abcdefghijk"]["kind"], cards["abcdefghijk"]["url"]) == (
+        "youtube", "https://www.youtube.com/watch?v=abcdefghijk")
+    assert (cards["it-cap"]["kind"], cards["it-cap"]["url"]) == ("video", "—")
+    assert (cards["tb-letter"]["kind"], cards["tb-letter"]["url"]) == ("document", None)

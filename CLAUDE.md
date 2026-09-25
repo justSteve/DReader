@@ -63,7 +63,7 @@ Browser automation of Steve's account (Playwright/Selenium DOM scraping) was **r
 
 Collection is `discord-reader/` (Python: screen-capture video → Gemini →
 transcript dossiers on disk) and `media-reader/` (media ingestion — YouTube,
-local captures, and (Plan B) audio, images, documents — as dossiers; `mread.py`,
+local captures, audio, images, documents — as dossiers; `mread.py`,
 sharing `dreader_core/` with `dread.py`). Both produce **dossiers**: a card, a transcript, and a run log per capture.
 
 There is no serving layer. The TypeScript query layer (Express + SQLite) was
@@ -106,7 +106,7 @@ bd prime             # Re-read PRIME.md (context for new sessions)
 | Path | Purpose |
 |------|---------|
 | `discord-reader/` | Screen-capture → Gemini transcription (Python), capture dossiers |
-| `media-reader/` | Media ingestion — YouTube, local captures, and (Plan B) audio, images, documents — as dossiers: cards, reads, corpus, reader (`mread.py`) |
+| `media-reader/` | Media ingestion: YouTube, local captures, audio, images, documents → verified dossiers (`mread.py`) |
 | `docs/retired/REGISTER.md` | **What is retired and what each ruling invalidates — read before proposing** |
 | `docs/retired/` | Retired tracks: findings kept, code at tags `playwright-retired`, `query-layer-retired` |
 | `.beads/` | Beads (work authorization) |

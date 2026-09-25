@@ -258,7 +258,8 @@ function gradesHtml(c) { const g = c.grades || {}; if (!g.clarity && !g.alignmen
 function playIcon() { return '<svg width="9" height="10" viewBox="0 0 9 10" fill="currentColor" aria-hidden="true"><path d="M1 1v8l7-4z"></path></svg>'; }
 function fmtTotal(s) { const h = Math.floor(s / 3600), m = Math.round((s % 3600) / 60); return h + "h" + String(m).padStart(2, "0") + "m"; }
 function shortTitle(c) { return c.title || c.id; }
-function watchAt(c, s) { return "https://www.youtube.com/watch?v=" + c.id + (s ? "&t=" + s + "s" : ""); }
+/* Only YouTube cards have somewhere to watch; local captures, documents, images and audio get no link. */
+function watchAt(c, s) { return c && c.kind === "youtube" ? "https://www.youtube.com/watch?v=" + c.id + (s ? "&t=" + s + "s" : "") : null; }
 function chev() { return '<svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"></path></svg>'; }
 function arrowIn() { return '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 6H2"></path><path d="M5 3 2 6l3 3"></path></svg>'; }
 function arrowOut() { return '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h8"></path><path d="M7 3l3 3-3 3"></path></svg>'; }
@@ -294,7 +295,7 @@ function inline(s, self) {
     links.push(out); return "@@L" + (links.length - 1) + "@@";
   });
   s = s.replace(/\b(20\d\d)-(\d\d)-(\d\d)\b/g, (m, y, mo, d) => Number(mo) + "-" + Number(d) + "-" + y.slice(2));
-  if (self && byId[self]) {
+  if (self && watchAt(byId[self])) {
     s = s.replace(/(^|[^\d:])(\d{1,2}):(\d{2})(?![\d:])/g, (m, pre, a, b) => {
       const secs = Number(a) * 60 + Number(b);
       return pre + '<a class="tsl" href="' + watchAt(byId[self], secs) + '" target="_blank" rel="noopener" title="Open the video at ' + a + ":" + b + '">' + a + ":" + b + "</a>";
@@ -495,10 +496,10 @@ function renderPassage(c, p, idx) {
   let h = '<article class="pass" id="p-' + idx + '">';
   if (p.heading) {
     h += '<div class="phead"><span class="ts">' + esc(p.ts) + '</span><div class="ph"><b>' + inline(p.heading, c.id) + '</b>' +
-      (p.ts_s != null ? '<a href="' + watchAt(c, p.ts_s) + '" target="_blank" rel="noopener">watch ' + esc(p.ts) + '</a>' : "") + '</div></div>';
+      (p.ts_s != null && watchAt(c) ? '<a href="' + watchAt(c, p.ts_s) + '" target="_blank" rel="noopener">watch ' + esc(p.ts) + '</a>' : "") + '</div></div>';
   }
   for (const b of p.blocks) {
-    if (b.kind === "quote") h += '<div class="qrow"><span></span><div class="q">' + md(b.markdown, c.id) + (p.ts_s != null ? '<a class="wl" href="' + watchAt(c, p.ts_s) + '" target="_blank" rel="noopener">' + playIcon() + 'watch at ' + esc(p.ts) + '</a>' : "") + '</div></div>';
+    if (b.kind === "quote") h += '<div class="qrow"><span></span><div class="q">' + md(b.markdown, c.id) + (p.ts_s != null && watchAt(c) ? '<a class="wl" href="' + watchAt(c, p.ts_s) + '" target="_blank" rel="noopener">' + playIcon() + 'watch at ' + esc(p.ts) + '</a>' : "") + '</div></div>';
     else if (b.kind === "aside") h += '<div class="aside"><span class="who">EDITOR</span><div class="body">' + md(b.markdown, c.id) + '</div></div>';
     else {
       const t = b.markdown.trim();
@@ -514,7 +515,7 @@ function renderPassage(c, p, idx) {
 function renderVideo(c) {
   const r = c.read;
   let h = '<div class="topbar narrow-only"><button class="iconbtn" id="openLib">Library</button><button class="iconbtn" id="openRail">Context</button></div>';
-  if (c.thumb) h += '<a class="banner" href="' + watchAt(c) + '" target="_blank" rel="noopener" title="Open the video on YouTube"><img src="data:image/jpeg;base64,' + c.thumb + '" alt="Cover image of the video"><span class="play">' + playIcon() + 'watch on YouTube</span></a>';
+  if (c.thumb && watchAt(c)) h += '<a class="banner" href="' + watchAt(c) + '" target="_blank" rel="noopener" title="Open the video on YouTube"><img src="data:image/jpeg;base64,' + c.thumb + '" alt="Cover image of the video"><span class="play">' + playIcon() + 'watch on YouTube</span></a>';
   h += '<div class="meta"><span class="mono">' + esc(c.id) + '</span><span class="sep">·</span><span>' + esc(c.channel_key || "") + '</span>' +
     (c.uploaded ? '<span class="sep">·</span><span class="mono">' + esc(fmtDate(c.uploaded)) + '</span>' : "") +
     (c.duration_s != null ? '<span class="sep">·</span><span class="mono">' + fmtDur(c.duration_s) + '</span>' : "") +
@@ -523,7 +524,7 @@ function renderVideo(c) {
     (c.status ? '<span class="chip">' + esc(c.status) + '</span>' : "") +
     '<span class="chip">' + c.runs + ' run' + (c.runs === 1 ? "" : "s") + '</span>' +
     (r ? '<span class="chip on">read</span>' : '<span class="chip">card only</span>') +
-    '<a class="chip" href="' + watchAt(c) + '" target="_blank" rel="noopener">watch</a></div>';
+    (watchAt(c) ? '<a class="chip" href="' + watchAt(c) + '" target="_blank" rel="noopener">watch</a>' : "") + '</div>';
   h += '<h1 class="title">' + esc(shortTitle(c)) + '</h1>';
   if (c.channel && c.channel !== c.channel_key) h += '<div style="font-size:12.5px;color:var(--muted);margin:-2px 0 12px 0;max-width:780px">' + inline(c.channel, c.id) + '</div>';
 
