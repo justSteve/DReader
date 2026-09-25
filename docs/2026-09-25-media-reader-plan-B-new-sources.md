@@ -1154,7 +1154,7 @@ In the root `CLAUDE.md`, change the `media-reader/` row of Key Files to: *media 
 
 - [ ] **Step 5: Lessons from the three specimens**
 
-Append to `media-reader/LESSONS.md`, one dated entry per kind, each `status: suspected`. State what the B2/B3/B4 specimens showed, with both versions quoted wherever readings disagreed. For audio, add the seam finding (words dropped or duplicated at the 1:30 cut, or neither). For documents, add how many quotes `verify-quotes` flagged `MISSING`, and why.
+Append to `media-reader/LESSONS.md`, one dated entry per kind, each `status: suspected`. State what the B2/B3/B4 specimens showed, with both versions quoted wherever readings disagreed. For audio, add the seam finding (words dropped or duplicated at the 1:30 cut, or neither). For documents, add how many quotes `verify-quotes` flagged `MISSING`, and why. Also record, as a `confirmed` tool lesson from the B2 review, that `verify-quotes` fails safe on bare numbers next to a hyphen or dash ("10" in "5-10", "2026" in "Q3-2026", a number right after an em dash). It blocks dropped signs and decimals, so a MISSING on such a quote means "look at the page", not "Gemini invented it". Also: WRONG PAGE compares Gemini's printed page label with the physical page index, so documents with front matter show false WRONG PAGE results.
 
 - [ ] **Step 6: Clean up specimens that are only tests**
 
