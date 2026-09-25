@@ -1040,3 +1040,27 @@ MB) takes about an hour to reach the Files API. To prove the file path works
 — credentials, mime type, the upload cache — cut a 30 s clip first
 (`ffmpeg -ss 0 -t 30 -i IN -c copy OUT`) and run the command on that. Upload
 the full file only once the clip has come back clean, and budget the hour.
+
+## 2026-09-25 — Chart-identity confabulation confirmed: four runs, four author tags
+
+**Status: confirmed.** This is the third independent observation, after
+`8O_GIxjhLkc` (2026-09-07) and `A1FQt2hVfl4` (2026-09-10). It graduates both
+of those suspected lessons.
+
+On `fXDBMJFpIaM` (Zeiierman, TradingView, OANDA XAUUSD 15m, Sep 2026), each
+of four YouTube-URL runs gave the indicator pane a different author tag:
+`[Deltonex]`, `[QuantSecret]`, `[QuantVue]` and `[Darkmatter]`. The frames
+read `(Zeiierman)`. All four runs dated the chart Aug–Sep 2023 at about
+1,930. The frames read Sep 2026 at about 4,350. One run said `1m` for
+`15`. The position tool came back as a consistent but invented triple:
+14.165 / 4.885 / R:R 2.90, against 28.414 / 7.745 / 3.67 on screen. None of
+these reads carried an uncertainty flag. The spoken narration was accurate
+throughout.
+
+**Rule (proposed for CLAUDE.md doctrine step 5):** on YouTube-URL ingestion,
+treat every chart-identity field as unread until framed. That means platform,
+feed, symbol, timeframe, dates, price regime, indicator names and author tags,
+and position-tool or ticket numbers. One frame of the header plus one of the
+tool usually settles them all. Run-to-run agreement does not count, and
+neither does internal arithmetic, because derived triples close by
+construction.
