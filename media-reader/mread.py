@@ -49,7 +49,7 @@ from dreader_core import creds, gemini  # noqa: E402
 from corpus import cmd_index, cmd_export, cmd_browse, BROWSER_PATH  # noqa: E402
 from perceive import cmd_ask, cmd_transcribe  # noqa: E402
 from sources import SCRIPT_DIR  # noqa: E402
-from verify import cmd_frames  # noqa: E402
+from verify import cmd_frames, cmd_verify_quotes, cmd_pages  # noqa: E402
 
 
 def cmd_env(args):
@@ -66,8 +66,8 @@ def main():
 
     def source_args(sp):
         sp.add_argument("--url", help="YouTube URL")
-        sp.add_argument("--file", help="local capture (mp4) instead of --url")
-        sp.add_argument("--id", help="dossier id for --file: a slug naming dossiers/<id>/")
+        sp.add_argument("--file", help="local file: video, audio, image or document")
+        sp.add_argument("--id", help="dossier id (slug); alone, reuses the file the dossier remembers")
 
     a = sub.add_parser("ask", help="interrogate video via Gemini")
     source_args(a)
@@ -86,6 +86,18 @@ def main():
     f.add_argument("--fps", type=float, default=1)
     f.add_argument("--out", help="output directory (default: dossiers/<id>/frames-*)")
     f.set_defaults(func=cmd_frames)
+
+    q = sub.add_parser("verify-quotes", help="check a run's quoted claims against the document text")
+    source_args(q)
+    q.add_argument("--run", help="run timestamp (default: newest)")
+    q.set_defaults(func=cmd_verify_quotes)
+
+    pg = sub.add_parser("pages", help="render PDF pages + text layer for verification")
+    source_args(pg)
+    pg.add_argument("--first", type=int, required=True)
+    pg.add_argument("--last", type=int, required=True)
+    pg.add_argument("--dpi", type=int, default=150)
+    pg.set_defaults(func=cmd_pages)
 
     t = sub.add_parser("transcribe",
                        help="local capture -> transcript.{json,txt} + slides.md")

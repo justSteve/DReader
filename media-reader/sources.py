@@ -275,16 +275,26 @@ def resolve_source(args):
     return Source(kind="youtube", id=vid, card=ensure_card(vid, url), url=url)
 
 
-def media_part(client, src, vm_kwargs):
-    """The Part that carries src's bytes to Gemini."""
+INLINE_MAX = 18_000_000  # Gemini inline requests cap near 20 MB
+TEXT_MIMES = {"text/plain", "text/markdown", "message/rfc822", "text/html"}
+
+
+def media_part(client, src, vm_kwargs=None, path=None, mime=None):
+    """The Part that carries src's bytes to Gemini. `path`/`mime` substitute a
+    local cut (an audio chunk, an image crop) for the whole source."""
     from google.genai import types
+    path, mime = path or src.path, mime or src.mime
     if src.kind == "youtube":
-        fd = types.FileData(file_uri=src.url)
-    else:
-        g = uploads.upload_cached(client, dossier_dir(src.id) / "upload.json",
-                                  src.path, src.mime)
-        fd = types.FileData(file_uri=g.uri, mime_type=g.mime_type)
+        return types.Part(file_data=types.FileData(file_uri=src.url),
+                          video_metadata=types.VideoMetadata(**vm_kwargs) if vm_kwargs else None)
+    if src.kind == "document" and mime in TEXT_MIMES:
+        from documents import extract_text
+        return types.Part.from_text(text=extract_text(path))
+    cache = (dossier_dir(src.id) / "upload.json" if path == src.path
+             else path.with_name(path.name + ".upload.json"))
+    g = uploads.upload_cached(client, cache, path, mime)
     return types.Part(
-        file_data=fd,
-        video_metadata=types.VideoMetadata(**vm_kwargs) if vm_kwargs else None,
+        file_data=types.FileData(file_uri=g.uri, mime_type=g.mime_type),
+        video_metadata=(types.VideoMetadata(**vm_kwargs)
+                        if vm_kwargs and src.kind == "video" else None),
     )

@@ -5,10 +5,12 @@ from pathlib import Path
 _root = str(Path(__file__).resolve().parent.parent)  # dreader_core, after this dir
 if _root not in sys.path:
     sys.path.insert(1, _root)
+import json
 import subprocess
 
 from dreader_core.runs import parse_ts, fmt_ts  # noqa: E402
 from sources import resolve_source, dossier_dir  # noqa: E402
+from documents import check_quotes, extract_text  # noqa: E402
 
 
 def cmd_frames(args):
@@ -75,3 +77,56 @@ def cmd_frames(args):
     n = len(list(out_dir.glob("f_*.jpg")))
     print(f"{n} frames in {out_dir}/ "
           f"(frame k ≈ t={fmt_ts(start)} + (k-1)/{args.fps}s)")
+
+
+def latest_run(dossier, ts=None):
+    runs_dir = dossier / "runs"
+    if ts:
+        return runs_dir / ts
+    # Run dirs are <date>-<time>[-n]; sort numerically on the collision
+    # suffix so -10 follows -2 (plain name order would not) [Task 4 review].
+    def order(d):
+        parts = d.name.split("-")
+        return (parts[0], parts[1], int(parts[2]) if len(parts) > 2 else 1)
+    dirs = sorted((d for d in runs_dir.iterdir() if (d / "response.json").exists()),
+                  key=order)
+    if not dirs:
+        sys.exit(f"no runs with a response.json under {runs_dir}/")
+    return dirs[-1]
+
+
+def cmd_verify_quotes(args):
+    """Every verbatim quote in a run's claims must appear in the source text.
+    Exit 1 if any is missing — a missing quote is a finding, not a formatting nit."""
+    src = resolve_source(args)
+    if src.kind != "document":
+        sys.exit(f"verify-quotes: {src.kind} sources have no text layer to check against")
+    run = latest_run(dossier_dir(src.id), args.run)
+    claims = json.loads((run / "response.json").read_text()).get("claims") or []
+    text = extract_text(src.path)
+    if not text.strip():
+        sys.exit(f"verify-quotes: no extractable text in {src.path.name} "
+                 "(scanned PDF?) — use `pages` and read the page images")
+    rows = check_quotes(claims, text)
+    for c, ok in rows:
+        loc = f"p.{c['page']}" if c.get("page") else "   "
+        print(f"{'OK     ' if ok else 'MISSING'} {loc:>5}  {c['verbatim'][:90]}")
+    missing = sum(1 for _, ok in rows if not ok)
+    print(f"\n{len(rows)} quoted claims in {run.name}: {len(rows) - missing} found, "
+          f"{missing} missing; {len(claims) - len(rows)} claims carry no quote")
+    sys.exit(1 if missing else 0)
+
+
+def cmd_pages(args):
+    """Render PDF pages to PNG (and their text layer) for Claude to read."""
+    src = resolve_source(args)
+    if src.kind != "document" or src.path.suffix.lower() != ".pdf":
+        sys.exit("pages: works on PDF documents")
+    out = dossier_dir(src.id) / f"pages-{args.first}-{args.last}"
+    out.mkdir(parents=True, exist_ok=True)
+    rng = ["-f", str(args.first), "-l", str(args.last)]
+    subprocess.run(["pdftoppm", *rng, "-r", str(args.dpi), "-png", str(src.path),
+                    str(out / "p")], check=True)
+    subprocess.run(["pdftotext", *rng, "-layout", str(src.path), str(out / "text.txt")],
+                   check=True)
+    print(f"{len(list(out.glob('p-*.png')))} page image(s) + text.txt in {out}/")

@@ -11,7 +11,7 @@ from datetime import datetime
 
 from dreader_core import creds, gemini, runs  # noqa: E402
 from dreader_core.runs import parse_ts, fmt_ts  # noqa: E402
-from prompts import ANALYST_PROMPT, TRANSCRIBE_PROMPT, ASK_SHAPE  # noqa: E402
+from prompts import TRANSCRIBE_PROMPT, ASK_SHAPE, ask_prompt  # noqa: E402
 from sources import resolve_source, dossier_dir, media_part, probe_duration  # noqa: E402
 
 
@@ -21,18 +21,22 @@ def cmd_ask(args):
 
     creds.require_key("mread.py")
     src = resolve_source(args)
+    if src.kind in ("document", "image") and (args.start or args.end or args.fps):
+        sys.exit(f"ask: --start/--end/--fps do not apply to a {src.kind}; "
+                 "ask about a page range in the question, or --crop an image")
     client = genai.Client()
 
     vm_kwargs = {}
-    if args.start is not None:
-        vm_kwargs["start_offset"] = f"{parse_ts(args.start)}s"
-    if args.end is not None:
-        vm_kwargs["end_offset"] = f"{parse_ts(args.end)}s"
-    if args.fps is not None:
-        vm_kwargs["fps"] = args.fps
+    if src.kind in ("youtube", "video"):
+        if args.start is not None:
+            vm_kwargs["start_offset"] = f"{parse_ts(args.start)}s"
+        if args.end is not None:
+            vm_kwargs["end_offset"] = f"{parse_ts(args.end)}s"
+        if args.fps is not None:
+            vm_kwargs["fps"] = args.fps
 
     video_part = media_part(client, src, vm_kwargs)
-    prompt = ANALYST_PROMPT.replace("{question}", args.question)
+    prompt = ask_prompt(src.kind, args.question)
 
     answered_model, resp = gemini.generate_with_retry(
         client,
