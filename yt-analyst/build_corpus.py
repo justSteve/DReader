@@ -238,7 +238,8 @@ def build():
                    else axis.lower().replace(" ", "_"))
             grades.setdefault(key, {"axis": axis, **normalize_grade(m.group("val"))})
 
-        for target in set(LINK_RE.findall(blob)):
+        # sorted: set order varies per process (PYTHONHASHSEED), which made corpus.json non-deterministic [dr-dqm.1]
+        for target in sorted(set(LINK_RE.findall(blob))):
             if target != vdir.name:
                 edges.append({"from": vdir.name, "to": target})
 
