@@ -7,7 +7,7 @@
 - **Category:** Trading
 - **Uploaded:** 2026-09-22 · **Duration:** 5:26 (326 s) · **Views:** 4,753
 - **First analyzed:** 2026-09-25
-- **Status:** closed
+- **Status:** shelved
 - **Bead:** dr-w5l (credibility assessment of the indicator)
 
 ## Verdict on the question asked

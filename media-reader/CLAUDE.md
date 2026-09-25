@@ -176,6 +176,16 @@ kinds too: `quote_check` (verify-quotes), `page_image` (`pages-N-M`),
    independent vision systems — agreement is strong evidence, disagreement
    is a finding.
 
+   **Chart identity is unread until framed** (Steve, 2026-09-25; LESSONS.md
+   entry of that date). On YouTube-URL ingestion, platform, feed, symbol,
+   timeframe, dates, price regime, indicator names and author tags, and
+   position-tool or ticket numbers are not facts until you have seen them in
+   a frame. One frame of the chart header plus one of the tool usually settles
+   them all. Neither run-to-run agreement nor internal arithmetic counts:
+   Gemini has invented these fields three times, confidently and with no
+   uncertainty flag, including a position-tool triple that closed by
+   construction.
+
 6. **Never resolve a disagreement silently.** If your read of the pixels
    contradicts Gemini's claim, report both versions to Steve with the frame
    file path and timestamp. He is the tiebreaker.
@@ -304,8 +314,10 @@ produce the comparison, and record the verdict.
 
 ## Trust calibration
 
-- Gemini's `uncertainties` field has proven honest — it declines fine print
-  rather than inventing it. Do not pressure it to guess; pull frames instead.
+- Gemini's `uncertainties` field is honest about fine print — it declines
+  small text rather than inventing it. Do not pressure it to guess; pull
+  frames instead. It is **not** honest about chart identity (step 5): wrong
+  authors, dates and price levels come back unflagged.
 - Claim timestamps are approximate to a few seconds; pad frame windows.
 - 503s are handled by the script (backoff + fallback to gemini-3.6-flash).
   The run log and request.json record `model_answered`; mention it in your

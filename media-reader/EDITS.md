@@ -220,3 +220,14 @@ assessed: not order flow — an ICT/SMC market-structure framework that
 measures nothing, with its one mechanism claim unsupported and cut against
 by the corpus's footprint evidence. The terminology map and the Carmine
 trapped-participants comparison remain on the card for reference.
+
+## 2026-09-25 · `fXDBMJFpIaM` — Zeiierman Trading, "This Order Flow Indicator Is Seriously Overpowered" — shelved
+
+Steve, after the credibility assessment (dr-w5l): "You can discard the new OF
+video." Shelved rather than deleted, as with the earlier discards: the card
+stays on disk and in INDEX.md's Shelved section, and the browser and reader
+drop it. Reason as assessed: an OHLCV/tick-volume delta proxy on OANDA spot
+gold, one example picked after the fact, a same-screen counter-example the
+video never mentions, and no evidence behind "very, very high accurate". The
+card also holds the third chart-identity confabulation, which became doctrine
+the same day (dr-73g).

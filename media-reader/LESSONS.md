@@ -1057,7 +1057,7 @@ read `(Zeiierman)`. All four runs dated the chart Aug–Sep 2023 at about
 these reads carried an uncertainty flag. The spoken narration was accurate
 throughout.
 
-**Rule (proposed for CLAUDE.md doctrine step 5):** on YouTube-URL ingestion,
+**Rule (graduated to CLAUDE.md doctrine step 5 on 2026-09-25, Steve agreed):** on YouTube-URL ingestion,
 treat every chart-identity field as unread until framed. That means platform,
 feed, symbol, timeframe, dates, price regime, indicator names and author tags,
 and position-tool or ticket numbers. One frame of the header plus one of the
