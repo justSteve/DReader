@@ -2,7 +2,8 @@
 
 The copies drifted before: dread.py kept a retired fallback model, no
 transport-error retry and no empty-reply guard for weeks after yta.py fixed
-all three. This test fails the moment a copy grows back."""
+all three. This test fails when a copy grows back — by name (PRIVATE_COPIES)
+or by content (MARKERS)."""
 import importlib.util
 import sys
 from pathlib import Path
@@ -17,7 +18,16 @@ TOOLS = {
     "dread": [REPO_ROOT / "discord-reader" / "dread.py"],
 }
 PRIVATE_COPIES = ["parse_env_file", "secrets_path", "load_env", "require_key",
-                  "SECRETS_POINTER", "DEFAULT_SECRETS_PATH"]
+                  "SECRETS_POINTER", "DEFAULT_SECRETS_PATH",
+                  "report_env", "SECRET_NAMES", "MODELS_URL"]
+
+# Literals only a private copy of the shared logic would contain, whatever
+# it is named. Tasks 3-4 extend this list as more moves into dreader_core.
+# NOTE: "/home/vault" alone also matches the module docstring's "Requires:"
+# line on both tools (a legitimate mention of where the vault lives), so the
+# marker is narrowed to the constructor shape the deleted constant used.
+MARKERS = ["Path(\"/home/vault", "DREADER_SECRETS_FILE", "x-goog-api-key",
+           "os.environ.update(", "hashlib.sha256(key"]
 
 
 @pytest.fixture(params=sorted(TOOLS), ids=sorted(TOOLS))
@@ -36,6 +46,12 @@ def tool(request):
 @pytest.mark.parametrize("name", PRIVATE_COPIES)
 def test_no_private_copy(tool, name):
     assert not hasattr(tool, name), f"{tool.__name__} defines its own {name}"
+
+
+@pytest.mark.parametrize("marker", MARKERS)
+def test_no_private_logic(tool, marker):
+    src = Path(tool.__file__).read_text()
+    assert marker not in src, f"{Path(tool.__file__).name} contains {marker!r} — use dreader_core"
 
 
 def test_uses_the_shared_creds(tool):

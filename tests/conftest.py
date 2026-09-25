@@ -1,6 +1,7 @@
 """Put the repo root (for dreader_core) and the media tool's directory (for
 its modules, from Task 7 on) on sys.path. The tools do the same for
-themselves at import time, so tests and tools resolve the same module objects."""
+themselves at import time, so tests and tools resolve the same module objects.
+Order matches the tools: the tool's directory ahead of the repo root."""
 import sys
 from pathlib import Path
 

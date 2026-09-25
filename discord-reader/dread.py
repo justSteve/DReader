@@ -45,7 +45,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 CAPTURES_DIR = SCRIPT_DIR / "captures"
 
 # The shared core lives at the repo root [dr-dqm].
-sys.path.insert(0, str(SCRIPT_DIR.parent))
+sys.path.insert(1, str(SCRIPT_DIR.parent))  # after the tool's own dir, so a sibling module wins
 from dreader_core import creds  # noqa: E402
 
 DEFAULT_MODEL = "gemini-flash-latest"
