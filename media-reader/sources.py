@@ -290,6 +290,8 @@ def media_part(client, src, vm_kwargs=None, path=None, mime=None):
     if src.kind == "document" and mime in TEXT_MIMES:
         from documents import extract_text
         return types.Part.from_text(text=extract_text(path))
+    if src.kind == "image" and path.stat().st_size <= INLINE_MAX:
+        return types.Part.from_bytes(data=path.read_bytes(), mime_type=mime)
     cache = (dossier_dir(src.id) / "upload.json" if path == src.path
              else path.with_name(path.name + ".upload.json"))
     g = uploads.upload_cached(client, cache, path, mime)

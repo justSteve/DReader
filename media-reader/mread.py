@@ -49,7 +49,7 @@ from dreader_core import creds, gemini  # noqa: E402
 from corpus import cmd_index, cmd_export, cmd_browse, BROWSER_PATH  # noqa: E402
 from perceive import cmd_ask, cmd_transcribe  # noqa: E402
 from sources import SCRIPT_DIR  # noqa: E402
-from verify import cmd_frames, cmd_verify_quotes, cmd_pages  # noqa: E402
+from verify import cmd_frames, cmd_verify_quotes, cmd_pages, cmd_crop  # noqa: E402
 
 
 def cmd_env(args):
@@ -76,6 +76,7 @@ def main():
     a.add_argument("--end", help="clip end")
     a.add_argument("--fps", type=float, help="sampling fps (default 1; 0.1-60)")
     a.add_argument("--resolution", choices=["low", "medium", "high"])
+    a.add_argument("--crop", help="images: X,Y,W,H pixel box to zoom on (sent instead of the whole image)")
     a.add_argument("--model", default=gemini.DEFAULT_MODEL)
     a.set_defaults(func=cmd_ask)
 
@@ -86,6 +87,11 @@ def main():
     f.add_argument("--fps", type=float, default=1)
     f.add_argument("--out", help="output directory (default: dossiers/<id>/frames-*)")
     f.set_defaults(func=cmd_frames)
+
+    cr = sub.add_parser("crop", help="images: cut a zoom box to dossiers/<id>/crops/ for viewing")
+    source_args(cr)
+    cr.add_argument("--box", required=True, help="X,Y,W,H in pixels")
+    cr.set_defaults(func=cmd_crop)
 
     q = sub.add_parser("verify-quotes", help="check a run's quoted claims against the document text")
     source_args(q)

@@ -13,6 +13,7 @@ from dreader_core import creds, gemini, runs  # noqa: E402
 from dreader_core.runs import parse_ts, fmt_ts  # noqa: E402
 from prompts import TRANSCRIBE_PROMPT, ASK_SHAPE, ask_prompt  # noqa: E402
 from sources import resolve_source, dossier_dir, media_part, probe_duration  # noqa: E402
+import cuts  # noqa: E402
 
 
 def cmd_ask(args):
@@ -31,6 +32,12 @@ def cmd_ask(args):
         if args.start or args.end:
             sys.exit("ask: audio windows arrive in Task B4; "
                      "ask about the whole recording for now")
+    cut, cut_mime, crop_box = None, None, None
+    if getattr(args, "crop", None):
+        if src.kind != "image":
+            sys.exit("ask: --crop applies to images")
+        crop_box = cuts.parse_box(args.crop)
+        cut, cut_mime = cuts.crop(src.path, crop_box, dossier_dir(src.id) / "crops"), "image/png"
     creds.require_key("mread.py")
     client = genai.Client()
 
@@ -43,7 +50,7 @@ def cmd_ask(args):
         if args.fps is not None:
             vm_kwargs["fps"] = args.fps
 
-    video_part = media_part(client, src, vm_kwargs)
+    video_part = media_part(client, src, vm_kwargs, path=cut, mime=cut_mime)
     prompt = ask_prompt(src.kind, args.question)
 
     answered_model, resp = gemini.generate_with_retry(
@@ -65,6 +72,7 @@ def cmd_ask(args):
         "model_requested": args.model, "model_answered": answered_model,
         "start": args.start, "end": args.end, "fps": args.fps,
         "resolution": args.resolution,
+        "crop": args.crop if crop_box else None,
         "prompt_tokens": getattr(usage, "prompt_token_count", None),
         "output_tokens": getattr(usage, "candidates_token_count", None),
     }, indent=2))

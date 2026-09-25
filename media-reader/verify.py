@@ -81,6 +81,14 @@ def cmd_frames(args):
           f"(frame k ≈ t={fmt_ts(start)} + (k-1)/{args.fps}s)")
 
 
+def cmd_crop(args):
+    import cuts
+    src = resolve_source(args)
+    if src.kind != "image":
+        sys.exit("crop: works on images")
+    print(cuts.crop(src.path, cuts.parse_box(args.box), dossier_dir(src.id) / "crops"))
+
+
 _RUN_NAME = re.compile(r"^(\d{8})-(\d{6})(?:-(\d+))?$")
 
 
