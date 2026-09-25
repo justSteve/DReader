@@ -10,9 +10,11 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-FILES = [
-    REPO_ROOT / "media-reader" / "mread.py",
-    REPO_ROOT / "media-reader" / "reader.template.html",
+# Every module of the tool (BROWSER_TEMPLATE moved to corpus.py in Task 7, so
+# a scan of mread.py alone would pass vacuously), minus the yta.py shim.
+TOOL_DIR = REPO_ROOT / "media-reader"
+FILES = sorted(p for p in TOOL_DIR.glob("*.py") if p.name != "yta.py") + [
+    TOOL_DIR / "reader.template.html",
 ]
 
 

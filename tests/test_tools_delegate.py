@@ -57,8 +57,14 @@ def test_no_private_copy(tool, name):
 
 @pytest.mark.parametrize("marker", MARKERS)
 def test_no_private_logic(tool, marker):
-    src = Path(tool.__file__).read_text()
-    assert marker not in src, f"{Path(tool.__file__).name} contains {marker!r} — use dreader_core"
+    # Every module directly in the tool's directory, not just its entry point:
+    # since Task 7 the media tool is several modules, and a copy regrown in
+    # sources.py would be invisible to a scan of mread.py alone.
+    tool_dir = Path(tool.__file__).parent
+    for f in sorted(tool_dir.glob("*.py")):
+        if f.name == "yta.py" and f.parent.name == "media-reader":
+            continue  # the forwarding shim
+        assert marker not in f.read_text(), f"{f.name} contains {marker!r} — use dreader_core"
 
 
 def test_uses_the_shared_creds(tool):
