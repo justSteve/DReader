@@ -1262,7 +1262,7 @@ git add -A media-reader/videos media-reader/dossiers
 
 - [ ] **Step 2: Code**
 
-- `mread.py`: `VIDEOS_DIR = SCRIPT_DIR / "videos"` → `DOSSIERS_DIR = SCRIPT_DIR / "dossiers"`. Rename every use of `VIDEOS_DIR` to `DOSSIERS_DIR`, and every string literal `videos/` to `dossiers/` (`/usr/bin/grep -n 'VIDEOS_DIR\|videos/' media-reader/mread.py`). Set `EXPORT_SCHEMA_VERSION = 2`, and add to the export's `contract` block the key `"changes_from_v1": "card paths moved from videos/<id>/ to dossiers/<id>/ (dr-dqm, 2026-09-25); ids unchanged"`.
+- `mread.py`: `VIDEOS_DIR = SCRIPT_DIR / "videos"` → `DOSSIERS_DIR = SCRIPT_DIR / "dossiers"`. Rename every use of `VIDEOS_DIR` to `DOSSIERS_DIR`, and every string literal `videos/` to `dossiers/` (`/usr/bin/grep -n 'VIDEOS_DIR\|videos/' media-reader/mread.py`). Set `EXPORT_SCHEMA_VERSION = 2`, and add to the export's `contract` block, as its **first** key (so no neighbouring line gains or loses a comma, and the oracle's normalisation rule for it removes exactly one line), `"changes_from_v1": "card paths moved from videos/<id>/ to dossiers/<id>/ (dr-dqm, 2026-09-25); ids unchanged"`.
 - `build_corpus.py`, `fetch_transcripts.py`: `VIDEOS = ROOT / "videos"` → `VIDEOS = ROOT / "dossiers"`
 - `build_reader.py` line 34 and `fetch_thumbs.py` line 15: `ROOT / "videos"` → `ROOT / "dossiers"`
 - `media-reader/.gitignore`: every `videos/*/` → `dossiers/*/`
