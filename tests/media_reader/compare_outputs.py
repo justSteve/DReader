@@ -14,14 +14,16 @@ import difflib
 import re
 import subprocess
 import sys
+from datetime import datetime
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 BASE = REPO / ".refactor-baseline"
 CANDIDATES = [("media-reader", "mread.py"), ("yt-analyst", "yta.py")]
 NORMALISE = [
-    (r'"generated": "[^"]*"', '"generated": "X"'),
+    (r'"generated": ?"[^"]*"', '"generated": "X"'),
     (r"generated \d{4}-\d{2}-\d{2}", "generated X"),
+    (r'\n[ \t]*"changes_from_v1": "[^"]*",', ""),
     (r"\bdossiers/", "videos/"),
     (r"mread\.py", "yta.py"),
     (r"media-reader", "yt-analyst"),
@@ -36,18 +38,26 @@ def tool():
     sys.exit("no media tool found")
 
 
+def run_step(name, cmd, cwd, **kwargs):
+    try:
+        subprocess.run(cmd, cwd=cwd, check=True, **kwargs)
+    except subprocess.CalledProcessError:
+        print(f"generate: `{name}` failed", file=sys.stderr)
+        raise
+
+
 def generate(out):
     tdir, entry = tool()
     py = str(tdir / ".venv" / "bin" / "python")
     out.mkdir(parents=True, exist_ok=True)
     with open(out / "INDEX.md", "w") as f:
-        subprocess.run([py, entry, "index", "--stdout"], cwd=tdir, stdout=f, check=True)
-    subprocess.run([py, entry, "export", "--out", str(out / "export.json")],
-                   cwd=tdir, check=True, stderr=subprocess.DEVNULL)
-    subprocess.run([py, entry, "browse", "--out", str(out / "browser.html")],
-                   cwd=tdir, check=True, stdout=subprocess.DEVNULL)
-    subprocess.run([py, "build_corpus.py", "--out", str(out / "corpus.json")],
-                   cwd=tdir, check=True, stdout=subprocess.DEVNULL)
+        run_step("index", [py, entry, "index", "--stdout"], tdir, stdout=f)
+    run_step("export", [py, entry, "export", "--out", str(out / "export.json")],
+              tdir, stdout=subprocess.DEVNULL)
+    run_step("browse", [py, entry, "browse", "--out", str(out / "browser.html")],
+              tdir, stdout=subprocess.DEVNULL)
+    run_step("corpus", [py, "build_corpus.py", "--out", str(out / "corpus.json")],
+              tdir, stdout=subprocess.DEVNULL)
 
 
 def norm(text):
@@ -56,12 +66,25 @@ def norm(text):
     return text.splitlines(keepends=True)
 
 
+def baseline_mtime():
+    for name in ("INDEX.md", "export.json", "browser.html", "corpus.json"):
+        p = BASE / name
+        if p.exists():
+            return p.stat().st_mtime
+    return BASE.stat().st_mtime
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "check"
     if mode == "save":
+        if BASE.exists():
+            when = datetime.fromtimestamp(baseline_mtime())
+            print(f"replacing baseline from {when:%Y-%m-%d %H:%M:%S}")
         generate(BASE)
         print(f"baseline saved to {BASE}")
         return
+    if not BASE.exists():
+        sys.exit("no baseline: run `compare_outputs.py save` first")
     now = REPO / ".refactor-now"
     generate(now)
     bad = 0
