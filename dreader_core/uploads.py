@@ -44,7 +44,7 @@ def upload_cached(client, cache, path, mime_type=None):
             print(f"[upload cache unusable: {e}; re-uploading]", file=sys.stderr)
     f = upload_file(client, path, mime_type)
     cache.write_text(json.dumps({
-        "name": f.name, "uri": f.uri, "mime_type": f.mime_type,
+        "name": f.name, "uri": f.uri, "mime_type": f.mime_type or mime_type,
         "path": str(path), "size": path.stat().st_size,
         "uploaded": datetime.now().isoformat(timespec="seconds"),
         "expires": time.time() + UPLOAD_TTL_S,
