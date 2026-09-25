@@ -34,3 +34,10 @@ dossiers/*/thumb.jpg
 
 # Gemini Files API handle for a local capture — expires 48 h after upload, machine-specific
 dossiers/*/upload.json
+
+# dr-dqm.2 — private source copies, machine-local pointers, working cuts
+dossiers/*/source.*
+dossiers/*/chunks/
+dossiers/*/crops/
+dossiers/*/pages-*/
+dossiers/*/*.upload.json
