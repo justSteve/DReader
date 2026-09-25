@@ -28,6 +28,7 @@ Task B5 writes this into `media-reader/CLAUDE.md`.
 
 - Same card freeze and oracle as Plan A. Take a fresh `compare_outputs.py save` before Task B1. Tasks B1–B4 must leave the existing corpus's outputs **identical**; only B5 changes them, on purpose.
 - Source files can be private (newsletters, members-only audio). `dossiers/*/source.*`, `source.json`, `chunks/`, `crops/` and `pages-*/` are gitignored in Task B1, before any specimen exists.
+- `uploads.upload_file` calls `sys.exit` on a FAILED upload, which `except Exception` does not catch. In `transcribe_audio`, one failed chunk upload therefore ends the whole run. That is acceptable, because the finished chunks are archived under `runs/`, but say so in the B4 LESSONS entry if it happens (Task 4 review).
 - Gemini inline requests are capped near 20 MB. `INLINE_MAX` is 18 MB; anything larger goes through the upload cache.
 
 ## File map
@@ -655,8 +656,13 @@ def latest_run(dossier, ts=None):
     runs_dir = dossier / "runs"
     if ts:
         return runs_dir / ts
+    # Run dirs are <date>-<time>[-n]; sort numerically on the collision
+    # suffix so -10 follows -2 (plain name order would not) [Task 4 review].
+    def order(d):
+        parts = d.name.split("-")
+        return (parts[0], parts[1], int(parts[2]) if len(parts) > 2 else 1)
     dirs = sorted((d for d in runs_dir.iterdir() if (d / "response.json").exists()),
-                  key=lambda d: d.name)
+                  key=order)
     if not dirs:
         sys.exit(f"no runs with a response.json under {runs_dir}/")
     return dirs[-1]
