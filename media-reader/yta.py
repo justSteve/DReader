@@ -7,4 +7,6 @@ from pathlib import Path
 
 target = Path(__file__).resolve().with_name("mread.py")
 print("[yta.py is now mread.py — forwarding; update the command]", file=sys.stderr)
-os.execv(sys.executable, [sys.executable, str(target), *sys.argv[1:]])
+venv_py = target.parent / ".venv" / "bin" / "python"
+py = str(venv_py) if venv_py.exists() else sys.executable
+os.execv(py, [py, str(target), *sys.argv[1:]])

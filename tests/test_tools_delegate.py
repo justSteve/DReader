@@ -14,7 +14,7 @@ import dreader_core.creds
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 TOOLS = {
-    "media": [REPO_ROOT / "media-reader" / "mread.py", REPO_ROOT / "yt-analyst" / "yta.py"],
+    "media": [REPO_ROOT / "media-reader" / "mread.py"],
     "dread": [REPO_ROOT / "discord-reader" / "dread.py"],
 }
 PRIVATE_COPIES = ["parse_env_file", "secrets_path", "load_env", "require_key",
