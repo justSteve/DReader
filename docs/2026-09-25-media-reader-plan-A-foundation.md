@@ -557,7 +557,7 @@ def report_env(tool_dir, tool, no_check):
 In `yt-analyst/yta.py`, directly under `SCRIPT_DIR = …`:
 ```python
 # The shared core lives at the repo root [dr-dqm].
-sys.path.insert(0, str(SCRIPT_DIR.parent))
+sys.path.insert(1, str(SCRIPT_DIR.parent))  # after the tool's own dir [dr-dqm.1 review]
 from dreader_core import creds  # noqa: E402
 ```
 Delete from yta.py: `SECRETS_POINTER`, `DEFAULT_SECRETS_PATH`, `SECRET_NAMES`, `MODELS_URL`, and the functions `parse_env_file`, `secrets_path`, `load_env`, `require_key`. Then make these replacements:
@@ -571,7 +571,7 @@ Do the same in `discord-reader/dread.py`, with `"dread.py"` as the tool name.
 - [ ] **Step 7: Run the tests**
 
 Run: `.venv/bin/pytest tests -q`
-Expected: all pass. The delegation tests are 7 checks × 2 tools = 14.
+Expected: all pass. (Amended after Task 2's review: the delegation test also scans each tool's source for `MARKERS` — literals that only a private copy of the logic would contain — so a copy under a new name is caught too.)
 
 - [ ] **Step 8: Check the live paths are unchanged**
 
@@ -774,7 +774,7 @@ Expected: all pass.
 
 - [ ] **Step 5: Extend the delegation test**
 
-In `tests/test_tools_delegate.py`, extend `PRIVATE_COPIES` with:
+In `tests/test_tools_delegate.py`, extend `MARKERS` with `"FALLBACK_MODELS"`, `"RETRYABLE"`, `".models.generate_content("` (a tool must call `gemini.generate_with_retry`, never the SDK directly), `"gemini-2.5-flash"`, `"gemini-3.6-flash"`; and extend `PRIVATE_COPIES` with:
 ```python
                   "generate_with_retry", "parse_json_reply", "response_text",
                   "quiet_sdk", "FALLBACK_MODELS", "RETRYABLE",
@@ -1067,7 +1067,7 @@ Expected: all pass.
 
 - [ ] **Step 6: Wire both tools and extend the delegation test**
 
-Add to `PRIVATE_COPIES`: `"new_run_dir", "append_run_log", "upload_video", "upload_cached", "UPLOAD_TTL_S"`.
+Add to `PRIVATE_COPIES`: `"new_run_dir", "append_run_log", "upload_video", "upload_cached", "UPLOAD_TTL_S"`, and to `MARKERS`: `".files.upload("`, `"UPLOAD_TTL_S"`, `"FileExistsError"` (the run-dir collision loop).
 
 yta.py: import becomes `from dreader_core import creds, gemini, runs, uploads  # noqa: E402`. Delete `UPLOAD_TTL_S`, `upload_cached`, `new_run_dir`, `append_run_log`, `parse_ts` and `fmt_ts`. Then:
 - in `video_part_for`: `g = upload_cached(client, vid, path)` → `g = uploads.upload_cached(client, video_dir(vid) / "upload.json", path)`
@@ -1312,7 +1312,7 @@ Each module starts with the same three lines, then the imports its moved code ne
 ```python
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # dreader_core
+sys.path.insert(1, str(Path(__file__).resolve().parent.parent))  # dreader_core, after this dir
 ```
 
 | Module | Moves in (by name) | Imports it needs |
