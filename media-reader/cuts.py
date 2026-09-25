@@ -1,4 +1,5 @@
 """Local ffmpeg cuts: the zoom step for kinds Gemini cannot window itself."""
+import os
 import re
 import subprocess
 import sys
@@ -14,11 +15,19 @@ def parse_box(s):
 def crop_command(src, box, out_dir):
     x, y, w, h = box
     out = out_dir / f"crop-{x}-{y}-{w}x{h}.png"
+    # format=rgb24 before crop: on a 4:2:0 source (most screenshots/JPEGs),
+    # cropping straight off the chroma-subsampled planes silently rounds an
+    # odd width/height down to the nearest even number. Converting first
+    # gives an exact crop at any size.
     return ["ffmpeg", "-y", "-v", "error", "-i", str(src),
-            "-vf", f"crop={w}:{h}:{x}:{y}", "-frames:v", "1", str(out)], out
+            "-vf", f"format=rgb24,crop={w}:{h}:{x}:{y}", "-frames:v", "1", str(out)], out
 
 
 def crop(src, box, out_dir):
+    x, y, w, h = box
+    W, H = image_size(src)
+    if W and H and (x + w > W or y + h > H):
+        sys.exit(f"--crop {x},{y},{w},{h} falls outside the {W}×{H} image")
     out_dir.mkdir(parents=True, exist_ok=True)
     cmd, out = crop_command(src, box, out_dir)
     subprocess.run(cmd, check=True, timeout=120)
@@ -27,17 +36,35 @@ def crop(src, box, out_dir):
 
 def audio_cut_command(src, a, b, out_dir):
     # -ss and -t as INPUT options: seek, then read b-a seconds. A stream copy
-    # needs no re-encode; the cut lands on the nearest frame (tens of ms).
-    out = out_dir / f"chunk-{a}-{b}{src.suffix.lower()}"
+    # needs no re-encode for most containers; the cut lands on the nearest
+    # frame (tens of ms). FLAC is the exception: copying a mid-stream slice
+    # leaves the STREAMINFO header's duration pointing at the original file,
+    # so FLAC chunks are re-encoded instead.
+    suffix = src.suffix.lower()
+    st = src.stat()
+    tag = f"{st.st_size:x}{int(st.st_mtime):x}"[-10:]
+    out = out_dir / f"chunk-{a}-{b}-{tag}{suffix}"
+    codec = ["-c:a", "flac"] if suffix == ".flac" else ["-c", "copy"]
     return ["ffmpeg", "-y", "-v", "error", "-ss", str(a), "-t", str(b - a),
-            "-i", str(src), "-c", "copy", str(out)], out
+            "-i", str(src), *codec, str(out)], out
 
 
 def cut_audio(src, a, b, out_dir):
     out_dir.mkdir(parents=True, exist_ok=True)
     cmd, out = audio_cut_command(src, a, b, out_dir)
-    if not out.exists():
+    if out.exists():
+        return out
+    # Write to a .part file and rename into place only on success, so a
+    # chunk that dies partway through never leaves a same-named file behind
+    # for the out.exists() fast path above to mistake for a finished cut.
+    part = out.with_name(out.stem + ".part" + out.suffix)
+    cmd = cmd[:-1] + [str(part)]
+    try:
         subprocess.run(cmd, check=True, timeout=120)
+        os.replace(part, out)
+    except Exception:
+        part.unlink(missing_ok=True)
+        raise
     return out
 
 

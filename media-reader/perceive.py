@@ -16,6 +16,15 @@ from sources import resolve_source, dossier_dir, media_part, probe_duration  # n
 import cuts  # noqa: E402
 
 
+def window_label(start, end, crop):
+    """The run-log line's bracketed window: a crop box, a clip range, or [full]."""
+    if crop:
+        return f" [crop {crop}]"
+    if start or end:
+        return f" [{start or '0:00'}-{end or 'end'}]"
+    return " [full]"
+
+
 def cmd_ask(args):
     from google import genai
     from google.genai import types
@@ -78,8 +87,7 @@ def cmd_ask(args):
     }, indent=2))
     (run_dir / "response.json").write_text(json.dumps(payload, indent=2))
 
-    window = (f" [{args.start or '0:00'}-{args.end or 'end'}]"
-              if (args.start or args.end) else " [full]")
+    window = window_label(args.start, args.end, args.crop if crop_box else None)
     q_short = (args.question[:80] + "…") if len(args.question) > 80 else args.question
     runs.append_run_log(src.card,
                    f"- {ts}{window} {answered_model} "
