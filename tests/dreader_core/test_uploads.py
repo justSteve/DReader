@@ -164,3 +164,33 @@ def test_missing_server_mime_type_falls_back_to_caller_supplied(tmp_path, monkey
     uploads.upload_cached(c, cache, src, mime_type="application/pdf")
     rec = json.loads(cache.read_text())
     assert rec["mime_type"] == "application/pdf"
+
+
+def test_same_path_and_size_but_new_mtime_causes_reupload(tmp_path, monkeypatch):
+    import os
+    monkeypatch.setattr(uploads.time, "sleep", lambda s: None)
+    src = tmp_path / "a.mp4"
+    src.write_bytes(b"x" * 10)
+    c = FakeClient()
+    cache = tmp_path / "upload.json"
+    uploads.upload_cached(c, cache, src)
+    assert json.loads(cache.read_text())["mtime_ns"] == src.stat().st_mtime_ns
+    st = src.stat()
+    os.utime(src, ns=(st.st_atime_ns, st.st_mtime_ns + 1_000_000_000))
+    uploads.upload_cached(c, cache, src)
+    assert c.files.uploads == 2
+
+
+def test_cache_record_without_mtime_is_stale(tmp_path, monkeypatch):
+    monkeypatch.setattr(uploads.time, "sleep", lambda s: None)
+    src = tmp_path / "a.mp4"
+    src.write_bytes(b"x" * 10)
+    cache = tmp_path / "upload.json"
+    cache.write_text(json.dumps({
+        "name": "files/old", "uri": "uri/old", "mime_type": "video/mp4",
+        "path": str(src), "size": src.stat().st_size,
+        "expires": time.time() + 3600,
+    }))
+    c = FakeClient()
+    uploads.upload_cached(c, cache, src)
+    assert c.files.uploads == 1

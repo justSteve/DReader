@@ -427,28 +427,51 @@ def cmd_fetch(args):
         if old_kind != "audio":
             sys.exit(f"fetch: --id {args.id} already holds a {old_kind} "
                      f"({old.get('path')}); pick another --id")
-        if old.get("origin") != args.url:
-            for f in d.glob("source.*"):
-                if f.name != "source.json":
-                    f.unlink()
-            print(f"[{args.id}: replacing audio from {old.get('origin')} with {args.url}]",
-                  file=sys.stderr)
+        replacing = old.get("origin") != args.url
+    else:
+        replacing = False
+
+    def drop_incoming():
+        for f in d.glob("source.incoming.*"):
+            f.unlink()
+
+    # Download beside the old audio; the old copy goes only once the new one
+    # is safely on disk, so a failed fetch leaves the dossier as it was.
+    d.mkdir(parents=True, exist_ok=True)
+    drop_incoming()
     ytdlp = Path(sys.executable).with_name("yt-dlp")
     ytdlp = str(ytdlp) if ytdlp.exists() else "yt-dlp"
     try:
         r = subprocess.run([ytdlp, "-x", "--audio-format", "m4a", "--force-overwrites",
-                            "--print", "after_move:filepath",
-                            "-o", str(d / "source.%(ext)s"), args.url],
+                            "--no-playlist", "--print", "after_move:filepath",
+                            "-o", str(d / "source.incoming.%(ext)s"), args.url],
                            check=True, capture_output=True, text=True)
     except FileNotFoundError:
+        drop_incoming()
         sys.exit(f"fetch: yt-dlp not found ({ytdlp})")
     except subprocess.CalledProcessError as e:
+        drop_incoming()
         tail = "\n".join((e.stderr or "").strip().splitlines()[-5:])
         sys.exit(f"fetch: yt-dlp failed (exit {e.returncode}):\n{tail}")
     printed = [ln.strip() for ln in (r.stdout or "").splitlines() if ln.strip()]
-    got = Path(printed[-1]) if printed else None
+    if len(printed) > 1:
+        drop_incoming()
+        sys.exit(f"fetch: the URL resolved to {len(printed)} files — "
+                 f"give a single-episode URL")
+    got = Path(printed[0]) if printed else None
     if not got or not got.is_file():
+        drop_incoming()
         sys.exit(f"fetch: yt-dlp reported no audio file in {d}/")
+    if replacing:
+        for f in d.glob("source.*"):
+            if f.name != "source.json" and not f.name.startswith("source.incoming."):
+                f.unlink()
+        print(f"[{args.id}: replacing audio from {old.get('origin')} with {args.url}]",
+              file=sys.stderr)
+    final = d / f"source{got.suffix}"
+    got.replace(final)
+    drop_incoming()
+    got = final
     src = resolve_source(_ap.Namespace(file=str(got), id=args.id, url=None,
                                        origin=args.url))
     print(f"{src.id}: {src.kind} {got.name} — card {src.card}")

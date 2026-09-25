@@ -224,7 +224,8 @@ def fetch_env(tmp_path, monkeypatch):
         calls.append(cmd)
         if Path(cmd[0]).name != "yt-dlp":
             raise AssertionError(f"unexpected command {cmd}")
-        assert "--force-overwrites" in cmd
+        assert "--force-overwrites" in cmd and "--no-playlist" in cmd
+        assert "source.incoming." in cmd[cmd.index("-o") + 1]
         assert cmd[cmd.index("--print") + 1] == "after_move:filepath"
         assert kw.get("capture_output") and kw.get("check")
         out = Path(cmd[cmd.index("-o") + 1].replace("%(ext)s", "m4a"))
@@ -296,3 +297,46 @@ def test_fetch_reports_missing_yt_dlp_cleanly(fetch_env, monkeypatch):
     monkeypatch.setattr(perceive.subprocess, "run", missing)
     with pytest.raises(SystemExit, match="yt-dlp not found"):
         perceive.cmd_fetch(fetch_args("https://pod.example/ep1"))
+
+
+def test_fetch_failure_keeps_the_old_audio_and_drops_the_partial(fetch_env, monkeypatch):
+    perceive.cmd_fetch(fetch_args("https://pod.example/ep1"))
+    old = fetch_env.dir / "source.m4a"
+    assert old.read_bytes() == b"audio"
+
+    def fail(cmd, **kw):
+        Path(cmd[cmd.index("-o") + 1].replace("%(ext)s", "m4a.part")).write_bytes(b"half")
+        raise subprocess.CalledProcessError(1, cmd, output="", stderr="ERROR: 404\n")
+    monkeypatch.setattr(perceive.subprocess, "run", fail)
+    with pytest.raises(SystemExit, match="yt-dlp failed"):
+        perceive.cmd_fetch(fetch_args("https://pod.example/ep2"))
+    assert old.read_bytes() == b"audio"
+    assert list(fetch_env.dir.glob("source.incoming.*")) == []
+    rec = json.loads((fetch_env.dir / "source.json").read_text())
+    assert rec["origin"] == "https://pod.example/ep1"
+
+
+def test_fetch_refuses_a_url_that_resolves_to_several_files(fetch_env, monkeypatch):
+    perceive.cmd_fetch(fetch_args("https://pod.example/ep1"))
+    old = fetch_env.dir / "source.m4a"
+
+    def many(cmd, **kw):
+        tmpl = cmd[cmd.index("-o") + 1]
+        outs = [Path(tmpl.replace("%(ext)s", e)) for e in ("m4a", "1.m4a")]
+        for o in outs:
+            o.write_bytes(b"ep")
+        return subprocess.CompletedProcess(
+            cmd, 0, stdout="".join(f"{o}\n" for o in outs), stderr="")
+    monkeypatch.setattr(perceive.subprocess, "run", many)
+    with pytest.raises(SystemExit) as e:
+        perceive.cmd_fetch(fetch_args("https://pod.example/feed"))
+    assert "resolved to 2 files" in str(e.value.code)
+    assert old.read_bytes() == b"audio"
+    assert list(fetch_env.dir.glob("source.incoming.*")) == []
+
+
+def test_fetch_swap_leaves_no_incoming_file(fetch_env):
+    perceive.cmd_fetch(fetch_args("https://pod.example/ep1"))
+    perceive.cmd_fetch(fetch_args("https://pod.example/ep2"))
+    names = sorted(f.name for f in fetch_env.dir.glob("source*"))
+    assert names == ["source.json", "source.m4a"]

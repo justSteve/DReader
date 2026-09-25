@@ -26,13 +26,16 @@ def upload_file(client, path, mime_type=None):
 
 def upload_cached(client, cache, path, mime_type=None):
     """Upload through the Files API once; reuse the handle recorded in `cache`
-    (a JSON file) while it is fresh, the same file, and ACTIVE server-side.
+    (a JSON file) while it is fresh, the same file (path, size and mtime; a
+    record without mtime is stale), and ACTIVE server-side.
     Uploads of ~1 GB take minutes over the WSL bridge; the cache is what makes
     clipped follow-ups near-free."""
     if cache.exists():
         try:
             rec = json.loads(cache.read_text())
-            if (rec.get("path") == str(path) and rec.get("size") == path.stat().st_size
+            st = path.stat()
+            if (rec.get("path") == str(path) and rec.get("size") == st.st_size
+                    and rec.get("mtime_ns") == st.st_mtime_ns
                     and rec.get("expires", 0) > time.time() + 300):
                 f = client.files.get(name=rec["name"])
                 if f.state.name == "ACTIVE":
@@ -46,6 +49,7 @@ def upload_cached(client, cache, path, mime_type=None):
     cache.write_text(json.dumps({
         "name": f.name, "uri": f.uri, "mime_type": f.mime_type or mime_type,
         "path": str(path), "size": path.stat().st_size,
+        "mtime_ns": path.stat().st_mtime_ns,
         "uploaded": datetime.now().isoformat(timespec="seconds"),
         "expires": time.time() + UPLOAD_TTL_S,
     }, indent=2))
