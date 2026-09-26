@@ -1092,3 +1092,71 @@ specimens.
 Gemini quotes as `verbatim` as unread until framed, not just chart headers.
 That covers sidebars, dialogs and chat replies. Low-res pre-sampling makes
 10–12 px text guessable rather than legible, and Gemini guesses fluently.
+
+## 2026-09-26 — `frames` 403s on YouTube; the storyboard mosaics are a usable fallback for large on-screen text
+
+**Status: suspected** (one video, `LzweTaOzvVo`; dr-o0h).
+
+`mread.py frames` failed on every window with `HTTP error 403 Forbidden`.
+The failure happened when ffmpeg opened the googlevideo URL. yt-dlp was
+already the newest release (2026.08.19), so `pip install -U` changed
+nothing. A plain full download also returned 403. The alternative
+player clients failed too: `tv` returned "page needs to be reloaded",
+`web_safari`/`mweb` returned images only, and `android_vr` returned 403.
+Gemini's own URL ingestion kept working throughout.
+
+What still downloads is the **storyboard**:
+`yt-dlp --extractor-args "youtube:player_client=web_safari" -f sb0`.
+It produces an `.mhtml` of 960×540 WebP mosaics. Each mosaic is 3×3
+tiles of 320×180, and each tile is ~5 s of video. Mosaic *m* covers
+*m*×(duration/20) seconds. Two parsing notes:
+
+- Python's `email` module corrupts the binary parts, and the decoded
+  images come out as smeared noise. Slice each part by its
+  `Content-length:` header instead (lower-case `l`), then decode with
+  system `python3` PIL.
+- The venv has no PIL, and ffmpeg's WebP decoder also chokes on the
+  mis-sliced parts.
+
+At 320×180, title cards, headline numbers, pattern names, web-page
+headings and chart labels of ~20 px and up are legible. Code lines,
+table cells and lower-thirds are not. Tiles are sparse, so a claim that
+lives on screen for <5 s may fall between them. In return, you
+sometimes catch a mid-animation state that corroborates both endpoints
+(the composite-scoring weight tween in the LzweTaOzvVo card).
+
+**Working rule:** when `frames` 403s, retry once. Then pull `sb0` and
+verify identity fields and headline numbers on the mosaics. Mark those
+reads as storyboard-level in the card, and leave small text unread
+rather than trusting Gemini.
+
+## 2026-09-26 — `frames` 403 / storyboard fallback: second observation; mosaic span comes from the mhtml, not duration/20
+
+**Status: confirmed** (second independent video, `1rMgw0Q5MgY`, dr-fea; first was `LzweTaOzvVo`, dr-o0h).
+
+Same failure on `1rMgw0Q5MgY` the same morning: every `frames` window
+403'd at ffmpeg's open of the googlevideo URL (yt-dlp 2026.08.19, visionos
+client), `--js-runtimes node` did not help, a full native download sat at
+0 bytes, and `tv` / `web_safari` / `mweb` / `android_vr` failed exactly as
+recorded above. `sb0` downloaded in 3 s. The 2026-09-26 working rule held.
+
+Correction to the mosaic arithmetic: this 21:17 video gave **15** mosaics,
+not 20. Each mosaic spanned 1:29.093, so each of its 9 tiles is ~9.9 s,
+not ~5 s. The span is printed in the mhtml's own HTML part (`<figcaption>Slide
+#N: start – end`); read it there instead of assuming duration/20. Slicing
+note: the part headers carry `Content-Location` after `Content-Length`, so
+slice from the blank line that ends the header block, not from the end of
+the `Content-Length` line.
+
+What the storyboard caught that Gemini did not, on this talk: a whole slide
+Gemini never mentioned (a lorem-ipsum page with arrows, ~12:00); a trace
+counter Gemini read as `questions: 0` that the tile shows as `questions: 1`,
+with a path whose three `drafting` visits match `drafts: 3` where Gemini's
+path had only two; and the talk's closing slide, which Gemini's wide pass
+put at 20:50 but which is at ~19:07, before the final demo. The speech
+zooms were not affected. The failures were on-screen reads and on-screen
+placement.
+
+**Proposed doctrine change (for Steve):** add to the Interrogation doctrine's
+step 5: "If `frames` 403s, retry once, then verify from the `sb0` storyboard.
+Label those reads storyboard-level."

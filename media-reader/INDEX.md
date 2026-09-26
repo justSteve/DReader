@@ -14,7 +14,7 @@ _`#` is the video's position in its playlist (not its episode number); `Runs` co
 | [The Trading Geek](#the-trading-geek) | Trading | 2 | 2026-05-24 → 2026-05-28 | 1h 25m | 0 |
 | [Trader Dale](#trader-dale) | Trading | 2 | 2025-01-24 → 2026-08-19 | 50m | 0 |
 | [AlgoTrade Pro](#algotrade-pro) | Trading | 1 | 2026-09-04 | 8m | 0 |
-| [Callstack](#callstack) | AgentManagement | 1 | 2026-09-22 | 21m | 1 |
+| [Callstack](#callstack) | AgentManagement | 1 | 2026-09-22 | 21m | 0 |
 | [Christopher Creamer](#christopher-creamer) | Trading | 1 | 2026-09-20 | 35m | 1 |
 | [fvid](#fvid) | Trading | 1 | 2026-09-05 | 7m | 0 |
 | [LuxAlgo](#luxalgo) | Trading | 1 | 2026-09-21 | 8m | 0 |
@@ -128,11 +128,11 @@ _`#` is the video's position in its playlist (not its episode number); `Runs` co
 
 ## Callstack
 
-1 video · 2026-09-22 · 21m total · 1 card(s) open
+1 video · 2026-09-22 · 21m total · all cards closed
 
 | # | Video | Title | Uploaded | Len | Status | Runs |
 |---:|---|---|---|---:|---|---:|
-| — | [`1rMgw0Q5MgY`](dossiers/1rMgw0Q5MgY/CARD.md) | Goodbye Slop; Welcome Determinism \| David Khourshid at Agent Conf 2026 | 2026-09-22 | 21:17 | open | 8 |
+| — | [`1rMgw0Q5MgY`](dossiers/1rMgw0Q5MgY/CARD.md) | Goodbye Slop; Welcome Determinism \| David Khourshid at Agent Conf 2026 | 2026-09-22 | 21:17 | closed | 11 |
 
 ## Christopher Creamer
 
